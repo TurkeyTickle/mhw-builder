@@ -24,6 +24,11 @@ export class AppComponent {
 	selectItem(selectedItem: ItemModel) {
 		if (this.selectedSlot) {
 			this.selectedSlot.item = selectedItem;
+
+			this.equippedItems = _.reject(this.equippedItems, (item: ItemModel) => {
+				return item.itemType == selectedItem.itemType;
+			});
+
 			this.equippedItems.push(selectedItem);
 			this.equippedStatsComponent.updateStats(this.equippedItems);
 		}

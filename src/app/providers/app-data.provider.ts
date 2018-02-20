@@ -1,9 +1,8 @@
 import { HttpClient } from '@angular/common/http';
 import { ItemsModel } from '../models/items.model';
-import { ArmorModel } from '../models/armor.model';
-import { WeaponModel } from '../models/weapon.model';
 import { SkillModel } from '../models/skill.model';
 import { Injectable } from '@angular/core';
+import { ItemModel } from '../models/item.model';
 
 @Injectable()
 export class AppDataProvider {
@@ -12,11 +11,11 @@ export class AppDataProvider {
 	constructor(private http: HttpClient) {
 	}
 
-	getWeapons(): WeaponModel[] {
+	getWeapons(): ItemModel[] {
 		return this.items.weapons;
 	}
 
-	getArmor(): ArmorModel[] {
+	getArmor(): ItemModel[] {
 		return this.items.armor;
 	}
 

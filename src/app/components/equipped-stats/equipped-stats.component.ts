@@ -1,6 +1,5 @@
 import { Component, OnInit, Input, SimpleChanges, OnChanges } from '@angular/core';
 import { ItemModel } from '../../models/item.model';
-import { WeaponModel } from '../../models/weapon.model';
 
 @Component({
 	selector: 'mhw-builder-equipped-stats',
@@ -30,9 +29,16 @@ export class EquippedStatsComponent implements OnInit, OnChanges {
 	}
 
 	updateStats(items: ItemModel[]) {
+		this.attack = 0;
+		this.defense = 0;
+
 		for (const item of items) {
-			if (item instanceof WeaponModel) {
-				console.log('got weapon stats');
+			if (item.baseAttack) {
+				this.attack += item.baseAttack;
+			}
+
+			if (item.baseDefense) {
+				this.defense += item.baseDefense;
 			}
 		}
 	}

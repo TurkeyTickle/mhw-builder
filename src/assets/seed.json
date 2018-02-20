@@ -2,6 +2,7 @@
     "weapons": [
         {
             "name": "Catastrophe's Light",
+            "itemType": "Weapon",
             "type": "InsectGlaive",
             "baseAttack": 651,
             "maxSharpness": "Blue",
@@ -18,6 +19,7 @@
         },
         {
             "name": "Gama Cane II",
+            "itemType": "Weapon",
             "type": "InsectGlaive",
             "baseAttack": 527,
             "maxSharpness": "Blue",
@@ -38,7 +40,7 @@
     "armor": [
         {
             "name": "Dragonking Eyepatch Alpha",
-            "type": "Head",
+            "itemType": "Head",
             "baseDefense": 70,
             "fireResist": 0,
             "waterResist": 0,
