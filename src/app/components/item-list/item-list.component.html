@@ -1,6 +1,6 @@
 <div class="container">
     <ul>
-        <li *ngFor="let item of items">
+        <li *ngFor="let item of items" (click)="selectItem(item)">
             {{item.name}}
         </li>
     </ul>

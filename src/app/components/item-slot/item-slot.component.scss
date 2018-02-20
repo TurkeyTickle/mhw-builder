@@ -1,7 +1,11 @@
 .container {
     width: 100%;
     height: 50px;
-    background-color: black;
+    background-color: rgb(50,50,50);
     margin-bottom: 4px;
     padding: 8px;
+}
+
+.selected-item {
+    display: block;
 }

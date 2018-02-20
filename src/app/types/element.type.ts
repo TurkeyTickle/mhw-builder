@@ -1,7 +1,7 @@
 export enum ElementType {
-    Fire,
-    Water,
-    Thunder,
-    Ice,
-    Dragon
+    Fire = 'Fire',
+    Water = 'Water',
+    Thunder = 'Thunder',
+    Ice = 'Ice',
+    Dragon = 'Dragon'
 }

@@ -3,7 +3,7 @@ import { NgModule, APP_INITIALIZER } from '@angular/core';
 import { HttpClientModule, HttpClient } from '@angular/common/http';
 
 import { AppComponent } from './app.component';
-import { ItemPickerComponent } from './components/item-picker/item-picker.component';
+import { ItemSlotComponent } from './components/item-slot/item-slot.component';
 import { ItemsService } from './services/items.service';
 import { AppDataProvider } from './providers/app-data.provider';
 import { ItemListComponent } from './components/item-list/item-list.component';
@@ -12,7 +12,7 @@ import { ItemListComponent } from './components/item-list/item-list.component';
 @NgModule({
   declarations: [
     AppComponent,
-    ItemPickerComponent,
+    ItemSlotComponent,
     ItemListComponent
   ],
   imports: [

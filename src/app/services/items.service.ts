@@ -22,7 +22,7 @@ export class ItemsService {
     ) { }
 
     getItems(type: ItemType): ItemModel[] {
-        if (type === ItemType.Weapon) {
+        if (type == ItemType.Weapon) {
             return this.appData.getWeapons();
         } else {
             return _.filter(this.appData.getArmor(), armor => armor.type === type);

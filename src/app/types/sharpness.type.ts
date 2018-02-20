@@ -1,5 +1,5 @@
 export enum SharpnessType {
-    Green,
-    Blue,
-    White
+    Green = 'Green',
+    Blue = 'Blue',
+    White = 'White'
 }

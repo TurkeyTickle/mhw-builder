@@ -1,4 +1,4 @@
-import { Component, OnInit, Input } from '@angular/core';
+import { Component, OnInit, Input, Output, EventEmitter } from '@angular/core';
 import { ItemType } from '../../types/item.type';
 import { ItemModel } from '../../models/item.model';
 import { ItemsService } from '../../services/items.service';
@@ -9,14 +9,29 @@ import { ItemsService } from '../../services/items.service';
     styleUrls: ['./item-list.component.scss']
 })
 export class ItemListComponent implements OnInit {
-    @Input() itemType: ItemType;
+    private _itemType: ItemType;
+
+    @Input()
+    set itemType(itemType: ItemType) {
+        this._itemType = itemType;
+        this.loadItems();
+    }
+    get itemType(): ItemType { return this._itemType; }
+
+    @Output() itemSelected = new EventEmitter<ItemModel>();
 
     items: ItemModel[];
 
     constructor(private itemsService: ItemsService) { }
 
     ngOnInit() {
+    }
+
+    loadItems() {
         this.items = this.itemsService.getItems(this.itemType);
-        console.log(this.items);
+    }
+
+    selectItem(item: ItemModel) {
+        this.itemSelected.emit(item);
     }
 }
