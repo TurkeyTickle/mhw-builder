@@ -17,39 +17,39 @@ import { ItemModel } from '../models/item.model';
 
 @Injectable()
 export class ItemsService {
-    constructor(
-        private appData: AppDataProvider
-    ) { }
+	constructor(
+		private appData: AppDataProvider
+	) { }
 
-    getItems(type: ItemType): ItemModel[] {
-        if (type == ItemType.Weapon) {
-            return this.appData.getWeapons();
-        } else {
-            return _.filter(this.appData.getArmor(), armor => armor.type === type);
-        }
-    }
+	getItems(type: ItemType): ItemModel[] {
+		if (type == ItemType.Weapon) {
+			return this.appData.getWeapons();
+		} else {
+			return _.filter(this.appData.getArmor(), armor => armor.type === type);
+		}
+	}
 
-    getAllWeapons(): WeaponModel[] {
-        return this.appData.getWeapons();
-    }
+	getAllWeapons(): WeaponModel[] {
+		return this.appData.getWeapons();
+	}
 
-    getWeapon(id: string): WeaponModel {
-        return _.find(this.appData.getWeapons(), weapon => weapon.id === id);
-    }
+	getWeapon(id: string): WeaponModel {
+		return _.find(this.appData.getWeapons(), weapon => weapon.id === id);
+	}
 
-    getAllArmor(): ArmorModel[] {
-        return this.appData.getArmor();
-    }
+	getAllArmor(): ArmorModel[] {
+		return this.appData.getArmor();
+	}
 
-    getArmor(id: string): ArmorModel {
-        return _.find(this.appData.getArmor(), armor => armor.id === id);
-    }
+	getArmor(id: string): ArmorModel {
+		return _.find(this.appData.getArmor(), armor => armor.id === id);
+	}
 
-    getAllSkills(): SkillModel[] {
-        return this.appData.getSkills();
-    }
+	getAllSkills(): SkillModel[] {
+		return this.appData.getSkills();
+	}
 
-    getSkill(id: string): SkillModel {
-        return _.find(this.appData.getSkills(), skill => skill.id === id);
-    }
+	getSkill(id: string): SkillModel {
+		return _.find(this.appData.getSkills(), skill => skill.id === id);
+	}
 }

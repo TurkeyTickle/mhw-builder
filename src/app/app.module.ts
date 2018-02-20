@@ -7,27 +7,29 @@ import { ItemSlotComponent } from './components/item-slot/item-slot.component';
 import { ItemsService } from './services/items.service';
 import { AppDataProvider } from './providers/app-data.provider';
 import { ItemListComponent } from './components/item-list/item-list.component';
+import { EquippedStatsComponent } from './components/equipped-stats/equipped-stats.component';
 
 
 @NgModule({
-  declarations: [
-    AppComponent,
-    ItemSlotComponent,
-    ItemListComponent
-  ],
-  imports: [
-    BrowserModule,
-    HttpClientModule
-  ],
-  providers: [
-    ItemsService,
-    AppDataProvider,
-    { provide: APP_INITIALIZER, useFactory: appDataProviderFactory, deps: [AppDataProvider], multi: true}
-  ],
-  bootstrap: [AppComponent]
+	declarations: [
+		AppComponent,
+		ItemSlotComponent,
+		ItemListComponent,
+		EquippedStatsComponent
+	],
+	imports: [
+		BrowserModule,
+		HttpClientModule
+	],
+	providers: [
+		ItemsService,
+		AppDataProvider,
+		{ provide: APP_INITIALIZER, useFactory: appDataProviderFactory, deps: [AppDataProvider], multi: true}
+	],
+	bootstrap: [AppComponent]
 })
 export class AppModule { }
 
 export function appDataProviderFactory(provider: AppDataProvider) {
-  return () => provider.load();
+	return () => provider.load();
 }

@@ -7,13 +7,13 @@ import { Guid } from '../core/guid';
 import { ItemModel } from './item.model';
 
 export class WeaponModel extends ItemModel {
-    type: WeaponType;
-    baseAttack: number;
-    maxSharpness: SharpnessType;
-    baseAffinityPercent: number;
-    element?: ElementType;
-    elementBaseAttack?: number;
-    elderseal?: EldersealType;
-    slots?: SlotModel[];
-    defense?: number;
+	type: WeaponType;
+	baseAttack: number;
+	maxSharpness: SharpnessType;
+	baseAffinityPercent: number;
+	element?: ElementType;
+	elementBaseAttack?: number;
+	elderseal?: EldersealType;
+	slots?: SlotModel[];
+	baseDefense?: number;
 }
