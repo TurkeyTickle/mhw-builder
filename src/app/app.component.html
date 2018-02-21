@@ -1,14 +1,20 @@
-<div class="left">
-  <mhw-builder-item-slot name="weaponSlot" slotName="Weapon" (slotSelected)="slotSelected($event)"></mhw-builder-item-slot>
-  <mhw-builder-item-slot name="headSlot" slotName="Head" (slotSelected)="slotSelected($event)"></mhw-builder-item-slot>
-  <mhw-builder-item-slot name="chestSlot" slotName="Chest" (slotSelected)="slotSelected($event)"></mhw-builder-item-slot>
-  <mhw-builder-item-slot name="handSlot" slotName="Hands" (slotSelected)="slotSelected($event)"></mhw-builder-item-slot>
-  <mhw-builder-item-slot name="legSlot" slotName="Legs" (slotSelected)="slotSelected($event)"></mhw-builder-item-slot>
-  <!-- <mhw-builder-item-slot name="feetSlot" slotName="Feet" (slotSelected)="slotSelected($event)"></mhw-builder-item-slot> -->
+<div class="slot-container">
+	<mhw-builder-item-slot name="weaponSlot" slotName="Weapon" (slotSelected)="slotSelected($event)"></mhw-builder-item-slot>
+	<mhw-builder-item-slot name="headSlot" slotName="Head" (slotSelected)="slotSelected($event)"></mhw-builder-item-slot>
+	<mhw-builder-item-slot name="chestSlot" slotName="Chest" (slotSelected)="slotSelected($event)"></mhw-builder-item-slot>
+	<mhw-builder-item-slot name="handSlot" slotName="Hands" (slotSelected)="slotSelected($event)"></mhw-builder-item-slot>
+	<mhw-builder-item-slot name="legSlot" slotName="Legs" (slotSelected)="slotSelected($event)"></mhw-builder-item-slot>
+	<mhw-builder-item-slot name="feetSlot" slotName="Feet" (slotSelected)="slotSelected($event)"></mhw-builder-item-slot>
+	<mhw-builder-item-slot name="charmSlot" slotName="Charm" (slotSelected)="slotSelected($event)"></mhw-builder-item-slot>
+</div>
+
+<div class="stat-container">
+	
 </div>
 
 <div class="right">
-  <mhw-builder-equipped-stats></mhw-builder-equipped-stats>
-  <mhw-builder-item-list itemType="{{selectedSlot?.slotName}}" (itemSelected)="selectItem($event)"></mhw-builder-item-list>
+	<mhw-builder-equipped-stats></mhw-builder-equipped-stats>
+	<mhw-builder-equipped-skills></mhw-builder-equipped-skills>
+	<mhw-builder-item-list itemType="{{selectedSlot?.slotName}}" (itemSelected)="selectItem($event)"></mhw-builder-item-list>
 </div>
 

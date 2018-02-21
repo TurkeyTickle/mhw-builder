@@ -1,10 +1,11 @@
-import { Component, Query, ViewChild } from '@angular/core';
+import { Component, ViewChild } from '@angular/core';
 import { ItemType } from './types/item.type';
 import { ItemModel } from './models/item.model';
 import { ItemSlotComponent } from './components/item-slot/item-slot.component';
+import { EquippedStatsComponent } from './components/equipped-stats/equipped-stats.component';
+import { EquippedSkillsComponent } from './components/equipped-skills/equipped-skills.component';
 
 import * as _ from 'lodash';
-import { EquippedStatsComponent } from './components/equipped-stats/equipped-stats.component';
 
 @Component({
 	selector: 'mhw-builder-root',
@@ -17,6 +18,7 @@ export class AppComponent {
 	title = 'MHW Builder';
 
 	@ViewChild(EquippedStatsComponent) equippedStatsComponent: EquippedStatsComponent;
+	@ViewChild(EquippedSkillsComponent) equippedSkillsComponent: EquippedSkillsComponent;
 
 	selectedSlot: ItemSlotComponent;
 	equippedItems = new Array<ItemModel>();
@@ -30,11 +32,12 @@ export class AppComponent {
 			});
 
 			this.equippedItems.push(selectedItem);
-			this.equippedStatsComponent.updateStats(this.equippedItems);
+			this.equippedStatsComponent.update(this.equippedItems);
+			this.equippedSkillsComponent.update(this.equippedItems);
 		}
 	}
 
-	slotSelected(item) {
+	slotSelected(item: ItemSlotComponent) {
 		this.selectedSlot = item;
 	}
 }

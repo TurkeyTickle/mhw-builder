@@ -8,6 +8,7 @@ import { ItemsService } from './services/items.service';
 import { AppDataProvider } from './providers/app-data.provider';
 import { ItemListComponent } from './components/item-list/item-list.component';
 import { EquippedStatsComponent } from './components/equipped-stats/equipped-stats.component';
+import { EquippedSkillsComponent } from './components/equipped-skills/equipped-skills.component';
 
 
 @NgModule({
@@ -15,7 +16,8 @@ import { EquippedStatsComponent } from './components/equipped-stats/equipped-sta
 		AppComponent,
 		ItemSlotComponent,
 		ItemListComponent,
-		EquippedStatsComponent
+		EquippedStatsComponent,
+		EquippedSkillsComponent
 	],
 	imports: [
 		BrowserModule,

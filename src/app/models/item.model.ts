@@ -5,6 +5,7 @@ import { EldersealType } from '../types/elderseal.type';
 import { SlotModel } from './slot.model';
 import { SkillModel } from './skill.model';
 import { ItemType } from '../types/item.type';
+import { ItemSkillModel } from './item-skill.model';
 
 export class ItemModel {
 	id: string;
@@ -27,7 +28,7 @@ export class ItemModel {
 	thunderResist: number;
 	iceResist: number;
 	dragonResist: number;
-	skills: SkillModel[];
+	skills?: ItemSkillModel[];
 
 	constructor() {
 		this.id = Guid.newGuid();

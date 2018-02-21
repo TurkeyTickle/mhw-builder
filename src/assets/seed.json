@@ -55,7 +55,8 @@
             ]
         },
         {
-            "name": "Xeno'jiva Headgear Beta",
+			"name": "Xeno'jiva Headgear Beta",
+			"itemType": "Head",
             "baseDefense": 72,
             "fireResist": -3,
             "waterResist": 2,
@@ -71,9 +72,205 @@
                     "id": "xenojivaDivinity"
                 }
             ]
-        }
+		},
+		{
+			"name": "Dober Mail Beta",
+			"itemType": "Chest",
+            "baseDefense": 60,
+            "fireResist": -2,
+            "waterResist": 0,
+            "thunderResist": -1,
+            "iceResist": -1,
+            "dragonResist": 4,
+            "skills": [
+                {
+                    "id": "attackBoost",
+                    "level": 2
+                }
+			],
+			"slots": [
+                {
+                    "level": 3
+                }
+            ]
+		},
+		{
+			"name": "Nergigante Mail Beta",
+			"itemType": "Chest",
+            "baseDefense": 64,
+            "fireResist": 1,
+            "waterResist": 1,
+            "thunderResist": -3,
+            "iceResist": 1,
+            "dragonResist": -3,
+            "skills": [
+                {
+                    "id": "staminaSurge",
+                    "level": 2
+                }
+			],
+			"slots": [
+                {
+                    "level": 2
+				},
+				{
+                    "level": 1
+                }
+            ]
+		},
+		{
+			"name": "Kaiser Vambraces Beta",
+			"itemType": "Hands",
+            "baseDefense": 64,
+            "fireResist": 3,
+            "waterResist": -3,
+            "thunderResist": 1,
+            "iceResist": -3,
+            "dragonResist": 1,
+            "skills": [
+                {
+                    "id": "weaknessExploit",
+                    "level": 1
+                }
+			],
+			"slots": [
+                {
+                    "level": 3
+                }
+            ]
+		},
+		{
+			"name": "Odogaron Coil Beta",
+			"itemType": "Legs",
+            "baseDefense": 54,
+            "fireResist": 2,
+            "waterResist": 2,
+            "thunderResist": -2,
+            "iceResist": -3,
+            "dragonResist": 0,
+            "skills": [
+                {
+                    "id": "criticalEye",
+                    "level": 2
+                }
+			],
+			"slots": [
+                {
+                    "level": 2
+                }
+            ]
+		},
+		{
+			"name": "Nergigante Greaves Alpha",
+			"itemType": "Feet",
+            "baseDefense": 64,
+            "fireResist": 1,
+            "waterResist": 1,
+            "thunderResist": -3,
+            "iceResist": 1,
+            "dragonResist": -3,
+            "skills": [
+                {
+                    "id": "agitator",
+                    "level": 1
+				},
+				{
+					"id": "maximumMight",
+					"level": 1
+				}
+			],
+			"slots": [
+                {
+                    "level": 1
+                }
+            ]
+		},
+		{
+			"name": "Attack Charm III",
+			"itemType": "Charm",
+            "skills": [
+				{
+					"id": "attackBoost",
+					"level": 3
+				}
+			]
+		}
     ],
     "skills": [
+		{
+			"id": "attackBoost",
+			"name": "Attack Boost",
+			"description": "Increases attack power. Also improves affinity at higher levels.",
+			"levels": [
+				{
+					"description": "Attack +3",
+					"activeAttack": 3
+				},
+				{
+					"description": "Attack +6",
+					"activeAttack": 6
+				},
+				{
+					"description": "Attack +9",
+					"activeAttack": 9
+				},
+				{
+					"description": "Attack +12, Affinity +5%",
+					"activeAttack": 12,
+					"activeAffinity": 5
+				},
+				{
+					"description": "Attack +15, Affinity +5%",
+					"activeAttack": 15,
+					"activeAffinity": 5
+				},
+				{
+					"description": "Attack +18, Affinity +5%",
+					"activeAttack": 18,
+					"activeAffinity": 5
+				},
+				{
+					"description": "Attack +21, Affinity +5%",
+					"activeAttack": 21,
+					"activeAffinity": 5
+				}
+			]
+		},
+		{
+			"id": "criticalEye",
+			"name": "Critical Eye",
+			"description": "Increases affinity.",
+			"levels": [
+				{
+					"description": "Affinity +3%",
+					"activeAffinity": 3
+				},
+				{
+					"description": "Affinity +6%",
+					"activeAffinity": 6
+				},
+				{
+					"description": "Affinity +10%",
+					"activeAffinity": 10
+				},
+				{
+					"description": "Affinity +15%",
+					"activeAffinity": 15
+				},
+				{
+					"description": "Affinity +20%",
+					"activeAffinity": 20
+				},
+				{
+					"description": "Affinity +25%",
+					"activeAffinity": 25
+				},
+				{
+					"description": "Affinity +30%",
+					"activeAffinity": 30
+				}
+			]
+		},
         {
             "id": "weaknessExploit",
             "name": "Weakness Exploit",
@@ -104,6 +301,73 @@
                 {
                     "description": "Prevents knockbacks and tripping."
                 }
+            ]
+		},
+		{
+            "id":"maximumMight",
+            "name": "Maximum Might",
+            "description": "Increases affinity when stamina is full.",
+            "levels": [
+                {
+                    "description": "While active, increases affinity by 10%."
+                },
+                {
+                    "description": "While active, increases affinity by 20%."
+                },
+                {
+                    "description": "While active, increases affinity by 30%."
+                }
+            ]
+		},
+		{
+            "id":"agitator",
+            "name": "Agitator",
+            "description": "Increases attack power and affinity when large monsters become enraged.",
+            "levels": [
+                {
+                    "description": "While active, grants attack +4 and increases affinity by 3%"
+                },
+                {
+                    "description": "While active, grants attack +8 and increases affinity by 6%"
+                },
+                {
+                    "description": "While active, grants attack +12 and increases affinity by 9%"
+                },
+                {
+                    "description": "While active, grants attack +16 and increases affinity by 12%"
+                },
+                {
+                    "description": "While active, grants attack +20 and increases affinity by 15%"
+                }
+            ]
+		},
+		{
+            "id":"staminaSurge",
+            "name": "Stamina Surge",
+            "description": "Speeds up stamina recovery.",
+            "levels": [
+                {
+                    "description": "Stamina recovery speed +10%"
+                },
+                {
+                    "description": "Stamina recovery speed +20%"
+                },
+                {
+                    "description": "Stamina recovery speed +30%"
+                }
+            ]
+		},
+		{
+            "id":"xenojivaDivinity",
+			"name": "Xeno'jiva Divinity",
+			"description": "Halves sharpness loss. For bows and bowguns, shots have a chance not to expend coatings or ammo.",
+            "levels": [
+                {					
+				},
+				{
+				},
+				{
+				}
             ]
         }
     ]

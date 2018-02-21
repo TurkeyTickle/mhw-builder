@@ -27,6 +27,10 @@ export class ItemsService {
 		}
 	}
 
+	getSkill(id: string): SkillModel {
+		return _.find(this.appData.getSkills(), skill => skill.id === id);
+	}
+
 	// getAllSkills(): SkillModel[] {
 	// 	return this.appData.getSkills();
 	// }
