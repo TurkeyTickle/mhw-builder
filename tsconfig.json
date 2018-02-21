@@ -11,6 +11,9 @@
 	"noImplicitReturns": true,
 	"noUnusedParameters": true,
 	"noUnusedLocals": true,
+	"alwaysStrict": true,
+	"forceConsistentCasingInFileNames": true,
+	"pretty": true,
     "target": "es5",
     "typeRoots": [
       "node_modules/@types"

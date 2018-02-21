@@ -1,5 +1,4 @@
 import { Component, OnInit, Input, Output, EventEmitter } from '@angular/core';
-import { ItemsService } from '../../services/items.service';
 import { ItemModel } from '../../models/item.model';
 import { ItemType } from '../../types/item.type';
 
@@ -15,7 +14,6 @@ export class ItemSlotComponent implements OnInit {
 	public item: ItemModel;
 
 	constructor(
-		private itemsService: ItemsService
 	) { }
 
 	ngOnInit() {

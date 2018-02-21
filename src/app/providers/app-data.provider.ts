@@ -1,32 +1,37 @@
 import { HttpClient } from '@angular/common/http';
-import { ItemsModel } from '../models/items.model';
+import { SeedModel } from '../models/seed.model';
 import { SkillModel } from '../models/skill.model';
 import { Injectable } from '@angular/core';
 import { ItemModel } from '../models/item.model';
+import { WeaponModifierModel } from '../models/weapon-modifier.model';
 
 @Injectable()
 export class AppDataProvider {
-	private items: ItemsModel;
+	private seedData: SeedModel;
 
 	constructor(private http: HttpClient) {
 	}
 
 	getWeapons(): ItemModel[] {
-		return this.items.weapons;
+		return this.seedData.weapons;
 	}
 
 	getArmor(): ItemModel[] {
-		return this.items.armor;
+		return this.seedData.armor;
 	}
 
 	getSkills(): SkillModel[] {
-		return this.items.skills;
+		return this.seedData.skills;
+	}
+
+	getWeaponModifiers(): WeaponModifierModel[] {
+		return this.seedData.weaponModifiers;
 	}
 
 	load(): Promise<boolean> {
-		return new Promise((resolve, reject) => {
-			this.http.get<ItemsModel>('../assets/seed.json').subscribe(items => {
-				this.items = items;
+		return new Promise((resolve) => {
+			this.http.get<SeedModel>('../assets/seed.json').subscribe(items => {
+				this.seedData = items;
 				resolve(true);
 			});
 		});

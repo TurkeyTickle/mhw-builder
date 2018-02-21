@@ -134,18 +134,32 @@ export class EquippedStatsComponent implements OnInit, OnChanges {
 			}
 		}
 
+		let additionalAttack = 0;
+		let additionalAffinity = 0;
+
 		for (const equippedSkill of this.equippedSkills) {
 			const level = equippedSkill.skill.levels[equippedSkill.equippedCount - 1];
 
 			if (level) {
 				if (level.activeAttack) {
-					this.attack += level.activeAttack;
+					additionalAttack += level.activeAttack;
 				}
 
 				if (level.activeAffinity) {
-					this.affinity += level.activeAffinity;
+					additionalAffinity += level.activeAffinity;
 				}
 			}
 		}
+
+		const weapon = _.find(items, item => item.weaponType);
+		if (weapon) {
+			const weaponModifier = this.itemsService.getWeaponModifier(weapon.weaponType);
+			if (weaponModifier) {
+				additionalAttack = Math.round(additionalAttack * weaponModifier.attackModifier);
+			}
+		}
+
+		this.attack += additionalAttack;
+		this.affinity += additionalAffinity;
 	}
 }

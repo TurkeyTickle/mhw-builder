@@ -1,9 +1,67 @@
 {
+	"weaponModifiers": [
+		{
+			"type": "GreatSword",
+			"attackModifier": 4.8
+		},
+		{
+			"type": "LongSword",
+			"attackModifier": 3.3
+		},
+		{
+			"type": "SwordAndShield",
+			"attackModifier": 1.4
+		},
+		{
+			"type": "DualBlades",
+			"attackModifier": 1.4
+		},
+		{
+			"type": "Hammer",
+			"attackModifier": 5.2
+		},
+		{
+			"type": "HuntingHorn",
+			"attackModifier": 4.2
+		},
+		{
+			"type": "Lance",
+			"attackModifier": 2.3
+		},
+		{
+			"type": "Gunlance",
+			"attackModifier": 2.3
+		},
+		{
+			"type": "SwitchAxe",
+			"attackModifier": 3.5
+		},
+		{
+			"type": "ChargeBlade",
+			"attackModifier": 3.6
+		},
+		{
+			"type": "InsectGlaive",
+			"attackModifier": 3.1
+		},
+		{
+			"type": "LightBowGun",
+			"attackModifier": 1.3
+		},
+		{
+			"type": "HeavyBowGun",
+			"attackModifier": 1.5
+		},
+		{
+			"type": "Bow",
+			"attackModifier": 1.2
+		}
+	],
     "weapons": [
         {
             "name": "Catastrophe's Light",
             "itemType": "Weapon",
-            "type": "InsectGlaive",
+            "weaponType": "InsectGlaive",
             "baseAttack": 651,
             "maxSharpness": "Blue",
             "baseAffinityPercent": 0,
@@ -20,7 +78,7 @@
         {
             "name": "Gama Cane II",
             "itemType": "Weapon",
-            "type": "InsectGlaive",
+            "weaponType": "InsectGlaive",
             "baseAttack": 527,
             "maxSharpness": "Blue",
             "baseAffinityPercent": 0,
@@ -35,6 +93,54 @@
                 }
             ],
             "baseDefense": 0
+		},
+		{
+            "name": "Nergal Gouge",
+            "itemType": "Weapon",
+            "weaponType": "DualBlades",
+            "baseAttack": 280,
+            "maxSharpness": "Blue",
+            "baseAffinityPercent": 0,
+            "element": "Dragon",
+            "elementBaseAttack": 90,
+            "elderseal": "High",
+            "slots": [
+                {
+                    "level": 1
+                }
+            ],
+            "baseDefense": 0
+		},
+		{
+            "name": "Doom's Shaft",
+            "itemType": "Weapon",
+            "weaponType": "Bow",
+            "baseAttack": 240,
+            "baseAffinityPercent": 0,
+            "element": "Dragon",
+            "elementBaseAttack": 150,
+            "elderseal": "High",
+            "slots": [
+                {
+                    "level": 1
+                }
+            ],
+            "baseDefense": 0
+		},
+		{
+            "name": "Grandrock I",
+            "itemType": "Weapon",
+            "weaponType": "Hammer",
+            "baseAttack": 884,
+            "baseAffinityPercent": 0,
+            "element": "Thunder",
+            "elementBaseAttack": 390,
+            "slots": [
+                {
+                    "level": 2
+                }
+            ],
+            "baseDefense": 10
         }
     ],
     "armor": [
@@ -151,6 +257,27 @@
             "skills": [
                 {
                     "id": "criticalEye",
+                    "level": 2
+                }
+			],
+			"slots": [
+                {
+                    "level": 2
+                }
+            ]
+		},
+		{
+			"name": "Nergigante Coil Beta",
+			"itemType": "Legs",
+            "baseDefense": 64,
+            "fireResist": 1,
+            "waterResist": 1,
+            "thunderResist": -3,
+            "iceResist": 1,
+            "dragonResist": -3,
+            "skills": [
+                {
+                    "id": "attackBoost",
                     "level": 2
                 }
 			],
