@@ -1,6 +1,6 @@
 <div class="container">
     <ul>
-        <li *ngFor="let item of items" (click)="selectItem(item)">
+        <li *ngFor="let item of items" (click)="selectItem(item)" (mouseenter)="setTooltipItem(item)" (mouseleave)="clearTooltipItem()">
             {{item.name}}
 		</li>
 		<li *ngFor="let decoration of decorations" (click)="selectDecoration(decoration)">

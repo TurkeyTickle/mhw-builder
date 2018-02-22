@@ -1,10 +1,12 @@
+$equipmentHeight: 40px;
+
 .container {
     width: 100%;
     margin-bottom: 16px;
 }
 
 .item-container {
-    height: 40px;
+    height: $equipmentHeight;
     background-color: rgb(50,50,50);
     padding: 8px;
 	margin-bottom: 4px;
@@ -18,5 +20,17 @@
 }
 
 .selected-item {
-    display: block;
+    display: inline-block;
+}
+
+.slot-name {
+	display: inline-block;
+	color: rgb(100,100,100);
+	line-height: $equipmentHeight;
+	width: 80px;
+}
+
+.clear-button {
+	float: right;
+	height: $equipmentHeight;
 }

@@ -19,6 +19,16 @@ export class EquippedSkillsComponent implements OnInit {
 
 	ngOnInit() { }
 
+	getColor(equippedSkill: EquippedSkillModel): string {
+		if (equippedSkill.equippedCount > equippedSkill.skill.levels.length) {
+			return 'red';
+		} else if (equippedSkill.equippedCount == equippedSkill.skill.levels.length) {
+			return '#86ff86';
+		}
+
+		return 'white';
+	}
+
 	update(items: ItemModel[]): void {
 		this.reset();
 		this.updateSkills(items);

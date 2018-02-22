@@ -10,7 +10,8 @@ import { ItemListComponent } from './components/item-list/item-list.component';
 import { EquippedStatsComponent } from './components/equipped-stats/equipped-stats.component';
 import { EquippedSkillsComponent } from './components/equipped-skills/equipped-skills.component';
 import { DecorationSlotComponent } from './components/decoration-slot/decoration-slot.component';
-
+import { ItemStatsComponent } from './components/item-stats/item-stats.component';
+import { TooltipService } from './services/tooltip.service';
 
 @NgModule({
 	declarations: [
@@ -19,7 +20,8 @@ import { DecorationSlotComponent } from './components/decoration-slot/decoration
 		ItemListComponent,
 		EquippedStatsComponent,
 		EquippedSkillsComponent,
-		DecorationSlotComponent
+		DecorationSlotComponent,
+		ItemStatsComponent
 	],
 	imports: [
 		BrowserModule,
@@ -27,6 +29,7 @@ import { DecorationSlotComponent } from './components/decoration-slot/decoration
 	],
 	providers: [
 		ItemsService,
+		TooltipService,
 		AppDataProvider,
 		{ provide: APP_INITIALIZER, useFactory: appDataProviderFactory, deps: [AppDataProvider], multi: true}
 	],

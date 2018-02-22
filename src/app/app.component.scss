@@ -1,29 +1,32 @@
-:host {
+.container {
 	display: flex;
 	flex-direction: row;
 	flex-wrap: nowrap;
 	justify-content: space-around;
-	
-	div {
-		flex-basis: 0;
-	}
 }
 
 .equipment-container {
 	flex-grow: 2;
+	flex-basis: 0;
 	margin:8px;	
 }
 
 .item-list-container {
 	flex-grow: 1;
+	flex-basis: 0;
 	margin:8px;	
 }
 
 .stat-container {
 	flex-grow: 2;
+	flex-basis: 0;
 	margin:8px;	
 }
 
 .skill-container {
 	margin:8px;	
+}
+
+.item-stats-container {
+	position: absolute;
 }

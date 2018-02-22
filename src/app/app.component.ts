@@ -1,4 +1,4 @@
-import { Component, ViewChild } from '@angular/core';
+import { Component, ViewChild, ElementRef, Renderer, OnInit } from '@angular/core';
 import { ItemType } from './types/item.type';
 import { ItemModel } from './models/item.model';
 import { ItemSlotComponent } from './components/item-slot/item-slot.component';
@@ -8,6 +8,8 @@ import { EquippedSkillsComponent } from './components/equipped-skills/equipped-s
 import * as _ from 'lodash';
 import { DecorationSlotComponent } from './components/decoration-slot/decoration-slot.component';
 import { DecorationModel } from './models/decoration.model';
+import { TooltipService } from './services/tooltip.service';
+import { ItemStatsComponent } from './components/item-stats/item-stats.component';
 
 @Component({
 	selector: 'mhw-builder-root',
@@ -15,17 +17,35 @@ import { DecorationModel } from './models/decoration.model';
 	styleUrls: ['./app.component.scss']
 })
 
-export class AppComponent {
+export class AppComponent implements OnInit {
 	public itemTypes = ItemType;
 	title = 'MHW Builder';
 
 	@ViewChild(EquippedStatsComponent) equippedStatsComponent: EquippedStatsComponent;
 	@ViewChild(EquippedSkillsComponent) equippedSkillsComponent: EquippedSkillsComponent;
+	@ViewChild(ItemStatsComponent) itemStatsComponent: ItemStatsComponent;
+	@ViewChild('itemStats') itemStatsContainer: ElementRef;
 
 	selectedEquipmentSlot: ItemSlotComponent;
 	selectedDecorationSlot: DecorationSlotComponent;
 	equippedItems = new Array<ItemModel>();
 	equippedDecorations = new Array<DecorationModel>();
+
+	constructor(
+		private tooltipService: TooltipService,
+		private renderer: Renderer
+	) { }
+
+	ngOnInit() {
+		this.tooltipService.subject.subscribe(item => {
+			if (!item) {
+				this.renderer.setElementStyle(this.itemStatsContainer.nativeElement, 'display', 'none');
+			} else {
+				this.renderer.setElementStyle(this.itemStatsContainer.nativeElement, 'display', 'block');
+				this.itemStatsComponent.setItem(item);
+			}
+		});
+	}
 
 	selectItem(selectedItem: ItemModel) {
 		if (this.selectedEquipmentSlot) {
@@ -61,5 +81,10 @@ export class AppComponent {
 	decorationSlotSelected(decorationSlot: DecorationSlotComponent) {
 		this.selectedEquipmentSlot = null;
 		this.selectedDecorationSlot = decorationSlot;
+	}
+
+	moveTooltip(event: MouseEvent) {
+		this.renderer.setElementStyle(this.itemStatsContainer.nativeElement, 'left', event.clientX + 40 + 'px');
+		this.renderer.setElementStyle(this.itemStatsContainer.nativeElement, 'top', event.clientY + 40 + 'px');
 	}
 }

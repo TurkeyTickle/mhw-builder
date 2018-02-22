@@ -1,7 +1,11 @@
 <div class="container">
-	<div class="item-container" (click)="equipmentSlotClicked()">
-		<span class="slot-name">{{slotName}}</span>
-		<span class="selected-item">{{item?.name}}</span>
+	<div class="item-container" (click)="equipmentSlotClicked()" (mouseenter)="setTooltipItem()" (mouseleave)="clearTooltipItem()"> 
+		<div class="slot-name">{{slotName}}</div>
+		<div class="selected-item">{{item?.name}}</div>
+
+		<button class="clear-button" (click)="clearClicked($event)">
+			<i class="fas fa-times"></i>
+		</button>
 	</div>
 
 	<div class="decoration-container">

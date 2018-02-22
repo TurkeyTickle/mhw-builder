@@ -1,5 +1,19 @@
 body {
     background: rgb(30,30,30);
-    color: white;
+	color: white;
+	font-family: Arial, Helvetica, sans-serif;
 }
 
+button {
+	background: none;
+	border: none;
+	outline: none;
+	color: rgb(150, 150, 150);
+	height: 28px;
+	cursor: pointer;
+	width: 40px;
+}
+
+button:hover {
+	color: rgb(255, 255, 255);
+}

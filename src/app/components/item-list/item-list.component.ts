@@ -3,6 +3,7 @@ import { ItemType } from '../../types/item.type';
 import { ItemModel } from '../../models/item.model';
 import { ItemsService } from '../../services/items.service';
 import { DecorationModel } from '../../models/decoration.model';
+import { TooltipService } from '../../services/tooltip.service';
 
 @Component({
 	selector: 'mhw-builder-item-list',
@@ -25,7 +26,10 @@ export class ItemListComponent implements OnInit {
 	items: ItemModel[];
 	decorations: DecorationModel[];
 
-	constructor(private itemsService: ItemsService) { }
+	constructor(
+		private itemsService: ItemsService,
+		private tooltipService: TooltipService
+	) { }
 
 	ngOnInit() {
 	}
@@ -46,5 +50,13 @@ export class ItemListComponent implements OnInit {
 
 	selectDecoration(decoration: DecorationModel) {
 		this.decorationSelected.emit(decoration);
+	}
+
+	setTooltipItem(item: ItemModel) {
+		this.tooltipService.setItem(item);
+	}
+
+	clearTooltipItem() {
+		this.tooltipService.setItem(null);
 	}
 }
