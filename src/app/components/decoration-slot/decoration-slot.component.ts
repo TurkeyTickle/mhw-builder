@@ -4,7 +4,7 @@ import { DecorationModel } from '../../models/decoration.model';
 @Component({
 	selector: 'mhw-builder-decoration-slot',
 	templateUrl: './decoration-slot.component.html',
-	styleUrls: ['./decoration-slot.component.scss']
+	styleUrls: ['./decoration-slot.component.scss'],
 })
 export class DecorationSlotComponent implements OnInit {
 	@Output() decorationSlotSelected = new EventEmitter<DecorationSlotComponent>();

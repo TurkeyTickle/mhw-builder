@@ -4,5 +4,7 @@
 		<span class="selected-item">{{item?.name}}</span>
 	</div>
 
-	<mhw-builder-decoration-slot *ngFor="let slot of item?.slots" (decorationSlotSelected)="decorationSlotClicked($event)"></mhw-builder-decoration-slot>
+	<div class="decoration-container">
+		<mhw-builder-decoration-slot *ngFor="let slot of item?.slots" (decorationSlotSelected)="decorationSlotClicked($event)"></mhw-builder-decoration-slot>
+	</div>
 </div>

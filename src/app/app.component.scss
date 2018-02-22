@@ -1,15 +1,29 @@
-.slot-container {
-    position: relative;
-    width: 300px;
-    left: 0px;
-    top: 0px;
-    bottom: 0px;
+:host {
+	display: flex;
+	flex-direction: row;
+	flex-wrap: nowrap;
+	justify-content: space-around;
+	
+	div {
+		flex-basis: 0;
+	}
 }
 
-.right {
-    position: relative;
-    right: 0px;
-    // left: 50%;
-    top: 0px;
-    bottom: 0px;
+.equipment-container {
+	flex-grow: 2;
+	margin:8px;	
+}
+
+.item-list-container {
+	flex-grow: 1;
+	margin:8px;	
+}
+
+.stat-container {
+	flex-grow: 2;
+	margin:8px;	
+}
+
+.skill-container {
+	margin:8px;	
 }

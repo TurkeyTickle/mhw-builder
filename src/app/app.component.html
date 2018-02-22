@@ -1,4 +1,6 @@
-<div class="slot-container">
+<div class="equipment-container">
+	<h2>Equipment</h2>
+
 	<mhw-builder-item-slot name="weaponSlot" slotName="Weapon" (equipmentSlotSelected)="equipmentSlotSelected($event)" (decorationSlotSelected)="decorationSlotSelected($event)"></mhw-builder-item-slot>
 	<mhw-builder-item-slot name="headSlot" slotName="Head" (equipmentSlotSelected)="equipmentSlotSelected($event)" (decorationSlotSelected)="decorationSlotSelected($event)"></mhw-builder-item-slot>
 	<mhw-builder-item-slot name="chestSlot" slotName="Chest" (equipmentSlotSelected)="equipmentSlotSelected($event)" (decorationSlotSelected)="decorationSlotSelected($event)"></mhw-builder-item-slot>
@@ -8,14 +10,21 @@
 	<mhw-builder-item-slot name="charmSlot" slotName="Charm" (equipmentSlotSelected)="equipmentSlotSelected($event)" (decorationSlotSelected)="decorationSlotSelected($event)"></mhw-builder-item-slot>
 </div>
 
-<div class="stat-container">
-	
-</div>
+<div class="item-list-container">
+	<h2>Items</h2>
 
-<div class="right">
-	<mhw-builder-equipped-stats></mhw-builder-equipped-stats>
-	<mhw-builder-equipped-skills></mhw-builder-equipped-skills>
 	<mhw-builder-item-list [hidden]="!selectedEquipmentSlot" itemType="{{selectedEquipmentSlot?.slotName}}" (itemSelected)="selectItem($event)"></mhw-builder-item-list>
 	<mhw-builder-item-list [hidden]="!selectedDecorationSlot" itemType="Decoration" (decorationSelected)="selectDecoration($event)"></mhw-builder-item-list>
 </div>
 
+<div class="stat-container">
+	<h2>Stats</h2>
+	<hr>
+	<mhw-builder-equipped-stats></mhw-builder-equipped-stats>
+
+	<br />
+
+	<h2>Skills</h2>
+	<hr>
+	<mhw-builder-equipped-skills></mhw-builder-equipped-skills>
+</div>

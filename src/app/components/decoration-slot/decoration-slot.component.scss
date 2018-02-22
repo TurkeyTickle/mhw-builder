@@ -1,12 +1,17 @@
 .container {
 	background-color: rgb(50,50,50);
-	height: 50px;
-	width: 29%;
+	height: 40px;
 	padding: 4px;
-	display: inline-block;
-	margin-right: 4px;
+	cursor: pointer;
 }
 
 .selected-decoration {
 	display: block;
+}
+
+:host {
+	flex-grow: 1;
+	flex-basis: 0;
+	max-width: 33%;
+	padding: 0px 2px 0px 2px;
 }
