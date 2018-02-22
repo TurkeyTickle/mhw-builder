@@ -13,6 +13,7 @@ export class ItemSlotComponent implements OnInit {
 	@Input() slotName: ItemType;
 	@Output() equipmentSlotSelected = new EventEmitter<ItemSlotComponent>();
 	@Output() decorationSlotSelected = new EventEmitter<DecorationSlotComponent>();
+	@Output() cleared = new EventEmitter();
 
 	public item: ItemModel;
 
@@ -33,7 +34,9 @@ export class ItemSlotComponent implements OnInit {
 
 	clearClicked(event: Event) {
 		event.preventDefault();
-		this.equipmentSlotSelected.emit(null);
+		this.cleared.emit(this.item);
+		this.tooltipService.setItem(null);
+		this.item = null;
 	}
 
 	setTooltipItem() {

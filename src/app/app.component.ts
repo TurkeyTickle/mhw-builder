@@ -73,6 +73,15 @@ export class AppComponent implements OnInit {
 		}
 	}
 
+	itemCleared(clearedItem: ItemModel) {
+		this.equippedItems = _.reject(this.equippedItems, (item: ItemModel) => {
+			return item === clearedItem;
+		});
+
+		this.equippedStatsComponent.update(this.equippedItems);
+		this.equippedSkillsComponent.update(this.equippedItems);
+	}
+
 	equipmentSlotSelected(equipmentSlot: ItemSlotComponent) {
 		this.selectedDecorationSlot = null;
 		this.selectedEquipmentSlot = equipmentSlot;
