@@ -1,9 +1,13 @@
 .container {
     width: 100%;
+    margin-bottom: 16px;
+}
+
+.item-container {
     height: 50px;
     background-color: rgb(50,50,50);
-    margin-bottom: 4px;
     padding: 8px;
+    margin-bottom: 4px;
 }
 
 .selected-item {

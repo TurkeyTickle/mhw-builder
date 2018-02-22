@@ -1,4 +1,4 @@
-import { Component, OnInit, SimpleChanges, OnChanges } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 import { ItemModel } from '../../models/item.model';
 import { ItemsService } from '../../services/items.service';
 import { EquippedSkillModel } from '../../models/equipped-skill.model';
@@ -11,8 +11,9 @@ import * as _ from 'lodash';
 	styleUrls: ['./equipped-stats.component.scss']
 })
 
-export class EquippedStatsComponent implements OnInit, OnChanges {
+export class EquippedStatsComponent implements OnInit {
 	attack: number;
+	weaponAttackModifier: number;
 	affinity: number;
 	defense: number;
 	fireResist: number;
@@ -24,23 +25,12 @@ export class EquippedStatsComponent implements OnInit, OnChanges {
 	element: string;
 	equippedSkills: EquippedSkillModel[];
 
-	// private _items: ItemModel[];
-
-	// @Input()
-	// get items() { return this._items; }
-	// set items(items: ItemModel[]) {
-	//     this._items = items;
-	//     this.updateStats();
-	// }
-
 	constructor(
 		private itemsService: ItemsService
 	) { }
 
-	ngOnInit() { }
-
-	ngOnChanges(changes: SimpleChanges) {
-		console.log(changes);
+	ngOnInit() {
+		this.reset();
 	}
 
 	update(items: ItemModel[]): void {
@@ -55,6 +45,7 @@ export class EquippedStatsComponent implements OnInit, OnChanges {
 
 	private reset() {
 		this.attack = 0;
+		this.weaponAttackModifier = 0;
 		this.affinity = 0;
 		this.defense = 0;
 		this.fireResist = 0;
@@ -63,7 +54,7 @@ export class EquippedStatsComponent implements OnInit, OnChanges {
 		this.iceResist = 0;
 		this.dragonResist = 0;
 		this.elementalAttack = 0;
-		this.element = '';
+		this.element = 'None';
 
 		this.equippedSkills = new Array<EquippedSkillModel>();
 	}
@@ -155,6 +146,7 @@ export class EquippedStatsComponent implements OnInit, OnChanges {
 		if (weapon) {
 			const weaponModifier = this.itemsService.getWeaponModifier(weapon.weaponType);
 			if (weaponModifier) {
+				this.weaponAttackModifier = weaponModifier.attackModifier;
 				additionalAttack = Math.round(additionalAttack * weaponModifier.attackModifier);
 			}
 		}

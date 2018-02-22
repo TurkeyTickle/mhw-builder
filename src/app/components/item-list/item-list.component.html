@@ -2,6 +2,9 @@
     <ul>
         <li *ngFor="let item of items" (click)="selectItem(item)">
             {{item.name}}
-        </li>
+		</li>
+		<li *ngFor="let decoration of decorations" (click)="selectDecoration(decoration)">
+            {{decoration.name}}
+		</li>
     </ul>
 </div>

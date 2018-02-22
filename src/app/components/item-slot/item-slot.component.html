@@ -1,4 +1,8 @@
-<div class="container" (click)="clicked()">
-    <span class="slot-name">{{slotName}}</span>
-    <span class="selected-item">{{item?.name}}</span>
+<div class="container">
+	<div class="item-container" (click)="equipmentSlotClicked()">
+		<span class="slot-name">{{slotName}}</span>
+		<span class="selected-item">{{item?.name}}</span>
+	</div>
+
+	<mhw-builder-decoration-slot *ngFor="let slot of item?.slots" (decorationSlotSelected)="decorationSlotClicked($event)"></mhw-builder-decoration-slot>
 </div>

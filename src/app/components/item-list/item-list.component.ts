@@ -2,6 +2,7 @@ import { Component, OnInit, Input, Output, EventEmitter } from '@angular/core';
 import { ItemType } from '../../types/item.type';
 import { ItemModel } from '../../models/item.model';
 import { ItemsService } from '../../services/items.service';
+import { DecorationModel } from '../../models/decoration.model';
 
 @Component({
 	selector: 'mhw-builder-item-list',
@@ -19,8 +20,10 @@ export class ItemListComponent implements OnInit {
 	get itemType(): ItemType { return this._itemType; }
 
 	@Output() itemSelected = new EventEmitter<ItemModel>();
+	@Output() decorationSelected = new EventEmitter<DecorationModel>();
 
 	items: ItemModel[];
+	decorations: DecorationModel[];
 
 	constructor(private itemsService: ItemsService) { }
 
@@ -28,10 +31,20 @@ export class ItemListComponent implements OnInit {
 	}
 
 	loadItems() {
-		this.items = this.itemsService.getItems(this.itemType);
+		if (this.itemType == ItemType.Decoration) {
+			this.decorations = this.itemsService.getDecorations();
+		} else if (this.itemType == ItemType.Weapon) {
+			this.items = this.itemsService.getWeapons();
+		} else {
+			this.items = this.itemsService.getArmor(this.itemType);
+		}
 	}
 
 	selectItem(item: ItemModel) {
 		this.itemSelected.emit(item);
+	}
+
+	selectDecoration(decoration: DecorationModel) {
+		this.decorationSelected.emit(decoration);
 	}
 }

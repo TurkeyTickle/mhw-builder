@@ -1,6 +1,7 @@
 import { Component, OnInit, Input, Output, EventEmitter } from '@angular/core';
 import { ItemModel } from '../../models/item.model';
 import { ItemType } from '../../types/item.type';
+import { DecorationSlotComponent } from '../decoration-slot/decoration-slot.component';
 
 @Component({
 	selector: 'mhw-builder-item-slot',
@@ -9,7 +10,8 @@ import { ItemType } from '../../types/item.type';
 })
 export class ItemSlotComponent implements OnInit {
 	@Input() slotName: ItemType;
-	@Output() slotSelected = new EventEmitter<ItemSlotComponent>();
+	@Output() equipmentSlotSelected = new EventEmitter<ItemSlotComponent>();
+	@Output() decorationSlotSelected = new EventEmitter<DecorationSlotComponent>();
 
 	public item: ItemModel;
 
@@ -19,7 +21,11 @@ export class ItemSlotComponent implements OnInit {
 	ngOnInit() {
 	}
 
-	clicked() {
-		this.slotSelected.emit(this);
+	equipmentSlotClicked() {
+		this.equipmentSlotSelected.emit(this);
+	}
+
+	decorationSlotClicked(decorationSlot: DecorationSlotComponent) {
+		this.decorationSlotSelected.emit(decorationSlot);
 	}
 }

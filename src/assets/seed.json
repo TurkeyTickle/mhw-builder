@@ -90,6 +90,9 @@
                 },
                 {
                     "level": 2
+				},
+				{
+                    "level": 2
                 }
             ],
             "baseDefense": 0
@@ -497,5 +500,14 @@
 				}
             ]
         }
-    ]
+	],
+	"decorations": [
+		{
+			"name": "Attack Jewel 1",
+			"skill": {
+				"id": "attackBoost",
+				"level": 1
+			}
+		}
+	]
 }

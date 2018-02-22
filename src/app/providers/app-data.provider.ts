@@ -4,6 +4,7 @@ import { SkillModel } from '../models/skill.model';
 import { Injectable } from '@angular/core';
 import { ItemModel } from '../models/item.model';
 import { WeaponModifierModel } from '../models/weapon-modifier.model';
+import { DecorationModel } from '../models/decoration.model';
 
 @Injectable()
 export class AppDataProvider {
@@ -26,6 +27,10 @@ export class AppDataProvider {
 
 	getWeaponModifiers(): WeaponModifierModel[] {
 		return this.seedData.weaponModifiers;
+	}
+
+	getDecorations(): DecorationModel[] {
+		return this.seedData.decorations;
 	}
 
 	load(): Promise<boolean> {

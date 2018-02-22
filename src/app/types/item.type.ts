@@ -6,5 +6,5 @@ export enum ItemType {
 	Legs = 'Legs',
 	Feet = 'Feet',
 	Charm = 'Charm',
-	Gem = 'Gem'
+	Decoration = 'Decoration'
 }

@@ -6,6 +6,8 @@ import { EquippedStatsComponent } from './components/equipped-stats/equipped-sta
 import { EquippedSkillsComponent } from './components/equipped-skills/equipped-skills.component';
 
 import * as _ from 'lodash';
+import { DecorationSlotComponent } from './components/decoration-slot/decoration-slot.component';
+import { DecorationModel } from './models/decoration.model';
 
 @Component({
 	selector: 'mhw-builder-root',
@@ -20,12 +22,14 @@ export class AppComponent {
 	@ViewChild(EquippedStatsComponent) equippedStatsComponent: EquippedStatsComponent;
 	@ViewChild(EquippedSkillsComponent) equippedSkillsComponent: EquippedSkillsComponent;
 
-	selectedSlot: ItemSlotComponent;
+	selectedEquipmentSlot: ItemSlotComponent;
+	selectedDecorationSlot: DecorationSlotComponent;
 	equippedItems = new Array<ItemModel>();
+	equippedDecorations = new Array<DecorationModel>();
 
 	selectItem(selectedItem: ItemModel) {
-		if (this.selectedSlot) {
-			this.selectedSlot.item = selectedItem;
+		if (this.selectedEquipmentSlot) {
+			this.selectedEquipmentSlot.item = selectedItem;
 
 			this.equippedItems = _.reject(this.equippedItems, (item: ItemModel) => {
 				return item.itemType == selectedItem.itemType;
@@ -37,7 +41,25 @@ export class AppComponent {
 		}
 	}
 
-	slotSelected(item: ItemSlotComponent) {
-		this.selectedSlot = item;
+	selectDecoration(selectedDecoration: DecorationModel) {
+		if (this.selectedDecorationSlot) {
+			this.selectedDecorationSlot.decoration = selectedDecoration;
+
+			// this.equippedDecorations = _.reject(this.equippedDecorations, (decoration: DecorationModel) => {
+			// 	return decoration.
+			// });
+
+			this.equippedDecorations.push(selectedDecoration);
+		}
+	}
+
+	equipmentSlotSelected(equipmentSlot: ItemSlotComponent) {
+		this.selectedDecorationSlot = null;
+		this.selectedEquipmentSlot = equipmentSlot;
+	}
+
+	decorationSlotSelected(decorationSlot: DecorationSlotComponent) {
+		this.selectedEquipmentSlot = null;
+		this.selectedDecorationSlot = decorationSlot;
 	}
 }
