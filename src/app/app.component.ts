@@ -102,7 +102,18 @@ export class AppComponent implements OnInit {
 	}
 
 	moveTooltip(event: MouseEvent) {
-		this.renderer.setElementStyle(this.itemStatsContainer.nativeElement, 'left', event.clientX + 40 + 'px');
-		this.renderer.setElementStyle(this.itemStatsContainer.nativeElement, 'top', event.clientY + 40 + 'px');
+		let newTop = event.clientY + 40;
+		let newLeft = event.clientX + 40;
+
+		if (window.innerHeight < newTop + this.itemStatsContainer.nativeElement.scrollHeight) {
+			newTop = window.innerHeight - this.itemStatsContainer.nativeElement.scrollHeight;
+		}
+
+		if (window.innerWidth < newLeft + this.itemStatsContainer.nativeElement.scrollWidth) {
+			newLeft = window.innerWidth - this.itemStatsContainer.nativeElement.scrollWidth;
+		}
+
+		this.renderer.setElementStyle(this.itemStatsContainer.nativeElement, 'left', newLeft + 'px');
+		this.renderer.setElementStyle(this.itemStatsContainer.nativeElement, 'top', newTop + 'px');
 	}
 }
