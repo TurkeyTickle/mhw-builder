@@ -31,6 +31,7 @@ export class ItemStatsComponent implements OnInit {
 
 	getSkillCount(skill: SkillModel): string {
 		const itemSkill = _.find(this.item.skills, s => s.id == skill.id);
-		return `${itemSkill.level}/${skill.levels.length}`;
+		const result = `${itemSkill.level}/${skill.levels.length}`;
+		return result;
 	}
 }
