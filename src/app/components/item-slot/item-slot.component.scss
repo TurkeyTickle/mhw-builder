@@ -11,26 +11,35 @@ $equipmentHeight: 40px;
     padding: 8px;
 	margin-bottom: 4px;
 	cursor: pointer;
+	display: flex;
+
+	.slot-name {
+		color: rgb(100,100,100);
+		line-height: $equipmentHeight;
+		width: 80px;
+		flex-grow: 0;
+		flex-shrink: 0;
+	}
+
+	.selected-item {
+		flex-grow: 1;
+		line-height: $equipmentHeight;
+		font-size: 20px;
+		text-overflow: ellipsis;
+		overflow: hidden;
+		white-space: nowrap;
+	}
+	
+	.clear-button {
+		float: right;
+		height: $equipmentHeight;
+	}
 }
 
 .decoration-container {
 	display: flex;
 	flex-direction: row;
 	flex-wrap: nowrap;
+	margin: 0px -2px;
 }
 
-.selected-item {
-    display: inline-block;
-}
-
-.slot-name {
-	display: inline-block;
-	color: rgb(100,100,100);
-	line-height: $equipmentHeight;
-	width: 80px;
-}
-
-.clear-button {
-	float: right;
-	height: $equipmentHeight;
-}

@@ -83,14 +83,14 @@
             "maxSharpness": "Blue",
             "baseAffinityPercent": 0,
             "ailment": "Blast",
-            "ailmentBaseAttack": "120",
+            "ailmentBaseAttack": 120,
             "slots": [
                 {
                     "level": 2
-                },
-                {
+				},                
+				{
                     "level": 2
-				}
+                }
             ],
             "baseDefense": 0
 		},
@@ -225,6 +225,33 @@
             ]
 		},
 		{
+			"name": "Diablos Nero Mail Beta",
+			"itemType": "Chest",
+            "baseDefense": 56,
+            "fireResist": 2,
+            "waterResist": -3,
+            "thunderResist": 0,
+            "iceResist": -4,
+            "dragonResist": 2,
+            "skills": [
+				{
+					"id": "resentment",
+					"level": 1
+				},
+                {
+                    "id": "diablosMastery"
+                }
+			],
+			"slots": [
+                {
+                    "level": 2
+				},
+				{
+                    "level": 1
+                }
+            ]
+		},
+		{
 			"name": "Kaiser Vambraces Beta",
 			"itemType": "Hands",
             "baseDefense": 64,
@@ -288,6 +315,33 @@
             ]
 		},
 		{
+			"name": "Kirin Hoop Beta",
+			"itemType": "Legs",
+            "baseDefense": 64,
+            "fireResist": -3,
+            "waterResist": -2,
+            "thunderResist": 4,
+            "iceResist": -2,
+            "dragonResist": 2,
+            "skills": [
+                {
+                    "id": "blightResistance",
+                    "level": 1
+                }
+			],
+			"slots": [
+                {
+                    "level": 1
+				},
+				{
+                    "level": 1
+				},
+				{
+                    "level": 1
+                }
+            ]
+		},
+		{
 			"name": "Nergigante Greaves Alpha",
 			"itemType": "Feet",
             "baseDefense": 64,
@@ -331,35 +385,54 @@
 			"levels": [
 				{
 					"description": "Attack +3",
-					"activeAttack": 3
+					"passiveAttack": 3
 				},
 				{
 					"description": "Attack +6",
-					"activeAttack": 6
+					"passiveAttack": 6
 				},
 				{
 					"description": "Attack +9",
-					"activeAttack": 9
+					"passiveAttack": 9
 				},
 				{
 					"description": "Attack +12, Affinity +5%",
-					"activeAttack": 12,
-					"activeAffinity": 5
+					"passiveAttack": 12,
+					"passiveAffinity": 5
 				},
 				{
 					"description": "Attack +15, Affinity +5%",
-					"activeAttack": 15,
-					"activeAffinity": 5
+					"passiveAttack": 15,
+					"passiveAffinity": 5
 				},
 				{
 					"description": "Attack +18, Affinity +5%",
-					"activeAttack": 18,
-					"activeAffinity": 5
+					"passiveAttack": 18,
+					"passiveAffinity": 5
 				},
 				{
 					"description": "Attack +21, Affinity +5%",
-					"activeAttack": 21,
-					"activeAffinity": 5
+					"passiveAttack": 21,
+					"passiveAffinity": 5
+				}
+			]
+		},
+		{
+			"id": "criticalBoost",
+			"name": "Critical Boost",
+			"description": "Increases the damage of critical hits.",
+			"levels": [
+				{
+					"description": "Increases damage dealt by critical hits by 30%.",
+					"passiveCritBoostPercent": 30
+				},
+				{
+					"description": "Increases damage dealt by critical hits by 35%.",
+					"passiveCritBoostPercent": 35
+				},
+				{
+					"description": "Increases damage dealt by critical hits by 40%.",
+					"passiveCritBoostPercent": 40
 				}
 			]
 		},
@@ -370,31 +443,31 @@
 			"levels": [
 				{
 					"description": "Affinity +3%",
-					"activeAffinity": 3
+					"passiveAffinity": 3
 				},
 				{
 					"description": "Affinity +6%",
-					"activeAffinity": 6
+					"passiveAffinity": 6
 				},
 				{
 					"description": "Affinity +10%",
-					"activeAffinity": 10
+					"passiveAffinity": 10
 				},
 				{
 					"description": "Affinity +15%",
-					"activeAffinity": 15
+					"passiveAffinity": 15
 				},
 				{
 					"description": "Affinity +20%",
-					"activeAffinity": 20
+					"passiveAffinity": 20
 				},
 				{
 					"description": "Affinity +25%",
-					"activeAffinity": 25
+					"passiveAffinity": 25
 				},
 				{
 					"description": "Affinity +30%",
-					"activeAffinity": 30
+					"passiveAffinity": 30
 				}
 			]
 		},
@@ -415,7 +488,7 @@
             ]
         },
         {
-            "id":"flinchFree",
+            "id": "flinchFree",
             "name": "Flinch Free",
             "description": "Prevents knockbacks and other reactions to small damage.",
             "levels": [
@@ -431,7 +504,7 @@
             ]
 		},
 		{
-            "id":"maximumMight",
+            "id": "maximumMight",
             "name": "Maximum Might",
             "description": "Increases affinity when stamina is full.",
             "levels": [
@@ -447,7 +520,7 @@
             ]
 		},
 		{
-            "id":"agitator",
+            "id": "agitator",
             "name": "Agitator",
             "description": "Increases attack power and affinity when large monsters become enraged.",
             "levels": [
@@ -469,7 +542,7 @@
             ]
 		},
 		{
-            "id":"staminaSurge",
+            "id": "staminaSurge",
             "name": "Stamina Surge",
             "description": "Speeds up stamina recovery.",
             "levels": [
@@ -485,26 +558,93 @@
             ]
 		},
 		{
+            "id": "blightResistance",
+            "name": "Blight Resistance",
+            "description": "Grants protection against all elemental blights.",
+            "levels": [
+                {
+                    "description": "Reduces the duration of all elemental blights by 30%."
+                },
+                {
+                    "description": "Reduces the duration of all elemental blights by 60%."
+                },
+                {
+                    "description": "Nullifies all elemental blights."
+                }
+            ]
+		},
+		{
+            "id": "resentment",
+            "name": "Resentment",
+            "description": "Increases attack when you have recoverable damage (the red portion of your health gauge).",
+            "levels": [
+                {
+					"description": "While active, grants attack +5.",
+					"activeAttack": 5
+				},
+				{
+					"description": "While active, grants attack +10.",
+					"activeAttack": 10
+				},
+				{
+					"description": "While active, grants attack +15.",
+					"activeAttack": 15
+				},
+				{
+					"description": "While active, grants attack +20.",
+					"activeAttack": 20
+				},
+				{
+					"description": "While active, grants attack +25.",
+					"activeAttack": 25
+                }
+            ]
+		},
+		{
             "id":"xenojivaDivinity",
 			"name": "Xeno'jiva Divinity",
-			"description": "Halves sharpness loss. For bows and bowguns, shots have a chance not to expend coatings or ammo.",
-            "levels": [
-                {					
-				},
+			"setLevels": [
 				{
-				},
-				{
+					"level": 3,
+					"description": "Halves sharpness loss. For bows and bowguns, shots have a chance not to expend coatings or ammo."
 				}
-            ]
-        }
+			]
+		},
+		{
+			"id": "diablosMastery",
+			"name": "Diablos Mastery",
+			"setLevels": [
+				{
+					"level": 2,
+					"description": "Raises attack as your weapon loses sharpness. Also boosts ranged weapon melee attack and odds of stunning."
+				},
+				{
+					"level": 4,
+					"description": "Powers up non-elemental weapons you have equipped."
+				}
+			]
+		}
 	],
 	"decorations": [
 		{
 			"name": "Attack Jewel 1",
-			"skill": {
-				"id": "attackBoost",
-				"level": 1
-			}
+			"level": 1,
+			"skills": [
+				{
+					"id": "attackBoost",
+					"level": 1
+				}
+			]
+		},
+		{
+			"name": "Critical Jewel 2",
+			"level": 2,
+			"skills": [
+				{
+					"id": "criticalBoost",
+					"level": 1
+				}
+			]
 		}
 	]
 }

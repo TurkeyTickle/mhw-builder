@@ -37,12 +37,12 @@ export class AppComponent implements OnInit {
 	) { }
 
 	ngOnInit() {
-		this.tooltipService.subject.subscribe(item => {
-			if (!item) {
+		this.tooltipService.subject.subscribe((thing: ItemModel | DecorationModel) => {
+			if (!thing) {
 				this.renderer.setElementStyle(this.itemStatsContainer.nativeElement, 'display', 'none');
 			} else {
 				this.renderer.setElementStyle(this.itemStatsContainer.nativeElement, 'display', 'block');
-				this.itemStatsComponent.setItem(item);
+				this.itemStatsComponent.setItem(thing);
 			}
 		});
 	}
@@ -65,9 +65,9 @@ export class AppComponent implements OnInit {
 		if (this.selectedDecorationSlot) {
 			this.selectedDecorationSlot.decoration = selectedDecoration;
 
-			// this.equippedDecorations = _.reject(this.equippedDecorations, (decoration: DecorationModel) => {
-			// 	return decoration.
-			// });
+			this.equippedDecorations = _.reject(this.equippedDecorations, (decoration: DecorationModel) => {
+				return decoration.id == selectedDecoration.id;
+			});
 
 			this.equippedDecorations.push(selectedDecoration);
 		}
@@ -82,7 +82,16 @@ export class AppComponent implements OnInit {
 		this.equippedSkillsComponent.update(this.equippedItems);
 	}
 
-	equipmentSlotSelected(equipmentSlot: ItemSlotComponent) {
+	decorationCleared(clearedDecoration: DecorationModel) {
+		this.equippedDecorations = _.reject(this.equippedDecorations, (decoration: DecorationModel) => {
+			return decoration.id == clearedDecoration.id;
+		});
+
+		this.equippedStatsComponent.update(this.equippedItems);
+		this.equippedSkillsComponent.update(this.equippedItems);
+	}
+
+	itemSlotSelected(equipmentSlot: ItemSlotComponent) {
 		this.selectedDecorationSlot = null;
 		this.selectedEquipmentSlot = equipmentSlot;
 	}

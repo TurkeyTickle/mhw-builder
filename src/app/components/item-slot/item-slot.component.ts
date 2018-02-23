@@ -3,6 +3,7 @@ import { ItemModel } from '../../models/item.model';
 import { ItemType } from '../../types/item.type';
 import { DecorationSlotComponent } from '../decoration-slot/decoration-slot.component';
 import { TooltipService } from '../../services/tooltip.service';
+import { DecorationModel } from '../../models/decoration.model';
 
 @Component({
 	selector: 'mhw-builder-item-slot',
@@ -13,7 +14,8 @@ export class ItemSlotComponent implements OnInit {
 	@Input() slotName: ItemType;
 	@Output() equipmentSlotSelected = new EventEmitter<ItemSlotComponent>();
 	@Output() decorationSlotSelected = new EventEmitter<DecorationSlotComponent>();
-	@Output() cleared = new EventEmitter();
+	@Output() equipmentCleared = new EventEmitter<ItemModel>();
+	@Output() decorationCleared = new EventEmitter<DecorationModel>();
 
 	public item: ItemModel;
 
@@ -32,11 +34,16 @@ export class ItemSlotComponent implements OnInit {
 		this.decorationSlotSelected.emit(decorationSlot);
 	}
 
-	clearClicked(event: Event) {
+	equipmentClearClicked(event: Event) {
 		event.preventDefault();
-		this.cleared.emit(this.item);
+		this.equipmentCleared.emit(this.item);
 		this.tooltipService.setItem(null);
 		this.item = null;
+	}
+
+	decorationClearClicked(decoration: DecorationModel) {
+		this.decorationCleared.emit(decoration);
+		this.tooltipService.setItem(null);
 	}
 
 	setTooltipItem() {

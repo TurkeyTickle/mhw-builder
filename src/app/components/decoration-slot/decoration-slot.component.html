@@ -1,4 +1,8 @@
-<div class="container" (click)="clicked()">
-	<span class="slot-name">Slot</span>
-	<span class="selected-decoration">{{decoration?.name}}</span>
+<div class="container" (click)="clicked()" (mouseenter)="setTooltipItem()" (mouseleave)="clearTooltipItem()">
+	<div class="slot-name">{{level}} Slot</div>
+	<div class="selected-decoration">{{decoration?.name}}</div>
+
+	<button class="clear-button" (click)="clearClicked($event)">
+		<i class="fas fa-times"></i>
+	</button>
 </div>

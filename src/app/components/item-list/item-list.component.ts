@@ -52,7 +52,7 @@ export class ItemListComponent implements OnInit {
 		this.decorationSelected.emit(decoration);
 	}
 
-	setTooltipItem(item: ItemModel) {
+	setTooltipItem(item: ItemModel | DecorationModel) {
 		this.tooltipService.setItem(item);
 	}
 

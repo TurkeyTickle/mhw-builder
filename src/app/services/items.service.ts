@@ -8,14 +8,13 @@ import { ItemModel } from '../models/item.model';
 import { WeaponType } from '../types/weapon.type';
 import { WeaponModifierModel } from '../models/weapon-modifier.model';
 import { DecorationModel } from '../models/decoration.model';
+import { ItemSkillModel } from '../models/item-skill.model';
 
 @Injectable()
 export class ItemsService {
 	constructor(
 		private appData: AppDataProvider
 	) { }
-
-
 
 	getWeapons(weaponType?: WeaponType): ItemModel[] {
 		let result = new Array<ItemModel>();
@@ -37,6 +36,12 @@ export class ItemsService {
 
 	getSkill(id: string): SkillModel {
 		return _.find(this.appData.getSkills(), skill => skill.id === id);
+	}
+
+	getSkills(itemSkills: ItemSkillModel[]) {
+		return _.filter(this.appData.getSkills(), skill => {
+			return _.some(itemSkills, itemSkill => skill.id == itemSkill.id);
+		});
 	}
 
 	getWeaponModifier(weaponType: WeaponType): WeaponModifierModel {

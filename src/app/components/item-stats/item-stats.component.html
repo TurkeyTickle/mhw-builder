@@ -1,15 +1,63 @@
 <div class="container">
+	<h3>{{item?.name}}</h3>
+	<hr>
 	<ul>
-		<li><h3>{{item?.name}}</h3></li>
-		<li>Attack: {{item?.baseAttack}}</li>
-		<li>Affinity: {{item?.baseAffinityPercent}}%</li>
-		<li>Defense: {{item?.baseDefense}}</li>
-		<li>Element: {{item?.element}}</li>
-		<li>Elemental Attack: {{item?.elementBaseAttack}}</li>
-		<li>Fire Resist: {{item?.fireResist}}</li>
-		<li>Water Resist: {{item?.waterResist}}</li>
-		<li>Thunder Resist: {{item?.thunderResist}}</li>
-		<li>Ice Resist: {{item?.iceResist}}</li>
-		<li>Dragon Resist: {{item?.dragonResist}}</li>
+		<div *ngIf="item?.equipmentCategory == 'Weapon'">
+			<li>Attack: {{item?.baseAttack}}</li>
+			<li>Affinity: {{item?.baseAffinityPercent}}%</li>
+
+			<div *ngIf="item?.ailment">
+				<li>Ailment: {{item?.ailment}}</li>
+				<li>Ailment Attack: {{item?.ailmentBaseAttack}}</li>
+			</div>
+			
+			<div *ngIf="item?.element">
+				<li>Element: {{item?.element}}</li>
+				<li>Elemental Attack: {{item?.elementBaseAttack}}</li>
+			</div>
+		</div>
+
+		<div *ngIf="item?.equipmentCategory">
+			<li>Defense: {{item?.baseDefense}}</li>
+			
+			<div *ngIf="item.equipmentCategory == 'Armor'">
+				<li>Fire Resist: {{item?.fireResist || 0}}</li>
+				<li>Water Resist: {{item?.waterResist || 0}}</li>
+				<li>Thunder Resist: {{item?.thunderResist || 0}}</li>
+				<li>Ice Resist: {{item?.iceResist || 0}}</li>
+				<li>Dragon Resist: {{item?.dragonResist || 0}}</li>
+			</div>
+		</div>
 	</ul>
+
+	<div *ngIf="skills?.length" class="skills-container">
+		<br />
+		<h3>Skills</h3>
+		<hr>
+		<ul>
+			<div *ngFor="let skill of skills">
+				<div *ngIf="skill.levels">
+					<li>
+						<div class="skill-header">
+							<h5 class="skill-name">{{skill.name}}</h5>
+							<h5 class="skill-level">{{getSkillCount(skill)}}</h5>
+						</div>
+						<hr>
+						<span>{{skill.description}}</span>
+					</li>
+				</div>
+				
+				<div *ngIf="skill.setLevels">
+					<li *ngFor="let setLevel of skill.setLevels">
+						<div class="skill-header">
+							<h5 class="skill-name">{{skill.name}}</h5>
+							<h5 class="skill-level">{{setLevel.level}} piece</h5>
+						</div>
+						<hr>
+						<span>{{setLevel.description}}</span>
+					</li>
+				</div>
+			</div>
+		</ul>
+	</div>
 </div>

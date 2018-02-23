@@ -3,12 +3,17 @@
 		<div class="slot-name">{{slotName}}</div>
 		<div class="selected-item">{{item?.name}}</div>
 
-		<button class="clear-button" (click)="clearClicked($event)">
+		<button class="clear-button" (click)="equipmentClearClicked($event)">
 			<i class="fas fa-times"></i>
 		</button>
 	</div>
 
 	<div class="decoration-container">
-		<mhw-builder-decoration-slot *ngFor="let slot of item?.slots" (decorationSlotSelected)="decorationSlotClicked($event)"></mhw-builder-decoration-slot>
+		<mhw-builder-decoration-slot 
+			*ngFor="let slot of item?.slots"
+			[level]="slot.level"
+			(decorationSlotSelected)="decorationSlotClicked($event)"
+			(cleared)="decorationClearClicked(slot)">
+		</mhw-builder-decoration-slot>
 	</div>
 </div>

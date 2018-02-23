@@ -1,12 +1,33 @@
+$slotHeight: 30px;
+
 .container {
 	background-color: rgb(50,50,50);
-	height: 40px;
+	height: $slotHeight;
 	padding: 4px;
 	cursor: pointer;
-}
+	display: flex;
+	font-size: 14px;
 
-.selected-decoration {
-	display: block;
+	.slot-name {
+		color: rgb(100,100,100);
+		line-height: $slotHeight;
+		width: 45px;
+		flex-grow: 0;
+		flex-shrink: 0;
+	}
+	
+	.selected-decoration {
+		flex-grow: 1;
+		line-height: $slotHeight;
+		text-overflow: ellipsis;
+		overflow: hidden;
+		white-space: nowrap;
+	}
+	
+	.clear-button {
+		float: right;
+		height: $slotHeight;
+	}
 }
 
 :host {

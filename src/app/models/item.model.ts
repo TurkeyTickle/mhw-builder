@@ -6,11 +6,14 @@ import { SlotModel } from './slot.model';
 import { ItemType } from '../types/item.type';
 import { ItemSkillModel } from './item-skill.model';
 import { WeaponType } from '../types/weapon.type';
+import { EquipmentCategoryType } from '../types/equipment-category.type';
+import { AilmentType } from '../types/ailment.type';
 
 export class ItemModel {
 	id: string;
 	name: string;
 	itemType: ItemType;
+	equipmentCategory: EquipmentCategoryType;
 	slots?: SlotModel[];
 	baseDefense?: number;
 
@@ -19,6 +22,8 @@ export class ItemModel {
 	baseAttack?: number;
 	maxSharpness?: SharpnessType;
 	baseAffinityPercent?: number;
+	ailment?: AilmentType;
+	ailmentBaseAttack: number;
 	element?: ElementType;
 	elementBaseAttack?: number;
 	elderseal?: EldersealType;

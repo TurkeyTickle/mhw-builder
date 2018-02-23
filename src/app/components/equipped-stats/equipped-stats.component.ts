@@ -15,14 +15,17 @@ export class EquippedStatsComponent implements OnInit {
 	attack: number;
 	weaponAttackModifier: number;
 	affinity: number;
+	element: string;
+	elementAttack: number;
+	ailment: string;
+	ailmentAttack: number;
 	defense: number;
 	fireResist: number;
 	waterResist: number;
 	thunderResist: number;
 	iceResist: number;
 	dragonResist: number;
-	elementalAttack: number;
-	element: string;
+
 	equippedSkills: EquippedSkillModel[];
 
 	constructor(
@@ -48,13 +51,16 @@ export class EquippedStatsComponent implements OnInit {
 		this.weaponAttackModifier = 0;
 		this.affinity = 0;
 		this.defense = 0;
+		this.element = null;
+		this.elementAttack = 0;
+		this.ailment = null;
+		this.ailmentAttack = 0;
 		this.fireResist = 0;
 		this.waterResist = 0;
 		this.thunderResist = 0;
 		this.iceResist = 0;
 		this.dragonResist = 0;
-		this.elementalAttack = 0;
-		this.element = 'None';
+		this.elementAttack = 0;
 
 		this.equippedSkills = new Array<EquippedSkillModel>();
 	}
@@ -97,7 +103,15 @@ export class EquippedStatsComponent implements OnInit {
 		}
 
 		if (item.elementBaseAttack) {
-			this.elementalAttack += item.elementBaseAttack;
+			this.elementAttack += item.elementBaseAttack;
+		}
+
+		if (item.ailment) {
+			this.ailment = item.ailment;
+		}
+
+		if (item.ailmentBaseAttack) {
+			this.ailmentAttack += item.ailmentBaseAttack;
 		}
 	}
 
@@ -132,12 +146,12 @@ export class EquippedStatsComponent implements OnInit {
 			const level = equippedSkill.skill.levels[equippedSkill.equippedCount - 1];
 
 			if (level) {
-				if (level.activeAttack) {
-					additionalAttack += level.activeAttack;
+				if (level.passiveAttack) {
+					additionalAttack += level.passiveAttack;
 				}
 
-				if (level.activeAffinity) {
-					additionalAffinity += level.activeAffinity;
+				if (level.passiveAffinity) {
+					additionalAffinity += level.passiveAffinity;
 				}
 			}
 		}
