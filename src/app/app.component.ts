@@ -56,8 +56,8 @@ export class AppComponent implements OnInit {
 			});
 
 			this.equippedItems.push(selectedItem);
-			this.equippedStatsComponent.update(this.equippedItems);
-			this.equippedSkillsComponent.update(this.equippedItems);
+			this.equippedStatsComponent.updateItems(this.equippedItems);
+			this.equippedSkillsComponent.updateItems(this.equippedItems);
 		}
 	}
 
@@ -70,16 +70,17 @@ export class AppComponent implements OnInit {
 			});
 
 			this.equippedDecorations.push(selectedDecoration);
+			this.equippedSkillsComponent.updateItems(this.equippedItems);
 		}
 	}
 
 	itemCleared(clearedItem: ItemModel) {
 		this.equippedItems = _.reject(this.equippedItems, (item: ItemModel) => {
-			return item === clearedItem;
+			return item == clearedItem;
 		});
 
-		this.equippedStatsComponent.update(this.equippedItems);
-		this.equippedSkillsComponent.update(this.equippedItems);
+		this.equippedStatsComponent.updateItems(this.equippedItems);
+		this.equippedSkillsComponent.updateItems(this.equippedItems);
 	}
 
 	decorationCleared(clearedDecoration: DecorationModel) {
@@ -87,8 +88,7 @@ export class AppComponent implements OnInit {
 			return decoration.id == clearedDecoration.id;
 		});
 
-		this.equippedStatsComponent.update(this.equippedItems);
-		this.equippedSkillsComponent.update(this.equippedItems);
+		this.equippedSkillsComponent.updateDecorations(this.equippedDecorations);
 	}
 
 	itemSlotSelected(equipmentSlot: ItemSlotComponent) {

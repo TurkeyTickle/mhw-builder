@@ -180,6 +180,30 @@
             ]
 		},
 		{
+			"name": "Diablos Nero Helm Beta",
+			"itemType": "Head",
+            "baseDefense": 56,
+            "fireResist": 2,
+            "waterResist": -3,
+            "thunderResist": 0,
+            "iceResist": -4,
+            "dragonResist": 2,
+            "skills": [
+                {
+                    "id": "focus",
+                    "level": 1
+                },
+                {
+                    "id": "diablosMastery"
+                }
+			],
+			"slots": [
+                {
+                    "level": 3
+                }
+            ]
+		},
+		{
 			"name": "Dober Mail Beta",
 			"itemType": "Chest",
             "baseDefense": 60,
@@ -273,6 +297,33 @@
             ]
 		},
 		{
+			"name": "Diablos Nero Braces Beta",
+			"itemType": "Hands",
+            "baseDefense": 56,
+            "fireResist": 2,
+            "waterResist": -3,
+            "thunderResist": 0,
+            "iceResist": -4,
+            "dragonResist": 2,
+            "skills": [
+                {
+                    "id": "focus",
+                    "level": 1
+				},
+				{
+                    "id": "diablosMastery"
+                }
+			],
+			"slots": [
+                {
+                    "level": 2
+				},
+				{
+                    "level": 1
+                }
+            ]
+		},
+		{
 			"name": "Odogaron Coil Beta",
 			"itemType": "Legs",
             "baseDefense": 54,
@@ -342,6 +393,30 @@
             ]
 		},
 		{
+			"name": "Diablos Nero Coil Beta",
+			"itemType": "Legs",
+            "baseDefense": 56,
+            "fireResist": 2,
+            "waterResist": -3,
+            "thunderResist": 0,
+            "iceResist": -4,
+            "dragonResist": 2,
+            "skills": [
+                {
+                    "id": "resentment",
+                    "level": 1
+				},
+				{
+                    "id": "diablosMastery"
+                }
+			],
+			"slots": [
+                {
+                    "level": 2
+				}
+            ]
+		},
+		{
 			"name": "Nergigante Greaves Alpha",
 			"itemType": "Feet",
             "baseDefense": 64,
@@ -363,6 +438,30 @@
 			"slots": [
                 {
                     "level": 1
+                }
+            ]
+		},
+		{
+			"name": "Diablos Nero Greaves Beta",
+			"itemType": "Feet",
+            "baseDefense": 56,
+            "fireResist": 2,
+            "waterResist": -3,
+            "thunderResist": 0,
+            "iceResist": -4,
+            "dragonResist": 2,
+            "skills": [
+                {
+                    "id": "normalShots",
+                    "level": 1
+				},
+				{
+					"id": "diablosMastery"
+				}
+			],
+			"slots": [
+                {
+                    "level": 2
                 }
             ]
 		},
@@ -598,6 +697,38 @@
 					"description": "While active, grants attack +25.",
 					"activeAttack": 25
                 }
+            ]
+		},
+		{
+            "id": "focus",
+            "name": "Focus",
+            "description": "Increases the fill rate for weapons with gauges and the charge rate for weapons with charge attacks.",
+            "levels": [
+                {
+					"description": "Increases gauge fill rate by 5% and reduces charge times by 5%.",
+					"passiveGaugeFillRatePercent": "5",
+					"passiveWeaponChargeReductionPercent": "5"
+				},
+				{
+					"description": "Increases gauge fill rate by 10% and reduces charge times by 10%.",
+					"passiveGaugeFillRatePercent": "10",
+					"passiveWeaponChargeReductionPercent": "10"
+				},
+				{
+					"description": "Increases gauge fill rate by 20% and reduces charge times by 20%.",
+					"passiveGaugeFillRatePercent": "20",
+					"passiveWeaponChargeReductionPercent": "20"
+				}
+            ]
+		},
+		{
+            "id": "normalShots",
+            "name": "Normal Shots",
+            "description": "Increases the attack power of normal ammo and normal arrows.",
+            "levels": [
+                {
+					"description": "Increases the power of normal ammo and normal arrows."
+				}
             ]
 		},
 		{

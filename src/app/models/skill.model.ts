@@ -7,12 +7,17 @@ export class SkillModel {
 	levels: SkillLevel[];
 }
 
-class SetSkillLevel {
+export class SetSkillLevel {
 	description: string;
 	level: number;
+	passiveAttack: number;
+	activeAttack: number;
+	passiveAffinity: number;
+	activeAffinity: number;
+	passiveCritBoostPercent: number;
 }
 
-class SkillLevel {
+export class SkillLevel {
 	description: string;
 	passiveAttack: number;
 	activeAttack: number;
