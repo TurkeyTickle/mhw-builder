@@ -63,7 +63,7 @@
 		<h2>Items</h2>
 
 		<mhw-builder-item-list [hidden]="!selectedEquipmentSlot" itemType="{{selectedEquipmentSlot?.slotName}}" (itemSelected)="selectItem($event)"></mhw-builder-item-list>
-		<mhw-builder-item-list [hidden]="!selectedDecorationSlot" itemType="Decoration" (decorationSelected)="selectDecoration($event)"></mhw-builder-item-list>
+		<mhw-builder-item-list [hidden]="!selectedDecorationSlot" itemType="Decoration" [decorationLevel]="selectedDecorationSlot?.level" (decorationSelected)="selectDecoration($event)"></mhw-builder-item-list>
 	</div>
 
 	<div class="stat-container">

@@ -337,5 +337,27 @@
 				"description": "Powers up non-elemental weapons you have equipped."
 			}
 		]
+	},
+	{
+		"id": "earplugs",
+		"name": "Earplugs",
+		"description": "Grants protection from large monsters' roars.",
+		"levels": [
+			{
+				"description": "Slightly reduces the effects of weak monster roars."
+			},
+			{
+				"description": "Reduces the effects of weak monster roars"
+			},
+			{
+				"description": "Nullifies weak monster roars."
+			},
+			{
+				"description": "Nullifies weak monster roars and reduces the effects of strong monster roars."
+			},
+			{
+				"description": "Nullifies weak and strong monster roars."
+			}
+		]
 	}
 ]

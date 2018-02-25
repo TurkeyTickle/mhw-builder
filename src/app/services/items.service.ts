@@ -31,8 +31,14 @@ export class ItemsService {
 		return _.filter(this.appData.getArmor(), armor => armor.itemType === type);
 	}
 
-	getDecorations(): DecorationModel[] {
-		return this.appData.getDecorations();
+	getDecorations(level?: number): DecorationModel[] {
+		let result = new Array<DecorationModel>();
+		if (level) {
+			result = this.appData.getDecorations().filter(d => d.level <= level);
+		} else {
+			result = this.appData.getDecorations();
+		}
+		return result;
 	}
 
 	getSetBonus(id: string): SetBonusModel {

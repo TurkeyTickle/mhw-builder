@@ -13,6 +13,7 @@ import { Guid } from '../../core/guid';
 })
 export class ItemListComponent implements OnInit {
 	private _itemType: ItemType;
+	private _decorationLevel: number;
 
 	@Input()
 	set itemType(itemType: ItemType) {
@@ -20,6 +21,13 @@ export class ItemListComponent implements OnInit {
 		this.loadItems();
 	}
 	get itemType(): ItemType { return this._itemType; }
+
+	@Input()
+	set decorationLevel(decorationLevel: number) {
+		this._decorationLevel = decorationLevel;
+		this.loadItems();
+	}
+	get decorationLevel(): number { return this._decorationLevel; }
 
 	@Output() itemSelected = new EventEmitter<ItemModel>();
 	@Output() decorationSelected = new EventEmitter<DecorationModel>();
@@ -37,7 +45,7 @@ export class ItemListComponent implements OnInit {
 
 	loadItems() {
 		if (this.itemType == ItemType.Decoration) {
-			this.decorations = this.itemsService.getDecorations();
+			this.decorations = this.itemsService.getDecorations(this.decorationLevel);
 		} else if (this.itemType == ItemType.Weapon) {
 			this.items = this.itemsService.getWeapons();
 		} else {

@@ -18,5 +18,15 @@
 				"level": 1
 			}
 		]
+	},
+	{
+		"name": "Earplugs Jewel 3",
+		"level": 3,
+		"skills": [
+			{
+				"id": "earplugs",
+				"level": 1
+			}
+		]
 	}
 ]
