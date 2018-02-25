@@ -5,6 +5,9 @@ import { DecorationSlotComponent } from '../decoration-slot/decoration-slot.comp
 import { TooltipService } from '../../services/tooltip.service';
 import { DecorationModel } from '../../models/decoration.model';
 
+import * as _ from 'lodash';
+import { ChangeModel } from '../../models/change.model';
+
 @Component({
 	selector: 'mhw-builder-item-slot',
 	templateUrl: './item-slot.component.html',
@@ -12,12 +15,14 @@ import { DecorationModel } from '../../models/decoration.model';
 })
 export class ItemSlotComponent implements OnInit {
 	@Input() slotName: ItemType;
+
 	@Output() equipmentSlotSelected = new EventEmitter<ItemSlotComponent>();
 	@Output() decorationSlotSelected = new EventEmitter<DecorationSlotComponent>();
-	@Output() itemCleared = new EventEmitter<ItemModel>();
+	@Output() itemCleared = new EventEmitter<ItemSlotClearModel>();
 	@Output() decorationCleared = new EventEmitter<DecorationModel>();
 
 	public item: ItemModel;
+	public decorations = new Array<DecorationModel>();
 
 	constructor(
 		private tooltipService: TooltipService
@@ -34,17 +39,35 @@ export class ItemSlotComponent implements OnInit {
 		this.decorationSlotSelected.emit(decorationSlot);
 	}
 
-	equipmentClearClicked(event: Event) {
-		event.preventDefault();
-		this.itemCleared.emit(this.item);
-		this.tooltipService.setItem(null);
-		this.item = null;
+	decorationSet(decorationChange: ChangeModel<DecorationModel>) {
+		if (decorationChange.old) {
+			this.decorations = _.reject(this.decorations, decoration => decoration === decorationChange.old);
+			this.tooltipService.setItem(null);
+			this.decorationCleared.emit(decorationChange.old);
+		}
+
+		if (decorationChange.new) {
+			this.decorations.push(decorationChange.new);
+		}
 	}
 
-	decorationClearClicked(decoration: DecorationModel) {
-		this.decorationCleared.emit(decoration);
+	equipmentClearClicked() {
+		const model: ItemSlotClearModel = {
+			item: this.item,
+			decorations: this.decorations
+		};
+
+		this.itemCleared.emit(model);
 		this.tooltipService.setItem(null);
+		this.item = null;
+		this.decorations = new Array<DecorationModel>();
 	}
+
+	// decorationClearClicked(decoration: DecorationClearModel) {
+	// 	this.decorationCleared.emit(decoration);
+	// 	this.tooltipService.setItem(null);
+	// 	this.decorations = _.reject(this.decorations, d => d === decoration);
+	// }
 
 	setTooltipItem() {
 		this.tooltipService.setItem(this.item);
@@ -53,4 +76,9 @@ export class ItemSlotComponent implements OnInit {
 	clearTooltipItem() {
 		this.tooltipService.setItem(null);
 	}
+}
+
+export class ItemSlotClearModel {
+	item: ItemModel;
+	decorations: DecorationModel[];
 }

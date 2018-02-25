@@ -3,7 +3,7 @@
 		<li *ngFor="let equippedSkill of equippedSkills" [style.color]="getSkillCountColor(equippedSkill)">{{equippedSkill.name}}: {{getSkillCount(equippedSkill)}}</li>
 	</ul>
 
-	<div *ngIf="equippedSetSkills">
+	<div *ngIf="equippedSetSkills?.length">
 		<h3>Set Skills</h3>
 		<ul>
 			<li *ngFor="let equippedSetSkill of equippedSetSkills" [style.color]="getSkillCountColor(equippedSetSkill)">{{equippedSetSkill.name}}: {{getSkillCount(equippedSetSkill)}}</li>

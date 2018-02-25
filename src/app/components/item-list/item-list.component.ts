@@ -4,6 +4,7 @@ import { ItemModel } from '../../models/item.model';
 import { ItemsService } from '../../services/items.service';
 import { DecorationModel } from '../../models/decoration.model';
 import { TooltipService } from '../../services/tooltip.service';
+import { Guid } from '../../core/guid';
 
 @Component({
 	selector: 'mhw-builder-item-list',
@@ -45,11 +46,15 @@ export class ItemListComponent implements OnInit {
 	}
 
 	selectItem(item: ItemModel) {
-		this.itemSelected.emit(item);
+		const newItem = Object.assign({}, item);
+		newItem.id = Guid.newGuid();
+		this.itemSelected.emit(newItem);
 	}
 
 	selectDecoration(decoration: DecorationModel) {
-		this.decorationSelected.emit(decoration);
+		const newDecoration = Object.assign({}, decoration);
+		newDecoration.id = Guid.newGuid();
+		this.decorationSelected.emit(newDecoration);
 	}
 
 	setTooltipItem(item: ItemModel | DecorationModel) {

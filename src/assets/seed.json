@@ -133,6 +133,7 @@
             "weaponType": "Hammer",
             "baseAttack": 884,
             "baseAffinityPercent": 0,
+            "maxSharpness": "Blue",
             "element": "Thunder",
             "elementBaseAttack": 390,
             "slots": [
@@ -141,6 +142,24 @@
                 }
             ],
             "baseDefense": 10
+		},
+		{
+            "name": "Fire and Ice",
+            "itemType": "Weapon",
+            "weaponType": "DualBlades",
+            "baseAttack": 252,
+            "baseAffinityPercent": 10,
+            "maxSharpness": "Blue",
+            "element": "Ice",
+			"elementBaseAttack": 240,
+			"ailment": "Blast",
+			"ailmentBaseAttack": 240,
+            "slots": [
+                {
+                    "level": 2
+                }
+            ],
+            "baseDefense": 0
         }
     ],
     "armor": [

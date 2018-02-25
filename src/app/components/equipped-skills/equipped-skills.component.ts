@@ -26,7 +26,7 @@ export class EquippedSkillsComponent implements OnInit {
 	getSkillCountColor(equippedSkill: EquippedSkillModel): string {
 		if (!equippedSkill.setEquippedCount) {
 			if (equippedSkill.equippedCount > equippedSkill.totalLevelCount) {
-				return 'red';
+				return '#ffff52';
 			} else if (equippedSkill.equippedCount == equippedSkill.totalLevelCount) {
 				return '#86ff86';
 			}

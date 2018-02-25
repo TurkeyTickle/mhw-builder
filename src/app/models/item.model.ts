@@ -1,4 +1,3 @@
-import { Guid } from '../core/guid';
 import { SharpnessType } from '../types/sharpness.type';
 import { ElementType } from '../types/element.type';
 import { EldersealType } from '../types/elderseal.type';
@@ -35,8 +34,4 @@ export class ItemModel {
 	iceResist: number;
 	dragonResist: number;
 	skills?: ItemSkillModel[];
-
-	constructor() {
-		this.id = Guid.newGuid();
-	}
 }

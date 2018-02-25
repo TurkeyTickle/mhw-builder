@@ -1,7 +1,7 @@
-import { Component, ViewChild, ElementRef, Renderer, OnInit } from '@angular/core';
+import { Component, ViewChild, ElementRef, OnInit, Renderer2 } from '@angular/core';
 import { ItemType } from './types/item.type';
 import { ItemModel } from './models/item.model';
-import { ItemSlotComponent } from './components/item-slot/item-slot.component';
+import { ItemSlotComponent, ItemSlotClearModel } from './components/item-slot/item-slot.component';
 import { EquippedStatsComponent } from './components/equipped-stats/equipped-stats.component';
 import { EquippedSkillsComponent } from './components/equipped-skills/equipped-skills.component';
 
@@ -33,15 +33,15 @@ export class AppComponent implements OnInit {
 
 	constructor(
 		private tooltipService: TooltipService,
-		private renderer: Renderer
+		private renderer: Renderer2
 	) { }
 
 	ngOnInit() {
 		this.tooltipService.subject.subscribe((thing: ItemModel | DecorationModel) => {
 			if (!thing) {
-				this.renderer.setElementStyle(this.itemStatsContainer.nativeElement, 'display', 'none');
+				this.renderer.setStyle(this.itemStatsContainer.nativeElement, 'display', 'none');
 			} else {
-				this.renderer.setElementStyle(this.itemStatsContainer.nativeElement, 'display', 'block');
+				this.renderer.setStyle(this.itemStatsContainer.nativeElement, 'display', 'block');
 				this.itemStatsComponent.setItem(thing);
 			}
 		});
@@ -66,18 +66,25 @@ export class AppComponent implements OnInit {
 			this.selectedDecorationSlot.decoration = selectedDecoration;
 
 			this.equippedDecorations = _.reject(this.equippedDecorations, (decoration: DecorationModel) => {
-				return decoration.id == selectedDecoration.id;
+				return decoration === selectedDecoration;
 			});
 
 			this.equippedDecorations.push(selectedDecoration);
-			this.equippedSkillsComponent.updateItems(this.equippedItems);
+			this.equippedSkillsComponent.updateDecorations(this.equippedDecorations);
 		}
 	}
 
-	itemCleared(clearedItem: ItemModel) {
+	itemCleared(clear: ItemSlotClearModel) {
 		this.equippedItems = _.reject(this.equippedItems, (item: ItemModel) => {
-			return item == clearedItem;
+			return item === clear.item;
 		});
+
+		if (clear.decorations) {
+			// TODO: this causes the equipped skills component to update more than it needs to - fix it.
+			for (const decoration of clear.decorations) {
+				this.decorationCleared(decoration);
+			}
+		}
 
 		this.equippedStatsComponent.updateItems(this.equippedItems);
 		this.equippedSkillsComponent.updateItems(this.equippedItems);
@@ -85,7 +92,7 @@ export class AppComponent implements OnInit {
 
 	decorationCleared(clearedDecoration: DecorationModel) {
 		this.equippedDecorations = _.reject(this.equippedDecorations, (decoration: DecorationModel) => {
-			return decoration.id == clearedDecoration.id;
+			return decoration === clearedDecoration;
 		});
 
 		this.equippedSkillsComponent.updateDecorations(this.equippedDecorations);
@@ -113,7 +120,7 @@ export class AppComponent implements OnInit {
 			newLeft = window.innerWidth - this.itemStatsContainer.nativeElement.scrollWidth;
 		}
 
-		this.renderer.setElementStyle(this.itemStatsContainer.nativeElement, 'left', newLeft + 'px');
-		this.renderer.setElementStyle(this.itemStatsContainer.nativeElement, 'top', newTop + 'px');
+		this.renderer.setStyle(this.itemStatsContainer.nativeElement, 'left', newLeft + 'px');
+		this.renderer.setStyle(this.itemStatsContainer.nativeElement, 'top', newTop + 'px');
 	}
 }

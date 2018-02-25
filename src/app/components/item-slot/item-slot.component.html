@@ -13,7 +13,15 @@
 			*ngFor="let slot of item?.slots"
 			[level]="slot.level"
 			(decorationSlotSelected)="decorationSlotClicked($event)"
-			(cleared)="decorationClearClicked($event)">
+			(decorationSet)="decorationSet($event)">
 		</mhw-builder-decoration-slot>
+<!-- 
+		<mhw-builder-decoration-slot 
+		*ngFor="let slot of item?.slots"
+		[level]="slot.level"
+		(decorationSlotSelected)="decorationSlotClicked($event)"
+		(decorationSet)="decorationSet($event)"
+		(cleared)="decorationClearClicked($event)">
+	</mhw-builder-decoration-slot> -->
 	</div>
 </div>
