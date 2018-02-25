@@ -388,5 +388,15 @@
 				"passiveDragonAttackPercent": 10
 			}
 		]
+	},
+	{
+		"id": "hastenRecovery",
+		"name": "Hasten Recovery",
+		"description": "Regenerates your health as you continually attack a monster. Recovery varies by weapon.",
+		"levels": [
+			{
+				"description": "Regenerates your health as you continually attack a monster. Recovery varies by weapon."
+			}
+		]
 	}
 ]

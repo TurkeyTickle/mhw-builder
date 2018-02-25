@@ -33,6 +33,9 @@
 			{
 				"id": "attackBoost",
 				"level": 2
+			},
+			{
+				"id": "nergiganteHunger"
 			}
 		],
 		"slots": [

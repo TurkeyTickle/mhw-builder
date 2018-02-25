@@ -40,6 +40,16 @@
 		]
 	},
 	{
+		"name": "Mighty Jewel 2",
+		"level": 2,
+		"skills": [
+			{
+				"id": "maximumMight",
+				"level": 1
+			}
+		]
+	},
+	{
 		"name": "Earplugs Jewel 3",
 		"level": 3,
 		"skills": [

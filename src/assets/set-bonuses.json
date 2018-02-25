@@ -20,6 +20,16 @@
 		]
 	},
 	{
+		"id":"nergiganteHunger",
+		"name": "Nergigante Hunger",
+		"setLevels": [
+			{
+				"id": "hastenRecovery",
+				"pieces": 3
+			}
+		]
+	},
+	{
 		"id": "diablosMastery",
 		"name": "Diablos Mastery",
 		"setLevels": [
