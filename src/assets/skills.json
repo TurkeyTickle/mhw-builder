@@ -45,15 +45,15 @@
 		"levels": [
 			{
 				"description": "Increases damage dealt by critical hits by 30%.",
-				"passiveCritBoostPercent": 30
+				"passiveCriticalBoostPercent": 30
 			},
 			{
 				"description": "Increases damage dealt by critical hits by 35%.",
-				"passiveCritBoostPercent": 35
+				"passiveCriticalBoostPercent": 35
 			},
 			{
 				"description": "Increases damage dealt by critical hits by 40%.",
-				"passiveCritBoostPercent": 40
+				"passiveCriticalBoostPercent": 40
 			}
 		]
 	},
