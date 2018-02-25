@@ -359,5 +359,34 @@
 				"description": "Nullifies weak and strong monster roars."
 			}
 		]
+	},
+	{
+		"id": "dragonAttack",
+		"name": "Dragon Attack",
+		"description": "Increases dragon element attack power. (Elemental attack power has a maximum limit.)",
+		"levels": [
+			{
+				"description": "Dragon attack +30",
+				"passiveDragonAttack": 30
+			},
+			{
+				"description": "Dragon attack +60",
+				"passiveDragonAttack": 60
+			},
+			{
+				"description": "Dragon attack +100",
+				"passiveDragonAttack": 100
+			},
+			{
+				"description": "Dragon attack +5%. Bonus: +100",
+				"passiveDragonAttack": 100,
+				"passiveDragonAttackPercent": 5
+			},
+			{
+				"description": "Dragon attack +10%. Bonus: +100",
+				"passiveDragonAttack": 100,
+				"passiveDragonAttackPercent": 10
+			}
+		]
 	}
 ]

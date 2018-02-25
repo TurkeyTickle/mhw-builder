@@ -28,10 +28,14 @@ export class EquippedSkillsComponent implements OnInit {
 		return 'white';
 	}
 
-	getSkillCount(skill: EquippedSkillModel): string {
-		let result: string;
-		result = `${skill.equippedCount}/${skill.totalLevelCount}`;
-		return result;
+	getSetBonusColor(setBonus: EquippedSetBonusModel): string {
+		if (setBonus.equippedCount > setBonus.requiredCount) {
+			return '#ffff52';
+		} else if (setBonus.equippedCount == setBonus.requiredCount) {
+			return '#86ff86';
+		}
+
+		return 'white';
 	}
 
 	update() {

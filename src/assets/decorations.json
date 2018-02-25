@@ -10,6 +10,16 @@
 		]
 	},
 	{
+		"name": "Dragon Jewel 1",
+		"level": 1,
+		"skills": [
+			{
+				"id": "dragonAttack",
+				"level": 1
+			}
+		]
+	},
+	{
 		"name": "Critical Jewel 2",
 		"level": 2,
 		"skills": [
