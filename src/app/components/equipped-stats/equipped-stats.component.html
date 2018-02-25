@@ -1,8 +1,7 @@
 <div class="container">
 	<ul>
-		<li>Attack: {{attack}}</li>
-		<li>Weapon Attack Modifier: {{weaponAttackModifier}}</li>
-		<li>Affinity: {{affinity}}%</li>
+		<li>Attack: {{totalAttack}} ({{attack}} + {{passiveAttack}} * {{weaponAttackModifier}})</li>
+		<li>Affinity: {{affinity + passiveAffinity}}%</li>
 		<li>Defense: {{defense}}</li>
 
 		<div *ngIf="ailment">
@@ -13,6 +12,10 @@
 		<div *ngIf="element">
 			<li>Element: {{element}}</li>
 			<li>Elemental Attack: {{elementAttack}}</li>
+		</div>
+
+		<div *ngIf="elderseal">
+			<li>Elderseal: {{elderseal}}</li>
 		</div>
 
 		<li>Fire Resist: {{fireResist}}</li>

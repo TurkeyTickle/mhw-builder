@@ -13,13 +13,17 @@ import { SkillService } from '../../services/skill.service';
 })
 
 export class EquippedStatsComponent implements OnInit {
+	totalAttack: number;
 	attack: number;
+	passiveAttack: number;
 	weaponAttackModifier: number;
 	affinity: number;
+	passiveAffinity: number;
 	element: string;
 	elementAttack: number;
 	ailment: string;
 	ailmentAttack: number;
+	elderseal: string;
 	defense: number;
 	fireResist: number;
 	waterResist: number;
@@ -47,14 +51,18 @@ export class EquippedStatsComponent implements OnInit {
 	}
 
 	private reset() {
+		this.totalAttack = 0;
 		this.attack = 0;
+		this.passiveAttack = 0;
 		this.weaponAttackModifier = 0;
 		this.affinity = 0;
+		this.passiveAffinity = 0;
 		this.defense = 0;
 		this.element = null;
 		this.elementAttack = 0;
 		this.ailment = null;
 		this.ailmentAttack = 0;
+		this.elderseal = null;
 		this.fireResist = 0;
 		this.waterResist = 0;
 		this.thunderResist = 0;
@@ -111,12 +119,13 @@ export class EquippedStatsComponent implements OnInit {
 		if (item.ailmentBaseAttack) {
 			this.ailmentAttack += item.ailmentBaseAttack;
 		}
+
+		if (item.elderseal) {
+			this.elderseal = item.elderseal;
+		}
 	}
 
 	private updateSkills(items: ItemModel[], equippedSkills: EquippedSkillModel[]) {
-		let additionalAttack = 0;
-		let additionalAffinity = 0;
-
 		for (const equippedSkill of equippedSkills) {
 			let level: SkillLevel;
 
@@ -128,11 +137,11 @@ export class EquippedStatsComponent implements OnInit {
 
 			if (level) {
 				if (level.passiveAttack) {
-					additionalAttack += level.passiveAttack;
+					this.passiveAttack += level.passiveAttack;
 				}
 
 				if (level.passiveAffinity) {
-					additionalAffinity += level.passiveAffinity;
+					this.passiveAffinity += level.passiveAffinity;
 				}
 			}
 		}
@@ -142,11 +151,9 @@ export class EquippedStatsComponent implements OnInit {
 			const weaponModifier = this.itemsService.getWeaponModifier(weapon.weaponType);
 			if (weaponModifier) {
 				this.weaponAttackModifier = weaponModifier.attackModifier;
-				additionalAttack = Math.round(additionalAttack * weaponModifier.attackModifier);
 			}
 		}
 
-		this.attack += additionalAttack;
-		this.affinity += additionalAffinity;
+		this.totalAttack = this.attack + Math.round(this.passiveAttack * this.weaponAttackModifier);
 	}
 }
