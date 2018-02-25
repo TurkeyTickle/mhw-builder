@@ -390,6 +390,28 @@
 		]
 	},
 	{
+		"id": "poisonAttack",
+		"name": "Poison Attack",
+		"description": "Increases the rate of poison buildup. (Elemental buildup has a maximum limit.)",
+		"levels": [
+			{
+				"description": "Poison buildup +5%",
+				"passivePoisonAttack": 10,
+				"passivePoisonBuildupPercent": 5
+			},
+			{
+				"description": "Poison buildup +10%",
+				"passivePoisonAttack": 10,
+				"passivePoisonBuildupPercent": 10
+			},			
+			{
+				"description": "Poison buildup +20%",
+				"passivePoisonAttack": 10,
+				"passivePoisonBuildupPercent": 20
+			}
+		]
+	},
+	{
 		"id": "hastenRecovery",
 		"name": "Hasten Recovery",
 		"description": "Regenerates your health as you continually attack a monster. Recovery varies by weapon.",

@@ -6,12 +6,13 @@
 
 		<div *ngIf="ailment">
 			<li>Ailment: {{ailment}}</li>
-			<li>Ailment Attack: {{ailmentAttack}}</li>
+			<li>Ailment Attack: {{ailmentAttack + effectivePassiveAilmentAttack}}</li>
+			<li>Ailment Buildup Rate: {{100 + effectivePassiveAilmentBuildupPercent}}%</li>
 		</div>
 		
 		<div *ngIf="element">
 			<li>Element: {{element}}</li>
-			<li>Elemental Attack: {{elementAttack}}</li>
+			<li>Elemental Attack: {{elementAttack + effectivePassiveElementAttack}}</li>
 		</div>
 
 		<div *ngIf="elderseal">

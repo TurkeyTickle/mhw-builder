@@ -20,6 +20,16 @@
 		]
 	},
 	{
+		"name": "Venom Jewel 1",
+		"level": 1,
+		"skills": [
+			{
+				"id": "poisonAttack",
+				"level": 1
+			}
+		]
+	},
+	{
 		"name": "Expert Jewel 1",
 		"level": 1,
 		"skills": [
