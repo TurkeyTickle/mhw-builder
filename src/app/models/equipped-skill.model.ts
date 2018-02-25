@@ -6,6 +6,5 @@ export class EquippedSkillModel {
 	name: string;
 	description: string;
 	equippedCount: number;
-	setEquippedCount: number;
 	totalLevelCount: number;
 }

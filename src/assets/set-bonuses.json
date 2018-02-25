@@ -1,0 +1,36 @@
+[
+	{
+		"id":"xenojivaDivinity",
+		"name": "Xeno'jiva Divinity",
+		"setLevels": [
+			{
+				"id": "razorSharpSpareShot",
+				"pieces": 3
+			}
+		]
+	},
+	{
+		"id":"kirinFavor",
+		"name": "Kirin Favor",
+		"setLevels": [
+			{
+				"id": "captureMaster",
+				"pieces": 3
+			}
+		]
+	},
+	{
+		"id": "diablosMastery",
+		"name": "Diablos Mastery",
+		"setLevels": [
+			{
+				"id": "bludgeoner",
+				"pieces": 2
+			},
+			{
+				"id": "nonElementalBoost",
+				"pieces": 4
+			}
+		]
+	}
+]

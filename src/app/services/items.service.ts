@@ -9,6 +9,7 @@ import { WeaponType } from '../types/weapon.type';
 import { WeaponModifierModel } from '../models/weapon-modifier.model';
 import { DecorationModel } from '../models/decoration.model';
 import { ItemSkillModel } from '../models/item-skill.model';
+import { SetBonusModel } from '../models/set-bonus.model';
 
 @Injectable()
 export class ItemsService {
@@ -32,6 +33,10 @@ export class ItemsService {
 
 	getDecorations(): DecorationModel[] {
 		return this.appData.getDecorations();
+	}
+
+	getSetBonus(id: string): SetBonusModel {
+		return _.find(this.appData.getSetBonuses(), setBonus => setBonus.id === id);
 	}
 
 	getSkill(id: string): SkillModel {

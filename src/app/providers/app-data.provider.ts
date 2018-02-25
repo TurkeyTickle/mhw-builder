@@ -7,6 +7,7 @@ import { WeaponModifierModel } from '../models/weapon-modifier.model';
 import { DecorationModel } from '../models/decoration.model';
 import * as  _ from 'lodash';
 import { EquipmentCategoryType } from '../types/equipment-category.type';
+import { SetBonusModel } from '../models/set-bonus.model';
 
 @Injectable()
 export class AppDataProvider {
@@ -14,6 +15,10 @@ export class AppDataProvider {
 
 	constructor(private http: HttpClient) {
 		this.seedData = new SeedModel();
+	}
+
+	getWeaponModifiers(): WeaponModifierModel[] {
+		return this.seedData.weaponModifiers;
 	}
 
 	getWeapons(): ItemModel[] {
@@ -24,12 +29,12 @@ export class AppDataProvider {
 		return this.seedData.armor;
 	}
 
-	getSkills(): SkillModel[] {
-		return this.seedData.skills;
+	getSetBonuses(): SetBonusModel[] {
+		return this.seedData.setBonuses;
 	}
 
-	getWeaponModifiers(): WeaponModifierModel[] {
-		return this.seedData.weaponModifiers;
+	getSkills(): SkillModel[] {
+		return this.seedData.skills;
 	}
 
 	getDecorations(): DecorationModel[] {
@@ -60,6 +65,7 @@ export class AppDataProvider {
 			this.loadFeet(),
 			this.loadCharms(),
 			this.loadDecorations(),
+			this.loadSetBonuses(),
 			this.loadSkills()
 		];
 
@@ -315,6 +321,15 @@ export class AppDataProvider {
 		return new Promise(resolve => {
 			this.http.get<DecorationModel[]>('../assets/decorations.json').subscribe(items => {
 				this.seedData.decorations = this.seedData.decorations.concat(items);
+				resolve(true);
+			});
+		});
+	}
+
+	loadSetBonuses(): Promise<boolean> {
+		return new Promise(resolve => {
+			this.http.get<SetBonusModel[]>('../assets/set-bonuses.json').subscribe(items => {
+				this.seedData.setBonuses = this.seedData.setBonuses.concat(items);
 				resolve(true);
 			});
 		});

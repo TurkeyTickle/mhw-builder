@@ -12,6 +12,7 @@ import { EquippedSkillsComponent } from './components/equipped-skills/equipped-s
 import { DecorationSlotComponent } from './components/decoration-slot/decoration-slot.component';
 import { ItemStatsComponent } from './components/item-stats/item-stats.component';
 import { TooltipService } from './services/tooltip.service';
+import { SkillService } from './services/skill.service';
 
 @NgModule({
 	declarations: [
@@ -29,6 +30,7 @@ import { TooltipService } from './services/tooltip.service';
 	],
 	providers: [
 		ItemsService,
+		SkillService,
 		TooltipService,
 		AppDataProvider,
 		{ provide: APP_INITIALIZER, useFactory: appDataProviderFactory, deps: [AppDataProvider], multi: true}

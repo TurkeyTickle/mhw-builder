@@ -10,6 +10,7 @@ import { DecorationSlotComponent } from './components/decoration-slot/decoration
 import { DecorationModel } from './models/decoration.model';
 import { TooltipService } from './services/tooltip.service';
 import { ItemStatsComponent } from './components/item-stats/item-stats.component';
+import { SkillService } from './services/skill.service';
 
 @Component({
 	selector: 'mhw-builder-root',
@@ -33,6 +34,7 @@ export class AppComponent implements OnInit {
 
 	constructor(
 		private tooltipService: TooltipService,
+		private skillService: SkillService,
 		private renderer: Renderer2
 	) { }
 
@@ -56,8 +58,7 @@ export class AppComponent implements OnInit {
 			});
 
 			this.equippedItems.push(selectedItem);
-			this.equippedStatsComponent.updateItems(this.equippedItems);
-			this.equippedSkillsComponent.updateItems(this.equippedItems);
+			this.updateStatsAndSkills();
 		}
 	}
 
@@ -70,7 +71,7 @@ export class AppComponent implements OnInit {
 			});
 
 			this.equippedDecorations.push(selectedDecoration);
-			this.equippedSkillsComponent.updateDecorations(this.equippedDecorations);
+			this.updateStatsAndSkills();
 		}
 	}
 
@@ -86,8 +87,7 @@ export class AppComponent implements OnInit {
 			}
 		}
 
-		this.equippedStatsComponent.updateItems(this.equippedItems);
-		this.equippedSkillsComponent.updateItems(this.equippedItems);
+		this.updateStatsAndSkills();
 	}
 
 	decorationCleared(clearedDecoration: DecorationModel) {
@@ -95,7 +95,13 @@ export class AppComponent implements OnInit {
 			return decoration === clearedDecoration;
 		});
 
-		this.equippedSkillsComponent.updateDecorations(this.equippedDecorations);
+		this.updateStatsAndSkills();
+	}
+
+	private updateStatsAndSkills() {
+		this.skillService.updateSkills(this.equippedItems, this.equippedDecorations);
+		this.equippedStatsComponent.update(this.equippedItems);
+		this.equippedSkillsComponent.update();
 	}
 
 	itemSlotSelected(equipmentSlot: ItemSlotComponent) {

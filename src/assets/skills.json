@@ -254,25 +254,86 @@
 		]
 	},
 	{
-		"id":"xenojivaDivinity",
-		"name": "Xeno'jiva Divinity",
-		"setLevels": [
+		"id": "specialAmmoBoost",
+		"name": "Special Ammo Boost",
+		"description": "Increases the power of bowgun special ammo and Dragon Piercer.",
+		"levels": [
 			{
-				"level": 3,
+				"description": "Increases the power of bowgun special ammo and Dragon Piercer by 10%."
+			},
+			{
+				"description": "Increases the power of bowgun special ammo and Dragon Piercer by 20%."
+			}
+		]
+	},
+	{
+		"id": "marathonRunner",
+		"name": "Marathon Runner",
+		"description": "Slows down stamina depletion for actions which continuously drain stamina (such as dashing).",
+		"levels": [
+			{
+				"description": "Reduces continuous stamina depletion by 15%."
+			},
+			{
+				"description": "Reduces continuous stamina depletion by 30%."
+			},
+			{
+				"description": "Reduces continuous stamina depletion by 50%."
+			}
+		]
+	},
+	{
+		"id": "divineBlessing",
+		"name": "Divine Blessing",
+		"description": "Has a predetermined chance of reducing the damage you take.",
+		"levels": [
+			{
+				"description": "While active, reduces damage taken by 15%."
+			},
+			{
+				"description": "While active, reduces damage taken by 15%."
+			},
+			{
+				"description": "While active, reduces damage taken by 15%."
+			}
+		]
+	},
+	{
+		"id": "razorSharpSpareShot",
+		"name": "Razor Sharp/Spare Shot",
+		"description": "Halves sharpness loss. For bows and bowguns, shots have a chance not to expend coatings or ammo.",
+		"levels": [
+			{
 				"description": "Halves sharpness loss. For bows and bowguns, shots have a chance not to expend coatings or ammo."
 			}
 		]
 	},
 	{
-		"id": "diablosMastery",
-		"name": "Diablos Mastery",
-		"setLevels": [
+		"id": "captureMaster",
+		"name": "Capture Master",
+		"description": "High chance of increased capture rewards. (No effect when joining mid-quest.)",
+		"levels": [
 			{
-				"level": 2,
-				"description": "Raises attack as your weapon loses sharpness. Also boosts ranged weapon melee attack and odds of stunning."
-			},
+				"description": "High chance of increased capture rewards. (No effect when joining mid-quest.)"
+			}
+		]
+	},
+	{
+		"id": "bludgeoner",
+		"name": "Bludgeoner",
+		"description": "Raises attack as your weapon loses sharpness. Also boost ranged weapon melee attacks and odds of stunning.",
+		"levels": [
 			{
-				"level": 4,
+				"description": "Raises attack as your weapon loses sharpness. Also boost ranged weapon melee attacks and odds of stunning."
+			}
+		]
+	},
+	{
+		"id": "nonElementalBoost",
+		"name": "Non-elemental Boost",
+		"description": "Powers up non-elemental weapons you have equipped.",
+		"levels": [
+			{
 				"description": "Powers up non-elemental weapons you have equipped."
 			}
 		]

@@ -2,9 +2,9 @@ import { Component, OnInit } from '@angular/core';
 import { ItemModel } from '../../models/item.model';
 import { ItemsService } from '../../services/items.service';
 import { EquippedSkillModel } from '../../models/equipped-skill.model';
-
+import { SkillLevel } from '../../models/skill-level.model';
 import * as _ from 'lodash';
-import { SkillLevel, SetSkillLevel } from '../../models/skill.model';
+import { SkillService } from '../../services/skill.service';
 
 @Component({
 	selector: 'mhw-builder-equipped-stats',
@@ -27,24 +27,23 @@ export class EquippedStatsComponent implements OnInit {
 	iceResist: number;
 	dragonResist: number;
 
-	equippedSkills: EquippedSkillModel[];
-
 	constructor(
-		private itemsService: ItemsService
+		private itemsService: ItemsService,
+		private skillService: SkillService
 	) { }
 
 	ngOnInit() {
 		this.reset();
 	}
 
-	updateItems(items: ItemModel[]) {
+	update(items: ItemModel[]) {
 		this.reset();
 
 		for (const item of items) {
 			this.updateStats(item);
 		}
 
-		this.updateSkills(items);
+		this.updateSkills(items, this.skillService.skills);
 	}
 
 	private reset() {
@@ -62,8 +61,6 @@ export class EquippedStatsComponent implements OnInit {
 		this.iceResist = 0;
 		this.dragonResist = 0;
 		this.elementAttack = 0;
-
-		this.equippedSkills = new Array<EquippedSkillModel>();
 	}
 
 	private updateStats(item: ItemModel) {
@@ -116,45 +113,17 @@ export class EquippedStatsComponent implements OnInit {
 		}
 	}
 
-	private updateSkills(items: ItemModel[]) {
-		for (const item of items) {
-			if (!item.skills) {
-				continue;
-			}
-
-			for (const itemSkill of item.skills) {
-				const skill = this.itemsService.getSkill(itemSkill.id);
-
-				let equippedSkill: EquippedSkillModel = _.find(this.equippedSkills, (es: EquippedSkillModel) => {
-					return es.id == itemSkill.id;
-				});
-
-				if (!equippedSkill) {
-					equippedSkill = new EquippedSkillModel();
-					equippedSkill.skill = skill;
-					equippedSkill.id = skill.id;
-					equippedSkill.name = skill.name;
-					equippedSkill.description = skill.description;
-					equippedSkill.equippedCount = itemSkill.level;
-					equippedSkill.setEquippedCount += 1;
-					this.equippedSkills.push(equippedSkill);
-				} else {
-					equippedSkill.equippedCount += itemSkill.level;
-					equippedSkill.setEquippedCount += 1;
-				}
-			}
-		}
-
+	private updateSkills(items: ItemModel[], equippedSkills: EquippedSkillModel[]) {
 		let additionalAttack = 0;
 		let additionalAffinity = 0;
 
-		for (const equippedSkill of this.equippedSkills) {
-			let level: SkillLevel | SetSkillLevel;
+		for (const equippedSkill of equippedSkills) {
+			let level: SkillLevel;
 
 			if (equippedSkill.equippedCount) {
-				level = equippedSkill.skill.levels[equippedSkill.equippedCount - 1];
-			} else if (equippedSkill.setEquippedCount) {
-				level = _.find(equippedSkill.skill.setLevels, setLevel => setLevel.level == equippedSkill.setEquippedCount);
+				const levelIndex = equippedSkill.equippedCount <= equippedSkill.skill.levels.length
+					? equippedSkill.equippedCount - 1 : equippedSkill.skill.levels.length - 1;
+				level = equippedSkill.skill.levels[levelIndex];
 			}
 
 			if (level) {

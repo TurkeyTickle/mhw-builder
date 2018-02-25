@@ -37,6 +37,86 @@
 			{
 				"id": "xenojivaDivinity"
 			}
+		],
+		"slots": [
+			{
+				"level": 2
+			}
+		]
+	},
+	{
+		"name": "Xeno'jiva Headgear Alpha",
+		"itemType": "Head",
+		"baseDefense": 72,
+		"fireResist": -3,
+		"waterResist": 2,
+		"thunderResist": 2,
+		"iceResist": 2,
+		"dragonResist": -4,
+		"skills": [
+			{
+				"id": "flinchFree",
+				"level": 1
+			},
+			{
+				"id": "specialAmmoBoost",
+				"level": 1
+			},
+			{
+				"id": "xenojivaDivinity"
+			}
+		],
+		"slots": [
+			{
+				"level": 1
+			}
+		]
+	},
+	{
+		"name": "Kirin Horn Beta",
+		"itemType": "Head",
+		"baseDefense": 64,
+		"fireResist": -3,
+		"waterResist": -2,
+		"thunderResist": 4,
+		"iceResist": -2,
+		"dragonResist": 2,
+		"skills": [
+			{
+				"id": "marathonRunner",
+				"level": 2
+			},
+			{
+				"id": "xenojivaDivinity"
+			}
+		],
+		"slots": [
+			{
+				"level": 1
+			}
+		]
+	},
+	{
+		"name": "Kirin Horn Alpha",
+		"itemType": "Head",
+		"baseDefense": 64,
+		"fireResist": -3,
+		"waterResist": -2,
+		"thunderResist": 4,
+		"iceResist": -2,
+		"dragonResist": 2,
+		"skills": [
+			{
+				"id": "marathonRunner",
+				"level": 2
+			},
+			{
+				"id": "divineBlessing",
+				"level": 1
+			},
+			{
+				"id": "xenojivaDivinity"
+			}
 		]
 	},
 	{
