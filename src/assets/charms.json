@@ -1,0 +1,12 @@
+[
+	{
+		"name": "Attack Charm III",
+		"itemType": "Charm",
+		"skills": [
+			{
+				"id": "attackBoost",
+				"level": 3
+			}
+		]
+	}
+]

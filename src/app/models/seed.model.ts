@@ -9,4 +9,12 @@ export class SeedModel {
 	armor: ItemModel[];
 	skills: SkillModel[];
 	decorations: DecorationModel[];
+
+	constructor() {
+		this.weaponModifiers = new Array<WeaponModifierModel>();
+		this.weapons = new Array<ItemModel>();
+		this.armor = new Array<ItemModel>();
+		this.skills = new Array<SkillModel>();
+		this.decorations = new Array<DecorationModel>();
+	}
 }

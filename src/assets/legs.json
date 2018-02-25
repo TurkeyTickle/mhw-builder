@@ -1,0 +1,95 @@
+[
+	{
+		"name": "Odogaron Coil Beta",
+		"itemType": "Legs",
+		"baseDefense": 54,
+		"fireResist": 2,
+		"waterResist": 2,
+		"thunderResist": -2,
+		"iceResist": -3,
+		"dragonResist": 0,
+		"skills": [
+			{
+				"id": "criticalEye",
+				"level": 2
+			}
+		],
+		"slots": [
+			{
+				"level": 2
+			}
+		]
+	},
+	{
+		"name": "Nergigante Coil Beta",
+		"itemType": "Legs",
+		"baseDefense": 64,
+		"fireResist": 1,
+		"waterResist": 1,
+		"thunderResist": -3,
+		"iceResist": 1,
+		"dragonResist": -3,
+		"skills": [
+			{
+				"id": "attackBoost",
+				"level": 2
+			}
+		],
+		"slots": [
+			{
+				"level": 2
+			}
+		]
+	},
+	{
+		"name": "Kirin Hoop Beta",
+		"itemType": "Legs",
+		"baseDefense": 64,
+		"fireResist": -3,
+		"waterResist": -2,
+		"thunderResist": 4,
+		"iceResist": -2,
+		"dragonResist": 2,
+		"skills": [
+			{
+				"id": "blightResistance",
+				"level": 1
+			}
+		],
+		"slots": [
+			{
+				"level": 1
+			},
+			{
+				"level": 1
+			},
+			{
+				"level": 1
+			}
+		]
+	},
+	{
+		"name": "Diablos Nero Coil Beta",
+		"itemType": "Legs",
+		"baseDefense": 56,
+		"fireResist": 2,
+		"waterResist": -3,
+		"thunderResist": 0,
+		"iceResist": -4,
+		"dragonResist": 2,
+		"skills": [
+			{
+				"id": "resentment",
+				"level": 1
+			},
+			{
+				"id": "diablosMastery"
+			}
+		],
+		"slots": [
+			{
+				"level": 2
+			}
+		]
+	}
+]

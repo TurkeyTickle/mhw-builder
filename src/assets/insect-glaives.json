@@ -1,0 +1,38 @@
+[
+	{
+		"name": "Catastrophe's Light",
+		"itemType": "Weapon",
+		"weaponType": "InsectGlaive",
+		"baseAttack": 651,
+		"maxSharpness": "Blue",
+		"baseAffinityPercent": 0,
+		"element": "Dragon",
+		"elementBaseAttack": 150,
+		"elderseal": "High",
+		"slots": [
+			{
+				"level": 1
+			}
+		],
+		"baseDefense": 0
+	},
+	{
+		"name": "Gama Cane II",
+		"itemType": "Weapon",
+		"weaponType": "InsectGlaive",
+		"baseAttack": 527,
+		"maxSharpness": "Blue",
+		"baseAffinityPercent": 0,
+		"ailment": "Blast",
+		"ailmentBaseAttack": 120,
+		"slots": [
+			{
+				"level": 2
+			},
+			{
+				"level": 2
+			}
+		],
+		"baseDefense": 0
+	}
+]

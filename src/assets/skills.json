@@ -1,0 +1,280 @@
+[
+	{
+		"id": "attackBoost",
+		"name": "Attack Boost",
+		"description": "Increases attack power. Also improves affinity at higher levels.",
+		"levels": [
+			{
+				"description": "Attack +3",
+				"passiveAttack": 3
+			},
+			{
+				"description": "Attack +6",
+				"passiveAttack": 6
+			},
+			{
+				"description": "Attack +9",
+				"passiveAttack": 9
+			},
+			{
+				"description": "Attack +12, Affinity +5%",
+				"passiveAttack": 12,
+				"passiveAffinity": 5
+			},
+			{
+				"description": "Attack +15, Affinity +5%",
+				"passiveAttack": 15,
+				"passiveAffinity": 5
+			},
+			{
+				"description": "Attack +18, Affinity +5%",
+				"passiveAttack": 18,
+				"passiveAffinity": 5
+			},
+			{
+				"description": "Attack +21, Affinity +5%",
+				"passiveAttack": 21,
+				"passiveAffinity": 5
+			}
+		]
+	},
+	{
+		"id": "criticalBoost",
+		"name": "Critical Boost",
+		"description": "Increases the damage of critical hits.",
+		"levels": [
+			{
+				"description": "Increases damage dealt by critical hits by 30%.",
+				"passiveCritBoostPercent": 30
+			},
+			{
+				"description": "Increases damage dealt by critical hits by 35%.",
+				"passiveCritBoostPercent": 35
+			},
+			{
+				"description": "Increases damage dealt by critical hits by 40%.",
+				"passiveCritBoostPercent": 40
+			}
+		]
+	},
+	{
+		"id": "criticalEye",
+		"name": "Critical Eye",
+		"description": "Increases affinity.",
+		"levels": [
+			{
+				"description": "Affinity +3%",
+				"passiveAffinity": 3
+			},
+			{
+				"description": "Affinity +6%",
+				"passiveAffinity": 6
+			},
+			{
+				"description": "Affinity +10%",
+				"passiveAffinity": 10
+			},
+			{
+				"description": "Affinity +15%",
+				"passiveAffinity": 15
+			},
+			{
+				"description": "Affinity +20%",
+				"passiveAffinity": 20
+			},
+			{
+				"description": "Affinity +25%",
+				"passiveAffinity": 25
+			},
+			{
+				"description": "Affinity +30%",
+				"passiveAffinity": 30
+			}
+		]
+	},
+	{
+		"id": "weaknessExploit",
+		"name": "Weakness Exploit",
+		"description": "Increases the affinity of attacks that exploit a monster weak spot.",
+		"levels": [
+			{
+				"description": "Attacks that hit weak spots have 15% increased affinity."
+			},
+			{
+				"description": "Attacks that hit weak spots have 30% increased affinity."
+			},
+			{
+				"description": "Attacks that hit weak spots have 50% increased affinity."
+			}
+		]
+	},
+	{
+		"id": "flinchFree",
+		"name": "Flinch Free",
+		"description": "Prevents knockbacks and other reactions to small damage.",
+		"levels": [
+			{
+				"description": "Prevents knockbacks."
+			},
+			{
+				"description": "Prevents standard knockbacks. Tripping is reduced to a knockback instead."
+			},
+			{
+				"description": "Prevents knockbacks and tripping."
+			}
+		]
+	},
+	{
+		"id": "maximumMight",
+		"name": "Maximum Might",
+		"description": "Increases affinity when stamina is full.",
+		"levels": [
+			{
+				"description": "While active, increases affinity by 10%."
+			},
+			{
+				"description": "While active, increases affinity by 20%."
+			},
+			{
+				"description": "While active, increases affinity by 30%."
+			}
+		]
+	},
+	{
+		"id": "agitator",
+		"name": "Agitator",
+		"description": "Increases attack power and affinity when large monsters become enraged.",
+		"levels": [
+			{
+				"description": "While active, grants attack +4 and increases affinity by 3%"
+			},
+			{
+				"description": "While active, grants attack +8 and increases affinity by 6%"
+			},
+			{
+				"description": "While active, grants attack +12 and increases affinity by 9%"
+			},
+			{
+				"description": "While active, grants attack +16 and increases affinity by 12%"
+			},
+			{
+				"description": "While active, grants attack +20 and increases affinity by 15%"
+			}
+		]
+	},
+	{
+		"id": "staminaSurge",
+		"name": "Stamina Surge",
+		"description": "Speeds up stamina recovery.",
+		"levels": [
+			{
+				"description": "Stamina recovery speed +10%"
+			},
+			{
+				"description": "Stamina recovery speed +20%"
+			},
+			{
+				"description": "Stamina recovery speed +30%"
+			}
+		]
+	},
+	{
+		"id": "blightResistance",
+		"name": "Blight Resistance",
+		"description": "Grants protection against all elemental blights.",
+		"levels": [
+			{
+				"description": "Reduces the duration of all elemental blights by 30%."
+			},
+			{
+				"description": "Reduces the duration of all elemental blights by 60%."
+			},
+			{
+				"description": "Nullifies all elemental blights."
+			}
+		]
+	},
+	{
+		"id": "resentment",
+		"name": "Resentment",
+		"description": "Increases attack when you have recoverable damage (the red portion of your health gauge).",
+		"levels": [
+			{
+				"description": "While active, grants attack +5.",
+				"activeAttack": 5
+			},
+			{
+				"description": "While active, grants attack +10.",
+				"activeAttack": 10
+			},
+			{
+				"description": "While active, grants attack +15.",
+				"activeAttack": 15
+			},
+			{
+				"description": "While active, grants attack +20.",
+				"activeAttack": 20
+			},
+			{
+				"description": "While active, grants attack +25.",
+				"activeAttack": 25
+			}
+		]
+	},
+	{
+		"id": "focus",
+		"name": "Focus",
+		"description": "Increases the fill rate for weapons with gauges and the charge rate for weapons with charge attacks.",
+		"levels": [
+			{
+				"description": "Increases gauge fill rate by 5% and reduces charge times by 5%.",
+				"passiveGaugeFillRatePercent": "5",
+				"passiveWeaponChargeReductionPercent": "5"
+			},
+			{
+				"description": "Increases gauge fill rate by 10% and reduces charge times by 10%.",
+				"passiveGaugeFillRatePercent": "10",
+				"passiveWeaponChargeReductionPercent": "10"
+			},
+			{
+				"description": "Increases gauge fill rate by 20% and reduces charge times by 20%.",
+				"passiveGaugeFillRatePercent": "20",
+				"passiveWeaponChargeReductionPercent": "20"
+			}
+		]
+	},
+	{
+		"id": "normalShots",
+		"name": "Normal Shots",
+		"description": "Increases the attack power of normal ammo and normal arrows.",
+		"levels": [
+			{
+				"description": "Increases the power of normal ammo and normal arrows."
+			}
+		]
+	},
+	{
+		"id":"xenojivaDivinity",
+		"name": "Xeno'jiva Divinity",
+		"setLevels": [
+			{
+				"level": 3,
+				"description": "Halves sharpness loss. For bows and bowguns, shots have a chance not to expend coatings or ammo."
+			}
+		]
+	},
+	{
+		"id": "diablosMastery",
+		"name": "Diablos Mastery",
+		"setLevels": [
+			{
+				"level": 2,
+				"description": "Raises attack as your weapon loses sharpness. Also boosts ranged weapon melee attack and odds of stunning."
+			},
+			{
+				"level": 4,
+				"description": "Powers up non-elemental weapons you have equipped."
+			}
+		]
+	}
+]

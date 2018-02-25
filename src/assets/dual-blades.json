@@ -1,0 +1,37 @@
+[
+	{
+		"name": "Nergal Gouge",
+		"itemType": "Weapon",
+		"weaponType": "DualBlades",
+		"baseAttack": 280,
+		"maxSharpness": "Blue",
+		"baseAffinityPercent": 0,
+		"element": "Dragon",
+		"elementBaseAttack": 90,
+		"elderseal": "High",
+		"slots": [
+			{
+				"level": 1
+			}
+		],
+		"baseDefense": 0
+	},
+	{
+		"name": "Fire and Ice",
+		"itemType": "Weapon",
+		"weaponType": "DualBlades",
+		"baseAttack": 252,
+		"baseAffinityPercent": 10,
+		"maxSharpness": "Blue",
+		"element": "Ice",
+		"elementBaseAttack": 240,
+		"ailment": "Blast",
+		"ailmentBaseAttack": 240,
+		"slots": [
+			{
+				"level": 2
+			}
+		],
+		"baseDefense": 0
+	}
+]

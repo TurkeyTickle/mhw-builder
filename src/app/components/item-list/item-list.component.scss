@@ -1,15 +1,16 @@
 :host {
+	position: absolute;
 	top: 68px;
 }
 
 :host, .container {
-	position: absolute;
 	right: 0px;
 	bottom: 0px;
 	left: 0px;
 }
 
 .container {
+	position: relative;
 	top: 0px;
 	overflow-y: auto;
 	max-height: 100%;

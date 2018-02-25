@@ -1,0 +1,50 @@
+[
+	{
+		"name": "Kaiser Vambraces Beta",
+		"itemType": "Hands",
+		"baseDefense": 64,
+		"fireResist": 3,
+		"waterResist": -3,
+		"thunderResist": 1,
+		"iceResist": -3,
+		"dragonResist": 1,
+		"skills": [
+			{
+				"id": "weaknessExploit",
+				"level": 1
+			}
+		],
+		"slots": [
+			{
+				"level": 3
+			}
+		]
+	},
+	{
+		"name": "Diablos Nero Braces Beta",
+		"itemType": "Hands",
+		"baseDefense": 56,
+		"fireResist": 2,
+		"waterResist": -3,
+		"thunderResist": 0,
+		"iceResist": -4,
+		"dragonResist": 2,
+		"skills": [
+			{
+				"id": "focus",
+				"level": 1
+			},
+			{
+				"id": "diablosMastery"
+			}
+		],
+		"slots": [
+			{
+				"level": 2
+			},
+			{
+				"level": 1
+			}
+		]
+	}
+]
