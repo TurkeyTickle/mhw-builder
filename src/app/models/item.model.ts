@@ -23,8 +23,10 @@ export class ItemModel {
 	baseAffinityPercent?: number;
 	ailment?: AilmentType;
 	ailmentBaseAttack: number;
+	ailmentHidden: boolean;
 	element?: ElementType;
 	elementBaseAttack?: number;
+	elementHidden: boolean;
 	elderseal?: EldersealType;
 
 	// armor properties

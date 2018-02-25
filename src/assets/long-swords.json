@@ -1,0 +1,329 @@
+[
+	{
+		"name": "Iron Gospel",
+		"rarity": 6,
+		"itemType": "Weapon",
+		"weaponType": "LongSword",
+		"baseAttack": 594,
+		"maxSharpness": "Blue",
+		"baseAffinityPercent": 0,
+		"element": "Water",
+		"elementBaseAttack": 180,
+		"elementHidden": true,
+		"slots": [
+			{
+				"level": 1
+			},
+			{
+				"level": 1
+			}
+		]
+	},
+	{
+		"name": "Extermination's Edge",
+		"rarity": 8,
+		"itemType": "Weapon",
+		"weaponType": "LongSword",
+		"baseAttack": 693,
+		"maxSharpness": "Blue",
+		"baseAffinityPercent": 0,
+		"element": "Dragon",
+		"elementBaseAttack": 120,
+		"elderseal": "High",
+		"slots": [
+			{
+				"level": 1
+			}
+		]
+	},
+	{
+		"name": "Dazzling Flash III",
+		"rarity": 6,
+		"itemType": "Weapon",
+		"weaponType": "LongSword",
+		"baseAttack": 594,
+		"maxSharpness": "Blue",
+		"baseAffinityPercent": 0,
+		"element": "Thunder",
+		"elementBaseAttack": 360,
+		"elementHidden": true,
+		"slots": [
+			{
+				"level": 3
+			}
+		]
+	},
+	{
+		"name": "Last Dance III",
+		"rarity": 6,
+		"itemType": "Weapon",
+		"weaponType": "LongSword",
+		"baseAttack": 561,
+		"maxSharpness": "Blue",
+		"baseAffinityPercent": 20,
+		"ailment": "Sleep",
+		"ailmentBaseAttack": 270
+	},
+	{
+		"name": "Brazenridge II",
+		"rarity": 7,
+		"itemType": "Weapon",
+		"weaponType": "LongSword",
+		"baseAttack": 660,
+		"maxSharpness": "Blue",
+		"baseAffinityPercent": -10,
+		"element": "Fire",
+		"elementBaseAttack": 120,
+		"baseDefense": 30,
+		"slots": [
+			{
+				"level": 3
+			},
+			{
+				"level": 1
+			}
+		]
+	},
+	{
+		"name": "Wyvern Blade \"Holly\"",
+		"rarity": 7,
+		"itemType": "Weapon",
+		"weaponType": "LongSword",
+		"baseAttack": 627,
+		"maxSharpness": "Blue",
+		"baseAffinityPercent": 10,
+		"ailment": "Poison",
+		"ailmentBaseAttack": 330,
+		"slots": [
+			{
+				"level": 1
+			}
+		]
+	},
+	{
+		"name": "Wyvern Blade \"Indigo\"",
+		"rarity": 8,
+		"itemType": "Weapon",
+		"weaponType": "LongSword",
+		"baseAttack": 627,
+		"maxSharpness": "Blue",
+		"baseAffinityPercent": 15,
+		"element": "Fire",
+		"elementBaseAttack": 240,
+		"slots": [
+			{
+				"level": 1
+			}
+		]
+	},
+	{
+		"name": "Bone Reaper II",
+		"rarity": 6,
+		"itemType": "Weapon",
+		"weaponType": "LongSword",
+		"baseAttack": 627,
+		"maxSharpness": "Blue",
+		"baseAffinityPercent": 0,
+		"ailment": "Sleep",
+		"ailmentBaseAttack": 270,
+		"ailmentHidden": true,
+		"baseDefense": 10,
+		"slots": [
+			{
+				"level": 3
+			}
+		]
+	},
+	{
+		"name": "Bazel Varga Rookslayer",
+		"rarity": 8,
+		"itemType": "Weapon",
+		"weaponType": "LongSword",
+		"baseAttack": 660,
+		"maxSharpness": "Blue",
+		"baseAffinityPercent": -10,
+		"ailment": "Blast",
+		"ailmentBaseAttack": 210,
+		"slots": [
+			{
+				"level": 1
+			},
+			{
+				"level": 1
+			}
+		]
+	},
+	{
+		"name": "Anja Scimitar III",
+		"rarity": 6,
+		"itemType": "Weapon",
+		"weaponType": "LongSword",
+		"baseAttack": 693,
+		"maxSharpness": "Blue",
+		"baseAffinityPercent": -20,
+		"element": "Fire",
+		"elementBaseAttack": 390
+	},
+	{
+		"name": "Dipterus III",
+		"rarity": 6,
+		"itemType": "Weapon",
+		"weaponType": "LongSword",
+		"baseAttack": 627,
+		"maxSharpness": "Blue",
+		"baseAffinityPercent": 0,
+		"element": "Water",
+		"elementBaseAttack": 360,
+		"slots": [
+			{
+				"level": 3
+			}
+		]
+	},
+	{
+		"name": "Hazak Grosser II",
+		"rarity": 7,
+		"itemType": "Weapon",
+		"weaponType": "LongSword",
+		"baseAttack": 660,
+		"maxSharpness": "Blue",
+		"baseAffinityPercent": 0,
+		"element": "Dragon",
+		"elementBaseAttack": 270,
+		"elderseal": "Average",
+		"slots": [
+			{
+				"level": 2
+			}
+		]
+	},
+	{
+		"name": "Kadachi Fang III",
+		"rarity": 6,
+		"itemType": "Weapon",
+		"weaponType": "LongSword",
+		"baseAttack": 594,
+		"maxSharpness": "Blue",
+		"baseAffinityPercent": 15,
+		"element": "Thunder",
+		"elementBaseAttack": 270,
+		"slots": [
+			{
+				"level": 1
+			}
+		]
+	},
+	{
+		"name": "Legia Stealer",
+		"rarity": 8,
+		"itemType": "Weapon",
+		"weaponType": "LongSword",
+		"baseAttack": 528,
+		"maxSharpness": "White",
+		"baseAffinityPercent": 0,
+		"element": "Ice",
+		"elementBaseAttack": 360
+	},
+	{
+		"name": "Dark Scimitar III",
+		"rarity": 6,
+		"itemType": "Weapon",
+		"weaponType": "LongSword",
+		"baseAttack": 528,
+		"maxSharpness": "White",
+		"baseAffinityPercent": 0,
+		"ailment": "Paralysis",
+		"ailmentBaseAttack": 240,
+		"ailmentHidden": true,
+		"slots": [
+			{
+				"level": 2
+			}
+		]
+	},
+	{
+		"name": "Dragonbone Stabber III",
+		"rarity": 6,
+		"itemType": "Weapon",
+		"weaponType": "LongSword",
+		"baseAttack": 528,
+		"maxSharpness": "Blue",
+		"baseAffinityPercent": 0,
+		"element": "Dragon",
+		"elementBaseAttack": 420,
+		"elderseal": "Low",
+		"slots": [
+			{
+				"level": 1
+			}
+		]
+	},
+	{
+		"name": "Magda Facultas II",
+		"rarity": 7,
+		"itemType": "Weapon",
+		"weaponType": "LongSword",
+		"baseAttack": 726,
+		"maxSharpness": "Green",
+		"baseAffinityPercent": -20,
+		"ailment": "Blast",
+		"ailmentBaseAttack": 360,
+		"baseDefense": 20,
+		"slots": [
+			{
+				"level": 2
+			}
+		]
+	},
+	{
+		"name": "Imperial Shimmer",
+		"rarity": 8,
+		"itemType": "Weapon",
+		"weaponType": "LongSword",
+		"baseAttack": 627,
+		"maxSharpness": "Blue",
+		"baseAffinityPercent": 0,
+		"ailment": "Blast",
+		"ailmentBaseAttack": 300
+	},
+	{
+		"name": "Xeno Cypher",
+		"rarity": 8,
+		"itemType": "Weapon",
+		"weaponType": "LongSword",
+		"baseAttack": 594,
+		"maxSharpness": "White",
+		"baseAffinityPercent": 15,
+		"element": "Dragon",
+		"elementBaseAttack": 180,
+		"elderseal": "Low",
+		"baseDefense": 0,
+		"slots": [
+			{
+				"level": 3
+			},
+			{
+				"level": 3
+			}
+		]
+	},
+	{
+		"name": "Divine Slasher",
+		"rarity": 8,
+		"itemType": "Weapon",
+		"weaponType": "LongSword",
+		"baseAttack": 693,
+		"maxSharpness": "Blue",
+		"baseAffinityPercent": 0,
+		"element": "Dragon",
+		"elementBaseAttack": 150,
+		"elementHidden": true,
+		"elderseal": "High",
+		"baseDefense": 20,
+		"slots": [
+			{
+				"level": 3
+			}
+		]
+	}
+]

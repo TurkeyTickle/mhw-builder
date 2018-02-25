@@ -1,10 +1,24 @@
+:host {
+	top: 68px;
+}
+
+:host, .container {
+	position: absolute;
+	right: 0px;
+	bottom: 0px;
+	left: 0px;
+}
+
 .container {
-    width: 100%;
-	background-color: rgb(50,50,50);
+	top: 0px;
+	overflow-y: auto;
+	max-height: 100%;
 }
 
 ul {
+	margin: 0px;
 	padding: 0px;
+	background-color: rgb(50,50,50);
 }
 
 li {

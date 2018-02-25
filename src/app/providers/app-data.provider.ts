@@ -47,8 +47,25 @@ export class AppDataProvider {
 				});
 
 				this.seedData = items;
-				resolve(true);
+
+				this.http.get<ItemModel[]>('../assets/great-swords.json').subscribe(greatSwords => {
+					_.each(greatSwords, weapon => {
+						weapon.equipmentCategory = EquipmentCategoryType.Weapon;
+						this.seedData.weapons.push(weapon);
+					});
+
+
+					this.http.get<ItemModel[]>('../assets/long-swords.json').subscribe(longSwords => {
+						_.each(longSwords, weapon => {
+							weapon.equipmentCategory = EquipmentCategoryType.Weapon;
+							this.seedData.weapons.push(weapon);
+						});
+
+						resolve(true);
+					});
+				});
 			});
+
 		});
 	}
 }
