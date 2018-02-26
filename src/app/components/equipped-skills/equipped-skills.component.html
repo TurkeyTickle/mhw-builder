@@ -4,7 +4,7 @@
 	</ul>
 
 	<div *ngIf="setBonuses?.length">
-		<h3>Set Bonus Skills</h3>
+		<h3>Set Bonuses</h3>
 		<ul>
 			<li *ngFor="let setBonus of setBonuses" [style.color]="getSetBonusColor(setBonus)">{{setBonus.name}}: {{setBonus.equippedCount}}/{{setBonus.requiredCount}}</li>
 		</ul>

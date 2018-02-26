@@ -2,61 +2,63 @@
 	<div class="equipment-container">
 		<h2>Equipment</h2>
 
-		<mhw-builder-item-slot 
-			slotName="Weapon" 
-			(equipmentSlotSelected)="itemSlotSelected($event)" 
-			(decorationSlotSelected)="decorationSlotSelected($event)"
-			(itemCleared)="itemCleared($event)"
-			(decorationCleared)="decorationCleared($event)">
-		</mhw-builder-item-slot>
-		
-		<mhw-builder-item-slot 
-			slotName="Head" 
-			(equipmentSlotSelected)="itemSlotSelected($event)" 
-			(decorationSlotSelected)="decorationSlotSelected($event)"
-			(itemCleared)="itemCleared($event)"
-			(decorationCleared)="decorationCleared($event)">
-		</mhw-builder-item-slot>
-		
-		<mhw-builder-item-slot 
-			slotName="Chest" 
-			(equipmentSlotSelected)="itemSlotSelected($event)" 
-			(decorationSlotSelected)="decorationSlotSelected($event)"
-			(itemCleared)="itemCleared($event)"
-			(decorationCleared)="decorationCleared($event)">
-		</mhw-builder-item-slot>
-		
-		<mhw-builder-item-slot 
-			slotName="Hands" 
-			(equipmentSlotSelected)="itemSlotSelected($event)" 
-			(decorationSlotSelected)="decorationSlotSelected($event)"
-			(itemCleared)="itemCleared($event)"
-			(decorationCleared)="decorationCleared($event)">
-		</mhw-builder-item-slot>
-		
-		<mhw-builder-item-slot 
-			slotName="Legs" 
-			(equipmentSlotSelected)="itemSlotSelected($event)" 
-			(decorationSlotSelected)="decorationSlotSelected($event)"
-			(itemCleared)="itemCleared($event)"
-			(decorationCleared)="decorationCleared($event)">
-		</mhw-builder-item-slot>
+		<div class="equipment-slots-container">
+			<mhw-builder-item-slot 
+				slotName="Weapon" 
+				(equipmentSlotSelected)="itemSlotSelected($event)" 
+				(decorationSlotSelected)="decorationSlotSelected($event)"
+				(itemCleared)="itemCleared($event)"
+				(decorationCleared)="decorationCleared($event)">
+			</mhw-builder-item-slot>
+			
+			<mhw-builder-item-slot 
+				slotName="Head" 
+				(equipmentSlotSelected)="itemSlotSelected($event)" 
+				(decorationSlotSelected)="decorationSlotSelected($event)"
+				(itemCleared)="itemCleared($event)"
+				(decorationCleared)="decorationCleared($event)">
+			</mhw-builder-item-slot>
+			
+			<mhw-builder-item-slot 
+				slotName="Chest" 
+				(equipmentSlotSelected)="itemSlotSelected($event)" 
+				(decorationSlotSelected)="decorationSlotSelected($event)"
+				(itemCleared)="itemCleared($event)"
+				(decorationCleared)="decorationCleared($event)">
+			</mhw-builder-item-slot>
+			
+			<mhw-builder-item-slot 
+				slotName="Hands" 
+				(equipmentSlotSelected)="itemSlotSelected($event)" 
+				(decorationSlotSelected)="decorationSlotSelected($event)"
+				(itemCleared)="itemCleared($event)"
+				(decorationCleared)="decorationCleared($event)">
+			</mhw-builder-item-slot>
+			
+			<mhw-builder-item-slot 
+				slotName="Legs" 
+				(equipmentSlotSelected)="itemSlotSelected($event)" 
+				(decorationSlotSelected)="decorationSlotSelected($event)"
+				(itemCleared)="itemCleared($event)"
+				(decorationCleared)="decorationCleared($event)">
+			</mhw-builder-item-slot>
 
-		<mhw-builder-item-slot 
-			slotName="Feet" 
-			(equipmentSlotSelected)="itemSlotSelected($event)" 
-			(decorationSlotSelected)="decorationSlotSelected($event)"
-			(itemCleared)="itemCleared($event)"
-			(decorationCleared)="decorationCleared($event)">
-		</mhw-builder-item-slot>
-		
-		<mhw-builder-item-slot 
-			slotName="Charm" 
-			(equipmentSlotSelected)="itemSlotSelected($event)" 
-			(decorationSlotSelected)="decorationSlotSelected($event)"
-			(itemCleared)="itemCleared($event)"
-			(decorationCleared)="decorationCleared($event)">
-		</mhw-builder-item-slot>
+			<mhw-builder-item-slot 
+				slotName="Feet" 
+				(equipmentSlotSelected)="itemSlotSelected($event)" 
+				(decorationSlotSelected)="decorationSlotSelected($event)"
+				(itemCleared)="itemCleared($event)"
+				(decorationCleared)="decorationCleared($event)">
+			</mhw-builder-item-slot>
+			
+			<mhw-builder-item-slot 
+				slotName="Charm" 
+				(equipmentSlotSelected)="itemSlotSelected($event)" 
+				(decorationSlotSelected)="decorationSlotSelected($event)"
+				(itemCleared)="itemCleared($event)"
+				(decorationCleared)="decorationCleared($event)">
+			</mhw-builder-item-slot>
+		</div>
 	</div>
 
 	<div class="item-list-container">
@@ -66,16 +68,17 @@
 		<mhw-builder-item-list [hidden]="!selectedDecorationSlot" itemType="Decoration" [decorationLevel]="selectedDecorationSlot?.level" (decorationSelected)="selectDecoration($event)"></mhw-builder-item-list>
 	</div>
 
-	<div class="stat-container">
+	<div class="stats-container">
 		<h2>Stats</h2>
-		<hr>
-		<mhw-builder-equipped-stats></mhw-builder-equipped-stats>
+		<div class="equip-info-container">
+			<mhw-builder-equipped-stats></mhw-builder-equipped-stats>
 
-		<br />
+			<br />
 
-		<h2>Skills</h2>
-		<hr>
-		<mhw-builder-equipped-skills></mhw-builder-equipped-skills>
+			<h2>Skills</h2>
+			<hr>
+			<mhw-builder-equipped-skills></mhw-builder-equipped-skills>
+		</div>
 	</div>
 
 	<div #itemStats class="item-stats-container" hidden='true'>
