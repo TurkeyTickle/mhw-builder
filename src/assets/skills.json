@@ -179,22 +179,6 @@
 		]
 	},
 	{
-		"id": "blightResistance",
-		"name": "Blight Resistance",
-		"description": "Grants protection against all elemental blights.",
-		"levels": [
-			{
-				"description": "Reduces the duration of all elemental blights by 30%."
-			},
-			{
-				"description": "Reduces the duration of all elemental blights by 60%."
-			},
-			{
-				"description": "Nullifies all elemental blights."
-			}
-		]
-	},
-	{
 		"id": "effluviaResistance",
 		"name": "Effluvia Resistance",
 		"description": "Gain a resistance to effluvial buildup.",
