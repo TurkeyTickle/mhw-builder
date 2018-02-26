@@ -266,7 +266,10 @@ export class AppDataProvider {
 	loadHeads(): Promise<boolean> {
 		return new Promise(resolve => {
 			this.http.get<ItemModel[]>('../assets/heads.json').subscribe(items => {
-				this.seedData.armor = this.seedData.armor.concat(items);
+				_.each(items, item => {
+					item.equipmentCategory = EquipmentCategoryType.Armor;
+					this.seedData.armor.push(item);
+				});
 				resolve(true);
 			});
 		});
@@ -275,7 +278,10 @@ export class AppDataProvider {
 	loadChests(): Promise<boolean> {
 		return new Promise(resolve => {
 			this.http.get<ItemModel[]>('../assets/chests.json').subscribe(items => {
-				this.seedData.armor = this.seedData.armor.concat(items);
+				_.each(items, item => {
+					item.equipmentCategory = EquipmentCategoryType.Armor;
+					this.seedData.armor.push(item);
+				});
 				resolve(true);
 			});
 		});
@@ -284,7 +290,10 @@ export class AppDataProvider {
 	loadHands(): Promise<boolean> {
 		return new Promise(resolve => {
 			this.http.get<ItemModel[]>('../assets/hands.json').subscribe(items => {
-				this.seedData.armor = this.seedData.armor.concat(items);
+				_.each(items, item => {
+					item.equipmentCategory = EquipmentCategoryType.Armor;
+					this.seedData.armor.push(item);
+				});
 				resolve(true);
 			});
 		});
@@ -293,7 +302,10 @@ export class AppDataProvider {
 	loadLegs(): Promise<boolean> {
 		return new Promise(resolve => {
 			this.http.get<ItemModel[]>('../assets/legs.json').subscribe(items => {
-				this.seedData.armor = this.seedData.armor.concat(items);
+				_.each(items, item => {
+					item.equipmentCategory = EquipmentCategoryType.Armor;
+					this.seedData.armor.push(item);
+				});
 				resolve(true);
 			});
 		});
@@ -302,7 +314,10 @@ export class AppDataProvider {
 	loadFeet(): Promise<boolean> {
 		return new Promise(resolve => {
 			this.http.get<ItemModel[]>('../assets/feet.json').subscribe(items => {
-				this.seedData.armor = this.seedData.armor.concat(items);
+				_.each(items, item => {
+					item.equipmentCategory = EquipmentCategoryType.Armor;
+					this.seedData.armor.push(item);
+				});
 				resolve(true);
 			});
 		});
