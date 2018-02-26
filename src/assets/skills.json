@@ -973,5 +973,133 @@
 				"description": "Increases max bow charge level by one."
 			}
 		]
+	},
+	{
+		"id": "poisonFunctionality",
+		"name": "Poison Functionality",
+		"description": "Allows you to apply poison coatings.",
+		"levels": [
+			{
+				"description": "Lets you use poison coating."
+			}
+		]
+	},
+	{
+		"id": "quickSheath",
+		"name": "Quick Sheath",
+		"description": "Speeds up weapon sheathing.",
+		"levels": [
+			{
+				"description": "Slightly increases sheathing speed."
+			},
+			{
+				"description": "Moderately increases sheathing speed."
+			},
+			{
+				"description": "Greatly increases sheathing speed."
+			}
+		]
+	},
+	{
+		"id": "partbreaker",
+		"name": "Partbreaker",
+		"description": "Makes it easier to break or sever parts of large monsters.",
+		"levels": [
+			{
+				"description": "Part damage +10%"
+			},
+			{
+				"description": "Part damage +20%"
+			},
+			{
+				"description": "Part damage +30%"
+			}
+		]
+	},
+	{
+		"id": "tremorResistance",
+		"name": "Tremor Resistance",
+		"description": "Grants protection against ground tremors.",
+		"levels": [
+			{
+				"description": "Nullifies minor ground tremors."
+			},
+			{
+				"description": "Nullifies minor ground tremors and reduces the effects of major ground tremors."
+			},
+			{
+				"description": "Nullifies minor and major ground tremors."
+			}
+		]
+	},
+	{
+		"id": "slingerCapacity",
+		"name": "Slinger Capacity",
+		"description": "Increases the loading capacity for slinger ammo obtained in the field.",
+		"levels": [
+			{
+				"description": "Increases the loading capacity for slinger ammo collected from the ground or plants."
+			},
+			{
+				"description": "In addition, increases the loading capacity for some slinger ammo dropped by monsters."
+			},
+			{
+				"description": "In addition, increases the loading capacity for all slinger ammo dropped by monsters."
+			}
+		]
+	},
+	{
+		"id": "slugger",
+		"name": "Slugger",
+		"description": "Makes it easier to stun monsters.",
+		"levels": [
+			{
+				"description": "Stun power +10%"
+			},
+			{
+				"description": "Stun power +20%"
+			},
+			{
+				"description": "Stun power +30%"
+			}
+		]
+	},
+	{
+		"id": "itemProlonger",
+		"name": "Item Prolonger",
+		"description": "Extends the duration of some item effects.",
+		"levels": [
+			{
+				"description": "Item effect duration +10%"
+			},
+			{
+				"description": "Item effect duration +25%"
+			},
+			{
+				"description": "Item effect duration +50%"
+			}
+		]
+	},
+	{
+		"id": "windproof",
+		"name": "Windproof",
+		"description": "Grants protection against wind pressure.",
+		"levels": [
+			{
+				"description": "Slightly reduces the effects of minor wind pressure."
+			},
+			{
+				"description": "Reduces the effects of minor wind pressure."
+			},
+			{
+				"description": "Negates minor wind pressure."
+			},
+			{
+				"description": "Negates minor wind pressure and reduces the effects of major wind pressure."
+			},
+			{
+				"description": "Negates major and minor wind pressure."
+			}
+		]
 	}
 ]
