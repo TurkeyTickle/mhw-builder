@@ -34,4 +34,12 @@ export class SkillLevel {
 	passiveGaugeFillRatePercent: number;
 
 	passiveWeaponChargeReductionPercent: number;
+
+	passiveDefense: number;
+
+	passiveFireResist: number;
+	passiveWaterResist: number;
+	passiveThunderResist: number;
+	passiveIceResist: number;
+	passiveDragonResist: number;
 }

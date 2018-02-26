@@ -56,12 +56,21 @@ export class EquippedStatsComponent implements OnInit {
 	effectivePassiveAilmentBuildupPercent: number;
 
 	elderseal: string;
+
 	defense: number;
+	passiveDefense: number;
+
 	fireResist: number;
 	waterResist: number;
 	thunderResist: number;
 	iceResist: number;
 	dragonResist: number;
+
+	passiveFireResist: number;
+	passiveWaterResist: number;
+	passiveThunderResist: number;
+	passiveIceResist: number;
+	passiveDragonResist: number;
 
 	constructor(
 		private itemsService: ItemsService,
@@ -90,7 +99,6 @@ export class EquippedStatsComponent implements OnInit {
 		this.weaponAttackModifier = 0;
 		this.affinity = 0;
 		this.passiveAffinity = 0;
-		this.defense = 0;
 
 		this.element = null;
 		this.elementAttack = 0;
@@ -120,11 +128,20 @@ export class EquippedStatsComponent implements OnInit {
 
 		this.elderseal = null;
 
+		this.defense = 0;
+		this.passiveDefense = 0;
+
 		this.fireResist = 0;
 		this.waterResist = 0;
 		this.thunderResist = 0;
 		this.iceResist = 0;
 		this.dragonResist = 0;
+
+		this.passiveFireResist = 0;
+		this.passiveWaterResist = 0;
+		this.passiveThunderResist = 0;
+		this.passiveIceResist = 0;
+		this.passiveDragonResist = 0;
 	}
 
 	private updateStats(item: ItemModel) {
@@ -270,6 +287,30 @@ export class EquippedStatsComponent implements OnInit {
 
 				if (level.passiveStunBuildupPercent) {
 					this.passiveStunBuildupPercent += level.passiveStunBuildupPercent;
+				}
+
+				if (level.passiveDefense) {
+					this.passiveDefense += level.passiveDefense;
+				}
+
+				if (level.passiveFireResist) {
+					this.passiveFireResist += level.passiveFireResist;
+				}
+
+				if (level.passiveWaterResist) {
+					this.passiveWaterResist += level.passiveWaterResist;
+				}
+
+				if (level.passiveThunderResist) {
+					this.passiveThunderResist += level.passiveThunderResist;
+				}
+
+				if (level.passiveIceResist) {
+					this.passiveIceResist += level.passiveIceResist;
+				}
+
+				if (level.passiveDragonResist) {
+					this.passiveDragonResist += level.passiveDragonResist;
 				}
 			}
 		}
