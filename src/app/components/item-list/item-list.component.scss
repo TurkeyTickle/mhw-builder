@@ -9,13 +9,6 @@
 	left: 0px;
 }
 
-.container {
-	position: relative;
-	top: 0px;
-	overflow-y: auto;
-	max-height: 100%;
-}
-
 ul {
 	margin: 0px;
 	padding: 0px;
@@ -37,7 +30,8 @@ li:hover {
 .search-container {
 	background-color: rgb(50,50,50);
 	padding: 8px;	
-	margin-bottom: 5px;
+	margin-bottom: 4px;
+	height: 40px;
 	display: flex;
 
 	input {
@@ -53,7 +47,16 @@ li:hover {
 	}
 
 	.clear-button {
-		float: right;
+		height: 40px;
 	}
+}
+
+.items-container {
+	overflow-y: auto;
+    position: absolute;
+    top: 60px;
+    bottom: 0px;
+    right: 0px;
+    left: 0px;
 }
 
