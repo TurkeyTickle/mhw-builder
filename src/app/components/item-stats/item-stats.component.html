@@ -3,6 +3,7 @@
 	<hr>
 	<ul>
 		<div *ngIf="item?.equipmentCategory == 'Weapon'">
+			<li>Weapon Type: {{getWeaponTypeName(item?.weaponType)}}</li>
 			<li>Attack: {{item?.baseAttack}}</li>
 			<li>Affinity: {{item?.baseAffinityPercent}}%</li>
 

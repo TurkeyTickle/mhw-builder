@@ -4,6 +4,7 @@ import { DecorationModel } from '../../models/decoration.model';
 import { ItemsService } from '../../services/items.service';
 import { SkillModel } from '../../models/skill.model';
 import * as _ from 'lodash';
+import { WeaponType } from '../../types/weapon.type';
 
 @Component({
 	selector: 'mhw-builder-item-stats',
@@ -33,5 +34,32 @@ export class ItemStatsComponent implements OnInit {
 		const itemSkill = _.find(this.item.skills, s => s.id == skill.id);
 		const result = `${itemSkill.level}/${skill.levels.length}`;
 		return result;
+	}
+
+	getWeaponTypeName(weaponType: WeaponType): string {
+		switch (weaponType) {
+			case WeaponType.ChargeBlade:
+				return 'Charge Blade';
+			case WeaponType.DualBlades:
+				return 'Dual Blades';
+			case WeaponType.GreatSword:
+				return 'Great Sword';
+			case WeaponType.HeavyBowgun:
+				return 'Heavy Bowgun';
+			case WeaponType.HuntingHorn:
+				return 'Hunting Horn';
+			case WeaponType.InsectGlaive:
+				return 'Insect Glaive';
+			case WeaponType.LightBowgun:
+				return 'Light Bowgun';
+			case WeaponType.LongSword:
+				return 'Long Sword';
+			case WeaponType.SwitchAxe:
+				return 'Switch Axe';
+			case WeaponType.SwordAndShield:
+				return 'Sword and Shield';
+			default:
+				return weaponType;
+		}
 	}
 }

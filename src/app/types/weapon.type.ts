@@ -10,7 +10,7 @@ export enum WeaponType {
 	SwitchAxe = 'SwitchAxe',
 	ChargeBlade = 'ChargeBlade',
 	InsectGlaive = 'InsectGlaive',
-	LightBowGun = 'LightBowGun',
-	HeavyBowGun = 'HeavyBowGun',
+	LightBowgun = 'LightBowgun',
+	HeavyBowgun = 'HeavyBowgun',
 	Bow = 'Bow'
 }

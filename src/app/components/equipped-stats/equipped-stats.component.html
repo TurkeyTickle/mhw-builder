@@ -3,7 +3,6 @@
 		<li>Attack: {{totalAttack}} ({{attack}} + {{passiveAttack}} * {{weaponAttackModifier}})</li>
 		<li *ngIf="maxSharpness">Max Sharpness: {{maxSharpness}}</li>
 		<li>Affinity: {{affinity + passiveAffinity}}%</li>
-		<li>Defense: {{defense}}</li>
 
 		<div *ngIf="ailment">
 			<li>Ailment: {{ailment}}</li>
@@ -20,6 +19,7 @@
 			<li>Elderseal: {{elderseal}}</li>
 		</div>
 
+		<li>Defense: {{defense}}</li>
 		<li>Fire Resist: {{fireResist}}</li>
 		<li>Water Resist: {{waterResist}}</li>
 		<li>Thunder Resist: {{thunderResist}}</li>
