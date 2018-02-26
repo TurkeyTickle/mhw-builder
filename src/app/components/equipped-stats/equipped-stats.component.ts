@@ -7,6 +7,7 @@ import * as _ from 'lodash';
 import { SkillService } from '../../services/skill.service';
 import { ElementType } from '../../types/element.type';
 import { AilmentType } from '../../types/ailment.type';
+import { SharpnessType } from '../../types/sharpness.type';
 
 @Component({
 	selector: 'mhw-builder-equipped-stats',
@@ -18,6 +19,7 @@ export class EquippedStatsComponent implements OnInit {
 	totalAttack: number;
 	attack: number;
 	passiveAttack: number;
+	maxSharpness: SharpnessType;
 	weaponAttackModifier: number;
 	affinity: number;
 	passiveAffinity: number;
@@ -82,6 +84,7 @@ export class EquippedStatsComponent implements OnInit {
 		this.totalAttack = 0;
 		this.attack = 0;
 		this.passiveAttack = 0;
+		this.maxSharpness = null;
 		this.weaponAttackModifier = 0;
 		this.affinity = 0;
 		this.passiveAffinity = 0;
@@ -177,6 +180,8 @@ export class EquippedStatsComponent implements OnInit {
 	private updateSkills(items: ItemModel[], equippedSkills: EquippedSkillModel[]) {
 		const weapon = _.find(items, item => item.weaponType);
 		if (weapon) {
+			this.maxSharpness = weapon.maxSharpness;
+
 			const weaponModifier = this.itemsService.getWeaponModifier(weapon.weaponType);
 			if (weaponModifier) {
 				this.weaponAttackModifier = weaponModifier.attackModifier;

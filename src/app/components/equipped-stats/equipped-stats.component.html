@@ -1,6 +1,7 @@
 <div class="container">
 	<ul>
 		<li>Attack: {{totalAttack}} ({{attack}} + {{passiveAttack}} * {{weaponAttackModifier}})</li>
+		<li *ngIf="maxSharpness">Max Sharpness: {{maxSharpness}}</li>
 		<li>Affinity: {{affinity + passiveAffinity}}%</li>
 		<li>Defense: {{defense}}</li>
 
