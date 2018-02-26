@@ -33,3 +33,27 @@ li {
 li:hover {
 	background-color: gray;
 }
+
+.search-container {
+	background-color: rgb(50,50,50);
+	padding: 8px;	
+	margin-bottom: 5px;
+	display: flex;
+
+	input {
+		background-color: rgb(50,50,50);
+		border: none;
+		color: white;
+		font-size: 20px;
+		flex-grow: 1;
+	}
+
+	input:focus {
+		outline: none;
+	}
+
+	.clear-button {
+		float: right;
+	}
+}
+

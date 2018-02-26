@@ -1,16 +1,24 @@
 <div class="container">
+	<div class="search-container">
+		<input #searchBox (keyup)="search(searchBox.value)" placeholder="Search names or skills"/>
+
+		<button class="clear-button" (click)="resetSearchResults()">
+			<i class="fas fa-times"></i>
+		</button>
+	</div>
+
     <ul>
-		<li *ngFor="let item of items" 
-			(click)="selectItem(item)" 
-			(mouseenter)="setTooltipItem(item)" 
-			(mouseleave)="clearTooltipItem()">
-            {{item.name}}
-		</li>
-		<li *ngFor="let decoration of decorations" 
-			(click)="selectDecoration(decoration)" 
-			(mouseenter)="setTooltipItem(decoration)" 
-			(mouseleave)="clearTooltipItem()">
-            {{decoration.name}}
-		</li>
+		<div *ngFor="let item of items">
+			<li [hidden]="!item.visible"
+				(click)="selectItem(item)"
+				(mouseenter)="setTooltipItem(item)"
+				(mouseleave)="clearTooltipItem()">{{item.name}}</li>
+		</div>
+		<div *ngFor="let decoration of decorations">
+			<li [hidden]="!decoration.visible"
+				(click)="selectDecoration(decoration)"
+				(mouseenter)="setTooltipItem(decoration)"
+				(mouseleave)="clearTooltipItem()">{{decoration.name}}</li>
+		</div>
     </ul>
 </div>
