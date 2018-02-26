@@ -22,11 +22,12 @@ $slotHeight: 30px;
 		line-height: $slotHeight;
 		text-overflow: ellipsis;
 		overflow: hidden;
-		white-space: nowrap;
+		// white-space: nowrap;
 	}
 	
 	.clear-button {
-		float: right;
+		flex-grow: 0;
+		flex-shrink: 0;
 		height: $slotHeight;
 	}
 }
