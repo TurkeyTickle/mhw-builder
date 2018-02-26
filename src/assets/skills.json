@@ -1101,5 +1101,304 @@
 				"description": "Negates major and minor wind pressure."
 			}
 		]
+	},
+	{
+		"id": "speedEating",
+		"name": "Speed Eating",
+		"description": "Increases meat-eating and item-consumption speed.",
+		"levels": [
+			{
+				"description": "Slightly increases item use speed."
+			},
+			{
+				"description": "Moderately increases item use speed."
+			},
+			{
+				"description": "Greatly increases item use speed."
+			}
+		]
+	},
+	{
+		"id": "healthBoost",
+		"name": "Health Boost",
+		"description": "Increases health.",
+		"levels": [
+			{
+				"description": "Health +15",
+				"passiveHealth": 15
+			},
+			{
+				"description": "Health +30",
+				"passiveHealth": 30
+			},
+			{
+				"description": "Health +50",
+				"passiveHealth": 50
+			}
+		]
+	},
+	{
+		"id": "speedSharpening",
+		"name": "Speed Sharpening",
+		"description": "Speeds up weapon sharpening when using a whetstone.",
+		"levels": [
+			{
+				"description": "Removes one cycle from the sharpening process."
+			},
+			{
+				"description": "Removes two cycles from the sharpening process."
+			},
+			{
+				"description": "Removes three cycles from the sharpening process."
+			}
+		]
+	},
+	{
+		"id": "defenseBoost",
+		"name": "Defense Boost",
+		"description": "Increases defense. Level up to improve resistances as well.",
+		"levels": [
+			{
+				"description": "Defense +5",
+				"passiveDefense": 5
+			},
+			{
+				"description": "Defense +10",
+				"passiveDefense": 10
+			},
+			{
+				"description": "Defense +15",
+				"passiveDefense": 15
+			},
+			{
+				"description": "Defense +20. All Elemental Resistances +3.",
+				"passiveDefense": 20,
+				"passiveFireResist": 3,
+				"passiveWaterResist": 3,
+				"passiveThunderResist": 3,
+				"passiveIceResist": 3,
+				"passiveDragonResist": 3
+			},
+			{
+				"description": "Defense +25. All Elemental Resistances +3.",
+				"passiveDefense": 25,
+				"passiveFireResist": 3,
+				"passiveWaterResist": 3,
+				"passiveThunderResist": 3,
+				"passiveIceResist": 3,
+				"passiveDragonResist": 3
+			},
+			{
+				"description": "Defense +30. All Elemental Resistances +3.",
+				"passiveDefense": 30,
+				"passiveFireResist": 3,
+				"passiveWaterResist": 3,
+				"passiveThunderResist": 3,
+				"passiveIceResist": 3,
+				"passiveDragonResist": 3
+			},
+			{
+				"description": "Defense +35. All Elemental Resistances +3.",
+				"passiveDefense": 35,
+				"passiveFireResist": 3,
+				"passiveWaterResist": 3,
+				"passiveThunderResist": 3,
+				"passiveIceResist": 3,
+				"passiveDragonResist": 3
+			}
+		]
+	},
+	{
+		"id": "staminaThief",
+		"name": "Stamina Thief",
+		"description": "Increases certain attacks' ability to exhaust monsters.",
+		"levels": [
+			{
+				"description": "Exhaust power +10%"
+			},
+			{
+				"description": "Exhaust power +20%"
+			},
+			{
+				"description": "Exhaust power +30%"
+			}
+		]
+	},
+	{
+		"id": "wideRange",
+		"name": "Wide Range",
+		"description": "Allows the effects of certain items to also affect nearby allies.",
+		"levels": [
+			{
+				"description": "Items affect nearby allies with 33% of their efficacy."
+			},
+			{
+				"description": "Items affect nearby allies in a wider radius with 33% of their efficacy."
+			},
+			{
+				"description": "Items affect nearby allies in a wider radius with 66% of their efficacy."
+			},
+			{
+				"description": "Items affect nearby allies in a much wider radius with 66% of their efficacy."
+			},
+			{
+				"description": "Items affect nearby allies in a much wider radius with full efficacy."
+			}
+		]
+	},
+	{
+		"id": "affinitySliding",
+		"name": "Affinity Sliding",
+		"description": "Sliding increases your affinity for a short time.",
+		"levels": [
+			{
+				"description": "Increases affinity by 30% for a short time after sliding."
+			}
+		]
+	},
+	{
+		"id": "resuscitate",
+		"name": "Resuscitate",
+		"description": "Increases evasion and reduces stamina depletion when afflicted with abnormal status effects.",
+		"levels": [
+			{
+				"description": "While active, greatly improves evasion invulnerability time and reduces stamina depletion."
+			}
+		]
+	},
+	{
+		"id": "scenthound",
+		"name": "Scenthound",
+		"description": "Increases your scoutflies' gauge fill rate when you find tracks and other traces left by monsters.",
+		"levels": [
+			{
+				"description": "Increases gauge fill rate by 50%."
+			}
+		]
+	},
+	{
+		"id": "palicoRally",
+		"name": "Palico Rally",
+		"description": "Powers up Palicoes.",
+		"levels": [
+			{
+				"description": "Increases Palico attack power and defense by 5%."
+			},
+			{
+				"description": "Increases Palico attack power and defense by 10%."
+			},
+			{
+				"description": "Increases Palico attack power and defense by 15%."
+			},
+			{
+				"description": "Increases Palico attack power and defense by 20%."
+			},
+			{
+				"description": "Increases Palico attack power and defense by 25%."
+			}
+		]
+	},
+	{
+		"id": "intimidator",
+		"name": "Intimidator",
+		"description": "Reduces the chances small monsters will attack after spotting you. (No effect on certain monsters.)",
+		"levels": [
+			{
+				"description": "Discourages monsters from engaging you even if you've been spotted."
+			},
+			{
+				"description": "Highly discourages monsters from engaging you even if you've been spotted."
+			},
+			{
+				"description": "Prevents monsters from engaging you even if you've been spotted."
+			}
+		]
+	},
+	{
+		"id": "hungerResistance",
+		"name": "Hunger Resistance",
+		"description": "Reduces maximum stamina depletion over time.",
+		"levels": [
+			{
+				"description": "Extends the time until your stamina cap decreases by 30%."
+			},
+			{
+				"description": "Extends the time until your stamina cap decreases by 60%."
+			},
+			{
+				"description": "Prevents your stamina cap from decreasing."
+			}
+		]
+	},
+	{
+		"id": "heavyArtillery",
+		"name": "Heavy Artillery",
+		"description": "Increases the firepower of ballistae and cannons.",
+		"levels": [
+			{
+				"description": "Firepower +10%"
+			},
+			{
+				"description": "Firepower +20%"
+			}
+		]
+	},
+	{
+		"id": "sporepuffExpert",
+		"name": "Sporepuff Expert",
+		"description": "Recover health when using sporepuffs.",
+		"levels": [
+			{
+				"description": "Sporepuffs restore 20 health."
+			},
+			{
+				"description": "Sporepuffs restore 35 health."
+			},
+			{
+				"description": "Sporepuffs restore 60 health."
+			}
+		]
+	},
+	{
+		"id": "geologist",
+		"name": "Geologist",
+		"description": "Increases the number of times you can use a gathering point.",
+		"levels": [
+			{
+				"description": "Allows you to gather one extra time from bonepiles."
+			},
+			{
+				"description": "Allows you to gather one extra time from bonepiles and special item gathering points."
+			},
+			{
+				"description": "Allows you to gather one extra time from bonepiles, gathering points, and mining outcrops."
+			}
+		]
+	},
+	{
+		"id": "airborne",
+		"name": "Airborne",
+		"description": "Increases the damage caused by jumping attacks.",
+		"levels": [
+			{
+				"description": "Jumping attack power +10%"
+			}
+		]
+	},
+	{
+		"id": "stealth",
+		"name": "Stealth",
+		"description": "Makes it easier for monsters to lose sight of you.",
+		"levels": [
+			{
+				"description": "Makes it slightly easier for Monsters to lose sight of you."
+			},
+			{
+				"description": "Makes it moderately easier for Monsters to lose sight of you."
+			},
+			{
+				"description": "Makes it much easier for Monsters to lose sight of you."
+			}
+		]
 	}
 ]

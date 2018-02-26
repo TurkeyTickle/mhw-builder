@@ -220,11 +220,201 @@
 		]
 	},
 	{
+		"name": "Gobbler Jewel 1",
+		"level": 1,
+		"skills": [
+			{
+				"id": "speedEating",
+				"level": 1
+			}
+		]
+	},
+	{
+		"name": "Resistor Jewel 1",
+		"level": 1,
+		"skills": [
+			{
+				"id": "blightResistance",
+				"level": 1
+			}
+		]
+	},
+	{
+		"name": "Vitality Jewel 1",
+		"level": 1,
+		"skills": [
+			{
+				"id": "healthBoost",
+				"level": 1
+			}
+		]
+	},
+	{
+		"name": "Grinder Jewel 1",
+		"level": 1,
+		"skills": [
+			{
+				"id": "speedSharpening",
+				"level": 1
+			}
+		]
+	},
+	{
+		"name": "Defense Jewel 1",
+		"level": 1,
+		"skills": [
+			{
+				"id": "defenseBoost",
+				"level": 1
+			}
+		]
+	},
+	{
+		"name": "Drain Jewel 1",
+		"level": 1,
+		"skills": [
+			{
+				"id": "staminaThief",
+				"level": 1
+			}
+		]
+	},
+	{
+		"name": "Friendship Jewel 1",
+		"level": 1,
+		"skills": [
+			{
+				"id": "wideRange",
+				"level": 1
+			}
+		]
+	},
+	{
+		"name": "Meowster Jewel 1",
+		"level": 1,
+		"skills": [
+			{
+				"id": "palicoRally",
+				"level": 1
+			}
+		]
+	},
+	{
+		"name": "Crisis Jewel 1",
+		"level": 1,
+		"skills": [
+			{
+				"id": "resuscitate",
+				"level": 1
+			}
+		]
+	},
+	{
+		"name": "Scent Jewel 1",
+		"level": 1,
+		"skills": [
+			{
+				"id": "scenthound",
+				"level": 1
+			}
+		]
+	},
+	{
+		"name": "Intimidator Jewel 1",
+		"level": 1,
+		"skills": [
+			{
+				"id": "intimidator",
+				"level": 1
+			}
+		]
+	},
+	{
+		"name": "Hungerless Jewel 1",
+		"level": 1,
+		"skills": [
+			{
+				"id": "hungerResistance",
+				"level": 1
+			}
+		]
+	},
+	{
+		"name": "Heavy Artillery Jewel 1",
+		"level": 1,
+		"skills": [
+			{
+				"id": "heavyArtillery",
+				"level": 1
+			}
+		]
+	},
+	{
+		"name": "Smoke Jewel 1",
+		"level": 1,
+		"skills": [
+			{
+				"id": "sporepuffExpert",
+				"level": 1
+			}
+		]
+	},
+	{
+		"name": "Geology Jewel 1",
+		"level": 1,
+		"skills": [
+			{
+				"id": "geologist",
+				"level": 1
+			}
+		]
+	},
+	{
+		"name": "Tip Toe Jewel 1",
+		"level": 1,
+		"skills": [
+			{
+				"id": "stealth",
+				"level": 1
+			}
+		]
+	},
+	{
 		"name": "Critical Jewel 2",
 		"level": 2,
 		"skills": [
 			{
 				"id": "criticalBoost",
+				"level": 1
+			}
+		]
+	},
+	{
+		"name": "Flight Jewel 2",
+		"level": 2,
+		"skills": [
+			{
+				"id": "airborne",
+				"level": 1
+			}
+		]
+	},
+	{
+		"name": "Slider Jewel 2",
+		"level": 2,
+		"skills": [
+			{
+				"id": "affinitySliding",
+				"level": 1
+			}
+		]
+	},
+	{
+		"name": "Tenderizer Jewel 2",
+		"level": 2,
+		"skills": [
+			{
+				"id": "weaknessExploit",
 				"level": 1
 			}
 		]
