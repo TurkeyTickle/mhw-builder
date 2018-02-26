@@ -1,22 +1,261 @@
 [
 	{
-		"name": "Odogaron Coil Beta",
+		"name": "Xeno'jiva Spine Beta",
 		"itemType": "Legs",
-		"baseDefense": 54,
-		"fireResist": 2,
+		"baseDefense": 72,
+		"fireResist": -3,
 		"waterResist": 2,
-		"thunderResist": -2,
-		"iceResist": -3,
-		"dragonResist": 0,
+		"thunderResist": 2,
+		"iceResist": 2,
+		"dragonResist": -4,
 		"skills": [
 			{
-				"id": "criticalEye",
+				"id": "blightResistance",
 				"level": 2
+			},
+			{
+				"id": "xenojivaDivinity"
 			}
 		],
 		"slots": [
 			{
 				"level": 2
+			},
+			{
+				"level": 1
+			}
+		]
+	},
+	{
+		"name": "Xeno'jiva Spine Alpha",
+		"itemType": "Legs",
+		"baseDefense": 72,
+		"fireResist": -3,
+		"waterResist": 2,
+		"thunderResist": 2,
+		"iceResist": 2,
+		"dragonResist": -4,
+		"skills": [
+			{
+				"id": "blightResistance",
+				"level": 2
+			},			
+			{
+				"id": "specialAmmoBoost",
+				"level": 1
+			},
+			{
+				"id": "xenojivaDivinity"
+			}
+		],
+		"slots": [
+			{
+				"level": 2
+			}
+		]
+	},
+	{
+		"name": "Kirin Hoop Beta",
+		"itemType": "Legs",
+		"baseDefense": 64,
+		"fireResist": -3,
+		"waterResist": -2,
+		"thunderResist": 4,
+		"iceResist": -2,
+		"dragonResist": 2,
+		"skills": [
+			{
+				"id": "blightResistance",
+				"level": 1
+			},
+			{
+				"id": "kirinFavor"
+			}
+		],
+		"slots": [
+			{
+				"level": 1
+			},
+			{
+				"level": 1
+			},
+			{
+				"level": 1
+			}
+		]
+	},
+	{
+		"name": "Kirin Hoop Alpha",
+		"itemType": "Legs",
+		"baseDefense": 64,
+		"fireResist": -3,
+		"waterResist": -2,
+		"thunderResist": 4,
+		"iceResist": -2,
+		"dragonResist": 2,
+		"skills": [
+			{
+				"id": "blightResistance",
+				"level": 1
+			},
+			{
+				"id": "freeElemAmmoUp",
+				"level": 1
+			},
+			{
+				"id": "kirinFavor"
+			}
+		]
+	},
+	{
+		"name": "Vaal Hazak Coil Beta",
+		"itemType": "Legs",
+		"baseDefense": 64,
+		"fireResist": -4,
+		"waterResist": 4,
+		"thunderResist": 1,
+		"iceResist": -1,
+		"dragonResist": -3,
+		"skills": [
+			{
+				"id": "peakPerformance",
+				"level": 1
+			},
+			{
+				"id": "vaalHazakVitality"
+			}
+		],
+		"slots": [
+			{
+				"level": 1
+			},
+			{
+				"level": 1
+			}
+		]
+	},
+	{
+		"name": "Vaal Hazak Coil Alpha",
+		"itemType": "Legs",
+		"baseDefense": 64,
+		"fireResist": -4,
+		"waterResist": 4,
+		"thunderResist": 1,
+		"iceResist": -1,
+		"dragonResist": -3,
+		"skills": [
+			{
+				"id": "peakPerformance",
+				"level": 1
+			},
+			{
+				"id": "effluviaResistance",
+				"level": 1
+			},
+			{
+				"id": "vaalHazakVitality"
+			}
+		],
+		"slots": [
+			{
+				"level": 1
+			}
+		]
+	},
+	{
+		"name": "Kushala Cocoon Beta",
+		"itemType": "Legs",
+		"baseDefense": 64,
+		"fireResist": 0,
+		"waterResist": 2,
+		"thunderResist": -3,
+		"iceResist": -4,
+		"dragonResist": -2,
+		"skills": [
+			{
+				"id": "iceAttack",
+				"level": 2
+			},
+			{
+				"id": "kushalaDaoraFlight"
+			}
+		],
+		"slots": [
+			{
+				"level": 1
+			},
+			{
+				"level": 1
+			}
+		]
+	},
+	{
+		"name": "Kushala Cocoon Alpha",
+		"itemType": "Legs",
+		"baseDefense": 64,
+		"fireResist": 0,
+		"waterResist": 2,
+		"thunderResist": -3,
+		"iceResist": -4,
+		"dragonResist": -2,
+		"skills": [
+			{
+				"id": "iceAttack",
+				"level": 2
+			},
+			{
+				"id": "evadeExtender",
+				"level": 1
+			},
+			{
+				"id": "kushalaDaoraFlight"
+			}
+		]
+	},
+	{
+		"name": "Kaiser Coil Beta",
+		"itemType": "Legs",
+		"baseDefense": 64,
+		"fireResist": 3,
+		"waterResist": -3,
+		"thunderResist": 1,
+		"iceResist": -3,
+		"dragonResist": 1,
+		"skills": [
+			{
+				"id": "blastAttack",
+				"level": 2
+			},
+			{
+				"id": "teostraTechnique"
+			}
+		],
+		"slots": [
+			{
+				"level": 2
+			}
+		]
+	},
+	{
+		"name": "Kaiser Coil Alpha",
+		"itemType": "Legs",
+		"baseDefense": 64,
+		"fireResist": 3,
+		"waterResist": -3,
+		"thunderResist": 1,
+		"iceResist": -3,
+		"dragonResist": 1,
+		"skills": [
+			{
+				"id": "blastAttack",
+				"level": 2
+			},
+			{
+				"id": "weaknessExploit",
+				"level": 1
+			},
+			{
+				"id": "teostraTechnique"
 			}
 		]
 	},
@@ -45,29 +284,25 @@
 		]
 	},
 	{
-		"name": "Kirin Hoop Beta",
+		"name": "Nergigante Coil Alpha",
 		"itemType": "Legs",
 		"baseDefense": 64,
-		"fireResist": -3,
-		"waterResist": -2,
-		"thunderResist": 4,
-		"iceResist": -2,
-		"dragonResist": 2,
+		"fireResist": 1,
+		"waterResist": 1,
+		"thunderResist": -3,
+		"iceResist": 1,
+		"dragonResist": -3,
 		"skills": [
 			{
-				"id": "blightResistance",
-				"level": 1
-			}
-		],
-		"slots": [
+				"id": "attackBoost",
+				"level": 2
+			},
 			{
+				"id": "staminaSurge",
 				"level": 1
 			},
 			{
-				"level": 1
-			},
-			{
-				"level": 1
+				"id": "nergiganteHunger"
 			}
 		]
 	},
@@ -87,6 +322,27 @@
 			},
 			{
 				"id": "diablosMastery"
+			}
+		],
+		"slots": [
+			{
+				"level": 2
+			}
+		]
+	},
+	{
+		"name": "Odogaron Coil Beta",
+		"itemType": "Legs",
+		"baseDefense": 54,
+		"fireResist": 2,
+		"waterResist": 2,
+		"thunderResist": -2,
+		"iceResist": -3,
+		"dragonResist": 0,
+		"skills": [
+			{
+				"id": "criticalEye",
+				"level": 2
 			}
 		],
 		"slots": [

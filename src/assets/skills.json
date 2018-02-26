@@ -195,6 +195,42 @@
 		]
 	},
 	{
+		"id": "effluviaResistance",
+		"name": "Effluvia Resistance",
+		"description": "Gain a resistance to effluvial buildup.",
+		"levels": [
+			{
+				"description": "Reduces effluvial buildup."
+			},
+			{
+				"description": "Greatly reduces effluvial buildup."
+			},
+			{
+				"description": "Prevents effluvial buildup."
+			}
+		]
+	},
+	{
+		"id": "thunderResistance",
+		"name": "Thunder Resistance",
+		"description": "Increases thunder resistance. Also improves defense at higher levels.",
+		"levels": [
+			{
+				"description": "Thunder Resistance +6",
+				"passiveThunderResist": 6
+			},
+			{
+				"description": "Thunder Resistance +12",
+				"passiveThunderResist": 12
+			},
+			{
+				"description": "Thunder Resistance +20. Defense +10.",
+				"passiveThunderResist": 20,
+				"passiveDefense": 10
+			}
+		]
+	},
+	{
 		"id": "resentment",
 		"name": "Resentment",
 		"description": "Increases attack when you have recoverable damage (the red portion of your health gauge).",
@@ -511,19 +547,41 @@
 		"description": "Increases the rate of poison buildup. (Elemental buildup has a maximum limit.)",
 		"levels": [
 			{
-				"description": "Poison buildup +5%",
+				"description": "Poison buildup +5%. Bonus +10.",
 				"passivePoisonAttack": 10,
 				"passivePoisonBuildupPercent": 5
 			},
 			{
-				"description": "Poison buildup +10%",
+				"description": "Poison buildup +10%. Bonus +10.",
 				"passivePoisonAttack": 10,
 				"passivePoisonBuildupPercent": 10
 			},			
 			{
-				"description": "Poison buildup +20%",
+				"description": "Poison buildup +20%. Bonus +10.",
 				"passivePoisonAttack": 10,
 				"passivePoisonBuildupPercent": 20
+			}
+		]
+	},
+	{
+		"id": "blastAttack",
+		"name": "Blast Attack",
+		"description": "Increases the rate of blast buildup. (Elemental buildup has a maximum limit.)",
+		"levels": [
+			{
+				"description": "Blast buildup +5%. Bonus +10.",
+				"passiveBlastAttack": 10,
+				"passiveBlastBuildupPercent": 5
+			},
+			{
+				"description": "Blast buildup +10%. Bonus +10.",
+				"passiveBlastAttack": 10,
+				"passiveBlastBuildupPercent": 10
+			},			
+			{
+				"description": "Blast buildup +20%. Bonus +10.",
+				"passiveBlastAttack": 10,
+				"passiveBlastBuildupPercent": 20
 			}
 		]
 	},
@@ -696,6 +754,60 @@
 			{
 				"description": "Quadruples the speed at which you heal recoverable damage.",
 				"passiveDamageRecoveryPercent": 300
+			}
+		]
+	},
+	{
+		"id": "evadeWindow",
+		"name": "Evade Window",
+		"description": "Extends the invulnerability period when evading.",
+		"levels": [
+			{
+				"description": "Very slightly increases invulnerability window."
+			},
+			{
+				"description": "Slightly increases invulnerability window."
+			},
+			{
+				"description": "Increases invulnerability window."
+			},
+			{
+				"description": "Greatly increases invulnerability window."
+			},
+			{
+				"description": "Massively increases invulnerability window."
+			}
+		]
+	},
+	{
+		"id": "evadeExtender",
+		"name": "Evade Extender",
+		"description": "Increases evade distance.",
+		"levels": [
+			{
+				"description": "Slightly extends evasion distance."
+			},
+			{
+				"description": "Extends evasion distance."
+			},
+			{
+				"description": "Greatly extends evasion distance."
+			}
+		]
+	},
+	{
+		"id": "freeElemAmmoUp",
+		"name": "Free Elem/Ammo Up",
+		"description": "Unlocks your weapon's hidden element. Also increases bowgun loading capacity. (There is a cap to loading capacity.)",
+		"levels": [
+			{
+				"description": "Draws out 33% of hidden element and expands clip size for some ammo."
+			},
+			{
+				"description": "Draws out 66% of hidden element and expands clip size for some ammo."
+			},
+			{
+				"description": "Draws out 100% of hidden element and expands clip size for some ammo."
 			}
 		]
 	}
