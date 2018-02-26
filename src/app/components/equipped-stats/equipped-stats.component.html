@@ -7,13 +7,13 @@
 		<li *ngIf="maxSharpness">Max Sharpness: {{maxSharpness}}</li>
 		<li>Affinity: {{affinity + passiveAffinity}}%</li>
 
-		<div *ngIf="ailment">
+		<div *ngIf="ailment" [style.color]="ailmentHidden ? 'gray' : 'white'">
 			<li>Ailment: {{ailment}}</li>
 			<li>Ailment Attack: {{ailmentAttack + effectivePassiveAilmentAttack}}</li>
 			<li>Ailment Buildup Rate: {{100 + effectivePassiveAilmentBuildupPercent}}%</li>
 		</div>
 		
-		<div *ngIf="element">
+		<div *ngIf="element" [style.color]="elementHidden ? 'gray' : 'white'">
 			<li>Element: {{element}}</li>
 			<li>Element Attack: {{elementAttack + effectivePassiveElementAttack}}</li>
 		</div>

@@ -4,22 +4,23 @@
 	<ul>
 		<div *ngIf="item?.equipmentCategory == 'Weapon'">
 			<li>Weapon Type: {{getWeaponTypeName(item?.weaponType)}}</li>
+			<li *ngIf="item?.maxSharpness">Max Sharpness: {{item?.maxSharpness}}</li>
 			<li>Attack: {{item?.baseAttack}}</li>
 			<li>Affinity: {{item?.baseAffinityPercent}}%</li>
 
-			<div *ngIf="item?.ailment">
+			<div *ngIf="item?.ailment" [style.color]="item?.ailmentHidden ? 'gray' : 'white'">
 				<li>Ailment: {{item?.ailment}}</li>
 				<li>Ailment Attack: {{item?.ailmentBaseAttack}}</li>
 			</div>
 			
-			<div *ngIf="item?.element">
+			<div *ngIf="item?.element" [style.color]="item?.elementHidden ? 'gray' : 'white'">
 				<li>Element: {{item?.element}}</li>
 				<li>Elemental Attack: {{item?.elementBaseAttack}}</li>
 			</div>
 		</div>
 
 		<div *ngIf="item?.equipmentCategory">
-			<li>Defense: {{item?.baseDefense}}</li>
+			<li *ngIf="item?.defense">Defense: {{item?.baseDefense}}</li>
 			
 			<div *ngIf="item.equipmentCategory == 'Armor'">
 				<li>Fire Resist: {{item?.fireResist || 0}}</li>

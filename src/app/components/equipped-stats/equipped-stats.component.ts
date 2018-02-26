@@ -26,8 +26,10 @@ export class EquippedStatsComponent implements OnInit {
 
 	element: ElementType;
 	elementAttack: number;
+	elementHidden: boolean;
 	ailment: AilmentType;
 	ailmentAttack: number;
+	ailmentHidden: boolean;
 
 	passiveDragonAttack: number;
 	passiveDragonAttackPercent: number;
@@ -92,8 +94,10 @@ export class EquippedStatsComponent implements OnInit {
 
 		this.element = null;
 		this.elementAttack = 0;
+		this.elementHidden = false;
 		this.ailment = null;
 		this.ailmentAttack = 0;
+		this.ailmentHidden = false;
 
 		this.passiveFireAttack = 0;
 		this.passiveWaterAttack = 0;
@@ -181,6 +185,8 @@ export class EquippedStatsComponent implements OnInit {
 		const weapon = _.find(items, item => item.weaponType);
 		if (weapon) {
 			this.maxSharpness = weapon.maxSharpness;
+			this.elementHidden = weapon.elementHidden;
+			this.ailmentHidden = weapon.ailmentHidden;
 
 			const weaponModifier = this.itemsService.getWeaponModifier(weapon.weaponType);
 			if (weaponModifier) {
