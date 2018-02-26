@@ -1,4 +1,7 @@
 <div class="container">
+
+	<h4>Attack</h4>
+	<hr>
 	<ul>
 		<li>Attack: {{totalAttack}} ({{attack}} + {{passiveAttack}} * {{weaponAttackModifier}})</li>
 		<li *ngIf="maxSharpness">Max Sharpness: {{maxSharpness}}</li>
@@ -12,13 +15,19 @@
 		
 		<div *ngIf="element">
 			<li>Element: {{element}}</li>
-			<li>Elemental Attack: {{elementAttack + effectivePassiveElementAttack}}</li>
+			<li>Element Attack: {{elementAttack + effectivePassiveElementAttack}}</li>
 		</div>
 
 		<div *ngIf="elderseal">
 			<li>Elderseal: {{elderseal}}</li>
 		</div>
+	</ul>
 
+	<br />
+
+	<h4>Defense</h4>
+	<hr>
+	<ul>
 		<li>Defense: {{defense}}</li>
 		<li>Fire Resist: {{fireResist}}</li>
 		<li>Water Resist: {{waterResist}}</li>

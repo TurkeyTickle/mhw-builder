@@ -1,10 +1,14 @@
 <div class="container">
+	<h4>Skills</h4>
+	<hr>
 	<ul>
 		<li *ngFor="let skill of skills" [style.color]="getSkillCountColor(skill)">{{skill.name}}: {{skill.equippedCount}}/{{skill.totalLevelCount}}</li>
 	</ul>
 
 	<div *ngIf="setBonuses?.length">
-		<h3>Set Bonuses</h3>
+		<br />
+		<h4>Set Bonuses</h4>
+		<hr>
 		<ul>
 			<li *ngFor="let setBonus of setBonuses" [style.color]="getSetBonusColor(setBonus)">{{setBonus.name}}: {{setBonus.equippedCount}}/{{setBonus.requiredCount}}</li>
 		</ul>
