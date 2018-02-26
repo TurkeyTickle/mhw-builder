@@ -20,7 +20,7 @@
 		</div>
 
 		<div *ngIf="item?.equipmentCategory">
-			<li *ngIf="item?.defense">Defense: {{item?.baseDefense}}</li>
+			<li *ngIf="item?.baseDefense">Defense: {{item?.baseDefense}}</li>
 			
 			<div *ngIf="item.equipmentCategory == 'Armor'">
 				<li>Fire Resist: {{item?.fireResist || 0}}</li>
