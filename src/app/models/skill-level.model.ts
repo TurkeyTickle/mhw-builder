@@ -32,6 +32,6 @@ export class SkillLevel {
 	passiveCritBoostPercent: number;
 
 	passiveGaugeFillRatePercent: number;
-	
+
 	passiveWeaponChargeReductionPercent: number;
 }
