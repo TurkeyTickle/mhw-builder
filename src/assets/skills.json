@@ -985,6 +985,16 @@
 		]
 	},
 	{
+		"id": "paralyzingFunctionality",
+		"name": "Paralyzing Functionality",
+		"description": "Allows you to apply paralyzing coatings.",
+		"levels": [
+			{
+				"description": "Lets you use paralyzing coating."
+			}
+		]
+	},
+	{
 		"id": "quickSheath",
 		"name": "Quick Sheath",
 		"description": "Speeds up weapon sheathing.",
@@ -1398,6 +1408,119 @@
 			},
 			{
 				"description": "Makes it much easier for Monsters to lose sight of you."
+			}
+		]
+	},
+	{
+		"id": "fortify",
+		"name": "Fortify",
+		"description": "Increases your attack and defense every time you fall in battle, up to two times. (This effect can stack twice.)",
+		"levels": [
+			{
+				"description": "Increases attack by 10% and defense by 15% with each use."
+			}
+		]
+	},
+	{
+		"id": "entomologist",
+		"name": "Entomologist",
+		"description": "Decreases the chances of destroying the bodies of small insect monsters, allowing them to be carved.",
+		"levels": [
+			{
+				"description": "Increases the chances of a corpse being left behind."
+			},
+			{
+				"description": "Greatly increases the chances of a corpse being left behind."
+			},
+			{
+				"description": "Makes it so corpses will always be left behind."
+			}
+		]
+	},
+	{
+		"id": "aquaticExpert",
+		"name": "Aquatic Expert",
+		"description": "Improves mobility in water.",
+		"levels": [
+			{
+				"description": "Prevents water from slowing movement."
+			},
+			{
+				"description": "Prevents water from slowing movement and improves evasion while in water."
+			},
+			{
+				"description": "Prevents water from slowing movement and greatly improves evasion while in water."
+			}
+		]
+	},
+	{
+		"id": "botanist",
+		"name": "Botanist",
+		"description": "Increases the quantity of herbs and other consumable items you gather.",
+		"levels": [
+			{
+				"description": "One extra consumable herb item per gather."
+			},
+			{
+				"description": "One extra consumable herb, fruit, nut, or seed item per gather."
+			},
+			{
+				"description": "One extra consumable herb, fruit, nut, seed, or insect item per gather."
+			},
+			{
+				"description": "One extra consumable herb, fruit, nut, seed, insect, or mushroom item per gather."
+			}
+		]
+	},
+	{
+		"id": "bleedingResistance",
+		"name": "Bleeding Resistance",
+		"description": "Grants protection against bleeding.",
+		"levels": [
+			{
+				"description": "Reduces damage while Bleeding."
+			},
+			{
+				"description": "Greatly reduces damage while Bleeding."
+			},
+			{
+				"description": "Prevents Bleeding."
+			}
+		]
+	},
+	{
+		"id": "freeMeal",
+		"name": "Free Meal",
+		"description": "Gives you a predetermined chance of consuming a food or drink item for free.",
+		"levels": [
+			{
+				"description": "Activates 25% of the time."
+			}
+		]
+	},
+	{
+		"id": "hornMaestro",
+		"name": "Horn Maestro",
+		"description": "Increases the effect duration of hunting horn melodies.",
+		"levels": [
+			{
+				"description": "Extends melody effect duration and increases health recovery."
+			}
+		]
+	},
+	{
+		"id": "toolSpecialist",
+		"name": "toolSpecialist",
+		"description": "Reduces the recharge time for specialized tools.",
+		"levels": [
+			{
+				"description": "Shortens time until reuse by 5%."
+			},
+			{
+				"description": "Shortens time until reuse by 10%."
+			},
+			{
+				"description": "Shortens time until reuse by 20%."
 			}
 		]
 	}

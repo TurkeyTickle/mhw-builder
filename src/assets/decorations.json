@@ -380,6 +380,106 @@
 		]
 	},
 	{
+		"name": "Fortitude Jewel 1",
+		"level": 1,
+		"skills": [
+			{
+				"id": "fortify",
+				"level": 1
+			}
+		]
+	},
+	{
+		"name": "Specimen Jewel 1",
+		"level": 1,
+		"skills": [
+			{
+				"id": "entomologist",
+				"level": 1
+			}
+		]
+	},
+	{
+		"name": "Miasma Jewel 1",
+		"level": 1,
+		"skills": [
+			{
+				"id": "effluviaResistance",
+				"level": 1
+			}
+		]
+	},
+	{
+		"name": "Protection Jewel 1",
+		"level": 1,
+		"skills": [
+			{
+				"id": "divineBlessing",
+				"level": 1
+			}
+		]
+	},
+	{
+		"name": "Mirewalker Jewel 1",
+		"level": 1,
+		"skills": [
+			{
+				"id": "aquaticExpert",
+				"level": 1
+			}
+		]
+	},
+	{
+		"name": "Botany Jewel 1",
+		"level": 1,
+		"skills": [
+			{
+				"id": "botanist",
+				"level": 1
+			}
+		]
+	},
+	{
+		"name": "Suture Jewel 1",
+		"level": 1,
+		"skills": [
+			{
+				"id": "bleedingResistance",
+				"level": 1
+			}
+		]
+	},
+	{
+		"name": "Satiated Jewel 1",
+		"level": 1,
+		"skills": [
+			{
+				"id": "freeMeal",
+				"level": 1
+			}
+		]
+	},
+	{
+		"name": "Sonorous Jewel 1",
+		"level": 1,
+		"skills": [
+			{
+				"id": "hornMaestro",
+				"level": 1
+			}
+		]
+	},
+	{
+		"name": "Maintenance Jewel 1",
+		"level": 1,
+		"skills": [
+			{
+				"id": "toolSpecialist",
+				"level": 1
+			}
+		]
+	},
+	{
 		"name": "Critical Jewel 2",
 		"level": 2,
 		"skills": [
@@ -545,6 +645,16 @@
 		"skills": [
 			{
 				"id": "flinchFree",
+				"level": 1
+			}
+		]
+	},
+	{
+		"name": "Paracoat Jewel 3",
+		"level": 3,
+		"skills": [
+			{
+				"id": "paralyzingFunctionality",
 				"level": 1
 			}
 		]
