@@ -195,6 +195,46 @@
 		]
 	},
 	{
+		"id": "fireResistance",
+		"name": "Fire Resistance",
+		"description": "Increases fire resistance. Also improves defense at higher levels.",
+		"levels": [
+			{
+				"description": "Fire Resistance +6",
+				"passiveFireResist": 6
+			},
+			{
+				"description": "Fire Resistance +12",
+				"passiveFireResist": 12
+			},
+			{
+				"description": "Fire Resistance +20. Defense +10.",
+				"passiveFireResist": 20,
+				"passiveDefense": 10
+			}
+		]
+	},
+	{
+		"id": "waterResistance",
+		"name": "Water Resistance",
+		"description": "Increases water resistance. Also improves defense at higher levels.",
+		"levels": [
+			{
+				"description": "Water Resistance +6",
+				"passiveWaterResist": 6
+			},
+			{
+				"description": "Water Resistance +12",
+				"passiveWaterResist": 12
+			},
+			{
+				"description": "Water Resistance +20. Defense +10.",
+				"passiveWaterResist": 20,
+				"passiveDefense": 10
+			}
+		]
+	},
+	{
 		"id": "thunderResistance",
 		"name": "Thunder Resistance",
 		"description": "Increases thunder resistance. Also improves defense at higher levels.",
@@ -210,6 +250,46 @@
 			{
 				"description": "Thunder Resistance +20. Defense +10.",
 				"passiveThunderResist": 20,
+				"passiveDefense": 10
+			}
+		]
+	},
+	{
+		"id": "iceResistance",
+		"name": "Ice Resistance",
+		"description": "Increases ice resistance. Also improves defense at higher levels.",
+		"levels": [
+			{
+				"description": "Ice Resistance +6",
+				"passiveIceResist": 6
+			},
+			{
+				"description": "Ice Resistance +12",
+				"passiveIceResist": 12
+			},
+			{
+				"description": "Ice Resistance +20. Defense +10.",
+				"passiveIceResist": 20,
+				"passiveDefense": 10
+			}
+		]
+	},
+	{
+		"id": "dragonResistance",
+		"name": "Dragon Resistance",
+		"description": "Increases dragon resistance. Also improves defense at higher levels.",
+		"levels": [
+			{
+				"description": "Dragon Resistance +6",
+				"passiveDragonResist": 6
+			},
+			{
+				"description": "Dragon Resistance +12",
+				"passiveDragonResist": 12
+			},
+			{
+				"description": "Dragon Resistance +20. Defense +10.",
+				"passiveDragonResist": 20,
 				"passiveDefense": 10
 			}
 		]
@@ -723,6 +803,79 @@
 		]
 	},
 	{
+		"id": "poisonResistance",
+		"name": "Poison Resistance",
+		"description": "Grants protection against the effects of poison.",
+		"levels": [
+			{
+				"description": "Reduces the duration of poison by 30%.",
+				"passivePoisonResistPercent": 30
+			},
+			{
+				"description": "Reduces the duration of poison by 60%.",
+				"passivePoisonResistPercent": 60
+			},
+			{
+				"description": "Prevents poison.",
+				"passivePoisonResistPercent": 100
+			}
+		]
+	},
+	{
+		"id": "paralysisResistance",
+		"name": "Paralysis Resistance",
+		"description": "Reduces the duration of paralysis.",
+		"levels": [
+			{
+				"description": "Reduces the duration of paralysis by 30%.",
+				"passiveParalysisResistPercent": 30
+			},
+			{
+				"description": "Reduces the duration of paralysis by 60%.",
+				"passiveParalysisResistPercent": 60
+			},
+			{
+				"description": "Prevents paralysis.",
+				"passiveParalysisResistPercent": 100
+			}
+		]
+	},
+	{
+		"id": "sleepResistance",
+		"name": "Sleep Resistance",
+		"description": "Reduces the duration of sleep.",
+		"levels": [
+			{
+				"description": "Reduces the duration of sleep by 30%.",
+				"passiveSleepResistPercent": 30
+			},
+			{
+				"description": "Reduces the duration of sleep by 60%.",
+				"passiveSleepResistPercent": 60
+			},
+			{
+				"description": "Prevents sleep.",
+				"passiveSleepResistPercent": 100
+			}
+		]
+	},
+	{
+		"id": "blastResistance",
+		"name": "Blast Resistance",
+		"description": "Grants protection against blastblight.",
+		"levels": [
+			{
+				"description": "Delays blastblights and reduces blast damage."
+			},
+			{
+				"description": "Greatly delays blastblights and reduces blast damage."
+			},
+			{
+				"description": "Prevents blastblight."
+			}
+		]
+	},
+	{
 		"id": "recoverySpeed",
 		"name": "Recovery Speed",
 		"description": "Speeds healing of recoverable damage (the red portion of the health gauge).",
@@ -792,6 +945,32 @@
 			},
 			{
 				"description": "Draws out 100% of hidden element and expands clip size for some ammo."
+			}
+		]
+	},
+	{
+		"id": "ironSkin",
+		"name": "Iron Skin",
+		"description": "Grants protection against Defense Down.",
+		"levels": [
+			{
+				"description": "Reduces the duration of Defense Down by 30%."
+			},
+			{
+				"description": "Reduces the duration of Defense Down by 30%."
+			},
+			{
+				"description": "Reduces the duration of Defense Down by 30%."
+			}
+		]
+	},
+	{
+		"id": "bowChargePlus",
+		"name": "Bow Charge Plus",
+		"description": "Increases max bow charge level by one.",
+		"levels": [
+			{
+				"description": "Increases max bow charge level by one."
 			}
 		]
 	}

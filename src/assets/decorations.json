@@ -10,6 +10,46 @@
 		]
 	},
 	{
+		"name": "Blaze Jewel 1",
+		"level": 1,
+		"skills": [
+			{
+				"id": "fireAttack",
+				"level": 1
+			}
+		]
+	},
+	{
+		"name": "Stream Jewel 1",
+		"level": 1,
+		"skills": [
+			{
+				"id": "waterAttack",
+				"level": 1
+			}
+		]
+	},
+	{
+		"name": "Bolt Jewel 1",
+		"level": 1,
+		"skills": [
+			{
+				"id": "thunderAttack",
+				"level": 1
+			}
+		]
+	},
+	{
+		"name": "Frost Jewel 1",
+		"level": 1,
+		"skills": [
+			{
+				"id": "iceAttack",
+				"level": 1
+			}
+		]
+	},
+	{
 		"name": "Dragon Jewel 1",
 		"level": 1,
 		"skills": [
@@ -60,11 +100,151 @@
 		]
 	},
 	{
+		"name": "Mighty Bow Jewel 2",
+		"level": 2,
+		"skills": [
+			{
+				"id": "bowChargePlus",
+				"level": 1
+			}
+		]
+	},
+	{
 		"name": "Earplugs Jewel 3",
 		"level": 3,
 		"skills": [
 			{
 				"id": "earplugs",
+				"level": 1
+			}
+		]
+	},
+	{
+		"name": "Handicraft Jewel 3",
+		"level": 3,
+		"skills": [
+			{
+				"id": "handicraft",
+				"level": 1
+			}
+		]
+	},
+	{
+		"name": "Fast Charge Jewel 2",
+		"level": 2,
+		"skills": [
+			{
+				"id": "focus",
+				"level": 1
+			}
+		]
+	},
+	{
+		"name": "Antidote Jewel 1",
+		"level": 1,
+		"skills": [
+			{
+				"id": "poisonResistance",
+				"level": 1
+			}
+		]
+	},
+	{
+		"name": "Antipara Jewel 1",
+		"level": 1,
+		"skills": [
+			{
+				"id": "paralysisResistance",
+				"level": 1
+			}
+		]
+	},
+	{
+		"name": "Pep Jewel 1",
+		"level": 1,
+		"skills": [
+			{
+				"id": "sleepResistance",
+				"level": 1
+			}
+		]
+	},
+	{
+		"name": "Steadfast Jewel 1",
+		"level": 1,
+		"skills": [
+			{
+				"id": "sleepResistance",
+				"level": 1
+			}
+		]
+	},
+	{
+		"name": "Antiblast Jewel 1",
+		"level": 1,
+		"skills": [
+			{
+				"id": "blastResistance",
+				"level": 1
+			}
+		]
+	},
+	{
+		"name": "Def Lock Jewel 1",
+		"level": 1,
+		"skills": [
+			{
+				"id": "ironSkin",
+				"level": 1
+			}
+		]
+	},
+	{
+		"name": "Fire Res Jewel 1",
+		"level": 1,
+		"skills": [
+			{
+				"id": "fireResistance",
+				"level": 1
+			}
+		]
+	},
+	{
+		"name": "Water Res Jewel 1",
+		"level": 1,
+		"skills": [
+			{
+				"id": "waterResistance",
+				"level": 1
+			}
+		]
+	},
+	{
+		"name": "Thunder Res Jewel 1",
+		"level": 1,
+		"skills": [
+			{
+				"id": "thunderResistance",
+				"level": 1
+			}
+		]
+	},
+	{
+		"name": "Ice Res Jewel 1",
+		"level": 1,
+		"skills": [
+			{
+				"id": "iceResistance",
+				"level": 1
+			}
+		]
+	},
+	{
+		"name": "Dragon Res Jewel 1",
+		"level": 1,
+		"skills": [
+			{
+				"id": "dragonResistance",
 				"level": 1
 			}
 		]
