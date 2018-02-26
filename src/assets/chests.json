@@ -1,22 +1,255 @@
 [
 	{
-		"name": "Dober Mail Beta",
+		"name": "Xeno'jiva Hide Beta",
 		"itemType": "Chest",
-		"baseDefense": 60,
-		"fireResist": -2,
-		"waterResist": 0,
-		"thunderResist": -1,
-		"iceResist": -1,
-		"dragonResist": 4,
+		"baseDefense": 72,
+		"fireResist": -3,
+		"waterResist": 2,
+		"thunderResist": 2,
+		"iceResist": 2,
+		"dragonResist": -4,
 		"skills": [
 			{
-				"id": "attackBoost",
+				"id": "powerProlonger",
 				"level": 2
+			},
+			{
+				"id": "xenojivaDivinity"
 			}
 		],
 		"slots": [
 			{
-				"level": 3
+				"level": 1
+			},
+			{
+				"level": 1
+			}
+		]
+	},
+	{
+		"name": "Xeno'jiva Hide Alpha",
+		"itemType": "Chest",
+		"baseDefense": 72,
+		"fireResist": -3,
+		"waterResist": 2,
+		"thunderResist": 2,
+		"iceResist": 2,
+		"dragonResist": -4,
+		"skills": [
+			{
+				"id": "powerProlonger",
+				"level": 2
+			},
+			{
+				"id": "blightResistance",
+				"level": 1
+			},
+			{
+				"id": "xenojivaDivinity"
+			}
+		],
+		"slots": [
+			{
+				"level": 1
+			}
+		]
+	},
+	{
+		"name": "Kirin Jacket Beta",
+		"itemType": "Chest",
+		"baseDefense": 64,
+		"fireResist": -3,
+		"waterResist": -2,
+		"thunderResist": 4,
+		"iceResist": -2,
+		"dragonResist": 2,
+		"skills": [
+			{
+				"id": "divineBlessing",
+				"level": 2
+			},
+			{
+				"id": "kirinFavor"
+			}
+		],
+		"slots": [
+			{
+				"level": 1
+			}
+		]
+	},
+	{
+		"name": "Kirin Jacket Alpha",
+		"itemType": "Chest",
+		"baseDefense": 64,
+		"fireResist": -3,
+		"waterResist": -2,
+		"thunderResist": 4,
+		"iceResist": -2,
+		"dragonResist": 2,
+		"skills": [
+			{
+				"id": "divineBlessing",
+				"level": 2
+			},
+			{
+				"id": "thunderAttack",
+				"level": 1
+			},
+			{
+				"id": "kirinFavor"
+			}
+		]
+	},
+	{
+		"name": "Vaal Hazak Mail Beta",
+		"itemType": "Chest",
+		"baseDefense": 64,
+		"fireResist": -4,
+		"waterResist": 4,
+		"thunderResist": 1,
+		"iceResist": -1,
+		"dragonResist": -3,
+		"skills": [
+			{
+				"id": "recoverySpeed",
+				"level": 2
+			},
+			{
+				"id": "kirinFavor"
+			}
+		],
+		"slots": [
+			{
+				"level": 1
+			},
+			{
+				"level": 1
+			}
+		]
+	},
+	{
+		"name": "Vaal Hazak Mail Alpha",
+		"itemType": "Chest",
+		"baseDefense": 64,
+		"fireResist": -4,
+		"waterResist": 4,
+		"thunderResist": 1,
+		"iceResist": -1,
+		"dragonResist": -3,
+		"skills": [
+			{
+				"id": "recoverySpeed",
+				"level": 2
+			},
+			{
+				"id": "dragonAttack",
+				"level": 1
+			},
+			{
+				"id": "kirinFavor"
+			}
+		],
+		"slots": [
+			{
+				"level": 1
+			}
+		]
+	},
+	{
+		"name": "Kushala Cista Beta",
+		"itemType": "Chest",
+		"baseDefense": 64,
+		"fireResist": 0,
+		"waterResist": 2,
+		"thunderResist": -3,
+		"iceResist": -4,
+		"dragonResist": -2,
+		"skills": [
+			{
+				"id": "handicraft",
+				"level": 2
+			},
+			{
+				"id": "kushalaDaoraFlight"
+			}
+		],
+		"slots": [
+			{
+				"level": 2
+			}
+		]
+	},
+	{
+		"name": "Kushala Cista Alpha",
+		"itemType": "Chest",
+		"baseDefense": 64,
+		"fireResist": 0,
+		"waterResist": 2,
+		"thunderResist": -3,
+		"iceResist": -4,
+		"dragonResist": -2,
+		"skills": [
+			{
+				"id": "handicraft",
+				"level": 2
+			},
+			{
+				"id": "focus",
+				"level": 1
+			},
+			{
+				"id": "kushalaDaoraFlight"
+			}
+		]
+	},
+	{
+		"name": "Kaiser Mail Beta",
+		"itemType": "Chest",
+		"baseDefense": 64,
+		"fireResist": 3,
+		"waterResist": -3,
+		"thunderResist": 1,
+		"iceResist": -3,
+		"dragonResist": 1,
+		"skills": [
+			{
+				"id": "specialAmmoBoost",
+				"level": 2
+			},
+			{
+				"id": "teostraTechnique"
+			}
+		],
+		"slots": [
+			{
+				"level": 1
+			},
+			{
+				"level": 1
+			}
+		]
+	},
+	{
+		"name": "Kaiser Mail Alpha",
+		"itemType": "Chest",
+		"baseDefense": 64,
+		"fireResist": 3,
+		"waterResist": -3,
+		"thunderResist": 1,
+		"iceResist": -3,
+		"dragonResist": 1,
+		"skills": [
+			{
+				"id": "specialAmmoBoost",
+				"level": 2
+			},
+			{
+				"id": "latentPower",
+				"level": 1
+			},
+			{
+				"id": "teostraTechnique"
 			}
 		]
 	},
@@ -48,6 +281,34 @@
 		]
 	},
 	{
+		"name": "Nergigante Mail Alpha",
+		"itemType": "Chest",
+		"baseDefense": 64,
+		"fireResist": 1,
+		"waterResist": 1,
+		"thunderResist": -3,
+		"iceResist": 1,
+		"dragonResist": -3,
+		"skills": [
+			{
+				"id": "staminaSurge",
+				"level": 2
+			},
+			{
+				"id": "agitator",
+				"level": 1
+			},
+			{
+				"id": "nergiganteHunger"
+			}
+		],
+		"slots": [
+			{
+				"level": 1
+			}
+		]
+	},
+	{
 		"name": "Diablos Nero Mail Beta",
 		"itemType": "Chest",
 		"baseDefense": 56,
@@ -71,6 +332,27 @@
 			},
 			{
 				"level": 1
+			}
+		]
+	},
+	{
+		"name": "Dober Mail Beta",
+		"itemType": "Chest",
+		"baseDefense": 60,
+		"fireResist": -2,
+		"waterResist": 0,
+		"thunderResist": -1,
+		"iceResist": -1,
+		"dragonResist": 4,
+		"skills": [
+			{
+				"id": "attackBoost",
+				"level": 2
+			}
+		],
+		"slots": [
+			{
+				"level": 3
 			}
 		]
 	}

@@ -390,6 +390,122 @@
 		]
 	},
 	{
+		"id": "thunderAttack",
+		"name": "Thunder Attack",
+		"description": "Increases thunder element attack power. (Elemental attack power has a maximum limit.)",
+		"levels": [
+			{
+				"description": "Thunder attack +30",
+				"passiveThunderAttack": 30
+			},
+			{
+				"description": "Thunder attack +60",
+				"passiveThunderAttack": 60
+			},
+			{
+				"description": "Thunder attack +100",
+				"passiveThunderAttack": 100
+			},
+			{
+				"description": "Thunder attack +5%. Bonus: +100",
+				"passiveThunderAttack": 100,
+				"passiveThunderAttackPercent": 5
+			},
+			{
+				"description": "Thunder attack +10%. Bonus: +100",
+				"passiveThunderAttack": 100,
+				"passiveThunderAttackPercent": 10
+			}
+		]
+	},
+	{
+		"id": "fireAttack",
+		"name": "Fire Attack",
+		"description": "Increases fire element attack power. (Elemental attack power has a maximum limit.)",
+		"levels": [
+			{
+				"description": "Fire attack +30",
+				"passiveFireAttack": 30
+			},
+			{
+				"description": "Fire attack +60",
+				"passiveFireAttack": 60
+			},
+			{
+				"description": "Fire attack +100",
+				"passiveFireAttack": 100
+			},
+			{
+				"description": "Fire attack +5%. Bonus: +100",
+				"passiveFireAttack": 100,
+				"passiveFireAttackPercent": 5
+			},
+			{
+				"description": "Fire attack +10%. Bonus: +100",
+				"passiveFireAttack": 100,
+				"passiveFireAttackPercent": 10
+			}
+		]
+	},
+	{
+		"id": "waterAttack",
+		"name": "Water Attack",
+		"description": "Increases water element attack power. (Elemental attack power has a maximum limit.)",
+		"levels": [
+			{
+				"description": "Water attack +30",
+				"passiveWaterAttack": 30
+			},
+			{
+				"description": "Water attack +60",
+				"passiveWaterAttack": 60
+			},
+			{
+				"description": "Water attack +100",
+				"passiveWaterAttack": 100
+			},
+			{
+				"description": "Water attack +5%. Bonus: +100",
+				"passiveWaterAttack": 100,
+				"passiveWaterAttackPercent": 5
+			},
+			{
+				"description": "Water attack +10%. Bonus: +100",
+				"passiveWaterAttack": 100,
+				"passiveWaterAttackPercent": 10
+			}
+		]
+	},
+	{
+		"id": "iceAttack",
+		"name": "Ice Attack",
+		"description": "Increases ice element attack power. (Elemental attack power has a maximum limit.)",
+		"levels": [
+			{
+				"description": "Ice attack +30",
+				"passiveIceAttack": 30
+			},
+			{
+				"description": "Ice attack +60",
+				"passiveIceAttack": 60
+			},
+			{
+				"description": "Ice attack +100",
+				"passiveIceAttack": 100
+			},
+			{
+				"description": "Ice attack +5%. Bonus: +100",
+				"passiveIceAttack": 100,
+				"passiveIceAttackPercent": 5
+			},
+			{
+				"description": "Ice attack +10%. Bonus: +100",
+				"passiveIceAttack": 100,
+				"passiveIceAttackPercent": 10
+			}
+		]
+	},
+	{
 		"id": "poisonAttack",
 		"name": "Poison Attack",
 		"description": "Increases the rate of poison buildup. (Elemental buildup has a maximum limit.)",
@@ -418,6 +534,168 @@
 		"levels": [
 			{
 				"description": "Regenerates your health as you continually attack a monster. Recovery varies by weapon."
+			}
+		]
+	},
+	{
+		"id": "superRecover",
+		"name": "Super Recovery",
+		"description": "Allows recovery to exceed the red portion of the health gauge.",
+		"levels": [
+			{
+				"description": "Allows recovery to exceed the red portion of the health gauge."
+			}
+		]
+	},
+	{
+		"id": "peakPerformance",
+		"name": "Peak Performance",
+		"description": "Increases attack when your health is full",
+		"levels": [
+			{
+				"description": "While active, grants attack +5.",
+				"passiveAttack": 5
+			},
+			{
+				"description": "While active, grants attack +10.",
+				"passiveAttack": 10
+			},
+			{
+				"description": "While active, grants attack +20.",
+				"passiveAttack": 20
+			}
+		]
+	},
+	{
+		"id": "nullifyWindPressure",
+		"name": "Nullify Wind Pressure",
+		"description": "Negates all wind pressure.",
+		"levels": [
+			{
+				"description": "Negates all wind pressure."
+			}
+		]
+	},
+	{
+		"id": "handicraft",
+		"name": "Handicraft",
+		"description": "Extends the weapon sharpness gauge. However, it will not increase the guage past its maximum.",
+		"levels": [
+			{
+				"description": "Weapon sharpness +10",
+				"passiveWeaponSharpness": 10
+			},
+			{
+				"description": "Weapon sharpness +20",
+				"passiveWeaponSharpness": 20
+			},
+			{
+				"description": "Weapon sharpness +30",
+				"passiveWeaponSharpness": 30
+			},
+			{
+				"description": "Weapon sharpness +40",
+				"passiveWeaponSharpness": 40
+			},
+			{
+				"description": "Weapon sharpness +50",
+				"passiveWeaponSharpness": 50
+			}
+		]
+	},
+	{
+		"id": "latentPower",
+		"name": "Latent Power",
+		"description": "Temporarily increases affinity and reduces stamina depletion when certain conditions are met.",
+		"levels": [
+			{
+				"description": "While active, increases affinity by 10% and reduces stamina depletion by 10%",
+				"activeAffinityPercent": 10,
+				"activeStaminaDepletionReductionPercent": 10
+			},			
+			{
+				"description": "While active, increases affinity by 20% and reduces stamina depletion by 10%",
+				"activeAffinityPercent": 20,
+				"activeStaminaDepletionReductionPercent": 10
+			},
+			{
+				"description": "While active, increases affinity by 30% and reduces stamina depletion by 30%",
+				"activeAffinityPercent": 30,
+				"activeStaminaDepletionReductionPercent": 30
+			},	
+			{
+				"description": "While active, increases affinity by 40% and reduces stamina depletion by 30%",
+				"activeAffinityPercent": 40,
+				"activeStaminaDepletionReductionPercent": 30
+			},
+			{
+				"description": "While active, increases affinity by 50% and reduces stamina depletion by 50%",
+				"activeAffinityPercent": 50,
+				"activeStaminaDepletionReductionPercent": 50
+			}
+		]
+	},
+	{
+		"id": "mastersTouch",
+		"name": "Master's Touch",
+		"description": "Prevents your weapon from losing sharpness during critical hits.",
+		"levels": [
+			{
+				"description": "Prevents your weapon from losing sharpness during critical hits."
+			}
+		]
+	},
+	{
+		"id": "powerProlonger",
+		"name": "Power Prolonger",
+		"description": "Allows long swords, dual blades, insect glaives, switch axes, and charge blades to stay powered up longer.",
+		"levels": [
+			{
+				"description": "Bonus duration +10%"
+			},
+			{
+				"description": "Bonus duration +20%"
+			},
+			{
+				"description": "Bonus duration +30%"
+			}
+		]
+	},
+	{
+		"id": "blightResistance",
+		"name": "Blight Resistance",
+		"description": "Grants protection against all elemental blights.",
+		"levels": [
+			{
+				"description": "Reduces the duration of all elemental blights by 30%.",
+				"elementalBlightResistPercent": 30
+			},
+			{
+				"description": "Reduces the duration of all elemental blights by 60%.",
+				"elementalBlightResistPercent": 60
+			},
+			{
+				"description": "Nullifies all elemental blights",
+				"elementalBlightResistPercent": 100
+			}
+		]
+	},
+	{
+		"id": "recoverySpeed",
+		"name": "Recovery Speed",
+		"description": "Speeds healing of recoverable damage (the red portion of the health gauge).",
+		"levels": [
+			{
+				"description": "Doubles the speed at which you heal recoverable damage.",
+				"passiveDamageRecoveryPercent": 100
+			},
+			{
+				"description": "Triples the speed at which you heal recoverable damage.",
+				"passiveDamageRecoveryPercent": 200
+			},
+			{
+				"description": "Quadruples the speed at which you heal recoverable damage.",
+				"passiveDamageRecoveryPercent": 300
 			}
 		]
 	}

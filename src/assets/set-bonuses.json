@@ -30,6 +30,36 @@
 		]
 	},
 	{
+		"id": "vaalHazakVitality",
+		"name": "Vaal Hazak Vitality",
+		"setLevels": [
+			{
+				"id": "superRecovery",
+				"pieces": 3
+			}
+		]
+	},
+	{
+		"id": "kushalaDaoraFlight",
+		"name": "Kushala Daora Flight",
+		"setLevels": [
+			{
+				"id": "nullifyWindPressure",
+				"pieces": 3
+			}
+		]
+	},
+	{
+		"id": "teostraTechnique",
+		"name": "Teostra Flight",
+		"setLevels": [
+			{
+				"id": "mastersTouch",
+				"pieces": 3
+			}
+		]
+	},
+	{
 		"id": "diablosMastery",
 		"name": "Diablos Mastery",
 		"setLevels": [
