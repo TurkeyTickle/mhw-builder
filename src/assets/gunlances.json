@@ -1,3 +1,270 @@
 [
-	
+	{
+		"name": "Chrome Gunlance II",
+		"itemType": "Weapon",
+		"weaponType": "Gunlance",
+		"baseAttack": 414,
+		"maxSharpness": "Blue",
+		"baseAffinityPercent": 0,
+		"ailment": "Blast",
+		"ailmentBaseAttack": 270,
+		"ailmentHidden": true,
+		"slots": [
+			{
+				"level": 1
+			},
+			{
+				"level": 1
+			}
+		]
+	},
+	{
+		"name": "Eradication Flame",
+		"itemType": "Weapon",
+		"weaponType": "Gunlance",
+		"baseAttack": 483,
+		"maxSharpness": "Blue",
+		"baseAffinityPercent": 0,
+		"element": "Dragon",
+		"elementBaseAttack": 150,
+		"elderseal": "High",
+		"slots": [
+			{
+				"level": 2
+			}
+		]
+	},
+	{
+		"name": "Mythic Kadachi Striker",
+		"itemType": "Weapon",
+		"weaponType": "Gunlance",
+		"baseAttack": 414,
+		"maxSharpness": "Blue",
+		"baseAffinityPercent": 20,
+		"element": "Thunder",
+		"elementBaseAttack": 270,
+		"slots": [
+			{
+				"level": 1
+			}
+		]
+	},
+	{
+		"name": "Blue Chariot",
+		"itemType": "Weapon",
+		"weaponType": "Gunlance",
+		"baseAttack": 437,
+		"maxSharpness": "Blue",
+		"baseAffinityPercent": 20,
+		"element": "Fire",
+		"elementBaseAttack": 240,
+		"slots": [
+			{
+				"level": 1
+			}
+		]
+	},
+	{
+		"name": "Royal Burst",
+		"itemType": "Weapon",
+		"weaponType": "Gunlance",
+		"baseAttack": 437,
+		"maxSharpness": "Blue",
+		"baseAffinityPercent": 15,
+		"ailment": "Poison",
+		"ailmentBaseAttack": 330,
+		"slots": [
+			{
+				"level": 1
+			}
+		]
+	},
+	{
+		"name": "Jyura Buster III",
+		"itemType": "Weapon",
+		"weaponType": "Gunlance",
+		"baseAttack": 437,
+		"maxSharpness": "Blue",
+		"baseAffinityPercent": 0,
+		"element": "Water",
+		"elementBaseAttack": 360,
+		"slots": [
+			{
+				"level": 1
+			}
+		]
+	},
+	{
+		"name": "Legiana Cannon II",
+		"itemType": "Weapon",
+		"weaponType": "Gunlance",
+		"baseAttack": 368,
+		"maxSharpness": "White",
+		"baseAffinityPercent": 0,
+		"element": "Ice",
+		"elementBaseAttack": 360
+	},
+	{
+		"name": "Great Bone Gunlance II",
+		"itemType": "Weapon",
+		"weaponType": "Gunlance",
+		"baseAttack": 437,
+		"maxSharpness": "Blue",
+		"baseAffinityPercent": 0,
+		"element": "Thunder",
+		"elementBaseAttack": 270,
+		"elementHidden": true,
+		"baseDefense": 10,
+		"slots": [
+			{
+				"level": 3
+			}
+		]
+	},
+	{
+		"name": "Bazel Buster II",
+		"itemType": "Weapon",
+		"weaponType": "Gunlance",
+		"baseAttack": 460,
+		"maxSharpness": "Blue",
+		"baseAffinityPercent": -10,
+		"ailment": "Blast",
+		"ailmentBaseAttack": 210,
+		"slots": [
+			{
+				"level": 1
+			}
+		]
+	},
+	{
+		"name": "Glutton Gunlance III",
+		"itemType": "Weapon",
+		"weaponType": "Gunlance",
+		"baseAttack": 437,
+		"maxSharpness": "Blue",
+		"baseAffinityPercent": 0,
+		"ailment": "Sleep",
+		"ailmentBaseAttack": 300,
+		"ailmentHidden": true,
+		"slots": [
+			{
+				"level": 3
+			},
+			{
+				"level": 2
+			}
+		]
+	},
+	{
+		"name": "Deathfang Gunlance III",
+		"itemType": "Weapon",
+		"weaponType": "Gunlance",
+		"baseAttack": 368,
+		"maxSharpness": "Blue",
+		"baseAffinityPercent": 10,
+		"ailment": "Paralysis",
+		"ailmentBaseAttack": 450
+	},
+	{
+		"name": "Hazak Spysa II",
+		"itemType": "Weapon",
+		"weaponType": "Gunlance",
+		"baseAttack": 460,
+		"maxSharpness": "Blue",
+		"baseAffinityPercent": 0,
+		"element": "Dragon",
+		"elementBaseAttack": 270,
+		"elderseal": "Average",
+		"slots": [
+			{
+				"level": 2
+			}
+		]
+	},
+	{
+		"name": "Barroth Blaster III",
+		"itemType": "Weapon",
+		"weaponType": "Gunlance",
+		"baseAttack": 460,
+		"maxSharpness": "Blue",
+		"baseAffinityPercent": -10,
+		"ailment": "Paralysis",
+		"ailmentBaseAttack": 390,
+		"ailmentHidden": true,
+		"baseDefense": 15
+	},
+	{
+		"name": "Anja Cannon III",
+		"itemType": "Weapon",
+		"weaponType": "Gunlance",
+		"baseAttack": 483,
+		"maxSharpness": "Blue",
+		"baseAffinityPercent": -20,
+		"element": "Fire",
+		"elementBaseAttack": 450
+	},
+	{
+		"name": "Dragonbone Gunlance III",
+		"itemType": "Weapon",
+		"weaponType": "Gunlance",
+		"baseAttack": 368,
+		"maxSharpness": "Blue",
+		"baseAffinityPercent": 0,
+		"element": "Dragon",
+		"elementBaseAttack": 420,
+		"elderseal": "Low",
+		"slots": [
+			{
+				"level": 1
+			},
+			{
+				"level": 1
+			}
+		]
+	},
+	{
+		"name": "Earthshaker Magda Lahat",
+		"itemType": "Weapon",
+		"weaponType": "Gunlance",
+		"baseAttack": 460,
+		"maxSharpness": "Green",
+		"baseAffinityPercent": -10,
+		"ailment": "Blast",
+		"ailmentBaseAttack": 420,
+		"baseDefense": 20
+	},
+	{
+		"name": "Daora's Brigia",
+		"itemType": "Weapon",
+		"weaponType": "Gunlance",
+		"baseAttack": 414,
+		"maxSharpness": "Blue",
+		"baseAffinityPercent": 10,
+		"element": "Ice",
+		"elementBaseAttack": 240,
+		"slots": [
+			{
+				"level": 3
+			}
+		]
+	},
+	{
+		"name": "Xeno Hemta",
+		"itemType": "Weapon",
+		"weaponType": "Gunlance",
+		"baseAttack": 391,
+		"maxSharpness": "White",
+		"baseAffinityPercent": 15,
+		"element": "Dragon",
+		"elementBaseAttack": 180,
+		"elderseal": "Low",
+		"slots": [
+			{
+				"level": 3
+			},
+			{
+				"level": 3
+			}
+		]
+	}
 ]
