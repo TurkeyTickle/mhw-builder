@@ -1,3 +1,294 @@
 [
-	
+	{
+		"name": "Perfected Alloy Axe II",
+		"itemType": "Weapon",
+		"weaponType": "SwitchAxe",
+		"baseAttack": 630,
+		"maxSharpness": "Blue",
+		"baseAffinityPercent": 0,
+		"ailment": "Poison",
+		"ailmentBaseAttack": 420,
+		"ailmentHidden": true,
+		"slots": [
+			{
+				"level": 1
+			},
+			{
+				"level": 1
+			}
+		]
+	},
+	{
+		"name": "Dying Light",
+		"itemType": "Weapon",
+		"weaponType": "SwitchAxe",
+		"baseAttack": 700,
+		"maxSharpness": "Blue",
+		"baseAffinityPercent": 0,
+		"element": "Dragon",
+		"elementBaseAttack": 150,
+		"elderseal": "High",
+		"slots": [
+			{
+				"level": 1
+			}
+		]
+	},
+	{
+		"name": "Legia Frostreaver",
+		"itemType": "Weapon",
+		"weaponType": "SwitchAxe",
+		"baseAttack": 560,
+		"maxSharpness": "White",
+		"baseAffinityPercent": 0,
+		"element": "Ice",
+		"elementBaseAttack": 300
+	},
+	{
+		"name": "Lightning Chopper III",
+		"itemType": "Weapon",
+		"weaponType": "SwitchAxe",
+		"baseAttack": 630,
+		"maxSharpness": "Blue",
+		"baseAffinityPercent": 0,
+		"element": "Thunder",
+		"elementBaseAttack": 180,
+		"slots": [
+			{
+				"level": 2
+			}
+		]
+	},
+	{
+		"name": "Motor Chopper II",
+		"itemType": "Weapon",
+		"weaponType": "SwitchAxe",
+		"baseAttack": 735,
+		"maxSharpness": "Blue",
+		"baseAffinityPercent": 0,
+		"element": "Fire",
+		"elementBaseAttack": 120,
+		"baseDefense": 30,
+		"slots": [
+			{
+				"level": 1
+			}
+		]
+	},
+	{
+		"name": "Jagras Raider III",
+		"itemType": "Weapon",
+		"weaponType": "SwitchAxe",
+		"baseAttack": 665,
+		"maxSharpness": "Blue",
+		"baseAffinityPercent": 0,
+		"ailment": "Sleep",
+		"ailmentBaseAttack": 240,
+		"ailmentHidden": true,
+		"slots": [
+			{
+				"level": 3
+			},
+			{
+				"level": 2
+			}
+		]
+	},
+	{
+		"name": "Bazel Raider II",
+		"itemType": "Weapon",
+		"weaponType": "SwitchAxe",
+		"baseAttack": 700,
+		"maxSharpness": "Blue",
+		"baseAffinityPercent": -15,
+		"ailment": "Blast",
+		"ailmentBaseAttack": 180,
+		"slots": [
+			{
+				"level": 1
+			}
+		]
+	},
+	{
+		"name": "Rathbringer Axe II",
+		"itemType": "Weapon",
+		"weaponType": "SwitchAxe",
+		"baseAttack": 665,
+		"maxSharpness": "Blue",
+		"baseAffinityPercent": 15,
+		"element": "Fire",
+		"elementBaseAttack": 150,
+		"slots": [
+			{
+				"level": 1
+			}
+		]
+	},
+	{
+		"name": "Power Smasher II",
+		"itemType": "Weapon",
+		"weaponType": "SwitchAxe",
+		"baseAttack": 665,
+		"maxSharpness": "Blue",
+		"baseAffinityPercent": 10,
+		"elderseal": "Average",
+		"baseDefense": 10,
+		"slots": [
+			{
+				"level": 3
+			}
+		]
+	},
+	{
+		"name": "Hazak Demios II",
+		"itemType": "Weapon",
+		"weaponType": "SwitchAxe",
+		"baseAttack": 700,
+		"maxSharpness": "Blue",
+		"baseAffinityPercent": 0,
+		"element": "Dragon",
+		"elementBaseAttack": 210,
+		"elderseal": "Average",
+		"slots": [
+			{
+				"level": 2
+			}
+		]
+	},
+	{
+		"name": "Jyura Drought III",
+		"itemType": "Weapon",
+		"weaponType": "SwitchAxe",
+		"baseAttack": 665,
+		"maxSharpness": "Blue",
+		"baseAffinityPercent": 0,
+		"element": "Water",
+		"elementBaseAttack": 330,
+		"slots": [
+			{
+				"level": 1
+			}
+		]
+	},
+	{
+		"name": "Lumu Smasher III",
+		"itemType": "Weapon",
+		"weaponType": "SwitchAxe",
+		"baseAttack": 595,
+		"maxSharpness": "Blue",
+		"baseAffinityPercent": 20,
+		"ailment": "Blast",
+		"ailmentBaseAttack": 420,
+		"ailmentHidden": true,
+		"slots": [
+			{
+				"level": 3
+			}
+		]
+	},
+	{
+		"name": "Barroth Grinder III",
+		"itemType": "Weapon",
+		"weaponType": "SwitchAxe",
+		"baseAttack": 735,
+		"maxSharpness": "Blue",
+		"baseAffinityPercent": -20,
+		"ailment": "Paralysis",
+		"ailmentBaseAttack": 330,
+		"ailmentHidden": true,
+		"baseDefense": 15,
+		"slots": [
+			{
+				"level": 3
+			},
+			{
+				"level": 1
+			}
+		]
+	},
+	{
+		"name": "Axe of Demons",
+		"itemType": "Weapon",
+		"weaponType": "SwitchAxe",
+		"baseAttack": 805,
+		"maxSharpness": "Blue",
+		"baseAffinityPercent": -30,
+		"element": "Ice",
+		"elementBaseAttack": 180,
+		"elementHidden": true,
+		"baseDefense": 15,
+		"slots": [
+			{
+				"level": 1
+			}
+		]
+	},
+	{
+		"name": "Gnashing Flammenbeil",
+		"itemType": "Weapon",
+		"weaponType": "SwitchAxe",
+		"baseAttack": 735,
+		"maxSharpness": "Blue",
+		"baseAffinityPercent": -20,
+		"element": "Fire",
+		"elementBaseAttack": 300
+	},
+	{
+		"name": "Dragonbone Slicer III",
+		"itemType": "Weapon",
+		"weaponType": "SwitchAxe",
+		"baseAttack": 560,
+		"maxSharpness": "Blue",
+		"baseAffinityPercent": 0,
+		"element": "Dragon",
+		"elementBaseAttack": 330,
+		"elderseal": "Low",
+		"slots": [
+			{
+				"level": 1
+			},
+			{
+				"level": 1
+			}
+		]
+	},
+	{
+		"name": "Kirin Thunderpeal",
+		"itemType": "Weapon",
+		"weaponType": "SwitchAxe",
+		"baseAttack": 560,
+		"maxSharpness": "Blue",
+		"baseAffinityPercent": 0,
+		"element": "Thunder",
+		"elementBaseAttack": 450
+	},
+	{
+		"name": "Teostra's Castle",
+		"itemType": "Weapon",
+		"weaponType": "SwitchAxe",
+		"baseAttack": 665,
+		"maxSharpness": "Blue",
+		"baseAffinityPercent": 0,
+		"ailment": "Blast",
+		"ailmentBaseAttack": 300
+	},
+	{
+		"name": "Xeno Martshu",
+		"itemType": "Weapon",
+		"weaponType": "SwitchAxe",
+		"baseAttack": 595,
+		"maxSharpness": "White",
+		"baseAffinityPercent": 15,
+		"element": "Dragon",
+		"elementBaseAttack": 150,
+		"elderseal": "Low",
+		"slots": [
+			{
+				"level": 3
+			},
+			{
+				"level": 3
+			}
+		]
+	}
 ]
