@@ -1,20 +1,272 @@
 [
 	{
-		"name": "Nergal Gouge",
+		"name": "Chrome Slicers II",
 		"itemType": "Weapon",
 		"weaponType": "DualBlades",
-		"baseAttack": 280,
+		"baseAttack": 252,
+		"maxSharpness": "Blue",
+		"baseAffinityPercent": 0,
+		"ailment": "Poison",
+		"ailmentBaseAttack": 270,
+		"ailmentHidden": true,
+		"slots": [
+			{
+				"level": 1
+			},
+			{
+				"level": 1
+			}
+		]
+	},
+	{
+		"name": "Decimation Claws",
+		"itemType": "Weapon",
+		"weaponType": "DualBlades",
+		"baseAttack": 294,
 		"maxSharpness": "Blue",
 		"baseAffinityPercent": 0,
 		"element": "Dragon",
-		"elementBaseAttack": 90,
+		"elementBaseAttack": 120,
 		"elderseal": "High",
 		"slots": [
 			{
 				"level": 1
 			}
-		],
-		"baseDefense": 0
+		]
+	},
+	{
+		"name": "Dual Destroyers III",
+		"itemType": "Weapon",
+		"weaponType": "DualBlades",
+		"baseAttack": 252,
+		"maxSharpness": "Blue",
+		"baseAffinityPercent": 0,
+		"element": "Thunder",
+		"elementBaseAttack": 210,
+		"elementHidden": true,
+		"slots": [
+			{
+				"level": 3
+			}
+		]
+	},
+	{
+		"name": "Bazelhawk Rookslayer",
+		"itemType": "Weapon",
+		"weaponType": "DualBlades",
+		"baseAttack": 280,
+		"maxSharpness": "Blue",
+		"baseAffinityPercent": -10,
+		"ailment": "Blast",
+		"ailmentBaseAttack": 150,
+		"slots": [
+			{
+				"level": 1
+			}
+		]
+	},
+	{
+		"name": "Freeze Chain II",
+		"itemType": "Weapon",
+		"weaponType": "DualBlades",
+		"baseAttack": 252,
+		"maxSharpness": "Blue",
+		"baseAffinityPercent": 0,
+		"element": "Ice",
+		"elementBaseAttack": 150,
+		"slots": [
+			{
+				"level": 2
+			}
+		]
+	},
+	{
+		"name": "Arcanaria III",
+		"itemType": "Weapon",
+		"weaponType": "DualBlades",
+		"baseAttack": 238,
+		"maxSharpness": "Blue",
+		"baseAffinityPercent": 20,
+		"ailment": "Sleep",
+		"ailmentBaseAttack": 120
+	},
+	{
+		"name": "Holy Sabers",
+		"itemType": "Weapon",
+		"weaponType": "DualBlades",
+		"baseAttack": 252,
+		"maxSharpness": "Blue",
+		"baseAffinityPercent": 0,
+		"element": "Water",
+		"elementBaseAttack": 120,
+		"slots": [
+			{
+				"level": 3
+			}
+		]
+	},
+	{
+		"name": "Strong Hatchets II",
+		"itemType": "Weapon",
+		"weaponType": "DualBlades",
+		"baseAttack": 266,
+		"maxSharpness": "Blue",
+		"baseAffinityPercent": 0,
+		"ailment": "Blast",
+		"ailmentBaseAttack": 180,
+		"baseDefense": 10,
+		"slots": [
+			{
+				"level": 3
+			}
+		]
+	},
+	{
+		"name": "Anja Cyclone III",
+		"itemType": "Weapon",
+		"weaponType": "DualBlades",
+		"baseAttack": 252,
+		"maxSharpness": "Blue",
+		"baseAffinityPercent": -20,
+		"element": "Fire",
+		"elementBaseAttack": 210
+	},
+	{
+		"name": "Diablos Clubs II",
+		"itemType": "Weapon",
+		"weaponType": "DualBlades",
+		"baseAttack": 322,
+		"maxSharpness": "Blue",
+		"baseAffinityPercent": -10,
+		"element": "Ice",
+		"elementBaseAttack": 90,
+		"elementHidden": true,
+		"baseDefense": 15,
+		"slots": [
+			{
+				"level": 2
+			}
+		]
+	},
+	{
+		"name": "Jyura Hatchets III",
+		"itemType": "Weapon",
+		"weaponType": "DualBlades",
+		"baseAttack": 266,
+		"maxSharpness": "Blue",
+		"baseAffinityPercent": 0,
+		"element": "Water",
+		"elementBaseAttack": 210,
+		"slots": [
+			{
+				"level": 1
+			}
+		]
+	},
+	{
+		"name": "Lava Cyclone II",
+		"itemType": "Weapon",
+		"weaponType": "DualBlades",
+		"baseAttack": 252,
+		"maxSharpness": "Blue",
+		"baseAffinityPercent": 0,
+		"element": "Fire",
+		"elementBaseAttack": 150,
+		"slots": [
+			{
+				"level": 2
+			},
+			{
+				"level": 2
+			}
+		]
+	},
+	{
+		"name": "Dark Ripper III",
+		"itemType": "Weapon",
+		"weaponType": "DualBlades",
+		"baseAttack": 224,
+		"maxSharpness": "White",
+		"baseAffinityPercent": 0,
+		"ailment": "Paralysis",
+		"ailmentBaseAttack": 90,
+		"ailmentHidden": true,
+		"slots": [
+			{
+				"level": 2
+			}
+		]
+	},
+	{
+		"name": "Kadachi Claws III",
+		"itemType": "Weapon",
+		"weaponType": "DualBlades",
+		"baseAttack": 252,
+		"maxSharpness": "Blue",
+		"baseAffinityPercent": 10,
+		"element": "Thunder",
+		"elementBaseAttack": 150,
+		"slots": [
+			{
+				"level": 1
+			}
+		]
+	},
+	{
+		"name": "Sin",
+		"itemType": "Weapon",
+		"weaponType": "DualBlades",
+		"baseAttack": 224,
+		"maxSharpness": "White",
+		"baseAffinityPercent": 20,
+		"element": "Fire",
+		"elementBaseAttack": 180,
+		"elementHidden": true
+	},
+	{
+		"name": "Enduring Schism",
+		"itemType": "Weapon",
+		"weaponType": "DualBlades",
+		"baseAttack": 196,
+		"maxSharpness": "Blue",
+		"baseAffinityPercent": 0,
+		"element": "Dragon",
+		"elementBaseAttack": 270,
+		"elderseal": true,
+		"slots": [
+			{
+				"level": 1
+			},
+			{
+				"level": 1
+			}
+		]
+	},
+	{
+		"name": "Monarch",
+		"itemType": "Weapon",
+		"weaponType": "DualBlades",
+		"baseAttack": 224,
+		"maxSharpness": "Blue",
+		"baseAffinityPercent": 0,
+		"element": "Thunder",
+		"elementBaseAttack": 270
+	},
+	{
+		"name": "Magda Ungulae II",
+		"itemType": "Weapon",
+		"weaponType": "DualBlades",
+		"baseAttack": 308,
+		"maxSharpness": "Green",
+		"baseAffinityPercent": -20,
+		"ailment": "Blast",
+		"ailmentBaseAttack": 210,
+		"baseDefense": 20,
+		"slots": [
+			{
+				"level": 2
+			}
+		]
 	},
 	{
 		"name": "Fire and Ice",
@@ -31,7 +283,41 @@
 			{
 				"level": 2
 			}
-		],
-		"baseDefense": 0
+		]
+	},
+	{
+		"name": "Xeno Raqs",
+		"itemType": "Weapon",
+		"weaponType": "DualBlades",
+		"baseAttack": 238,
+		"baseAffinityPercent": 15,
+		"maxSharpness": "White",
+		"element": "Dragon",
+		"elementBaseAttack": 150,
+		"elderseal": "Low",
+		"slots": [
+			{
+				"level": 3
+			},
+			{
+				"level": 3
+			}
+		]
+	},
+	{
+		"name": "Nergal Gouge",
+		"itemType": "Weapon",
+		"weaponType": "DualBlades",
+		"baseAttack": 280,
+		"maxSharpness": "Blue",
+		"baseAffinityPercent": 0,
+		"element": "Dragon",
+		"elementBaseAttack": 90,
+		"elderseal": "High",
+		"slots": [
+			{
+				"level": 1
+			}
+		]
 	}
 ]
