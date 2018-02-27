@@ -1,3 +1,290 @@
 [
-	
+	{
+		"name": "Fortissimo II",
+		"itemType": "Weapon",
+		"weaponType": "HuntingHorn",
+		"baseAttack": 756,
+		"maxSharpness": "Blue",
+		"baseAffinityPercent": 0,
+		"ailment": "Paralysis",
+		"ailmentBaseAttack": 270,
+		"ailmentHidden": true,
+		"slots": [
+			{
+				"level": 1
+			},
+			{
+				"level": 1
+			}
+		]
+	},
+	{
+		"name": "Desolation's Overture",
+		"itemType": "Weapon",
+		"weaponType": "HuntingHorn",
+		"baseAttack": 882,
+		"maxSharpness": "Blue",
+		"baseAffinityPercent": 0,
+		"element": "Dragon",
+		"elementBaseAttack": 150,
+		"elderseal": "High",
+		"slots": [
+			{
+				"level": 1
+			}
+		]
+	},
+	{
+		"name": "Lightning Drum III",
+		"itemType": "Weapon",
+		"weaponType": "HuntingHorn",
+		"baseAttack": 756,
+		"maxSharpness": "Blue",
+		"baseAffinityPercent": 0,
+		"element": "Thunder",
+		"elementBaseAttack": 240,
+		"slots": [
+			{
+				"level": 3
+			}
+		]
+	},
+	{
+		"name": "Dancing Davul III",
+		"itemType": "Weapon",
+		"weaponType": "HuntingHorn",
+		"baseAttack": 714,
+		"maxSharpness": "Blue",
+		"baseAffinityPercent": 25,
+		"ailment": "Sleep",
+		"ailmentBaseAttack": 360,
+		"ailmentHidden": true
+	},
+	{
+		"name": "Royal Chordmaker",
+		"itemType": "Weapon",
+		"weaponType": "HuntingHorn",
+		"baseAttack": 798,
+		"maxSharpness": "Blue",
+		"baseAffinityPercent": 25,
+		"element": "Fire",
+		"elementBaseAttack": 240,
+		"slots": [
+			{
+				"level": 2
+			}
+		]
+	},
+	{
+		"name": "Water Tamtam III",
+		"itemType": "Weapon",
+		"weaponType": "HuntingHorn",
+		"baseAttack": 756,
+		"maxSharpness": "Blue",
+		"baseAffinityPercent": 0,
+		"element": "Water",
+		"elementBaseAttack": 270,
+		"slots": [
+			{
+				"level": 2
+			}
+		]
+	},
+	{
+		"name": "Legia Sectored",
+		"itemType": "Weapon",
+		"weaponType": "HuntingHorn",
+		"baseAttack": 672,
+		"maxSharpness": "White",
+		"baseAffinityPercent": 0,
+		"element": "Ice",
+		"elementBaseAttack": 360
+	},
+	{
+		"name": "Heavy Bone Horn II",
+		"itemType": "Weapon",
+		"weaponType": "HuntingHorn",
+		"baseAttack": 798,
+		"maxSharpness": "Blue",
+		"baseAffinityPercent": 0,
+		"element": "Ice",
+		"elementBaseAttack": 270,
+		"elementHidden": true,
+		"baseDefense": 10,
+		"slots": [
+			{
+				"level": 3
+			}
+		]
+	},
+	{
+		"name": "Gama Horn II",
+		"itemType": "Weapon",
+		"weaponType": "HuntingHorn",
+		"baseAttack": 798,
+		"maxSharpness": "Blue",
+		"baseAffinityPercent": 0,
+		"ailment": "Blast",
+		"ailmentBaseAttack": 150,
+		"slots": [
+			{
+				"level": 2
+			},
+			{
+				"level": 2
+			}
+		]
+	},
+	{
+		"name": "Anja Bone III",
+		"itemType": "Weapon",
+		"weaponType": "HuntingHorn",
+		"baseAttack": 882,
+		"maxSharpness": "Blue",
+		"baseAffinityPercent": -20,
+		"element": "Fire",
+		"elementBaseAttack": 450
+	},
+	{
+		"name": "Datura Horn III",
+		"itemType": "Weapon",
+		"weaponType": "HuntingHorn",
+		"baseAttack": 714,
+		"maxSharpness": "Blue",
+		"baseAffinityPercent": 0,
+		"ailment": "Poison",
+		"ailmentBaseAttack": 540,
+		"slots": [
+			{
+				"level": 2
+			},
+			{
+				"level": 1
+			}
+		]
+	},
+	{
+		"name": "Lumu Barone III",
+		"itemType": "Weapon",
+		"weaponType": "HuntingHorn",
+		"baseAttack": 714,
+		"maxSharpness": "Blue",
+		"baseAffinityPercent": 10,
+		"element": "Water",
+		"elementBaseAttack": 570,
+		"elementHidden": true,
+		"slots": [
+			{
+				"level": 3
+			},
+			{
+				"level": 1
+			}
+		]
+	},
+	{
+		"name": "Razelreid Rookslayer",
+		"itemType": "Weapon",
+		"weaponType": "HuntingHorn",
+		"baseAttack": 840,
+		"maxSharpness": "Blue",
+		"baseAffinityPercent": -10,
+		"ailment": "Blast",
+		"ailmentBaseAttack": 210,
+		"slots": [
+			{
+				"level": 2
+			},
+			{
+				"level": 2
+			}
+		]
+	},
+	{
+		"name": "Queen Vespoid Horn",
+		"itemType": "Weapon",
+		"weaponType": "HuntingHorn",
+		"baseAttack": 672,
+		"maxSharpness": "White",
+		"baseAffinityPercent": 0,
+		"ailment": "Paralysis",
+		"ailmentBaseAttack": 300,
+		"slots": [
+			{
+				"level": 1
+			},
+			{
+				"level": 1
+			}
+		]
+	},
+	{
+		"name": "Baan Horn III",
+		"itemType": "Weapon",
+		"weaponType": "HuntingHorn",
+		"baseAttack": 798,
+		"maxSharpness": "Blue",
+		"baseAffinityPercent": 0,
+		"ailment": "Sleep",
+		"ailmentBaseAttack": 270,
+		"baseDefense": 20
+	},
+	{
+		"name": "Dragonbone Auldhorn III",
+		"itemType": "Weapon",
+		"weaponType": "HuntingHorn",
+		"baseAttack": 672,
+		"maxSharpness": "Blue",
+		"baseAffinityPercent": 0,
+		"element": "Dragon",
+		"elementBaseAttack": 420,
+		"elderseal": "Low",
+		"slots": [
+			{
+				"level": 1
+			},
+			{
+				"level": 1
+			}
+		]
+	},
+	{
+		"name": "Thunderbolt Horn II",
+		"itemType": "Weapon",
+		"weaponType": "HuntingHorn",
+		"baseAttack": 672,
+		"maxSharpness": "Blue",
+		"baseAffinityPercent": 0,
+		"element": "Thunder",
+		"elementBaseAttack": 540
+	},
+	{
+		"name": "Teostra's Orphée",
+		"itemType": "Weapon",
+		"weaponType": "HuntingHorn",
+		"baseAttack": 798,
+		"maxSharpness": "Blue",
+		"baseAffinityPercent": 0,
+		"ailment": "Blast",
+		"ailmentBaseAttack": 390
+	},
+	{
+		"name": "Xeno Manasheena",
+		"itemType": "Weapon",
+		"weaponType": "HuntingHorn",
+		"baseAttack": 714,
+		"maxSharpness": "White",
+		"baseAffinityPercent": 15,
+		"element": "Dragon",
+		"elementBaseAttack": 180,
+		"elderseal": "Low",
+		"slots": [
+			{
+				"level": 3
+			},
+			{
+				"level": 3
+			}
+		]
+	}
 ]
