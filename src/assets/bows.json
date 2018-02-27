@@ -1,5 +1,24 @@
 [
 	{
+		"name": "Alloy Bow II",
+		"itemType": "Weapon",
+		"weaponType": "Bow",
+		"baseAttack": 204,
+		"baseAffinityPercent": 0,
+		"element": "Thunder",
+		"elementBaseAttack": 150,
+		"elementHidden": true,
+		"slots": [
+			{
+				"level": 2
+			},
+			{
+				"level": 2
+			}
+		],
+		"baseDefense": 0
+	},
+	{
 		"name": "Doom's Shaft",
 		"itemType": "Weapon",
 		"weaponType": "Bow",
@@ -12,7 +31,246 @@
 			{
 				"level": 1
 			}
-		],
-		"baseDefense": 0
+		]
+	},
+	{
+		"name": "Archer's Dance III",
+		"itemType": "Weapon",
+		"weaponType": "Bow",
+		"baseAttack": 204,
+		"baseAffinityPercent": 20,
+		"ailment": "Blast",
+		"ailmentBaseAttack": 270,
+		"ailmentHidden": true
+	},
+	{
+		"name": "Giracles",
+		"itemType": "Weapon",
+		"weaponType": "Bow",
+		"baseAttack": 228,
+		"baseAffinityPercent": 0,
+		"element": "Fire",
+		"elementBaseAttack": 150,
+		"baseDefense": true,
+		"slots": [
+			{
+				"level": 3
+			}
+		]
+	},
+	{
+		"name": "Princess Arrow III",
+		"itemType": "Weapon",
+		"weaponType": "Bow",
+		"baseAttack": 216,
+		"baseAffinityPercent": 10,
+		"element": "Dragon",
+		"elementBaseAttack": 240,
+		"elementHidden": true,
+		"elderseal": "Low",
+		"slots": [
+			{
+				"level": 2
+			},
+			{
+				"level": 1
+			}
+		]
+	},
+	{
+		"name": "Rathslinger III",
+		"itemType": "Weapon",
+		"weaponType": "Bow",
+		"baseAttack": 216,
+		"baseAffinityPercent": 20,
+		"element": "Fire",
+		"elementBaseAttack": 240,
+		"slots": [
+			{
+				"level": 1
+			}
+		]
+	},
+	{
+		"name": "Water Shot III",
+		"itemType": "Weapon",
+		"weaponType": "Bow",
+		"baseAttack": 204,
+		"baseAffinityPercent": 0,
+		"element": "Water",
+		"elementBaseAttack": 240,
+		"slots": [
+			{
+				"level": 3
+			}
+		]
+	},
+	{
+		"name": "Legia Snowfletcher",
+		"itemType": "Weapon",
+		"weaponType": "Bow",
+		"baseAttack": 180,
+		"baseAffinityPercent": 0,
+		"element": "Ice",
+		"elementBaseAttack": 390
+	},
+	{
+		"name": "Hunter's Proudbow II",
+		"itemType": "Weapon",
+		"weaponType": "Bow",
+		"baseAttack": 216,
+		"baseAffinityPercent": 0,
+		"element": "Water",
+		"elementBaseAttack": 360,
+		"elementHidden": true,
+		"baseDefense": 10,
+		"slots": [
+			{
+				"level": 3
+			}
+		]
+	},
+	{
+		"name": "Hazak Velos II",
+		"itemType": "Weapon",
+		"weaponType": "Bow",
+		"baseAttack": 228,
+		"baseAffinityPercent": 0,
+		"element": "Dragon",
+		"elementBaseAttack": 270,
+		"elderseal": "Average",
+		"slots": [
+			{
+				"level": 2
+			}
+		]
+	},
+	{
+		"name": "Cera Coilbender",
+		"itemType": "Weapon",
+		"weaponType": "Bow",
+		"baseAttack": 264,
+		"baseAffinityPercent": -30,
+		"element": "Ice",
+		"elementBaseAttack": 150,
+		"elementHidden": true,
+		"baseDefense": 15,
+		"slots": [
+			{
+				"level": 1
+			},
+			{
+				"level": 1
+			}
+		]
+	},
+	{
+		"name": "Datura String III",
+		"itemType": "Weapon",
+		"weaponType": "Bow",
+		"baseAttack": 204,
+		"baseAffinityPercent": 0,
+		"ailment": "Blast",
+		"ailmentBaseAttack": 240,
+		"ailmentHidden": true,
+		"slots": [
+			{
+				"level": 2
+			},
+			{
+				"level": 1
+			}
+		]
+	},
+	{
+		"name": "Anja Arch III",
+		"itemType": "Weapon",
+		"weaponType": "Bow",
+		"baseAttack": 240,
+		"baseAffinityPercent": -20,
+		"element": "Fire",
+		"elementBaseAttack": 390
+	},
+	{
+		"name": "Flying Kadachi Strikebow",
+		"itemType": "Weapon",
+		"weaponType": "Bow",
+		"baseAttack": 204,
+		"baseAffinityPercent": 15,
+		"element": "Thunder",
+		"elementBaseAttack": 270,
+		"slots": [
+			{
+				"level": 1
+			}
+		]
+	},
+	{
+		"name": "Dragonbone Bow III",
+		"itemType": "Weapon",
+		"weaponType": "Bow",
+		"baseAttack": 180,
+		"baseAffinityPercent": 0,
+		"element": "Dragon",
+		"elementBaseAttack": 420,
+		"elderseal": "Low",
+		"slots": [
+			{
+				"level": 1
+			},
+			{
+				"level": 1
+			}
+		]
+	},
+	{
+		"name": "Daora's Sagittarii",
+		"itemType": "Weapon",
+		"weaponType": "Bow",
+		"baseAttack": 204,
+		"baseAffinityPercent": 10,
+		"element": "Ice",
+		"elementBaseAttack": 240,
+		"slots": [
+			{
+				"level": 2
+			},
+			{
+				"level": 1
+			}
+		]
+	},
+	{
+		"name": "Xeno Metora",
+		"itemType": "Weapon",
+		"weaponType": "Bow",
+		"baseAttack": 204,
+		"baseAffinityPercent": 15,
+		"element": "Dragon",
+		"elementBaseAttack": 180,
+		"elderseal": "Low",
+		"slots": [
+			{
+				"level": 3
+			},
+			{
+				"level": 3
+			}
+		]
+	},
+	{
+		"name": "Great Hunter's Bow",
+		"itemType": "Weapon",
+		"weaponType": "Bow",
+		"baseAttack": 228,
+		"baseAffinityPercent": 0,
+		"ailment": "Blast",
+		"ailmentBaseAttack": 150,
+		"baseDefense": 20,
+		"slots": [
+			{
+				"level": 3
+			}
+		]
 	}
 ]
