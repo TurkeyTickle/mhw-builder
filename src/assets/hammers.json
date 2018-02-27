@@ -1,5 +1,312 @@
 [
 	{
+		"name": "Iron Archdemon II",
+		"itemType": "Weapon",
+		"weaponType": "Hammer",
+		"baseAttack": 936,
+		"baseAffinityPercent": 0,
+		"maxSharpness": "Blue",
+		"ailment": "Blast",
+		"ailmentBaseAttack": 270,
+		"ailmentHidden": true,
+		"slots": [
+			{
+				"level": 1
+			},
+			{
+				"level": 1
+			}
+		]
+	},
+	{
+		"name": "Obliteration's Footfall",
+		"itemType": "Weapon",
+		"weaponType": "Hammer",
+		"baseAttack": 1092,
+		"baseAffinityPercent": 0,
+		"maxSharpness": "Blue",
+		"element": "Dragon",
+		"elementBaseAttack": 120,
+		"elderseal": "High",
+		"slots": [
+			{
+				"level": 1
+			}
+		]
+	},
+	{
+		"name": "Cocytus",
+		"itemType": "Weapon",
+		"weaponType": "Hammer",
+		"baseAttack": 936,
+		"baseAffinityPercent": 0,
+		"maxSharpness": "Blue",
+		"element": "Ice",
+		"elementBaseAttack": 450,
+		"slots": [
+			{
+				"level": 3
+			}
+		]
+	},
+	{
+		"name": "Water Basher III",
+		"itemType": "Weapon",
+		"weaponType": "Hammer",
+		"baseAttack": 936,
+		"baseAffinityPercent": 0,
+		"maxSharpness": "Blue",
+		"element": "Water",
+		"elementBaseAttack": 240,
+		"slots": [
+			{
+				"level": 2
+			}
+		]
+	},
+	{
+		"name": "Malady's Fist III",
+		"itemType": "Weapon",
+		"weaponType": "Hammer",
+		"baseAttack": 832,
+		"baseAffinityPercent": 20,
+		"maxSharpness": "Blue",
+		"ailment": "Paralysis",
+		"ailmentBaseAttack": 390
+	},
+	{
+		"name": "Buona Flora",
+		"itemType": "Weapon",
+		"weaponType": "Hammer",
+		"baseAttack": 936,
+		"baseAffinityPercent": 0,
+		"maxSharpness": "Blue",
+		"ailment": "Poison",
+		"ailmentBaseAttack": 540,
+		"slots": [
+			{
+				"level": 2
+			},
+			{
+				"level": 2
+			}
+		]
+	},
+	{
+		"name": "Lightning Bash III",
+		"itemType": "Weapon",
+		"weaponType": "Hammer",
+		"baseAttack": 988,
+		"baseAffinityPercent": 0,
+		"maxSharpness": "Blue",
+		"element": "Thunder",
+		"elementBaseAttack": 300,
+		"slots": [
+			{
+				"level": 2
+			}
+		]
+	},
+	{
+		"name": "Grandrock II",
+		"itemType": "Weapon",
+		"weaponType": "Hammer",
+		"baseAttack": 988,
+		"baseAffinityPercent": 0,
+		"maxSharpness": "Blue",
+		"element": "Thunder",
+		"elementBaseAttack": 420,
+		"elementHidden": true,
+		"baseDefense": 10,
+		"slots": [
+			{
+				"level": 3
+			}
+		]
+	},
+	{
+		"name": "Pandemonium's Root",
+		"itemType": "Weapon",
+		"weaponType": "Hammer",
+		"baseAttack": 1040,
+		"baseAffinityPercent": 0,
+		"maxSharpness": "Blue",
+		"element": "Dragon",
+		"elementBaseAttack": 270,
+		"elderseal": "Average",
+		"slots": [
+			{
+				"level": 2
+			}
+		]
+	},
+	{
+		"name": "Baan Strike III",
+		"itemType": "Weapon",
+		"weaponType": "Hammer",
+		"baseAttack": 988,
+		"baseAffinityPercent": 0,
+		"maxSharpness": "Blue",
+		"ailment": "Sleep",
+		"ailmentBaseAttack": 270,
+		"baseDefense": 20
+	},
+	{
+		"name": "Brazenbreak II",
+		"itemType": "Weapon",
+		"weaponType": "Hammer",
+		"baseAttack": 1092,
+		"baseAffinityPercent": 0,
+		"maxSharpness": "Blue",
+		"element": "Fire",
+		"elementBaseAttack": 120,
+		"baseDefense": 30,		
+		"slots": [
+			{
+				"level": 3
+			}
+		]
+	},
+	{
+		"name": "Crusing Beak III",
+		"itemType": "Weapon",
+		"weaponType": "Hammer",
+		"baseAttack": 884,
+		"baseAffinityPercnt": 25,
+		"maxSharpness": "Blue",
+		"ailment": "Sleep",
+		"ailmentBaseAttack": 360,
+		"ailmentHidden": true
+	},
+	{
+		"name": "Diablos Shatterer II",
+		"itemType": "Weapon",
+		"weaponType": "Hammer",
+		"baseAttack": 1196,
+		"baseAffinityPercent": -25,
+		"maxSharpness": "Blue",
+		"element": "Ice",
+		"elementBaseAttack": 150,
+		"baseDefense": 15,		
+		"slots": [
+			{
+				"level": 2
+			}
+		]
+	},
+	{
+		"name": "Barroth Breaker III",
+		"itemType": "Weapon",
+		"weaponType": "Hammer",
+		"baseAttack": 1040,
+		"baseAffinityPercent": -10,
+		"maxSharpness": "Blue",
+		"ailment": "Paralysis",
+		"ailmentBaseAttack": 390,
+		"ailmentHidden": true,
+		"baseDefense": 15,
+		"slots": [
+			{
+				"level": 2
+			},
+			{
+				"level": 1
+			}
+		]
+	},
+	{
+		"name": "Anja Striker III",
+		"itemType": "Weapon",
+		"weaponType": "Hammer",
+		"baseAttack": 1092,
+		"baseAffinityPercent": -20,
+		"maxSharpness": "Blue",
+		"element": "Fire",
+		"elementBaseAttack": 450
+	},
+	{
+		"name": "Dragonbone Basher III",
+		"itemType": "Weapon",
+		"weaponType": "Hammer",
+		"baseAttack": 832,
+		"baseAffinityPercent": 0,
+		"maxSharpness": "Blue",
+		"element": "Dragon",
+		"elementBaseAttack": 420,
+		"elderseal": "Low",
+		"slots": [
+			{
+				"level": 1
+			}
+		]
+	},
+	{
+		"name": "Ragefire Magda Floga",
+		"itemType": "Weapon",
+		"weaponType": "Hammer",
+		"baseAttack": 1144,
+		"baseAffinityPercent": -20,
+		"maxSharpness": "Green",
+		"ailment": "Blast",
+		"ailmentBaseAttack": 420,
+		"baseDefense": 20,
+		"slots": [
+			{
+				"level": 2
+			}
+		]
+	},
+	{
+		"name": "Daora's Colossus",
+		"itemType": "Weapon",
+		"weaponType": "Hammer",
+		"baseAttack": 1040,
+		"baseAffinityPercent": 10,
+		"maxSharpness": "Blue",
+		"element": "Ice",
+		"elementBaseAttack": 150,
+		"slots": [
+			{
+				"level": 2
+			}
+		]
+	},
+	{
+		"name": "Xeno Maph'agarna",
+		"itemType": "Weapon",
+		"weaponType": "Hammer",
+		"baseAttack": 884,
+		"baseAffinityPercent": 15,
+		"maxSharpness": "White",
+		"element": "Dragon",
+		"elementBaseAttack": 180,
+		"elderseal": "Low",
+		"slots": [
+			{
+				"level": 3
+			},
+			{
+				"level": 3
+			}
+		]
+	},
+	{
+		"name": "Binder Mace",
+		"itemType": "Weapon",
+		"weaponType": "Hammer",
+		"baseAttack": 936,
+		"baseAffinityPercent": 0,
+		"maxSharpness": "Blue",
+		"ailment": "Paralysis",
+		"ailmentBaseAttack": 210,
+		"baseDefense": 20,
+		"slots": [
+			{
+				"level": 3
+			}
+		]
+	},
+	{
 		"name": "Grandrock I",
 		"itemType": "Weapon",
 		"weaponType": "Hammer",
@@ -8,11 +315,11 @@
 		"maxSharpness": "Blue",
 		"element": "Thunder",
 		"elementBaseAttack": 390,
+		"baseDefense": 10,
 		"slots": [
 			{
 				"level": 2
 			}
-		],
-		"baseDefense": 10
+		]
 	}
 ]
