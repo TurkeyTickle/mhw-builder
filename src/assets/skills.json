@@ -704,7 +704,7 @@
 		]
 	},
 	{
-		"id": "superRecover",
+		"id": "superRecovery",
 		"name": "Super Recovery",
 		"description": "Allows recovery to exceed the red portion of the health gauge.",
 		"levels": [
