@@ -1,3 +1,5 @@
+$itemHeight: 26px;
+
 :host, .container {
 	right: 0px;
 	bottom: 0px;
@@ -12,8 +14,8 @@ ul {
 
 li {
 	cursor: pointer;
-	height: 36px;
-	line-height: 36px;
+	height: $itemHeight;
+	line-height: $itemHeight;
 	list-style: none;
 	padding: 8px;
 }
