@@ -27,7 +27,8 @@ h2 {
 
 	.equipment-slots-container {
 		position: absolute;
-		top: 68px;
+		// top: 68px;
+		top: 0px;
 		right: 0px;
 		bottom: 0px;
 		left: 0px;
@@ -38,6 +39,7 @@ h2 {
 
 .item-list-container {
 	position: relative;
+	// top: 68px;
 	top: 0px;
 	bottom: 0px;
 	flex-grow: 1;
@@ -55,7 +57,8 @@ h2 {
 	
 	.equip-info-container {
 		position: absolute;
-		top: 68px;
+		// top: 68px;
+		top: 0px;
 		right: 0px;
 		bottom: 0px;
 		left: 0px;

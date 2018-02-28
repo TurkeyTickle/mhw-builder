@@ -1,6 +1,6 @@
 <div class="container" (mousemove)="moveTooltip($event)">
 	<div class="equipment-container">
-		<h2>Equipment</h2>
+		<!-- <h2>Equipment</h2> -->
 
 		<div class="equipment-slots-container">
 			<mhw-builder-item-slot 
@@ -69,14 +69,15 @@
 	</div>
 
 	<div class="item-list-container">
-		<h2>Items</h2>
+		<!-- <h2>Items</h2> -->
 
 		<mhw-builder-item-list [hidden]="!selectedEquipmentSlot" itemType="{{selectedEquipmentSlot?.slotName}}" (itemSelected)="selectItem($event)"></mhw-builder-item-list>
 		<mhw-builder-item-list [hidden]="!selectedDecorationSlot" itemType="Decoration" [decorationLevel]="selectedDecorationSlot?.level" (decorationSelected)="selectDecoration($event)"></mhw-builder-item-list>
 	</div>
 
 	<div class="stats-container">
-		<h2>Stats</h2>
+		<!-- <h2>Stats</h2> -->
+
 		<div class="equip-info-container">
 			<mhw-builder-equipped-stats></mhw-builder-equipped-stats>
 			<br />
