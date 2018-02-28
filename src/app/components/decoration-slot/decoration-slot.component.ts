@@ -23,6 +23,8 @@ export class DecorationSlotComponent implements OnInit {
 	}
 	public get decoration() { return this._decoration; }
 
+	public selected: boolean;
+
 	constructor(
 		private tooltipService: TooltipService
 	) { }

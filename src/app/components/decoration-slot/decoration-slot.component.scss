@@ -7,9 +7,10 @@ $slotHeight: 30px;
 	cursor: pointer;
 	display: flex;
 	font-size: 14px;
+	border-radius: 3px;
 
 	.slot-name {
-		color: rgb(100,100,100);
+		color: #b7b7b7;
 		line-height: $slotHeight;
 		width: 40px;
 		flex-grow: 0;
@@ -37,4 +38,8 @@ $slotHeight: 30px;
 	flex-basis: 0;
 	// max-width: 33%;
 	padding: 0px 2px 0px 2px;
+}
+
+.selected {
+	background-color: gray;
 }

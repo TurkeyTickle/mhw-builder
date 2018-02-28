@@ -34,6 +34,7 @@ export class ItemSlotComponent implements OnInit {
 	}
 
 	public decorations = new Array<DecorationModel>();
+	public selected: boolean;
 
 	constructor(
 		private tooltipService: TooltipService

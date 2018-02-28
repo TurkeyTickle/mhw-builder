@@ -1,5 +1,5 @@
 <div class="container">
-	<div class="item-container" (click)="equipmentSlotClicked()" (mouseenter)="setTooltipItem()" (mouseleave)="clearTooltipItem()"> 
+	<div class="item-container" (click)="equipmentSlotClicked()" (mouseenter)="setTooltipItem()" (mouseleave)="clearTooltipItem()" [class.selected]="selected"> 
 		<div class="slot-name">{{slotName}}</div>
 		<div class="selected-item">{{item?.name}}</div>
 

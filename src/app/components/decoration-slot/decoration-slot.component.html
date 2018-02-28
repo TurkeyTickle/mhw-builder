@@ -1,4 +1,4 @@
-<div class="container" (click)="clicked()" (mouseenter)="setTooltipItem()" (mouseleave)="clearTooltipItem()">
+<div class="container" (click)="clicked()" (mouseenter)="setTooltipItem()" (mouseleave)="clearTooltipItem()" [class.selected]="selected">
 	<div class="slot-name">Lv {{level}}</div>
 	<div class="selected-decoration">{{decoration?.name}}</div>
 

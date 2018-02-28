@@ -109,13 +109,33 @@ export class AppComponent implements OnInit {
 	}
 
 	itemSlotSelected(equipmentSlot: ItemSlotComponent) {
+		if (this.selectedEquipmentSlot) {
+			this.selectedEquipmentSlot.selected = false;
+		}
+
+		if (this.selectedDecorationSlot) {
+			this.selectedDecorationSlot.selected = false;
+		}
+
 		this.selectedDecorationSlot = null;
+
 		this.selectedEquipmentSlot = equipmentSlot;
+		this.selectedEquipmentSlot.selected = true;
 	}
 
 	decorationSlotSelected(decorationSlot: DecorationSlotComponent) {
+		if (this.selectedEquipmentSlot) {
+			this.selectedEquipmentSlot.selected = false;
+		}
+
+		if (this.selectedDecorationSlot) {
+			this.selectedDecorationSlot.selected = false;
+		}
+
 		this.selectedEquipmentSlot = null;
+
 		this.selectedDecorationSlot = decorationSlot;
+		this.selectedDecorationSlot.selected = true;
 	}
 
 	moveTooltip(event: MouseEvent) {
