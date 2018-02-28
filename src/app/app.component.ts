@@ -75,7 +75,7 @@ export class AppComponent implements OnInit {
 		}
 	}
 
-	itemLevelChanged(item: ItemModel) {
+	itemLevelChanged() {
 		this.updateStatsAndSkills();
 	}
 
