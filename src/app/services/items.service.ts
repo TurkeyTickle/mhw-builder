@@ -65,6 +65,33 @@ export class ItemsService {
 		return _.find(this.appData.getDecorations(), (decoration: DecorationModel) => decoration.id == id);
 	}
 
+	getWeaponTypeName(weaponType: WeaponType): string {
+		switch (weaponType) {
+			case WeaponType.ChargeBlade:
+				return 'Charge Blade';
+			case WeaponType.DualBlades:
+				return 'Dual Blades';
+			case WeaponType.GreatSword:
+				return 'Great Sword';
+			case WeaponType.HeavyBowgun:
+				return 'Heavy Bowgun';
+			case WeaponType.HuntingHorn:
+				return 'Hunting Horn';
+			case WeaponType.InsectGlaive:
+				return 'Insect Glaive';
+			case WeaponType.LightBowgun:
+				return 'Light Bowgun';
+			case WeaponType.LongSword:
+				return 'Long Sword';
+			case WeaponType.SwitchAxe:
+				return 'Switch Axe';
+			case WeaponType.SwordAndShield:
+				return 'Sword and Shield';
+			default:
+				return weaponType;
+		}
+	}
+
 	// getAllSkills(): SkillModel[] {
 	// 	return this.appData.getSkills();
 	// }

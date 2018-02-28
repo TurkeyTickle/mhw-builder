@@ -62,7 +62,7 @@ export class ItemListComponent implements OnInit {
 
 	search(query: string) {
 		if (query) {
-			query = query.toLowerCase();
+			query = query.toLowerCase().trim();
 			if (this.items) {
 				for (const item of this.items) {
 					item.visible = item.name.toLowerCase().includes(query);
@@ -75,6 +75,10 @@ export class ItemListComponent implements OnInit {
 					}
 
 					if (item.visible) { continue; }
+
+					if (item.weaponType) {
+						item.visible = this.itemsService.getWeaponTypeName(item.weaponType).toLowerCase().includes(query);
+					}
 				}
 			}
 
