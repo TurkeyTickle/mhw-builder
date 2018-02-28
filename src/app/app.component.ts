@@ -75,6 +75,10 @@ export class AppComponent implements OnInit {
 		}
 	}
 
+	itemLevelChanged(item: ItemModel) {
+		this.updateStatsAndSkills();
+	}
+
 	itemCleared(clear: ItemSlotClearModel) {
 		this.equippedItems = _.reject(this.equippedItems, (item: ItemModel) => {
 			return item === clear.item;

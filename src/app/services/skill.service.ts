@@ -48,11 +48,11 @@ export class SkillService {
 					equippedSkill.id = skill.id;
 					equippedSkill.name = skill.name;
 					equippedSkill.description = skill.description;
-					equippedSkill.equippedCount = itemSkill.level;
+					equippedSkill.equippedCount = itemSkill.level * (item.equippedLevel ? item.equippedLevel : 1);
 					equippedSkill.totalLevelCount = skill.levels.length;
 					equippedSkills.push(equippedSkill);
 				} else {
-					equippedSkill.equippedCount += itemSkill.level;
+					equippedSkill.equippedCount += itemSkill.level * (item.equippedLevel ? item.equippedLevel : 1);
 				}
 			}
 		}

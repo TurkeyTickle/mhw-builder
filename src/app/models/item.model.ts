@@ -15,6 +15,7 @@ export class ItemModel {
 	equipmentCategory: EquipmentCategoryType;
 	slots?: SlotModel[];
 	baseDefense?: number;
+	levels?: number;
 
 	// weapon properties
 	weaponType?: WeaponType;
@@ -36,4 +37,6 @@ export class ItemModel {
 	iceResist: number;
 	dragonResist: number;
 	skills?: ItemSkillModel[];
+
+	equippedLevel?: number;
 }

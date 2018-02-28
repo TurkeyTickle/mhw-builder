@@ -34,6 +34,18 @@ $equipmentHeight: 40px;
 		float: right;
 		height: $equipmentHeight;
 	}
+
+	.levels-container {
+		display: inherit;
+
+		.level-down-button, .level-up-button {
+			height: $equipmentHeight;
+		}
+	
+		.level {
+			line-height: $equipmentHeight;
+		}
+	}
 }
 
 .decoration-container {

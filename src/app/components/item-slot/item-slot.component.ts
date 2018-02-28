@@ -18,10 +18,21 @@ export class ItemSlotComponent implements OnInit {
 
 	@Output() equipmentSlotSelected = new EventEmitter<ItemSlotComponent>();
 	@Output() decorationSlotSelected = new EventEmitter<DecorationSlotComponent>();
+	@Output() levelChanged = new EventEmitter<ItemModel>();
 	@Output() itemCleared = new EventEmitter<ItemSlotClearModel>();
 	@Output() decorationCleared = new EventEmitter<DecorationModel>();
 
-	public item: ItemModel;
+	private _item: ItemModel;
+	set item(item: ItemModel) {
+		if (item && item.levels) {
+			item.equippedLevel = 1;
+		}
+		this._item = item;
+	}
+	get item() {
+		return this._item;
+	}
+
 	public decorations = new Array<DecorationModel>();
 
 	constructor(
@@ -29,6 +40,7 @@ export class ItemSlotComponent implements OnInit {
 	) { }
 
 	ngOnInit() {
+
 	}
 
 	equipmentSlotClicked() {
@@ -48,6 +60,20 @@ export class ItemSlotComponent implements OnInit {
 
 		if (decorationChange.new) {
 			this.decorations.push(decorationChange.new);
+		}
+	}
+
+	levelDownClicked() {
+		if (this.item.equippedLevel > 1) {
+			this.item.equippedLevel--;
+			this.levelChanged.emit(this.item);
+		}
+	}
+
+	levelUpClicked() {
+		if (this.item.equippedLevel < this.item.levels) {
+			this.item.equippedLevel++;
+			this.levelChanged.emit(this.item);
 		}
 	}
 
