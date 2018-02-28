@@ -40,6 +40,7 @@ li:hover {
 		color: white;
 		font-size: 20px;
 		flex-grow: 1;
+		min-width: 0;
 	}
 
 	input:focus {

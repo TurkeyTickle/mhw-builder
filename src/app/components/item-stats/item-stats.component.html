@@ -19,6 +19,10 @@
 			</div>
 		</div>
 
+		<div *ngIf="item?.itemType == 'Charm'">
+			<li>Levels: {{item?.levels}}</li>
+		</div>		
+
 		<div *ngIf="item?.equipmentCategory">
 			<li *ngIf="item?.baseDefense">Defense: {{item?.baseDefense}}</li>
 			
