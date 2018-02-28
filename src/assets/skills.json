@@ -650,6 +650,50 @@
 		]
 	},
 	{
+		"id": "paralysisAttack",
+		"name": "Paralysis Attack",
+		"description": "Increases the rate of paralysis buildup. (Elemental buildup has a maximum limit.)",
+		"levels": [
+			{
+				"description": "Paralysis buildup +5%. Bonus +10.",
+				"passiveParalysisAttack": 10,
+				"passiveParalysisBuildupPercent": 5
+			},
+			{
+				"description": "Paralysis buildup +10%. Bonus +10.",
+				"passiveParalysisAttack": 10,
+				"passiveParalysisBuildupPercent": 10
+			},			
+			{
+				"description": "Paralysis buildup +20%. Bonus +10.",
+				"passiveParalysisAttack": 10,
+				"passiveParalysisBuildupPercent": 20
+			}
+		]
+	},
+	{
+		"id": "sleepAttack",
+		"name": "Sleep Attack",
+		"description": "Increases the rate of sleep buildup. (Elemental buildup has a maximum limit.)",
+		"levels": [
+			{
+				"description": "Sleep buildup +5%. Bonus +10.",
+				"passiveSleepAttack": 10,
+				"passiveSleepBuildupPercent": 5
+			},
+			{
+				"description": "Sleep buildup +10%. Bonus +10.",
+				"passiveSleepAttack": 10,
+				"passiveSleepBuildupPercent": 10
+			},			
+			{
+				"description": "Sleep buildup +20%. Bonus +10.",
+				"passiveSleepAttack": 10,
+				"passiveSleepBuildupPercent": 20
+			}
+		]
+	},
+	{
 		"id": "hastenRecovery",
 		"name": "Hasten Recovery",
 		"description": "Regenerates your health as you continually attack a monster. Recovery varies by weapon.",
@@ -876,6 +920,22 @@
 		]
 	},
 	{
+		"id": "stunResistance",
+		"name": "Stun Resistance",
+		"description": "Reduces stun duration.",
+		"levels": [
+			{
+				"description": "Reduces the duration of stun by 30%."
+			},
+			{
+				"description": "Reduces the duration of stun by 60%."
+			},
+			{
+				"description": "Prevents stun."
+			}
+		]
+	},
+	{
 		"id": "recoverySpeed",
 		"name": "Recovery Speed",
 		"description": "Speeds healing of recoverable damage (the red portion of the health gauge).",
@@ -985,12 +1045,32 @@
 		]
 	},
 	{
-		"id": "paralyzingFunctionality",
-		"name": "Paralyzing Functionality",
+		"id": "paraFunctionality",
+		"name": "Para Functionality",
 		"description": "Allows you to apply paralyzing coatings.",
 		"levels": [
 			{
 				"description": "Lets you use paralyzing coating."
+			}
+		]
+	},
+	{
+		"id": "sleepFunctionality",
+		"name": "Sleep Functionality",
+		"description": "Allows you to apply sleep coatings.",
+		"levels": [
+			{
+				"description": "Lets you use sleep coating."
+			}
+		]
+	},
+	{
+		"id": "blastFunctionality",
+		"name": "Blast Functionality",
+		"description": "Allows you to apply blast coatings.",
+		"levels": [
+			{
+				"description": "Lets you use blast coating."
 			}
 		]
 	},
@@ -1510,7 +1590,7 @@
 	},
 	{
 		"id": "toolSpecialist",
-		"name": "toolSpecialist",
+		"name": "Tool Specialist",
 		"description": "Reduces the recharge time for specialized tools.",
 		"levels": [
 			{
@@ -1521,6 +1601,342 @@
 			},
 			{
 				"description": "Shortens time until reuse by 20%."
+			}
+		]
+	},
+	{
+		"id": "recoveryUp",
+		"name": "Recovery Up",
+		"description": "Increases the amount recovered when restoring health.",
+		"levels": [
+			{
+				"description": "Recovery +10%."
+			},
+			{
+				"description": "Recovery +20%."
+			},
+			{
+				"description": "Recovery +30%."
+			}
+		]
+	},
+	{
+		"id": "artillery",
+		"name": "Artillery",
+		"description": "Strengthens explosive attacks like gunlance shells, Wyvern's Fire, charge blade phial attacks, and sticky ammo.",
+		"levels": [
+			{
+				"description": "Increases power of each attack by 10% and reduces Wyvern's Fire cooldown by 15%."
+			},
+			{
+				"description": "Increases power of each attack by 20% and reduces Wyvern's Fire cooldown by 30%."
+			},
+			{
+				"description": "Increases power of each attack by 30% and reduces Wyvern's Fire cooldown by 50%."
+			}
+		]
+	},
+	{
+		"id": "guard",
+		"name": "Guard",
+		"description": "Reduces knockbacks and stamina depletion when guarding.",
+		"levels": [
+			{
+				"description": "Very slightly decreases the impact of attacks."
+			},
+			{
+				"description": "Slightly decreases the impact of attacks and reduces stamina depletion by 15%."
+			},
+			{
+				"description": "Greatly decreases the impact of attacks and reduces stamina depletion by 15%."
+			},
+			{
+				"description": "Greatly decreases the impact of attacks and reduces stamina depletion by 30%."
+			},
+			{
+				"description": "Massively decreases the impact of attacks and reduces stamina depletion by 50%."
+			}
+		]
+	},
+	{
+		"id": "capacityBoost",
+		"name": "Capacity Boost",
+		"description": "Increases the gunlance's shell capacity and charge blade's phial capacity.",
+		"levels": [
+			{
+				"description": "Loading capacity +1"
+			}
+		]
+	},
+	{
+		"id": "criticalDraw",
+		"name": "Critical Draw",
+		"description": "Increases affinity when performing draw attacks.",
+		"levels": [
+			{
+				"description": "Draw attack affinity +30%"
+			},
+			{
+				"description": "Draw attack affinity +60%"
+			},
+			{
+				"description": "Draw attack affinity +100%"
+			}
+		]
+	},
+	{
+		"id": "constitution",
+		"name": "Constitution",
+		"description": "Reduces stamina depletion when performing stamina-draining moves such as evading, etc.",
+		"levels": [
+			{
+				"description": "Reduces fixed stamina depletion by 10%."
+			},
+			{
+				"description": "Reduces fixed stamina depletion by 20%."
+			},
+			{
+				"description": "Reduces fixed stamina depletion by 30%."
+			},
+			{
+				"description": "Reduces fixed stamina depletion by 40%."
+			},
+			{
+				"description": "Reduces fixed stamina depletion by 50%."
+			}
+		]
+	},
+	{
+		"id": "bombardier",
+		"name": "Bombardier",
+		"description": "Increases the damage of explosive items.",
+		"levels": [
+			{
+				"description": "Explosive power +10%"
+			},
+			{
+				"description": "Explosive power +20%"
+			},
+			{
+				"description": "Explosive power +30%"
+			}
+		]
+	},
+	{
+		"id": "mushroomancer",
+		"name": "Mushroomancer",
+		"description": "Lets you digest mushrooms that would otherwise be inedible and gain their advantageous effects.",
+		"levels": [
+			{
+				"description": "Lets you digest blue mushrooms and toadstools."
+			},
+			{
+				"description": "Additionally lets you digest nitroshrooms and parashrooms."
+			},
+			{
+				"description": "Additionally lets you digest mandragoras, devil's blight, and exciteshrooms."
+			}
+		]
+	},
+	{
+		"id": "muckResistance",
+		"name": "Muck Resistance",
+		"description": "Reduces impairments to mobility while stuck in monster muck.",
+		"levels": [
+			{
+				"description": "Reduces limits on movement speed and evasion."
+			}
+		]
+	},
+	{
+		"id": "leapOfFaith",
+		"name": "Leap of Faith",
+		"description": "Allows you to do a dive-evade when facing towards large monsters, and extends the dive-evade distance.",
+		"levels": [
+			{
+				"description": "Enables Leap of Faith."
+			}
+		]
+	},
+	{
+		"id": "dungmaster",
+		"name": "Dungmaster",
+		"description": "Makes monsters hit with slinger dung pods more likely to run.",
+		"levels": [
+			{
+				"description": "Makes slinger dung pods more effective at making monsters run away."
+			}
+		]
+	},
+	{
+		"id": "blindsider",
+		"name": "Blindsider",
+		"description": "Improves the effectiveness of flash attacks and items.",
+		"levels": [
+			{
+				"description": "Increases the success rate of flash effects."
+			}
+		]
+	},
+	{
+		"id": "bbqMaster",
+		"name": "BBQ Master",
+		"description": "Improves your skill at cooking meat.",
+		"levels": [
+			{
+				"description": "Makes it easier to cook well-done steaks."
+			}
+		]
+	},
+	{
+		"id": "masterFisher",
+		"name": "Master Fisher",
+		"description": "Improves your skill at fishing.",
+		"levels": [
+			{
+				"description": "Increases the time window for reeling in fish, and makes it easier to catch large fish."
+			}
+		]
+	},
+	{
+		"id": "proTransporter",
+		"name": "Pro Transporter",
+		"description": "Increases your speed while transporting items and deceases the likelihood of dropping them.",
+		"levels": [
+			{
+				"description": "Increases movement speed while transporting and reduces downtime on landings."
+			}
+		]
+	},
+	{
+		"id": "honeyHunter",
+		"name": "Honey Hunter",
+		"description": "Increases the quantity of honey you receive when gathering in the field.",
+		"levels": [
+			{
+				"description": "One extra honey per gather."
+			}
+		]
+	},
+	{
+		"id": "masterGatherer",
+		"name": "Master Gatherer",
+		"description": "Allows you to gather more quickly, and also prevents attacks from knocking you back while gathering.",
+		"levels": [
+			{
+				"description": "Speeds up gathering and prevents knockbacks while gathering."
+			}
+		]
+	},
+	{
+		"id": "carvingPro",
+		"name": "Carving Pro",
+		"description": "Prevents knockback from attacks while carving.",
+		"levels": [
+			{
+				"description": "Prevents knockback while carving."
+			}
+		]
+	},
+	{
+		"id": "heroics",
+		"name": "Heroics",
+		"description": "Increases attack power and defense when health drops to 35% or lower.",
+		"levels": [
+			{
+				"description": "While active, increases attack power by 5% and increases defense by 15 points."
+			},
+			{
+				"description": "While active, increases attack power by 10% and increases defense by 20 points."
+			},
+			{
+				"description": "While active, increases attack power by 15% and increases defense by 25 points."
+			},
+			{
+				"description": "While active, increases attack power by 20% and increases defense by 30 points."
+			},
+			{
+				"description": "While active, increases attack power by 30% and increases defense by 40 points."
+			}
+		]
+	},
+	{
+		"id": "heatGuard",
+		"name": "Heat Guard",
+		"description": "Nullifies damage from heat.",
+		"levels": [
+			{
+				"description": "Nullifies heat damage."
+			}
+		]
+	},
+	{
+		"id": "effluvialExpert",
+		"name": "Effluvial Expert",
+		"description": "Nullifies or reduces environmental damage in the Rotten Vale.",
+		"levels": [
+			{
+				"description": "Nullifies damage from effluvia and reduces damage from acids."
+			}
+		]
+	},
+	{
+		"id": "masterMounter",
+		"name": "Master Mounter",
+		"description": "Makes it easier to mount monsters.",
+		"levels": [
+			{
+				"description": "Makes it easier to mount monster and down mounted monsters."
+			}
+		]
+	},
+	{
+		"id": "jumpMaster",
+		"name": "Jump Master",
+		"description": "Prevents attacks from knocking you back during a jump.",
+		"levels": [
+			{
+				"description": "Negates knockback during jumps."
+			}
+		]
+	},
+	{
+		"id": "scoutflyRangeUp",
+		"name": "Scoutfly Range Up",
+		"description": "Expands your scoutflies' detection range.",
+		"levels": [
+			{
+				"description": "Expands your scoutflies' detection range."
+			}
+		]
+	},
+	{
+		"id": "scholar",
+		"name": "Scholar",
+		"description": "Speeds up progress on research levels and special investigations. (Effect is applied at the quest results screen.)",
+		"levels": [
+			{
+				"description": "Speeds up progress on research levels and special investigations."
+			}
+		]
+	},
+	{
+		"id": "foragersLuck",
+		"name": "Forager's Luck",
+		"description": "Increases the chance of finding rare gathering points.",
+		"levels": [
+			{
+				"description": "Increases the likelihood of rare gathering points respawning."
+			}
+		]
+	},
+	{
+		"id": "detector",
+		"name": "Detector",
+		"description": "Shows rare gathering points on the Wildlife Map.",
+		"levels": [
+			{
+				"description": "Marks rare sites on the wildlife map."
 			}
 		]
 	}
