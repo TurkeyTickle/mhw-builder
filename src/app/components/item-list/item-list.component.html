@@ -13,10 +13,27 @@
 				<li [hidden]="!item.visible"
 					(click)="selectItem(item)"
 					(mouseenter)="setTooltipItem(item)"
-					(mouseleave)="clearTooltipItem()">{{item.name}}
+					(mouseleave)="clearTooltipItem()">
 					
-					<div class="icon-container" *ngFor="let icon of getDamageIcons(item)">
-						<img [src]="icon">
+					<div class="info-container">
+						<div class="name-container">
+							{{item.name}}
+						</div>
+						
+						<div class="stat-container">
+							<div class="attack-container" *ngIf="item.baseAttack">
+								<img src="assets/images/attack-icon.png">
+								<div>{{item.baseAttack}}</div>
+							</div>
+							<div class="attack-container" *ngIf="item.ailment">
+								<img [src]="getAilmentIcon(item)">
+								<div [style.color]="item.ailmentHidden ? 'gray' : 'white'">{{item.ailmentBaseAttack}}</div>
+							</div>
+							<div class="attack-container" *ngIf="item.element">
+								<img [src]="getElementIcon(item)">
+								<div [style.color]="item.elementHidden ? 'gray' : 'white'">{{item.elementBaseAttack}}</div>
+							</div>
+						</div>
 					</div>
 				</li>
 			</div>

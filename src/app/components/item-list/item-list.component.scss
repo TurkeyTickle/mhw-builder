@@ -1,4 +1,4 @@
-$itemHeight: 26px;
+$itemHeight: 32px;
 
 :host, .container {
 	right: 0px;
@@ -21,17 +21,35 @@ li {
 	padding: 8px;
 	border-bottom: 1px black solid;
 
-	.icon-container {
-		float: right;
+	.info-container {
+		display: flex;
 
-		img {
-			height: $itemHeight;
+		.name-container {
+			flex-grow: 1;
+		}
+
+		.stat-container {
+			flex-grow: 0;
+
+			.attack-container {
+				display: inline-flex;
+
+				div {
+					flex-grow: 0;
+					line-height: $itemHeight;
+				}
+
+				img {
+					flex-grow: 0;
+					max-height: $itemHeight;
+				}
+			}
 		}
 	}
 }
 
 li:hover {
-	background-color: gray;
+	background-color: #525252;
 	border-radius: 3px;
 }
 

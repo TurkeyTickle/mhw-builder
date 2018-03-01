@@ -137,17 +137,26 @@ export class ItemListComponent implements OnInit {
 		this.tooltipService.setItem(null);
 	}
 
-	getDamageIcons(item: ItemModel): string[] {
-		const results = new Array<string>();
+	// getDamageIcons(item: ItemModel): string[] {
+	// 	const results = new Array<string>();
 
-		if (item.element) {
-			results.push(`assets/images/${item.element.toLowerCase()}${item.elementHidden ? '-gray' : ''}-icon.png`);
-		}
+	// 	if (item.element) {
+	// 		results.push(`assets/images/${item.element.toLowerCase()}${item.elementHidden ? '-gray' : ''}-icon.png`);
+	// 	}
 
-		if (item.ailment) {
-			results.push(`assets/images/${item.ailment.toLowerCase()}${item.ailmentHidden ? '-gray' : ''}-icon.png`);
-		}
+	// 	if (item.ailment) {
+	// 		results.push(`assets/images/${item.ailment.toLowerCase()}${item.ailmentHidden ? '-gray' : ''}-icon.png`);
+	// 	}
 
-		return results;
+	// 	return results;
+	// }
+
+	getElementIcon(item: ItemModel): string {
+		return `assets/images/${item.element.toLowerCase()}${item.elementHidden ? '-gray' : ''}-icon.png`;
+
+	}
+
+	getAilmentIcon(item: ItemModel): string {
+		return `assets/images/${item.ailment.toLowerCase()}${item.ailmentHidden ? '-gray' : ''}-icon.png`;
 	}
 }
