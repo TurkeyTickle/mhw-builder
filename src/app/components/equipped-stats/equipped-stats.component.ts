@@ -28,10 +28,14 @@ export class EquippedStatsComponent implements OnInit {
 	elementAttack: number;
 	effectivePassiveElementAttack: number;
 	elementHidden: boolean;
+	totalElementAttack: number;
+
 	ailment: AilmentType;
 	ailmentAttack: number;
 	effectivePassiveAilmentAttack: number;
 	ailmentHidden: boolean;
+	totalAilmentAttack: number;
+
 	elementAttackMultiplier: number;
 
 	passiveDragonAttack: number;
@@ -105,9 +109,13 @@ export class EquippedStatsComponent implements OnInit {
 		this.element = null;
 		this.elementAttack = 0;
 		this.elementHidden = false;
+		this.totalElementAttack = 0;
+
 		this.ailment = null;
 		this.ailmentAttack = 0;
 		this.ailmentHidden = false;
+		this.totalAilmentAttack = 0;
+
 		this.elementAttackMultiplier = 0;
 
 		this.passiveFireAttack = 0;
@@ -323,6 +331,8 @@ export class EquippedStatsComponent implements OnInit {
 		}
 
 		this.totalAttack = this.attack + Math.round(this.passiveAttack * this.weaponAttackModifier);
+		this.totalElementAttack = Math.round((this.elementAttack + this.effectivePassiveElementAttack) * this.elementAttackMultiplier);
+		this.totalAilmentAttack = Math.round((this.ailmentAttack + this.effectivePassiveAilmentAttack) * this.elementAttackMultiplier);
 
 		switch (this.element) {
 			case ElementType.Fire:
