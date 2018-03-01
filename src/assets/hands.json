@@ -302,6 +302,243 @@
 		]
 	},
 	{
+		"name": "Death Stench Grip Beta",
+		"itemType": "Hands",
+		"baseDefense": 62,
+		"fireResist": 3,
+		"waterResist": 2,
+		"thunderResist": -2,
+		"iceResist": 3,
+		"dragonResist": -4,
+		"skills": [
+			{
+				"id": "focus",
+				"level": 2
+			}
+		],
+		"slots": [
+			{
+				"level": 1
+			},
+			{
+				"level": 1
+			}
+		]
+	},
+	{
+		"name": "Death Stench Grip Alpha",
+		"itemType": "Hands",
+		"baseDefense": 62,
+		"fireResist": 3,
+		"waterResist": 2,
+		"thunderResist": -2,
+		"iceResist": 3,
+		"dragonResist": -4,
+		"skills": [
+			{
+				"id": "focus",
+				"level": 2
+			},
+			{
+				"id": "dragonAttack",
+				"level": 1
+			}
+		],
+		"slots": [
+			{
+				"level": 1
+			}
+		]
+	},
+	{
+		"name": "Dober Vambraces Beta",
+		"itemType": "Hands",
+		"baseDefense": 60,
+		"fireResist": -2,
+		"waterResist": 0,
+		"thunderResist": -1,
+		"iceResist": -1,
+		"dragonResist": 4,
+		"skills": [
+			{
+				"id": "staminaSurge",
+				"level": 1
+			},
+			{
+				"id": "mushroomancer",
+				"level": 1
+			}
+		],
+		"slots": [
+			{
+				"level": 1
+			},
+			{
+				"level": 1
+			}
+		]
+	},
+	{
+		"name": "Dober Vambraces Alpha",
+		"itemType": "Hands",
+		"baseDefense": 60,
+		"fireResist": -2,
+		"waterResist": 0,
+		"thunderResist": -1,
+		"iceResist": -1,
+		"dragonResist": 4,
+		"skills": [
+			{
+				"id": "staminaSurge",
+				"level": 2
+			},
+			{
+				"id": "mushroomancer",
+				"level": 1
+			}
+		]
+	},
+	{
+		"name": "Damascus Vambraces Beta",
+		"itemType": "Hands",
+		"baseDefense": 60,
+		"fireResist": 4,
+		"waterResist": -2,
+		"thunderResist": 0,
+		"iceResist": 0,
+		"dragonResist": 0,
+		"skills": [
+			{
+				"id": "handicraft",
+				"level": 1
+			}
+		],
+		"slots": [
+			{
+				"level": 1
+			}
+		]
+	},
+	{
+		"name": "Damascus Vambraces Alpha",
+		"itemType": "Hands",
+		"baseDefense": 60,
+		"fireResist": 4,
+		"waterResist": -2,
+		"thunderResist": 0,
+		"iceResist": 0,
+		"dragonResist": 0,
+		"skills": [
+			{
+				"id": "handicraft",
+				"level": 1
+			},
+			{
+				"id": "speedSharpening",
+				"level": 1
+			}
+		]
+	},
+	{
+		"name": "Bazel Vambraces Beta",
+		"itemType": "Hands",
+		"baseDefense": 58,
+		"fireResist": 3,
+		"waterResist": 1,
+		"thunderResist": -4,
+		"iceResist": -2,
+		"dragonResist": -2,
+		"skills": [
+			{
+				"id": "criticalDraw",
+				"level": 2
+			},
+			{
+				"id": "bazelgeuseProtection"
+			}
+		],
+		"slots": [
+			{
+				"level": 3
+			}
+		]
+	},
+	{
+		"name": "Bazel Vambraces Alpha",
+		"itemType": "Hands",
+		"baseDefense": 58,
+		"fireResist": 3,
+		"waterResist": 1,
+		"thunderResist": -4,
+		"iceResist": -2,
+		"dragonResist": -2,
+		"skills": [
+			{
+				"id": "criticalDraw",
+				"level": 2
+			},
+			{
+				"id": "earplugs",
+				"level": 1
+			},
+			{
+				"id": "bazelgeuseProtection"
+			}
+		]
+	},
+	{
+		"name": "Uragaan Vambraces Beta",
+		"itemType": "Hands",
+		"baseDefense": 60,
+		"fireResist": 4,
+		"waterResist": -3,
+		"thunderResist": 1,
+		"iceResist": -2,
+		"dragonResist": -2,
+		"skills": [
+			{
+				"id": "guard",
+				"level": 1
+			},
+			{
+				"id": "uragaanProtection"
+			}
+		],
+		"slots": [
+			{
+				"level": 2
+			}
+		]
+	},
+	{
+		"name": "Uragaan Vambraces Alpha",
+		"itemType": "Hands",
+		"baseDefense": 60,
+		"fireResist": 4,
+		"waterResist": -3,
+		"thunderResist": 1,
+		"iceResist": -2,
+		"dragonResist": -2,
+		"skills": [
+			{
+				"id": "guard",
+				"level": 1
+			},
+			{
+				"id": "defenseBoost",
+				"level": 1
+			},
+			{
+				"id": "uragaanProtection"
+			}
+		],
+		"slots": [
+			{
+				"level": 1
+			}
+		]
+	},
+	{
 		"name": "Diablos Nero Braces Beta",
 		"itemType": "Hands",
 		"baseDefense": 56,
@@ -323,6 +560,81 @@
 			{
 				"level": 2
 			},
+			{
+				"level": 1
+			}
+		]
+	},
+	{
+		"name": "Diablos Nero Braces Alpha",
+		"itemType": "Hands",
+		"baseDefense": 56,
+		"fireResist": 2,
+		"waterResist": -3,
+		"thunderResist": 0,
+		"iceResist": -4,
+		"dragonResist": 2,
+		"skills": [
+			{
+				"id": "focus",
+				"level": 1
+			},
+			{
+				"id": "marathonRunner",
+				"level": 1
+			},
+			{
+				"id": "diablosMastery"
+			}
+		]
+	},
+	{
+		"name": "Rath Soul Braces Beta",
+		"itemType": "Hands",
+		"baseDefense": 56,
+		"fireResist": 3,
+		"waterResist": 2,
+		"thunderResist": 2,
+		"iceResist": -3,
+		"dragonResist": -4,
+		"skills": [
+			{
+				"id": "focus",
+				"level": 1
+			},
+			{
+				"id": "rathalosMastery"
+			}
+		],
+		"slots": [
+			{
+				"level": 2
+			}
+		]
+	},
+	{
+		"name": "Rath Soul Braces Alpha",
+		"itemType": "Hands",
+		"baseDefense": 56,
+		"fireResist": 3,
+		"waterResist": 2,
+		"thunderResist": 2,
+		"iceResist": -3,
+		"dragonResist": -4,
+		"skills": [
+			{
+				"id": "focus",
+				"level": 1
+			},
+			{
+				"id": "windproof",
+				"level": 1
+			},
+			{
+				"id": "rathalosMastery"
+			}
+		],
+		"slots": [
 			{
 				"level": 1
 			}
