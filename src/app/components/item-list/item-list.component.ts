@@ -7,7 +7,6 @@ import { TooltipService } from '../../services/tooltip.service';
 import { Guid } from '../../core/guid';
 import { SearchItemModel } from '../../models/search-item.model';
 import { SearchDecorationModel } from '../../models/search-decoration.model';
-// import * as _ from 'lodash';
 
 @Component({
 	selector: 'mhw-builder-item-list',
@@ -136,5 +135,19 @@ export class ItemListComponent implements OnInit {
 
 	clearTooltipItem() {
 		this.tooltipService.setItem(null);
+	}
+
+	getDamageIcons(item: ItemModel): string[] {
+		const results = new Array<string>();
+
+		if (item.element) {
+			results.push(`assets/images/${item.element.toLowerCase()}${item.elementHidden ? '-gray' : ''}-icon.png`);
+		}
+
+		if (item.ailment) {
+			results.push(`assets/images/${item.ailment.toLowerCase()}${item.ailmentHidden ? '-gray' : ''}-icon.png`);
+		}
+
+		return results;
 	}
 }

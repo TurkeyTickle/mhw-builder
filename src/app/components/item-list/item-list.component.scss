@@ -19,6 +19,15 @@ li {
 	line-height: $itemHeight;
 	list-style: none;
 	padding: 8px;
+	border-bottom: 1px black solid;
+
+	.icon-container {
+		float: right;
+
+		img {
+			height: $itemHeight;
+		}
+	}
 }
 
 li:hover {

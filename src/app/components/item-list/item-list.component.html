@@ -13,7 +13,12 @@
 				<li [hidden]="!item.visible"
 					(click)="selectItem(item)"
 					(mouseenter)="setTooltipItem(item)"
-					(mouseleave)="clearTooltipItem()">{{item.name}}</li>
+					(mouseleave)="clearTooltipItem()">{{item.name}}
+					
+					<div class="icon-container" *ngFor="let icon of getDamageIcons(item)">
+						<img [src]="icon">
+					</div>
+				</li>
 			</div>
 			<div *ngFor="let decoration of decorations">
 				<li [hidden]="!decoration.visible"
