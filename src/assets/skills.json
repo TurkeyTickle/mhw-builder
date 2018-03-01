@@ -1989,5 +1989,15 @@
 				"description": "Increases the power of piercing ammo and Dragon Piercer."
 			}
 		]
+	},
+	{
+		"id": "cliffhanger",
+		"name": "Cliffhanger",
+		"description": "Decreases stamina depletion when evading while clinging to walls or ivy.",
+		"levels": [
+			{
+				"description": "Reduces stamina depletion while climbing by 25%."
+			}
+		]
 	}
 ]
