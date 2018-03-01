@@ -7,16 +7,29 @@
 		<li *ngIf="maxSharpness">Max Sharpness: {{maxSharpness}}</li>
 		<li>Affinity: {{affinity + passiveAffinity}}%</li>
 
-		<div *ngIf="ailment" [style.color]="ailmentHidden ? 'gray' : 'white'">
+		<div *ngIf="ailment && !ailmentHidden">
 			<li>Ailment: {{ailment}}</li>
 			<li>Ailment Attack: {{ailmentAttack + effectivePassiveAilmentAttack}}</li>
 			<li>Ailment Buildup Rate: {{100 + effectivePassiveAilmentBuildupPercent}}%</li>
 		</div>
-		
-		<div *ngIf="element" [style.color]="elementHidden ? 'gray' : 'white'">
+
+		<div *ngIf="element && !elementHidden">
 			<li>Element: {{element}}</li>
 			<li>Element Attack: {{elementAttack + effectivePassiveElementAttack}}</li>
 		</div>
+
+		<div [style.color]="getHiddenElemColor()">
+			<div *ngIf="ailment && ailmentHidden">
+				<li>Ailment: {{ailment}}</li>
+				<li>Ailment Attack: {{(ailmentAttack + effectivePassiveAilmentAttack) * elementAttackMultiplier}} ({{ailmentAttack + effectivePassiveAilmentAttack}} * {{elementAttackMultiplier}})</li>
+				<li>Ailment Buildup Rate: {{100 + effectivePassiveAilmentBuildupPercent}}%</li>
+			</div>
+			
+			<div *ngIf="element && elementHidden">
+				<li>Element: {{element}}</li>
+				<li>Element Attack: {{(elementAttack + effectivePassiveElementAttack) * elementAttackMultiplier}} ({{elementAttack + effectivePassiveElementAttack}} * {{elementAttackMultiplier}})</li>
+			</div>
+		</div>		
 
 		<div *ngIf="elderseal">
 			<li>Elderseal: {{elderseal}}</li>

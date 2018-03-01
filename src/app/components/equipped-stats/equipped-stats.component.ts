@@ -26,10 +26,13 @@ export class EquippedStatsComponent implements OnInit {
 
 	element: ElementType;
 	elementAttack: number;
+	effectivePassiveElementAttack: number;
 	elementHidden: boolean;
 	ailment: AilmentType;
 	ailmentAttack: number;
+	effectivePassiveAilmentAttack: number;
 	ailmentHidden: boolean;
+	elementAttackMultiplier: number;
 
 	passiveDragonAttack: number;
 	passiveDragonAttackPercent: number;
@@ -51,8 +54,7 @@ export class EquippedStatsComponent implements OnInit {
 	passiveBlastBuildupPercent: number;
 	passiveStunAttack: number;
 	passiveStunBuildupPercent: number;
-	effectivePassiveElementAttack: number;
-	effectivePassiveAilmentAttack: number;
+
 	effectivePassiveAilmentBuildupPercent: number;
 
 	elderseal: string;
@@ -106,6 +108,7 @@ export class EquippedStatsComponent implements OnInit {
 		this.ailment = null;
 		this.ailmentAttack = 0;
 		this.ailmentHidden = false;
+		this.elementAttackMultiplier = 0;
 
 		this.passiveFireAttack = 0;
 		this.passiveWaterAttack = 0;
@@ -312,6 +315,10 @@ export class EquippedStatsComponent implements OnInit {
 				if (level.passiveDragonResist) {
 					this.passiveDragonResist += level.passiveDragonResist;
 				}
+
+				if (level.hiddenElementUp) {
+					this.elementAttackMultiplier = level.hiddenElementUp;
+				}
 			}
 		}
 
@@ -360,6 +367,22 @@ export class EquippedStatsComponent implements OnInit {
 				break;
 			default:
 				break;
+		}
+	}
+
+	getHiddenElemColor(): string {
+		if (this.ailmentHidden || this.elementHidden) {
+			if (this.elementAttackMultiplier >= 1) {
+				return 'white';
+			} else if (this.elementAttackMultiplier >= 0.66) {
+				return '#ffffffcc';
+			} else if (this.elementAttackMultiplier >= 0.33) {
+				return '#ffffff99';
+			} else {
+				return '#ffffff66';
+			}
+		} else {
+			return 'white';
 		}
 	}
 }

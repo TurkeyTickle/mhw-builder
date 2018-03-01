@@ -998,13 +998,16 @@
 		"description": "Unlocks your weapon's hidden element. Also increases bowgun loading capacity. (There is a cap to loading capacity.)",
 		"levels": [
 			{
-				"description": "Draws out 33% of hidden element and expands clip size for some ammo."
+				"description": "Draws out 33% of hidden element and expands clip size for some ammo.",
+				"hiddenElementUp": 0.33
 			},
 			{
-				"description": "Draws out 66% of hidden element and expands clip size for some ammo."
+				"description": "Draws out 66% of hidden element and expands clip size for some ammo.",
+				"hiddenElementUp": 0.66
 			},
 			{
-				"description": "Draws out 100% of hidden element and expands clip size for some ammo."
+				"description": "Draws out 100% of hidden element and expands clip size for some ammo.",
+				"hiddenElementUp": 1
 			}
 		]
 	},

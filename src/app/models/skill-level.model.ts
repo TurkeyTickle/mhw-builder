@@ -6,6 +6,7 @@ export class SkillLevel {
 
 	passiveAffinity: number;
 	activeAffinity: number;
+	hiddenElementUp: number;
 
 	passiveFireAttack: number;
 	passiveFireAttackPercent: number;
