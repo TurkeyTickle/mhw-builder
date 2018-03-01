@@ -309,6 +309,243 @@
 		]
 	},
 	{
+		"name": "Death Stench Muscle Beta",
+		"itemType": "Chest",
+		"baseDefense": 62,
+		"fireResist": 3,
+		"waterResist": 2,
+		"thunderResist": -2,
+		"iceResist": 3,
+		"dragonResist": -4,
+		"skills": [
+			{
+				"id": "fortify",
+				"level": 1
+			}
+		],
+		"slots": [
+			{
+				"level": 3
+			}
+		]
+	},
+	{
+		"name": "Death Stench Muscle Alpha",
+		"itemType": "Chest",
+		"baseDefense": 62,
+		"fireResist": 3,
+		"waterResist": 2,
+		"thunderResist": -2,
+		"iceResist": 3,
+		"dragonResist": -4,
+		"skills": [
+			{
+				"id": "fortify",
+				"level": 1
+			},
+			{
+				"id": "freeElemAmmoUp",
+				"level": 1
+			}
+		]
+	},
+	{
+		"name": "Dober Mail Beta",
+		"itemType": "Chest",
+		"baseDefense": 60,
+		"fireResist": -2,
+		"waterResist": 0,
+		"thunderResist": -1,
+		"iceResist": -1,
+		"dragonResist": 4,
+		"skills": [
+			{
+				"id": "attackBoost",
+				"level": 2
+			}
+		],
+		"slots": [
+			{
+				"level": 3
+			}
+		]
+	},
+	{
+		"name": "Dober Mail Alpha",
+		"itemType": "Chest",
+		"baseDefense": 60,
+		"fireResist": -2,
+		"waterResist": 0,
+		"thunderResist": -1,
+		"iceResist": -1,
+		"dragonResist": 4,
+		"skills": [
+			{
+				"id": "attackBoost",
+				"level": 2
+			},
+			{
+				"id": "mushroomancer",
+				"level": 1
+			}
+		],
+		"slots": [
+			{
+				"level": 1
+			}
+		]
+	},
+	{
+		"name": "Damascus Mail Beta",
+		"itemType": "Chest",
+		"baseDefense": 60,
+		"fireResist": 4,
+		"waterResist": -2,
+		"thunderResist": 0,
+		"iceResist": 0,
+		"dragonResist": 0,
+		"skills": [
+			{
+				"id": "focus",
+				"level": 2
+			}
+		],
+		"slots": [
+			{
+				"level": 1
+			},
+			{
+				"level": 1
+			},
+			{
+				"level": 1
+			}
+		]
+	},
+	{
+		"name": "Damascus Mail Alpha",
+		"itemType": "Chest",
+		"baseDefense": 60,
+		"fireResist": 4,
+		"waterResist": -2,
+		"thunderResist": 0,
+		"iceResist": 0,
+		"dragonResist": 0,
+		"skills": [
+			{
+				"id": "focus",
+				"level": 2
+			},
+			{
+				"id": "defenseBoost",
+				"level": 2
+			}
+		],
+		"slots": [
+			{
+				"level": 1
+			}
+		]
+	},
+	{
+		"name": "Bezel Mail Beta",
+		"itemType": "Chest",
+		"baseDefense": 58,
+		"fireResist": 3,
+		"waterResist": 1,
+		"thunderResist": -4,
+		"iceResist": -2,
+		"dragonResist": -2,
+		"skills": [
+			{
+				"id": "guard",
+				"level": 2
+			},
+			{
+				"id": "bazelgeuseProtection"
+			}
+		],
+		"slots": [
+			{
+				"level": 1
+			},
+			{
+				"level": 1
+			}
+		]
+	},
+	{
+		"name": "Bezel Mail Alpha",
+		"itemType": "Chest",
+		"baseDefense": 58,
+		"fireResist": 3,
+		"waterResist": 1,
+		"thunderResist": -4,
+		"iceResist": -2,
+		"dragonResist": -2,
+		"skills": [
+			{
+				"id": "guard",
+				"level": 2
+			},
+			{
+				"id": "blastResistance",
+				"level": 2
+			},
+			{
+				"id": "bazelgeuseProtection"
+			}
+		]
+	},
+	{
+		"name": "Uragaan Mail Beta",
+		"itemType": "Chest",
+		"baseDefense": 60,
+		"fireResist": 4,
+		"waterResist": -3,
+		"thunderResist": 1,
+		"iceResist": -2,
+		"dragonResist": -2,
+		"skills": [
+			{
+				"id": "partbreaker",
+				"level": 1
+			},
+			{
+				"id": "uragaanProtection"
+			}
+		],
+		"slots": [
+			{
+				"level": 3
+			}
+		]
+	},
+	{
+		"name": "Uragaan Mail Alpha",
+		"itemType": "Chest",
+		"baseDefense": 60,
+		"fireResist": 4,
+		"waterResist": -3,
+		"thunderResist": 1,
+		"iceResist": -2,
+		"dragonResist": -2,
+		"skills": [
+			{
+				"id": "partbreaker",
+				"level": 2
+			},
+			{
+				"id": "uragaanProtection"
+			}
+		],
+		"slots": [
+			{
+				"level": 1
+			}
+		]
+	},
+	{
 		"name": "Diablos Nero Mail Beta",
 		"itemType": "Chest",
 		"baseDefense": 56,
@@ -336,23 +573,81 @@
 		]
 	},
 	{
-		"name": "Dober Mail Beta",
+		"name": "Diablos Nero Mail Alpha",
 		"itemType": "Chest",
-		"baseDefense": 60,
-		"fireResist": -2,
-		"waterResist": 0,
-		"thunderResist": -1,
-		"iceResist": -1,
-		"dragonResist": 4,
+		"baseDefense": 56,
+		"fireResist": 2,
+		"waterResist": -3,
+		"thunderResist": 0,
+		"iceResist": -4,
+		"dragonResist": 2,
 		"skills": [
 			{
-				"id": "attackBoost",
+				"id": "resentment",
 				"level": 2
+			},
+			{
+				"id": "diablosMastery"
 			}
 		],
 		"slots": [
 			{
-				"level": 3
+				"level": 2
+			},
+			{
+				"level": 1
+			}
+		]
+	},
+	{
+		"name": "Rath Soul Mail Beta",
+		"itemType": "Chest",
+		"baseDefense": 56,
+		"fireResist": 3,
+		"waterResist": 2,
+		"thunderResist": 2,
+		"iceResist": -3,
+		"dragonResist": -4,
+		"skills": [
+			{
+				"id": "freeElemAmmoUp",
+				"level": 1
+			},
+			{
+				"id": "rathalosMastery"
+			}
+		],
+		"slots": [
+			{
+				"level": 2
+			}
+		]
+	},
+	{
+		"name": "Rath Soul Mail Alpha",
+		"itemType": "Chest",
+		"baseDefense": 56,
+		"fireResist": 3,
+		"waterResist": 2,
+		"thunderResist": 2,
+		"iceResist": -3,
+		"dragonResist": -4,
+		"skills": [
+			{
+				"id": "freeElemAmmoUp",
+				"level": 1
+			},
+			{
+				"id": "intimidator",
+				"level": 1
+			},
+			{
+				"id": "rathalosMastery"
+			}
+		],
+		"slots": [
+			{
+				"level": 1
 			}
 		]
 	}
