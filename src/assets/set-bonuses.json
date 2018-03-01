@@ -60,6 +60,26 @@
 		]
 	},
 	{
+		"id": "bazelgeuseProtection",
+		"name": "Bazelgeuse Protection",
+		"setLevels": [
+			{
+				"id": "guts",
+				"pieces": 3
+			}
+		]
+	},
+	{
+		"id": "uragaanProtection",
+		"name": "Uragaan Protection",
+		"setLevels": [
+			{
+				"id": "guardUp",
+				"pieces": 3
+			}
+		]
+	},
+	{
 		"id": "diablosMastery",
 		"name": "Diablos Mastery",
 		"setLevels": [
@@ -69,6 +89,20 @@
 			},
 			{
 				"id": "nonElementalBoost",
+				"pieces": 4
+			}
+		]
+	},
+	{
+		"id": "rathalosMastery",
+		"name": "Rathalos Mastery",
+		"setLevels": [
+			{
+				"id": "criticalElement",
+				"pieces": 2
+			},
+			{
+				"id": "mindsEyeBallistics",
 				"pieces": 4
 			}
 		]

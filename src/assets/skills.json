@@ -1659,6 +1659,16 @@
 		]
 	},
 	{
+		"id": "guardUp",
+		"name": "Guard Up",
+		"description": "Allows you to guard against ordinarily unblockable attacks.",
+		"levels": [
+			{
+				"description": "Allows you to guard against ordinarily unblockable attacks."
+			}
+		]
+	},
+	{
 		"id": "capacityBoost",
 		"name": "Capacity Boost",
 		"description": "Increases the gunlance's shell capacity and charge blade's phial capacity.",
@@ -1937,6 +1947,36 @@
 		"levels": [
 			{
 				"description": "Marks rare sites on the wildlife map."
+			}
+		]
+	},
+	{
+		"id": "guts",
+		"name": "Guts",
+		"description": "Above a certain health threshold, you withstand an attack that would normally cart you (once only).",
+		"levels": [
+			{
+				"description": "Above a certain health threshold, you withstand an attack that would normally cart you (once only)."
+			}
+		]
+	},
+	{
+		"id": "criticalElement",
+		"name": "Critical Element",
+		"description": "Increases elemental damage (fire, water, thunder, ice, dragon) when landing critical hits.",
+		"levels": [
+			{
+				"description": "Increases elemental damage (fire, water, thunder, ice, dragon) when landing critical hits."
+			}
+		]
+	},
+	{
+		"id": "mindsEyeBallistics",
+		"name": "Mind's Eye/Ballistics",
+		"description": "Prevents attacks from being deflected. Also shortens the distance before ammo and arrows reach maximum power.",
+		"levels": [
+			{
+				"description": "Prevents attacks from being deflected. Also shortens the distance before ammo and arrows reach maximum power."
 			}
 		]
 	}

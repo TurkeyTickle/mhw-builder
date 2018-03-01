@@ -318,6 +318,266 @@
 		]
 	},
 	{
+		"name": "Skull Mask Alpha",
+		"itemType": "Head",
+		"baseDefense": 64,
+		"fireResist": -3,
+		"waterResist": -1,
+		"thunderResist": -1,
+		"iceResist": -1,
+		"dragonResist": 2,
+		"skills": [
+			{
+				"id": "handicraft",
+				"level": 1
+			}
+		],
+		"slots": [
+			{
+				"level": 2
+			}
+		]
+	},
+	{
+		"name": "Death Stench Brain Beta",
+		"itemType": "Head",
+		"baseDefense": 62,
+		"fireResist": 3,
+		"waterResist": 2,
+		"thunderResist": -2,
+		"iceResist": 3,
+		"dragonResist": -4,
+		"skills": [
+			{
+				"id": "resuscitate",
+				"level": 1
+			}
+		],
+		"slots": [
+			{
+				"level": 3
+			}
+		]
+	},
+	{
+		"name": "Death Stench Brain Alpha",
+		"itemType": "Head",
+		"baseDefense": 62,
+		"fireResist": 3,
+		"waterResist": 2,
+		"thunderResist": -2,
+		"iceResist": 3,
+		"dragonResist": -4,
+		"skills": [
+			{
+				"id": "resuscitate",
+				"level": 1
+			},
+			{
+				"id": "criticalEye",
+				"level": 1
+			}
+		],
+		"slots": [
+			{
+				"level": 2
+			}
+		]
+	},
+	{
+		"name": "Dober Helm Beta",
+		"itemType": "Head",
+		"baseDefense": 60,
+		"fireResist": -2,
+		"waterResist": 0,
+		"thunderResist": -1,
+		"iceResist": -1,
+		"dragonResist": 4,
+		"skills": [
+			{
+				"id": "freeElemAmmoUp",
+				"level": 1
+			}
+		],
+		"slots": [
+			{
+				"level": 1
+			}
+		]
+	},
+	{
+		"name": "Dober Helm Alpha",
+		"itemType": "Head",
+		"baseDefense": 60,
+		"fireResist": -2,
+		"waterResist": 0,
+		"thunderResist": -1,
+		"iceResist": -1,
+		"dragonResist": 4,
+		"skills": [
+			{
+				"id": "freeElemAmmoUp",
+				"level": 1
+			},
+			{
+				"id": "dragonResistance",
+				"level": 1
+			}
+		]
+	},
+	{
+		"name": "Damascus Helm Beta",
+		"itemType": "Head",
+		"baseDefense": 60,
+		"fireResist": 4,
+		"waterResist": -2,
+		"thunderResist": 0,
+		"iceResist": 0,
+		"dragonResist": 0,
+		"skills": [
+			{
+				"id": "defenseBoost",
+				"level": 2
+			}
+		],
+		"slots": [
+			{
+				"level": 3
+			}
+		]
+	},
+	{
+		"name": "Damascus Helm Alpha",
+		"itemType": "Head",
+		"baseDefense": 60,
+		"fireResist": 4,
+		"waterResist": -2,
+		"thunderResist": 0,
+		"iceResist": 0,
+		"dragonResist": 0,
+		"skills": [
+			{
+				"id": "defenseBoost",
+				"level": 2
+			},
+			{
+				"id": "speedSharpening",
+				"level": 1
+			}
+		],
+		"slots": [
+			{
+				"level": 1
+			}
+		]
+	},
+	{
+		"name": "Bazel Helm Beta",
+		"itemType": "Head",
+		"baseDefense": 58,
+		"fireResist": 3,
+		"waterResist": 1,
+		"thunderResist": -4,
+		"iceResist": -2,
+		"dragonResist": -2,
+		"skills": [
+			{
+				"id": "earplugs",
+				"level": 2
+			},
+			{
+				"id": "bazelgeuseProtection"
+			}
+		],
+		"slots": [
+			{
+				"level": 3
+			},
+			{
+				"level": 1
+			}
+		]
+	},
+	{
+		"name": "Bazel Helm Alpha",
+		"itemType": "Head",
+		"baseDefense": 58,
+		"fireResist": 3,
+		"waterResist": 1,
+		"thunderResist": -4,
+		"iceResist": -2,
+		"dragonResist": -2,
+		"skills": [
+			{
+				"id": "earplugs",
+				"level": 2
+			},
+			{
+				"id": "blastAttack",
+				"level": 1
+			},
+			{
+				"id": "bazelgeuseProtection"
+			}
+		],
+		"slots": [
+			{
+				"level": 2
+			}
+		]
+	},
+	{
+		"name": "Uragaan Helm Beta",
+		"itemType": "Head",
+		"baseDefense": 60,
+		"fireResist": 4,
+		"waterResist": -3,
+		"thunderResist": 1,
+		"iceResist": -2,
+		"dragonResist": -2,
+		"skills": [
+			{
+				"id": "thunderResistance",
+				"level": 1
+			},
+			{
+				"id": "uragaanProtection"
+			}
+		],
+		"slots": [
+			{
+				"level": 3
+			},
+			{
+				"level": 1
+			}
+		]
+	},
+	{
+		"name": "Uragaan Helm Alpha",
+		"itemType": "Head",
+		"baseDefense": 60,
+		"fireResist": 4,
+		"waterResist": -3,
+		"thunderResist": 1,
+		"iceResist": -2,
+		"dragonResist": -2,
+		"skills": [
+			{
+				"id": "thunderResistance",
+				"level": 2
+			},
+			{
+				"id": "uragaanProtection"
+			}
+		],
+		"slots": [
+			{
+				"level": 3
+			}
+		]
+	},
+	{
 		"name": "Diablos Nero Helm Beta",
 		"itemType": "Head",
 		"baseDefense": 56,
@@ -338,6 +598,80 @@
 		"slots": [
 			{
 				"level": 3
+			}
+		]
+	},
+	{
+		"name": "Diablos Nero Helm Alpha",
+		"itemType": "Head",
+		"baseDefense": 56,
+		"fireResist": 2,
+		"waterResist": -3,
+		"thunderResist": 0,
+		"iceResist": -4,
+		"dragonResist": 2,
+		"skills": [
+			{
+				"id": "focus",
+				"level": 2
+			},
+			{
+				"id": "diablosMastery"
+			}
+		],
+		"slots": [
+			{
+				"level": 1
+			}
+		]
+	},
+	{
+		"name": "Rath Soul Helm Beta",
+		"itemType": "Head",
+		"baseDefense": 56,
+		"fireResist": 3,
+		"waterResist": 2,
+		"thunderResist": 2,
+		"iceResist": -3,
+		"dragonResist": -4,
+		"skills": [
+			{
+				"id": "criticalBoost",
+				"level": 1
+			},
+			{
+				"id": "rathalosMastery"
+			}
+		],
+		"slots": [
+			{
+				"level": 1
+			},
+			{
+				"level": 1
+			}
+		]
+	},
+	{
+		"name": "Rath Soul Helm Alpha",
+		"itemType": "Head",
+		"baseDefense": 56,
+		"fireResist": 3,
+		"waterResist": 2,
+		"thunderResist": 2,
+		"iceResist": -3,
+		"dragonResist": -4,
+		"skills": [
+			{
+				"id": "criticalBoost",
+				"level": 1
+			},
+			{
+				"id": "intimidator",
+				"level": 2
+			},
+			{
+				"id": "rathalosMastery"
 			}
 		]
 	}
