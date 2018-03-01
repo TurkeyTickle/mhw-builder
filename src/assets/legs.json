@@ -307,6 +307,258 @@
 		]
 	},
 	{
+		"name": "Death Stench Bowels Beta",
+		"itemType": "Legs",
+		"baseDefense": 62,
+		"fireResist": 3,
+		"waterResist": 2,
+		"thunderResist": -2,
+		"iceResist": 3,
+		"dragonResist": -4,
+		"skills": [
+			{
+				"id": "dragonAttack",
+				"level": 2
+			}
+		],
+		"slots": [
+			{
+				"level": 1
+			},
+			{
+				"level": 1
+			}
+		]
+	},
+	{
+		"name": "Death Stench Bowels Alpha",
+		"itemType": "Legs",
+		"baseDefense": 62,
+		"fireResist": 3,
+		"waterResist": 2,
+		"thunderResist": -2,
+		"iceResist": 3,
+		"dragonResist": -4,
+		"skills": [
+			{
+				"id": "dragonAttack",
+				"level": 2
+			},
+			{
+				"id": "focus",
+				"level": 1
+			}
+		]
+	},
+	{
+		"name": "Dober Coil Beta",
+		"itemType": "Legs",
+		"baseDefense": 60,
+		"fireResist": -2,
+		"waterResist": 0,
+		"thunderResist": -1,
+		"iceResist": -1,
+		"dragonResist": 4,
+		"skills": [
+			{
+				"id": "dragonResistance",
+				"level": 2
+			}
+		],
+		"slots": [
+			{
+				"level": 3
+			}
+		]
+	},
+	{
+		"name": "Dober Coil Alpha",
+		"itemType": "Legs",
+		"baseDefense": 60,
+		"fireResist": -2,
+		"waterResist": 0,
+		"thunderResist": -1,
+		"iceResist": -1,
+		"dragonResist": 4,
+		"skills": [
+			{
+				"id": "dragonResistance",
+				"level": 2
+			},
+			{
+				"id": "attackBoost",
+				"level": 1
+			}
+		],
+		"slots": [
+			{
+				"level": 2
+			}
+		]
+	},
+	{
+		"name": "Damascus Coil Beta",
+		"itemType": "Legs",
+		"baseDefense": 60,
+		"fireResist": 4,
+		"waterResist": -2,
+		"thunderResist": 0,
+		"iceResist": 0,
+		"dragonResist": 0,
+		"skills": [
+			{
+				"id": "focus",
+				"level": 1
+			}
+		],
+		"slots": [
+			{
+				"level": 1
+			},
+			{
+				"level": 1
+			},
+			{
+				"level": 1
+			}
+		]
+	},
+	{
+		"name": "Damascus Coil Alpha",
+		"itemType": "Legs",
+		"baseDefense": 60,
+		"fireResist": 4,
+		"waterResist": -2,
+		"thunderResist": 0,
+		"iceResist": 0,
+		"dragonResist": 0,
+		"skills": [
+			{
+				"id": "focus",
+				"level": 1
+			},
+			{
+				"id": "ironSkin",
+				"level": 2
+			}
+		],
+		"slots": [
+			{
+				"level": 1
+			}
+		]
+	},
+	{
+		"name": "Bazel Coil Beta",
+		"itemType": "Legs",
+		"baseDefense": 58,
+		"fireResist": 3,
+		"waterResist": 1,
+		"thunderResist": -4,
+		"iceResist": -2,
+		"dragonResist": -2,
+		"skills": [
+			{
+				"id": "earplugs",
+				"level": 2
+			},
+			{
+				"id": "bazelgeuseProtection"
+			}
+		],
+		"slots": [
+			{
+				"level": 3
+			}
+		]
+	},
+	{
+		"name": "Bazel Coil Alpha",
+		"itemType": "Legs",
+		"baseDefense": 58,
+		"fireResist": 3,
+		"waterResist": 1,
+		"thunderResist": -4,
+		"iceResist": -2,
+		"dragonResist": -2,
+		"skills": [
+			{
+				"id": "earplugs",
+				"level": 2
+			},
+			{
+				"id": "jumpMaster",
+				"level": 1
+			},
+			{
+				"id": "bazelgeuseProtection"
+			}
+		],
+		"slots": [
+			{
+				"level": 1
+			}
+		]
+	},
+	{
+		"name": "Uragaan Coil Beta",
+		"itemType": "Legs",
+		"baseDefense": 60,
+		"fireResist": 4,
+		"waterResist": -3,
+		"thunderResist": 1,
+		"iceResist": -2,
+		"dragonResist": -2,
+		"skills": [
+			{
+				"id": "partbreaker",
+				"level": 1
+			},
+			{
+				"id": "uragaanProtection"
+			}
+		],
+		"slots": [
+			{
+				"level": 2
+			},
+			{
+				"level": 1
+			}
+		]
+	},
+	{
+		"name": "Uragaan Coil Alpha",
+		"itemType": "Legs",
+		"baseDefense": 60,
+		"fireResist": 4,
+		"waterResist": -3,
+		"thunderResist": 1,
+		"iceResist": -2,
+		"dragonResist": -2,
+		"skills": [
+			{
+				"id": "partbreaker",
+				"level": 1
+			},
+			{
+				"id": "thunderResistance",
+				"level": 1
+			},
+			{
+				"id": "uragaanProtection"
+			}
+		],
+		"slots": [
+			{
+				"level": 1
+			},
+			{
+				"level": 1
+			}
+		]
+	},
+	{
 		"name": "Diablos Nero Coil Beta",
 		"itemType": "Legs",
 		"baseDefense": 56,
@@ -327,6 +579,76 @@
 		"slots": [
 			{
 				"level": 2
+			}
+		]
+	},
+	{
+		"name": "Diablos Nero Coil Alpha",
+		"itemType": "Legs",
+		"baseDefense": 56,
+		"fireResist": 2,
+		"waterResist": -3,
+		"thunderResist": 0,
+		"iceResist": -4,
+		"dragonResist": 2,
+		"skills": [
+			{
+				"id": "resentment",
+				"level": 1
+			},
+			{
+				"id": "partbreaker",
+				"level": 1
+			},
+			{
+				"id": "diablosMastery"
+			}
+		]
+	},
+	{
+		"name": "Rath Soul Coil Beta",
+		"itemType": "Legs",
+		"baseDefense": 56,
+		"fireResist": 3,
+		"waterResist": 2,
+		"thunderResist": 2,
+		"iceResist": -3,
+		"dragonResist": -4,
+		"skills": [
+			{
+				"id": "windproof",
+				"level": 2
+			},
+			{
+				"id": "rathalosMastery"
+			}
+		],
+		"slots": [
+			{
+				"level": 3
+			}
+		]
+	},
+	{
+		"name": "Rath Soul Coil Alpha",
+		"itemType": "Legs",
+		"baseDefense": 56,
+		"fireResist": 3,
+		"waterResist": 2,
+		"thunderResist": 2,
+		"iceResist": -3,
+		"dragonResist": -4,
+		"skills": [
+			{
+				"id": "windproof",
+				"level": 2
+			},
+			{
+				"id": "piercingShots",
+				"level": 1
+			},
+			{
+				"id": "rathalosMastery"
 			}
 		]
 	},
