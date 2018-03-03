@@ -1,25 +1,80 @@
 <div class="container">
 	<div class="search-container">
-		<input #searchBox (keyup)="search(searchBox.value)" placeholder="Search names, types and skills"/>
+		<input #searchBox (keyup)="search(searchBox.value)" placeholder="Search names, types and skills" />
 
 		<button class="clear-button" (click)="resetSearchResults()">
 			<i class="fas fa-times"></i>
 		</button>
 	</div>
 
+	<div class="filter-container">
+		<!-- <mhw-builder-select-list 
+			[items]="weaponTypes" 
+			[itemNameProperty]="value"
+			placeholderText="Select weapon type"
+			(itemSelected)="filterItemSelected($event)"></mhw-builder-select-list> -->
+
+		<div class="button-row">
+			<button class="weapon-filter">
+				<img src="assets/images/weapons/greatsword-icon.png">
+			</button>
+			<button class="weapon-filter">
+				<img src="assets/images/weapons/sword-shield-icon.png">
+			</button>
+			<button class="weapon-filter">
+				<img src="assets/images/weapons/dual-blades-icon.png">
+			</button>
+			<button class="weapon-filter">
+				<img src="assets/images/weapons/longsword-icon.png">
+			</button>
+			<button class="weapon-filter">
+				<img src="assets/images/weapons/hammer-icon.png">
+			</button>
+			<button class="weapon-filter">
+				<img src="assets/images/weapons/hunting-horn-icon.png">
+			</button>
+			<button class="weapon-filter">
+				<img src="assets/images/weapons/lance-icon.png">
+			</button>
+		</div>
+		<div class="button-row">
+			<button class="weapon-filter">
+				<img src="assets/images/weapons/gunlance-icon.png">
+			</button>
+			<button class="weapon-filter">
+				<img src="assets/images/weapons/switch-axe-icon.png">
+			</button>
+			<button class="weapon-filter">
+				<img src="assets/images/weapons/charge-blade-icon.png">
+			</button>
+			<button class="weapon-filter">
+				<img src="assets/images/weapons/insect-glaive-icon.png">
+			</button>
+			<button class="weapon-filter">
+				<img src="assets/images/weapons/bow-icon.png">
+			</button>
+			<button class="weapon-filter">
+				<img src="assets/images/weapons/light-bowgun-icon.png">
+			</button>
+			<button class="weapon-filter">
+				<img src="assets/images/weapons/heavy-bowgun-icon.png">
+			</button>
+		</div>
+
+		<!-- <select>
+			<option *ngFor="let weaponType of weaponTypes | keys" [value]="weaponType.key">{{itemsService.getWeaponTypeName(weaponType.value)}}</option>
+		</select>  -->
+	</div>
+
 	<div class="items-container">
 		<ul>
 			<div *ngFor="let item of items">
-				<li [hidden]="!item.visible"
-					(click)="selectItem(item)"
-					(mouseenter)="setTooltipItem(item)"
-					(mouseleave)="clearTooltipItem()">
-					
+				<li [hidden]="!item.visible" (click)="selectItem(item)" (mouseenter)="setTooltipItem(item)" (mouseleave)="clearTooltipItem()">
 					<div class="info-container">
 						<div class="name-container">
 							{{item.name}}
 						</div>
-						
+
 						<div class="stat-container">
 							<div class="attack-container" *ngIf="item.baseAttack">
 								<img src="assets/images/attack-icon.png">
@@ -38,10 +93,7 @@
 				</li>
 			</div>
 			<div *ngFor="let decoration of decorations">
-				<li [hidden]="!decoration.visible"
-					(click)="selectDecoration(decoration)"
-					(mouseenter)="setTooltipItem(decoration)"
-					(mouseleave)="clearTooltipItem()">{{decoration.name}}</li>
+				<li [hidden]="!decoration.visible" (click)="selectDecoration(decoration)" (mouseenter)="setTooltipItem(decoration)" (mouseleave)="clearTooltipItem()">{{decoration.name}}</li>
 			</div>
 		</ul>
 	</div>

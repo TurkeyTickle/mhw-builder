@@ -13,16 +13,20 @@ import { DecorationSlotComponent } from './components/decoration-slot/decoration
 import { ItemStatsComponent } from './components/item-stats/item-stats.component';
 import { TooltipService } from './services/tooltip.service';
 import { SkillService } from './services/skill.service';
+import { KeysPipe } from './core/pipes/keys.pipe';
+import { SelectListComponent } from './components/select-list/select-list.component';
 
 @NgModule({
 	declarations: [
+		KeysPipe,
 		AppComponent,
 		ItemSlotComponent,
 		ItemListComponent,
 		EquippedStatsComponent,
 		EquippedSkillsComponent,
 		DecorationSlotComponent,
-		ItemStatsComponent
+		ItemStatsComponent,
+		SelectListComponent
 	],
 	imports: [
 		BrowserModule,

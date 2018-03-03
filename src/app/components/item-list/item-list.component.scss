@@ -54,10 +54,11 @@ li:hover {
 }
 
 .search-container {
+	$height: 36px;
+
 	background-color: rgb(50,50,50);
-	padding: 8px;	
+	padding: 0px 0px 0px 12px;	
 	margin-bottom: 4px;
-	height: 40px;
 	display: flex;
 	border-radius: 3px;
 
@@ -65,9 +66,10 @@ li:hover {
 		background-color: rgb(50,50,50);
 		border: none;
 		color: white;
-		font-size: 20px;
+		font-size: 16px;
 		flex-grow: 1;
 		min-width: 0;
+		height: $height;
 	}
 
 	input:focus {
@@ -75,14 +77,55 @@ li:hover {
 	}
 
 	.clear-button {
-		height: 40px;
+		padding-top: 4px;
+		height: $height;
 	}
+}
+
+.filter-container {
+	$height: 42px;
+
+	.button-row {
+		margin: 8px 0px;
+		width: 100%;
+		display: flex;
+		flex-wrap: nowrap;
+		justify-content: space-evenly;
+		height: $height;
+		
+		.weapon-filter {
+			padding: 4px;
+			flex-grow: 0;
+		
+			img {
+				height: $height;
+			}
+		}
+	}
+
+	// display: flex;
+	// padding: 0px 8px;
+	// border-radius: 3px;
+	// background: rgb(50,50,50);
+
+	// select {
+	// 	flex-grow: 1;
+	// 	height: $height;
+	// 	background: rgb(50,50,50);
+	// 	font-size: 16px;
+	// 	border: none;
+	// 	color: white;
+	// }
+
+	// select:focus {
+	// 	outline: none;
+	// }
 }
 
 .items-container {
 	overflow-y: auto;
     position: absolute;
-    top: 60px;
+    top: 120px;
     bottom: 0px;
     right: 0px;
 	left: 0px;

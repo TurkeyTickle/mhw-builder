@@ -7,6 +7,8 @@ import { TooltipService } from '../../services/tooltip.service';
 import { Guid } from '../../core/guid';
 import { SearchItemModel } from '../../models/search-item.model';
 import { SearchDecorationModel } from '../../models/search-decoration.model';
+import { WeaponType } from '../../types/weapon.type';
+import { EnumHelpers } from '../../core/enum-helpers';
 
 @Component({
 	selector: 'mhw-builder-item-list',
@@ -38,6 +40,7 @@ export class ItemListComponent implements OnInit {
 
 	items: SearchItemModel[];
 	decorations: SearchDecorationModel[];
+	weaponTypes = EnumHelpers.toArray(WeaponType);
 
 	constructor(
 		private itemsService: ItemsService,
@@ -135,6 +138,10 @@ export class ItemListComponent implements OnInit {
 
 	clearTooltipItem() {
 		this.tooltipService.setItem(null);
+	}
+
+	filterItemSelected(event: any) {
+
 	}
 
 	// getDamageIcons(item: ItemModel): string[] {

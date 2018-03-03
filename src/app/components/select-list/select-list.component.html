@@ -1,0 +1,15 @@
+<div class="container" (blur)="focusLost()">
+	<div class="selected-item" (click)="selectionClicked()">
+		<div class="item-name" *ngIf="selectedItem">{{selectedItem.value}}</div>
+		<div class="placeholder" *ngIf="!selectedItem">{{placeholderText}}</div>
+		<button class="clear-button" (click)="selectItem(null, $event)">
+			<i class="fas fa-times"></i>
+		</button>
+	</div>
+
+	<div class="items-list" *ngIf="listOpen">
+		<ul>
+			<li *ngFor="let item of items" (click)="selectItem(item, $event)">{{item.value}}</li>
+		</ul>
+	</div>
+</div>

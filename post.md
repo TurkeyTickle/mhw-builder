@@ -14,7 +14,6 @@ Missing features / To do in very rough priority order:
 - Weapon augments
 - Armor augments/upgrading
 - Kinsects and bowgun mods
-- Show effects of Free Elem/Ammo Up skill ranks on stat sheet.
 - Improve item list search and filtering.
 - Show effects of skills with element/ailment % increases on stat sheet. Flat increases are in, but I haven't had a chance to test how percentages apply yet. If you have info on how this works, please let me know.
 - Implement element/ailment attack caps. Again, I'm not exactly sure how this works so let me know if you know. The info I've seen on it almost makes it seem like a weapon specific thing.
