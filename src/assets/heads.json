@@ -674,5 +674,356 @@
 				"id": "rathalosMastery"
 			}
 		]
+	},
+	{
+		"name": "Diablos Helm Beta",
+		"itemType": "Head",
+		"baseDefense": 54,
+		"fireResist": 3,
+		"waterResist": -2,
+		"thunderResist": 0,
+		"iceResist": -3,
+		"dragonResist": 2,
+		"skills": [
+			{
+				"id": "criticalDraw",
+				"level": 2
+			},
+			{
+				"id": "diablosMastery"
+			}
+		],
+		"slots": [
+			{
+				"level": 2
+			}
+		]
+	},
+	{
+		"name": "Diablos Helm Alpha",
+		"itemType": "Head",
+		"baseDefense": 54,
+		"fireResist": 3,
+		"waterResist": -2,
+		"thunderResist": 0,
+		"iceResist": -3,
+		"dragonResist": 2,
+		"skills": [
+			{
+				"id": "criticalDraw",
+				"level": 2
+			},
+			{
+				"id": "heroics",
+				"level": 1
+			},
+			{
+				"id": "diablosMastery"
+			}
+		]
+	},
+	{
+		"name": "Rathalos Helm Beta",
+		"itemType": "Head",
+		"baseDefense": 54,
+		"fireResist": 3,
+		"waterResist": 1,
+		"thunderResist": -2,
+		"iceResist": 1,
+		"dragonResist": -3,
+		"skills": [
+			{
+				"id": "attackBoost",
+				"level": 2
+			},
+			{
+				"id": "rathalosMastery"
+			}
+		],
+		"slots": [
+			{
+				"level": 1
+			}
+		]
+	},
+	{
+		"name": "Rathalos Helm Alpha",
+		"itemType": "Head",
+		"baseDefense": 54,
+		"fireResist": 3,
+		"waterResist": 1,
+		"thunderResist": -2,
+		"iceResist": 1,
+		"dragonResist": -3,
+		"skills": [
+			{
+				"id": "attackBoost",
+				"level": 2
+			},
+			{
+				"id": "fireAttack",
+				"level": 1
+			},
+			{
+				"id": "rathalosMastery"
+			}
+		]
+	},
+	{
+		"name": "Odogaron Helm Beta",
+		"itemType": "Head",
+		"baseDefense": 54,
+		"fireResist": 2,
+		"waterResist": 2,
+		"thunderResist": -2,
+		"iceResist": -2,
+		"dragonResist": 0,
+		"skills": [
+			{
+				"id": "bleedingResistance",
+				"level": 2
+			},
+			{
+				"id": "odogaronMastery"
+			}
+		],
+		"slots": [
+			{
+				"level": 2
+			}
+		]
+	},
+	{
+		"name": "Odogaron Helm Alpha",
+		"itemType": "Head",
+		"baseDefense": 54,
+		"fireResist": 2,
+		"waterResist": 2,
+		"thunderResist": -2,
+		"iceResist": -2,
+		"dragonResist": 0,
+		"skills": [
+			{
+				"id": "bleedingResistance",
+				"level": 2
+			},
+			{
+				"id": "criticalEye",
+				"level": 1
+			},
+			{
+				"id": "odogaronMastery"
+			}
+		]
+	},
+	{
+		"name": "Legiana Helm Beta",
+		"itemType": "Head",
+		"baseDefense": 54,
+		"fireResist": -1,
+		"waterResist": 2,
+		"thunderResist": -3,
+		"iceResist": 3,
+		"dragonResist": 0,
+		"skills": [
+			{
+				"id": "divineBlessing",
+				"level": 2
+			},
+			{
+				"id": "legianaFavor"
+			}
+		],
+		"slots": [
+			{
+				"level": 1
+			}
+		]
+	},
+	{
+		"name": "Legiana Helm Alpha",
+		"itemType": "Head",
+		"baseDefense": 54,
+		"fireResist": -1,
+		"waterResist": 2,
+		"thunderResist": -3,
+		"iceResist": 3,
+		"dragonResist": 0,
+		"skills": [
+			{
+				"id": "divineBlessing",
+				"level": 2
+			},
+			{
+				"id": "iceAttack",
+				"level": 1
+			},
+			{
+				"id": "legianaFavor"
+			}
+		]
+	},
+	{
+		"name": "Lavasioth Helm Beta",
+		"itemType": "Head",
+		"baseDefense": 56,
+		"fireResist": 3,
+		"waterResist": -3,
+		"thunderResist": 1,
+		"iceResist": -2,
+		"dragonResist": 2,
+		"skills": [
+			{
+				"id": "fireAttack",
+				"level": 1
+			},
+			{
+				"id": "quickSheath",
+				"level": 1
+			}
+		],
+		"slots": [
+			{
+				"level": 1
+			},
+			{
+				"level": 1
+			}
+		]
+	},
+	{
+		"name": "Lavasioth Helm Alpha",
+		"itemType": "Head",
+		"baseDefense": 56,
+		"fireResist": 3,
+		"waterResist": -3,
+		"thunderResist": 1,
+		"iceResist": -2,
+		"dragonResist": 2,
+		"skills": [
+			{
+				"id": "fireAttack",
+				"level": 2
+			},
+			{
+				"id": "quickSheath",
+				"level": 1
+			}
+		]
+	},
+	{
+		"name": "Strategist Spectacles Alpha",
+		"itemType": "Head",
+		"baseDefense": 56,
+		"fireResist": 2,
+		"waterResist": 2,
+		"thunderResist": 2,
+		"iceResist": 2,
+		"dragonResist": 2,
+		"skills": [
+			{
+				"id": "criticalEye",
+				"level": 2
+			}
+		],
+		"slots": [
+			{
+				"level": 1
+			}
+		]
+	},
+	{
+		"name": "Faux Felyne Alpha",
+		"itemType": "Head",
+		"baseDefense": 56,
+		"fireResist": 2,
+		"waterResist": 2,
+		"thunderResist": 2,
+		"iceResist": 2,
+		"dragonResist": 2,
+		"skills": [
+			{
+				"id": "palicoRally",
+				"level": 3
+			}
+		]
+	},
+	{
+		"name": "Ingot Helm Beta",
+		"itemType": "Head",
+		"baseDefense": 50,
+		"fireResist": -2,
+		"waterResist": 0,
+		"thunderResist": 3,
+		"iceResist": -1,
+		"dragonResist": 0,
+		"skills": [
+			{
+				"id": "thunderAttack",
+				"level": 1
+			}
+		],
+		"slots": [
+			{
+				"level": 1
+			}
+		]
+	},
+	{
+		"name": "Ingot Helm Alpha",
+		"itemType": "Head",
+		"baseDefense": 50,
+		"fireResist": -2,
+		"waterResist": 0,
+		"thunderResist": 3,
+		"iceResist": -1,
+		"dragonResist": 0,
+		"skills": [
+			{
+				"id": "thunderAttack",
+				"level": 2
+			}
+		]
+	},
+	{
+		"name": "High Metal Helm Beta",
+		"itemType": "Head",
+		"baseDefense": 50,
+		"fireResist": 0,
+		"waterResist": -1,
+		"thunderResist": -2,
+		"iceResist": 3,
+		"dragonResist": 0,
+		"skills": [
+			{
+				"id": "iceResistance",
+				"level": 2
+			}
+		],
+		"slots": [
+			{
+				"level": 2
+			}
+		]
+	},
+	{
+		"name": "High Metal Helm Alpha",
+		"itemType": "Head",
+		"baseDefense": 50,
+		"fireResist": 0,
+		"waterResist": -1,
+		"thunderResist": -2,
+		"iceResist": 3,
+		"dragonResist": 0,
+		"skills": [
+			{
+				"id": "iceResistance",
+				"level": 2
+			},
+			{
+				"id": "earplugs",
+				"level": 1
+			}
+		]
 	}
 ]

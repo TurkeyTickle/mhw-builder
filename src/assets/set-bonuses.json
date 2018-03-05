@@ -106,5 +106,33 @@
 				"pieces": 4
 			}
 		]
+	},
+	{
+		"id": "odogaronMastery",
+		"name": "Odogaron Mastery",
+		"setLevels": [
+			{
+				"id": "punishingDraw",
+				"pieces": 2
+			},
+			{
+				"id": "protectivePolish",
+				"pieces": 4
+			}
+		]
+	},
+	{
+		"id": "legianaFavor",
+		"name": "Legiana Favor",
+		"setLevels": [
+			{
+				"id": "goodLuck",
+				"pieces": 2
+			},
+			{
+				"id": "bowChargePlus",
+				"pieces": 4
+			}
+		]
 	}
 ]

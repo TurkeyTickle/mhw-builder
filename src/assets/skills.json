@@ -2002,5 +2002,35 @@
 				"description": "Reduces stamina depletion while climbing by 25%."
 			}
 		]
+	},
+	{
+		"id": "punishingDraw",
+		"name": "Punishing Draw",
+		"description": "Adds a stun effect to draw attacks and slightly increases attack power.",
+		"levels": [
+			{
+				"description": "Adds a stun effect to draw attacks and slightly increases attack power."
+			}
+		]
+	},
+	{
+		"id": "protectivePolish",
+		"name": "Protective Polish",
+		"description": "Weapon sharpness does not decrease for a set time after sharpening.",
+		"levels": [
+			{
+				"description": "Weapon sharpness does not decrease for a set time after sharpening."
+			}
+		]
+	},
+	{
+		"id": "goodLuck",
+		"name": "Good Luck",
+		"description": "Good chance of increased quest rewards. (No effect when joining mid-quest.)",
+		"levels": [
+			{
+				"description": "Good chance of increased quest rewards. (No effect when joining mid-quest.)"
+			}
+		]
 	}
 ]

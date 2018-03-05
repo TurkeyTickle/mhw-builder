@@ -650,5 +650,319 @@
 				"level": 1
 			}
 		]
+	},
+	{
+		"name": "Diablos Mail Beta",
+		"itemType": "Chest",
+		"baseDefense": 54,
+		"fireResist": 3,
+		"waterResist": -2,
+		"thunderResist": 0,
+		"iceResist": -3,
+		"dragonResist": 2,
+		"skills": [
+			{
+				"id": "slugger",
+				"level": 2
+			},
+			{
+				"id": "diablosMastery"
+			}
+		],
+		"slots": [
+			{
+				"level": 2
+			}
+		]
+	},
+	{
+		"name": "Diablos Mail Alpha",
+		"itemType": "Chest",
+		"baseDefense": 54,
+		"fireResist": 3,
+		"waterResist": -2,
+		"thunderResist": 0,
+		"iceResist": -3,
+		"dragonResist": 2,
+		"skills": [
+			{
+				"id": "slugger",
+				"level": 2
+			},
+			{
+				"id": "heroics",
+				"level": 1
+			},
+			{
+				"id": "diablosMastery"
+			}
+		]
+	},
+	{
+		"name": "Rathalos Mail Beta",
+		"itemType": "Chest",
+		"baseDefense": 54,
+		"fireResist": 3,
+		"waterResist": 1,
+		"thunderResist": -2,
+		"iceResist": 1,
+		"dragonResist": -3,
+		"skills": [
+			{
+				"id": "weaknessExploit",
+				"level": 2
+			},
+			{
+				"id": "rathalosMastery"
+			}
+		],
+		"slots": [
+			{
+				"level": 1
+			}
+		]
+	},
+	{
+		"name": "Rathalos Mail Alpha",
+		"itemType": "Chest",
+		"baseDefense": 54,
+		"fireResist": 3,
+		"waterResist": 1,
+		"thunderResist": -2,
+		"iceResist": 1,
+		"dragonResist": -3,
+		"skills": [
+			{
+				"id": "weaknessExploit",
+				"level": 2
+			},
+			{
+				"id": "fireAttack",
+				"level": 1
+			},
+			{
+				"id": "rathalosMastery"
+			}
+		]
+	},
+	{
+		"name": "Odogaron Mail Beta",
+		"itemType": "Chest",
+		"baseDefense": 54,
+		"fireResist": 2,
+		"waterResist": 2,
+		"thunderResist": -2,
+		"iceResist": -3,
+		"dragonResist": 0,
+		"skills": [
+			{
+				"id": "speedSharpening",
+				"level": 2
+			},
+			{
+				"id": "odogaronMastery"
+			}
+		],
+		"slots": [
+			{
+				"level": 1
+			}
+		]
+	},
+	{
+		"name": "Odogaron Mail Alpha",
+		"itemType": "Chest",
+		"baseDefense": 54,
+		"fireResist": 2,
+		"waterResist": 2,
+		"thunderResist": -2,
+		"iceResist": -3,
+		"dragonResist": 0,
+		"skills": [
+			{
+				"id": "speedSharpening",
+				"level": 2
+			},
+			{
+				"id": "bleedingResistance",
+				"level": 1
+			},
+			{
+				"id": "odogaronMastery"
+			}
+		]
+	},
+	{
+		"name": "Legiana Mail Beta",
+		"itemType": "Chest",
+		"baseDefense": 54,
+		"fireResist": -1,
+		"waterResist": 2,
+		"thunderResist": -3,
+		"iceResist": 3,
+		"dragonResist": 0,
+		"skills": [
+			{
+				"id": "evadeWindow",
+				"level": 2
+			},
+			{
+				"id": "legianaFavor"
+			}
+		],
+		"slots": [
+			{
+				"level": 1
+			}
+		]
+	},
+	{
+		"name": "Legiana Mail Alpha",
+		"itemType": "Chest",
+		"baseDefense": 54,
+		"fireResist": -1,
+		"waterResist": 2,
+		"thunderResist": -3,
+		"iceResist": 3,
+		"dragonResist": 0,
+		"skills": [
+			{
+				"id": "evadeWindow",
+				"level": 2
+			},
+			{
+				"id": "divineBlessing",
+				"level": 1
+			},
+			{
+				"id": "legianaFavor"
+			}
+		]
+	},
+	{
+		"name": "Lavasioth Mail Beta",
+		"itemType": "Chest",
+		"baseDefense": 56,
+		"fireResist": 3,
+		"waterResist": -3,
+		"thunderResist": 1,
+		"iceResist": -2,
+		"dragonResist": 2,
+		"skills": [
+			{
+				"id": "fireAttack",
+				"level": 2
+			}
+		],
+		"slots": [
+			{
+				"level": 1
+			},
+			{
+				"level": 1
+			}
+		]
+	},
+	{
+		"name": "Lavasioth Mail Alpha",
+		"itemType": "Chest",
+		"baseDefense": 56,
+		"fireResist": 3,
+		"waterResist": -3,
+		"thunderResist": 1,
+		"iceResist": -2,
+		"dragonResist": 2,
+		"skills": [
+			{
+				"id": "fireAttack",
+				"level": 2
+			},
+			{
+				"id": "heatGuard",
+				"level": 1
+			}
+		]
+	},
+	{
+		"name": "Ingot Mail Beta",
+		"itemType": "Chest",
+		"baseDefense": 50,
+		"fireResist": -2,
+		"waterResist": 0,
+		"thunderResist": 3,
+		"iceResist": -1,
+		"dragonResist": 0,
+		"skills": [
+			{
+				"id": "thunderResistance",
+				"level": 1
+			}
+		],
+		"slots": [
+			{
+				"level": 1
+			}
+		]
+	},
+	{
+		"name": "Ingot Mail Alpha",
+		"itemType": "Chest",
+		"baseDefense": 50,
+		"fireResist": -2,
+		"waterResist": 0,
+		"thunderResist": 3,
+		"iceResist": -1,
+		"dragonResist": 0,
+		"skills": [
+			{
+				"id": "thunderResistance",
+				"level": 2
+			}
+		]
+	},
+	{
+		"name": "High Metal Mail Beta",
+		"itemType": "Chest",
+		"baseDefense": 50,
+		"fireResist": 0,
+		"waterResist": -1,
+		"thunderResist": -2,
+		"iceResist": 3,
+		"dragonResist": 0,
+		"skills": [
+			{
+				"id": "earplugs",
+				"level": 1
+			},
+			{
+				"id": "iceAttack",
+				"level": 1
+			}
+		],
+		"slots": [
+			{
+				"level": 2
+			}
+		]
+	},
+	{
+		"name": "High Metal Mail Alpha",
+		"itemType": "Chest",
+		"baseDefense": 50,
+		"fireResist": 0,
+		"waterResist": -1,
+		"thunderResist": -2,
+		"iceResist": 3,
+		"dragonResist": 0,
+		"skills": [
+			{
+				"id": "earplugs",
+				"level": 2
+			},
+			{
+				"id": "iceAttack",
+				"level": 1
+			}
+		]
 	}
 ]
