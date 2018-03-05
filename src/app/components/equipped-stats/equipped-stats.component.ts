@@ -26,6 +26,8 @@ export class EquippedStatsComponent implements OnInit {
 	affinity: number;
 	passiveAffinity: number;
 	activeAffinity: number;
+	weakPointAffinity: number;
+	passiveCriticalBoostPercent: number;
 
 	element: ElementType;
 	elementAttack: number;
@@ -110,6 +112,8 @@ export class EquippedStatsComponent implements OnInit {
 		this.affinity = 0;
 		this.passiveAffinity = 0;
 		this.activeAffinity = 0;
+		this.weakPointAffinity = 0;
+		this.passiveCriticalBoostPercent = 0;
 
 		this.element = null;
 		this.elementAttack = 0;
@@ -251,6 +255,14 @@ export class EquippedStatsComponent implements OnInit {
 
 				if (level.activeAffinity) {
 					this.activeAffinity += level.activeAffinity;
+				}
+
+				if (level.weakPointAffinity) {
+					this.weakPointAffinity += level.weakPointAffinity;
+				}
+
+				if (level.passiveCriticalBoostPercent) {
+					this.passiveCriticalBoostPercent += level.passiveCriticalBoostPercent;
 				}
 
 				if (level.passiveFireAttack) {
