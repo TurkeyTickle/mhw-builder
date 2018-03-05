@@ -736,15 +736,15 @@
 		"levels": [
 			{
 				"description": "While active, grants attack +5.",
-				"passiveAttack": 5
+				"activeAttack": 5
 			},
 			{
 				"description": "While active, grants attack +10.",
-				"passiveAttack": 10
+				"activeAttack": 10
 			},
 			{
 				"description": "While active, grants attack +20.",
-				"passiveAttack": 20
+				"activeAttack": 20
 			}
 		]
 	},
@@ -1874,19 +1874,24 @@
 		"description": "Increases attack power and defense when health drops to 35% or lower.",
 		"levels": [
 			{
-				"description": "While active, increases attack power by 5% and increases defense by 15 points."
+				"description": "While active, increases attack power by 5% and increases defense by 15 points.",
+				"activeAttackPercent": 5
 			},
 			{
-				"description": "While active, increases attack power by 10% and increases defense by 20 points."
+				"description": "While active, increases attack power by 10% and increases defense by 20 points.",
+				"activeAttackPercent": 10
 			},
 			{
-				"description": "While active, increases attack power by 15% and increases defense by 25 points."
+				"description": "While active, increases attack power by 15% and increases defense by 25 points.",
+				"activeAttackPercent": 15
 			},
 			{
-				"description": "While active, increases attack power by 20% and increases defense by 30 points."
+				"description": "While active, increases attack power by 20% and increases defense by 30 points.",
+				"activeAttackPercent": 20
 			},
 			{
-				"description": "While active, increases attack power by 30% and increases defense by 40 points."
+				"description": "While active, increases attack power by 30% and increases defense by 40 points.",
+				"activeAttackPercent": 30
 			}
 		]
 	},

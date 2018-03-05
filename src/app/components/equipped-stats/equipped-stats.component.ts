@@ -17,8 +17,10 @@ import { SharpnessType } from '../../types/sharpness.type';
 
 export class EquippedStatsComponent implements OnInit {
 	totalAttack: number;
+	totalAttackPotential: number;
 	attack: number;
 	passiveAttack: number;
+	activeAttack: number;
 	maxSharpness: SharpnessType;
 	weaponAttackModifier: number;
 	affinity: number;
@@ -102,6 +104,7 @@ export class EquippedStatsComponent implements OnInit {
 		this.totalAttack = 0;
 		this.attack = 0;
 		this.passiveAttack = 0;
+		this.activeAttack = 0;
 		this.maxSharpness = null;
 		this.weaponAttackModifier = 0;
 		this.affinity = 0;
@@ -238,6 +241,10 @@ export class EquippedStatsComponent implements OnInit {
 					this.passiveAttack += level.passiveAttack;
 				}
 
+				if (level.activeAttack) {
+					this.activeAttack += level.activeAttack;
+				}
+
 				if (level.passiveAffinity) {
 					this.passiveAffinity += level.passiveAffinity;
 				}
@@ -337,6 +344,7 @@ export class EquippedStatsComponent implements OnInit {
 		}
 
 		this.totalAttack = this.attack + Math.round(this.passiveAttack * this.weaponAttackModifier);
+		this.totalAttackPotential = this.attack + Math.round((this.passiveAttack + this.activeAttack) * this.weaponAttackModifier);
 		this.totalElementAttack = Math.round((this.elementAttack + this.effectivePassiveElementAttack) * this.elementAttackMultiplier);
 		this.totalAilmentAttack = Math.round((this.ailmentAttack + this.effectivePassiveAilmentAttack) * this.elementAttackMultiplier);
 
