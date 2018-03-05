@@ -13,6 +13,7 @@ import { DecorationSlotComponent } from './components/decoration-slot/decoration
 import { ItemStatsComponent } from './components/item-stats/item-stats.component';
 import { TooltipService } from './services/tooltip.service';
 import { SkillService } from './services/skill.service';
+import { Location, LocationStrategy, PathLocationStrategy } from '@angular/common';
 
 @NgModule({
 	declarations: [
@@ -29,6 +30,8 @@ import { SkillService } from './services/skill.service';
 		HttpClientModule
 	],
 	providers: [
+		Location,
+		{ provide: LocationStrategy, useClass: PathLocationStrategy },
 		ItemsService,
 		SkillService,
 		TooltipService,

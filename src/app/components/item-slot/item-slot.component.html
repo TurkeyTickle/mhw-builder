@@ -25,6 +25,7 @@
 	<div class="decoration-container">
 		<mhw-builder-decoration-slot 
 			*ngFor="let slot of item?.slots"
+			[item]="item"
 			[level]="slot.level"
 			(decorationSlotSelected)="decorationSlotClicked($event)"
 			(decorationSet)="decorationSet($event)">

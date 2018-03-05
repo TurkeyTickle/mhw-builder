@@ -61,7 +61,7 @@ export class ItemsService {
 		});
 	}
 
-	getDecoration(id: string): DecorationModel {
+	getDecoration(id: number): DecorationModel {
 		return _.find(this.appData.getDecorations(), (decoration: DecorationModel) => decoration.id == id);
 	}
 

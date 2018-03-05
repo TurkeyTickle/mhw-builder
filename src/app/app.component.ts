@@ -1,16 +1,18 @@
 import { Component, ViewChild, ElementRef, OnInit, Renderer2 } from '@angular/core';
-import { ItemType } from './types/item.type';
-import { ItemModel } from './models/item.model';
-import { ItemSlotComponent, ItemSlotClearModel } from './components/item-slot/item-slot.component';
+import { Location } from '@angular/common';
 import { EquippedStatsComponent } from './components/equipped-stats/equipped-stats.component';
 import { EquippedSkillsComponent } from './components/equipped-skills/equipped-skills.component';
+import { ItemStatsComponent } from './components/item-stats/item-stats.component';
+import { DecorationSlotComponent } from './components/decoration-slot/decoration-slot.component';
+import { ItemSlotComponent, ItemSlotClearModel } from './components/item-slot/item-slot.component';
+import { ItemType } from './types/item.type';
+import { ItemModel } from './models/item.model';
+import { DecorationModel } from './models/decoration.model';
+import { SkillService } from './services/skill.service';
+import { TooltipService } from './services/tooltip.service';
 
 import * as _ from 'lodash';
-import { DecorationSlotComponent } from './components/decoration-slot/decoration-slot.component';
-import { DecorationModel } from './models/decoration.model';
-import { TooltipService } from './services/tooltip.service';
-import { ItemStatsComponent } from './components/item-stats/item-stats.component';
-import { SkillService } from './services/skill.service';
+import { EquipmentCategoryType } from './types/equipment-category.type';
 
 @Component({
 	selector: 'mhw-builder-root',
@@ -21,6 +23,7 @@ import { SkillService } from './services/skill.service';
 export class AppComponent implements OnInit {
 	public itemTypes = ItemType;
 	title = 'MHW Builder';
+	buildId = '';
 
 	@ViewChild(EquippedStatsComponent) equippedStatsComponent: EquippedStatsComponent;
 	@ViewChild(EquippedSkillsComponent) equippedSkillsComponent: EquippedSkillsComponent;
@@ -35,7 +38,8 @@ export class AppComponent implements OnInit {
 	constructor(
 		private tooltipService: TooltipService,
 		private skillService: SkillService,
-		private renderer: Renderer2
+		private renderer: Renderer2,
+		private location: Location
 	) { }
 
 	ngOnInit() {
@@ -60,6 +64,8 @@ export class AppComponent implements OnInit {
 			this.equippedItems.push(selectedItem);
 			this.updateStatsAndSkills();
 		}
+
+		this.updateBuildId();
 	}
 
 	selectDecoration(selectedDecoration: DecorationModel) {
@@ -70,9 +76,12 @@ export class AppComponent implements OnInit {
 				return decoration === selectedDecoration;
 			});
 
+			selectedDecoration.equipmentId = this.selectedDecorationSlot.item.id;
 			this.equippedDecorations.push(selectedDecoration);
 			this.updateStatsAndSkills();
 		}
+
+		this.updateBuildId();
 	}
 
 	itemLevelChanged() {
@@ -152,5 +161,42 @@ export class AppComponent implements OnInit {
 
 		this.renderer.setStyle(this.itemStatsContainer.nativeElement, 'left', newLeft + 'px');
 		this.renderer.setStyle(this.itemStatsContainer.nativeElement, 'top', newTop + 'px');
+	}
+
+	updateBuildId() {
+		const weapon = this.equippedItems.find(item => item.equipmentCategory == EquipmentCategoryType.Weapon);
+		const head = this.equippedItems.find(item => item.itemType == ItemType.Head);
+		const chest = this.equippedItems.find(item => item.itemType == ItemType.Chest);
+		const hands = this.equippedItems.find(item => item.itemType == ItemType.Hands);
+		const legs = this.equippedItems.find(item => item.itemType == ItemType.Legs);
+		const feet = this.equippedItems.find(item => item.itemType == ItemType.Feet);
+		const charm = this.equippedItems.find(item => item.itemType == ItemType.Charm);
+
+		this.buildId = 'v1';
+
+		this.buildId += this.getItemBuildString(weapon);
+		this.buildId += this.getItemBuildString(head);
+		this.buildId += this.getItemBuildString(chest);
+		this.buildId += this.getItemBuildString(hands);
+		this.buildId += this.getItemBuildString(legs);
+		this.buildId += this.getItemBuildString(feet);
+		this.buildId += this.getItemBuildString(charm);
+
+		this.location.replaceState(this.location.path(false), '#' + this.buildId);
+	}
+
+	getItemBuildString(item: ItemModel): string {
+		let result = 'i';
+
+		if (item) {
+			result += item.id.toString();
+
+			const decorations = _.filter(this.equippedDecorations, decoration => decoration.equipmentId == item.id);
+			for (const decoration of decorations) {
+				result += `d${decoration.id.toString()}`;
+			}
+		}
+
+		return result;
 	}
 }
