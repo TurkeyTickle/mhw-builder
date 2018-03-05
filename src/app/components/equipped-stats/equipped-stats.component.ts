@@ -23,6 +23,7 @@ export class EquippedStatsComponent implements OnInit {
 	weaponAttackModifier: number;
 	affinity: number;
 	passiveAffinity: number;
+	activeAffinity: number;
 
 	element: ElementType;
 	elementAttack: number;
@@ -105,6 +106,7 @@ export class EquippedStatsComponent implements OnInit {
 		this.weaponAttackModifier = 0;
 		this.affinity = 0;
 		this.passiveAffinity = 0;
+		this.activeAffinity = 0;
 
 		this.element = null;
 		this.elementAttack = 0;
@@ -238,6 +240,10 @@ export class EquippedStatsComponent implements OnInit {
 
 				if (level.passiveAffinity) {
 					this.passiveAffinity += level.passiveAffinity;
+				}
+
+				if (level.activeAffinity) {
+					this.activeAffinity += level.activeAffinity;
 				}
 
 				if (level.passiveFireAttack) {

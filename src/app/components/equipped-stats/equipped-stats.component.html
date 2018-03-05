@@ -6,6 +6,7 @@
 		<li>Attack: {{totalAttack}} ({{attack}} + {{passiveAttack}} * {{weaponAttackModifier}})</li>
 		<li *ngIf="maxSharpness">Max Sharpness: {{maxSharpness}}</li>
 		<li>Affinity: {{affinity + passiveAffinity}}%</li>
+		<li>Affinity Potential: {{affinity + passiveAffinity + activeAffinity}}%</li>
 
 		<div *ngIf="ailment && !ailmentHidden">
 			<li>Ailment: {{ailment}}</li>
