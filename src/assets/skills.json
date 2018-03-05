@@ -2032,5 +2032,15 @@
 				"description": "Good chance of increased quest rewards. (No effect when joining mid-quest.)"
 			}
 		]
+	},
+	{
+		"id": "spreadPowerShots",
+		"name": "Spread/Power Shots",
+		"description": "Increases the attack power of spread ammo and power shot arrows.",
+		"levels": [
+			{
+				"description": "Increases the power of spread ammo and power shot arrows."
+			}
+		]
 	}
 ]
