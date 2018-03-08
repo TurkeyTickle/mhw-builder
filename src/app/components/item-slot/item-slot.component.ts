@@ -1,4 +1,4 @@
-import { Component, OnInit, Input, Output, EventEmitter } from '@angular/core';
+import { Component, OnInit, Input, Output, EventEmitter, ViewChildren, QueryList } from '@angular/core';
 import { ItemModel } from '../../models/item.model';
 import { ItemType } from '../../types/item.type';
 import { DecorationSlotComponent } from '../decoration-slot/decoration-slot.component';
@@ -22,9 +22,11 @@ export class ItemSlotComponent implements OnInit {
 	@Output() itemCleared = new EventEmitter<ItemSlotClearModel>();
 	@Output() decorationCleared = new EventEmitter<DecorationModel>();
 
+	@ViewChildren(DecorationSlotComponent) decorationSlots: QueryList<DecorationSlotComponent>;
+
 	private _item: ItemModel;
 	set item(item: ItemModel) {
-		if (item && item.levels) {
+		if (item && !item.equippedLevel) {
 			item.equippedLevel = 1;
 		}
 		this._item = item;

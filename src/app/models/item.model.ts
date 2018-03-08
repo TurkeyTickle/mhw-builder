@@ -9,7 +9,7 @@ import { EquipmentCategoryType } from '../types/equipment-category.type';
 import { AilmentType } from '../types/ailment.type';
 
 export class ItemModel {
-	id: string;
+	id: number;
 	name: string;
 	itemType: ItemType;
 	equipmentCategory: EquipmentCategoryType;

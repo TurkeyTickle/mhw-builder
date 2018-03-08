@@ -86,6 +86,7 @@ export class AppDataProvider {
 			this.http.get<ItemModel[]>('../assets/great-swords.json').subscribe(items => {
 				_.each(items, item => {
 					item.equipmentCategory = EquipmentCategoryType.Weapon;
+					item.id = this.seedData.weapons.length;
 					this.seedData.weapons.push(item);
 				});
 
@@ -99,6 +100,7 @@ export class AppDataProvider {
 			this.http.get<ItemModel[]>('../assets/long-swords.json').subscribe(items => {
 				_.each(items, item => {
 					item.equipmentCategory = EquipmentCategoryType.Weapon;
+					item.id = this.seedData.weapons.length;
 					this.seedData.weapons.push(item);
 				});
 
@@ -112,6 +114,7 @@ export class AppDataProvider {
 			this.http.get<ItemModel[]>('../assets/sword-and-shields.json').subscribe(items => {
 				_.each(items, item => {
 					item.equipmentCategory = EquipmentCategoryType.Weapon;
+					item.id = this.seedData.weapons.length;
 					this.seedData.weapons.push(item);
 				});
 
@@ -125,6 +128,7 @@ export class AppDataProvider {
 			this.http.get<ItemModel[]>('../assets/dual-blades.json').subscribe(items => {
 				_.each(items, item => {
 					item.equipmentCategory = EquipmentCategoryType.Weapon;
+					item.id = this.seedData.weapons.length;
 					this.seedData.weapons.push(item);
 				});
 
@@ -138,6 +142,7 @@ export class AppDataProvider {
 			this.http.get<ItemModel[]>('../assets/hammers.json').subscribe(items => {
 				_.each(items, item => {
 					item.equipmentCategory = EquipmentCategoryType.Weapon;
+					item.id = this.seedData.weapons.length;
 					this.seedData.weapons.push(item);
 				});
 
@@ -151,6 +156,7 @@ export class AppDataProvider {
 			this.http.get<ItemModel[]>('../assets/hunting-horns.json').subscribe(items => {
 				_.each(items, item => {
 					item.equipmentCategory = EquipmentCategoryType.Weapon;
+					item.id = this.seedData.weapons.length;
 					this.seedData.weapons.push(item);
 				});
 
@@ -164,6 +170,7 @@ export class AppDataProvider {
 			this.http.get<ItemModel[]>('../assets/lances.json').subscribe(items => {
 				_.each(items, item => {
 					item.equipmentCategory = EquipmentCategoryType.Weapon;
+					item.id = this.seedData.weapons.length;
 					this.seedData.weapons.push(item);
 				});
 
@@ -177,6 +184,7 @@ export class AppDataProvider {
 			this.http.get<ItemModel[]>('../assets/gunlances.json').subscribe(items => {
 				_.each(items, item => {
 					item.equipmentCategory = EquipmentCategoryType.Weapon;
+					item.id = this.seedData.weapons.length;
 					this.seedData.weapons.push(item);
 				});
 
@@ -190,6 +198,7 @@ export class AppDataProvider {
 			this.http.get<ItemModel[]>('../assets/switch-axes.json').subscribe(items => {
 				_.each(items, item => {
 					item.equipmentCategory = EquipmentCategoryType.Weapon;
+					item.id = this.seedData.weapons.length;
 					this.seedData.weapons.push(item);
 				});
 
@@ -203,6 +212,7 @@ export class AppDataProvider {
 			this.http.get<ItemModel[]>('../assets/charge-blades.json').subscribe(items => {
 				_.each(items, item => {
 					item.equipmentCategory = EquipmentCategoryType.Weapon;
+					item.id = this.seedData.weapons.length;
 					this.seedData.weapons.push(item);
 				});
 
@@ -216,6 +226,7 @@ export class AppDataProvider {
 			this.http.get<ItemModel[]>('../assets/insect-glaives.json').subscribe(items => {
 				_.each(items, item => {
 					item.equipmentCategory = EquipmentCategoryType.Weapon;
+					item.id = this.seedData.weapons.length;
 					this.seedData.weapons.push(item);
 				});
 
@@ -229,6 +240,7 @@ export class AppDataProvider {
 			this.http.get<ItemModel[]>('../assets/light-bowguns.json').subscribe(items => {
 				_.each(items, item => {
 					item.equipmentCategory = EquipmentCategoryType.Weapon;
+					item.id = this.seedData.weapons.length;
 					this.seedData.weapons.push(item);
 				});
 
@@ -242,6 +254,7 @@ export class AppDataProvider {
 			this.http.get<ItemModel[]>('../assets/heavy-bowguns.json').subscribe(items => {
 				_.each(items, item => {
 					item.equipmentCategory = EquipmentCategoryType.Weapon;
+					item.id = this.seedData.weapons.length;
 					this.seedData.weapons.push(item);
 				});
 
@@ -255,6 +268,7 @@ export class AppDataProvider {
 			this.http.get<ItemModel[]>('../assets/bows.json').subscribe(items => {
 				_.each(items, item => {
 					item.equipmentCategory = EquipmentCategoryType.Weapon;
+					item.id = this.seedData.weapons.length;
 					this.seedData.weapons.push(item);
 				});
 
@@ -268,6 +282,7 @@ export class AppDataProvider {
 			this.http.get<ItemModel[]>('../assets/heads.json').subscribe(items => {
 				_.each(items, item => {
 					item.equipmentCategory = EquipmentCategoryType.Armor;
+					item.id = this.seedData.armor.length;
 					this.seedData.armor.push(item);
 				});
 				resolve(true);
@@ -280,6 +295,7 @@ export class AppDataProvider {
 			this.http.get<ItemModel[]>('../assets/chests.json').subscribe(items => {
 				_.each(items, item => {
 					item.equipmentCategory = EquipmentCategoryType.Armor;
+					item.id = this.seedData.armor.length;
 					this.seedData.armor.push(item);
 				});
 				resolve(true);
@@ -292,6 +308,7 @@ export class AppDataProvider {
 			this.http.get<ItemModel[]>('../assets/hands.json').subscribe(items => {
 				_.each(items, item => {
 					item.equipmentCategory = EquipmentCategoryType.Armor;
+					item.id = this.seedData.armor.length;
 					this.seedData.armor.push(item);
 				});
 				resolve(true);
@@ -304,6 +321,7 @@ export class AppDataProvider {
 			this.http.get<ItemModel[]>('../assets/legs.json').subscribe(items => {
 				_.each(items, item => {
 					item.equipmentCategory = EquipmentCategoryType.Armor;
+					item.id = this.seedData.armor.length;
 					this.seedData.armor.push(item);
 				});
 				resolve(true);
@@ -316,6 +334,7 @@ export class AppDataProvider {
 			this.http.get<ItemModel[]>('../assets/feet.json').subscribe(items => {
 				_.each(items, item => {
 					item.equipmentCategory = EquipmentCategoryType.Armor;
+					item.id = this.seedData.armor.length;
 					this.seedData.armor.push(item);
 				});
 				resolve(true);
@@ -326,7 +345,10 @@ export class AppDataProvider {
 	loadCharms(): Promise<boolean> {
 		return new Promise(resolve => {
 			this.http.get<ItemModel[]>('../assets/charms.json').subscribe(items => {
-				this.seedData.armor = this.seedData.armor.concat(items);
+				_.each(items, item => {
+					item.id = this.seedData.armor.length;
+					this.seedData.armor.push(item);
+				});
 				resolve(true);
 			});
 		});
@@ -335,7 +357,10 @@ export class AppDataProvider {
 	loadDecorations(): Promise<boolean> {
 		return new Promise(resolve => {
 			this.http.get<DecorationModel[]>('../assets/decorations.json').subscribe(items => {
-				this.seedData.decorations = this.seedData.decorations.concat(items);
+				_.each(items, item => {
+					item.id = this.seedData.decorations.length;
+					this.seedData.decorations.push(item);
+				});
 				resolve(true);
 			});
 		});
