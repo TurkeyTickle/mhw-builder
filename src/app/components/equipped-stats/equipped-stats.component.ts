@@ -16,6 +16,8 @@ import { SharpnessType } from '../../types/sharpness.type';
 })
 
 export class EquippedStatsComponent implements OnInit {
+	readonly defaultElementAttackIncreaseCap = 0.3;
+
 	totalAttack: number;
 	totalAttackPotential: number;
 	attack: number;
@@ -30,15 +32,19 @@ export class EquippedStatsComponent implements OnInit {
 	passiveCriticalBoostPercent: number;
 
 	element: ElementType;
-	elementAttack: number;
+	baseElementAttack: number;
 	effectivePassiveElementAttack: number;
 	elementHidden: boolean;
+	effectiveElementAttack: number;
+	elementCapped: boolean;
 	totalElementAttack: number;
 
 	ailment: AilmentType;
-	ailmentAttack: number;
+	baseAilmentAttack: number;
 	effectivePassiveAilmentAttack: number;
 	ailmentHidden: boolean;
+	effectiveAilmentAttack: number;
+	ailmentCapped: boolean;
 	totalAilmentAttack: number;
 
 	elementAttackMultiplier: number;
@@ -116,13 +122,17 @@ export class EquippedStatsComponent implements OnInit {
 		this.passiveCriticalBoostPercent = 0;
 
 		this.element = null;
-		this.elementAttack = 0;
+		this.baseElementAttack = 0;
 		this.elementHidden = false;
+		this.effectiveElementAttack = 0;
+		this.elementCapped = false;
 		this.totalElementAttack = 0;
 
 		this.ailment = null;
-		this.ailmentAttack = 0;
+		this.baseAilmentAttack = 0;
 		this.ailmentHidden = false;
+		this.effectiveAilmentAttack = 0;
+		this.ailmentCapped = false;
 		this.totalAilmentAttack = 0;
 
 		this.elementAttackMultiplier = 0;
@@ -202,7 +212,7 @@ export class EquippedStatsComponent implements OnInit {
 		}
 
 		if (item.elementBaseAttack) {
-			this.elementAttack += item.elementBaseAttack;
+			this.baseElementAttack += item.elementBaseAttack;
 		}
 
 		if (item.ailment) {
@@ -210,7 +220,7 @@ export class EquippedStatsComponent implements OnInit {
 		}
 
 		if (item.ailmentBaseAttack) {
-			this.ailmentAttack += item.ailmentBaseAttack;
+			this.baseAilmentAttack += item.ailmentBaseAttack;
 		}
 
 		if (item.elderseal) {
@@ -355,11 +365,6 @@ export class EquippedStatsComponent implements OnInit {
 			}
 		}
 
-		this.totalAttack = this.attack + Math.round(this.passiveAttack * this.weaponAttackModifier);
-		this.totalAttackPotential = this.attack + Math.round((this.passiveAttack + this.activeAttack) * this.weaponAttackModifier);
-		this.totalElementAttack = Math.round((this.elementAttack + this.effectivePassiveElementAttack) * this.elementAttackMultiplier);
-		this.totalAilmentAttack = Math.round((this.ailmentAttack + this.effectivePassiveAilmentAttack) * this.elementAttackMultiplier);
-
 		switch (this.element) {
 			case ElementType.Fire:
 				this.effectivePassiveElementAttack = this.passiveFireAttack;
@@ -404,6 +409,25 @@ export class EquippedStatsComponent implements OnInit {
 			default:
 				break;
 		}
+
+		this.totalAttack = this.attack + Math.round(this.passiveAttack * this.weaponAttackModifier);
+		this.totalAttackPotential = this.attack + Math.round((this.passiveAttack + this.activeAttack) * this.weaponAttackModifier);
+
+
+		const elementAttackIncreaseCap = weapon ? weapon.elementAttackIncreaseCapOverride || this.defaultElementAttackIncreaseCap : this.defaultElementAttackIncreaseCap;
+		const ailmentAttackIncreaseCap = weapon ? weapon.elementAttackIncreaseCapOverride || this.defaultElementAttackIncreaseCap : this.defaultElementAttackIncreaseCap;
+
+		const elementCap = Math.round(this.baseElementAttack + (this.baseElementAttack * elementAttackIncreaseCap));
+		const ailmentCap = Math.round(this.baseAilmentAttack + (this.baseAilmentAttack * ailmentAttackIncreaseCap));
+
+		this.elementCapped = this.baseElementAttack + this.effectivePassiveElementAttack >= elementCap;
+		this.ailmentCapped = this.baseAilmentAttack + this.effectivePassiveAilmentAttack >= ailmentCap;
+
+		this.totalElementAttack = Math.min(this.baseElementAttack + this.effectivePassiveElementAttack, elementCap);
+		this.totalAilmentAttack = Math.min(this.baseAilmentAttack + this.effectivePassiveAilmentAttack, ailmentCap);
+
+		this.effectiveElementAttack = Math.round((this.baseElementAttack + this.effectivePassiveElementAttack) * this.elementAttackMultiplier);
+		this.effectiveAilmentAttack = Math.round((this.baseAilmentAttack + this.effectivePassiveAilmentAttack) * this.elementAttackMultiplier);
 	}
 
 	getHiddenElemColor(): string {

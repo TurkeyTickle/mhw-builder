@@ -20,6 +20,7 @@
 		"weaponType": "HeavyBowgun",
 		"baseAttack": 285,
 		"baseAffinityPercent": 0,
+		"elementAttackIncreaseCapOverride": 0.33,
 		"slots": [
 			{
 				"level": 1

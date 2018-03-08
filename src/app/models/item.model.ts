@@ -25,9 +25,11 @@ export class ItemModel {
 	ailment?: AilmentType;
 	ailmentBaseAttack: number;
 	ailmentHidden: boolean;
+	ailmentAttackIncreaseCapOverride: number;
 	element?: ElementType;
 	elementBaseAttack?: number;
 	elementHidden: boolean;
+	elementAttackIncreaseCapOverride: number;
 	elderseal?: EldersealType;
 
 	// armor properties

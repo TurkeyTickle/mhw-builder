@@ -20,6 +20,7 @@
 		"weaponType": "LightBowgun",
 		"baseAttack": 260,
 		"baseAffinityPercent": 0,
+		"elementAttackIncreaseCapOverride": 0.33,
 		"slots": [
 			{
 				"level": 1

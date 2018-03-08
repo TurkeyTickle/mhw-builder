@@ -27,6 +27,7 @@
 		"baseAffinityPercent": 0,
 		"element": "Dragon",
 		"elementBaseAttack": 150,
+		"elementAttackIncreaseCapOverride": 0.33,
 		"elderseal": "High",
 		"slots": [
 			{

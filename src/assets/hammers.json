@@ -27,6 +27,7 @@
 		"maxSharpness": "Blue",
 		"element": "Dragon",
 		"elementBaseAttack": 120,
+		"elementAttackIncreaseCapOverride": 0.33,
 		"elderseal": "High",
 		"slots": [
 			{
