@@ -38,5 +38,7 @@ export class ItemModel {
 	dragonResist: number;
 	skills?: ItemSkillModel[];
 
+	tags?: string[];
+
 	equippedLevel?: number;
 }

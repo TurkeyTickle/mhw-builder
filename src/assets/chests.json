@@ -2,6 +2,7 @@
 	{
 		"name": "Xeno'jiva Hide Beta",
 		"itemType": "Chest",
+		"tags": ["xenojiva"],
 		"baseDefense": 72,
 		"fireResist": -3,
 		"waterResist": 2,
@@ -29,6 +30,7 @@
 	{
 		"name": "Xeno'jiva Hide Alpha",
 		"itemType": "Chest",
+		"tags": ["xenojiva"],
 		"baseDefense": 72,
 		"fireResist": -3,
 		"waterResist": 2,
@@ -159,6 +161,7 @@
 	{
 		"name": "Kushala Cista Beta",
 		"itemType": "Chest",
+		"tags": ["kushala daora"],
 		"baseDefense": 64,
 		"fireResist": 0,
 		"waterResist": 2,
@@ -183,6 +186,7 @@
 	{
 		"name": "Kushala Cista Alpha",
 		"itemType": "Chest",
+		"tags": ["kushala daora"],
 		"baseDefense": 64,
 		"fireResist": 0,
 		"waterResist": 2,
@@ -206,6 +210,7 @@
 	{
 		"name": "Kaiser Mail Beta",
 		"itemType": "Chest",
+		"tags": ["teostra"],
 		"baseDefense": 64,
 		"fireResist": 3,
 		"waterResist": -3,
@@ -233,6 +238,7 @@
 	{
 		"name": "Kaiser Mail Alpha",
 		"itemType": "Chest",
+		"tags": ["teostra"],
 		"baseDefense": 64,
 		"fireResist": 3,
 		"waterResist": -3,
@@ -448,8 +454,9 @@
 		]
 	},
 	{
-		"name": "Bezel Mail Beta",
+		"name": "Bazel Mail Beta",
 		"itemType": "Chest",
+		"tags": ["bazelgeuse", "dodogama"],
 		"baseDefense": 58,
 		"fireResist": 3,
 		"waterResist": 1,
@@ -475,8 +482,9 @@
 		]
 	},
 	{
-		"name": "Bezel Mail Alpha",
+		"name": "Bazel Mail Alpha",
 		"itemType": "Chest",
+		"tags": ["bazelgeuse", "dodogama"],
 		"baseDefense": 58,
 		"fireResist": 3,
 		"waterResist": 1,
@@ -548,6 +556,7 @@
 	{
 		"name": "Diablos Nero Mail Beta",
 		"itemType": "Chest",
+		"tags": ["black diablos"],
 		"baseDefense": 56,
 		"fireResist": 2,
 		"waterResist": -3,
@@ -575,6 +584,7 @@
 	{
 		"name": "Diablos Nero Mail Alpha",
 		"itemType": "Chest",
+		"tags": ["black diablos"],
 		"baseDefense": 56,
 		"fireResist": 2,
 		"waterResist": -3,
@@ -602,6 +612,7 @@
 	{
 		"name": "Rath Soul Mail Beta",
 		"itemType": "Chest",
+		"tags": ["azure rathalos"],
 		"baseDefense": 56,
 		"fireResist": 3,
 		"waterResist": 2,
@@ -626,6 +637,7 @@
 	{
 		"name": "Rath Soul Mail Alpha",
 		"itemType": "Chest",
+		"tags": ["azure rathalos"],
 		"baseDefense": 56,
 		"fireResist": 3,
 		"waterResist": 2,

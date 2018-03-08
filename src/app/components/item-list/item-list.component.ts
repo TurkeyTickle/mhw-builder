@@ -77,6 +77,14 @@ export class ItemListComponent implements OnInit {
 					if (item.weaponType) {
 						item.visible = this.itemsService.getWeaponTypeName(item.weaponType).toLowerCase().includes(query);
 					}
+
+					if (item.visible) { continue; }
+
+					if (item.tags) {
+						item.visible = item.tags.some(tag => tag.includes(query));
+					}
+
+					if (item.visible) { continue; }
 				}
 			}
 

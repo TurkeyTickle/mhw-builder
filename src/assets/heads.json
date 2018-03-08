@@ -23,6 +23,7 @@
 	{
 		"name": "Xeno'jiva Headgear Beta",
 		"itemType": "Head",
+		"tags": ["xenojiva"],
 		"baseDefense": 72,
 		"fireResist": -3,
 		"waterResist": 2,
@@ -47,6 +48,7 @@
 	{
 		"name": "Xeno'jiva Headgear Alpha",
 		"itemType": "Head",
+		"tags": ["xenojiva"],
 		"baseDefense": 72,
 		"fireResist": -3,
 		"waterResist": 2,
@@ -169,6 +171,7 @@
 	{
 		"name": "Kushala Glare Beta",
 		"itemType": "Head",
+		"tags": ["kushala daora"],
 		"baseDefense": 64,
 		"fireResist": 0,
 		"waterResist": 2,
@@ -199,6 +202,7 @@
 	{
 		"name": "Kushala Glare Alpha",
 		"itemType": "Head",
+		"tags": ["kushala daora"],
 		"baseDefense": 64,
 		"fireResist": 0,
 		"waterResist": 2,
@@ -222,6 +226,7 @@
 	{
 		"name": "Kaiser Crown Beta",
 		"itemType": "Head",
+		"tags": ["teostra"],
 		"baseDefense": 64,
 		"fireResist": 3,
 		"waterResist": -3,
@@ -246,6 +251,7 @@
 	{
 		"name": "Kaiser Crown Alpha",
 		"itemType": "Head",
+		"tags": ["teostra"],
 		"baseDefense": 64,
 		"fireResist": 3,
 		"waterResist": -3,
@@ -474,6 +480,7 @@
 	{
 		"name": "Bazel Helm Beta",
 		"itemType": "Head",
+		"tags": ["bazelgeuse", "dodogama"],
 		"baseDefense": 58,
 		"fireResist": 3,
 		"waterResist": 1,
@@ -501,6 +508,7 @@
 	{
 		"name": "Bazel Helm Alpha",
 		"itemType": "Head",
+		"tags": ["bazelgeuse", "dodogama"],
 		"baseDefense": 58,
 		"fireResist": 3,
 		"waterResist": 1,
@@ -580,6 +588,7 @@
 	{
 		"name": "Diablos Nero Helm Beta",
 		"itemType": "Head",
+		"tags": ["black diablos"],
 		"baseDefense": 56,
 		"fireResist": 2,
 		"waterResist": -3,
@@ -604,6 +613,7 @@
 	{
 		"name": "Diablos Nero Helm Alpha",
 		"itemType": "Head",
+		"tags": ["black diablos"],
 		"baseDefense": 56,
 		"fireResist": 2,
 		"waterResist": -3,
@@ -628,6 +638,7 @@
 	{
 		"name": "Rath Soul Helm Beta",
 		"itemType": "Head",
+		"tags": ["azure rathalos"],
 		"baseDefense": 56,
 		"fireResist": 3,
 		"waterResist": 2,
@@ -655,6 +666,7 @@
 	{
 		"name": "Rath Soul Helm Alpha",
 		"itemType": "Head",
+		"tags": ["azure rathalos"],
 		"baseDefense": 56,
 		"fireResist": 3,
 		"waterResist": 2,

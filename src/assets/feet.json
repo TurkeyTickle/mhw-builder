@@ -2,6 +2,7 @@
 	{
 		"name": "Xeno'jiva Spurs Beta",
 		"itemType": "Feet",
+		"tags": ["xenojiva"],
 		"baseDefense": 72,
 		"fireResist": -3,
 		"waterResist": 2,
@@ -29,6 +30,7 @@
 	{
 		"name": "Xeno'jiva Spurs Alpha",
 		"itemType": "Feet",
+		"tags": ["xenojiva"],
 		"baseDefense": 72,
 		"fireResist": -3,
 		"waterResist": 2,
@@ -162,6 +164,7 @@
 	{
 		"name": "Kushala Crus Beta",
 		"itemType": "Feet",
+		"tags": ["kushala daora"],
 		"baseDefense": 64,
 		"fireResist": 0,
 		"waterResist": 2,
@@ -186,6 +189,7 @@
 	{
 		"name": "Kushala Crus Alpha",
 		"itemType": "Feet",
+		"tags": ["kushala daora"],
 		"baseDefense": 64,
 		"fireResist": 0,
 		"waterResist": 2,
@@ -209,6 +213,7 @@
 	{
 		"name": "Kaiser Greaves Beta",
 		"itemType": "Feet",
+		"tags": ["teostra"],
 		"baseDefense": 64,
 		"fireResist": 3,
 		"waterResist": -3,
@@ -233,6 +238,7 @@
 	{
 		"name": "Kaiser Greaves Alpha",
 		"itemType": "Feet",
+		"tags": ["teostra"],
 		"baseDefense": 64,
 		"fireResist": 3,
 		"waterResist": -3,
@@ -439,6 +445,7 @@
 	{
 		"name": "Bazel Greaves Beta",
 		"itemType": "Feet",
+		"tags": ["bazelgeuse", "dodogama"],
 		"baseDefense": 58,
 		"fireResist": 3,
 		"waterResist": 1,
@@ -463,6 +470,7 @@
 	{
 		"name": "Bazel Greaves Alpha",
 		"itemType": "Feet",
+		"tags": ["bazelgeuse", "dodogama"],
 		"baseDefense": 58,
 		"fireResist": 3,
 		"waterResist": 1,
@@ -539,6 +547,7 @@
 	{
 		"name": "Diablos Nero Greaves Beta",
 		"itemType": "Feet",
+		"tags": ["black diablos"],
 		"baseDefense": 56,
 		"fireResist": 2,
 		"waterResist": -3,
@@ -563,6 +572,7 @@
 	{
 		"name": "Diablos Nero Greaves Alpha",
 		"itemType": "Feet",
+		"tags": ["black diablos"],
 		"baseDefense": 56,
 		"fireResist": 2,
 		"waterResist": -3,
@@ -591,6 +601,7 @@
 	{
 		"name": "Rath Soul Greaves Beta",
 		"itemType": "Feet",
+		"tags": ["azure rathalos"],
 		"baseDefense": 56,
 		"fireResist": 3,
 		"waterResist": 2,
@@ -615,6 +626,7 @@
 	{
 		"name": "Rath Soul Greaves Alpha",
 		"itemType": "Feet",
+		"tags": ["azure rathalos"],
 		"baseDefense": 56,
 		"fireResist": 3,
 		"waterResist": 2,

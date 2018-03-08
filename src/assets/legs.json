@@ -2,6 +2,7 @@
 	{
 		"name": "Xeno'jiva Spine Beta",
 		"itemType": "Legs",
+		"tags": ["xenojiva"],
 		"baseDefense": 72,
 		"fireResist": -3,
 		"waterResist": 2,
@@ -29,6 +30,7 @@
 	{
 		"name": "Xeno'jiva Spine Alpha",
 		"itemType": "Legs",
+		"tags": ["xenojiva"],
 		"baseDefense": 72,
 		"fireResist": -3,
 		"waterResist": 2,
@@ -165,6 +167,7 @@
 	{
 		"name": "Kushala Cocoon Beta",
 		"itemType": "Legs",
+		"tags": ["kushala daora"],
 		"baseDefense": 64,
 		"fireResist": 0,
 		"waterResist": 2,
@@ -192,6 +195,7 @@
 	{
 		"name": "Kushala Cocoon Alpha",
 		"itemType": "Legs",
+		"tags": ["kushala daora"],
 		"baseDefense": 64,
 		"fireResist": 0,
 		"waterResist": 2,
@@ -215,6 +219,7 @@
 	{
 		"name": "Kaiser Coil Beta",
 		"itemType": "Legs",
+		"tags": ["teostra"],
 		"baseDefense": 64,
 		"fireResist": 3,
 		"waterResist": -3,
@@ -239,6 +244,7 @@
 	{
 		"name": "Kaiser Coil Alpha",
 		"itemType": "Legs",
+		"tags": ["teostra"],
 		"baseDefense": 64,
 		"fireResist": 3,
 		"waterResist": -3,
@@ -451,6 +457,7 @@
 	{
 		"name": "Bazel Coil Beta",
 		"itemType": "Legs",
+		"tags": ["bazelgeuse", "dodogama"],
 		"baseDefense": 58,
 		"fireResist": 3,
 		"waterResist": 1,
@@ -475,6 +482,7 @@
 	{
 		"name": "Bazel Coil Alpha",
 		"itemType": "Legs",
+		"tags": ["bazelgeuse", "dodogama"],
 		"baseDefense": 58,
 		"fireResist": 3,
 		"waterResist": 1,
@@ -561,6 +569,7 @@
 	{
 		"name": "Diablos Nero Coil Beta",
 		"itemType": "Legs",
+		"tags": ["black diablos"],
 		"baseDefense": 56,
 		"fireResist": 2,
 		"waterResist": -3,
@@ -585,6 +594,7 @@
 	{
 		"name": "Diablos Nero Coil Alpha",
 		"itemType": "Legs",
+		"tags": ["black diablos"],
 		"baseDefense": 56,
 		"fireResist": 2,
 		"waterResist": -3,
@@ -608,6 +618,7 @@
 	{
 		"name": "Rath Soul Coil Beta",
 		"itemType": "Legs",
+		"tags": ["azure rathalos"],
 		"baseDefense": 56,
 		"fireResist": 3,
 		"waterResist": 2,
@@ -632,6 +643,7 @@
 	{
 		"name": "Rath Soul Coil Alpha",
 		"itemType": "Legs",
+		"tags": ["azure rathalos"],
 		"baseDefense": 56,
 		"fireResist": 3,
 		"waterResist": 2,
