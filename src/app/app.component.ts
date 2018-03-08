@@ -256,37 +256,39 @@ export class AppComponent implements OnInit, AfterViewInit, AfterContentInit {
 	}
 
 	loadBuildSlot(slotHash: string, slot: ItemSlotComponent) {
-		const slotParts = slotHash.split('d');
-		const itemParts = slotParts[0].split('l');
-		const equipmentId = parseInt(itemParts[0], 10);
-		if (equipmentId != null) {
-			let equipment: ItemModel;
-			if (slot.slotName == ItemType.Weapon) {
-				equipment = this.itemsService.getWeapon(equipmentId);
-			} else {
-				equipment = this.itemsService.getArmorById(equipmentId);
-			}
+		if (slotHash) {
+			const slotParts = slotHash.split('d');
+			const itemParts = slotParts[0].split('l');
+			const equipmentId = parseInt(itemParts[0], 10);
+			if (equipmentId != null) {
+				let equipment: ItemModel;
+				if (slot.slotName == ItemType.Weapon) {
+					equipment = this.itemsService.getWeapon(equipmentId);
+				} else {
+					equipment = this.itemsService.getArmorById(equipmentId);
+				}
 
-			if (itemParts.length > 1) {
-				const level = parseInt(itemParts[1], 10);
-				equipment.equippedLevel = level;
-			}
+				if (itemParts.length > 1) {
+					const level = parseInt(itemParts[1], 10);
+					equipment.equippedLevel = level;
+				}
 
-			if (equipment) {
-				this.equippedItems.push(equipment);
-				slot.item = equipment;
+				if (equipment) {
+					this.equippedItems.push(equipment);
+					slot.item = equipment;
 
-				this.changeDetector.detectChanges();
+					this.changeDetector.detectChanges();
 
-				for (let i = 1; i < slotParts.length; i++) {
-					const decorationId = parseInt(slotParts[i], 10);
-					if (decorationId) {
-						const decoration = this.itemsService.getDecoration(decorationId);
-						if (decoration) {
-							const newDecoration = Object.assign({}, decoration);
-							slot.decorationSlots.toArray()[i - 1].decoration = newDecoration;
-							newDecoration.equipmentId = equipment.id;
-							this.equippedDecorations.push(newDecoration);
+					for (let i = 1; i < slotParts.length; i++) {
+						const decorationId = parseInt(slotParts[i], 10);
+						if (decorationId) {
+							const decoration = this.itemsService.getDecoration(decorationId);
+							if (decoration) {
+								const newDecoration = Object.assign({}, decoration);
+								slot.decorationSlots.toArray()[i - 1].decoration = newDecoration;
+								newDecoration.equipmentId = equipment.id;
+								this.equippedDecorations.push(newDecoration);
+							}
 						}
 					}
 				}
