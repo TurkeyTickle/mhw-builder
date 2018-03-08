@@ -89,7 +89,7 @@ export class EquippedStatsComponent implements OnInit {
 	) { }
 
 	ngOnInit() {
-		this.reset();
+		// this.reset();
 	}
 
 	update(items: ItemModel[]) {

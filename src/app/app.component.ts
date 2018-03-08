@@ -1,4 +1,4 @@
-import { Component, ViewChild, ElementRef, OnInit, Renderer2 } from '@angular/core';
+import { Component, ViewChild, ElementRef, OnInit, Renderer2, AfterContentInit, AfterViewInit, ChangeDetectorRef } from '@angular/core';
 import { Location } from '@angular/common';
 import { EquippedStatsComponent } from './components/equipped-stats/equipped-stats.component';
 import { EquippedSkillsComponent } from './components/equipped-skills/equipped-skills.component';
@@ -13,6 +13,7 @@ import { TooltipService } from './services/tooltip.service';
 
 import * as _ from 'lodash';
 import { EquipmentCategoryType } from './types/equipment-category.type';
+import { ItemsService } from './services/items.service';
 
 @Component({
 	selector: 'mhw-builder-root',
@@ -20,7 +21,7 @@ import { EquipmentCategoryType } from './types/equipment-category.type';
 	styleUrls: ['./app.component.scss']
 })
 
-export class AppComponent implements OnInit {
+export class AppComponent implements OnInit, AfterViewInit, AfterContentInit {
 	public itemTypes = ItemType;
 	title = 'MHW Builder';
 	buildId = '';
@@ -29,6 +30,13 @@ export class AppComponent implements OnInit {
 	@ViewChild(EquippedSkillsComponent) equippedSkillsComponent: EquippedSkillsComponent;
 	@ViewChild(ItemStatsComponent) itemStatsComponent: ItemStatsComponent;
 	@ViewChild('itemStats') itemStatsContainer: ElementRef;
+	@ViewChild('weaponSlot') weaponSlot: ItemSlotComponent;
+	@ViewChild('headSlot') headSlot: ItemSlotComponent;
+	@ViewChild('chestSlot') chestSlot: ItemSlotComponent;
+	@ViewChild('handsSlot') handsSlot: ItemSlotComponent;
+	@ViewChild('legsSlot') legsSlot: ItemSlotComponent;
+	@ViewChild('feetSlot') feetSlot: ItemSlotComponent;
+	@ViewChild('charmSlot') charmSlot: ItemSlotComponent;
 
 	selectedEquipmentSlot: ItemSlotComponent;
 	selectedDecorationSlot: DecorationSlotComponent;
@@ -38,8 +46,10 @@ export class AppComponent implements OnInit {
 	constructor(
 		private tooltipService: TooltipService,
 		private skillService: SkillService,
+		private itemsService: ItemsService,
 		private renderer: Renderer2,
-		private location: Location
+		private location: Location,
+		private changeDetector: ChangeDetectorRef
 	) { }
 
 	ngOnInit() {
@@ -51,6 +61,14 @@ export class AppComponent implements OnInit {
 				this.itemStatsComponent.setItem(thing);
 			}
 		});
+	}
+
+	ngAfterContentInit() {
+		// this.loadBuild();
+	}
+
+	ngAfterViewInit() {
+		setTimeout(() => this.loadBuild(), 100);
 	}
 
 	selectItem(selectedItem: ItemModel) {
@@ -86,6 +104,7 @@ export class AppComponent implements OnInit {
 
 	itemLevelChanged() {
 		this.updateStatsAndSkills();
+		this.updateBuildId();
 	}
 
 	itemCleared(clear: ItemSlotClearModel) {
@@ -101,6 +120,7 @@ export class AppComponent implements OnInit {
 		}
 
 		this.updateStatsAndSkills();
+		this.updateBuildId();
 	}
 
 	decorationCleared(clearedDecoration: DecorationModel) {
@@ -109,6 +129,7 @@ export class AppComponent implements OnInit {
 		});
 
 		this.updateStatsAndSkills();
+		this.updateBuildId();
 	}
 
 	private updateStatsAndSkills() {
@@ -152,7 +173,7 @@ export class AppComponent implements OnInit {
 		let newLeft = event.clientX + 40;
 
 		if (window.innerHeight < newTop + this.itemStatsContainer.nativeElement.scrollHeight) {
-			newTop = window.innerHeight - this.itemStatsContainer.nativeElement.scrollHeight;
+			newTop = window.innerHeight - this.itemStatsContainer.nativeElement.scrollHeight - 20;
 		}
 
 		if (window.innerWidth < newLeft + this.itemStatsContainer.nativeElement.scrollWidth) {
@@ -191,12 +212,80 @@ export class AppComponent implements OnInit {
 		if (item) {
 			result += item.id.toString();
 
-			const decorations = _.filter(this.equippedDecorations, decoration => decoration.equipmentId == item.id);
-			for (const decoration of decorations) {
-				result += `d${decoration.id.toString()}`;
+			if (item.equippedLevel) {
+				result += `l${item.equippedLevel}`;
+			}
+
+			if (item.slots) {
+				let decorations = _.filter(this.equippedDecorations, d => d.equipmentId === item.id);
+				for (let i = 0; i < item.slots.length; i++) {
+					result += 'd';
+					const slot = item.slots[i];
+					const decoration = _.find(decorations, d => d.equipmentId == item.id && d.level <= slot.level);
+					decorations = _.without(decorations, decoration);
+					if (decoration) {
+						result += `${decoration.id.toString()}`;
+					}
+				}
 			}
 		}
 
 		return result;
+	}
+
+	loadBuild() {
+		const hash = location.hash;
+		const slotHashes = hash.split('i');
+
+		// const version = slotHash[0];
+
+		this.loadBuildSlot(slotHashes[1], this.weaponSlot);
+		this.loadBuildSlot(slotHashes[2], this.headSlot);
+		this.loadBuildSlot(slotHashes[3], this.chestSlot);
+		this.loadBuildSlot(slotHashes[4], this.handsSlot);
+		this.loadBuildSlot(slotHashes[5], this.legsSlot);
+		this.loadBuildSlot(slotHashes[6], this.feetSlot);
+		this.loadBuildSlot(slotHashes[7], this.charmSlot);
+
+		this.updateStatsAndSkills();
+	}
+
+	loadBuildSlot(slotHash: string, slot: ItemSlotComponent) {
+		const slotParts = slotHash.split('d');
+		const itemParts = slotParts[0].split('l');
+		const equipmentId = parseInt(itemParts[0], 10);
+		if (equipmentId != null) {
+			let equipment: ItemModel;
+			if (slot.slotName == ItemType.Weapon) {
+				equipment = this.itemsService.getWeapon(equipmentId);
+			} else {
+				equipment = this.itemsService.getArmorById(equipmentId);
+			}
+
+			if (itemParts.length > 1) {
+				const level = parseInt(itemParts[1], 10);
+				equipment.equippedLevel = level;
+			}
+
+			if (equipment) {
+				this.equippedItems.push(equipment);
+				slot.item = equipment;
+
+				this.changeDetector.detectChanges();
+
+				for (let i = 1; i < slotParts.length; i++) {
+					const decorationId = parseInt(slotParts[i], 10);
+					if (decorationId) {
+						const decoration = this.itemsService.getDecoration(decorationId);
+						if (decoration) {
+							const newDecoration = Object.assign({}, decoration);
+							slot.decorationSlots.toArray()[i - 1].decoration = newDecoration;
+							newDecoration.equipmentId = equipment.id;
+							this.equippedDecorations.push(newDecoration);
+						}
+					}
+				}
+			}
+		}
 	}
 }

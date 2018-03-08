@@ -52,7 +52,7 @@ export class ItemListComponent implements OnInit {
 		} else if (this.itemType == ItemType.Weapon) {
 			this.items = this.itemsService.getWeapons() as SearchItemModel[];
 		} else {
-			this.items = this.itemsService.getArmor(this.itemType) as SearchItemModel[];
+			this.items = this.itemsService.getArmorByType(this.itemType) as SearchItemModel[];
 		}
 
 		this.resetSearchResults();

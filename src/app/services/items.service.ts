@@ -27,7 +27,15 @@ export class ItemsService {
 		return result;
 	}
 
-	getArmor(type: ItemType): ItemModel[] {
+	getWeapon(id: number): ItemModel {
+		return _.find(this.appData.getWeapons(), weapon => weapon.id === id);
+	}
+
+	getArmorById(id: number): ItemModel {
+		return _.find(this.appData.getArmor(), armor => armor.id === id);
+	}
+
+	getArmorByType(type: ItemType): ItemModel[] {
 		return _.filter(this.appData.getArmor(), armor => armor.itemType === type);
 	}
 
