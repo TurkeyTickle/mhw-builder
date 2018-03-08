@@ -14,6 +14,7 @@ import { TooltipService } from './services/tooltip.service';
 import * as _ from 'lodash';
 import { EquipmentCategoryType } from './types/equipment-category.type';
 import { ItemsService } from './services/items.service';
+import { ItemListComponent } from './components/item-list/item-list.component';
 
 @Component({
 	selector: 'mhw-builder-root',
@@ -29,6 +30,8 @@ export class AppComponent implements OnInit, AfterViewInit, AfterContentInit {
 	@ViewChild(EquippedStatsComponent) equippedStatsComponent: EquippedStatsComponent;
 	@ViewChild(EquippedSkillsComponent) equippedSkillsComponent: EquippedSkillsComponent;
 	@ViewChild(ItemStatsComponent) itemStatsComponent: ItemStatsComponent;
+	@ViewChild('equipmentItemList') equipmentItemListComponent: ItemListComponent;
+	@ViewChild('decorationItemList') decorationItemListComponent: ItemListComponent;
 	@ViewChild('itemStats') itemStatsContainer: ElementRef;
 	@ViewChild('weaponSlot') weaponSlot: ItemSlotComponent;
 	@ViewChild('headSlot') headSlot: ItemSlotComponent;
@@ -151,6 +154,7 @@ export class AppComponent implements OnInit, AfterViewInit, AfterContentInit {
 
 		this.selectedEquipmentSlot = equipmentSlot;
 		this.selectedEquipmentSlot.selected = true;
+		setTimeout(() => this.equipmentItemListComponent.searchBox.nativeElement.focus(), 100);
 	}
 
 	decorationSlotSelected(decorationSlot: DecorationSlotComponent) {
@@ -166,6 +170,7 @@ export class AppComponent implements OnInit, AfterViewInit, AfterContentInit {
 
 		this.selectedDecorationSlot = decorationSlot;
 		this.selectedDecorationSlot.selected = true;
+		setTimeout(() => this.decorationItemListComponent.searchBox.nativeElement.focus(), 100);
 	}
 
 	moveTooltip(event: MouseEvent) {
