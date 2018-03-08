@@ -634,5 +634,324 @@
 				"id": "rathalosMastery"
 			}
 		]
+	},
+	{
+		"name": "Diablos Greaves Beta",
+		"itemType": "Feet",
+		"baseDefense": 54,
+		"fireResist": 3,
+		"waterResist": -2,
+		"thunderResist": 0,
+		"iceResist": -3,
+		"dragonResist": 2,
+		"skills": [
+			{
+				"id": "tremorResistance",
+				"level": 2
+			},
+			{
+				"id": "diablosMastery"
+			}
+		],
+		"slots": [
+			{
+				"level": 1
+			},
+			{
+				"level": 1
+			}
+		]
+	},
+	{
+		"name": "Diablos Greaves Alpha",
+		"itemType": "Feet",
+		"baseDefense": 54,
+		"fireResist": 3,
+		"waterResist": -2,
+		"thunderResist": 0,
+		"iceResist": -3,
+		"dragonResist": 2,
+		"skills": [
+			{
+				"id": "tremorResistance",
+				"level": 2
+			},
+			{
+				"id": "slugger",
+				"level": 1
+			},
+			{
+				"id": "diablosMastery"
+			}
+		]
+	},
+	{
+		"name": "Rathalos Greaves Beta",
+		"itemType": "Feet",
+		"baseDefense": 54,
+		"fireResist": 3,
+		"waterResist": 1,
+		"thunderResist": -2,
+		"iceResist": 1,
+		"dragonResist": -3,
+		"skills": [
+			{
+				"id": "jumpMaster",
+				"level": 1
+			},
+			{
+				"id": "rathalosMastery"
+			}
+		],
+		"slots": [
+			{
+				"level": 3
+			}
+		]
+	},
+	{
+		"name": "Rathalos Greaves Alpha",
+		"itemType": "Feet",
+		"baseDefense": 54,
+		"fireResist": 3,
+		"waterResist": 1,
+		"thunderResist": -2,
+		"iceResist": 1,
+		"dragonResist": -3,
+		"skills": [
+			{
+				"id": "jumpMaster",
+				"level": 1
+			},
+			{
+				"id": "weaknessExploit",
+				"level": 1
+			},
+			{
+				"id": "rathalosMastery"
+			}
+		]
+	},
+	{
+		"name": "Odogaron Greaves Beta",
+		"itemType": "Feet",
+		"baseDefense": 54,
+		"fireResist": 2,
+		"waterResist": 2,
+		"thunderResist": -2,
+		"iceResist": -3,
+		"dragonResist": 0,
+		"skills": [
+			{
+				"id": "quickSheath",
+				"level": 1
+			},
+			{
+				"id": "odogaronMastery"
+			}
+		],
+		"slots": [
+			{
+				"level": 1
+			}
+		]
+	},
+	{
+		"name": "Odogaron Greaves Alpha",
+		"itemType": "Feet",
+		"baseDefense": 54,
+		"fireResist": 2,
+		"waterResist": 2,
+		"thunderResist": -2,
+		"iceResist": -3,
+		"dragonResist": 0,
+		"skills": [
+			{
+				"id": "quickSheath",
+				"level": 1
+			},
+			{
+				"id": "criticalEye",
+				"level": 1
+			},
+			{
+				"id": "odogaronMastery"
+			}
+		]
+	},
+	{
+		"name": "Legiana Greaves Beta",
+		"itemType": "Feet",
+		"baseDefense": 54,
+		"fireResist": -1,
+		"waterResist": 2,
+		"thunderResist": -3,
+		"iceResist": 3,
+		"dragonResist": 0,
+		"skills": [
+			{
+				"id": "iceResistance",
+				"level": 2
+			},
+			{
+				"id": "legianaFavor"
+			}
+		],
+		"slots": [
+			{
+				"level": 3
+			}
+		]
+	},
+	{
+		"name": "Legiana Greaves Alpha",
+		"itemType": "Feet",
+		"baseDefense": 54,
+		"fireResist": -1,
+		"waterResist": 2,
+		"thunderResist": -3,
+		"iceResist": 3,
+		"dragonResist": 0,
+		"skills": [
+			{
+				"id": "iceResistance",
+				"level": 2
+			},
+			{
+				"id": "criticalDraw",
+				"level": 1
+			},
+			{
+				"id": "legianaFavor"
+			}
+		]
+	},
+	{
+		"name": "Lavasioth Greaves Beta",
+		"itemType": "Feet",
+		"baseDefense": 56,
+		"fireResist": 3,
+		"waterResist": -3,
+		"thunderResist": 1,
+		"iceResist": -2,
+		"dragonResist": 2,
+		"skills": [
+			{
+				"id": "spreadPowerShots",
+				"level": 1
+			}
+		],
+		"slots": [
+			{
+				"level": 2
+			}
+		]
+	},
+	{
+		"name": "Lavasioth Greaves Alpha",
+		"itemType": "Feet",
+		"baseDefense": 56,
+		"fireResist": 3,
+		"waterResist": -3,
+		"thunderResist": 1,
+		"iceResist": -2,
+		"dragonResist": 2,
+		"skills": [
+			{
+				"id": "spreadPowerShots",
+				"level": 1
+			},
+			{
+				"id": "fireAttack",
+				"level": 1
+			}
+		],
+		"slots": [
+			{
+				"level": 1
+			}
+		]
+	},
+	{
+		"name": "Ingot Greaves Beta",
+		"itemType": "Feet",
+		"baseDefense": 50,
+		"fireResist": -2,
+		"waterResist": 0,
+		"thunderResist": 3,
+		"iceResist": -1,
+		"dragonResist": 0,
+		"skills": [
+			{
+				"id": "defenseBoost",
+				"level": 2
+			}
+		],
+		"slots": [
+			{
+				"level": 2
+			}
+		]
+	},
+	{
+		"name": "Ingot Greaves Alpha",
+		"itemType": "Feet",
+		"baseDefense": 50,
+		"fireResist": -2,
+		"waterResist": 0,
+		"thunderResist": 3,
+		"iceResist": -1,
+		"dragonResist": 0,
+		"skills": [
+			{
+				"id": "defenseBoost",
+				"level": 2
+			},
+			{
+				"id": "windproof",
+				"level": 1
+			}
+		]
+	},
+	{
+		"name": "High Metal Greaves Beta",
+		"itemType": "Feet",
+		"baseDefense": 50,
+		"fireResist": 0,
+		"waterResist": -1,
+		"thunderResist": -2,
+		"iceResist": 3,
+		"dragonResist": 0,
+		"skills": [
+			{
+				"id": "heavyArtillery",
+				"level": 1
+			}
+		],
+		"slots": [
+			{
+				"level": 1
+			}
+		]
+	},
+	{
+		"name": "High Metal Greaves Alpha",
+		"itemType": "Feet",
+		"baseDefense": 50,
+		"fireResist": 0,
+		"waterResist": -1,
+		"thunderResist": -2,
+		"iceResist": 3,
+		"dragonResist": 0,
+		"skills": [
+			{
+				"id": "heavyArtillery",
+				"level": 1
+			},
+			{
+				"id": "iceResistance",
+				"level": 1
+			}
+		]
 	}
 ]

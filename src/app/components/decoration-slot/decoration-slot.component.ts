@@ -2,6 +2,7 @@ import { Component, OnInit, Output, EventEmitter, Input } from '@angular/core';
 import { DecorationModel } from '../../models/decoration.model';
 import { TooltipService } from '../../services/tooltip.service';
 import { ChangeModel } from '../../models/change.model';
+import { ItemModel } from '../../models/item.model';
 
 @Component({
 	selector: 'mhw-builder-decoration-slot',
@@ -13,6 +14,7 @@ export class DecorationSlotComponent implements OnInit {
 	@Output() decorationSet = new EventEmitter<ChangeModel<DecorationModel>>();
 	// @Output() cleared = new EventEmitter();
 
+	@Input() item: ItemModel;
 	@Input() level: number;
 
 	private _decoration: DecorationModel;

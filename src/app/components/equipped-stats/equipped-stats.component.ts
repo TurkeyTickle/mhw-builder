@@ -17,12 +17,17 @@ import { SharpnessType } from '../../types/sharpness.type';
 
 export class EquippedStatsComponent implements OnInit {
 	totalAttack: number;
+	totalAttackPotential: number;
 	attack: number;
 	passiveAttack: number;
+	activeAttack: number;
 	maxSharpness: SharpnessType;
 	weaponAttackModifier: number;
 	affinity: number;
 	passiveAffinity: number;
+	activeAffinity: number;
+	weakPointAffinity: number;
+	passiveCriticalBoostPercent: number;
 
 	element: ElementType;
 	elementAttack: number;
@@ -84,7 +89,7 @@ export class EquippedStatsComponent implements OnInit {
 	) { }
 
 	ngOnInit() {
-		this.reset();
+		// this.reset();
 	}
 
 	update(items: ItemModel[]) {
@@ -101,10 +106,14 @@ export class EquippedStatsComponent implements OnInit {
 		this.totalAttack = 0;
 		this.attack = 0;
 		this.passiveAttack = 0;
+		this.activeAttack = 0;
 		this.maxSharpness = null;
 		this.weaponAttackModifier = 0;
 		this.affinity = 0;
 		this.passiveAffinity = 0;
+		this.activeAffinity = 0;
+		this.weakPointAffinity = 0;
+		this.passiveCriticalBoostPercent = 0;
 
 		this.element = null;
 		this.elementAttack = 0;
@@ -236,8 +245,24 @@ export class EquippedStatsComponent implements OnInit {
 					this.passiveAttack += level.passiveAttack;
 				}
 
+				if (level.activeAttack) {
+					this.activeAttack += level.activeAttack;
+				}
+
 				if (level.passiveAffinity) {
 					this.passiveAffinity += level.passiveAffinity;
+				}
+
+				if (level.activeAffinity) {
+					this.activeAffinity += level.activeAffinity;
+				}
+
+				if (level.weakPointAffinity) {
+					this.weakPointAffinity += level.weakPointAffinity;
+				}
+
+				if (level.passiveCriticalBoostPercent) {
+					this.passiveCriticalBoostPercent += level.passiveCriticalBoostPercent;
 				}
 
 				if (level.passiveFireAttack) {
@@ -331,6 +356,7 @@ export class EquippedStatsComponent implements OnInit {
 		}
 
 		this.totalAttack = this.attack + Math.round(this.passiveAttack * this.weaponAttackModifier);
+		this.totalAttackPotential = this.attack + Math.round((this.passiveAttack + this.activeAttack) * this.weaponAttackModifier);
 		this.totalElementAttack = Math.round((this.elementAttack + this.effectivePassiveElementAttack) * this.elementAttackMultiplier);
 		this.totalAilmentAttack = Math.round((this.ailmentAttack + this.effectivePassiveAilmentAttack) * this.elementAttackMultiplier);
 

@@ -3,9 +3,12 @@ export class SkillLevel {
 
 	passiveAttack: number;
 	activeAttack: number;
+	passiveCriticalBoostPercent: number;
 
 	passiveAffinity: number;
 	activeAffinity: number;
+	weakPointAffinity: number;
+
 	hiddenElementUp: number;
 
 	passiveFireAttack: number;
@@ -29,8 +32,6 @@ export class SkillLevel {
 	passiveBlastBuildupPercent: number;
 	passiveStunAttack: number;
 	passiveStunBuildupPercent: number;
-
-	passiveCritBoostPercent: number;
 
 	passiveGaugeFillRatePercent: number;
 

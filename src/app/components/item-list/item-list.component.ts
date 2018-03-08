@@ -4,7 +4,6 @@ import { ItemModel } from '../../models/item.model';
 import { ItemsService } from '../../services/items.service';
 import { DecorationModel } from '../../models/decoration.model';
 import { TooltipService } from '../../services/tooltip.service';
-import { Guid } from '../../core/guid';
 import { SearchItemModel } from '../../models/search-item.model';
 import { SearchDecorationModel } from '../../models/search-decoration.model';
 import { WeaponType } from '../../types/weapon.type';
@@ -56,7 +55,7 @@ export class ItemListComponent implements OnInit {
 		} else if (this.itemType == ItemType.Weapon) {
 			this.items = this.itemsService.getWeapons() as SearchItemModel[];
 		} else {
-			this.items = this.itemsService.getArmor(this.itemType) as SearchItemModel[];
+			this.items = this.itemsService.getArmorByType(this.itemType) as SearchItemModel[];
 		}
 
 		this.resetSearchResults();
@@ -122,13 +121,11 @@ export class ItemListComponent implements OnInit {
 
 	selectItem(item: ItemModel) {
 		const newItem = Object.assign({}, item);
-		newItem.id = Guid.newGuid();
 		this.itemSelected.emit(newItem);
 	}
 
 	selectDecoration(decoration: DecorationModel) {
 		const newDecoration = Object.assign({}, decoration);
-		newDecoration.id = Guid.newGuid();
 		this.decorationSelected.emit(newDecoration);
 	}
 

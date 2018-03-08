@@ -98,13 +98,16 @@
 		"description": "Increases the affinity of attacks that exploit a monster weak spot.",
 		"levels": [
 			{
-				"description": "Attacks that hit weak spots have 15% increased affinity."
+				"description": "Attacks that hit weak spots have 15% increased affinity.",
+				"weakPointAffinity": 15
 			},
 			{
-				"description": "Attacks that hit weak spots have 30% increased affinity."
+				"description": "Attacks that hit weak spots have 30% increased affinity.",
+				"weakPointAffinity": 30
 			},
 			{
-				"description": "Attacks that hit weak spots have 50% increased affinity."
+				"description": "Attacks that hit weak spots have 50% increased affinity.",
+				"weakPointAffinity": 50
 			}
 		]
 	},
@@ -130,13 +133,16 @@
 		"description": "Increases affinity when stamina is full.",
 		"levels": [
 			{
-				"description": "While active, increases affinity by 10%."
+				"description": "While active, increases affinity by 10%.",
+				"activeAffinity": 10
 			},
 			{
-				"description": "While active, increases affinity by 20%."
+				"description": "While active, increases affinity by 20%.",
+				"activeAffinity": 20
 			},
 			{
-				"description": "While active, increases affinity by 30%."
+				"description": "While active, increases affinity by 30%.",
+				"activeAffinity": 30
 			}
 		]
 	},
@@ -146,19 +152,29 @@
 		"description": "Increases attack power and affinity when large monsters become enraged.",
 		"levels": [
 			{
-				"description": "While active, grants attack +4 and increases affinity by 3%"
+				"description": "While active, grants attack +4 and increases affinity by 3%",
+				"activeAffinity": 3,
+				"activeAttack": 4
 			},
 			{
-				"description": "While active, grants attack +8 and increases affinity by 6%"
+				"description": "While active, grants attack +8 and increases affinity by 6%",
+				"activeAffinity": 6,
+				"activeAttack": 8
 			},
 			{
-				"description": "While active, grants attack +12 and increases affinity by 9%"
+				"description": "While active, grants attack +12 and increases affinity by 9%",
+				"activeAffinity": 9,
+				"activeAttack": 12
 			},
 			{
-				"description": "While active, grants attack +16 and increases affinity by 12%"
+				"description": "While active, grants attack +16 and increases affinity by 12%",
+				"activeAffinity": 12,
+				"activeAttack": 16
 			},
 			{
-				"description": "While active, grants attack +20 and increases affinity by 15%"
+				"description": "While active, grants attack +20 and increases affinity by 15%",
+				"activeAffinity": 15,
+				"activeAttack": 20
 			}
 		]
 	},
@@ -720,15 +736,15 @@
 		"levels": [
 			{
 				"description": "While active, grants attack +5.",
-				"passiveAttack": 5
+				"activeAttack": 5
 			},
 			{
 				"description": "While active, grants attack +10.",
-				"passiveAttack": 10
+				"activeAttack": 10
 			},
 			{
 				"description": "While active, grants attack +20.",
-				"passiveAttack": 20
+				"activeAttack": 20
 			}
 		]
 	},
@@ -776,27 +792,27 @@
 		"levels": [
 			{
 				"description": "While active, increases affinity by 10% and reduces stamina depletion by 10%",
-				"activeAffinityPercent": 10,
+				"activeAffinity": 10,
 				"activeStaminaDepletionReductionPercent": 10
 			},			
 			{
 				"description": "While active, increases affinity by 20% and reduces stamina depletion by 10%",
-				"activeAffinityPercent": 20,
+				"activeAffinity": 20,
 				"activeStaminaDepletionReductionPercent": 10
 			},
 			{
 				"description": "While active, increases affinity by 30% and reduces stamina depletion by 30%",
-				"activeAffinityPercent": 30,
+				"activeAffinity": 30,
 				"activeStaminaDepletionReductionPercent": 30
 			},	
 			{
 				"description": "While active, increases affinity by 40% and reduces stamina depletion by 30%",
-				"activeAffinityPercent": 40,
+				"activeAffinity": 40,
 				"activeStaminaDepletionReductionPercent": 30
 			},
 			{
 				"description": "While active, increases affinity by 50% and reduces stamina depletion by 50%",
-				"activeAffinityPercent": 50,
+				"activeAffinity": 50,
 				"activeStaminaDepletionReductionPercent": 50
 			}
 		]
@@ -1345,7 +1361,8 @@
 		"description": "Sliding increases your affinity for a short time.",
 		"levels": [
 			{
-				"description": "Increases affinity by 30% for a short time after sliding."
+				"description": "Increases affinity by 30% for a short time after sliding.",
+				"activeAffinity": 30
 			}
 		]
 	},
@@ -1857,19 +1874,24 @@
 		"description": "Increases attack power and defense when health drops to 35% or lower.",
 		"levels": [
 			{
-				"description": "While active, increases attack power by 5% and increases defense by 15 points."
+				"description": "While active, increases attack power by 5% and increases defense by 15 points.",
+				"activeAttackPercent": 5
 			},
 			{
-				"description": "While active, increases attack power by 10% and increases defense by 20 points."
+				"description": "While active, increases attack power by 10% and increases defense by 20 points.",
+				"activeAttackPercent": 10
 			},
 			{
-				"description": "While active, increases attack power by 15% and increases defense by 25 points."
+				"description": "While active, increases attack power by 15% and increases defense by 25 points.",
+				"activeAttackPercent": 15
 			},
 			{
-				"description": "While active, increases attack power by 20% and increases defense by 30 points."
+				"description": "While active, increases attack power by 20% and increases defense by 30 points.",
+				"activeAttackPercent": 20
 			},
 			{
-				"description": "While active, increases attack power by 30% and increases defense by 40 points."
+				"description": "While active, increases attack power by 30% and increases defense by 40 points.",
+				"activeAttackPercent": 30
 			}
 		]
 	},
@@ -2000,6 +2022,46 @@
 		"levels": [
 			{
 				"description": "Reduces stamina depletion while climbing by 25%."
+			}
+		]
+	},
+	{
+		"id": "punishingDraw",
+		"name": "Punishing Draw",
+		"description": "Adds a stun effect to draw attacks and slightly increases attack power.",
+		"levels": [
+			{
+				"description": "Adds a stun effect to draw attacks and slightly increases attack power."
+			}
+		]
+	},
+	{
+		"id": "protectivePolish",
+		"name": "Protective Polish",
+		"description": "Weapon sharpness does not decrease for a set time after sharpening.",
+		"levels": [
+			{
+				"description": "Weapon sharpness does not decrease for a set time after sharpening."
+			}
+		]
+	},
+	{
+		"id": "goodLuck",
+		"name": "Good Luck",
+		"description": "Good chance of increased quest rewards. (No effect when joining mid-quest.)",
+		"levels": [
+			{
+				"description": "Good chance of increased quest rewards. (No effect when joining mid-quest.)"
+			}
+		]
+	},
+	{
+		"id": "spreadPowerShots",
+		"name": "Spread/Power Shots",
+		"description": "Increases the attack power of spread ammo and power shot arrows.",
+		"levels": [
+			{
+				"description": "Increases the power of spread ammo and power shot arrows."
 			}
 		]
 	}

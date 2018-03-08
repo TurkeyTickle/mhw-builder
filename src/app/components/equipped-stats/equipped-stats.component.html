@@ -4,8 +4,12 @@
 	<hr>
 	<ul>
 		<li>Attack: {{totalAttack}} ({{attack}} + {{passiveAttack}} * {{weaponAttackModifier}})</li>
+		<li *ngIf="activeAttack">Attack Potential: {{totalAttackPotential}} ({{attack}} + ({{passiveAttack}} + {{activeAttack}}) * {{weaponAttackModifier}})</li>
 		<li *ngIf="maxSharpness">Max Sharpness: {{maxSharpness}}</li>
 		<li>Affinity: {{affinity + passiveAffinity}}%</li>
+		<li *ngIf="activeAffinity">Affinity Potential: {{affinity + passiveAffinity + activeAffinity}}%</li>
+		<li *ngIf="weakPointAffinity">Weak Point Affinity: {{affinity + passiveAffinity + weakPointAffinity}}%</li>
+		<li>Critical Boost: {{125 + passiveCriticalBoostPercent}}%</li>
 
 		<div *ngIf="ailment && !ailmentHidden">
 			<li>Ailment: {{ailment}}</li>

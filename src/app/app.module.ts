@@ -15,6 +15,7 @@ import { TooltipService } from './services/tooltip.service';
 import { SkillService } from './services/skill.service';
 import { KeysPipe } from './core/pipes/keys.pipe';
 import { SelectListComponent } from './components/select-list/select-list.component';
+import { Location, LocationStrategy, PathLocationStrategy } from '@angular/common';
 
 @NgModule({
 	declarations: [
@@ -33,6 +34,8 @@ import { SelectListComponent } from './components/select-list/select-list.compon
 		HttpClientModule
 	],
 	providers: [
+		Location,
+		{ provide: LocationStrategy, useClass: PathLocationStrategy },
 		ItemsService,
 		SkillService,
 		TooltipService,
