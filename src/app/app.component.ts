@@ -1,5 +1,5 @@
 import { Location } from '@angular/common';
-import { AfterContentInit, AfterViewInit, ChangeDetectorRef, Component, ElementRef, OnInit, Renderer2, ViewChild } from '@angular/core';
+import { AfterContentInit, AfterViewInit, ChangeDetectorRef, Component, OnInit, ViewChild } from '@angular/core';
 import * as _ from 'lodash';
 
 import { DecorationSlotComponent } from './components/decoration-slot/decoration-slot.component';
@@ -7,14 +7,13 @@ import { EquippedSkillsComponent } from './components/equipped-skills/equipped-s
 import { EquippedStatsComponent } from './components/equipped-stats/equipped-stats.component';
 import { ItemListComponent } from './components/item-list/item-list.component';
 import { ItemSlotClearModel, ItemSlotComponent } from './components/item-slot/item-slot.component';
-import { ItemStatsComponent } from './components/item-stats/item-stats.component';
 import { DecorationModel } from './models/decoration.model';
 import { ItemModel } from './models/item.model';
 import { ItemsService } from './services/items.service';
 import { SkillService } from './services/skill.service';
-import { TooltipService } from './services/tooltip.service';
 import { EquipmentCategoryType } from './types/equipment-category.type';
 import { ItemType } from './types/item.type';
+import { TooltipComponent } from './components/tooltip/tooltip.component';
 
 @Component({
 	selector: 'mhw-builder-root',
@@ -29,10 +28,9 @@ export class AppComponent implements OnInit, AfterViewInit, AfterContentInit {
 
 	@ViewChild(EquippedStatsComponent) equippedStatsComponent: EquippedStatsComponent;
 	@ViewChild(EquippedSkillsComponent) equippedSkillsComponent: EquippedSkillsComponent;
-	@ViewChild(ItemStatsComponent) itemStatsComponent: ItemStatsComponent;
+	@ViewChild(TooltipComponent) tooltipComponent: TooltipComponent;
 	@ViewChild('equipmentItemList') equipmentItemListComponent: ItemListComponent;
 	@ViewChild('decorationItemList') decorationItemListComponent: ItemListComponent;
-	@ViewChild('itemStats') itemStatsContainer: ElementRef;
 	@ViewChild('weaponSlot') weaponSlot: ItemSlotComponent;
 	@ViewChild('headSlot') headSlot: ItemSlotComponent;
 	@ViewChild('chestSlot') chestSlot: ItemSlotComponent;
@@ -47,23 +45,14 @@ export class AppComponent implements OnInit, AfterViewInit, AfterContentInit {
 	equippedDecorations = new Array<DecorationModel>();
 
 	constructor(
-		private tooltipService: TooltipService,
 		private skillService: SkillService,
 		private itemsService: ItemsService,
-		private renderer: Renderer2,
 		private location: Location,
 		private changeDetector: ChangeDetectorRef
 	) { }
 
 	ngOnInit() {
-		this.tooltipService.subject.subscribe((thing: ItemModel | DecorationModel) => {
-			if (!thing) {
-				this.renderer.setStyle(this.itemStatsContainer.nativeElement, 'display', 'none');
-			} else {
-				this.renderer.setStyle(this.itemStatsContainer.nativeElement, 'display', 'block');
-				this.itemStatsComponent.setItem(thing);
-			}
-		});
+
 	}
 
 	ngAfterContentInit() {
@@ -174,19 +163,7 @@ export class AppComponent implements OnInit, AfterViewInit, AfterContentInit {
 	}
 
 	moveTooltip(event: MouseEvent) {
-		let newTop = event.clientY + 40;
-		let newLeft = event.clientX + 40;
-
-		if (window.innerHeight < newTop + this.itemStatsContainer.nativeElement.scrollHeight) {
-			newTop = window.innerHeight - this.itemStatsContainer.nativeElement.scrollHeight - 20;
-		}
-
-		if (window.innerWidth < newLeft + this.itemStatsContainer.nativeElement.scrollWidth) {
-			newLeft = window.innerWidth - this.itemStatsContainer.nativeElement.scrollWidth;
-		}
-
-		this.renderer.setStyle(this.itemStatsContainer.nativeElement, 'left', newLeft + 'px');
-		this.renderer.setStyle(this.itemStatsContainer.nativeElement, 'top', newTop + 'px');
+		this.tooltipComponent.move(event.clientX, event.clientY);
 	}
 
 	updateBuildId() {

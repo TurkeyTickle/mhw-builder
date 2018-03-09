@@ -40,8 +40,8 @@
 			<div *ngFor="let decoration of decorations">
 				<li [hidden]="!decoration.visible"
 					(click)="selectDecoration(decoration)"
-					(mouseenter)="setTooltipItem(decoration)"
-					(mouseleave)="clearTooltipItem()">{{decoration.name}}</li>
+					(mouseenter)="setTooltipDecoration(decoration)"
+					(mouseleave)="clearTooltipDecoration()">{{decoration.name}}</li>
 			</div>
 		</ul>
 	</div>

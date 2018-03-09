@@ -44,10 +44,10 @@ export class DecorationSlotComponent implements OnInit {
 	}
 
 	setTooltipItem() {
-		this.tooltipService.setItem(this.decoration);
+		this.tooltipService.setDecoration(this.decoration);
 	}
 
 	clearTooltipItem() {
-		this.tooltipService.setItem(null);
+		this.tooltipService.setDecoration(null);
 	}
 }

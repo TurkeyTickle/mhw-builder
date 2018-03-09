@@ -9,21 +9,27 @@ import { EquippedSkillsComponent } from './components/equipped-skills/equipped-s
 import { EquippedStatsComponent } from './components/equipped-stats/equipped-stats.component';
 import { ItemListComponent } from './components/item-list/item-list.component';
 import { ItemSlotComponent } from './components/item-slot/item-slot.component';
-import { ItemStatsComponent } from './components/item-stats/item-stats.component';
+import { ItemDetailsComponent } from './components/item-details/item-details.component';
 import { AppDataProvider } from './providers/app-data.provider';
 import { ItemsService } from './services/items.service';
 import { SkillService } from './services/skill.service';
 import { TooltipService } from './services/tooltip.service';
+import { TooltipComponent } from './components/tooltip/tooltip.component';
+import { SkillDetailsComponent } from './components/skill-details/skill-details.component';
+import { DecorationDetailsComponent } from './components/decoration-details/decoration-details.component';
 
 @NgModule({
 	declarations: [
 		AppComponent,
+		TooltipComponent,
 		ItemSlotComponent,
 		ItemListComponent,
 		EquippedStatsComponent,
 		EquippedSkillsComponent,
 		DecorationSlotComponent,
-		ItemStatsComponent
+		ItemDetailsComponent,
+		DecorationDetailsComponent,
+		SkillDetailsComponent,
 	],
 	imports: [
 		BrowserModule,

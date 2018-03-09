@@ -135,7 +135,7 @@ export class ItemListComponent implements OnInit {
 		this.decorationSelected.emit(newDecoration);
 	}
 
-	setTooltipItem(item: ItemModel | DecorationModel) {
+	setTooltipItem(item: ItemModel) {
 		this.tooltipService.setItem(item);
 	}
 
@@ -143,23 +143,16 @@ export class ItemListComponent implements OnInit {
 		this.tooltipService.setItem(null);
 	}
 
-	// getDamageIcons(item: ItemModel): string[] {
-	// 	const results = new Array<string>();
+	setTooltipDecoration(decoration: DecorationModel) {
+		this.tooltipService.setDecoration(decoration);
+	}
 
-	// 	if (item.element) {
-	// 		results.push(`assets/images/${item.element.toLowerCase()}${item.elementHidden ? '-gray' : ''}-icon.png`);
-	// 	}
-
-	// 	if (item.ailment) {
-	// 		results.push(`assets/images/${item.ailment.toLowerCase()}${item.ailmentHidden ? '-gray' : ''}-icon.png`);
-	// 	}
-
-	// 	return results;
-	// }
+	clearTooltipDecoration() {
+		this.tooltipService.setDecoration(null);
+	}
 
 	getElementIcon(item: ItemModel): string {
 		return `assets/images/${item.element.toLowerCase()}${item.elementHidden ? '-gray' : ''}-icon.png`;
-
 	}
 
 	getAilmentIcon(item: ItemModel): string {
