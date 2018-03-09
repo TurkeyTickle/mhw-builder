@@ -138,10 +138,15 @@ export class EquippedStatsComponent implements OnInit {
 		this.elementAttackMultiplier = 0;
 
 		this.passiveFireAttack = 0;
+		this.passiveFireAttackPercent = 0;
 		this.passiveWaterAttack = 0;
+		this.passiveWaterAttackPercent = 0;
 		this.passiveThunderAttack = 0;
+		this.passiveThunderAttackPercent = 0;
 		this.passiveIceAttack = 0;
+		this.passiveIceAttackPercent = 0;
 		this.passiveDragonAttack = 0;
+		this.passiveDragonAttackPercent = 0;
 		this.passivePoisonAttack = 0;
 		this.passivePoisonBuildupPercent = 0;
 		this.passiveSleepAttack = 0;
@@ -175,57 +180,19 @@ export class EquippedStatsComponent implements OnInit {
 	}
 
 	private updateStats(item: ItemModel) {
-		if (item.baseAttack) {
-			this.attack += item.baseAttack;
-		}
-
-		if (item.baseAffinityPercent) {
-			this.affinity += item.baseAffinityPercent;
-		}
-
-		if (item.baseDefense) {
-			this.defense += item.baseDefense;
-		}
-
-		if (item.fireResist) {
-			this.fireResist += item.fireResist;
-		}
-
-		if (item.waterResist) {
-			this.waterResist += item.waterResist;
-		}
-
-		if (item.thunderResist) {
-			this.thunderResist += item.thunderResist;
-		}
-
-		if (item.iceResist) {
-			this.iceResist += item.iceResist;
-		}
-
-		if (item.dragonResist) {
-			this.dragonResist += item.dragonResist;
-		}
-
-		if (item.element) {
-			this.element = item.element;
-		}
-
-		if (item.elementBaseAttack) {
-			this.baseElementAttack += item.elementBaseAttack;
-		}
-
-		if (item.ailment) {
-			this.ailment = item.ailment;
-		}
-
-		if (item.ailmentBaseAttack) {
-			this.baseAilmentAttack += item.ailmentBaseAttack;
-		}
-
-		if (item.elderseal) {
-			this.elderseal = item.elderseal;
-		}
+		if (item.baseAttack) { this.attack += item.baseAttack; }
+		if (item.baseAffinityPercent) { this.affinity += item.baseAffinityPercent; }
+		if (item.baseDefense) { this.defense += item.baseDefense; }
+		if (item.fireResist) { this.fireResist += item.fireResist; }
+		if (item.waterResist) { this.waterResist += item.waterResist; }
+		if (item.thunderResist) { this.thunderResist += item.thunderResist; }
+		if (item.iceResist) { this.iceResist += item.iceResist; }
+		if (item.dragonResist) { this.dragonResist += item.dragonResist; }
+		if (item.element) { this.element = item.element; }
+		if (item.elementBaseAttack) { this.baseElementAttack += item.elementBaseAttack; }
+		if (item.ailment) { this.ailment = item.ailment; }
+		if (item.ailmentBaseAttack) { this.baseAilmentAttack += item.ailmentBaseAttack; }
+		if (item.elderseal) { this.elderseal = item.elderseal; }
 	}
 
 	private updateSkills(items: ItemModel[], equippedSkills: EquippedSkillModel[]) {
@@ -251,135 +218,70 @@ export class EquippedStatsComponent implements OnInit {
 			}
 
 			if (level) {
-				if (level.passiveAttack) {
-					this.passiveAttack += level.passiveAttack;
-				}
+				if (level.passiveAttack) { this.passiveAttack += level.passiveAttack; }
+				if (level.activeAttack) { this.activeAttack += level.activeAttack; }
+				if (level.passiveAffinity) { this.passiveAffinity += level.passiveAffinity; }
+				if (level.activeAffinity) { this.activeAffinity += level.activeAffinity; }
+				if (level.weakPointAffinity) { this.weakPointAffinity += level.weakPointAffinity; }
 
-				if (level.activeAttack) {
-					this.activeAttack += level.activeAttack;
-				}
+				if (level.passiveCriticalBoostPercent) { this.passiveCriticalBoostPercent += level.passiveCriticalBoostPercent; }
 
-				if (level.passiveAffinity) {
-					this.passiveAffinity += level.passiveAffinity;
-				}
+				if (level.passiveFireAttack) { this.passiveFireAttack += level.passiveFireAttack; }
+				if (level.passiveWaterAttack) { this.passiveWaterAttack += level.passiveWaterAttack; }
+				if (level.passiveThunderAttack) { this.passiveThunderAttack += level.passiveThunderAttack; }
+				if (level.passiveIceAttack) { this.passiveIceAttack += level.passiveIceAttack; }
+				if (level.passiveDragonAttack) { this.passiveDragonAttack += level.passiveDragonAttack; }
 
-				if (level.activeAffinity) {
-					this.activeAffinity += level.activeAffinity;
-				}
+				if (level.passiveFireAttackPercent) { this.passiveFireAttackPercent += level.passiveFireAttackPercent; }
+				if (level.passiveWaterAttackPercent) { this.passiveWaterAttackPercent += level.passiveWaterAttackPercent; }
+				if (level.passiveThunderAttackPercent) { this.passiveThunderAttackPercent += level.passiveThunderAttackPercent; }
+				if (level.passiveIceAttackPercent) { this.passiveIceAttackPercent += level.passiveIceAttackPercent; }
+				if (level.passiveDragonAttackPercent) { this.passiveDragonAttackPercent += level.passiveDragonAttackPercent; }
 
-				if (level.weakPointAffinity) {
-					this.weakPointAffinity += level.weakPointAffinity;
-				}
+				if (level.passivePoisonAttack) { this.passivePoisonAttack += level.passivePoisonAttack; }
+				if (level.passiveSleepAttack) { this.passiveSleepAttack += level.passiveSleepAttack; }
+				if (level.passiveParalysisAttack) { this.passiveParalysisAttack += level.passiveParalysisAttack; }
+				if (level.passiveBlastAttack) { this.passiveBlastAttack += level.passiveBlastAttack; }
+				if (level.passiveStunAttack) { this.passiveStunAttack += level.passiveStunAttack; }
 
-				if (level.passiveCriticalBoostPercent) {
-					this.passiveCriticalBoostPercent += level.passiveCriticalBoostPercent;
-				}
+				if (level.passivePoisonBuildupPercent) { this.passivePoisonBuildupPercent += level.passivePoisonBuildupPercent; }
+				if (level.passiveSleepBuildupPercent) { this.passiveSleepBuildupPercent += level.passiveSleepBuildupPercent; }
+				if (level.passiveParalysisBuildupPercent) { this.passiveParalysisBuildupPercent += level.passiveParalysisBuildupPercent; }
+				if (level.passiveBlastBuildupPercent) { this.passiveBlastBuildupPercent += level.passiveBlastBuildupPercent; }
+				if (level.passiveStunBuildupPercent) { this.passiveStunBuildupPercent += level.passiveStunBuildupPercent; }
 
-				if (level.passiveFireAttack) {
-					this.passiveFireAttack += level.passiveFireAttack;
-				}
+				if (level.passiveDefense) { this.passiveDefense += level.passiveDefense; }
 
-				if (level.passiveWaterAttack) {
-					this.passiveWaterAttack += level.passiveWaterAttack;
-				}
+				if (level.passiveFireResist) { this.passiveFireResist += level.passiveFireResist; }
+				if (level.passiveWaterResist) { this.passiveWaterResist += level.passiveWaterResist; }
+				if (level.passiveThunderResist) { this.passiveThunderResist += level.passiveThunderResist; }
+				if (level.passiveIceResist) { this.passiveIceResist += level.passiveIceResist; }
+				if (level.passiveDragonResist) { this.passiveDragonResist += level.passiveDragonResist; }
 
-				if (level.passiveThunderAttack) {
-					this.passiveThunderAttack += level.passiveThunderAttack;
-				}
-
-				if (level.passiveIceAttack) {
-					this.passiveIceAttack += level.passiveIceAttack;
-				}
-
-				if (level.passiveDragonAttack) {
-					this.passiveDragonAttack += level.passiveDragonAttack;
-				}
-
-				if (level.passivePoisonAttack) {
-					this.passivePoisonAttack += level.passivePoisonAttack;
-				}
-
-				if (level.passiveSleepAttack) {
-					this.passiveSleepAttack += level.passiveSleepAttack;
-				}
-
-				if (level.passiveParalysisAttack) {
-					this.passiveParalysisAttack += level.passiveParalysisAttack;
-				}
-
-				if (level.passiveBlastAttack) {
-					this.passiveBlastAttack += level.passiveBlastAttack;
-				}
-
-				if (level.passiveStunAttack) {
-					this.passiveStunAttack += level.passiveStunAttack;
-				}
-
-				if (level.passivePoisonBuildupPercent) {
-					this.passivePoisonBuildupPercent += level.passivePoisonBuildupPercent;
-				}
-
-				if (level.passiveSleepBuildupPercent) {
-					this.passiveSleepBuildupPercent += level.passiveSleepBuildupPercent;
-				}
-
-				if (level.passiveParalysisBuildupPercent) {
-					this.passiveParalysisBuildupPercent += level.passiveParalysisBuildupPercent;
-				}
-
-				if (level.passiveBlastBuildupPercent) {
-					this.passiveBlastBuildupPercent += level.passiveBlastBuildupPercent;
-				}
-
-				if (level.passiveStunBuildupPercent) {
-					this.passiveStunBuildupPercent += level.passiveStunBuildupPercent;
-				}
-
-				if (level.passiveDefense) {
-					this.passiveDefense += level.passiveDefense;
-				}
-
-				if (level.passiveFireResist) {
-					this.passiveFireResist += level.passiveFireResist;
-				}
-
-				if (level.passiveWaterResist) {
-					this.passiveWaterResist += level.passiveWaterResist;
-				}
-
-				if (level.passiveThunderResist) {
-					this.passiveThunderResist += level.passiveThunderResist;
-				}
-
-				if (level.passiveIceResist) {
-					this.passiveIceResist += level.passiveIceResist;
-				}
-
-				if (level.passiveDragonResist) {
-					this.passiveDragonResist += level.passiveDragonResist;
-				}
-
-				if (level.hiddenElementUp) {
-					this.elementAttackMultiplier = level.hiddenElementUp;
-				}
+				if (level.hiddenElementUp) { this.elementAttackMultiplier = level.hiddenElementUp; }
 			}
 		}
 
 		switch (this.element) {
 			case ElementType.Fire:
 				this.effectivePassiveElementAttack = this.passiveFireAttack;
+				this.effectivePassiveElementAttack += this.nearestTen(this.baseElementAttack * (this.passiveFireAttackPercent / 100));
 				break;
 			case ElementType.Water:
 				this.effectivePassiveElementAttack = this.passiveWaterAttack;
+				this.effectivePassiveElementAttack += this.nearestTen(this.baseElementAttack * (this.passiveWaterAttackPercent / 100));
 				break;
 			case ElementType.Thunder:
 				this.effectivePassiveElementAttack = this.passiveThunderAttack;
+				this.effectivePassiveElementAttack += this.nearestTen(this.baseElementAttack * (this.passiveThunderAttackPercent / 100));
 				break;
 			case ElementType.Ice:
 				this.effectivePassiveElementAttack = this.passiveIceAttack;
+				this.effectivePassiveElementAttack += this.nearestTen(this.baseElementAttack * (this.passiveIceAttackPercent / 100));
 				break;
 			case ElementType.Dragon:
 				this.effectivePassiveElementAttack = this.passiveDragonAttack;
+				this.effectivePassiveElementAttack += this.nearestTen(this.baseElementAttack * (this.passiveDragonAttackPercent / 100));
 				break;
 			default:
 				break;
@@ -417,25 +319,29 @@ export class EquippedStatsComponent implements OnInit {
 		const ailmentAttackIncreaseCap = weapon ? weapon.elementAttackIncreaseCapOverride || this.defaultElementAttackIncreaseCap : this.defaultElementAttackIncreaseCap;
 
 		if (this.elementHidden) {
-			this.effectiveElementAttack = Math.ceil(Math.round(this.baseElementAttack * this.elementAttackMultiplier) / 10) * 10;
+			this.effectiveElementAttack = this.nearestTen(Math.round(this.baseElementAttack * this.elementAttackMultiplier));
 		} else {
 			this.effectiveElementAttack = this.baseElementAttack;
 		}
 
 		if (this.ailmentHidden) {
-			this.effectiveAilmentAttack = Math.ceil(Math.round(this.baseAilmentAttack * this.elementAttackMultiplier) / 10) * 10;
+			this.effectiveAilmentAttack = this.nearestTen(Math.round(this.baseAilmentAttack * this.elementAttackMultiplier));
 		} else {
 			this.effectiveAilmentAttack = this.baseAilmentAttack;
 		}
 
-		const elementCap = Math.ceil(Math.round(this.effectiveElementAttack + (this.effectiveElementAttack * elementAttackIncreaseCap)) / 10) * 10;
-		const ailmentCap = Math.ceil(Math.round(this.effectiveAilmentAttack + (this.effectiveAilmentAttack * ailmentAttackIncreaseCap)) / 10) * 10;
+		const elementCap = this.nearestTen(Math.round(this.effectiveElementAttack + (this.effectiveElementAttack * elementAttackIncreaseCap)));
+		const ailmentCap = this.nearestTen(Math.round(this.effectiveAilmentAttack + (this.effectiveAilmentAttack * ailmentAttackIncreaseCap)));
 
 		this.totalElementAttack = Math.min(this.effectiveElementAttack + this.effectivePassiveElementAttack, elementCap);
 		this.totalAilmentAttack = Math.min(this.effectiveAilmentAttack + this.effectivePassiveAilmentAttack, ailmentCap);
 
 		this.elementCapped = this.totalElementAttack > 0 && this.totalElementAttack >= elementCap;
 		this.ailmentCapped = this.totalAilmentAttack > 0 && this.totalAilmentAttack >= ailmentCap;
+	}
+
+	nearestTen(value: number): number {
+		return Math.round(value / 10) * 10;
 	}
 
 	getHiddenElemColor(): string {
