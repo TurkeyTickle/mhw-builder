@@ -1,13 +1,14 @@
 import { HttpClient } from '@angular/common/http';
-import { SeedModel } from '../models/seed.model';
-import { SkillModel } from '../models/skill.model';
 import { Injectable } from '@angular/core';
-import { ItemModel } from '../models/item.model';
-import { WeaponModifierModel } from '../models/weapon-modifier.model';
+import * as _ from 'lodash';
+
 import { DecorationModel } from '../models/decoration.model';
-import * as  _ from 'lodash';
-import { EquipmentCategoryType } from '../types/equipment-category.type';
+import { ItemModel } from '../models/item.model';
+import { SeedModel } from '../models/seed.model';
 import { SetBonusModel } from '../models/set-bonus.model';
+import { SkillModel } from '../models/skill.model';
+import { WeaponModifierModel } from '../models/weapon-modifier.model';
+import { EquipmentCategoryType } from '../types/equipment-category.type';
 
 @Injectable()
 export class AppDataProvider {

@@ -1,7 +1,8 @@
 import { Component, OnInit } from '@angular/core';
+
+import { EquippedSetBonusModel } from '../../models/equipped-set-bonus.model';
 import { EquippedSkillModel } from '../../models/equipped-skill.model';
 import { SkillService } from '../../services/skill.service';
-import { EquippedSetBonusModel } from '../../models/equipped-set-bonus.model';
 
 @Component({
 	selector: 'mhw-builder-equipped-skills',

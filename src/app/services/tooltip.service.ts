@@ -1,7 +1,8 @@
 import { Injectable } from '@angular/core';
-import { ItemModel } from '../models/item.model';
 import { Subject } from 'rxjs/Subject';
+
 import { DecorationModel } from '../models/decoration.model';
+import { ItemModel } from '../models/item.model';
 
 @Injectable()
 export class TooltipService {

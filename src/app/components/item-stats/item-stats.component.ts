@@ -1,9 +1,10 @@
 import { Component, OnInit } from '@angular/core';
-import { ItemModel } from '../../models/item.model';
-import { DecorationModel } from '../../models/decoration.model';
-import { ItemsService } from '../../services/items.service';
-import { SkillModel } from '../../models/skill.model';
 import * as _ from 'lodash';
+
+import { DecorationModel } from '../../models/decoration.model';
+import { ItemModel } from '../../models/item.model';
+import { SkillModel } from '../../models/skill.model';
+import { ItemsService } from '../../services/items.service';
 
 @Component({
 	selector: 'mhw-builder-item-stats',

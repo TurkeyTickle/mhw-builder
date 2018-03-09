@@ -1,10 +1,11 @@
 import { Injectable } from '@angular/core';
-import { ItemModel } from '../models/item.model';
-import { EquippedSkillModel } from '../models/equipped-skill.model';
 import * as _ from 'lodash';
-import { ItemsService } from './items.service';
+
 import { DecorationModel } from '../models/decoration.model';
 import { EquippedSetBonusModel } from '../models/equipped-set-bonus.model';
+import { EquippedSkillModel } from '../models/equipped-skill.model';
+import { ItemModel } from '../models/item.model';
+import { ItemsService } from './items.service';
 
 @Injectable()
 export class SkillService {

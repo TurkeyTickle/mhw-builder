@@ -1,12 +1,12 @@
-import { Component, OnInit, Input, Output, EventEmitter, ViewChildren, QueryList } from '@angular/core';
+import { Component, EventEmitter, Input, OnInit, Output, QueryList, ViewChildren } from '@angular/core';
+import * as _ from 'lodash';
+
+import { ChangeModel } from '../../models/change.model';
+import { DecorationModel } from '../../models/decoration.model';
 import { ItemModel } from '../../models/item.model';
+import { TooltipService } from '../../services/tooltip.service';
 import { ItemType } from '../../types/item.type';
 import { DecorationSlotComponent } from '../decoration-slot/decoration-slot.component';
-import { TooltipService } from '../../services/tooltip.service';
-import { DecorationModel } from '../../models/decoration.model';
-
-import * as _ from 'lodash';
-import { ChangeModel } from '../../models/change.model';
 
 @Component({
 	selector: 'mhw-builder-item-slot',

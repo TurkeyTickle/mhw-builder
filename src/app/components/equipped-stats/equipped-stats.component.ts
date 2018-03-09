@@ -1,12 +1,13 @@
 import { Component, OnInit } from '@angular/core';
-import { ItemModel } from '../../models/item.model';
-import { ItemsService } from '../../services/items.service';
-import { EquippedSkillModel } from '../../models/equipped-skill.model';
-import { SkillLevel } from '../../models/skill-level.model';
 import * as _ from 'lodash';
+
+import { EquippedSkillModel } from '../../models/equipped-skill.model';
+import { ItemModel } from '../../models/item.model';
+import { SkillLevel } from '../../models/skill-level.model';
+import { ItemsService } from '../../services/items.service';
 import { SkillService } from '../../services/skill.service';
-import { ElementType } from '../../types/element.type';
 import { AilmentType } from '../../types/ailment.type';
+import { ElementType } from '../../types/element.type';
 import { SharpnessType } from '../../types/sharpness.type';
 
 @Component({

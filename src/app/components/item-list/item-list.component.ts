@@ -1,11 +1,12 @@
-import { Component, OnInit, Input, Output, EventEmitter, ViewChild, ElementRef } from '@angular/core';
-import { ItemType } from '../../types/item.type';
-import { ItemModel } from '../../models/item.model';
-import { ItemsService } from '../../services/items.service';
+import { Component, ElementRef, EventEmitter, Input, OnInit, Output, ViewChild } from '@angular/core';
+
 import { DecorationModel } from '../../models/decoration.model';
-import { TooltipService } from '../../services/tooltip.service';
-import { SearchItemModel } from '../../models/search-item.model';
+import { ItemModel } from '../../models/item.model';
 import { SearchDecorationModel } from '../../models/search-decoration.model';
+import { SearchItemModel } from '../../models/search-item.model';
+import { ItemsService } from '../../services/items.service';
+import { TooltipService } from '../../services/tooltip.service';
+import { ItemType } from '../../types/item.type';
 
 @Component({
 	selector: 'mhw-builder-item-list',

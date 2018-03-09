@@ -1,8 +1,9 @@
-import { Component, OnInit, Output, EventEmitter, Input } from '@angular/core';
-import { DecorationModel } from '../../models/decoration.model';
-import { TooltipService } from '../../services/tooltip.service';
+import { Component, EventEmitter, Input, OnInit, Output } from '@angular/core';
+
 import { ChangeModel } from '../../models/change.model';
+import { DecorationModel } from '../../models/decoration.model';
 import { ItemModel } from '../../models/item.model';
+import { TooltipService } from '../../services/tooltip.service';
 
 @Component({
 	selector: 'mhw-builder-decoration-slot',

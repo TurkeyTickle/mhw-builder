@@ -1,12 +1,12 @@
-import { SharpnessType } from '../types/sharpness.type';
-import { ElementType } from '../types/element.type';
-import { EldersealType } from '../types/elderseal.type';
-import { SlotModel } from './slot.model';
-import { ItemType } from '../types/item.type';
-import { ItemSkillModel } from './item-skill.model';
-import { WeaponType } from '../types/weapon.type';
-import { EquipmentCategoryType } from '../types/equipment-category.type';
 import { AilmentType } from '../types/ailment.type';
+import { EldersealType } from '../types/elderseal.type';
+import { ElementType } from '../types/element.type';
+import { EquipmentCategoryType } from '../types/equipment-category.type';
+import { ItemType } from '../types/item.type';
+import { SharpnessType } from '../types/sharpness.type';
+import { WeaponType } from '../types/weapon.type';
+import { ItemSkillModel } from './item-skill.model';
+import { SlotModel } from './slot.model';
 
 export class ItemModel {
 	id: number;

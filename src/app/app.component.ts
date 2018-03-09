@@ -1,20 +1,20 @@
-import { Component, ViewChild, ElementRef, OnInit, Renderer2, AfterContentInit, AfterViewInit, ChangeDetectorRef } from '@angular/core';
 import { Location } from '@angular/common';
-import { EquippedStatsComponent } from './components/equipped-stats/equipped-stats.component';
-import { EquippedSkillsComponent } from './components/equipped-skills/equipped-skills.component';
-import { ItemStatsComponent } from './components/item-stats/item-stats.component';
+import { AfterContentInit, AfterViewInit, ChangeDetectorRef, Component, ElementRef, OnInit, Renderer2, ViewChild } from '@angular/core';
+import * as _ from 'lodash';
+
 import { DecorationSlotComponent } from './components/decoration-slot/decoration-slot.component';
-import { ItemSlotComponent, ItemSlotClearModel } from './components/item-slot/item-slot.component';
-import { ItemType } from './types/item.type';
-import { ItemModel } from './models/item.model';
+import { EquippedSkillsComponent } from './components/equipped-skills/equipped-skills.component';
+import { EquippedStatsComponent } from './components/equipped-stats/equipped-stats.component';
+import { ItemListComponent } from './components/item-list/item-list.component';
+import { ItemSlotClearModel, ItemSlotComponent } from './components/item-slot/item-slot.component';
+import { ItemStatsComponent } from './components/item-stats/item-stats.component';
 import { DecorationModel } from './models/decoration.model';
+import { ItemModel } from './models/item.model';
+import { ItemsService } from './services/items.service';
 import { SkillService } from './services/skill.service';
 import { TooltipService } from './services/tooltip.service';
-
-import * as _ from 'lodash';
 import { EquipmentCategoryType } from './types/equipment-category.type';
-import { ItemsService } from './services/items.service';
-import { ItemListComponent } from './components/item-list/item-list.component';
+import { ItemType } from './types/item.type';
 
 @Component({
 	selector: 'mhw-builder-root',
