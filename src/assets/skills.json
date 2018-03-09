@@ -732,7 +732,7 @@
 	{
 		"id": "peakPerformance",
 		"name": "Peak Performance",
-		"description": "Increases attack when your health is full",
+		"description": "Increases attack when your health is full.",
 		"levels": [
 			{
 				"description": "While active, grants attack +5.",

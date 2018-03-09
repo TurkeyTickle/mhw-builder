@@ -2,5 +2,5 @@
 	<div #container class="container" [hidden]="!visible">
 		<mhw-builder-item-details *ngIf="item" [item]="item"></mhw-builder-item-details>
 		<mhw-builder-decoration-details *ngIf="decoration" [decoration]="decoration"></mhw-builder-decoration-details>
-		<mhw-builder-skill-details *ngIf="skill" [skill]="skill"></mhw-builder-skill-details>
+		<mhw-builder-skill-details *ngIf="equippedSkill || skill" [equippedSkill]="equippedSkill" [skill]="skill"></mhw-builder-skill-details>
 	</div>

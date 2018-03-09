@@ -4,6 +4,7 @@ import { ItemModel } from '../../models/item.model';
 import { DecorationModel } from '../../models/decoration.model';
 import { SkillModel } from '../../models/skill.model';
 import { AnchorType } from '../../types/anchor.type';
+import { EquippedSkillModel } from '../../models/equipped-skill.model';
 
 @Component({
 	selector: 'mhw-builder-tooltip',
@@ -16,6 +17,7 @@ export class TooltipComponent implements OnInit {
 
 	item: ItemModel;
 	decoration: DecorationModel;
+	equippedSkill: EquippedSkillModel;
 	skill: SkillModel;
 	visible: boolean;
 
@@ -45,20 +47,32 @@ export class TooltipComponent implements OnInit {
 			}
 		});
 
-		// this.tooltipService.skillSubject.subscribe(skill => {
-		// 	if (!skill) {
-		// 		this.hide();
-		// 	} else {
-		// 		this.reset();
-		// 		this.skill = skill;
-		// 		this.show();
-		// 	}
-		// });
+		this.tooltipService.equippedSkillSubject.subscribe(equippedSkill => {
+			if (!equippedSkill) {
+				this.hide();
+			} else {
+				this.reset();
+				this.equippedSkill = equippedSkill;
+				this.skill = equippedSkill.skill;
+				this.show();
+			}
+		});
+
+		this.tooltipService.skillSubject.subscribe(skill => {
+			if (!skill) {
+				this.hide();
+			} else {
+				this.reset();
+				this.skill = skill;
+				this.show();
+			}
+		});
 	}
 
 	reset() {
 		this.item = null;
 		this.decoration = null;
+		this.equippedSkill = null;
 		this.skill = null;
 	}
 
@@ -76,13 +90,13 @@ export class TooltipComponent implements OnInit {
 			let newRight = 0;
 			let newLeft = 0;
 
-			if (this.tooltipService.anchorPoint == AnchorType.TopLeft) {
+			if (this.tooltipService.anchorPoint === AnchorType.TopLeft) {
 				newLeft = x + 40;
 
 				if (window.innerWidth < newLeft + this.container.nativeElement.scrollWidth) {
 					newLeft = window.innerWidth - this.container.nativeElement.scrollWidth;
 				}
-			} else if (this.tooltipService.anchorPoint == AnchorType.TopRight) {
+			} else if (this.tooltipService.anchorPoint === AnchorType.TopRight) {
 				newRight = window.innerWidth - x + 40;
 
 				if (window.innerWidth < newRight + this.container.nativeElement.scrollWidth) {
@@ -90,7 +104,7 @@ export class TooltipComponent implements OnInit {
 				}
 			}
 
-			if (window.innerHeight < newTop + this.container.nativeElement.scrollHeight) {
+			if (window.innerHeight - 20 < newTop + this.container.nativeElement.scrollHeight) {
 				newTop = window.innerHeight - this.container.nativeElement.scrollHeight - 20;
 			}
 
