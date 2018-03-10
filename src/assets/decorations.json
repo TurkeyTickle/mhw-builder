@@ -610,6 +610,16 @@
 		]
 	},
 	{
+		"name": "Potential Jewel 2",
+		"level": 2,
+		"skills": [
+			{
+				"id": "heroics",
+				"level": 1
+			}
+		]
+	},
+	{
 		"name": "Earplugs Jewel 3",
 		"level": 3,
 		"skills": [
