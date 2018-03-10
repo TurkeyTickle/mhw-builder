@@ -361,7 +361,7 @@
 		"baseDefense": 60,
 		"fireResist": -2,
 		"waterResist": 0,
-		"thunderResist": 1,
+		"thunderResist": -1,
 		"iceResist": -1,
 		"dragonResist": 4,
 		"skills": [
@@ -382,7 +382,7 @@
 		"baseDefense": 60,
 		"fireResist": -2,
 		"waterResist": 0,
-		"thunderResist": 1,
+		"thunderResist": -1,
 		"iceResist": -1,
 		"dragonResist": 4,
 		"skills": [
