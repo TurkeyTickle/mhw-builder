@@ -1,1094 +1,1190 @@
 [
-	{
-		"name": "Poison Charm",
-		"itemType": "Charm",
-		"levels": 3,
-		"skills": [
-			{
-				"id": "poisonResistance",
-				"level": 1
-			}
-		]
-	},
-	{
-		"name": "Attack Charm",
-		"itemType": "Charm",
-		"levels": 3,
-		"skills": [
-			{
-				"id": "attackBoost",
-				"level": 1
-			}
-		]
-	},
-	{
-		"name": "Defense Charm",
-		"itemType": "Charm",
-		"levels": 3,
-		"skills": [
-			{
-				"id": "defenseBoost",
-				"level": 1
-			}
-		]
-	},
-	{
-		"name": "Paralysis Charm",
-		"itemType": "Charm",
-		"levels": 3,
-		"skills": [
-			{
-				"id": "paralysisResistance",
-				"level": 1
-			}
-		]
-	},
-	{
-		"name": "Sleep Charm",
-		"itemType": "Charm",
-		"levels": 3,
-		"skills": [
-			{
-				"id": "sleepResistance",
-				"level": 1
-			}
-		]
-	},
-	{
-		"name": "Stun Charm",
-		"itemType": "Charm",
-		"levels": 3,
-		"skills": [
-			{
-				"id": "stunResistance",
-				"level": 1
-			}
-		]
-	},
-	{
-		"name": "Windproof Charm",
-		"itemType": "Charm",
-		"levels": 3,
-		"skills": [
-			{
-				"id": "windproof",
-				"level": 1
-			}
-		]
-	},
-	{
-		"name": "Health Charm",
-		"itemType": "Charm",
-		"levels": 3,
-		"skills": [
-			{
-				"id": "healthBoost",
-				"level": 1
-			}
-		]
-	},
-	{
-		"name": "Recovery Charm",
-		"itemType": "Charm",
-		"levels": 3,
-		"skills": [
-			{
-				"id": "recoveryUp",
-				"level": 1
-			}
-		]
-	},
-	{
-		"name": "Fire Charm",
-		"itemType": "Charm",
-		"levels": 3,
-		"skills": [
-			{
-				"id": "fireResistance",
-				"level": 1
-			}
-		]
-	},
-	{
-		"name": "Water Charm",
-		"itemType": "Charm",
-		"levels": 3,
-		"skills": [
-			{
-				"id": "waterResistance",
-				"level": 1
-			}
-		]
-	},
-	{
-		"name": "Thunder Charm",
-		"itemType": "Charm",
-		"levels": 3,
-		"skills": [
-			{
-				"id": "thunderResistance",
-				"level": 1
-			}
-		]
-	},
-	{
-		"name": "Blaze Charm",
-		"itemType": "Charm",
-		"levels": 3,
-		"skills": [
-			{
-				"id": "fireAttack",
-				"level": 1
-			}
-		]
-	},
-	{
-		"name": "Flood Charm",
-		"itemType": "Charm",
-		"levels": 3,
-		"skills": [
-			{
-				"id": "waterAttack",
-				"level": 1
-			}
-		]
-	},
-	{
-		"name": "Shock Charm",
-		"itemType": "Charm",
-		"levels": 3,
-		"skills": [
-			{
-				"id": "thunderAttack",
-				"level": 1
-			}
-		]
-	},
-	{
-		"name": "Venom Charm",
-		"itemType": "Charm",
-		"levels": 3,
-		"skills": [
-			{
-				"id": "poisonAttack",
-				"level": 1
-			}
-		]
-	},
-	{
-		"name": "Immobilize Charm",
-		"itemType": "Charm",
-		"levels": 3,
-		"skills": [
-			{
-				"id": "paralysisAttack",
-				"level": 1
-			}
-		]
-	},
-	{
-		"name": "Tranq Charm",
-		"itemType": "Charm",
-		"levels": 3,
-		"skills": [
-			{
-				"id": "sleepAttack",
-				"level": 1
-			}
-		]
-	},
-	{
-		"name": "KO Charm",
-		"itemType": "Charm",
-		"levels": 3,
-		"skills": [
-			{
-				"id": "slugger",
-				"level": 1
-			}
-		]
-	},
-	{
-		"name": "Enervate Charm",
-		"itemType": "Charm",
-		"levels": 3,
-		"skills": [
-			{
-				"id": "staminaThief",
-				"level": 1
-			}
-		]
-	},
-	{
-		"name": "Artillery Charm",
-		"itemType": "Charm",
-		"levels": 3,
-		"skills": [
-			{
-				"id": "artillery",
-				"level": 1
-			}
-		]
-	},
-	{
-		"name": "Hungerless Charm",
-		"itemType": "Charm",
-		"levels": 3,
-		"skills": [
-			{
-				"id": "hungerResistance",
-				"level": 1
-			}
-		]
-	},
-	{
-		"name": "Ironside Charm",
-		"itemType": "Charm",
-		"levels": 3,
-		"skills": [
-			{
-				"id": "guard",
-				"level": 1
-			}
-		]
-	},
-	{
-		"name": "Friendship Charm",
-		"itemType": "Charm",
-		"levels": 3,
-		"skills": [
-			{
-				"id": "wideRange",
-				"level": 1
-			}
-		]
-	},
-	{
-		"name": "Extension Charm",
-		"itemType": "Charm",
-		"levels": 3,
-		"skills": [
-			{
-				"id": "itemProlonger",
-				"level": 1
-			}
-		]
-	},
-	{
-		"name": "Glutton's Charm",
-		"itemType": "Charm",
-		"levels": 3,
-		"skills": [
-			{
-				"id": "speedEating",
-				"level": 1
-			}
-		]
-	},
-	{
-		"name": "Blessing Charm",
-		"itemType": "Charm",
-		"levels": 3,
-		"skills": [
-			{
-				"id": "divineBlessing",
-				"level": 1
-			}
-		]
-	},
-	{
-		"name": "Rally Charm",
-		"itemType": "Charm",
-		"levels": 3,
-		"skills": [
-			{
-				"id": "palicoRally",
-				"level": 1
-			}
-		]
-	},
-	{
-		"name": "Botany Charm",
-		"itemType": "Charm",
-		"levels": 3,
-		"skills": [
-			{
-				"id": "botanist",
-				"level": 1
-			}
-		]
-	},
-	{
-		"name": "Geology Charm",
-		"itemType": "Charm",
-		"levels": 3,
-		"skills": [
-			{
-				"id": "geologist",
-				"level": 1
-			}
-		]
-	},
-	{
-		"name": "Slinger Charm",
-		"itemType": "Charm",
-		"levels": 3,
-		"skills": [
-			{
-				"id": "slingerCapacity",
-				"level": 1
-			}
-		]
-	},
-	{
-		"name": "Stealth Charm",
-		"itemType": "Charm",
-		"levels": 3,
-		"skills": [
-			{
-				"id": "stealth",
-				"level": 1
-			}
-		]
-	},
-	{
-		"name": "Smoke Charm",
-		"itemType": "Charm",
-		"levels": 3,
-		"skills": [
-			{
-				"id": "sporepuffExpert",
-				"level": 1
-			}
-		]
-	},
-	{
-		"name": "Mirewalker Charm",
-		"itemType": "Charm",
-		"levels": 3,
-		"skills": [
-			{
-				"id": "aquaticExpert",
-				"level": 1
-			}
-		]
-	},
-	{
-		"name": "Insect Charm",
-		"itemType": "Charm",
-		"levels": 3,
-		"skills": [
-			{
-				"id": "entomologist",
-				"level": 1
-			}
-		]
-	},
-	{
-		"name": "Intimidator Charm",
-		"itemType": "Charm",
-		"levels": 3,
-		"skills": [
-			{
-				"id": "intimidator",
-				"level": 1
-			}
-		]
-	},
-	{
-		"name": "Heavy Artillery Charm",
-		"itemType": "Charm",
-		"levels": 3,
-		"skills": [
-			{
-				"id": "heavyArtillery",
-				"level": 1
-			}
-		]
-	},
-	{
-		"name": "Light Eater's Charm",
-		"itemType": "Charm",
-		"levels": 3,
-		"skills": [
-			{
-				"id": "freeMeal",
-				"level": 1
-			}
-		]
-	},
-	{
-		"name": "Tracker Charm",
-		"itemType": "Charm",
-		"levels": 3,
-		"skills": [
-			{
-				"id": "scenthound",
-				"level": 1
-			}
-		]
-	},
-	{
-		"name": "Fortification Charm",
-		"itemType": "Charm",
-		"levels": 1,
-		"skills": [
-			{
-				"id": "fortify",
-				"level": 1
-			}
-		]
-	},
-	{
-		"name": "Performer's Charm",
-		"itemType": "Charm",
-		"levels": 1,
-		"skills": [
-			{
-				"id": "hornMaestro",
-				"level": 1
-			}
-		]
-	},
-	{
-		"name": "Capacity Charm",
-		"itemType": "Charm",
-		"levels": 1,
-		"skills": [
-			{
-				"id": "capacityBoost",
-				"level": 1
-			}
-		]
-	},
-	{
-		"name": "Bleed Charm",
-		"itemType": "Charm",
-		"levels": 3,
-		"skills": [
-			{
-				"id": "bleedingResistance",
-				"level": 1
-			}
-		]
-	},
-	{
-		"name": "Speed Heal Charm",
-		"itemType": "Charm",
-		"levels": 3,
-		"skills": [
-			{
-				"id": "recoverySpeed",
-				"level": 1
-			}
-		]
-	},
-	{
-		"name": "Ice Charm",
-		"itemType": "Charm",
-		"levels": 3,
-		"skills": [
-			{
-				"id": "iceResistance",
-				"level": 1
-			}
-		]
-	},
-	{
-		"name": "Blight Charm",
-		"itemType": "Charm",
-		"levels": 3,
-		"skills": [
-			{
-				"id": "blightResistance",
-				"level": 1
-			}
-		]
-	},
-	{
-		"name": "Frost Charm",
-		"itemType": "Charm",
-		"levels": 3,
-		"skills": [
-			{
-				"id": "iceAttack",
-				"level": 1
-			}
-		]
-	},
-	{
-		"name": "Master's Charm",
-		"itemType": "Charm",
-		"levels": 3,
-		"skills": [
-			{
-				"id": "criticalEye",
-				"level": 1
-			}
-		]
-	},
-	{
-		"name": "Evasion Charm",
-		"itemType": "Charm",
-		"levels": 3,
-		"skills": [
-			{
-				"id": "evadeWindow",
-				"level": 1
-			}
-		]
-	},
-	{
-		"name": "Sheath Charm",
-		"itemType": "Charm",
-		"levels": 3,
-		"skills": [
-			{
-				"id": "quickSheath",
-				"level": 1
-			}
-		]
-	},
-	{
-		"name": "Whetstone Charm",
-		"itemType": "Charm",
-		"levels": 3,
-		"skills": [
-			{
-				"id": "speedSharpening",
-				"level": 1
-			}
-		]
-	},
-	{
-		"name": "Blast Charm",
-		"itemType": "Charm",
-		"levels": 3,
-		"skills": [
-			{
-				"id": "blastResistance",
-				"level": 1
-			}
-		]
-	},
-	{
-		"name": "Dragon Charm",
-		"itemType": "Charm",
-		"levels": 3,
-		"skills": [
-			{
-				"id": "dragonResistance",
-				"level": 1
-			}
-		]
-	},
-	{
-		"name": "Wyrmsbane Charm",
-		"itemType": "Charm",
-		"levels": 3,
-		"skills": [
-			{
-				"id": "dragonAttack",
-				"level": 1
-			}
-		]
-	},
-	{
-		"name": "Demolition Charm",
-		"itemType": "Charm",
-		"levels": 3,
-		"skills": [
-			{
-				"id": "blastAttack",
-				"level": 1
-			}
-		]
-	},
-	{
-		"name": "Draw Charm",
-		"itemType": "Charm",
-		"levels": 2,
-		"skills": [
-			{
-				"id": "criticalDraw",
-				"level": 1
-			}
-		]
-	},
-	{
-		"name": "Trickshot Charm",
-		"itemType": "Charm",
-		"levels": 2,
-		"skills": [
-			{
-				"id": "specialAmmoBoost",
-				"level": 1
-			}
-		]
-	},
-	{
-		"name": "Marathon Charm",
-		"itemType": "Charm",
-		"levels": 2,
-		"skills": [
-			{
-				"id": "marathonRunner",
-				"level": 1
-			}
-		]
-	},
-	{
-		"name": "Fitness Charm",
-		"itemType": "Charm",
-		"levels": 3,
-		"skills": [
-			{
-				"id": "constitution",
-				"level": 1
-			}
-		]
-	},
-	{
-		"name": "Surge Charm",
-		"itemType": "Charm",
-		"levels": 2,
-		"skills": [
-			{
-				"id": "staminaSurge",
-				"level": 1
-			}
-		]
-	},
-	{
-		"name": "Leaping Charm",
-		"itemType": "Charm",
-		"levels": 2,
-		"skills": [
-			{
-				"id": "evadeExtender",
-				"level": 1
-			}
-		]
-	},
-	{
-		"name": "Bombardier Charm",
-		"itemType": "Charm",
-		"levels": 3,
-		"skills": [
-			{
-				"id": "bombardier",
-				"level": 1
-			}
-		]
-	},
-	{
-		"name": "Mushroom Charm",
-		"itemType": "Charm",
-		"levels": 2,
-		"skills": [
-			{
-				"id": "mushroomancer",
-				"level": 1
-			}
-		]
-	},
-	{
-		"name": "Awakening Charm",
-		"itemType": "Charm",
-		"levels": 2,
-		"skills": [
-			{
-				"id": "freeElemAmmoUp",
-				"level": 1
-			}
-		]
-	},
-	{
-		"name": "Handicraft Charm",
-		"itemType": "Charm",
-		"levels": 3,
-		"skills": [
-			{
-				"id": "handicraft",
-				"level": 1
-			}
-		]
-	},
-	{
-		"name": "Mud Puppy Charm",
-		"itemType": "Charm",
-		"levels": 1,
-		"skills": [
-			{
-				"id": "muckResistance",
-				"level": 1
-			},
-			{
-				"id": "leapOfFaith",
-				"level": 1
-			}
-		]
-	},
-	{
-		"name": "Trickshot Charm",
-		"itemType": "Charm",
-		"levels": 1,
-		"skills": [
-			{
-				"id": "dungmaster",
-				"level": 1
-			},
-			{
-				"id": "blindsider",
-				"level": 1
-			}
-		]
-	},
-	{
-		"name": "Hunter's Life Charm",
-		"itemType": "Charm",
-		"levels": 1,
-		"skills": [
-			{
-				"id": "bbqMaster",
-				"level": 1
-			},
-			{
-				"id": "masterFisher",
-				"level": 1
-			}
-		]
-	},
-	{
-		"name": "Procurer's Charm",
-		"itemType": "Charm",
-		"levels": 1,
-		"skills": [
-			{
-				"id": "proTransporter",
-				"level": 1
-			},
-			{
-				"id": "honeyHunter",
-				"level": 1
-			}
-		]
-	},
-	{
-		"name": "Gatherer's Charm",
-		"itemType": "Charm",
-		"levels": 1,
-		"skills": [
-			{
-				"id": "masterGatherer",
-				"level": 1
-			},
-			{
-				"id": "carvingPro",
-				"level": 1
-			}
-		]
-	},
-	{
-		"name": "Guard Charm",
-		"itemType": "Charm",
-		"levels": 3,
-		"skills": [
-			{
-				"id": "ironSkin",
-				"level": 1
-			}
-		]
-	},
-	{
-		"name": "Earplugs Charm",
-		"itemType": "Charm",
-		"levels": 3,
-		"skills": [
-			{
-				"id": "earplugs",
-				"level": 1
-			}
-		]
-	},
-	{
-		"name": "Tremor Charm",
-		"itemType": "Charm",
-		"levels": 2,
-		"skills": [
-			{
-				"id": "tremorResistance",
-				"level": 1
-			}
-		]
-	},
-	{
-		"name": "Exploiter Charm",
-		"itemType": "Charm",
-		"levels": 2,
-		"skills": [
-			{
-				"id": "weaknessExploit",
-				"level": 1
-			}
-		]
-	},
-	{
-		"name": "Focus Charm",
-		"itemType": "Charm",
-		"levels": 2,
-		"skills": [
-			{
-				"id": "focus",
-				"level": 1
-			}
-		]
-	},
-	{
-		"name": "Breaker Charm",
-		"itemType": "Charm",
-		"levels": 2,
-		"skills": [
-			{
-				"id": "partbreaker",
-				"level": 1
-			}
-		]
-	},
-	{
-		"name": "Fury Charm",
-		"itemType": "Charm",
-		"levels": 2,
-		"skills": [
-			{
-				"id": "resentment",
-				"level": 1
-			}
-		]
-	},
-	{
-		"name": "Grit Charm",
-		"itemType": "Charm",
-		"levels": 2,
-		"skills": [
-			{
-				"id": "heroics",
-				"level": 1
-			}
-		]
-	},
-	{
-		"name": "Maintenance Charm",
-		"itemType": "Charm",
-		"levels": 3,
-		"skills": [
-			{
-				"id": "toolSpecialist",
-				"level": 1
-			}
-		]
-	},
-	{
-		"name": "Power Charm",
-		"itemType": "Charm",
-		"levels": 2,
-		"skills": [
-			{
-				"id": "latentPower",
-				"level": 1
-			}
-		]
-	},
-	{
-		"name": "Challenger Charm",
-		"itemType": "Charm",
-		"levels": 2,
-		"skills": [
-			{
-				"id": "agitator",
-				"level": 1
-			}
-		]
-	},
-	{
-		"name": "Unscathed Charm",
-		"itemType": "Charm",
-		"levels": 2,
-		"skills": [
-			{
-				"id": "peakPerformance",
-				"level": 1
-			}
-		]
-	},
-	{
-		"name": "Mighty Charm",
-		"itemType": "Charm",
-		"levels": 2,
-		"skills": [
-			{
-				"id": "maximumMight",
-				"level": 1
-			}
-		]
-	},
-	{
-		"name": "Impact Charm",
-		"itemType": "Charm",
-		"levels": 2,
-		"skills": [
-			{
-				"id": "flinchFree",
-				"level": 1
-			}
-		]
-	},
-	{
-		"name": "Miasma Charm",
-		"itemType": "Charm",
-		"levels": 3,
-		"skills": [
-			{
-				"id": "effluviaResistance",
-				"level": 1
-			}
-		]
-	},
-	{
-		"name": "Normal Shots Charm",
-		"itemType": "Charm",
-		"levels": 1,
-		"skills": [
-			{
-				"id": "normalShots",
-				"level": 1
-			}
-		]
-	},
-	{
-		"name": "Clearmind Charm",
-		"itemType": "Charm",
-		"levels": 1,
-		"skills": [
-			{
-				"id": "heatGuard",
-				"level": 1
-			},
-			{
-				"id": "effluvialExpert",
-				"level": 1
-			}
-		]
-	},
-	{
-		"name": "Rider's Charm",
-		"itemType": "Charm",
-		"levels": 1,
-		"skills": [
-			{
-				"id": "masterMounter",
-				"level": 1
-			},
-			{
-				"id": "jumpMaster",
-				"level": 1
-			}
-		]
-	},
-	{
-		"name": "Surveyor's Charm",
-		"itemType": "Charm",
-		"levels": 1,
-		"skills": [
-			{
-				"id": "scoutflyRangeUp",
-				"level": 1
-			},
-			{
-				"id": "scholar",
-				"level": 1
-			}
-		]
-	},
-	{
-		"name": "Critical Charm",
-		"itemType": "Charm",
-		"levels": 1,
-		"skills": [
-			{
-				"id": "criticalBoost",
-				"level": 1
-			}
-		]
-	},
-	{
-		"name": "Invigorate Charm",
-		"itemType": "Charm",
-		"levels": 2,
-		"skills": [
-			{
-				"id": "powerProlonger",
-				"level": 1
-			}
-		]
-	},
-	{
-		"name": "Poison Coating Charm",
-		"itemType": "Charm",
-		"levels": 1,
-		"skills": [
-			{
-				"id": "poisonFunctionality",
-				"level": 1
-			}
-		]
-	},
-	{
-		"name": "Para Coating Charm",
-		"itemType": "Charm",
-		"levels": 1,
-		"skills": [
-			{
-				"id": "paraFunctionality",
-				"level": 1
-			}
-		]
-	},
-	{
-		"name": "Sleep Coating Charm",
-		"itemType": "Charm",
-		"levels": 1,
-		"skills": [
-			{
-				"id": "sleepFunctionality",
-				"level": 1
-			}
-		]
-	},
-	{
-		"name": "Blast Coating Charm",
-		"itemType": "Charm",
-		"levels": 1,
-		"skills": [
-			{
-				"id": "blastFunctionality",
-				"level": 1
-			}
-		]
-	},
-	{
-		"name": "Geomancy Charm",
-		"itemType": "Charm",
-		"levels": 1,
-		"skills": [
-			{
-				"id": "foragersLuck",
-				"level": 1
-			},
-			{
-				"id": "detector",
-				"level": 1
-			}
-		]
-	}
+  {
+    "name": "Poison Charm",
+    "itemType": "Charm",
+    "levels": 3,
+    "skills": [
+      {
+        "id": "poisonResistance",
+        "level": 1
+      }
+    ],
+    "id": 225
+  },
+  {
+    "name": "Attack Charm",
+    "itemType": "Charm",
+    "levels": 3,
+    "skills": [
+      {
+        "id": "attackBoost",
+        "level": 1
+      }
+    ],
+    "id": 226
+  },
+  {
+    "name": "Defense Charm",
+    "itemType": "Charm",
+    "levels": 3,
+    "skills": [
+      {
+        "id": "defenseBoost",
+        "level": 1
+      }
+    ],
+    "id": 227
+  },
+  {
+    "name": "Paralysis Charm",
+    "itemType": "Charm",
+    "levels": 3,
+    "skills": [
+      {
+        "id": "paralysisResistance",
+        "level": 1
+      }
+    ],
+    "id": 228
+  },
+  {
+    "name": "Sleep Charm",
+    "itemType": "Charm",
+    "levels": 3,
+    "skills": [
+      {
+        "id": "sleepResistance",
+        "level": 1
+      }
+    ],
+    "id": 229
+  },
+  {
+    "name": "Stun Charm",
+    "itemType": "Charm",
+    "levels": 3,
+    "skills": [
+      {
+        "id": "stunResistance",
+        "level": 1
+      }
+    ],
+    "id": 230
+  },
+  {
+    "name": "Windproof Charm",
+    "itemType": "Charm",
+    "levels": 3,
+    "skills": [
+      {
+        "id": "windproof",
+        "level": 1
+      }
+    ],
+    "id": 231
+  },
+  {
+    "name": "Health Charm",
+    "itemType": "Charm",
+    "levels": 3,
+    "skills": [
+      {
+        "id": "healthBoost",
+        "level": 1
+      }
+    ],
+    "id": 232
+  },
+  {
+    "name": "Recovery Charm",
+    "itemType": "Charm",
+    "levels": 3,
+    "skills": [
+      {
+        "id": "recoveryUp",
+        "level": 1
+      }
+    ],
+    "id": 233
+  },
+  {
+    "name": "Fire Charm",
+    "itemType": "Charm",
+    "levels": 3,
+    "skills": [
+      {
+        "id": "fireResistance",
+        "level": 1
+      }
+    ],
+    "id": 234
+  },
+  {
+    "name": "Water Charm",
+    "itemType": "Charm",
+    "levels": 3,
+    "skills": [
+      {
+        "id": "waterResistance",
+        "level": 1
+      }
+    ],
+    "id": 235
+  },
+  {
+    "name": "Thunder Charm",
+    "itemType": "Charm",
+    "levels": 3,
+    "skills": [
+      {
+        "id": "thunderResistance",
+        "level": 1
+      }
+    ],
+    "id": 236
+  },
+  {
+    "name": "Blaze Charm",
+    "itemType": "Charm",
+    "levels": 3,
+    "skills": [
+      {
+        "id": "fireAttack",
+        "level": 1
+      }
+    ],
+    "id": 237
+  },
+  {
+    "name": "Flood Charm",
+    "itemType": "Charm",
+    "levels": 3,
+    "skills": [
+      {
+        "id": "waterAttack",
+        "level": 1
+      }
+    ],
+    "id": 238
+  },
+  {
+    "name": "Shock Charm",
+    "itemType": "Charm",
+    "levels": 3,
+    "skills": [
+      {
+        "id": "thunderAttack",
+        "level": 1
+      }
+    ],
+    "id": 239
+  },
+  {
+    "name": "Venom Charm",
+    "itemType": "Charm",
+    "levels": 3,
+    "skills": [
+      {
+        "id": "poisonAttack",
+        "level": 1
+      }
+    ],
+    "id": 240
+  },
+  {
+    "name": "Immobilize Charm",
+    "itemType": "Charm",
+    "levels": 3,
+    "skills": [
+      {
+        "id": "paralysisAttack",
+        "level": 1
+      }
+    ],
+    "id": 241
+  },
+  {
+    "name": "Tranq Charm",
+    "itemType": "Charm",
+    "levels": 3,
+    "skills": [
+      {
+        "id": "sleepAttack",
+        "level": 1
+      }
+    ],
+    "id": 242
+  },
+  {
+    "name": "KO Charm",
+    "itemType": "Charm",
+    "levels": 3,
+    "skills": [
+      {
+        "id": "slugger",
+        "level": 1
+      }
+    ],
+    "id": 243
+  },
+  {
+    "name": "Enervate Charm",
+    "itemType": "Charm",
+    "levels": 3,
+    "skills": [
+      {
+        "id": "staminaThief",
+        "level": 1
+      }
+    ],
+    "id": 244
+  },
+  {
+    "name": "Artillery Charm",
+    "itemType": "Charm",
+    "levels": 3,
+    "skills": [
+      {
+        "id": "artillery",
+        "level": 1
+      }
+    ],
+    "id": 245
+  },
+  {
+    "name": "Hungerless Charm",
+    "itemType": "Charm",
+    "levels": 3,
+    "skills": [
+      {
+        "id": "hungerResistance",
+        "level": 1
+      }
+    ],
+    "id": 246
+  },
+  {
+    "name": "Ironside Charm",
+    "itemType": "Charm",
+    "levels": 3,
+    "skills": [
+      {
+        "id": "guard",
+        "level": 1
+      }
+    ],
+    "id": 247
+  },
+  {
+    "name": "Friendship Charm",
+    "itemType": "Charm",
+    "levels": 3,
+    "skills": [
+      {
+        "id": "wideRange",
+        "level": 1
+      }
+    ],
+    "id": 248
+  },
+  {
+    "name": "Extension Charm",
+    "itemType": "Charm",
+    "levels": 3,
+    "skills": [
+      {
+        "id": "itemProlonger",
+        "level": 1
+      }
+    ],
+    "id": 249
+  },
+  {
+    "name": "Glutton's Charm",
+    "itemType": "Charm",
+    "levels": 3,
+    "skills": [
+      {
+        "id": "speedEating",
+        "level": 1
+      }
+    ],
+    "id": 250
+  },
+  {
+    "name": "Blessing Charm",
+    "itemType": "Charm",
+    "levels": 3,
+    "skills": [
+      {
+        "id": "divineBlessing",
+        "level": 1
+      }
+    ],
+    "id": 251
+  },
+  {
+    "name": "Rally Charm",
+    "itemType": "Charm",
+    "levels": 3,
+    "skills": [
+      {
+        "id": "palicoRally",
+        "level": 1
+      }
+    ],
+    "id": 252
+  },
+  {
+    "name": "Botany Charm",
+    "itemType": "Charm",
+    "levels": 3,
+    "skills": [
+      {
+        "id": "botanist",
+        "level": 1
+      }
+    ],
+    "id": 253
+  },
+  {
+    "name": "Geology Charm",
+    "itemType": "Charm",
+    "levels": 3,
+    "skills": [
+      {
+        "id": "geologist",
+        "level": 1
+      }
+    ],
+    "id": 254
+  },
+  {
+    "name": "Slinger Charm",
+    "itemType": "Charm",
+    "levels": 3,
+    "skills": [
+      {
+        "id": "slingerCapacity",
+        "level": 1
+      }
+    ],
+    "id": 255
+  },
+  {
+    "name": "Stealth Charm",
+    "itemType": "Charm",
+    "levels": 3,
+    "skills": [
+      {
+        "id": "stealth",
+        "level": 1
+      }
+    ],
+    "id": 256
+  },
+  {
+    "name": "Smoke Charm",
+    "itemType": "Charm",
+    "levels": 3,
+    "skills": [
+      {
+        "id": "sporepuffExpert",
+        "level": 1
+      }
+    ],
+    "id": 257
+  },
+  {
+    "name": "Mirewalker Charm",
+    "itemType": "Charm",
+    "levels": 3,
+    "skills": [
+      {
+        "id": "aquaticExpert",
+        "level": 1
+      }
+    ],
+    "id": 258
+  },
+  {
+    "name": "Insect Charm",
+    "itemType": "Charm",
+    "levels": 3,
+    "skills": [
+      {
+        "id": "entomologist",
+        "level": 1
+      }
+    ],
+    "id": 259
+  },
+  {
+    "name": "Intimidator Charm",
+    "itemType": "Charm",
+    "levels": 3,
+    "skills": [
+      {
+        "id": "intimidator",
+        "level": 1
+      }
+    ],
+    "id": 260
+  },
+  {
+    "name": "Heavy Artillery Charm",
+    "itemType": "Charm",
+    "levels": 3,
+    "skills": [
+      {
+        "id": "heavyArtillery",
+        "level": 1
+      }
+    ],
+    "id": 261
+  },
+  {
+    "name": "Light Eater's Charm",
+    "itemType": "Charm",
+    "levels": 3,
+    "skills": [
+      {
+        "id": "freeMeal",
+        "level": 1
+      }
+    ],
+    "id": 262
+  },
+  {
+    "name": "Tracker Charm",
+    "itemType": "Charm",
+    "levels": 3,
+    "skills": [
+      {
+        "id": "scenthound",
+        "level": 1
+      }
+    ],
+    "id": 263
+  },
+  {
+    "name": "Fortification Charm",
+    "itemType": "Charm",
+    "levels": 1,
+    "skills": [
+      {
+        "id": "fortify",
+        "level": 1
+      }
+    ],
+    "id": 264
+  },
+  {
+    "name": "Performer's Charm",
+    "itemType": "Charm",
+    "levels": 1,
+    "skills": [
+      {
+        "id": "hornMaestro",
+        "level": 1
+      }
+    ],
+    "id": 265
+  },
+  {
+    "name": "Capacity Charm",
+    "itemType": "Charm",
+    "levels": 1,
+    "skills": [
+      {
+        "id": "capacityBoost",
+        "level": 1
+      }
+    ],
+    "id": 266
+  },
+  {
+    "name": "Bleed Charm",
+    "itemType": "Charm",
+    "levels": 3,
+    "skills": [
+      {
+        "id": "bleedingResistance",
+        "level": 1
+      }
+    ],
+    "id": 267
+  },
+  {
+    "name": "Speed Heal Charm",
+    "itemType": "Charm",
+    "levels": 3,
+    "skills": [
+      {
+        "id": "recoverySpeed",
+        "level": 1
+      }
+    ],
+    "id": 268
+  },
+  {
+    "name": "Ice Charm",
+    "itemType": "Charm",
+    "levels": 3,
+    "skills": [
+      {
+        "id": "iceResistance",
+        "level": 1
+      }
+    ],
+    "id": 269
+  },
+  {
+    "name": "Blight Charm",
+    "itemType": "Charm",
+    "levels": 3,
+    "skills": [
+      {
+        "id": "blightResistance",
+        "level": 1
+      }
+    ],
+    "id": 270
+  },
+  {
+    "name": "Frost Charm",
+    "itemType": "Charm",
+    "levels": 3,
+    "skills": [
+      {
+        "id": "iceAttack",
+        "level": 1
+      }
+    ],
+    "id": 271
+  },
+  {
+    "name": "Master's Charm",
+    "itemType": "Charm",
+    "levels": 3,
+    "skills": [
+      {
+        "id": "criticalEye",
+        "level": 1
+      }
+    ],
+    "id": 272
+  },
+  {
+    "name": "Evasion Charm",
+    "itemType": "Charm",
+    "levels": 3,
+    "skills": [
+      {
+        "id": "evadeWindow",
+        "level": 1
+      }
+    ],
+    "id": 273
+  },
+  {
+    "name": "Sheath Charm",
+    "itemType": "Charm",
+    "levels": 3,
+    "skills": [
+      {
+        "id": "quickSheath",
+        "level": 1
+      }
+    ],
+    "id": 274
+  },
+  {
+    "name": "Whetstone Charm",
+    "itemType": "Charm",
+    "levels": 3,
+    "skills": [
+      {
+        "id": "speedSharpening",
+        "level": 1
+      }
+    ],
+    "id": 275
+  },
+  {
+    "name": "Blast Charm",
+    "itemType": "Charm",
+    "levels": 3,
+    "skills": [
+      {
+        "id": "blastResistance",
+        "level": 1
+      }
+    ],
+    "id": 276
+  },
+  {
+    "name": "Dragon Charm",
+    "itemType": "Charm",
+    "levels": 3,
+    "skills": [
+      {
+        "id": "dragonResistance",
+        "level": 1
+      }
+    ],
+    "id": 277
+  },
+  {
+    "name": "Wyrmsbane Charm",
+    "itemType": "Charm",
+    "levels": 3,
+    "skills": [
+      {
+        "id": "dragonAttack",
+        "level": 1
+      }
+    ],
+    "id": 278
+  },
+  {
+    "name": "Demolition Charm",
+    "itemType": "Charm",
+    "levels": 3,
+    "skills": [
+      {
+        "id": "blastAttack",
+        "level": 1
+      }
+    ],
+    "id": 279
+  },
+  {
+    "name": "Draw Charm",
+    "itemType": "Charm",
+    "levels": 2,
+    "skills": [
+      {
+        "id": "criticalDraw",
+        "level": 1
+      }
+    ],
+    "id": 280
+  },
+  {
+    "name": "Trickshot Charm",
+    "itemType": "Charm",
+    "levels": 2,
+    "skills": [
+      {
+        "id": "specialAmmoBoost",
+        "level": 1
+      }
+    ],
+    "id": 281
+  },
+  {
+    "name": "Marathon Charm",
+    "itemType": "Charm",
+    "levels": 2,
+    "skills": [
+      {
+        "id": "marathonRunner",
+        "level": 1
+      }
+    ],
+    "id": 282
+  },
+  {
+    "name": "Fitness Charm",
+    "itemType": "Charm",
+    "levels": 3,
+    "skills": [
+      {
+        "id": "constitution",
+        "level": 1
+      }
+    ],
+    "id": 283
+  },
+  {
+    "name": "Surge Charm",
+    "itemType": "Charm",
+    "levels": 2,
+    "skills": [
+      {
+        "id": "staminaSurge",
+        "level": 1
+      }
+    ],
+    "id": 284
+  },
+  {
+    "name": "Leaping Charm",
+    "itemType": "Charm",
+    "levels": 2,
+    "skills": [
+      {
+        "id": "evadeExtender",
+        "level": 1
+      }
+    ],
+    "id": 285
+  },
+  {
+    "name": "Bombardier Charm",
+    "itemType": "Charm",
+    "levels": 3,
+    "skills": [
+      {
+        "id": "bombardier",
+        "level": 1
+      }
+    ],
+    "id": 286
+  },
+  {
+    "name": "Mushroom Charm",
+    "itemType": "Charm",
+    "levels": 2,
+    "skills": [
+      {
+        "id": "mushroomancer",
+        "level": 1
+      }
+    ],
+    "id": 287
+  },
+  {
+    "name": "Awakening Charm",
+    "itemType": "Charm",
+    "levels": 2,
+    "skills": [
+      {
+        "id": "freeElemAmmoUp",
+        "level": 1
+      }
+    ],
+    "id": 288
+  },
+  {
+    "name": "Handicraft Charm",
+    "itemType": "Charm",
+    "levels": 3,
+    "skills": [
+      {
+        "id": "handicraft",
+        "level": 1
+      }
+    ],
+    "id": 289
+  },
+  {
+    "name": "Mud Puppy Charm",
+    "itemType": "Charm",
+    "levels": 1,
+    "skills": [
+      {
+        "id": "muckResistance",
+        "level": 1
+      },
+      {
+        "id": "leapOfFaith",
+        "level": 1
+      }
+    ],
+    "id": 290
+  },
+  {
+    "name": "Trickshot Charm",
+    "itemType": "Charm",
+    "levels": 1,
+    "skills": [
+      {
+        "id": "dungmaster",
+        "level": 1
+      },
+      {
+        "id": "blindsider",
+        "level": 1
+      }
+    ],
+    "id": 291
+  },
+  {
+    "name": "Hunter's Life Charm",
+    "itemType": "Charm",
+    "levels": 1,
+    "skills": [
+      {
+        "id": "bbqMaster",
+        "level": 1
+      },
+      {
+        "id": "masterFisher",
+        "level": 1
+      }
+    ],
+    "id": 292
+  },
+  {
+    "name": "Procurer's Charm",
+    "itemType": "Charm",
+    "levels": 1,
+    "skills": [
+      {
+        "id": "proTransporter",
+        "level": 1
+      },
+      {
+        "id": "honeyHunter",
+        "level": 1
+      }
+    ],
+    "id": 293
+  },
+  {
+    "name": "Gatherer's Charm",
+    "itemType": "Charm",
+    "levels": 1,
+    "skills": [
+      {
+        "id": "masterGatherer",
+        "level": 1
+      },
+      {
+        "id": "carvingPro",
+        "level": 1
+      }
+    ],
+    "id": 294
+  },
+  {
+    "name": "Guard Charm",
+    "itemType": "Charm",
+    "levels": 3,
+    "skills": [
+      {
+        "id": "ironSkin",
+        "level": 1
+      }
+    ],
+    "id": 295
+  },
+  {
+    "name": "Earplugs Charm",
+    "itemType": "Charm",
+    "levels": 3,
+    "skills": [
+      {
+        "id": "earplugs",
+        "level": 1
+      }
+    ],
+    "id": 296
+  },
+  {
+    "name": "Tremor Charm",
+    "itemType": "Charm",
+    "levels": 2,
+    "skills": [
+      {
+        "id": "tremorResistance",
+        "level": 1
+      }
+    ],
+    "id": 297
+  },
+  {
+    "name": "Exploiter Charm",
+    "itemType": "Charm",
+    "levels": 2,
+    "skills": [
+      {
+        "id": "weaknessExploit",
+        "level": 1
+      }
+    ],
+    "id": 298
+  },
+  {
+    "name": "Focus Charm",
+    "itemType": "Charm",
+    "levels": 2,
+    "skills": [
+      {
+        "id": "focus",
+        "level": 1
+      }
+    ],
+    "id": 299
+  },
+  {
+    "name": "Breaker Charm",
+    "itemType": "Charm",
+    "levels": 2,
+    "skills": [
+      {
+        "id": "partbreaker",
+        "level": 1
+      }
+    ],
+    "id": 300
+  },
+  {
+    "name": "Fury Charm",
+    "itemType": "Charm",
+    "levels": 2,
+    "skills": [
+      {
+        "id": "resentment",
+        "level": 1
+      }
+    ],
+    "id": 301
+  },
+  {
+    "name": "Grit Charm",
+    "itemType": "Charm",
+    "levels": 2,
+    "skills": [
+      {
+        "id": "heroics",
+        "level": 1
+      }
+    ],
+    "id": 302
+  },
+  {
+    "name": "Maintenance Charm",
+    "itemType": "Charm",
+    "levels": 3,
+    "skills": [
+      {
+        "id": "toolSpecialist",
+        "level": 1
+      }
+    ],
+    "id": 303
+  },
+  {
+    "name": "Power Charm",
+    "itemType": "Charm",
+    "levels": 2,
+    "skills": [
+      {
+        "id": "latentPower",
+        "level": 1
+      }
+    ],
+    "id": 304
+  },
+  {
+    "name": "Challenger Charm",
+    "itemType": "Charm",
+    "levels": 2,
+    "skills": [
+      {
+        "id": "agitator",
+        "level": 1
+      }
+    ],
+    "id": 305
+  },
+  {
+    "name": "Unscathed Charm",
+    "itemType": "Charm",
+    "levels": 2,
+    "skills": [
+      {
+        "id": "peakPerformance",
+        "level": 1
+      }
+    ],
+    "id": 306
+  },
+  {
+    "name": "Mighty Charm",
+    "itemType": "Charm",
+    "levels": 2,
+    "skills": [
+      {
+        "id": "maximumMight",
+        "level": 1
+      }
+    ],
+    "id": 307
+  },
+  {
+    "name": "Impact Charm",
+    "itemType": "Charm",
+    "levels": 2,
+    "skills": [
+      {
+        "id": "flinchFree",
+        "level": 1
+      }
+    ],
+    "id": 308
+  },
+  {
+    "name": "Miasma Charm",
+    "itemType": "Charm",
+    "levels": 3,
+    "skills": [
+      {
+        "id": "effluviaResistance",
+        "level": 1
+      }
+    ],
+    "id": 309
+  },
+  {
+    "name": "Normal Shots Charm",
+    "itemType": "Charm",
+    "levels": 1,
+    "skills": [
+      {
+        "id": "normalShots",
+        "level": 1
+      }
+    ],
+    "id": 310
+  },
+  {
+    "name": "Clearmind Charm",
+    "itemType": "Charm",
+    "levels": 1,
+    "skills": [
+      {
+        "id": "heatGuard",
+        "level": 1
+      },
+      {
+        "id": "effluvialExpert",
+        "level": 1
+      }
+    ],
+    "id": 311
+  },
+  {
+    "name": "Rider's Charm",
+    "itemType": "Charm",
+    "levels": 1,
+    "skills": [
+      {
+        "id": "masterMounter",
+        "level": 1
+      },
+      {
+        "id": "jumpMaster",
+        "level": 1
+      }
+    ],
+    "id": 312
+  },
+  {
+    "name": "Surveyor's Charm",
+    "itemType": "Charm",
+    "levels": 1,
+    "skills": [
+      {
+        "id": "scoutflyRangeUp",
+        "level": 1
+      },
+      {
+        "id": "scholar",
+        "level": 1
+      }
+    ],
+    "id": 313
+  },
+  {
+    "name": "Critical Charm",
+    "itemType": "Charm",
+    "levels": 1,
+    "skills": [
+      {
+        "id": "criticalBoost",
+        "level": 1
+      }
+    ],
+    "id": 314
+  },
+  {
+    "name": "Invigorate Charm",
+    "itemType": "Charm",
+    "levels": 2,
+    "skills": [
+      {
+        "id": "powerProlonger",
+        "level": 1
+      }
+    ],
+    "id": 315
+  },
+  {
+    "name": "Poison Coating Charm",
+    "itemType": "Charm",
+    "levels": 1,
+    "skills": [
+      {
+        "id": "poisonFunctionality",
+        "level": 1
+      }
+    ],
+    "id": 316
+  },
+  {
+    "name": "Para Coating Charm",
+    "itemType": "Charm",
+    "levels": 1,
+    "skills": [
+      {
+        "id": "paraFunctionality",
+        "level": 1
+      }
+    ],
+    "id": 317
+  },
+  {
+    "name": "Sleep Coating Charm",
+    "itemType": "Charm",
+    "levels": 1,
+    "skills": [
+      {
+        "id": "sleepFunctionality",
+        "level": 1
+      }
+    ],
+    "id": 318
+  },
+  {
+    "name": "Blast Coating Charm",
+    "itemType": "Charm",
+    "levels": 1,
+    "skills": [
+      {
+        "id": "blastFunctionality",
+        "level": 1
+      }
+    ],
+    "id": 319
+  },
+  {
+    "name": "Geomancy Charm",
+    "itemType": "Charm",
+    "levels": 1,
+    "skills": [
+      {
+        "id": "foragersLuck",
+        "level": 1
+      },
+      {
+        "id": "detector",
+        "level": 1
+      }
+    ],
+    "id": 320
+  }
 ]

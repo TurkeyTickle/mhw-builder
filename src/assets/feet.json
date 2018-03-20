@@ -1,1056 +1,1126 @@
 [
-	{
-		"name": "Xeno'jiva Spurs Beta",
-		"itemType": "Feet",
-		"tags": ["xenojiva"],
-		"baseDefense": 72,
-		"fireResist": -3,
-		"waterResist": 2,
-		"thunderResist": 2,
-		"iceResist": 2,
-		"dragonResist": -4,
-		"skills": [
-			{
-				"id": "flinchFree",
-				"level": 1
-			},
-			{
-				"id": "xenojivaDivinity"
-			}
-		],
-		"slots": [
-			{
-				"level": 1
-			},
-			{
-				"level": 1
-			}
-		]
-	},
-	{
-		"name": "Xeno'jiva Spurs Alpha",
-		"itemType": "Feet",
-		"tags": ["xenojiva"],
-		"baseDefense": 72,
-		"fireResist": -3,
-		"waterResist": 2,
-		"thunderResist": 2,
-		"iceResist": 2,
-		"dragonResist": -4,
-		"skills": [
-			{
-				"id": "flinchFree",
-				"level": 1
-			},
-			{
-				"id": "powerProlonger",
-				"level": 1
-			},
-			{
-				"id": "xenojivaDivinity"
-			}
-		],
-		"slots": [
-			{
-				"level": 1
-			}
-		]
-	},
-	{
-		"name": "Kirin Leg Guards Beta",
-		"itemType": "Feet",
-		"baseDefense": 64,
-		"fireResist": -3,
-		"waterResist": -2,
-		"thunderResist": 4,
-		"iceResist": -2,
-		"dragonResist": 2,
-		"skills": [
-			{
-				"id": "freeElemAmmoUp",
-				"level": 2
-			},
-			{
-				"id": "kirinFavor"
-			}
-		],
-		"slots": [
-			{
-				"level": 1
-			},
-			{
-				"level": 1
-			}
-		]
-	},
-	{
-		"name": "Kirin Leg Guards Alpha",
-		"itemType": "Feet",
-		"baseDefense": 64,
-		"fireResist": -3,
-		"waterResist": -2,
-		"thunderResist": 4,
-		"iceResist": -2,
-		"dragonResist": 2,
-		"skills": [
-			{
-				"id": "freeElemAmmoUp",
-				"level": 2
-			},
-			{
-				"id": "thunderResistance",
-				"level": 2
-			},
-			{
-				"id": "kirinFavor"
-			}
-		]
-	},
-	{
-		"name": "Vaal Hazak Greaves Beta",
-		"itemType": "Feet",
-		"baseDefense": 64,
-		"fireResist": -4,
-		"waterResist": 4,
-		"thunderResist": 1,
-		"iceResist": -1,
-		"dragonResist": -3,
-		"skills": [
-			{
-				"id": "effluviaResistance",
-				"level": 2
-			},
-			{
-				"id": "vaalHazakVitality"
-			}
-		],
-		"slots": [
-			{
-				"level": 1
-			},
-			{
-				"level": 1
-			}
-		]
-	},
-	{
-		"name": "Vaal Hazak Greaves Alpha",
-		"itemType": "Feet",
-		"baseDefense": 64,
-		"fireResist": -4,
-		"waterResist": 4,
-		"thunderResist": 1,
-		"iceResist": -1,
-		"dragonResist": -3,
-		"skills": [
-			{
-				"id": "effluviaResistance",
-				"level": 2
-			},
-			{
-				"id": "dragonAttack",
-				"level": 1
-			},
-			{
-				"id": "vaalHazakVitality"
-			}
-		],
-		"slots": [
-			{
-				"level": 1
-			}
-		]
-	},
-	{
-		"name": "Kushala Crus Beta",
-		"itemType": "Feet",
-		"tags": ["kushala daora"],
-		"baseDefense": 64,
-		"fireResist": 0,
-		"waterResist": 2,
-		"thunderResist": -3,
-		"iceResist": -4,
-		"dragonResist": -2,
-		"skills": [
-			{
-				"id": "evadeExtender",
-				"level": 2
-			},
-			{
-				"id": "kushalaDaoraFlight"
-			}
-		],
-		"slots": [
-			{
-				"level": 3
-			}
-		]
-	},
-	{
-		"name": "Kushala Crus Alpha",
-		"itemType": "Feet",
-		"tags": ["kushala daora"],
-		"baseDefense": 64,
-		"fireResist": 0,
-		"waterResist": 2,
-		"thunderResist": -3,
-		"iceResist": -4,
-		"dragonResist": -2,
-		"skills": [
-			{
-				"id": "evadeExtender",
-				"level": 2
-			},
-			{
-				"id": "handicraft",
-				"level": 1
-			},
-			{
-				"id": "kushalaDaoraFlight"
-			}
-		]
-	},
-	{
-		"name": "Kaiser Greaves Beta",
-		"itemType": "Feet",
-		"tags": ["teostra"],
-		"baseDefense": 64,
-		"fireResist": 3,
-		"waterResist": -3,
-		"thunderResist": 1,
-		"iceResist": -3,
-		"dragonResist": 1,
-		"skills": [
-			{
-				"id": "latentPower",
-				"level": 2
-			},
-			{
-				"id": "teostraTechnique"
-			}
-		],
-		"slots": [
-			{
-				"level": 1
-			}
-		]
-	},
-	{
-		"name": "Kaiser Greaves Alpha",
-		"itemType": "Feet",
-		"tags": ["teostra"],
-		"baseDefense": 64,
-		"fireResist": 3,
-		"waterResist": -3,
-		"thunderResist": 1,
-		"iceResist": -3,
-		"dragonResist": 1,
-		"skills": [
-			{
-				"id": "latentPower",
-				"level": 2
-			},
-			{
-				"id": "blastAttack",
-				"level": 1
-			},
-			{
-				"id": "teostraTechnique"
-			}
-		]
-	},
-	{
-		"name": "Nergigante Greaves Beta",
-		"itemType": "Feet",
-		"baseDefense": 64,
-		"fireResist": 1,
-		"waterResist": 1,
-		"thunderResist": -3,
-		"iceResist": 1,
-		"dragonResist": -3,
-		"skills": [
-			{
-				"id": "maximumMight",
-				"level": 1
-			},
-			{
-				"id": "nergiganteHunger"
-			}
-		],
-		"slots": [
-			{
-				"level": 2
-			}
-		]
-	},
-	{
-		"name": "Nergigante Greaves Alpha",
-		"itemType": "Feet",
-		"baseDefense": 64,
-		"fireResist": 1,
-		"waterResist": 1,
-		"thunderResist": -3,
-		"iceResist": 1,
-		"dragonResist": -3,
-		"skills": [
-			{
-				"id": "agitator",
-				"level": 1
-			},
-			{
-				"id": "maximumMight",
-				"level": 1
-			},
-			{
-				"id": "nergiganteHunger"
-			}
-		],
-		"slots": [
-			{
-				"level": 1
-			}
-		]
-	},
-	{
-		"name": "Death Stench Heel Beta",
-		"itemType": "Feet",
-		"baseDefense": 62,
-		"fireResist": 3,
-		"waterResist": 2,
-		"thunderResist": -2,
-		"iceResist": 3,
-		"dragonResist": -4,
-		"skills": [
-			{
-				"id": "handicraft",
-				"level": 2
-			}
-		],
-		"slots": [
-			{
-				"level": 1
-			},
-			{
-				"level": 1
-			}
-		]
-	},
-	{
-		"name": "Death Stench Heel Alpha",
-		"itemType": "Feet",
-		"baseDefense": 62,
-		"fireResist": 3,
-		"waterResist": 2,
-		"thunderResist": -2,
-		"iceResist": 3,
-		"dragonResist": -4,
-		"skills": [
-			{
-				"id": "handicraft",
-				"level": 2
-			},
-			{
-				"id": "dragonAttack",
-				"level": 2
-			}
-		]
-	},
-	{
-		"name": "Dober Greaves Beta",
-		"itemType": "Feet",
-		"baseDefense": 60,
-		"fireResist": -2,
-		"waterResist": 0,
-		"thunderResist": -1,
-		"iceResist": -1,
-		"dragonResist": 4,
-		"skills": [
-			{
-				"id": "attackBoost",
-				"level": 2
-			}
-		],
-		"slots": [
-			{
-				"level": 1
-			}
-		]
-	},
-	{
-		"name": "Dober Greaves Beta",
-		"itemType": "Feet",
-		"baseDefense": 60,
-		"fireResist": -2,
-		"waterResist": 0,
-		"thunderResist": -1,
-		"iceResist": -1,
-		"dragonResist": 4,
-		"skills": [
-			{
-				"id": "attackBoost",
-				"level": 2
-			},
-			{
-				"id": "staminaSurge",
-				"level": 1
-			}
-		]
-	},
-	{
-		"name": "Damascus Greaves Beta",
-		"itemType": "Feet",
-		"baseDefense": 60,
-		"fireResist": 4,
-		"waterResist": -2,
-		"thunderResist": 0,
-		"iceResist": 0,
-		"dragonResist": 0,
-		"skills": [
-			{
-				"id": "defenseBoost",
-				"level": 2
-			}
-		],
-		"slots": [
-			{
-				"level": 3
-			}
-		]
-	},
-	{
-		"name": "Damascus Greaves Alpha",
-		"itemType": "Feet",
-		"baseDefense": 60,
-		"fireResist": 4,
-		"waterResist": -2,
-		"thunderResist": 0,
-		"iceResist": 0,
-		"dragonResist": 0,
-		"skills": [
-			{
-				"id": "defenseBoost",
-				"level": 2
-			},
-			{
-				"id": "ironSkin",
-				"level": 1
-			}
-		],
-		"slots": [
-			{
-				"level": 1
-			}
-		]
-	},
-	{
-		"name": "Bazel Greaves Beta",
-		"itemType": "Feet",
-		"tags": ["bazelgeuse", "dodogama"],
-		"baseDefense": 58,
-		"fireResist": 3,
-		"waterResist": 1,
-		"thunderResist": -4,
-		"iceResist": -2,
-		"dragonResist": -2,
-		"skills": [
-			{
-				"id": "bombardier",
-				"level": 2
-			},
-			{
-				"id": "bazelgeuseProtection"
-			}
-		],
-		"slots": [
-			{
-				"level": 3
-			}
-		]
-	},
-	{
-		"name": "Bazel Greaves Alpha",
-		"itemType": "Feet",
-		"tags": ["bazelgeuse", "dodogama"],
-		"baseDefense": 58,
-		"fireResist": 3,
-		"waterResist": 1,
-		"thunderResist": -4,
-		"iceResist": -2,
-		"dragonResist": -2,
-		"skills": [
-			{
-				"id": "bombardier",
-				"level": 2
-			},
-			{
-				"id": "criticalDraw",
-				"level": 1
-			},
-			{
-				"id": "bazelgeuseProtection"
-			}
-		],
-		"slots": [
-			{
-				"level": 1
-			}
-		]
-	},
-	{
-		"name": "Uragaan Greaves Beta",
-		"itemType": "Feet",
-		"baseDefense": 60,
-		"fireResist": 4,
-		"waterResist": -3,
-		"thunderResist": 1,
-		"iceResist": -2,
-		"dragonResist": -2,
-		"skills": [
-			{
-				"id": "guard",
-				"level": 1
-			},
-			{
-				"id": "uragaanProtection"
-			}
-		],
-		"slots": [
-			{
-				"level": 3
-			}
-		]
-	},
-	{
-		"name": "Uragaan Greaves Alpha",
-		"itemType": "Feet",
-		"baseDefense": 60,
-		"fireResist": 4,
-		"waterResist": -3,
-		"thunderResist": 1,
-		"iceResist": -2,
-		"dragonResist": -2,
-		"skills": [
-			{
-				"id": "guard",
-				"level": 2
-			},
-			{
-				"id": "uragaanProtection"
-			}
-		],
-		"slots": [
-			{
-				"level": 1
-			}
-		]
-	},
-	{
-		"name": "Diablos Nero Greaves Beta",
-		"itemType": "Feet",
-		"tags": ["black diablos"],
-		"baseDefense": 56,
-		"fireResist": 2,
-		"waterResist": -3,
-		"thunderResist": 0,
-		"iceResist": -4,
-		"dragonResist": 2,
-		"skills": [
-			{
-				"id": "normalShots",
-				"level": 1
-			},
-			{
-				"id": "diablosMastery"
-			}
-		],
-		"slots": [
-			{
-				"level": 2
-			}
-		]
-	},
-	{
-		"name": "Diablos Nero Greaves Alpha",
-		"itemType": "Feet",
-		"tags": ["black diablos"],
-		"baseDefense": 56,
-		"fireResist": 2,
-		"waterResist": -3,
-		"thunderResist": 0,
-		"iceResist": -4,
-		"dragonResist": 2,
-		"skills": [
-			{
-				"id": "normalShots",
-				"level": 1
-			},
-			{
-				"id": "heroics",
-				"level": 1
-			},
-			{
-				"id": "diablosMastery"
-			}
-		],
-		"slots": [
-			{
-				"level": 1
-			}
-		]
-	},
-	{
-		"name": "Rath Soul Greaves Beta",
-		"itemType": "Feet",
-		"tags": ["azure rathalos"],
-		"baseDefense": 56,
-		"fireResist": 3,
-		"waterResist": 2,
-		"thunderResist": 2,
-		"iceResist": -3,
-		"dragonResist": -4,
-		"skills": [
-			{
-				"id": "focus",
-				"level": 1
-			},
-			{
-				"id": "rathalosMastery"
-			}
-		],
-		"slots": [
-			{
-				"level": 1
-			}
-		]
-	},
-	{
-		"name": "Rath Soul Greaves Alpha",
-		"itemType": "Feet",
-		"tags": ["azure rathalos"],
-		"baseDefense": 56,
-		"fireResist": 3,
-		"waterResist": 2,
-		"thunderResist": 2,
-		"iceResist": -3,
-		"dragonResist": -4,
-		"skills": [
-			{
-				"id": "focus",
-				"level": 1
-			},
-			{
-				"id": "cliffhanger",
-				"level": 1
-			},
-			{
-				"id": "rathalosMastery"
-			}
-		]
-	},
-	{
-		"name": "Diablos Greaves Beta",
-		"itemType": "Feet",
-		"baseDefense": 54,
-		"fireResist": 3,
-		"waterResist": -2,
-		"thunderResist": 0,
-		"iceResist": -3,
-		"dragonResist": 2,
-		"skills": [
-			{
-				"id": "tremorResistance",
-				"level": 2
-			},
-			{
-				"id": "diablosMastery"
-			}
-		],
-		"slots": [
-			{
-				"level": 1
-			},
-			{
-				"level": 1
-			}
-		]
-	},
-	{
-		"name": "Diablos Greaves Alpha",
-		"itemType": "Feet",
-		"baseDefense": 54,
-		"fireResist": 3,
-		"waterResist": -2,
-		"thunderResist": 0,
-		"iceResist": -3,
-		"dragonResist": 2,
-		"skills": [
-			{
-				"id": "tremorResistance",
-				"level": 2
-			},
-			{
-				"id": "slugger",
-				"level": 1
-			},
-			{
-				"id": "diablosMastery"
-			}
-		]
-	},
-	{
-		"name": "Rathalos Greaves Beta",
-		"itemType": "Feet",
-		"baseDefense": 54,
-		"fireResist": 3,
-		"waterResist": 1,
-		"thunderResist": -2,
-		"iceResist": 1,
-		"dragonResist": -3,
-		"skills": [
-			{
-				"id": "jumpMaster",
-				"level": 1
-			},
-			{
-				"id": "rathalosMastery"
-			}
-		],
-		"slots": [
-			{
-				"level": 3
-			}
-		]
-	},
-	{
-		"name": "Rathalos Greaves Alpha",
-		"itemType": "Feet",
-		"baseDefense": 54,
-		"fireResist": 3,
-		"waterResist": 1,
-		"thunderResist": -2,
-		"iceResist": 1,
-		"dragonResist": -3,
-		"skills": [
-			{
-				"id": "jumpMaster",
-				"level": 1
-			},
-			{
-				"id": "weaknessExploit",
-				"level": 1
-			},
-			{
-				"id": "rathalosMastery"
-			}
-		]
-	},
-	{
-		"name": "Odogaron Greaves Beta",
-		"itemType": "Feet",
-		"baseDefense": 54,
-		"fireResist": 2,
-		"waterResist": 2,
-		"thunderResist": -2,
-		"iceResist": -3,
-		"dragonResist": 0,
-		"skills": [
-			{
-				"id": "quickSheath",
-				"level": 1
-			},
-			{
-				"id": "odogaronMastery"
-			}
-		],
-		"slots": [
-			{
-				"level": 1
-			}
-		]
-	},
-	{
-		"name": "Odogaron Greaves Alpha",
-		"itemType": "Feet",
-		"baseDefense": 54,
-		"fireResist": 2,
-		"waterResist": 2,
-		"thunderResist": -2,
-		"iceResist": -3,
-		"dragonResist": 0,
-		"skills": [
-			{
-				"id": "quickSheath",
-				"level": 1
-			},
-			{
-				"id": "criticalEye",
-				"level": 1
-			},
-			{
-				"id": "odogaronMastery"
-			}
-		]
-	},
-	{
-		"name": "Legiana Greaves Beta",
-		"itemType": "Feet",
-		"baseDefense": 54,
-		"fireResist": -1,
-		"waterResist": 2,
-		"thunderResist": -3,
-		"iceResist": 3,
-		"dragonResist": 0,
-		"skills": [
-			{
-				"id": "iceResistance",
-				"level": 2
-			},
-			{
-				"id": "legianaFavor"
-			}
-		],
-		"slots": [
-			{
-				"level": 3
-			}
-		]
-	},
-	{
-		"name": "Legiana Greaves Alpha",
-		"itemType": "Feet",
-		"baseDefense": 54,
-		"fireResist": -1,
-		"waterResist": 2,
-		"thunderResist": -3,
-		"iceResist": 3,
-		"dragonResist": 0,
-		"skills": [
-			{
-				"id": "iceResistance",
-				"level": 2
-			},
-			{
-				"id": "criticalDraw",
-				"level": 1
-			},
-			{
-				"id": "legianaFavor"
-			}
-		]
-	},
-	{
-		"name": "Lavasioth Greaves Beta",
-		"itemType": "Feet",
-		"baseDefense": 56,
-		"fireResist": 3,
-		"waterResist": -3,
-		"thunderResist": 1,
-		"iceResist": -2,
-		"dragonResist": 2,
-		"skills": [
-			{
-				"id": "spreadPowerShots",
-				"level": 1
-			}
-		],
-		"slots": [
-			{
-				"level": 2
-			}
-		]
-	},
-	{
-		"name": "Lavasioth Greaves Alpha",
-		"itemType": "Feet",
-		"baseDefense": 56,
-		"fireResist": 3,
-		"waterResist": -3,
-		"thunderResist": 1,
-		"iceResist": -2,
-		"dragonResist": 2,
-		"skills": [
-			{
-				"id": "spreadPowerShots",
-				"level": 1
-			},
-			{
-				"id": "fireAttack",
-				"level": 1
-			}
-		],
-		"slots": [
-			{
-				"level": 1
-			}
-		]
-	},
-	{
-		"name": "Ingot Greaves Beta",
-		"itemType": "Feet",
-		"baseDefense": 50,
-		"fireResist": -2,
-		"waterResist": 0,
-		"thunderResist": 3,
-		"iceResist": -1,
-		"dragonResist": 0,
-		"skills": [
-			{
-				"id": "defenseBoost",
-				"level": 2
-			}
-		],
-		"slots": [
-			{
-				"level": 2
-			}
-		]
-	},
-	{
-		"name": "Ingot Greaves Alpha",
-		"itemType": "Feet",
-		"baseDefense": 50,
-		"fireResist": -2,
-		"waterResist": 0,
-		"thunderResist": 3,
-		"iceResist": -1,
-		"dragonResist": 0,
-		"skills": [
-			{
-				"id": "defenseBoost",
-				"level": 2
-			},
-			{
-				"id": "windproof",
-				"level": 1
-			}
-		]
-	},
-	{
-		"name": "High Metal Greaves Beta",
-		"itemType": "Feet",
-		"baseDefense": 50,
-		"fireResist": 0,
-		"waterResist": -1,
-		"thunderResist": -2,
-		"iceResist": 3,
-		"dragonResist": 0,
-		"skills": [
-			{
-				"id": "heavyArtillery",
-				"level": 1
-			}
-		],
-		"slots": [
-			{
-				"level": 1
-			}
-		]
-	},
-	{
-		"name": "High Metal Greaves Alpha",
-		"itemType": "Feet",
-		"baseDefense": 50,
-		"fireResist": 0,
-		"waterResist": -1,
-		"thunderResist": -2,
-		"iceResist": 3,
-		"dragonResist": 0,
-		"skills": [
-			{
-				"id": "heavyArtillery",
-				"level": 1
-			},
-			{
-				"id": "iceResistance",
-				"level": 1
-			}
-		]
-	},
-	{
-		"name": "Commission Pants Beta",
-		"itemType": "Feet",
-		"baseDefense": 70,
-		"fireResist": 2,
-		"waterResist": 2,
-		"thunderResist": 2,
-		"iceResist": 2,
-		"dragonResist": 2,
-		"skills": [
-			{
-				"id": "stealth",
-				"level": 2
-			}
-		],
-		"slots": [
-			{
-				"level": 2
-			}
-		]
-	},
-	{
-		"name": "Commission Pants Alpha",
-		"itemType": "Feet",
-		"baseDefense": 70,
-		"fireResist": 2,
-		"waterResist": 2,
-		"thunderResist": 2,
-		"iceResist": 2,
-		"dragonResist": 2,
-		"skills": [
-			{
-				"id": "stealth",
-				"level": 2
-			},
-			{
-				"id": "affinitySliding",
-				"level": 1
-			}
-		]
-	},
-	{
-		"name": "Guild Cross Boots Beta",
-		"itemType": "Feet",
-		"baseDefense": 62,
-		"fireResist": 0,
-		"waterResist": 0,
-		"thunderResist": 0,
-		"iceResist": 0,
-		"dragonResist": 0,
-		"skills": [
-			{
-				"id": "airborne",
-				"level": 1
-			}
-		],
-		"slots": [
-			{
-				"level": 3
-			}
-		]
-	},
-	{
-		"name": "Guild Cross Boots Alpha",
-		"itemType": "Feet",
-		"baseDefense": 62,
-		"fireResist": 0,
-		"waterResist": 0,
-		"thunderResist": 0,
-		"iceResist": 0,
-		"dragonResist": 0,
-		"skills": [
-			{
-				"id": "airborne",
-				"level": 1
-			},
-			{
-				"id": "fireResistance",
-				"level": 2
-			}
-		],
-		"slots": [
-			{
-				"level": 1
-			}
-		]
-	}
+  {
+    "name": "Xeno'jiva Spurs Beta",
+    "itemType": "Feet",
+    "tags": [
+      "xenojiva"
+    ],
+    "baseDefense": 72,
+    "fireResist": -3,
+    "waterResist": 2,
+    "thunderResist": 2,
+    "iceResist": 2,
+    "dragonResist": -4,
+    "skills": [
+      {
+        "id": "flinchFree",
+        "level": 1
+      },
+      {
+        "id": "xenojivaDivinity"
+      }
+    ],
+    "slots": [
+      {
+        "level": 1
+      },
+      {
+        "level": 1
+      }
+    ],
+    "id": 181
+  },
+  {
+    "name": "Xeno'jiva Spurs Alpha",
+    "itemType": "Feet",
+    "tags": [
+      "xenojiva"
+    ],
+    "baseDefense": 72,
+    "fireResist": -3,
+    "waterResist": 2,
+    "thunderResist": 2,
+    "iceResist": 2,
+    "dragonResist": -4,
+    "skills": [
+      {
+        "id": "flinchFree",
+        "level": 1
+      },
+      {
+        "id": "powerProlonger",
+        "level": 1
+      },
+      {
+        "id": "xenojivaDivinity"
+      }
+    ],
+    "slots": [
+      {
+        "level": 1
+      }
+    ],
+    "id": 182
+  },
+  {
+    "name": "Kirin Leg Guards Beta",
+    "itemType": "Feet",
+    "baseDefense": 64,
+    "fireResist": -3,
+    "waterResist": -2,
+    "thunderResist": 4,
+    "iceResist": -2,
+    "dragonResist": 2,
+    "skills": [
+      {
+        "id": "freeElemAmmoUp",
+        "level": 2
+      },
+      {
+        "id": "kirinFavor"
+      }
+    ],
+    "slots": [
+      {
+        "level": 1
+      },
+      {
+        "level": 1
+      }
+    ],
+    "id": 183
+  },
+  {
+    "name": "Kirin Leg Guards Alpha",
+    "itemType": "Feet",
+    "baseDefense": 64,
+    "fireResist": -3,
+    "waterResist": -2,
+    "thunderResist": 4,
+    "iceResist": -2,
+    "dragonResist": 2,
+    "skills": [
+      {
+        "id": "freeElemAmmoUp",
+        "level": 2
+      },
+      {
+        "id": "thunderResistance",
+        "level": 2
+      },
+      {
+        "id": "kirinFavor"
+      }
+    ],
+    "id": 184
+  },
+  {
+    "name": "Vaal Hazak Greaves Beta",
+    "itemType": "Feet",
+    "baseDefense": 64,
+    "fireResist": -4,
+    "waterResist": 4,
+    "thunderResist": 1,
+    "iceResist": -1,
+    "dragonResist": -3,
+    "skills": [
+      {
+        "id": "effluviaResistance",
+        "level": 2
+      },
+      {
+        "id": "vaalHazakVitality"
+      }
+    ],
+    "slots": [
+      {
+        "level": 1
+      },
+      {
+        "level": 1
+      }
+    ],
+    "id": 185
+  },
+  {
+    "name": "Vaal Hazak Greaves Alpha",
+    "itemType": "Feet",
+    "baseDefense": 64,
+    "fireResist": -4,
+    "waterResist": 4,
+    "thunderResist": 1,
+    "iceResist": -1,
+    "dragonResist": -3,
+    "skills": [
+      {
+        "id": "effluviaResistance",
+        "level": 2
+      },
+      {
+        "id": "dragonAttack",
+        "level": 1
+      },
+      {
+        "id": "vaalHazakVitality"
+      }
+    ],
+    "slots": [
+      {
+        "level": 1
+      }
+    ],
+    "id": 186
+  },
+  {
+    "name": "Kushala Crus Beta",
+    "itemType": "Feet",
+    "tags": [
+      "kushala daora"
+    ],
+    "baseDefense": 64,
+    "fireResist": 0,
+    "waterResist": 2,
+    "thunderResist": -3,
+    "iceResist": -4,
+    "dragonResist": -2,
+    "skills": [
+      {
+        "id": "evadeExtender",
+        "level": 2
+      },
+      {
+        "id": "kushalaDaoraFlight"
+      }
+    ],
+    "slots": [
+      {
+        "level": 3
+      }
+    ],
+    "id": 187
+  },
+  {
+    "name": "Kushala Crus Alpha",
+    "itemType": "Feet",
+    "tags": [
+      "kushala daora"
+    ],
+    "baseDefense": 64,
+    "fireResist": 0,
+    "waterResist": 2,
+    "thunderResist": -3,
+    "iceResist": -4,
+    "dragonResist": -2,
+    "skills": [
+      {
+        "id": "evadeExtender",
+        "level": 2
+      },
+      {
+        "id": "handicraft",
+        "level": 1
+      },
+      {
+        "id": "kushalaDaoraFlight"
+      }
+    ],
+    "id": 188
+  },
+  {
+    "name": "Kaiser Greaves Beta",
+    "itemType": "Feet",
+    "tags": [
+      "teostra"
+    ],
+    "baseDefense": 64,
+    "fireResist": 3,
+    "waterResist": -3,
+    "thunderResist": 1,
+    "iceResist": -3,
+    "dragonResist": 1,
+    "skills": [
+      {
+        "id": "latentPower",
+        "level": 2
+      },
+      {
+        "id": "teostraTechnique"
+      }
+    ],
+    "slots": [
+      {
+        "level": 1
+      }
+    ],
+    "id": 189
+  },
+  {
+    "name": "Kaiser Greaves Alpha",
+    "itemType": "Feet",
+    "tags": [
+      "teostra"
+    ],
+    "baseDefense": 64,
+    "fireResist": 3,
+    "waterResist": -3,
+    "thunderResist": 1,
+    "iceResist": -3,
+    "dragonResist": 1,
+    "skills": [
+      {
+        "id": "latentPower",
+        "level": 2
+      },
+      {
+        "id": "blastAttack",
+        "level": 1
+      },
+      {
+        "id": "teostraTechnique"
+      }
+    ],
+    "id": 190
+  },
+  {
+    "name": "Nergigante Greaves Beta",
+    "itemType": "Feet",
+    "baseDefense": 64,
+    "fireResist": 1,
+    "waterResist": 1,
+    "thunderResist": -3,
+    "iceResist": 1,
+    "dragonResist": -3,
+    "skills": [
+      {
+        "id": "maximumMight",
+        "level": 1
+      },
+      {
+        "id": "nergiganteHunger"
+      }
+    ],
+    "slots": [
+      {
+        "level": 2
+      }
+    ],
+    "id": 191
+  },
+  {
+    "name": "Nergigante Greaves Alpha",
+    "itemType": "Feet",
+    "baseDefense": 64,
+    "fireResist": 1,
+    "waterResist": 1,
+    "thunderResist": -3,
+    "iceResist": 1,
+    "dragonResist": -3,
+    "skills": [
+      {
+        "id": "agitator",
+        "level": 1
+      },
+      {
+        "id": "maximumMight",
+        "level": 1
+      },
+      {
+        "id": "nergiganteHunger"
+      }
+    ],
+    "slots": [
+      {
+        "level": 1
+      }
+    ],
+    "id": 192
+  },
+  {
+    "name": "Death Stench Heel Beta",
+    "itemType": "Feet",
+    "baseDefense": 62,
+    "fireResist": 3,
+    "waterResist": 2,
+    "thunderResist": -2,
+    "iceResist": 3,
+    "dragonResist": -4,
+    "skills": [
+      {
+        "id": "handicraft",
+        "level": 2
+      }
+    ],
+    "slots": [
+      {
+        "level": 1
+      },
+      {
+        "level": 1
+      }
+    ],
+    "id": 193
+  },
+  {
+    "name": "Death Stench Heel Alpha",
+    "itemType": "Feet",
+    "baseDefense": 62,
+    "fireResist": 3,
+    "waterResist": 2,
+    "thunderResist": -2,
+    "iceResist": 3,
+    "dragonResist": -4,
+    "skills": [
+      {
+        "id": "handicraft",
+        "level": 2
+      },
+      {
+        "id": "dragonAttack",
+        "level": 2
+      }
+    ],
+    "id": 194
+  },
+  {
+    "name": "Dober Greaves Beta",
+    "itemType": "Feet",
+    "baseDefense": 60,
+    "fireResist": -2,
+    "waterResist": 0,
+    "thunderResist": -1,
+    "iceResist": -1,
+    "dragonResist": 4,
+    "skills": [
+      {
+        "id": "attackBoost",
+        "level": 2
+      }
+    ],
+    "slots": [
+      {
+        "level": 1
+      }
+    ],
+    "id": 195
+  },
+  {
+    "name": "Dober Greaves Beta",
+    "itemType": "Feet",
+    "baseDefense": 60,
+    "fireResist": -2,
+    "waterResist": 0,
+    "thunderResist": -1,
+    "iceResist": -1,
+    "dragonResist": 4,
+    "skills": [
+      {
+        "id": "attackBoost",
+        "level": 2
+      },
+      {
+        "id": "staminaSurge",
+        "level": 1
+      }
+    ],
+    "id": 196
+  },
+  {
+    "name": "Damascus Greaves Beta",
+    "itemType": "Feet",
+    "baseDefense": 60,
+    "fireResist": 4,
+    "waterResist": -2,
+    "thunderResist": 0,
+    "iceResist": 0,
+    "dragonResist": 0,
+    "skills": [
+      {
+        "id": "defenseBoost",
+        "level": 2
+      }
+    ],
+    "slots": [
+      {
+        "level": 3
+      }
+    ],
+    "id": 197
+  },
+  {
+    "name": "Damascus Greaves Alpha",
+    "itemType": "Feet",
+    "baseDefense": 60,
+    "fireResist": 4,
+    "waterResist": -2,
+    "thunderResist": 0,
+    "iceResist": 0,
+    "dragonResist": 0,
+    "skills": [
+      {
+        "id": "defenseBoost",
+        "level": 2
+      },
+      {
+        "id": "ironSkin",
+        "level": 1
+      }
+    ],
+    "slots": [
+      {
+        "level": 1
+      }
+    ],
+    "id": 198
+  },
+  {
+    "name": "Bazel Greaves Beta",
+    "itemType": "Feet",
+    "tags": [
+      "bazelgeuse",
+      "dodogama"
+    ],
+    "baseDefense": 58,
+    "fireResist": 3,
+    "waterResist": 1,
+    "thunderResist": -4,
+    "iceResist": -2,
+    "dragonResist": -2,
+    "skills": [
+      {
+        "id": "bombardier",
+        "level": 2
+      },
+      {
+        "id": "bazelgeuseProtection"
+      }
+    ],
+    "slots": [
+      {
+        "level": 3
+      }
+    ],
+    "id": 199
+  },
+  {
+    "name": "Bazel Greaves Alpha",
+    "itemType": "Feet",
+    "tags": [
+      "bazelgeuse",
+      "dodogama"
+    ],
+    "baseDefense": 58,
+    "fireResist": 3,
+    "waterResist": 1,
+    "thunderResist": -4,
+    "iceResist": -2,
+    "dragonResist": -2,
+    "skills": [
+      {
+        "id": "bombardier",
+        "level": 2
+      },
+      {
+        "id": "criticalDraw",
+        "level": 1
+      },
+      {
+        "id": "bazelgeuseProtection"
+      }
+    ],
+    "slots": [
+      {
+        "level": 1
+      }
+    ],
+    "id": 200
+  },
+  {
+    "name": "Uragaan Greaves Beta",
+    "itemType": "Feet",
+    "baseDefense": 60,
+    "fireResist": 4,
+    "waterResist": -3,
+    "thunderResist": 1,
+    "iceResist": -2,
+    "dragonResist": -2,
+    "skills": [
+      {
+        "id": "guard",
+        "level": 1
+      },
+      {
+        "id": "uragaanProtection"
+      }
+    ],
+    "slots": [
+      {
+        "level": 3
+      }
+    ],
+    "id": 201
+  },
+  {
+    "name": "Uragaan Greaves Alpha",
+    "itemType": "Feet",
+    "baseDefense": 60,
+    "fireResist": 4,
+    "waterResist": -3,
+    "thunderResist": 1,
+    "iceResist": -2,
+    "dragonResist": -2,
+    "skills": [
+      {
+        "id": "guard",
+        "level": 2
+      },
+      {
+        "id": "uragaanProtection"
+      }
+    ],
+    "slots": [
+      {
+        "level": 1
+      }
+    ],
+    "id": 202
+  },
+  {
+    "name": "Diablos Nero Greaves Beta",
+    "itemType": "Feet",
+    "tags": [
+      "black diablos"
+    ],
+    "baseDefense": 56,
+    "fireResist": 2,
+    "waterResist": -3,
+    "thunderResist": 0,
+    "iceResist": -4,
+    "dragonResist": 2,
+    "skills": [
+      {
+        "id": "normalShots",
+        "level": 1
+      },
+      {
+        "id": "diablosMastery"
+      }
+    ],
+    "slots": [
+      {
+        "level": 2
+      }
+    ],
+    "id": 203
+  },
+  {
+    "name": "Diablos Nero Greaves Alpha",
+    "itemType": "Feet",
+    "tags": [
+      "black diablos"
+    ],
+    "baseDefense": 56,
+    "fireResist": 2,
+    "waterResist": -3,
+    "thunderResist": 0,
+    "iceResist": -4,
+    "dragonResist": 2,
+    "skills": [
+      {
+        "id": "normalShots",
+        "level": 1
+      },
+      {
+        "id": "heroics",
+        "level": 1
+      },
+      {
+        "id": "diablosMastery"
+      }
+    ],
+    "slots": [
+      {
+        "level": 1
+      }
+    ],
+    "id": 204
+  },
+  {
+    "name": "Rath Soul Greaves Beta",
+    "itemType": "Feet",
+    "tags": [
+      "azure rathalos"
+    ],
+    "baseDefense": 56,
+    "fireResist": 3,
+    "waterResist": 2,
+    "thunderResist": 2,
+    "iceResist": -3,
+    "dragonResist": -4,
+    "skills": [
+      {
+        "id": "focus",
+        "level": 1
+      },
+      {
+        "id": "rathalosMastery"
+      }
+    ],
+    "slots": [
+      {
+        "level": 1
+      }
+    ],
+    "id": 205
+  },
+  {
+    "name": "Rath Soul Greaves Alpha",
+    "itemType": "Feet",
+    "tags": [
+      "azure rathalos"
+    ],
+    "baseDefense": 56,
+    "fireResist": 3,
+    "waterResist": 2,
+    "thunderResist": 2,
+    "iceResist": -3,
+    "dragonResist": -4,
+    "skills": [
+      {
+        "id": "focus",
+        "level": 1
+      },
+      {
+        "id": "cliffhanger",
+        "level": 1
+      },
+      {
+        "id": "rathalosMastery"
+      }
+    ],
+    "id": 206
+  },
+  {
+    "name": "Diablos Greaves Beta",
+    "itemType": "Feet",
+    "baseDefense": 54,
+    "fireResist": 3,
+    "waterResist": -2,
+    "thunderResist": 0,
+    "iceResist": -3,
+    "dragonResist": 2,
+    "skills": [
+      {
+        "id": "tremorResistance",
+        "level": 2
+      },
+      {
+        "id": "diablosMastery"
+      }
+    ],
+    "slots": [
+      {
+        "level": 1
+      },
+      {
+        "level": 1
+      }
+    ],
+    "id": 207
+  },
+  {
+    "name": "Diablos Greaves Alpha",
+    "itemType": "Feet",
+    "baseDefense": 54,
+    "fireResist": 3,
+    "waterResist": -2,
+    "thunderResist": 0,
+    "iceResist": -3,
+    "dragonResist": 2,
+    "skills": [
+      {
+        "id": "tremorResistance",
+        "level": 2
+      },
+      {
+        "id": "slugger",
+        "level": 1
+      },
+      {
+        "id": "diablosMastery"
+      }
+    ],
+    "id": 208
+  },
+  {
+    "name": "Rathalos Greaves Beta",
+    "itemType": "Feet",
+    "baseDefense": 54,
+    "fireResist": 3,
+    "waterResist": 1,
+    "thunderResist": -2,
+    "iceResist": 1,
+    "dragonResist": -3,
+    "skills": [
+      {
+        "id": "jumpMaster",
+        "level": 1
+      },
+      {
+        "id": "rathalosMastery"
+      }
+    ],
+    "slots": [
+      {
+        "level": 3
+      }
+    ],
+    "id": 209
+  },
+  {
+    "name": "Rathalos Greaves Alpha",
+    "itemType": "Feet",
+    "baseDefense": 54,
+    "fireResist": 3,
+    "waterResist": 1,
+    "thunderResist": -2,
+    "iceResist": 1,
+    "dragonResist": -3,
+    "skills": [
+      {
+        "id": "jumpMaster",
+        "level": 1
+      },
+      {
+        "id": "weaknessExploit",
+        "level": 1
+      },
+      {
+        "id": "rathalosMastery"
+      }
+    ],
+    "id": 210
+  },
+  {
+    "name": "Odogaron Greaves Beta",
+    "itemType": "Feet",
+    "baseDefense": 54,
+    "fireResist": 2,
+    "waterResist": 2,
+    "thunderResist": -2,
+    "iceResist": -3,
+    "dragonResist": 0,
+    "skills": [
+      {
+        "id": "quickSheath",
+        "level": 1
+      },
+      {
+        "id": "odogaronMastery"
+      }
+    ],
+    "slots": [
+      {
+        "level": 1
+      }
+    ],
+    "id": 211
+  },
+  {
+    "name": "Odogaron Greaves Alpha",
+    "itemType": "Feet",
+    "baseDefense": 54,
+    "fireResist": 2,
+    "waterResist": 2,
+    "thunderResist": -2,
+    "iceResist": -3,
+    "dragonResist": 0,
+    "skills": [
+      {
+        "id": "quickSheath",
+        "level": 1
+      },
+      {
+        "id": "criticalEye",
+        "level": 1
+      },
+      {
+        "id": "odogaronMastery"
+      }
+    ],
+    "id": 212
+  },
+  {
+    "name": "Legiana Greaves Beta",
+    "itemType": "Feet",
+    "baseDefense": 54,
+    "fireResist": -1,
+    "waterResist": 2,
+    "thunderResist": -3,
+    "iceResist": 3,
+    "dragonResist": 0,
+    "skills": [
+      {
+        "id": "iceResistance",
+        "level": 2
+      },
+      {
+        "id": "legianaFavor"
+      }
+    ],
+    "slots": [
+      {
+        "level": 3
+      }
+    ],
+    "id": 213
+  },
+  {
+    "name": "Legiana Greaves Alpha",
+    "itemType": "Feet",
+    "baseDefense": 54,
+    "fireResist": -1,
+    "waterResist": 2,
+    "thunderResist": -3,
+    "iceResist": 3,
+    "dragonResist": 0,
+    "skills": [
+      {
+        "id": "iceResistance",
+        "level": 2
+      },
+      {
+        "id": "criticalDraw",
+        "level": 1
+      },
+      {
+        "id": "legianaFavor"
+      }
+    ],
+    "id": 214
+  },
+  {
+    "name": "Lavasioth Greaves Beta",
+    "itemType": "Feet",
+    "baseDefense": 56,
+    "fireResist": 3,
+    "waterResist": -3,
+    "thunderResist": 1,
+    "iceResist": -2,
+    "dragonResist": 2,
+    "skills": [
+      {
+        "id": "spreadPowerShots",
+        "level": 1
+      }
+    ],
+    "slots": [
+      {
+        "level": 2
+      }
+    ],
+    "id": 215
+  },
+  {
+    "name": "Lavasioth Greaves Alpha",
+    "itemType": "Feet",
+    "baseDefense": 56,
+    "fireResist": 3,
+    "waterResist": -3,
+    "thunderResist": 1,
+    "iceResist": -2,
+    "dragonResist": 2,
+    "skills": [
+      {
+        "id": "spreadPowerShots",
+        "level": 1
+      },
+      {
+        "id": "fireAttack",
+        "level": 1
+      }
+    ],
+    "slots": [
+      {
+        "level": 1
+      }
+    ],
+    "id": 216
+  },
+  {
+    "name": "Ingot Greaves Beta",
+    "itemType": "Feet",
+    "baseDefense": 50,
+    "fireResist": -2,
+    "waterResist": 0,
+    "thunderResist": 3,
+    "iceResist": -1,
+    "dragonResist": 0,
+    "skills": [
+      {
+        "id": "defenseBoost",
+        "level": 2
+      }
+    ],
+    "slots": [
+      {
+        "level": 2
+      }
+    ],
+    "id": 217
+  },
+  {
+    "name": "Ingot Greaves Alpha",
+    "itemType": "Feet",
+    "baseDefense": 50,
+    "fireResist": -2,
+    "waterResist": 0,
+    "thunderResist": 3,
+    "iceResist": -1,
+    "dragonResist": 0,
+    "skills": [
+      {
+        "id": "defenseBoost",
+        "level": 2
+      },
+      {
+        "id": "windproof",
+        "level": 1
+      }
+    ],
+    "id": 218
+  },
+  {
+    "name": "High Metal Greaves Beta",
+    "itemType": "Feet",
+    "baseDefense": 50,
+    "fireResist": 0,
+    "waterResist": -1,
+    "thunderResist": -2,
+    "iceResist": 3,
+    "dragonResist": 0,
+    "skills": [
+      {
+        "id": "heavyArtillery",
+        "level": 1
+      }
+    ],
+    "slots": [
+      {
+        "level": 1
+      }
+    ],
+    "id": 219
+  },
+  {
+    "name": "High Metal Greaves Alpha",
+    "itemType": "Feet",
+    "baseDefense": 50,
+    "fireResist": 0,
+    "waterResist": -1,
+    "thunderResist": -2,
+    "iceResist": 3,
+    "dragonResist": 0,
+    "skills": [
+      {
+        "id": "heavyArtillery",
+        "level": 1
+      },
+      {
+        "id": "iceResistance",
+        "level": 1
+      }
+    ],
+    "id": 220
+  },
+  {
+    "name": "Commission Pants Beta",
+    "itemType": "Feet",
+    "baseDefense": 70,
+    "fireResist": 2,
+    "waterResist": 2,
+    "thunderResist": 2,
+    "iceResist": 2,
+    "dragonResist": 2,
+    "skills": [
+      {
+        "id": "stealth",
+        "level": 2
+      }
+    ],
+    "slots": [
+      {
+        "level": 2
+      }
+    ],
+    "id": 221
+  },
+  {
+    "name": "Commission Pants Alpha",
+    "itemType": "Feet",
+    "baseDefense": 70,
+    "fireResist": 2,
+    "waterResist": 2,
+    "thunderResist": 2,
+    "iceResist": 2,
+    "dragonResist": 2,
+    "skills": [
+      {
+        "id": "stealth",
+        "level": 2
+      },
+      {
+        "id": "affinitySliding",
+        "level": 1
+      }
+    ],
+    "id": 222
+  },
+  {
+    "name": "Guild Cross Boots Beta",
+    "itemType": "Feet",
+    "baseDefense": 62,
+    "fireResist": 0,
+    "waterResist": 0,
+    "thunderResist": 0,
+    "iceResist": 0,
+    "dragonResist": 0,
+    "skills": [
+      {
+        "id": "airborne",
+        "level": 1
+      }
+    ],
+    "slots": [
+      {
+        "level": 3
+      }
+    ],
+    "id": 223
+  },
+  {
+    "name": "Guild Cross Boots Alpha",
+    "itemType": "Feet",
+    "baseDefense": 62,
+    "fireResist": 0,
+    "waterResist": 0,
+    "thunderResist": 0,
+    "iceResist": 0,
+    "dragonResist": 0,
+    "skills": [
+      {
+        "id": "airborne",
+        "level": 1
+      },
+      {
+        "id": "fireResistance",
+        "level": 2
+      }
+    ],
+    "slots": [
+      {
+        "level": 1
+      }
+    ],
+    "id": 224
+  }
 ]

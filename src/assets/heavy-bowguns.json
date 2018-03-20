@@ -1,216 +1,234 @@
 [
-	{
-		"name": "Chrome Assault II",
-		"itemType": "Weapon",
-		"weaponType": "HeavyBowgun",
-		"baseAttack": 255,
-		"baseAffinityPercent": 0,
-		"slots": [
-			{
-				"level": 1
-			},
-			{
-				"level": 1
-			}
-		]
-	},
-	{
-		"name": "Destruction's Fusillade",
-		"itemType": "Weapon",
-		"weaponType": "HeavyBowgun",
-		"baseAttack": 285,
-		"baseAffinityPercent": 0,
-		"elementAttackIncreaseCapOverride": 0.33,
-		"slots": [
-			{
-				"level": 1
-			}
-		]
-	},
-	{
-		"name": "Water Cannon III",
-		"itemType": "Weapon",
-		"weaponType": "HeavyBowgun",
-		"baseAttack": 255,
-		"baseAffinityPercent": 0,
-		"slots": [
-			{
-				"level": 1
-			}
-		]
-	},
-	{
-		"name": "Arma Destroyer III",
-		"itemType": "Weapon",
-		"weaponType": "HeavyBowgun",
-		"baseAttack": 255,
-		"baseAffinityPercent": 0
-	},
-	{
-		"name": "Legia Shattercryst",
-		"itemType": "Weapon",
-		"weaponType": "HeavyBowgun",
-		"baseAttack": 255,
-		"baseAffinityPercent": 0,
-		"slots": [
-			{
-				"level": 1
-			}
-		]
-	},
-	{
-		"name": "Gluttonous Fangcannon",
-		"itemType": "Weapon",
-		"weaponType": "HeavyBowgun",
-		"baseAttack": 270,
-		"baseAffinityPercent": 0,
-		"slots": [
-			{
-				"level": 1
-			}
-		]
-	},
-	{
-		"name": "Gnashing Flammenkanone",
-		"itemType": "Weapon",
-		"weaponType": "HeavyBowgun",
-		"baseAttack": 300,
-		"baseAffinityPercent": -20,
-		"slots": [
-			{
-				"level": 1
-			}
-		]
-	},
-	{
-		"name": "Power Shooter II",
-		"itemType": "Weapon",
-		"weaponType": "HeavyBowgun",
-		"baseAttack": 270,
-		"baseAffinityPercent": 0,
-		"slots": [
-			{
-				"level": 3
-			}
-		]
-	},
-	{
-		"name": "Griffon Blazooka",
-		"itemType": "Weapon",
-		"weaponType": "HeavyBowgun",
-		"baseAttack": 330,
-		"baseAffinityPercent": -20,
-		"baseDefense": 15,
-		"slots": [
-			{
-				"level": 1
-			}
-		]
-	},
-	{
-		"name": "Datura Blaster III",
-		"itemType": "Weapon",
-		"weaponType": "HeavyBowgun",
-		"baseAttack": 255,
-		"baseAffinityPercent": 0,
-		"slots": [
-			{
-				"level": 2
-			},
-			{
-				"level": 1
-			}
-		]
-	},
-	{
-		"name": "Baan Roar III",
-		"itemType": "Weapon",
-		"weaponType": "HeavyBowgun",
-		"baseAttack": 270,
-		"baseAffinityPercent": 0,
-		"baseDefense": 20
-	},
-	{
-		"name": "Gama Cannon II",
-		"itemType": "Weapon",
-		"weaponType": "HeavyBowgun",
-		"baseAttack": 255,
-		"baseAffinityPercent": 0,
-		"slots": [
-			{
-				"level": 1
-			}
-		]
-	},
-	{
-		"name": "Kadachi Lion III",
-		"itemType": "Weapon",
-		"weaponType": "HeavyBowgun",
-		"baseAttack": 255,
-		"baseAffinityPercent": 15,
-		"slots": [
-			{
-				"level": 1
-			}
-		]
-	},
-	{
-		"name": "Dragonbone Cannon III",
-		"itemType": "Weapon",
-		"weaponType": "HeavyBowgun",
-		"baseAttack": 255,
-		"baseAffinityPercent": 0,
-		"slots": [
-			{
-				"level": 1
-			}
-		]
-	},
-	{
-		"name": "Quickquiver",
-		"itemType": "Weapon",
-		"weaponType": "HeavyBowgun",
-		"baseAttack": 255,
-		"baseAffinityPercent": 0,
-		"slots": [
-			{
-				"level": 1
-			}
-		]
-	},
-	{
-		"name": "Magda Gemitus II",
-		"itemType": "Weapon",
-		"weaponType": "HeavyBowgun",
-		"baseAttack": 315,
-		"baseAffinityPercent": -20,
-		"baseDefense": 20,
-		"slots": [
-			{
-				"level": 2
-			}
-		]
-	},
-	{
-		"name": "Teostra's Flames",
-		"itemType": "Weapon",
-		"weaponType": "HeavyBowgun",
-		"baseAttack": 270,
-		"baseAffinityPercent": 0
-	},
-	{
-		"name": "Xeno Jiiqa ",
-		"itemType": "Weapon",
-		"weaponType": "HeavyBowgun",
-		"baseAttack": 255,
-		"baseAffinityPercent": 0,
-		"slots": [
-			{
-				"level": 3
-			},
-			{
-				"level": 3
-			}
-		]
-	}
+  {
+    "name": "Chrome Assault II",
+    "itemType": "Weapon",
+    "weaponType": "HeavyBowgun",
+    "baseAttack": 255,
+    "baseAffinityPercent": 0,
+    "slots": [
+      {
+        "level": 1
+      },
+      {
+        "level": 1
+      }
+    ],
+    "id": 238
+  },
+  {
+    "name": "Destruction's Fusillade",
+    "itemType": "Weapon",
+    "weaponType": "HeavyBowgun",
+    "baseAttack": 285,
+    "baseAffinityPercent": 0,
+    "elementAttackIncreaseCapOverride": 0.33,
+    "slots": [
+      {
+        "level": 1
+      }
+    ],
+    "id": 239
+  },
+  {
+    "name": "Water Cannon III",
+    "itemType": "Weapon",
+    "weaponType": "HeavyBowgun",
+    "baseAttack": 255,
+    "baseAffinityPercent": 0,
+    "slots": [
+      {
+        "level": 1
+      }
+    ],
+    "id": 240
+  },
+  {
+    "name": "Arma Destroyer III",
+    "itemType": "Weapon",
+    "weaponType": "HeavyBowgun",
+    "baseAttack": 255,
+    "baseAffinityPercent": 0,
+    "id": 241
+  },
+  {
+    "name": "Legia Shattercryst",
+    "itemType": "Weapon",
+    "weaponType": "HeavyBowgun",
+    "baseAttack": 255,
+    "baseAffinityPercent": 0,
+    "slots": [
+      {
+        "level": 1
+      }
+    ],
+    "id": 242
+  },
+  {
+    "name": "Gluttonous Fangcannon",
+    "itemType": "Weapon",
+    "weaponType": "HeavyBowgun",
+    "baseAttack": 270,
+    "baseAffinityPercent": 0,
+    "slots": [
+      {
+        "level": 1
+      }
+    ],
+    "id": 243
+  },
+  {
+    "name": "Gnashing Flammenkanone",
+    "itemType": "Weapon",
+    "weaponType": "HeavyBowgun",
+    "baseAttack": 300,
+    "baseAffinityPercent": -20,
+    "slots": [
+      {
+        "level": 1
+      }
+    ],
+    "id": 244
+  },
+  {
+    "name": "Power Shooter II",
+    "itemType": "Weapon",
+    "weaponType": "HeavyBowgun",
+    "baseAttack": 270,
+    "baseAffinityPercent": 0,
+    "slots": [
+      {
+        "level": 3
+      }
+    ],
+    "id": 245
+  },
+  {
+    "name": "Griffon Blazooka",
+    "itemType": "Weapon",
+    "weaponType": "HeavyBowgun",
+    "baseAttack": 330,
+    "baseAffinityPercent": -20,
+    "baseDefense": 15,
+    "slots": [
+      {
+        "level": 1
+      }
+    ],
+    "id": 246
+  },
+  {
+    "name": "Datura Blaster III",
+    "itemType": "Weapon",
+    "weaponType": "HeavyBowgun",
+    "baseAttack": 255,
+    "baseAffinityPercent": 0,
+    "slots": [
+      {
+        "level": 2
+      },
+      {
+        "level": 1
+      }
+    ],
+    "id": 247
+  },
+  {
+    "name": "Baan Roar III",
+    "itemType": "Weapon",
+    "weaponType": "HeavyBowgun",
+    "baseAttack": 270,
+    "baseAffinityPercent": 0,
+    "baseDefense": 20,
+    "id": 248
+  },
+  {
+    "name": "Gama Cannon II",
+    "itemType": "Weapon",
+    "weaponType": "HeavyBowgun",
+    "baseAttack": 255,
+    "baseAffinityPercent": 0,
+    "slots": [
+      {
+        "level": 1
+      }
+    ],
+    "id": 249
+  },
+  {
+    "name": "Kadachi Lion III",
+    "itemType": "Weapon",
+    "weaponType": "HeavyBowgun",
+    "baseAttack": 255,
+    "baseAffinityPercent": 15,
+    "slots": [
+      {
+        "level": 1
+      }
+    ],
+    "id": 250
+  },
+  {
+    "name": "Dragonbone Cannon III",
+    "itemType": "Weapon",
+    "weaponType": "HeavyBowgun",
+    "baseAttack": 255,
+    "baseAffinityPercent": 0,
+    "slots": [
+      {
+        "level": 1
+      }
+    ],
+    "id": 251
+  },
+  {
+    "name": "Quickquiver",
+    "itemType": "Weapon",
+    "weaponType": "HeavyBowgun",
+    "baseAttack": 255,
+    "baseAffinityPercent": 0,
+    "slots": [
+      {
+        "level": 1
+      }
+    ],
+    "id": 252
+  },
+  {
+    "name": "Magda Gemitus II",
+    "itemType": "Weapon",
+    "weaponType": "HeavyBowgun",
+    "baseAttack": 315,
+    "baseAffinityPercent": -20,
+    "baseDefense": 20,
+    "slots": [
+      {
+        "level": 2
+      }
+    ],
+    "id": 253
+  },
+  {
+    "name": "Teostra's Flames",
+    "itemType": "Weapon",
+    "weaponType": "HeavyBowgun",
+    "baseAttack": 270,
+    "baseAffinityPercent": 0,
+    "id": 254
+  },
+  {
+    "name": "Xeno Jiiqa ",
+    "itemType": "Weapon",
+    "weaponType": "HeavyBowgun",
+    "baseAttack": 255,
+    "baseAffinityPercent": 0,
+    "slots": [
+      {
+        "level": 3
+      },
+      {
+        "level": 3
+      }
+    ],
+    "id": 255
+  }
 ]

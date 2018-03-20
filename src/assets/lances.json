@@ -1,310 +1,330 @@
 [
-	{
-		"name": "Chrome Lance",
-		"itemType": "Weapon",
-		"weaponType": "Lance",
-		"baseAttack": 414,
-		"maxSharpness": "Blue",
-		"baseAffinityPercent": 0,
-		"ailment": "Paralysis",
-		"ailmentBaseAttack": 270,
-		"ailmentHidden": true,
-		"slots": [
-			{
-				"level": 1
-			},
-			{
-				"level": 1
-			}
-		]
-	},
-	{
-		"name": "Perdition's Hand",
-		"itemType": "Weapon",
-		"weaponType": "Lance",
-		"baseAttack": 483,
-		"maxSharpness": "Blue",
-		"baseAffinityPercent": 0,
-		"element": "Dragon",
-		"elementBaseAttack": 150,
-		"elementAttackIncreaseCapOverride": 0.33,
-		"elderseal": "High",
-		"slots": [
-			{
-				"level": 1
-			}
-		]
-	},
-	{
-		"name": "Legiana Halberd II",
-		"itemType": "Weapon",
-		"weaponType": "Lance",
-		"baseAttack": 368,
-		"maxSharpness": "White",
-		"baseAffinityPercent": 0,
-		"element": "Ice",
-		"elementBaseAttack": 360
-	},
-	{
-		"name": "Kula Hasta III",
-		"itemType": "Weapon",
-		"weaponType": "Lance",
-		"baseAttack": 391,
-		"maxSharpness": "Blue",
-		"baseAffinityPercent": 25,
-		"ailment": "Sleep",
-		"ailmentBaseAttack": 360,
-		"ailmentHidden": true
-	},
-	{
-		"name": "Gama Pilebunker II",
-		"itemType": "Weapon",
-		"weaponType": "Lance",
-		"baseAttack": 391,
-		"maxSharpness": "Blue",
-		"baseAffinityPercent": 0,
-		"ailment": "Blast",
-		"ailmentBaseAttack": 210,
-		"slots": [
-			{
-				"level": 2
-			},
-			{
-				"level": 2
-			}
-		]
-	},
-	{
-		"name": "Lightning Spire III",
-		"itemType": "Weapon",
-		"weaponType": "Lance",
-		"baseAttack": 414,
-		"maxSharpness": "Blue",
-		"baseAffinityPercent": 0,
-		"element": "Thunder",
-		"elementBaseAttack": 240,
-		"slots": [
-			{
-				"level": 2
-			}
-		]
-	},
-	{
-		"name": "Datura Pike III",
-		"itemType": "Weapon",
-		"weaponType": "Lance",
-		"baseAttack": 391,
-		"maxSharpness": "Blue",
-		"baseAffinityPercent": 0,
-		"ailment": "Poison",
-		"ailmentBaseAttack": 540,
-		"slots": [
-			{
-				"level": 2
-			},
-			{
-				"level": 2
-			}
-		]
-	},
-	{
-		"name": "Blue Prominence",
-		"itemType": "Weapon",
-		"weaponType": "Lance",
-		"baseAttack": 437,
-		"maxSharpness": "Blue",
-		"baseAffinityPercent": 20,
-		"element": "Fire",
-		"elementBaseAttack": 300,
-		"slots": [
-			{
-				"level": 1
-			}
-		]
-	},
-	{
-		"name": "Heavy Bone Lance II",
-		"itemType": "Weapon",
-		"weaponType": "Lance",
-		"baseAttack": 437,
-		"maxSharpness": "Blue",
-		"baseAffinityPercent": 0,
-		"ailment": "Poison",
-		"ailmentBaseAttack": 240,
-		"ailmentHidden": true,
-		"baseDefense": 10,
-		"slots": [
-			{
-				"level": 3
-			}
-		]
-	},
-	{
-		"name": "Love's Sorrow",
-		"itemType": "Weapon",
-		"weaponType": "Lance",
-		"baseAttack": 460,
-		"maxSharpness": "Blue",
-		"baseAffinityPercent": 0,
-		"element": "Dragon",
-		"elementBaseAttack": 270,
-		"elderseal": "Average",
-		"slots": [
-			{
-				"level": 2
-			}
-		]
-	},
-	{
-		"name": "Dark Stinger III",
-		"itemType": "Weapon",
-		"weaponType": "Lance",
-		"baseAttack": 368,
-		"maxSharpness": "White",
-		"baseAffinityPercent": 0,
-		"ailment": "Blast",
-		"ailmentBaseAttack": 240,
-		"ailmentHidden": true,
-		"slots": [
-			{
-				"level": 3
-			}
-		]
-	},
-	{
-		"name": "Barroth Stinger III",
-		"itemType": "Weapon",
-		"weaponType": "Lance",
-		"baseAttack": 460,
-		"maxSharpness": "Blue",
-		"baseAffinityPercent": -20,
-		"ailment": "Paralysis",
-		"ailmentBaseAttack": 390,
-		"ailmentHidden": true,
-		"baseDefense": 15,
-		"slots": [
-			{
-				"level": 2
-			},
-			{
-				"level": 1
-			}
-		]
-	},
-	{
-		"name": "Garon Dhara II",
-		"itemType": "Weapon",
-		"weaponType": "Lance",
-		"baseAttack": 391,
-		"maxSharpness": "White",
-		"baseAffinityPercent": 30,
-		"element": "Fire",
-		"elementBaseAttack": 210,
-		"elementHidden": true
-	},
-	{
-		"name": "Water Spike III",
-		"itemType": "Weapon",
-		"weaponType": "Lance",
-		"baseAttack": 437,
-		"maxSharpness": "Blue",
-		"baseAffinityPercent": 0,
-		"element": "Water",
-		"elementBaseAttack": 300,
-		"slots": [
-			{
-				"level": 2
-			}
-		]
-	},
-	{
-		"name": "Dragonbone Lance III",
-		"itemType": "Weapon",
-		"weaponType": "Lance",
-		"baseAttack": 368,
-		"maxSharpness": "Blue",
-		"baseAffinityPercent": 0,
-		"element": "Dragon",
-		"elementBaseAttack": 420,
-		"elderseal": "Low",
-		"slots": [
-			{
-				"level": 1
-			},
-			{
-				"level": 1
-			}
-		]
-	},
-	{
-		"name": "Bazel Myniad Rookslayer",
-		"itemType": "Weapon",
-		"weaponType": "Lance",
-		"baseAttack": 460,
-		"maxSharpness": "Blue",
-		"baseAffinityPercent": -10,
-		"ailment": "Blast",
-		"ailmentBaseAttack": 210
-	},
-	{
-		"name": "Thunderpiercer",
-		"itemType": "Weapon",
-		"weaponType": "Lance",
-		"baseAttack": 368,
-		"maxSharpness": "Blue",
-		"baseAffinityPercent": 10,
-		"element": "Thunder",
-		"elementBaseAttack": 540
-	},
-	{
-		"name": "Daora's Fang",
-		"itemType": "Weapon",
-		"weaponType": "Lance",
-		"baseAttack": 414,
-		"maxSharpness": "Blue",
-		"baseAffinityPercent": 10,
-		"element": "Ice",
-		"elementBaseAttack": 240,
-		"slots": [
-			{
-				"level": 2
-			}
-		]
-	},
-	{
-		"name": "Xeno Zauta",
-		"itemType": "Weapon",
-		"weaponType": "Lance",
-		"baseAttack": 391,
-		"maxSharpness": "White",
-		"baseAffinityPercent": 15,
-		"element": "Dragon",
-		"elementBaseAttack": 180,
-		"elderseal": "High",
-		"slots": [
-			{
-				"level": 3
-			},
-			{
-				"level": 3
-			}
-		]
-	},
-	{
-		"name": "Elder Babel Spear",
-		"itemType": "Weapon",
-		"weaponType": "Lance",
-		"baseAttack": 460,
-		"maxSharpness": "Blue",
-		"baseAffinityPercent": 0,
-		"element": "Fire",
-		"elementBaseAttack": 330,
-		"elementHidden": true,
-		"baseDefense": 20,
-		"slots": [
-			{
-				"level": 3
-			}
-		]
-	}
+  {
+    "name": "Chrome Lance",
+    "itemType": "Weapon",
+    "weaponType": "Lance",
+    "baseAttack": 414,
+    "maxSharpness": "Blue",
+    "baseAffinityPercent": 0,
+    "ailment": "Paralysis",
+    "ailmentBaseAttack": 270,
+    "ailmentHidden": true,
+    "slots": [
+      {
+        "level": 1
+      },
+      {
+        "level": 1
+      }
+    ],
+    "id": 123
+  },
+  {
+    "name": "Perdition's Hand",
+    "itemType": "Weapon",
+    "weaponType": "Lance",
+    "baseAttack": 483,
+    "maxSharpness": "Blue",
+    "baseAffinityPercent": 0,
+    "element": "Dragon",
+    "elementBaseAttack": 150,
+    "elementAttackIncreaseCapOverride": 0.33,
+    "elderseal": "High",
+    "slots": [
+      {
+        "level": 1
+      }
+    ],
+    "id": 124
+  },
+  {
+    "name": "Legiana Halberd II",
+    "itemType": "Weapon",
+    "weaponType": "Lance",
+    "baseAttack": 368,
+    "maxSharpness": "White",
+    "baseAffinityPercent": 0,
+    "element": "Ice",
+    "elementBaseAttack": 360,
+    "id": 125
+  },
+  {
+    "name": "Kula Hasta III",
+    "itemType": "Weapon",
+    "weaponType": "Lance",
+    "baseAttack": 391,
+    "maxSharpness": "Blue",
+    "baseAffinityPercent": 25,
+    "ailment": "Sleep",
+    "ailmentBaseAttack": 360,
+    "ailmentHidden": true,
+    "id": 126
+  },
+  {
+    "name": "Gama Pilebunker II",
+    "itemType": "Weapon",
+    "weaponType": "Lance",
+    "baseAttack": 391,
+    "maxSharpness": "Blue",
+    "baseAffinityPercent": 0,
+    "ailment": "Blast",
+    "ailmentBaseAttack": 210,
+    "slots": [
+      {
+        "level": 2
+      },
+      {
+        "level": 2
+      }
+    ],
+    "id": 127
+  },
+  {
+    "name": "Lightning Spire III",
+    "itemType": "Weapon",
+    "weaponType": "Lance",
+    "baseAttack": 414,
+    "maxSharpness": "Blue",
+    "baseAffinityPercent": 0,
+    "element": "Thunder",
+    "elementBaseAttack": 240,
+    "slots": [
+      {
+        "level": 2
+      }
+    ],
+    "id": 128
+  },
+  {
+    "name": "Datura Pike III",
+    "itemType": "Weapon",
+    "weaponType": "Lance",
+    "baseAttack": 391,
+    "maxSharpness": "Blue",
+    "baseAffinityPercent": 0,
+    "ailment": "Poison",
+    "ailmentBaseAttack": 540,
+    "slots": [
+      {
+        "level": 2
+      },
+      {
+        "level": 2
+      }
+    ],
+    "id": 129
+  },
+  {
+    "name": "Blue Prominence",
+    "itemType": "Weapon",
+    "weaponType": "Lance",
+    "baseAttack": 437,
+    "maxSharpness": "Blue",
+    "baseAffinityPercent": 20,
+    "element": "Fire",
+    "elementBaseAttack": 300,
+    "slots": [
+      {
+        "level": 1
+      }
+    ],
+    "id": 130
+  },
+  {
+    "name": "Heavy Bone Lance II",
+    "itemType": "Weapon",
+    "weaponType": "Lance",
+    "baseAttack": 437,
+    "maxSharpness": "Blue",
+    "baseAffinityPercent": 0,
+    "ailment": "Poison",
+    "ailmentBaseAttack": 240,
+    "ailmentHidden": true,
+    "baseDefense": 10,
+    "slots": [
+      {
+        "level": 3
+      }
+    ],
+    "id": 131
+  },
+  {
+    "name": "Love's Sorrow",
+    "itemType": "Weapon",
+    "weaponType": "Lance",
+    "baseAttack": 460,
+    "maxSharpness": "Blue",
+    "baseAffinityPercent": 0,
+    "element": "Dragon",
+    "elementBaseAttack": 270,
+    "elderseal": "Average",
+    "slots": [
+      {
+        "level": 2
+      }
+    ],
+    "id": 132
+  },
+  {
+    "name": "Dark Stinger III",
+    "itemType": "Weapon",
+    "weaponType": "Lance",
+    "baseAttack": 368,
+    "maxSharpness": "White",
+    "baseAffinityPercent": 0,
+    "ailment": "Blast",
+    "ailmentBaseAttack": 240,
+    "ailmentHidden": true,
+    "slots": [
+      {
+        "level": 3
+      }
+    ],
+    "id": 133
+  },
+  {
+    "name": "Barroth Stinger III",
+    "itemType": "Weapon",
+    "weaponType": "Lance",
+    "baseAttack": 460,
+    "maxSharpness": "Blue",
+    "baseAffinityPercent": -20,
+    "ailment": "Paralysis",
+    "ailmentBaseAttack": 390,
+    "ailmentHidden": true,
+    "baseDefense": 15,
+    "slots": [
+      {
+        "level": 2
+      },
+      {
+        "level": 1
+      }
+    ],
+    "id": 134
+  },
+  {
+    "name": "Garon Dhara II",
+    "itemType": "Weapon",
+    "weaponType": "Lance",
+    "baseAttack": 391,
+    "maxSharpness": "White",
+    "baseAffinityPercent": 30,
+    "element": "Fire",
+    "elementBaseAttack": 210,
+    "elementHidden": true,
+    "id": 135
+  },
+  {
+    "name": "Water Spike III",
+    "itemType": "Weapon",
+    "weaponType": "Lance",
+    "baseAttack": 437,
+    "maxSharpness": "Blue",
+    "baseAffinityPercent": 0,
+    "element": "Water",
+    "elementBaseAttack": 300,
+    "slots": [
+      {
+        "level": 2
+      }
+    ],
+    "id": 136
+  },
+  {
+    "name": "Dragonbone Lance III",
+    "itemType": "Weapon",
+    "weaponType": "Lance",
+    "baseAttack": 368,
+    "maxSharpness": "Blue",
+    "baseAffinityPercent": 0,
+    "element": "Dragon",
+    "elementBaseAttack": 420,
+    "elderseal": "Low",
+    "slots": [
+      {
+        "level": 1
+      },
+      {
+        "level": 1
+      }
+    ],
+    "id": 137
+  },
+  {
+    "name": "Bazel Myniad Rookslayer",
+    "itemType": "Weapon",
+    "weaponType": "Lance",
+    "baseAttack": 460,
+    "maxSharpness": "Blue",
+    "baseAffinityPercent": -10,
+    "ailment": "Blast",
+    "ailmentBaseAttack": 210,
+    "id": 138
+  },
+  {
+    "name": "Thunderpiercer",
+    "itemType": "Weapon",
+    "weaponType": "Lance",
+    "baseAttack": 368,
+    "maxSharpness": "Blue",
+    "baseAffinityPercent": 10,
+    "element": "Thunder",
+    "elementBaseAttack": 540,
+    "id": 139
+  },
+  {
+    "name": "Daora's Fang",
+    "itemType": "Weapon",
+    "weaponType": "Lance",
+    "baseAttack": 414,
+    "maxSharpness": "Blue",
+    "baseAffinityPercent": 10,
+    "element": "Ice",
+    "elementBaseAttack": 240,
+    "slots": [
+      {
+        "level": 2
+      }
+    ],
+    "id": 140
+  },
+  {
+    "name": "Xeno Zauta",
+    "itemType": "Weapon",
+    "weaponType": "Lance",
+    "baseAttack": 391,
+    "maxSharpness": "White",
+    "baseAffinityPercent": 15,
+    "element": "Dragon",
+    "elementBaseAttack": 180,
+    "elderseal": "High",
+    "slots": [
+      {
+        "level": 3
+      },
+      {
+        "level": 3
+      }
+    ],
+    "id": 141
+  },
+  {
+    "name": "Elder Babel Spear",
+    "itemType": "Weapon",
+    "weaponType": "Lance",
+    "baseAttack": 460,
+    "maxSharpness": "Blue",
+    "baseAffinityPercent": 0,
+    "element": "Fire",
+    "elementBaseAttack": 330,
+    "elementHidden": true,
+    "baseDefense": 20,
+    "slots": [
+      {
+        "level": 3
+      }
+    ],
+    "id": 142
+  }
 ]

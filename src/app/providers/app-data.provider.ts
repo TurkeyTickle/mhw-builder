@@ -74,20 +74,20 @@ export class AppDataProvider {
 			this.seedData.weapons = _.orderBy(this.seedData.weapons, ['weaponType', 'asc']);
 			this.seedData.armor = _.orderBy(this.seedData.armor, ['itemType', 'asc']);
 
-			let armorIndex = 1;
-			this.seedData.armor.forEach(armor => {
-				armor.id = armorIndex++;
-			});
+			// let armorIndex = 1;
+			// this.seedData.armor.forEach(armor => {
+			// 	armor.id = armorIndex++;
+			// });
 
-			let weaponIndex = 1;
-			this.seedData.weapons.forEach(weapon => {
-				weapon.id = weaponIndex++;
-			});
+			// let weaponIndex = 1;
+			// this.seedData.weapons.forEach(weapon => {
+			// 	weapon.id = weaponIndex++;
+			// });
 
-			let decorationIndex = 1;
-			this.seedData.decorations.forEach(decoration => {
-				decoration.id = decorationIndex++;
-			});
+			// let decorationIndex = 1;
+			// this.seedData.decorations.forEach(decoration => {
+			// 	decoration.id = decorationIndex++;
+			// });
 
 			return true;
 		});

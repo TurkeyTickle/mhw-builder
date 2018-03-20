@@ -1,288 +1,306 @@
 [
-	{
-		"name": "Chrome Guardian II",
-		"itemType": "Weapon",
-		"weaponType": "ChargeBlade",
-		"baseAttack": 648,
-		"maxSharpness": "Blue",
-		"baseAffinityPercent": 0,
-		"element": "Thunder",
-		"elementBaseAttack": 270,
-		"elemmentHidden": true,
-		"slots": [
-			{
-				"level": 1
-			},
-			{
-				"level": 1
-			}
-		]
-	},
-	{
-		"name": "Devastation's Thorns",
-		"itemType": "Weapon",
-		"weaponType": "ChargeBlade",
-		"baseAttack": 756,
-		"maxSharpness": "Blue",
-		"baseAffinityPercent": 0,
-		"element": "Dragon",
-		"elementBaseAttack": 150,
-		"elementAttackIncreaseCapOverride": 0.33,
-		"elderseal": "High",
-		"slots": [
-			{
-				"level": 1
-			}
-		]
-	},
-	{
-		"name": "Halberion Blade",
-		"itemType": "Weapon",
-		"weaponType": "ChargeBlade",
-		"baseAttack": 684,
-		"maxSharpness": "Blue",
-		"baseAffinityPercent": 20,
-		"element": "Fire",
-		"elementBaseAttack": 240,
-		"slots": [
-			{
-				"level": 1
-			}
-		]
-	},
-	{
-		"name": "Jyura Depth III",
-		"itemType": "Weapon",
-		"weaponType": "ChargeBlade",
-		"baseAttack": 684,
-		"maxSharpness": "Blue",
-		"baseAffinityPercent": 0,
-		"element": "Water",
-		"elementBaseAttack": 270,
-		"slots": [
-			{
-				"level": 1
-			}
-		]
-	},
-	{
-		"name": "Gigafrost II",
-		"itemType": "Weapon",
-		"weaponType": "ChargeBlade",
-		"baseAttack": 612,
-		"maxSharpness": "Blue",
-		"baseAffinityPercent": 0,
-		"element": "Ice",
-		"elementBaseAttack": 240,
-		"slots": [
-			{
-				"level": 2
-			},
-			{
-				"level": 2
-			}
-		]
-	},
-	{
-		"name": "Dear Hacatelia",
-		"itemType": "Weapon",
-		"weaponType": "ChargeBlade",
-		"baseAttack": 684,
-		"maxSharpness": "Blue",
-		"baseAffinityPercent": 0,
-		"ailment": "Poison",
-		"ailmentBaseAttack": 330,
-		"slots": [
-			{
-				"level": 2
-			},
-			{
-				"level": 2
-			}
-		]
-	},
-	{
-		"name": "Mighty Strongarm II",
-		"itemType": "Weapon",
-		"weaponType": "ChargeBlade",
-		"baseAttack": 684,
-		"maxSharpness": "Blue",
-		"baseAffinityPercent": 0,
-		"ailment": "Blast",
-		"ailmentBaseAttack": 240,
-		"baseDefense": 10,
-		"slots": [
-			{
-				"level": 3
-			}
-		]
-	},
-	{
-		"name": "Diablos Tyrannis II",
-		"itemType": "Weapon",
-		"weaponType": "ChargeBlade",
-		"baseAttack": 828,
-		"maxSharpness": "Blue",
-		"baseAffinityPercent": -30,
-		"element": "Ice",
-		"elementBaseAttack": 180,
-		"elementHidden": true,
-		"baseDefense": 15
-	},
-	{
-		"name": "Jagras Escudo III",
-		"itemType": "Weapon",
-		"weaponType": "ChargeBlade",
-		"baseAttack": 684,
-		"maxSharpness": "Blue",
-		"baseAffinityPercent": 0,
-		"ailment": "Sleep",
-		"ailmentBaseAttack": 180,
-		"ailmentHidden": true,
-		"slots": [
-			{
-				"level": 3
-			},
-			{
-				"level": 2
-			}
-		]
-	},
-	{
-		"name": "Gama Silt II",
-		"itemType": "Weapon",
-		"weaponType": "ChargeBlade",
-		"baseAttack": 612,
-		"maxSharpness": "Blue",
-		"baseAffinityPercent": 0,
-		"ailment": "Blast",
-		"ailmentBaseAttack": 180,
-		"slots": [
-			{
-				"level": 2
-			},
-			{
-				"level": 2
-			}
-		]
-	},
-	{
-		"name": "Girros Nadja III",
-		"itemType": "Weapon",
-		"weaponType": "ChargeBlade",
-		"baseAttack": 576,
-		"maxSharpness": "Blue",
-		"baseAffinityPercent": 20,
-		"ailment": "Paralysis",
-		"ailmentBaseAttack": 300
-	},
-	{
-		"name": "Hazak Aspida II",
-		"itemType": "Weapon",
-		"weaponType": "ChargeBlade",
-		"baseAttack": 684,
-		"maxSharpness": "Blue",
-		"baseAffinityPercent": 0,
-		"element": "Dragon",
-		"elementBaseAttack": 270,
-		"elderseal": "Average",
-		"slots": [
-			{
-				"level": 2
-			}
-		]
-	},
-	{
-		"name": "Kadachi Kaina III",
-		"itemType": "Weapon",
-		"weaponType": "ChargeBlade",
-		"baseAttack": 648,
-		"maxSharpness": "Blue",
-		"baseAffinityPercent": 15,
-		"element": "Thunder",
-		"elementBaseAttack": 210,
-		"slots": [
-			{
-				"level": 1
-			}
-		]
-	},
-	{
-		"name": "Odium",
-		"itemType": "Weapon",
-		"weaponType": "ChargeBlade",
-		"baseAttack": 576,
-		"maxSharpness": "White",
-		"baseAffinityPercent": 25,
-		"element": "Fire",
-		"elementBaseAttack": 180,
-		"elementHidden": true
-	},
-	{
-		"name": "Dragonbone Cutter III",
-		"itemType": "Weapon",
-		"weaponType": "ChargeBlade",
-		"baseAttack": 576,
-		"maxSharpness": "Blue",
-		"baseAffinityPercent": 0,
-		"element": "Dragon",
-		"elementBaseAttack": 360,
-		"elderseal": "Low",
-		"slots": [
-			{
-				"level": 1
-			},
-			{
-				"level": 1
-			}
-		]
-	},
-	{
-		"name": "Avenging Magda Manus",
-		"itemType": "Weapon",
-		"weaponType": "ChargeBlade",
-		"baseAttack": 756,
-		"maxSharpness": "Green",
-		"baseAffinityPercent": -10,
-		"ailment": "Blast",
-		"ailmentBaseAttack": 210,
-		"baseDefense": 20
-	},
-	{
-		"name": "Daora's Thwartoise",
-		"itemType": "Weapon",
-		"weaponType": "ChargeBlade",
-		"baseAttack": 648,
-		"maxSharpness": "Blue",
-		"baseAffinityPercent": 15,
-		"element": "Ice",
-		"elementBaseAttack": 180,
-		"slots": [
-			{
-				"level": 2
-			},
-			{
-				"level": 1
-			}
-		]
-	},
-	{
-		"name": "Xeno Ra'atz",
-		"itemType": "Weapon",
-		"weaponType": "ChargeBlade",
-		"baseAttack": 648,
-		"maxSharpness": "White",
-		"baseAffinityPercent": 15,
-		"element": "Dragon",
-		"elementBaseAttack": 180,
-		"elderseal": "Low",
-		"slots": [
-			{
-				"level": 3
-			},
-			{
-				"level": 3
-			}
-		]
-	}
+  {
+    "name": "Chrome Guardian II",
+    "itemType": "Weapon",
+    "weaponType": "ChargeBlade",
+    "baseAttack": 648,
+    "maxSharpness": "Blue",
+    "baseAffinityPercent": 0,
+    "element": "Thunder",
+    "elementBaseAttack": 270,
+    "elemmentHidden": true,
+    "slots": [
+      {
+        "level": 1
+      },
+      {
+        "level": 1
+      }
+    ],
+    "id": 180
+  },
+  {
+    "name": "Devastation's Thorns",
+    "itemType": "Weapon",
+    "weaponType": "ChargeBlade",
+    "baseAttack": 756,
+    "maxSharpness": "Blue",
+    "baseAffinityPercent": 0,
+    "element": "Dragon",
+    "elementBaseAttack": 150,
+    "elementAttackIncreaseCapOverride": 0.33,
+    "elderseal": "High",
+    "slots": [
+      {
+        "level": 1
+      }
+    ],
+    "id": 181
+  },
+  {
+    "name": "Halberion Blade",
+    "itemType": "Weapon",
+    "weaponType": "ChargeBlade",
+    "baseAttack": 684,
+    "maxSharpness": "Blue",
+    "baseAffinityPercent": 20,
+    "element": "Fire",
+    "elementBaseAttack": 240,
+    "slots": [
+      {
+        "level": 1
+      }
+    ],
+    "id": 182
+  },
+  {
+    "name": "Jyura Depth III",
+    "itemType": "Weapon",
+    "weaponType": "ChargeBlade",
+    "baseAttack": 684,
+    "maxSharpness": "Blue",
+    "baseAffinityPercent": 0,
+    "element": "Water",
+    "elementBaseAttack": 270,
+    "slots": [
+      {
+        "level": 1
+      }
+    ],
+    "id": 183
+  },
+  {
+    "name": "Gigafrost II",
+    "itemType": "Weapon",
+    "weaponType": "ChargeBlade",
+    "baseAttack": 612,
+    "maxSharpness": "Blue",
+    "baseAffinityPercent": 0,
+    "element": "Ice",
+    "elementBaseAttack": 240,
+    "slots": [
+      {
+        "level": 2
+      },
+      {
+        "level": 2
+      }
+    ],
+    "id": 184
+  },
+  {
+    "name": "Dear Hacatelia",
+    "itemType": "Weapon",
+    "weaponType": "ChargeBlade",
+    "baseAttack": 684,
+    "maxSharpness": "Blue",
+    "baseAffinityPercent": 0,
+    "ailment": "Poison",
+    "ailmentBaseAttack": 330,
+    "slots": [
+      {
+        "level": 2
+      },
+      {
+        "level": 2
+      }
+    ],
+    "id": 185
+  },
+  {
+    "name": "Mighty Strongarm II",
+    "itemType": "Weapon",
+    "weaponType": "ChargeBlade",
+    "baseAttack": 684,
+    "maxSharpness": "Blue",
+    "baseAffinityPercent": 0,
+    "ailment": "Blast",
+    "ailmentBaseAttack": 240,
+    "baseDefense": 10,
+    "slots": [
+      {
+        "level": 3
+      }
+    ],
+    "id": 186
+  },
+  {
+    "name": "Diablos Tyrannis II",
+    "itemType": "Weapon",
+    "weaponType": "ChargeBlade",
+    "baseAttack": 828,
+    "maxSharpness": "Blue",
+    "baseAffinityPercent": -30,
+    "element": "Ice",
+    "elementBaseAttack": 180,
+    "elementHidden": true,
+    "baseDefense": 15,
+    "id": 187
+  },
+  {
+    "name": "Jagras Escudo III",
+    "itemType": "Weapon",
+    "weaponType": "ChargeBlade",
+    "baseAttack": 684,
+    "maxSharpness": "Blue",
+    "baseAffinityPercent": 0,
+    "ailment": "Sleep",
+    "ailmentBaseAttack": 180,
+    "ailmentHidden": true,
+    "slots": [
+      {
+        "level": 3
+      },
+      {
+        "level": 2
+      }
+    ],
+    "id": 188
+  },
+  {
+    "name": "Gama Silt II",
+    "itemType": "Weapon",
+    "weaponType": "ChargeBlade",
+    "baseAttack": 612,
+    "maxSharpness": "Blue",
+    "baseAffinityPercent": 0,
+    "ailment": "Blast",
+    "ailmentBaseAttack": 180,
+    "slots": [
+      {
+        "level": 2
+      },
+      {
+        "level": 2
+      }
+    ],
+    "id": 189
+  },
+  {
+    "name": "Girros Nadja III",
+    "itemType": "Weapon",
+    "weaponType": "ChargeBlade",
+    "baseAttack": 576,
+    "maxSharpness": "Blue",
+    "baseAffinityPercent": 20,
+    "ailment": "Paralysis",
+    "ailmentBaseAttack": 300,
+    "id": 190
+  },
+  {
+    "name": "Hazak Aspida II",
+    "itemType": "Weapon",
+    "weaponType": "ChargeBlade",
+    "baseAttack": 684,
+    "maxSharpness": "Blue",
+    "baseAffinityPercent": 0,
+    "element": "Dragon",
+    "elementBaseAttack": 270,
+    "elderseal": "Average",
+    "slots": [
+      {
+        "level": 2
+      }
+    ],
+    "id": 191
+  },
+  {
+    "name": "Kadachi Kaina III",
+    "itemType": "Weapon",
+    "weaponType": "ChargeBlade",
+    "baseAttack": 648,
+    "maxSharpness": "Blue",
+    "baseAffinityPercent": 15,
+    "element": "Thunder",
+    "elementBaseAttack": 210,
+    "slots": [
+      {
+        "level": 1
+      }
+    ],
+    "id": 192
+  },
+  {
+    "name": "Odium",
+    "itemType": "Weapon",
+    "weaponType": "ChargeBlade",
+    "baseAttack": 576,
+    "maxSharpness": "White",
+    "baseAffinityPercent": 25,
+    "element": "Fire",
+    "elementBaseAttack": 180,
+    "elementHidden": true,
+    "id": 193
+  },
+  {
+    "name": "Dragonbone Cutter III",
+    "itemType": "Weapon",
+    "weaponType": "ChargeBlade",
+    "baseAttack": 576,
+    "maxSharpness": "Blue",
+    "baseAffinityPercent": 0,
+    "element": "Dragon",
+    "elementBaseAttack": 360,
+    "elderseal": "Low",
+    "slots": [
+      {
+        "level": 1
+      },
+      {
+        "level": 1
+      }
+    ],
+    "id": 194
+  },
+  {
+    "name": "Avenging Magda Manus",
+    "itemType": "Weapon",
+    "weaponType": "ChargeBlade",
+    "baseAttack": 756,
+    "maxSharpness": "Green",
+    "baseAffinityPercent": -10,
+    "ailment": "Blast",
+    "ailmentBaseAttack": 210,
+    "baseDefense": 20,
+    "id": 195
+  },
+  {
+    "name": "Daora's Thwartoise",
+    "itemType": "Weapon",
+    "weaponType": "ChargeBlade",
+    "baseAttack": 648,
+    "maxSharpness": "Blue",
+    "baseAffinityPercent": 15,
+    "element": "Ice",
+    "elementBaseAttack": 180,
+    "slots": [
+      {
+        "level": 2
+      },
+      {
+        "level": 1
+      }
+    ],
+    "id": 196
+  },
+  {
+    "name": "Xeno Ra'atz",
+    "itemType": "Weapon",
+    "weaponType": "ChargeBlade",
+    "baseAttack": 648,
+    "maxSharpness": "White",
+    "baseAffinityPercent": 15,
+    "element": "Dragon",
+    "elementBaseAttack": 180,
+    "elderseal": "Low",
+    "slots": [
+      {
+        "level": 3
+      },
+      {
+        "level": 3
+      }
+    ],
+    "id": 197
+  }
 ]

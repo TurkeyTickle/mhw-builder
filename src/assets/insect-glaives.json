@@ -1,302 +1,321 @@
 [
-	{
-		"name": "Chome Blade II",
-		"itemType": "Weapon",
-		"weaponType": "InsectGlaive",
-		"baseAttack": 558,
-		"maxSharpness": "Blue",
-		"baseAffinityPercent": 0,
-		"ailment": "Blast",
-		"ailmentBaseAttack": 270,
-		"slots": [
-			{
-				"level": 1
-			},
-			{
-				"level": 1
-			}
-		]
-	},
-	{
-		"name": "Catastrophe's Light",
-		"itemType": "Weapon",
-		"weaponType": "InsectGlaive",
-		"baseAttack": 651,
-		"maxSharpness": "Blue",
-		"baseAffinityPercent": 0,
-		"element": "Dragon",
-		"elementBaseAttack": 150,
-		"elementAttackIncreaseCapOverride": 0.33,
-		"elderseal": "High",
-		"slots": [
-			{
-				"level": 1
-			}
-		]
-	},
-	{
-		"name": "Firedance Rathmaul",
-		"itemType": "Weapon",
-		"weaponType": "InsectGlaive",
-		"baseAttack": 589,
-		"maxSharpness": "Blue",
-		"baseAffinityPercent": 20,
-		"element": "Fire",
-		"elementBaseAttack": 180,
-		"slots": [
-			{
-				"level": 1
-			}
-		]
-	},
-	{
-		"name": "Ya-Ku Wrath II",
-		"itemType": "Weapon",
-		"weaponType": "InsectGlaive",
-		"baseAttack": 527,
-		"maxSharpness": "Blue",
-		"baseAffinityPercent": 20,
-		"ailment": "Sleep",
-		"ailmentBaseAttack": 210,
-		"ailmentHidden": true
-	},
-	{
-		"name": "Destroyer Bo III",
-		"itemType": "Weapon",
-		"weaponType": "InsectGlaive",
-		"baseAttack": 558,
-		"maxSharpness": "Blue",
-		"baseAffinityPercent": 0,
-		"element": "Thunder",
-		"elementBaseAttack": 300,
-		"elementHidden": true,
-		"slots": [
-			{
-				"level": 3
-			}
-		]
-	},
-	{
-		"name": "Freeze Gale II",
-		"itemType": "Weapon",
-		"weaponType": "InsectGlaive",
-		"baseAttack": 527,
-		"maxSharpness": "Blue",
-		"baseAffinityPercent": 0,
-		"element": "Ice",
-		"elementBaseAttack": 240,
-		"slots": [
-			{
-				"level": 2
-			},
-			{
-				"level": 2
-			}
-		]
-	},
-	{
-		"name": "Datura Blade III",
-		"itemType": "Weapon",
-		"weaponType": "InsectGlaive",
-		"baseAttack": 527,
-		"maxSharpness": "Blue",
-		"baseAffinityPercent": 0,
-		"ailment": "Poison",
-		"ailmentBaseAttack": 390,
-		"slots": [
-			{
-				"level": 2
-			},
-			{
-				"level": 1
-			}
-		]
-	},
-	{
-		"name": "Gama Cane II",
-		"itemType": "Weapon",
-		"weaponType": "InsectGlaive",
-		"baseAttack": 527,
-		"maxSharpness": "Blue",
-		"baseAffinityPercent": 0,
-		"ailment": "Blast",
-		"ailmentBaseAttack": 120,
-		"slots": [
-			{
-				"level": 2
-			},
-			{
-				"level": 2
-			}
-		]
-	},
-	{
-		"name": "Aerial Rod II",
-		"itemType": "Weapon",
-		"weaponType": "InsectGlaive",
-		"baseAttack": 589,
-		"maxSharpness": "Blue",
-		"baseAffinityPercent": 0,
-		"ailment": "Paralysis",
-		"ailmentBaseAttack": 210,
-		"ailmentHidden": true,
-		"baseDefense": 10,
-		"slots": [
-			{
-				"level": 3
-			}
-		]
-	},
-	{
-		"name": "Hazak Entoma II",
-		"itemType": "Weapon",
-		"weaponType": "InsectGlaive",
-		"baseAttack": 620,
-		"maxSharpness": "Blue",
-		"baseAffinityPercent": 0,
-		"element": "Dragon",
-		"elementBaseAttack": 180,
-		"elderseal": "Average",
-		"slots": [
-			{
-				"level": 2
-			}
-		]
-	},
-	{
-		"name": "Gnashing Flammenkaefer",
-		"itemType": "Weapon",
-		"weaponType": "InsectGlaive",
-		"baseAttack": 651,
-		"maxSharpness": "Blue",
-		"baseAffinityPercent": -20,
-		"element": "Fire",
-		"elementBaseAttack": 270
-	},
-	{
-		"name": "Water Glaive III",
-		"itemType": "Weapon",
-		"weaponType": "InsectGlaive",
-		"baseAttack": 589,
-		"maxSharpness": "Blue",
-		"baseAffinityPercent": 0,
-		"element": "Water",
-		"elementBaseAttack": 210,
-		"slots": [
-			{
-				"level": 2
-			}
-		]
-	},
-	{
-		"name": "Tyrannis Glaive II",
-		"itemType": "Weapon",
-		"weaponType": "InsectGlaive",
-		"baseAttack": 713,
-		"maxSharpness": "Blue",
-		"baseAffinityPercent": -30,
-		"element": "Ice",
-		"elementBaseAttack": 180,
-		"elementHidden": true,
-		"baseDefense": 15,
-		"slots": [
-			{
-				"level": 2
-			}
-		]
-	},
-	{
-		"name": "Kadachi Pillar III",
-		"itemType": "Weapon",
-		"weaponType": "InsectGlaive",
-		"baseAttack": 558,
-		"maxSharpness": "Blue",
-		"baseAffinityPercent": 10,
-		"element": "Thunder",
-		"elementBaseAttack": 240,
-		"slots": [
-			{
-				"level": 1
-			}
-		]
-	},
-	{
-		"name": "Vice",
-		"itemType": "Weapon",
-		"weaponType": "InsectGlaive",
-		"baseAttack": 496,
-		"maxSharpness": "White",
-		"baseAffinityPercent": 20,
-		"element": "Fire",
-		"elementBaseAttack": 150,
-		"elementHidden": true,
-		"slots": [
-			{
-				"level": 2
-			}
-		]
-	},
-	{
-		"name": "Dragonbone Glaive III",
-		"itemType": "Weapon",
-		"weaponType": "InsectGlaive",
-		"baseAttack": 496,
-		"maxSharpness": "Blue",
-		"baseAffinityPercent": 0,
-		"element": "Dragon",
-		"elementBaseAttack": 390,
-		"elderseal": "Low",
-		"slots": [
-			{
-				"level": 1
-			},
-			{
-				"level": 1
-			}
-		]
-	},
-	{
-		"name": "Verdant Levin",
-		"itemType": "Weapon",
-		"weaponType": "InsectGlaive",
-		"baseAttack": 496,
-		"maxSharpness": "Blue",
-		"baseAffinityPercent": 0,
-		"element": "Thunder",
-		"elementBaseAttack": 360
-	},
-	{
-		"name": "Daora's Tethidine",
-		"itemType": "Weapon",
-		"weaponType": "InsectGlaive",
-		"baseAttack": 558,
-		"maxSharpness": "Blue",
-		"baseAffinityPercent": 10,
-		"element": "Ice",
-		"elementBaseAttack": 180,
-		"slots": [
-			{
-				"level": 2
-			}
-		]
-	},
-	{
-		"name": "Xeno Shmaena",
-		"itemType": "Weapon",
-		"weaponType": "InsectGlaive",
-		"baseAttack": 558,
-		"maxSharpness": "White",
-		"baseAffinityPercent": 15,
-		"element": "Dragon",
-		"elementBaseAttack": 120,
-		"elderseal": "Low",
-		"slots": [
-			{
-				"level": 3
-			},
-			{
-				"level": 3
-			}
-		]
-	}
+  {
+    "name": "Chome Blade II",
+    "itemType": "Weapon",
+    "weaponType": "InsectGlaive",
+    "baseAttack": 558,
+    "maxSharpness": "Blue",
+    "baseAffinityPercent": 0,
+    "ailment": "Blast",
+    "ailmentBaseAttack": 270,
+    "slots": [
+      {
+        "level": 1
+      },
+      {
+        "level": 1
+      }
+    ],
+    "id": 198
+  },
+  {
+    "name": "Catastrophe's Light",
+    "itemType": "Weapon",
+    "weaponType": "InsectGlaive",
+    "baseAttack": 651,
+    "maxSharpness": "Blue",
+    "baseAffinityPercent": 0,
+    "element": "Dragon",
+    "elementBaseAttack": 150,
+    "elementAttackIncreaseCapOverride": 0.33,
+    "elderseal": "High",
+    "slots": [
+      {
+        "level": 1
+      }
+    ],
+    "id": 199
+  },
+  {
+    "name": "Firedance Rathmaul",
+    "itemType": "Weapon",
+    "weaponType": "InsectGlaive",
+    "baseAttack": 589,
+    "maxSharpness": "Blue",
+    "baseAffinityPercent": 20,
+    "element": "Fire",
+    "elementBaseAttack": 180,
+    "slots": [
+      {
+        "level": 1
+      }
+    ],
+    "id": 200
+  },
+  {
+    "name": "Ya-Ku Wrath II",
+    "itemType": "Weapon",
+    "weaponType": "InsectGlaive",
+    "baseAttack": 527,
+    "maxSharpness": "Blue",
+    "baseAffinityPercent": 20,
+    "ailment": "Sleep",
+    "ailmentBaseAttack": 210,
+    "ailmentHidden": true,
+    "id": 201
+  },
+  {
+    "name": "Destroyer Bo III",
+    "itemType": "Weapon",
+    "weaponType": "InsectGlaive",
+    "baseAttack": 558,
+    "maxSharpness": "Blue",
+    "baseAffinityPercent": 0,
+    "element": "Thunder",
+    "elementBaseAttack": 300,
+    "elementHidden": true,
+    "slots": [
+      {
+        "level": 3
+      }
+    ],
+    "id": 202
+  },
+  {
+    "name": "Freeze Gale II",
+    "itemType": "Weapon",
+    "weaponType": "InsectGlaive",
+    "baseAttack": 527,
+    "maxSharpness": "Blue",
+    "baseAffinityPercent": 0,
+    "element": "Ice",
+    "elementBaseAttack": 240,
+    "slots": [
+      {
+        "level": 2
+      },
+      {
+        "level": 2
+      }
+    ],
+    "id": 203
+  },
+  {
+    "name": "Datura Blade III",
+    "itemType": "Weapon",
+    "weaponType": "InsectGlaive",
+    "baseAttack": 527,
+    "maxSharpness": "Blue",
+    "baseAffinityPercent": 0,
+    "ailment": "Poison",
+    "ailmentBaseAttack": 390,
+    "slots": [
+      {
+        "level": 2
+      },
+      {
+        "level": 1
+      }
+    ],
+    "id": 204
+  },
+  {
+    "name": "Gama Cane II",
+    "itemType": "Weapon",
+    "weaponType": "InsectGlaive",
+    "baseAttack": 527,
+    "maxSharpness": "Blue",
+    "baseAffinityPercent": 0,
+    "ailment": "Blast",
+    "ailmentBaseAttack": 120,
+    "slots": [
+      {
+        "level": 2
+      },
+      {
+        "level": 2
+      }
+    ],
+    "id": 205
+  },
+  {
+    "name": "Aerial Rod II",
+    "itemType": "Weapon",
+    "weaponType": "InsectGlaive",
+    "baseAttack": 589,
+    "maxSharpness": "Blue",
+    "baseAffinityPercent": 0,
+    "ailment": "Paralysis",
+    "ailmentBaseAttack": 210,
+    "ailmentHidden": true,
+    "baseDefense": 10,
+    "slots": [
+      {
+        "level": 3
+      }
+    ],
+    "id": 206
+  },
+  {
+    "name": "Hazak Entoma II",
+    "itemType": "Weapon",
+    "weaponType": "InsectGlaive",
+    "baseAttack": 620,
+    "maxSharpness": "Blue",
+    "baseAffinityPercent": 0,
+    "element": "Dragon",
+    "elementBaseAttack": 180,
+    "elderseal": "Average",
+    "slots": [
+      {
+        "level": 2
+      }
+    ],
+    "id": 207
+  },
+  {
+    "name": "Gnashing Flammenkaefer",
+    "itemType": "Weapon",
+    "weaponType": "InsectGlaive",
+    "baseAttack": 651,
+    "maxSharpness": "Blue",
+    "baseAffinityPercent": -20,
+    "element": "Fire",
+    "elementBaseAttack": 270,
+    "id": 208
+  },
+  {
+    "name": "Water Glaive III",
+    "itemType": "Weapon",
+    "weaponType": "InsectGlaive",
+    "baseAttack": 589,
+    "maxSharpness": "Blue",
+    "baseAffinityPercent": 0,
+    "element": "Water",
+    "elementBaseAttack": 210,
+    "slots": [
+      {
+        "level": 2
+      }
+    ],
+    "id": 209
+  },
+  {
+    "name": "Tyrannis Glaive II",
+    "itemType": "Weapon",
+    "weaponType": "InsectGlaive",
+    "baseAttack": 713,
+    "maxSharpness": "Blue",
+    "baseAffinityPercent": -30,
+    "element": "Ice",
+    "elementBaseAttack": 180,
+    "elementHidden": true,
+    "baseDefense": 15,
+    "slots": [
+      {
+        "level": 2
+      }
+    ],
+    "id": 210
+  },
+  {
+    "name": "Kadachi Pillar III",
+    "itemType": "Weapon",
+    "weaponType": "InsectGlaive",
+    "baseAttack": 558,
+    "maxSharpness": "Blue",
+    "baseAffinityPercent": 10,
+    "element": "Thunder",
+    "elementBaseAttack": 240,
+    "slots": [
+      {
+        "level": 1
+      }
+    ],
+    "id": 211
+  },
+  {
+    "name": "Vice",
+    "itemType": "Weapon",
+    "weaponType": "InsectGlaive",
+    "baseAttack": 496,
+    "maxSharpness": "White",
+    "baseAffinityPercent": 20,
+    "element": "Fire",
+    "elementBaseAttack": 150,
+    "elementHidden": true,
+    "slots": [
+      {
+        "level": 2
+      }
+    ],
+    "id": 212
+  },
+  {
+    "name": "Dragonbone Glaive III",
+    "itemType": "Weapon",
+    "weaponType": "InsectGlaive",
+    "baseAttack": 496,
+    "maxSharpness": "Blue",
+    "baseAffinityPercent": 0,
+    "element": "Dragon",
+    "elementBaseAttack": 390,
+    "elderseal": "Low",
+    "slots": [
+      {
+        "level": 1
+      },
+      {
+        "level": 1
+      }
+    ],
+    "id": 213
+  },
+  {
+    "name": "Verdant Levin",
+    "itemType": "Weapon",
+    "weaponType": "InsectGlaive",
+    "baseAttack": 496,
+    "maxSharpness": "Blue",
+    "baseAffinityPercent": 0,
+    "element": "Thunder",
+    "elementBaseAttack": 360,
+    "id": 214
+  },
+  {
+    "name": "Daora's Tethidine",
+    "itemType": "Weapon",
+    "weaponType": "InsectGlaive",
+    "baseAttack": 558,
+    "maxSharpness": "Blue",
+    "baseAffinityPercent": 10,
+    "element": "Ice",
+    "elementBaseAttack": 180,
+    "slots": [
+      {
+        "level": 2
+      }
+    ],
+    "id": 215
+  },
+  {
+    "name": "Xeno Shmaena",
+    "itemType": "Weapon",
+    "weaponType": "InsectGlaive",
+    "baseAttack": 558,
+    "maxSharpness": "White",
+    "baseAffinityPercent": 15,
+    "element": "Dragon",
+    "elementBaseAttack": 120,
+    "elderseal": "Low",
+    "slots": [
+      {
+        "level": 3
+      },
+      {
+        "level": 3
+      }
+    ],
+    "id": 216
+  }
 ]

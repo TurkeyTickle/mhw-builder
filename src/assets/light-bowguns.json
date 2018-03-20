@@ -1,253 +1,274 @@
 [
-	{
-		"name": "Cross Blitz II",
-		"itemType": "Weapon",
-		"weaponType": "LightBowgun",
-		"baseAttack": 234,
-		"baseAffinityPercent": 0,
-		"slots": [
-			{
-				"level": 1
-			},
-			{
-				"level": 1
-			}
-		]
-	},
-	{
-		"name": "Cataclysm's Trigger",
-		"itemType": "Weapon",
-		"weaponType": "LightBowgun",
-		"baseAttack": 260,
-		"baseAffinityPercent": 0,
-		"elementAttackIncreaseCapOverride": 0.33,
-		"slots": [
-			{
-				"level": 1
-			}
-		]
-	},
-	{
-		"name": "Lumu Typhon III",
-		"itemType": "Weapon",
-		"weaponType": "LightBowgun",
-		"baseAttack": 221,
-		"baseAffinityPercent": 15,
-		"slots": [
-			{
-				"level": 1
-			}
-		]
-	},
-	{
-		"name": "Bazel Typhoon II",
-		"itemType": "Weapon",
-		"weaponType": "LightBowgun",
-		"baseAttack": 260,
-		"baseAffinityPercent": -10
-	},
-	{
-		"name": "Jagras Fire",
-		"itemType": "Weapon",
-		"weaponType": "LightBowgun",
-		"baseAttack": 247,
-		"baseAffinityPercent": 0,
-		"slots": [
-			{
-				"level": 3
-			},
-			{
-				"level": 2
-			}
-		]
-	},
-	{
-		"name": "Rathbuster II",
-		"itemType": "Weapon",
-		"weaponType": "LightBowgun",
-		"baseAttack": 247,
-		"baseAffinityPercent": 20,
-		"slots": [
-			{
-				"level": 1
-			}
-		]
-	},
-	{
-		"name": "Lightning Blitz III",
-		"itemType": "Weapon",
-		"weaponType": "LightBowgun",
-		"baseAttack": 234,
-		"baseAffinityPercent": 0,
-		"slots": [
-			{
-				"level": 1
-			}
-		]
-	},
-	{
-		"name": "Frost Blitz II",
-		"itemType": "Weapon",
-		"weaponType": "LightBowgun",
-		"baseAttack": 247,
-		"baseAffinityPercent": 0
-	},
-	{
-		"name": "Sniper Shot II",
-		"itemType": "Weapon",
-		"weaponType": "LightBowgun",
-		"baseAttack": 247,
-		"baseAffinityPercent": 0,
-		"baseDefense": 10,
-		"slots": [
-			{
-				"level": 3
-			}
-		]
-	},
-	{
-		"name": "Gulogleth's Wail",
-		"itemType": "Weapon",
-		"weaponType": "LightBowgun",
-		"baseAttack": 260,
-		"baseAffinityPercent": 0,
-		"slots": [
-			{
-				"level": 2
-			}
-		]
-	},
-	{
-		"name": "Anja Buster III",
-		"itemType": "Weapon",
-		"weaponType": "LightBowgun",
-		"baseAttack": 273,
-		"baseAffinityPercent": -30
-	},
-	{
-		"name": "Jyura Bullet III",
-		"itemType": "Weapon",
-		"weaponType": "LightBowgun",
-		"baseAttack": 247,
-		"baseAffinityPercent": 0,
-		"slots": [
-			{
-				"level": 1
-			},
-			{
-				"level": 1
-			}
-		]
-	},
-	{
-		"name": "Lava Bullet II",
-		"itemType": "Weapon",
-		"weaponType": "LightBowgun",
-		"baseAttack": 234,
-		"baseAffinityPercent": 0,
-		"slots": [
-			{
-				"level": 2
-			},
-			{
-				"level": 2
-			}
-		]
-	},
-	{
-		"name": "Barroth Shot III",
-		"itemType": "Weapon",
-		"weaponType": "LightBowgun",
-		"baseAttack": 260,
-		"baseAffinityPercent": -20,
-		"baseDefense": 15,
-		"slots": [
-			{
-				"level": 1
-			}
-		]
-	},
-	{
-		"name": "Karma",
-		"itemType": "Weapon",
-		"weaponType": "LightBowgun",
-		"baseAttack": 234,
-		"baseAffinityPercent": 30,
-		"slots": [
-			{
-				"level": 1
-			}
-		]
-	},
-	{
-		"name": "Dragonbone Bowgun III",
-		"itemType": "Weapon",
-		"weaponType": "LightBowgun",
-		"baseAttack": 208,
-		"baseAffinityPercent": 0,
-		"slots": [
-			{
-				"level": 1
-			}
-		]
-	},
-	{
-		"name": "Dai-Onigashima",
-		"itemType": "Weapon",
-		"weaponType": "LightBowgun",
-		"baseAttack": 221,
-		"baseAffinityPercent": 0,
-		"slots": [
-			{
-				"level": 1
-			}
-		]
-	},
-	{
-		"name": "Mythical Three-Horn",
-		"itemType": "Weapon",
-		"weaponType": "LightBowgun",
-		"baseAttack": 208,
-		"baseAffinityPercent": 0
-	},
-	{
-		"name": "Daora's Hornet",
-		"itemType": "Weapon",
-		"weaponType": "LightBowgun",
-		"baseAttack": 234,
-		"baseAffinityPercent": 10,
-		"slots": [
-			{
-				"level": 2
-			}
-		]
-	},
-	{
-		"name": "Xeno Nequiina",
-		"itemType": "Weapon",
-		"weaponType": "LightBowgun",
-		"baseAttack": 234,
-		"baseAffinityPercent": 0,
-		"slots": [
-			{
-				"level": 3
-			},
-			{
-				"level": 3
-			}
-		]
-	},
-	{
-		"name": "Great Bowgun",
-		"itemType": "Weapon",
-		"weaponType": "LightBowgun",
-		"baseAttack": 260,
-		"baseAffinityPercent": 0,
-		"baseDefense": 20,
-		"slots": [
-			{
-				"level": 3
-			}
-		]
-	}
+  {
+    "name": "Cross Blitz II",
+    "itemType": "Weapon",
+    "weaponType": "LightBowgun",
+    "baseAttack": 234,
+    "baseAffinityPercent": 0,
+    "slots": [
+      {
+        "level": 1
+      },
+      {
+        "level": 1
+      }
+    ],
+    "id": 217
+  },
+  {
+    "name": "Cataclysm's Trigger",
+    "itemType": "Weapon",
+    "weaponType": "LightBowgun",
+    "baseAttack": 260,
+    "baseAffinityPercent": 0,
+    "elementAttackIncreaseCapOverride": 0.33,
+    "slots": [
+      {
+        "level": 1
+      }
+    ],
+    "id": 218
+  },
+  {
+    "name": "Lumu Typhon III",
+    "itemType": "Weapon",
+    "weaponType": "LightBowgun",
+    "baseAttack": 221,
+    "baseAffinityPercent": 15,
+    "slots": [
+      {
+        "level": 1
+      }
+    ],
+    "id": 219
+  },
+  {
+    "name": "Bazel Typhoon II",
+    "itemType": "Weapon",
+    "weaponType": "LightBowgun",
+    "baseAttack": 260,
+    "baseAffinityPercent": -10,
+    "id": 220
+  },
+  {
+    "name": "Jagras Fire",
+    "itemType": "Weapon",
+    "weaponType": "LightBowgun",
+    "baseAttack": 247,
+    "baseAffinityPercent": 0,
+    "slots": [
+      {
+        "level": 3
+      },
+      {
+        "level": 2
+      }
+    ],
+    "id": 221
+  },
+  {
+    "name": "Rathbuster II",
+    "itemType": "Weapon",
+    "weaponType": "LightBowgun",
+    "baseAttack": 247,
+    "baseAffinityPercent": 20,
+    "slots": [
+      {
+        "level": 1
+      }
+    ],
+    "id": 222
+  },
+  {
+    "name": "Lightning Blitz III",
+    "itemType": "Weapon",
+    "weaponType": "LightBowgun",
+    "baseAttack": 234,
+    "baseAffinityPercent": 0,
+    "slots": [
+      {
+        "level": 1
+      }
+    ],
+    "id": 223
+  },
+  {
+    "name": "Frost Blitz II",
+    "itemType": "Weapon",
+    "weaponType": "LightBowgun",
+    "baseAttack": 247,
+    "baseAffinityPercent": 0,
+    "id": 224
+  },
+  {
+    "name": "Sniper Shot II",
+    "itemType": "Weapon",
+    "weaponType": "LightBowgun",
+    "baseAttack": 247,
+    "baseAffinityPercent": 0,
+    "baseDefense": 10,
+    "slots": [
+      {
+        "level": 3
+      }
+    ],
+    "id": 225
+  },
+  {
+    "name": "Gulogleth's Wail",
+    "itemType": "Weapon",
+    "weaponType": "LightBowgun",
+    "baseAttack": 260,
+    "baseAffinityPercent": 0,
+    "slots": [
+      {
+        "level": 2
+      }
+    ],
+    "id": 226
+  },
+  {
+    "name": "Anja Buster III",
+    "itemType": "Weapon",
+    "weaponType": "LightBowgun",
+    "baseAttack": 273,
+    "baseAffinityPercent": -30,
+    "id": 227
+  },
+  {
+    "name": "Jyura Bullet III",
+    "itemType": "Weapon",
+    "weaponType": "LightBowgun",
+    "baseAttack": 247,
+    "baseAffinityPercent": 0,
+    "slots": [
+      {
+        "level": 1
+      },
+      {
+        "level": 1
+      }
+    ],
+    "id": 228
+  },
+  {
+    "name": "Lava Bullet II",
+    "itemType": "Weapon",
+    "weaponType": "LightBowgun",
+    "baseAttack": 234,
+    "baseAffinityPercent": 0,
+    "slots": [
+      {
+        "level": 2
+      },
+      {
+        "level": 2
+      }
+    ],
+    "id": 229
+  },
+  {
+    "name": "Barroth Shot III",
+    "itemType": "Weapon",
+    "weaponType": "LightBowgun",
+    "baseAttack": 260,
+    "baseAffinityPercent": -20,
+    "baseDefense": 15,
+    "slots": [
+      {
+        "level": 1
+      }
+    ],
+    "id": 230
+  },
+  {
+    "name": "Karma",
+    "itemType": "Weapon",
+    "weaponType": "LightBowgun",
+    "baseAttack": 234,
+    "baseAffinityPercent": 30,
+    "slots": [
+      {
+        "level": 1
+      }
+    ],
+    "id": 231
+  },
+  {
+    "name": "Dragonbone Bowgun III",
+    "itemType": "Weapon",
+    "weaponType": "LightBowgun",
+    "baseAttack": 208,
+    "baseAffinityPercent": 0,
+    "slots": [
+      {
+        "level": 1
+      }
+    ],
+    "id": 232
+  },
+  {
+    "name": "Dai-Onigashima",
+    "itemType": "Weapon",
+    "weaponType": "LightBowgun",
+    "baseAttack": 221,
+    "baseAffinityPercent": 0,
+    "slots": [
+      {
+        "level": 1
+      }
+    ],
+    "id": 233
+  },
+  {
+    "name": "Mythical Three-Horn",
+    "itemType": "Weapon",
+    "weaponType": "LightBowgun",
+    "baseAttack": 208,
+    "baseAffinityPercent": 0,
+    "id": 234
+  },
+  {
+    "name": "Daora's Hornet",
+    "itemType": "Weapon",
+    "weaponType": "LightBowgun",
+    "baseAttack": 234,
+    "baseAffinityPercent": 10,
+    "slots": [
+      {
+        "level": 2
+      }
+    ],
+    "id": 235
+  },
+  {
+    "name": "Xeno Nequiina",
+    "itemType": "Weapon",
+    "weaponType": "LightBowgun",
+    "baseAttack": 234,
+    "baseAffinityPercent": 0,
+    "slots": [
+      {
+        "level": 3
+      },
+      {
+        "level": 3
+      }
+    ],
+    "id": 236
+  },
+  {
+    "name": "Great Bowgun",
+    "itemType": "Weapon",
+    "weaponType": "LightBowgun",
+    "baseAttack": 260,
+    "baseAffinityPercent": 0,
+    "baseDefense": 20,
+    "slots": [
+      {
+        "level": 3
+      }
+    ],
+    "id": 237
+  }
 ]
