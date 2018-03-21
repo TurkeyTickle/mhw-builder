@@ -15,4 +15,8 @@ export class SkillDetailsComponent implements OnInit {
 	constructor() { }
 
 	ngOnInit() { }
+
+	getLevelColor(level: number): string {
+		return Math.min(this.equippedSkill.equippedCount, this.equippedSkill.totalLevelCount) == level ? '#86ff86' : 'white';
+	}
 }

@@ -4,7 +4,7 @@
 	<div>{{skill?.description}}</div>
 	<br />
 	<ul>
-		<li *ngFor="let level of skill?.levels; let i = index" [style.color]="equippedSkill.equippedCount == i + 1 ? '#86ff86' : 'white'">
+		<li *ngFor="let level of skill?.levels; let i = index" [style.color]="getLevelColor(i + 1)">
 			<div class="level">Lv {{i + 1}}</div>
 			<div class="level-description">{{level.description}}</div>
 		</li>
