@@ -310,5 +310,17 @@
       }
     ],
     "id": 179
+  },
+  {
+    "name": "Terror Tyrannos",
+    "itemType": "Weapon",
+    "weaponType": "SwitchAxe",
+    "baseAttack": 770,
+    "maxSharpness": "Blue",
+    "baseAffinityPercent": -25,
+    "element": "Dragon",
+    "elementBaseAttack": 180,
+    "elderseal": "High",
+    "id": 282
   }
 ]

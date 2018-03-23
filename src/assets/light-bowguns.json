@@ -270,5 +270,13 @@
       }
     ],
     "id": 237
+  },
+  {
+    "name": "Devil's Madness",
+    "itemType": "Weapon",
+    "weaponType": "LightBowgun",
+    "baseAttack": 299,
+    "baseAffinityPercent": -25,
+    "id": 285
   }
 ]

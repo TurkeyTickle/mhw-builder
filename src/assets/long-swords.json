@@ -346,5 +346,18 @@
       }
     ],
     "id": 41
+  },
+  {
+    "name": "Reaver \"Calamity\"",
+    "rarity": 7,
+    "itemType": "Weapon",
+    "weaponType": "LongSword",
+    "baseAttack": 759,
+    "maxSharpness": "Blue",
+    "baseAffinityPercent": -25,
+    "element": "Dragon",
+    "elementBaseAttack": 210,
+    "elderseal": "High",
+    "id": 275
   }
 ]

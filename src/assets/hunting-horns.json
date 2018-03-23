@@ -306,5 +306,17 @@
       }
     ],
     "id": 122
+  },
+  {
+    "name": "Deep Vero",
+    "itemType": "Weapon",
+    "weaponType": "HuntingHorn",
+    "baseAttack": 924,
+    "maxSharpness": "Blue",
+    "baseAffinityPercent": -30,
+    "element": "Dragon",
+    "elementBaseAttack": 240,
+    "elderseal": "High",
+    "id": 279
   }
 ]

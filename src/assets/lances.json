@@ -326,5 +326,17 @@
       }
     ],
     "id": 142
+  },
+  {
+    "name": "Fiendish Tower",
+    "itemType": "Weapon",
+    "weaponType": "Lance",
+    "baseAttack": 529,
+    "maxSharpness": "Blue",
+    "baseAffinityPercent": -25,
+    "element": "Dragon",
+    "elementBaseAttack": 210,
+    "elderseal": "High",
+    "id": 280
   }
 ]

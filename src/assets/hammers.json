@@ -343,5 +343,17 @@
       }
     ],
     "id": 103
+  },
+  {
+    "name": "Devil's Crush",
+    "itemType": "Weapon",
+    "weaponType": "Hammer",
+    "baseAttack": 1196,
+    "baseAffinityPercent": -30,
+    "maxSharpness": "Blue",
+    "element": "Dragon",
+    "elementBaseAttack": 210,
+    "elderseal": "High",
+    "id": 278
   }
 ]

@@ -302,5 +302,17 @@
       }
     ],
     "id": 197
+  },
+  {
+    "name": "Oppressor's Charge Blade",
+    "itemType": "Weapon",
+    "weaponType": "ChargeBlade",
+    "baseAttack": 792,
+    "maxSharpness": "Blue",
+    "baseAffinityPercent": -25,
+    "element": "Dragon",
+    "elementBaseAttack": 210,
+    "elderseal": "High",
+    "id": 283
   }
 ]

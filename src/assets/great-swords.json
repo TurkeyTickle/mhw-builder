@@ -374,5 +374,18 @@
       }
     ],
     "id": 21
+  },
+  {
+    "name": "Anguish",
+    "rarity": 7,
+    "itemType": "Weapon",
+    "weaponType": "GreatSword",
+    "baseAttack": 1104,
+    "maxSharpness": "Blue",
+    "baseAffinityPercent": -30,
+    "element": "Dragon",
+    "elementBaseAttack": 240,
+    "elderseal": "High",
+    "id": 274
   }
 ]

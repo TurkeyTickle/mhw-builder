@@ -285,5 +285,17 @@
       }
     ],
     "id": 160
+  },
+  {
+    "name": "Insatiable Gunlance",
+    "itemType": "Weapon",
+    "weaponType": "Gunlance",
+    "baseAttack": 529,
+    "maxSharpness": "Blue",
+    "baseAffinityPercent": -30,
+    "element": "Dragon",
+    "elementBaseAttack": 240,
+    "elderseal": "High",
+    "id": 281
   }
 ]

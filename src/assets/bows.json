@@ -291,5 +291,16 @@
       }
     ],
     "id": 273
+  },
+  {
+    "name": "Villainous Brace",
+    "itemType": "Weapon",
+    "weaponType": "Bow",
+    "baseAttack": 276,
+    "baseAffinityPercent": -25,
+    "element": "Dragon",
+    "elementBaseAttack": 210,
+    "elderseal": "High",
+    "id": 287
   }
 ]

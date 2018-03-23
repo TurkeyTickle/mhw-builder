@@ -341,5 +341,17 @@
       }
     ],
     "id": 82
+  },
+  {
+    "name": "Wrathful Predation",
+    "itemType": "Weapon",
+    "weaponType": "DualBlades",
+    "baseAttack": 308,
+    "maxSharpness": "Blue",
+    "baseAffinityPercent": -20,
+    "element": "Dragon",
+    "elementBaseAttack": 180,
+    "elderseal": "High",
+    "id": 277
   }
 ]

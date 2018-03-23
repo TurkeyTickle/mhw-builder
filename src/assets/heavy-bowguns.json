@@ -216,7 +216,7 @@
     "id": 254
   },
   {
-    "name": "Xeno Jiiqa ",
+    "name": "Xeno Jiiqa",
     "itemType": "Weapon",
     "weaponType": "HeavyBowgun",
     "baseAttack": 255,
@@ -230,5 +230,13 @@
       }
     ],
     "id": 255
+  },
+  {
+    "name": "Dark Devourer",
+    "itemType": "Weapon",
+    "weaponType": "HeavyBowgun",
+    "baseAttack": 345,
+    "baseAffinityPercent": -25,
+    "id": 286
   }
 ]

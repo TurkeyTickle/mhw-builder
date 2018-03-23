@@ -324,5 +324,17 @@
       }
     ],
     "id": 61
+  },
+  {
+    "name": "Fatal Bite",
+    "itemType": "Weapon",
+    "weaponType": "SwordAndShield",
+    "baseAttack": 308,
+    "maxSharpness": "Blue",
+    "baseAffinityPercent": -20,
+    "element": "Dragon",
+    "elementBaseAttack": 210,
+    "elderseal": "High",
+    "id": 276
   }
 ]
