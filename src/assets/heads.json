@@ -1209,5 +1209,62 @@
       }
     ],
     "id": 48
+  },
+  {
+    "name": "Vangis Helm Alpha",
+    "tags": [
+      "deviljho"
+    ],
+    "itemType": "Head",
+    "baseDefense": 58,
+    "fireResist": 1,
+    "waterResist": 1,
+    "thunderResist": -3,
+    "iceResist": 2,
+    "dragonResist": -3,
+    "skills": [
+      {
+        "id": "partbreaker",
+        "level": 1
+      },
+      {
+        "id": "handicraft",
+        "level": 1
+      }
+    ],
+    "slots": [
+      {
+        "level": 1
+      }
+    ],
+    "id": 321
+  },
+  {
+    "name": "Vangis Helm Beta",
+    "tags": [
+      "deviljho"
+    ],
+    "itemType": "Head",
+    "baseDefense": 58,
+    "fireResist": 1,
+    "waterResist": 1,
+    "thunderResist": -3,
+    "iceResist": 2,
+    "dragonResist": -3,
+    "skills": [
+      {
+        "id": "partbreaker",
+        "level": 1
+      }
+    ],
+    "slots": [
+      {
+        "level": 3
+      },
+      {
+        "level": 1
+      }
+    ],
+    "id": 322
   }
 ]

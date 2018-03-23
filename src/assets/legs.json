@@ -1138,5 +1138,62 @@
       }
     ],
     "id": 180
+  },
+  {
+    "name": "Vangis Coil Alpha",
+    "tags": [
+      "deviljho"
+    ],
+    "itemType": "Legs",
+    "baseDefense": 58,
+    "fireResist": 1,
+    "waterResist": 1,
+    "thunderResist": -3,
+    "iceResist": 2,
+    "dragonResist": -3,
+    "skills": [
+      {
+        "id": "latentPower",
+        "level": 1
+      },
+      {
+        "id": "handicraft",
+        "level": 1
+      }
+    ],
+    "slots": [
+      {
+        "level": 1
+      }
+    ],
+    "id": 327
+  },
+  {
+    "name": "Vangis Coil Beta",
+    "tags": [
+      "deviljho"
+    ],
+    "itemType": "Legs",
+    "baseDefense": 58,
+    "fireResist": 1,
+    "waterResist": 1,
+    "thunderResist": -3,
+    "iceResist": 2,
+    "dragonResist": -3,
+    "skills": [
+      {
+        "id": "latentPower",
+        "level": 1
+      }
+    ],
+    "slots": [
+      {
+        "level": 3
+      },
+      {
+        "level": 1
+      }
+    ],
+    "id": 328
   }
 ]

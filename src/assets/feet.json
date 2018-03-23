@@ -1122,5 +1122,57 @@
       }
     ],
     "id": 224
+  },
+  {
+    "name": "Vangis Greaves Alpha",
+    "tags": [
+      "deviljho"
+    ],
+    "itemType": "Feet",
+    "baseDefense": 58,
+    "fireResist": 1,
+    "waterResist": 1,
+    "thunderResist": -3,
+    "iceResist": 2,
+    "dragonResist": -3,
+    "skills": [
+      {
+        "id": "speedEating",
+        "level": 2
+      },
+      {
+        "id": "partbreaker",
+        "level": 1
+      }
+    ],
+    "id": 329
+  },
+  {
+    "name": "Vangis Greaves Beta",
+    "tags": [
+      "deviljho"
+    ],
+    "itemType": "Feet",
+    "baseDefense": 58,
+    "fireResist": 1,
+    "waterResist": 1,
+    "thunderResist": -3,
+    "iceResist": 2,
+    "dragonResist": -3,
+    "skills": [
+      {
+        "id": "speedEating",
+        "level": 2
+      }
+    ],
+    "slots": [
+      {
+        "level": 1
+      },
+      {
+        "level": 1
+      }
+    ],
+    "id": 330
   }
 ]

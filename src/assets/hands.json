@@ -1129,5 +1129,54 @@
       }
     ],
     "id": 136
+  },
+  {
+    "name": "Vangis Vambraces Alpha",
+    "tags": [
+      "deviljho"
+    ],
+    "itemType": "Hands",
+    "baseDefense": 58,
+    "fireResist": 1,
+    "waterResist": 1,
+    "thunderResist": -3,
+    "iceResist": 2,
+    "dragonResist": -3,
+    "skills": [
+      {
+        "id": "latentPower",
+        "level": 2
+      },
+      {
+        "id": "partbreaker",
+        "level": 1
+      }
+    ],
+    "id": 325
+  },
+  {
+    "name": "Vangis Vambraces Beta",
+    "tags": [
+      "deviljho"
+    ],
+    "itemType": "Hands",
+    "baseDefense": 58,
+    "fireResist": 1,
+    "waterResist": 1,
+    "thunderResist": -3,
+    "iceResist": 2,
+    "dragonResist": -3,
+    "skills": [
+      {
+        "id": "latentPower",
+        "level": 2
+      }
+    ],
+    "slots": [
+      {
+        "level": 2
+      }
+    ],
+    "id": 326
   }
 ]

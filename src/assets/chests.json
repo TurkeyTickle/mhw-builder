@@ -1133,5 +1133,59 @@
       }
     ],
     "id": 92
+  },
+  {
+    "name": "Vangis Mail Alpha",
+    "tags": [
+      "deviljho"
+    ],
+    "itemType": "Chest",
+    "baseDefense": 58,
+    "fireResist": 1,
+    "waterResist": 1,
+    "thunderResist": -3,
+    "iceResist": 2,
+    "dragonResist": -3,
+    "skills": [
+      {
+        "id": "speedEating",
+        "level": 1
+      },
+      {
+        "id": "handicraft",
+        "level": 1
+      }
+    ],
+    "slots": [
+      {
+        "level": 2
+      }
+    ],
+    "id": 323
+  },
+  {
+    "name": "Vangis Mail Beta",
+    "tags": [
+      "deviljho"
+    ],
+    "itemType": "Chest",
+    "baseDefense": 58,
+    "fireResist": 1,
+    "waterResist": 1,
+    "thunderResist": -3,
+    "iceResist": 2,
+    "dragonResist": -3,
+    "skills": [
+      {
+        "id": "speedEating",
+        "level": 1
+      }
+    ],
+    "slots": [
+      {
+        "level": 3
+      }
+    ],
+    "id": 324
   }
 ]
