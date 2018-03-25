@@ -20,7 +20,7 @@ ul {
 li {
 	cursor: pointer;
 	height: $itemHeight;
-	line-height: $itemHeight;
+	line-height: $itemHeight - 2;
 	list-style: none;
 	padding: 8px;
 	border-bottom: 1px black solid;
