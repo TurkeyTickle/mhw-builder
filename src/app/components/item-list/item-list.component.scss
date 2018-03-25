@@ -1,11 +1,5 @@
 $itemHeight: 32px;
 
-// :host {
-// 	right: 0px;
-// 	bottom: 0px;
-// 	left: 0px;
-// }
-
 .container {
 	display: flex;
 	flex-direction: column;
@@ -124,11 +118,6 @@ li:hover {
 
 .items-container {
 	overflow-y: auto;
-    // position: relative;
-    // top: 0px;
-    // bottom: 0px;
-    // right: 0px;
-	// left: 0px;
 	border-radius: 3px;
 }
 

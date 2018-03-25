@@ -9,15 +9,14 @@ $slotHeight: 30px;
 	font-size: 14px;
 	border-radius: 3px;
 
-	.slot-name {
-		color: #b7b7b7;
+	.slot-icon {
 		line-height: $slotHeight;
 		width: 40px;
 		flex-grow: 0;
 		flex-shrink: 0;
 		margin-left: 6px;
 	}
-	
+
 	.selected-decoration {
 		flex-grow: 1;
 		line-height: $slotHeight;
