@@ -78,7 +78,8 @@
     "maxSharpness": "Blue",
     "ailment": "Paralysis",
     "ailmentBaseAttack": 390,
-    "id": 87
+    "id": 87,
+    "slots": []
   },
   {
     "name": "Buona Flora",
@@ -160,7 +161,8 @@
     "ailment": "Sleep",
     "ailmentBaseAttack": 270,
     "baseDefense": 20,
-    "id": 92
+    "id": 92,
+    "slots": []
   },
   {
     "name": "Brazenbreak II",
@@ -189,7 +191,8 @@
     "ailment": "Sleep",
     "ailmentBaseAttack": 360,
     "ailmentHidden": true,
-    "id": 94
+    "id": 94,
+    "slots": []
   },
   {
     "name": "Diablos Shatterer II",
@@ -238,7 +241,8 @@
     "maxSharpness": "Blue",
     "element": "Fire",
     "elementBaseAttack": 450,
-    "id": 97
+    "id": 97,
+    "slots": []
   },
   {
     "name": "Dragonbone Basher III",
@@ -354,6 +358,7 @@
     "element": "Dragon",
     "elementBaseAttack": 210,
     "elderseal": "High",
-    "id": 278
+    "id": 278,
+    "slots": []
   }
 ]

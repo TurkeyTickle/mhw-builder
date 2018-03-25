@@ -110,7 +110,8 @@
     "baseAffinityPercent": 0,
     "element": "Ice",
     "elementBaseAttack": 360,
-    "id": 149
+    "id": 149,
+    "slots": []
   },
   {
     "name": "Great Bone Gunlance II",
@@ -175,7 +176,8 @@
     "baseAffinityPercent": 10,
     "ailment": "Paralysis",
     "ailmentBaseAttack": 450,
-    "id": 153
+    "id": 153,
+    "slots": []
   },
   {
     "name": "Hazak Spysa II",
@@ -205,7 +207,8 @@
     "ailmentBaseAttack": 390,
     "ailmentHidden": true,
     "baseDefense": 15,
-    "id": 155
+    "id": 155,
+    "slots": []
   },
   {
     "name": "Anja Cannon III",
@@ -216,7 +219,8 @@
     "baseAffinityPercent": -20,
     "element": "Fire",
     "elementBaseAttack": 450,
-    "id": 156
+    "id": 156,
+    "slots": []
   },
   {
     "name": "Dragonbone Gunlance III",
@@ -248,7 +252,8 @@
     "ailment": "Blast",
     "ailmentBaseAttack": 420,
     "baseDefense": 20,
-    "id": 158
+    "id": 158,
+    "slots": []
   },
   {
     "name": "Daora's Brigia",
@@ -296,6 +301,7 @@
     "element": "Dragon",
     "elementBaseAttack": 240,
     "elderseal": "High",
-    "id": 281
+    "id": 281,
+    "slots": []
   }
 ]

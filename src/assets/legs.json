@@ -115,7 +115,8 @@
         "id": "kirinFavor"
       }
     ],
-    "id": 140
+    "id": 140,
+    "slots": []
   },
   {
     "name": "Vaal Hazak Coil Beta",
@@ -230,7 +231,8 @@
         "id": "kushalaDaoraFlight"
       }
     ],
-    "id": 144
+    "id": 144,
+    "slots": []
   },
   {
     "name": "Kaiser Coil Beta",
@@ -285,7 +287,8 @@
         "id": "teostraTechnique"
       }
     ],
-    "id": 146
+    "id": 146,
+    "slots": []
   },
   {
     "name": "Nergigante Coil Beta",
@@ -334,7 +337,8 @@
         "id": "nergiganteHunger"
       }
     ],
-    "id": 148
+    "id": 148,
+    "slots": []
   },
   {
     "name": "Death Stench Bowels Beta",
@@ -380,7 +384,8 @@
         "level": 1
       }
     ],
-    "id": 150
+    "id": 150,
+    "slots": []
   },
   {
     "name": "Dober Coil Beta",
@@ -659,7 +664,8 @@
         "id": "diablosMastery"
       }
     ],
-    "id": 160
+    "id": 160,
+    "slots": []
   },
   {
     "name": "Rath Soul Coil Beta",
@@ -714,7 +720,8 @@
         "id": "rathalosMastery"
       }
     ],
-    "id": 162
+    "id": 162,
+    "slots": []
   },
   {
     "name": "Diablos Coil Beta",
@@ -763,7 +770,8 @@
         "id": "diablosMastery"
       }
     ],
-    "id": 164
+    "id": 164,
+    "slots": []
   },
   {
     "name": "Rathalos Coil Beta",
@@ -812,7 +820,8 @@
         "id": "rathalosMastery"
       }
     ],
-    "id": 166
+    "id": 166,
+    "slots": []
   },
   {
     "name": "Odogaron Coil Beta",
@@ -861,7 +870,8 @@
         "id": "odogaronMastery"
       }
     ],
-    "id": 168
+    "id": 168,
+    "slots": []
   },
   {
     "name": "Legiana Coil Beta",
@@ -910,7 +920,8 @@
         "id": "legianaFavor"
       }
     ],
-    "id": 170
+    "id": 170,
+    "slots": []
   },
   {
     "name": "Lavasioth Coil Beta",
@@ -953,7 +964,8 @@
         "level": 1
       }
     ],
-    "id": 172
+    "id": 172,
+    "slots": []
   },
   {
     "name": "Ingot Coil Beta",
@@ -992,7 +1004,8 @@
         "level": 2
       }
     ],
-    "id": 174
+    "id": 174,
+    "slots": []
   },
   {
     "name": "High Metal Coil Beta",
@@ -1035,7 +1048,8 @@
         "level": 1
       }
     ],
-    "id": 176
+    "id": 176,
+    "slots": []
   },
   {
     "name": "Commission Belt Beta",

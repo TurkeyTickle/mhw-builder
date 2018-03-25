@@ -48,7 +48,8 @@
     "weaponType": "HeavyBowgun",
     "baseAttack": 255,
     "baseAffinityPercent": 0,
-    "id": 241
+    "id": 241,
+    "slots": []
   },
   {
     "name": "Legia Shattercryst",
@@ -139,7 +140,8 @@
     "baseAttack": 270,
     "baseAffinityPercent": 0,
     "baseDefense": 20,
-    "id": 248
+    "id": 248,
+    "slots": []
   },
   {
     "name": "Gama Cannon II",
@@ -213,7 +215,8 @@
     "weaponType": "HeavyBowgun",
     "baseAttack": 270,
     "baseAffinityPercent": 0,
-    "id": 254
+    "id": 254,
+    "slots": []
   },
   {
     "name": "Xeno Jiiqa",
@@ -237,6 +240,7 @@
     "weaponType": "HeavyBowgun",
     "baseAttack": 345,
     "baseAffinityPercent": -25,
-    "id": 286
+    "id": 286,
+    "slots": []
   }
 ]

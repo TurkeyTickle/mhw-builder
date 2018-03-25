@@ -46,7 +46,8 @@
     "baseAffinityPercent": 0,
     "element": "Ice",
     "elementBaseAttack": 300,
-    "id": 163
+    "id": 163,
+    "slots": []
   },
   {
     "name": "Lightning Chopper III",
@@ -247,7 +248,8 @@
     "baseAffinityPercent": -20,
     "element": "Fire",
     "elementBaseAttack": 300,
-    "id": 175
+    "id": 175,
+    "slots": []
   },
   {
     "name": "Dragonbone Slicer III",
@@ -278,7 +280,8 @@
     "baseAffinityPercent": 0,
     "element": "Thunder",
     "elementBaseAttack": 450,
-    "id": 177
+    "id": 177,
+    "slots": []
   },
   {
     "name": "Teostra's Castle",
@@ -289,7 +292,8 @@
     "baseAffinityPercent": 0,
     "ailment": "Blast",
     "ailmentBaseAttack": 300,
-    "id": 178
+    "id": 178,
+    "slots": []
   },
   {
     "name": "Xeno Martshu",
@@ -321,6 +325,7 @@
     "element": "Dragon",
     "elementBaseAttack": 180,
     "elderseal": "High",
-    "id": 282
+    "id": 282,
+    "slots": []
   }
 ]

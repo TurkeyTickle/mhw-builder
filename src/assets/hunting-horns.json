@@ -63,7 +63,8 @@
     "ailment": "Sleep",
     "ailmentBaseAttack": 360,
     "ailmentHidden": true,
-    "id": 107
+    "id": 107,
+    "slots": []
   },
   {
     "name": "Royal Chordmaker",
@@ -106,7 +107,8 @@
     "baseAffinityPercent": 0,
     "element": "Ice",
     "elementBaseAttack": 360,
-    "id": 110
+    "id": 110,
+    "slots": []
   },
   {
     "name": "Heavy Bone Horn II",
@@ -154,7 +156,8 @@
     "baseAffinityPercent": -20,
     "element": "Fire",
     "elementBaseAttack": 450,
-    "id": 113
+    "id": 113,
+    "slots": []
   },
   {
     "name": "Datura Horn III",
@@ -243,7 +246,8 @@
     "ailment": "Sleep",
     "ailmentBaseAttack": 270,
     "baseDefense": 20,
-    "id": 118
+    "id": 118,
+    "slots": []
   },
   {
     "name": "Dragonbone Auldhorn III",
@@ -274,7 +278,8 @@
     "baseAffinityPercent": 0,
     "element": "Thunder",
     "elementBaseAttack": 540,
-    "id": 120
+    "id": 120,
+    "slots": []
   },
   {
     "name": "Teostra's Orphée",
@@ -285,7 +290,8 @@
     "baseAffinityPercent": 0,
     "ailment": "Blast",
     "ailmentBaseAttack": 390,
-    "id": 121
+    "id": 121,
+    "slots": []
   },
   {
     "name": "Xeno Manasheena",
@@ -317,6 +323,7 @@
     "element": "Dragon",
     "elementBaseAttack": 240,
     "elderseal": "High",
-    "id": 279
+    "id": 279,
+    "slots": []
   }
 ]

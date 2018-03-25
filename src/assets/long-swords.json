@@ -67,7 +67,8 @@
     "baseAffinityPercent": 20,
     "ailment": "Sleep",
     "ailmentBaseAttack": 270,
-    "id": 25
+    "id": 25,
+    "slots": []
   },
   {
     "name": "Brazenridge II",
@@ -173,7 +174,8 @@
     "baseAffinityPercent": -20,
     "element": "Fire",
     "elementBaseAttack": 390,
-    "id": 31
+    "id": 31,
+    "slots": []
   },
   {
     "name": "Dipterus III",
@@ -237,7 +239,8 @@
     "baseAffinityPercent": 0,
     "element": "Ice",
     "elementBaseAttack": 360,
-    "id": 35
+    "id": 35,
+    "slots": []
   },
   {
     "name": "Dark Scimitar III",
@@ -303,7 +306,8 @@
     "baseAffinityPercent": 0,
     "ailment": "Blast",
     "ailmentBaseAttack": 300,
-    "id": 39
+    "id": 39,
+    "slots": []
   },
   {
     "name": "Xeno Cypher",
@@ -358,6 +362,7 @@
     "element": "Dragon",
     "elementBaseAttack": 210,
     "elderseal": "High",
-    "id": 275
+    "id": 275,
+    "slots": []
   }
 ]

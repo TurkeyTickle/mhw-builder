@@ -46,7 +46,8 @@
     "baseAffinityPercent": 0,
     "element": "Ice",
     "elementBaseAttack": 360,
-    "id": 125
+    "id": 125,
+    "slots": []
   },
   {
     "name": "Kula Hasta III",
@@ -58,7 +59,8 @@
     "ailment": "Sleep",
     "ailmentBaseAttack": 360,
     "ailmentHidden": true,
-    "id": 126
+    "id": 126,
+    "slots": []
   },
   {
     "name": "Gama Pilebunker II",
@@ -213,7 +215,8 @@
     "element": "Fire",
     "elementBaseAttack": 210,
     "elementHidden": true,
-    "id": 135
+    "id": 135,
+    "slots": []
   },
   {
     "name": "Water Spike III",
@@ -260,7 +263,8 @@
     "baseAffinityPercent": -10,
     "ailment": "Blast",
     "ailmentBaseAttack": 210,
-    "id": 138
+    "id": 138,
+    "slots": []
   },
   {
     "name": "Thunderpiercer",
@@ -271,7 +275,8 @@
     "baseAffinityPercent": 10,
     "element": "Thunder",
     "elementBaseAttack": 540,
-    "id": 139
+    "id": 139,
+    "slots": []
   },
   {
     "name": "Daora's Fang",
@@ -337,6 +342,7 @@
     "element": "Dragon",
     "elementBaseAttack": 210,
     "elderseal": "High",
-    "id": 280
+    "id": 280,
+    "slots": []
   }
 ]

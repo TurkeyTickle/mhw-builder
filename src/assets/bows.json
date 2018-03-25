@@ -45,7 +45,8 @@
     "ailment": "Blast",
     "ailmentBaseAttack": 270,
     "ailmentHidden": true,
-    "id": 258
+    "id": 258,
+    "slots": []
   },
   {
     "name": "Giracles",
@@ -121,7 +122,8 @@
     "baseAffinityPercent": 0,
     "element": "Ice",
     "elementBaseAttack": 390,
-    "id": 263
+    "id": 263,
+    "slots": []
   },
   {
     "name": "Hunter's Proudbow II",
@@ -203,7 +205,8 @@
     "baseAffinityPercent": -20,
     "element": "Fire",
     "elementBaseAttack": 390,
-    "id": 268
+    "id": 268,
+    "slots": []
   },
   {
     "name": "Flying Kadachi Strikebow",
@@ -301,6 +304,7 @@
     "element": "Dragon",
     "elementBaseAttack": 210,
     "elderseal": "High",
-    "id": 287
+    "id": 287,
+    "slots": []
   }
 ]

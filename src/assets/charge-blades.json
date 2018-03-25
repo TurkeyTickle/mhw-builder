@@ -135,7 +135,8 @@
     "elementBaseAttack": 180,
     "elementHidden": true,
     "baseDefense": 15,
-    "id": 187
+    "id": 187,
+    "slots": []
   },
   {
     "name": "Jagras Escudo III",
@@ -185,7 +186,8 @@
     "baseAffinityPercent": 20,
     "ailment": "Paralysis",
     "ailmentBaseAttack": 300,
-    "id": 190
+    "id": 190,
+    "slots": []
   },
   {
     "name": "Hazak Aspida II",
@@ -230,7 +232,8 @@
     "element": "Fire",
     "elementBaseAttack": 180,
     "elementHidden": true,
-    "id": 193
+    "id": 193,
+    "slots": []
   },
   {
     "name": "Dragonbone Cutter III",
@@ -262,7 +265,8 @@
     "ailment": "Blast",
     "ailmentBaseAttack": 210,
     "baseDefense": 20,
-    "id": 195
+    "id": 195,
+    "slots": []
   },
   {
     "name": "Daora's Thwartoise",
@@ -313,6 +317,7 @@
     "element": "Dragon",
     "elementBaseAttack": 210,
     "elderseal": "High",
-    "id": 283
+    "id": 283,
+    "slots": []
   }
 ]

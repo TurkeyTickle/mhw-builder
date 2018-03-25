@@ -109,7 +109,8 @@
         "id": "kirinFavor"
       }
     ],
-    "id": 52
+    "id": 52,
+    "slots": []
   },
   {
     "name": "Vaal Hazak Mail Beta",
@@ -221,7 +222,8 @@
         "id": "kushalaDaoraFlight"
       }
     ],
-    "id": 56
+    "id": 56,
+    "slots": []
   },
   {
     "name": "Kaiser Mail Beta",
@@ -279,7 +281,8 @@
         "id": "teostraTechnique"
       }
     ],
-    "id": 58
+    "id": 58,
+    "slots": []
   },
   {
     "name": "Nergigante Mail Beta",
@@ -379,7 +382,8 @@
         "level": 1
       }
     ],
-    "id": 62
+    "id": 62,
+    "slots": []
   },
   {
     "name": "Dober Mail Beta",
@@ -541,7 +545,8 @@
         "id": "bazelgeuseProtection"
       }
     ],
-    "id": 68
+    "id": 68,
+    "slots": []
   },
   {
     "name": "Uragaan Mail Beta",
@@ -762,7 +767,8 @@
         "id": "diablosMastery"
       }
     ],
-    "id": 76
+    "id": 76,
+    "slots": []
   },
   {
     "name": "Rathalos Mail Beta",
@@ -811,7 +817,8 @@
         "id": "rathalosMastery"
       }
     ],
-    "id": 78
+    "id": 78,
+    "slots": []
   },
   {
     "name": "Odogaron Mail Beta",
@@ -860,7 +867,8 @@
         "id": "odogaronMastery"
       }
     ],
-    "id": 80
+    "id": 80,
+    "slots": []
   },
   {
     "name": "Legiana Mail Beta",
@@ -909,7 +917,8 @@
         "id": "legianaFavor"
       }
     ],
-    "id": 82
+    "id": 82,
+    "slots": []
   },
   {
     "name": "Lavasioth Mail Beta",
@@ -955,7 +964,8 @@
         "level": 1
       }
     ],
-    "id": 84
+    "id": 84,
+    "slots": []
   },
   {
     "name": "Ingot Mail Beta",
@@ -994,7 +1004,8 @@
         "level": 2
       }
     ],
-    "id": 86
+    "id": 86,
+    "slots": []
   },
   {
     "name": "High Metal Mail Beta",
@@ -1041,7 +1052,8 @@
         "level": 1
       }
     ],
-    "id": 88
+    "id": 88,
+    "slots": []
   },
   {
     "name": "Commission Jacket Beta",
@@ -1084,7 +1096,8 @@
         "level": 1
       }
     ],
-    "id": 90
+    "id": 90,
+    "slots": []
   },
   {
     "name": "Guild Cross Suit Beta",

@@ -104,7 +104,8 @@
     "baseAffinityPercent": 20,
     "ailment": "Paralysis",
     "ailmentBaseAttack": 450,
-    "id": 6
+    "id": 6,
+    "slots": []
   },
   {
     "name": "Lava Blaze II",
@@ -211,7 +212,8 @@
     "baseAffinityPercent": -30,
     "element": "Fire",
     "elementBaseAttack": 480,
-    "id": 12
+    "id": 12,
+    "slots": []
   },
   {
     "name": "Water Golem III",
@@ -263,7 +265,8 @@
     "ailment": "Sleep",
     "ailmentBaseAttack": 270,
     "baseDefense": 20,
-    "id": 15
+    "id": 15,
+    "slots": []
   },
   {
     "name": "Dragonbone Cleaver III",
@@ -296,7 +299,8 @@
     "baseAffinityPercent": 0,
     "element": "Thunder",
     "elementBaseAttack": 540,
-    "id": 17
+    "id": 17,
+    "slots": []
   },
   {
     "name": "Magda Potestas II",
@@ -386,6 +390,7 @@
     "element": "Dragon",
     "elementBaseAttack": 240,
     "elderseal": "High",
-    "id": 274
+    "id": 274,
+    "slots": []
   }
 ]

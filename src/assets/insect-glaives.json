@@ -62,7 +62,8 @@
     "ailment": "Sleep",
     "ailmentBaseAttack": 210,
     "ailmentHidden": true,
-    "id": 201
+    "id": 201,
+    "slots": []
   },
   {
     "name": "Destroyer Bo III",
@@ -182,7 +183,8 @@
     "baseAffinityPercent": -20,
     "element": "Fire",
     "elementBaseAttack": 270,
-    "id": 208
+    "id": 208,
+    "slots": []
   },
   {
     "name": "Water Glaive III",
@@ -280,7 +282,8 @@
     "baseAffinityPercent": 0,
     "element": "Thunder",
     "elementBaseAttack": 360,
-    "id": 214
+    "id": 214,
+    "slots": []
   },
   {
     "name": "Daora's Tethidine",
@@ -328,6 +331,7 @@
     "element": "Dragon",
     "elementBaseAttack": 210,
     "elderseal": "High",
-    "id": 284
+    "id": 284,
+    "slots": []
   }
 ]

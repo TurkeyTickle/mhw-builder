@@ -9,7 +9,8 @@
         "level": 1
       }
     ],
-    "id": 225
+    "id": 225,
+    "slots": []
   },
   {
     "name": "Attack Charm",
@@ -21,7 +22,8 @@
         "level": 1
       }
     ],
-    "id": 226
+    "id": 226,
+    "slots": []
   },
   {
     "name": "Defense Charm",
@@ -33,7 +35,8 @@
         "level": 1
       }
     ],
-    "id": 227
+    "id": 227,
+    "slots": []
   },
   {
     "name": "Paralysis Charm",
@@ -45,7 +48,8 @@
         "level": 1
       }
     ],
-    "id": 228
+    "id": 228,
+    "slots": []
   },
   {
     "name": "Sleep Charm",
@@ -57,7 +61,8 @@
         "level": 1
       }
     ],
-    "id": 229
+    "id": 229,
+    "slots": []
   },
   {
     "name": "Stun Charm",
@@ -69,7 +74,8 @@
         "level": 1
       }
     ],
-    "id": 230
+    "id": 230,
+    "slots": []
   },
   {
     "name": "Windproof Charm",
@@ -81,7 +87,8 @@
         "level": 1
       }
     ],
-    "id": 231
+    "id": 231,
+    "slots": []
   },
   {
     "name": "Health Charm",
@@ -93,7 +100,8 @@
         "level": 1
       }
     ],
-    "id": 232
+    "id": 232,
+    "slots": []
   },
   {
     "name": "Recovery Charm",
@@ -105,7 +113,8 @@
         "level": 1
       }
     ],
-    "id": 233
+    "id": 233,
+    "slots": []
   },
   {
     "name": "Fire Charm",
@@ -117,7 +126,8 @@
         "level": 1
       }
     ],
-    "id": 234
+    "id": 234,
+    "slots": []
   },
   {
     "name": "Water Charm",
@@ -129,7 +139,8 @@
         "level": 1
       }
     ],
-    "id": 235
+    "id": 235,
+    "slots": []
   },
   {
     "name": "Thunder Charm",
@@ -141,7 +152,8 @@
         "level": 1
       }
     ],
-    "id": 236
+    "id": 236,
+    "slots": []
   },
   {
     "name": "Blaze Charm",
@@ -153,7 +165,8 @@
         "level": 1
       }
     ],
-    "id": 237
+    "id": 237,
+    "slots": []
   },
   {
     "name": "Flood Charm",
@@ -165,7 +178,8 @@
         "level": 1
       }
     ],
-    "id": 238
+    "id": 238,
+    "slots": []
   },
   {
     "name": "Shock Charm",
@@ -177,7 +191,8 @@
         "level": 1
       }
     ],
-    "id": 239
+    "id": 239,
+    "slots": []
   },
   {
     "name": "Venom Charm",
@@ -189,7 +204,8 @@
         "level": 1
       }
     ],
-    "id": 240
+    "id": 240,
+    "slots": []
   },
   {
     "name": "Immobilize Charm",
@@ -201,7 +217,8 @@
         "level": 1
       }
     ],
-    "id": 241
+    "id": 241,
+    "slots": []
   },
   {
     "name": "Tranq Charm",
@@ -213,7 +230,8 @@
         "level": 1
       }
     ],
-    "id": 242
+    "id": 242,
+    "slots": []
   },
   {
     "name": "KO Charm",
@@ -225,7 +243,8 @@
         "level": 1
       }
     ],
-    "id": 243
+    "id": 243,
+    "slots": []
   },
   {
     "name": "Enervate Charm",
@@ -237,7 +256,8 @@
         "level": 1
       }
     ],
-    "id": 244
+    "id": 244,
+    "slots": []
   },
   {
     "name": "Artillery Charm",
@@ -249,7 +269,8 @@
         "level": 1
       }
     ],
-    "id": 245
+    "id": 245,
+    "slots": []
   },
   {
     "name": "Hungerless Charm",
@@ -261,7 +282,8 @@
         "level": 1
       }
     ],
-    "id": 246
+    "id": 246,
+    "slots": []
   },
   {
     "name": "Ironside Charm",
@@ -273,7 +295,8 @@
         "level": 1
       }
     ],
-    "id": 247
+    "id": 247,
+    "slots": []
   },
   {
     "name": "Friendship Charm",
@@ -285,7 +308,8 @@
         "level": 1
       }
     ],
-    "id": 248
+    "id": 248,
+    "slots": []
   },
   {
     "name": "Extension Charm",
@@ -297,7 +321,8 @@
         "level": 1
       }
     ],
-    "id": 249
+    "id": 249,
+    "slots": []
   },
   {
     "name": "Glutton's Charm",
@@ -309,7 +334,8 @@
         "level": 1
       }
     ],
-    "id": 250
+    "id": 250,
+    "slots": []
   },
   {
     "name": "Blessing Charm",
@@ -321,7 +347,8 @@
         "level": 1
       }
     ],
-    "id": 251
+    "id": 251,
+    "slots": []
   },
   {
     "name": "Rally Charm",
@@ -333,7 +360,8 @@
         "level": 1
       }
     ],
-    "id": 252
+    "id": 252,
+    "slots": []
   },
   {
     "name": "Botany Charm",
@@ -345,7 +373,8 @@
         "level": 1
       }
     ],
-    "id": 253
+    "id": 253,
+    "slots": []
   },
   {
     "name": "Geology Charm",
@@ -357,7 +386,8 @@
         "level": 1
       }
     ],
-    "id": 254
+    "id": 254,
+    "slots": []
   },
   {
     "name": "Slinger Charm",
@@ -369,7 +399,8 @@
         "level": 1
       }
     ],
-    "id": 255
+    "id": 255,
+    "slots": []
   },
   {
     "name": "Stealth Charm",
@@ -381,7 +412,8 @@
         "level": 1
       }
     ],
-    "id": 256
+    "id": 256,
+    "slots": []
   },
   {
     "name": "Smoke Charm",
@@ -393,7 +425,8 @@
         "level": 1
       }
     ],
-    "id": 257
+    "id": 257,
+    "slots": []
   },
   {
     "name": "Mirewalker Charm",
@@ -405,7 +438,8 @@
         "level": 1
       }
     ],
-    "id": 258
+    "id": 258,
+    "slots": []
   },
   {
     "name": "Insect Charm",
@@ -417,7 +451,8 @@
         "level": 1
       }
     ],
-    "id": 259
+    "id": 259,
+    "slots": []
   },
   {
     "name": "Intimidator Charm",
@@ -429,7 +464,8 @@
         "level": 1
       }
     ],
-    "id": 260
+    "id": 260,
+    "slots": []
   },
   {
     "name": "Heavy Artillery Charm",
@@ -441,7 +477,8 @@
         "level": 1
       }
     ],
-    "id": 261
+    "id": 261,
+    "slots": []
   },
   {
     "name": "Light Eater's Charm",
@@ -453,7 +490,8 @@
         "level": 1
       }
     ],
-    "id": 262
+    "id": 262,
+    "slots": []
   },
   {
     "name": "Tracker Charm",
@@ -465,7 +503,8 @@
         "level": 1
       }
     ],
-    "id": 263
+    "id": 263,
+    "slots": []
   },
   {
     "name": "Fortification Charm",
@@ -477,7 +516,8 @@
         "level": 1
       }
     ],
-    "id": 264
+    "id": 264,
+    "slots": []
   },
   {
     "name": "Performer's Charm",
@@ -489,7 +529,8 @@
         "level": 1
       }
     ],
-    "id": 265
+    "id": 265,
+    "slots": []
   },
   {
     "name": "Capacity Charm",
@@ -501,7 +542,8 @@
         "level": 1
       }
     ],
-    "id": 266
+    "id": 266,
+    "slots": []
   },
   {
     "name": "Bleed Charm",
@@ -513,7 +555,8 @@
         "level": 1
       }
     ],
-    "id": 267
+    "id": 267,
+    "slots": []
   },
   {
     "name": "Speed Heal Charm",
@@ -525,7 +568,8 @@
         "level": 1
       }
     ],
-    "id": 268
+    "id": 268,
+    "slots": []
   },
   {
     "name": "Ice Charm",
@@ -537,7 +581,8 @@
         "level": 1
       }
     ],
-    "id": 269
+    "id": 269,
+    "slots": []
   },
   {
     "name": "Blight Charm",
@@ -549,7 +594,8 @@
         "level": 1
       }
     ],
-    "id": 270
+    "id": 270,
+    "slots": []
   },
   {
     "name": "Frost Charm",
@@ -561,7 +607,8 @@
         "level": 1
       }
     ],
-    "id": 271
+    "id": 271,
+    "slots": []
   },
   {
     "name": "Master's Charm",
@@ -573,7 +620,8 @@
         "level": 1
       }
     ],
-    "id": 272
+    "id": 272,
+    "slots": []
   },
   {
     "name": "Evasion Charm",
@@ -585,7 +633,8 @@
         "level": 1
       }
     ],
-    "id": 273
+    "id": 273,
+    "slots": []
   },
   {
     "name": "Sheath Charm",
@@ -597,7 +646,8 @@
         "level": 1
       }
     ],
-    "id": 274
+    "id": 274,
+    "slots": []
   },
   {
     "name": "Whetstone Charm",
@@ -609,7 +659,8 @@
         "level": 1
       }
     ],
-    "id": 275
+    "id": 275,
+    "slots": []
   },
   {
     "name": "Blast Charm",
@@ -621,7 +672,8 @@
         "level": 1
       }
     ],
-    "id": 276
+    "id": 276,
+    "slots": []
   },
   {
     "name": "Dragon Charm",
@@ -633,7 +685,8 @@
         "level": 1
       }
     ],
-    "id": 277
+    "id": 277,
+    "slots": []
   },
   {
     "name": "Wyrmsbane Charm",
@@ -645,7 +698,8 @@
         "level": 1
       }
     ],
-    "id": 278
+    "id": 278,
+    "slots": []
   },
   {
     "name": "Demolition Charm",
@@ -657,7 +711,8 @@
         "level": 1
       }
     ],
-    "id": 279
+    "id": 279,
+    "slots": []
   },
   {
     "name": "Draw Charm",
@@ -669,7 +724,8 @@
         "level": 1
       }
     ],
-    "id": 280
+    "id": 280,
+    "slots": []
   },
   {
     "name": "Trickshot Charm",
@@ -681,7 +737,8 @@
         "level": 1
       }
     ],
-    "id": 281
+    "id": 281,
+    "slots": []
   },
   {
     "name": "Marathon Charm",
@@ -693,7 +750,8 @@
         "level": 1
       }
     ],
-    "id": 282
+    "id": 282,
+    "slots": []
   },
   {
     "name": "Fitness Charm",
@@ -705,7 +763,8 @@
         "level": 1
       }
     ],
-    "id": 283
+    "id": 283,
+    "slots": []
   },
   {
     "name": "Surge Charm",
@@ -717,7 +776,8 @@
         "level": 1
       }
     ],
-    "id": 284
+    "id": 284,
+    "slots": []
   },
   {
     "name": "Leaping Charm",
@@ -729,7 +789,8 @@
         "level": 1
       }
     ],
-    "id": 285
+    "id": 285,
+    "slots": []
   },
   {
     "name": "Bombardier Charm",
@@ -741,7 +802,8 @@
         "level": 1
       }
     ],
-    "id": 286
+    "id": 286,
+    "slots": []
   },
   {
     "name": "Mushroom Charm",
@@ -753,7 +815,8 @@
         "level": 1
       }
     ],
-    "id": 287
+    "id": 287,
+    "slots": []
   },
   {
     "name": "Awakening Charm",
@@ -765,7 +828,8 @@
         "level": 1
       }
     ],
-    "id": 288
+    "id": 288,
+    "slots": []
   },
   {
     "name": "Handicraft Charm",
@@ -777,7 +841,8 @@
         "level": 1
       }
     ],
-    "id": 289
+    "id": 289,
+    "slots": []
   },
   {
     "name": "Mud Puppy Charm",
@@ -793,7 +858,8 @@
         "level": 1
       }
     ],
-    "id": 290
+    "id": 290,
+    "slots": []
   },
   {
     "name": "Trickshot Charm",
@@ -809,7 +875,8 @@
         "level": 1
       }
     ],
-    "id": 291
+    "id": 291,
+    "slots": []
   },
   {
     "name": "Hunter's Life Charm",
@@ -825,7 +892,8 @@
         "level": 1
       }
     ],
-    "id": 292
+    "id": 292,
+    "slots": []
   },
   {
     "name": "Procurer's Charm",
@@ -841,7 +909,8 @@
         "level": 1
       }
     ],
-    "id": 293
+    "id": 293,
+    "slots": []
   },
   {
     "name": "Gatherer's Charm",
@@ -857,7 +926,8 @@
         "level": 1
       }
     ],
-    "id": 294
+    "id": 294,
+    "slots": []
   },
   {
     "name": "Guard Charm",
@@ -869,7 +939,8 @@
         "level": 1
       }
     ],
-    "id": 295
+    "id": 295,
+    "slots": []
   },
   {
     "name": "Earplugs Charm",
@@ -881,7 +952,8 @@
         "level": 1
       }
     ],
-    "id": 296
+    "id": 296,
+    "slots": []
   },
   {
     "name": "Tremor Charm",
@@ -893,7 +965,8 @@
         "level": 1
       }
     ],
-    "id": 297
+    "id": 297,
+    "slots": []
   },
   {
     "name": "Exploiter Charm",
@@ -905,7 +978,8 @@
         "level": 1
       }
     ],
-    "id": 298
+    "id": 298,
+    "slots": []
   },
   {
     "name": "Focus Charm",
@@ -917,7 +991,8 @@
         "level": 1
       }
     ],
-    "id": 299
+    "id": 299,
+    "slots": []
   },
   {
     "name": "Breaker Charm",
@@ -929,7 +1004,8 @@
         "level": 1
       }
     ],
-    "id": 300
+    "id": 300,
+    "slots": []
   },
   {
     "name": "Fury Charm",
@@ -941,7 +1017,8 @@
         "level": 1
       }
     ],
-    "id": 301
+    "id": 301,
+    "slots": []
   },
   {
     "name": "Grit Charm",
@@ -953,7 +1030,8 @@
         "level": 1
       }
     ],
-    "id": 302
+    "id": 302,
+    "slots": []
   },
   {
     "name": "Maintenance Charm",
@@ -965,7 +1043,8 @@
         "level": 1
       }
     ],
-    "id": 303
+    "id": 303,
+    "slots": []
   },
   {
     "name": "Power Charm",
@@ -977,7 +1056,8 @@
         "level": 1
       }
     ],
-    "id": 304
+    "id": 304,
+    "slots": []
   },
   {
     "name": "Challenger Charm",
@@ -989,7 +1069,8 @@
         "level": 1
       }
     ],
-    "id": 305
+    "id": 305,
+    "slots": []
   },
   {
     "name": "Unscathed Charm",
@@ -1001,7 +1082,8 @@
         "level": 1
       }
     ],
-    "id": 306
+    "id": 306,
+    "slots": []
   },
   {
     "name": "Mighty Charm",
@@ -1013,7 +1095,8 @@
         "level": 1
       }
     ],
-    "id": 307
+    "id": 307,
+    "slots": []
   },
   {
     "name": "Impact Charm",
@@ -1025,7 +1108,8 @@
         "level": 1
       }
     ],
-    "id": 308
+    "id": 308,
+    "slots": []
   },
   {
     "name": "Miasma Charm",
@@ -1037,7 +1121,8 @@
         "level": 1
       }
     ],
-    "id": 309
+    "id": 309,
+    "slots": []
   },
   {
     "name": "Normal Shots Charm",
@@ -1049,7 +1134,8 @@
         "level": 1
       }
     ],
-    "id": 310
+    "id": 310,
+    "slots": []
   },
   {
     "name": "Clearmind Charm",
@@ -1065,7 +1151,8 @@
         "level": 1
       }
     ],
-    "id": 311
+    "id": 311,
+    "slots": []
   },
   {
     "name": "Rider's Charm",
@@ -1081,7 +1168,8 @@
         "level": 1
       }
     ],
-    "id": 312
+    "id": 312,
+    "slots": []
   },
   {
     "name": "Surveyor's Charm",
@@ -1097,7 +1185,8 @@
         "level": 1
       }
     ],
-    "id": 313
+    "id": 313,
+    "slots": []
   },
   {
     "name": "Critical Charm",
@@ -1109,7 +1198,8 @@
         "level": 1
       }
     ],
-    "id": 314
+    "id": 314,
+    "slots": []
   },
   {
     "name": "Invigorate Charm",
@@ -1121,7 +1211,8 @@
         "level": 1
       }
     ],
-    "id": 315
+    "id": 315,
+    "slots": []
   },
   {
     "name": "Poison Coating Charm",
@@ -1133,7 +1224,8 @@
         "level": 1
       }
     ],
-    "id": 316
+    "id": 316,
+    "slots": []
   },
   {
     "name": "Para Coating Charm",
@@ -1145,7 +1237,8 @@
         "level": 1
       }
     ],
-    "id": 317
+    "id": 317,
+    "slots": []
   },
   {
     "name": "Sleep Coating Charm",
@@ -1157,7 +1250,8 @@
         "level": 1
       }
     ],
-    "id": 318
+    "id": 318,
+    "slots": []
   },
   {
     "name": "Blast Coating Charm",
@@ -1169,7 +1263,8 @@
         "level": 1
       }
     ],
-    "id": 319
+    "id": 319,
+    "slots": []
   },
   {
     "name": "Geomancy Charm",
@@ -1185,6 +1280,7 @@
         "level": 1
       }
     ],
-    "id": 320
+    "id": 320,
+    "slots": []
   }
 ]

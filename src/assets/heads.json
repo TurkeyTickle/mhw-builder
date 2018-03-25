@@ -128,7 +128,8 @@
         "id": "kirinFavor"
       }
     ],
-    "id": 5
+    "id": 5,
+    "slots": []
   },
   {
     "name": "Vaal Hazak Helm Beta",
@@ -177,7 +178,8 @@
         "id": "vaalHazakVitality"
       }
     ],
-    "id": 7
+    "id": 7,
+    "slots": []
   },
   {
     "name": "Kushala Glare Beta",
@@ -238,7 +240,8 @@
         "id": "kushalaDaoraFlight"
       }
     ],
-    "id": 9
+    "id": 9,
+    "slots": []
   },
   {
     "name": "Kaiser Crown Beta",
@@ -289,7 +292,8 @@
         "id": "teostraTechnique"
       }
     ],
-    "id": 11
+    "id": 11,
+    "slots": []
   },
   {
     "name": "Nergigante Helm Beta",
@@ -459,7 +463,8 @@
         "level": 1
       }
     ],
-    "id": 18
+    "id": 18,
+    "slots": []
   },
   {
     "name": "Damascus Helm Beta",
@@ -739,7 +744,8 @@
         "id": "rathalosMastery"
       }
     ],
-    "id": 28
+    "id": 28,
+    "slots": []
   },
   {
     "name": "Diablos Helm Beta",
@@ -788,7 +794,8 @@
         "id": "diablosMastery"
       }
     ],
-    "id": 30
+    "id": 30,
+    "slots": []
   },
   {
     "name": "Rathalos Helm Beta",
@@ -837,7 +844,8 @@
         "id": "rathalosMastery"
       }
     ],
-    "id": 32
+    "id": 32,
+    "slots": []
   },
   {
     "name": "Odogaron Helm Beta",
@@ -886,7 +894,8 @@
         "id": "odogaronMastery"
       }
     ],
-    "id": 34
+    "id": 34,
+    "slots": []
   },
   {
     "name": "Legiana Helm Beta",
@@ -935,7 +944,8 @@
         "id": "legianaFavor"
       }
     ],
-    "id": 36
+    "id": 36,
+    "slots": []
   },
   {
     "name": "Lavasioth Helm Beta",
@@ -985,7 +995,8 @@
         "level": 1
       }
     ],
-    "id": 38
+    "id": 38,
+    "slots": []
   },
   {
     "name": "Strategist Spectacles Alpha",
@@ -1024,7 +1035,8 @@
         "level": 3
       }
     ],
-    "id": 40
+    "id": 40,
+    "slots": []
   },
   {
     "name": "Ingot Helm Beta",
@@ -1063,7 +1075,8 @@
         "level": 2
       }
     ],
-    "id": 42
+    "id": 42,
+    "slots": []
   },
   {
     "name": "High Metal Helm Beta",
@@ -1106,7 +1119,8 @@
         "level": 1
       }
     ],
-    "id": 44
+    "id": 44,
+    "slots": []
   },
   {
     "name": "Commission Gorget Beta",

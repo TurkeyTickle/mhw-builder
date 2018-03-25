@@ -95,7 +95,8 @@
     "baseAffinityPercent": 20,
     "ailment": "Sleep",
     "ailmentBaseAttack": 120,
-    "id": 67
+    "id": 67,
+    "slots": []
   },
   {
     "name": "Holy Sabers",
@@ -139,7 +140,8 @@
     "baseAffinityPercent": -20,
     "element": "Fire",
     "elementBaseAttack": 210,
-    "id": 70
+    "id": 70,
+    "slots": []
   },
   {
     "name": "Diablos Clubs II",
@@ -237,7 +239,8 @@
     "element": "Fire",
     "elementBaseAttack": 180,
     "elementHidden": true,
-    "id": 76
+    "id": 76,
+    "slots": []
   },
   {
     "name": "Enduring Schism",
@@ -268,7 +271,8 @@
     "baseAffinityPercent": 0,
     "element": "Thunder",
     "elementBaseAttack": 270,
-    "id": 78
+    "id": 78,
+    "slots": []
   },
   {
     "name": "Magda Ungulae II",
@@ -352,6 +356,7 @@
     "element": "Dragon",
     "elementBaseAttack": 180,
     "elderseal": "High",
-    "id": 277
+    "id": 277,
+    "slots": []
   }
 ]

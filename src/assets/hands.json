@@ -109,7 +109,8 @@
         "id": "kirinFavor"
       }
     ],
-    "id": 96
+    "id": 96,
+    "slots": []
   },
   {
     "name": "Vaal Hazak Braces Beta",
@@ -224,7 +225,8 @@
         "id": "kushalaDaoraFlight"
       }
     ],
-    "id": 100
+    "id": 100,
+    "slots": []
   },
   {
     "name": "Kaiser Vambraces Beta",
@@ -329,7 +331,8 @@
         "id": "nergiganteHunger"
       }
     ],
-    "id": 104
+    "id": 104,
+    "slots": []
   },
   {
     "name": "Death Stench Grip Beta",
@@ -430,7 +433,8 @@
         "level": 1
       }
     ],
-    "id": 108
+    "id": 108,
+    "slots": []
   },
   {
     "name": "Damascus Vambraces Beta",
@@ -473,7 +477,8 @@
         "level": 1
       }
     ],
-    "id": 110
+    "id": 110,
+    "slots": []
   },
   {
     "name": "Bazel Vambraces Beta",
@@ -530,7 +535,8 @@
         "id": "bazelgeuseProtection"
       }
     ],
-    "id": 112
+    "id": 112,
+    "slots": []
   },
   {
     "name": "Uragaan Vambraces Beta",
@@ -642,7 +648,8 @@
         "id": "diablosMastery"
       }
     ],
-    "id": 116
+    "id": 116,
+    "slots": []
   },
   {
     "name": "Rath Soul Braces Beta",
@@ -751,7 +758,8 @@
         "id": "diablosMastery"
       }
     ],
-    "id": 120
+    "id": 120,
+    "slots": []
   },
   {
     "name": "Rathalos Vambraces Beta",
@@ -800,7 +808,8 @@
         "id": "rathalosMastery"
       }
     ],
-    "id": 122
+    "id": 122,
+    "slots": []
   },
   {
     "name": "Odogaron Vambraces Beta",
@@ -849,7 +858,8 @@
         "id": "odogaronMastery"
       }
     ],
-    "id": 124
+    "id": 124,
+    "slots": []
   },
   {
     "name": "Legiana Vambraces Beta",
@@ -898,7 +908,8 @@
         "id": "legianaFavor"
       }
     ],
-    "id": 126
+    "id": 126,
+    "slots": []
   },
   {
     "name": "Lavasioth Vambraces Beta",
@@ -989,7 +1000,8 @@
         "level": 1
       }
     ],
-    "id": 130
+    "id": 130,
+    "slots": []
   },
   {
     "name": "High Metal Vambraces Beta",
@@ -1032,7 +1044,8 @@
         "level": 1
       }
     ],
-    "id": 132
+    "id": 132,
+    "slots": []
   },
   {
     "name": "Commission Vambraces Beta",
@@ -1152,7 +1165,8 @@
         "level": 1
       }
     ],
-    "id": 325
+    "id": 325,
+    "slots": []
   },
   {
     "name": "Vangis Vambraces Beta",

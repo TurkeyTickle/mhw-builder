@@ -112,7 +112,8 @@
         "id": "kirinFavor"
       }
     ],
-    "id": 184
+    "id": 184,
+    "slots": []
   },
   {
     "name": "Vaal Hazak Greaves Beta",
@@ -224,7 +225,8 @@
         "id": "kushalaDaoraFlight"
       }
     ],
-    "id": 188
+    "id": 188,
+    "slots": []
   },
   {
     "name": "Kaiser Greaves Beta",
@@ -279,7 +281,8 @@
         "id": "teostraTechnique"
       }
     ],
-    "id": 190
+    "id": 190,
+    "slots": []
   },
   {
     "name": "Nergigante Greaves Beta",
@@ -379,7 +382,8 @@
         "level": 2
       }
     ],
-    "id": 194
+    "id": 194,
+    "slots": []
   },
   {
     "name": "Dober Greaves Beta",
@@ -422,7 +426,8 @@
         "level": 1
       }
     ],
-    "id": 196
+    "id": 196,
+    "slots": []
   },
   {
     "name": "Damascus Greaves Beta",
@@ -697,7 +702,8 @@
         "id": "rathalosMastery"
       }
     ],
-    "id": 206
+    "id": 206,
+    "slots": []
   },
   {
     "name": "Diablos Greaves Beta",
@@ -749,7 +755,8 @@
         "id": "diablosMastery"
       }
     ],
-    "id": 208
+    "id": 208,
+    "slots": []
   },
   {
     "name": "Rathalos Greaves Beta",
@@ -798,7 +805,8 @@
         "id": "rathalosMastery"
       }
     ],
-    "id": 210
+    "id": 210,
+    "slots": []
   },
   {
     "name": "Odogaron Greaves Beta",
@@ -847,7 +855,8 @@
         "id": "odogaronMastery"
       }
     ],
-    "id": 212
+    "id": 212,
+    "slots": []
   },
   {
     "name": "Legiana Greaves Beta",
@@ -896,7 +905,8 @@
         "id": "legianaFavor"
       }
     ],
-    "id": 214
+    "id": 214,
+    "slots": []
   },
   {
     "name": "Lavasioth Greaves Beta",
@@ -987,7 +997,8 @@
         "level": 1
       }
     ],
-    "id": 218
+    "id": 218,
+    "slots": []
   },
   {
     "name": "High Metal Greaves Beta",
@@ -1030,7 +1041,8 @@
         "level": 1
       }
     ],
-    "id": 220
+    "id": 220,
+    "slots": []
   },
   {
     "name": "Commission Pants Beta",
@@ -1073,7 +1085,8 @@
         "level": 1
       }
     ],
-    "id": 222
+    "id": 222,
+    "slots": []
   },
   {
     "name": "Guild Cross Boots Beta",
@@ -1145,7 +1158,8 @@
         "level": 1
       }
     ],
-    "id": 329
+    "id": 329,
+    "slots": []
   },
   {
     "name": "Vangis Greaves Beta",
