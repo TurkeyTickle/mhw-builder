@@ -9,6 +9,8 @@ import { TooltipService } from '../../services/tooltip.service';
 import { ItemType } from '../../types/item.type';
 import { WeaponType } from '../../types/weapon.type';
 
+import * as _ from 'lodash';
+
 @Component({
 	selector: 'mhw-builder-item-list',
 	templateUrl: './item-list.component.html',
@@ -78,11 +80,11 @@ export class ItemListComponent implements OnInit {
 
 					if (item.visible) { continue; }
 
-					if (item.weaponType) {
-						item.visible = this.itemsService.getWeaponTypeName(item.weaponType).toLowerCase().includes(query);
-					}
+					// if (item.weaponType) {
+					// 	item.visible = this.itemsService.getWeaponTypeName(item.weaponType).toLowerCase().includes(query);
+					// }
 
-					if (item.visible) { continue; }
+					// if (item.visible) { continue; }
 
 					if (item.tags) {
 						item.visible = item.tags.some(tag => tag.includes(query));
@@ -91,6 +93,9 @@ export class ItemListComponent implements OnInit {
 					if (item.visible) { continue; }
 				}
 			}
+
+			const itemSubset = _.filter(this.items, item => item.visible);
+			this.applyWeaponFilter(itemSubset);
 
 			if (this.decorations) {
 				for (const decoration of this.decorations) {
@@ -127,7 +132,7 @@ export class ItemListComponent implements OnInit {
 			}
 		}
 
-		this.applyWeaponFilter();
+		this.applyWeaponFilter(this.items);
 	}
 
 	selectItem(item: ItemModel) {
@@ -171,12 +176,13 @@ export class ItemListComponent implements OnInit {
 			this.weaponTypeFilter = null;
 		}
 
-		this.applyWeaponFilter();
+		this.search(this.searchBox.nativeElement.value);
+		// this.applyWeaponFilter(this.items);
 	}
 
-	applyWeaponFilter() {
-		if (this.items) {
-			for (const item of this.items) {
+	applyWeaponFilter(items: SearchItemModel[]) {
+		if (items) {
+			for (const item of items) {
 				if (item.itemType == ItemType.Weapon) {
 					item.visible = !this.weaponTypeFilter || item.weaponType == this.weaponTypeFilter;
 				}
