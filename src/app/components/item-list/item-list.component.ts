@@ -7,8 +7,6 @@ import { SearchItemModel } from '../../models/search-item.model';
 import { ItemsService } from '../../services/items.service';
 import { TooltipService } from '../../services/tooltip.service';
 import { ItemType } from '../../types/item.type';
-import { WeaponType } from '../../types/weapon.type';
-import { EnumHelpers } from '../../core/enum-helpers';
 
 @Component({
 	selector: 'mhw-builder-item-list',
@@ -40,7 +38,6 @@ export class ItemListComponent implements OnInit {
 
 	items: SearchItemModel[];
 	decorations: SearchDecorationModel[];
-	weaponTypes = EnumHelpers.toArray(WeaponType);
 
 	constructor(
 		private itemsService: ItemsService,
