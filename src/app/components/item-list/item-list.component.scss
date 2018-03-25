@@ -1,6 +1,16 @@
 $itemHeight: 32px;
 
-:host, .container {
+// :host {
+// 	right: 0px;
+// 	bottom: 0px;
+// 	left: 0px;
+// }
+
+.container {
+	display: flex;
+	flex-direction: column;
+	position: absolute;
+	top: 0px;
 	right: 0px;
 	bottom: 0px;
 	left: 0px;
@@ -86,17 +96,23 @@ li:hover {
 
 .filter-container {
 	$height: 42px;
+	margin-bottom: 4px;
 
 	.button-row {
-		margin: 8px 0px;
 		width: 100%;
 		display: flex;
 		flex-wrap: nowrap;
 		justify-content: space-evenly;
-		height: $height;
+		height: $height + 6;
 		
+		.selected {
+			background: #389b38;
+			border-radius: 3px;
+		}
+
 		.weapon-filter {
 			padding: 4px;
+			height: 48px;
 			flex-grow: 0;
 		
 			img {
@@ -104,33 +120,15 @@ li:hover {
 			}
 		}
 	}
-
-	// display: flex;
-	// padding: 0px 8px;
-	// border-radius: 3px;
-	// background: rgb(50,50,50);
-
-	// select {
-	// 	flex-grow: 1;
-	// 	height: $height;
-	// 	background: rgb(50,50,50);
-	// 	font-size: 16px;
-	// 	border: none;
-	// 	color: white;
-	// }
-
-	// select:focus {
-	// 	outline: none;
-	// }
 }
 
 .items-container {
 	overflow-y: auto;
-    position: absolute;
-    top: 150px;
-    bottom: 0px;
-    right: 0px;
-	left: 0px;
+    // position: relative;
+    // top: 0px;
+    // bottom: 0px;
+    // right: 0px;
+	// left: 0px;
 	border-radius: 3px;
 }
 
