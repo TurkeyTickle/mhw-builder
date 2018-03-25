@@ -36,12 +36,12 @@ function updateItemIds() {
 
 	console.log('max armor id is ' + maxArmorId);
 
-	maxArmorId = assignIds('../src/assets/heads.json', heads, maxArmorId);
-	maxArmorId = assignIds('../src/assets/chests.json', chests, maxArmorId);
-	maxArmorId = assignIds('../src/assets/hands.json', hands, maxArmorId);
-	maxArmorId = assignIds('../src/assets/legs.json', legs, maxArmorId);
-	maxArmorId = assignIds('../src/assets/feet.json', feet, maxArmorId);
-	maxArmorId = assignIds('../src/assets/charms.json', charms, maxArmorId);
+	maxArmorId = assignIds('./src/assets/heads.json', heads, maxArmorId);
+	maxArmorId = assignIds('./src/assets/chests.json', chests, maxArmorId);
+	maxArmorId = assignIds('./src/assets/hands.json', hands, maxArmorId);
+	maxArmorId = assignIds('./src/assets/legs.json', legs, maxArmorId);
+	maxArmorId = assignIds('./src/assets/feet.json', feet, maxArmorId);
+	maxArmorId = assignIds('./src/assets/charms.json', charms, maxArmorId);
 
 	console.log('new max armor id is ' + maxArmorId);
 
@@ -64,20 +64,20 @@ function updateItemIds() {
 
 	console.log('max weapon id is ' + maxWeaponId);
 	
-	maxWeaponId = assignIds('../src/assets/great-swords.json', greatSwords, maxWeaponId);
-	maxWeaponId = assignIds('../src/assets/long-swords.json', longSwords, maxWeaponId);
-	maxWeaponId = assignIds('../src/assets/sword-and-shields.json', swordAndShields, maxWeaponId);
-	maxWeaponId = assignIds('../src/assets/dual-blades.json', dualBlades, maxWeaponId);
-	maxWeaponId = assignIds('../src/assets/hammers.json', hammers, maxWeaponId);
-	maxWeaponId = assignIds('../src/assets/hunting-horns.json', huntingHorns, maxWeaponId);
-	maxWeaponId = assignIds('../src/assets/lances.json', lances, maxWeaponId);
-	maxWeaponId = assignIds('../src/assets/gunlances.json', gunlances, maxWeaponId);
-	maxWeaponId = assignIds('../src/assets/switch-axes.json', switchAxes, maxWeaponId);
-	maxWeaponId = assignIds('../src/assets/charge-blades.json', chargeBlades, maxWeaponId);
-	maxWeaponId = assignIds('../src/assets/insect-glaives.json', insectGlaives, maxWeaponId);
-	maxWeaponId = assignIds('../src/assets/light-bowguns.json', lightBowguns, maxWeaponId);
-	maxWeaponId = assignIds('../src/assets/heavy-bowguns.json', heavyBowguns, maxWeaponId);
-	maxWeaponId = assignIds('../src/assets/bows.json', bows, maxWeaponId);
+	maxWeaponId = assignIds('./src/assets/great-swords.json', greatSwords, maxWeaponId);
+	maxWeaponId = assignIds('./src/assets/long-swords.json', longSwords, maxWeaponId);
+	maxWeaponId = assignIds('./src/assets/sword-and-shields.json', swordAndShields, maxWeaponId);
+	maxWeaponId = assignIds('./src/assets/dual-blades.json', dualBlades, maxWeaponId);
+	maxWeaponId = assignIds('./src/assets/hammers.json', hammers, maxWeaponId);
+	maxWeaponId = assignIds('./src/assets/hunting-horns.json', huntingHorns, maxWeaponId);
+	maxWeaponId = assignIds('./src/assets/lances.json', lances, maxWeaponId);
+	maxWeaponId = assignIds('./src/assets/gunlances.json', gunlances, maxWeaponId);
+	maxWeaponId = assignIds('./src/assets/switch-axes.json', switchAxes, maxWeaponId);
+	maxWeaponId = assignIds('./src/assets/charge-blades.json', chargeBlades, maxWeaponId);
+	maxWeaponId = assignIds('./src/assets/insect-glaives.json', insectGlaives, maxWeaponId);
+	maxWeaponId = assignIds('./src/assets/light-bowguns.json', lightBowguns, maxWeaponId);
+	maxWeaponId = assignIds('./src/assets/heavy-bowguns.json', heavyBowguns, maxWeaponId);
+	maxWeaponId = assignIds('./src/assets/bows.json', bows, maxWeaponId);
 
 	console.log('new max weapon id is ' + maxWeaponId);
 
