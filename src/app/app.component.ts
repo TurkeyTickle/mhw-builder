@@ -1,19 +1,19 @@
-import { Component, ViewChild, ElementRef, OnInit, Renderer2, AfterContentInit, AfterViewInit, ChangeDetectorRef } from '@angular/core';
 import { Location } from '@angular/common';
-import { EquippedStatsComponent } from './components/equipped-stats/equipped-stats.component';
-import { EquippedSkillsComponent } from './components/equipped-skills/equipped-skills.component';
-import { ItemStatsComponent } from './components/item-stats/item-stats.component';
-import { DecorationSlotComponent } from './components/decoration-slot/decoration-slot.component';
-import { ItemSlotComponent, ItemSlotClearModel } from './components/item-slot/item-slot.component';
-import { ItemType } from './types/item.type';
-import { ItemModel } from './models/item.model';
-import { DecorationModel } from './models/decoration.model';
-import { SkillService } from './services/skill.service';
-import { TooltipService } from './services/tooltip.service';
-
+import { AfterContentInit, AfterViewInit, ChangeDetectorRef, Component, OnInit, ViewChild } from '@angular/core';
 import * as _ from 'lodash';
-import { EquipmentCategoryType } from './types/equipment-category.type';
+
+import { DecorationSlotComponent } from './components/decoration-slot/decoration-slot.component';
+import { EquippedSkillsComponent } from './components/equipped-skills/equipped-skills.component';
+import { EquippedStatsComponent } from './components/equipped-stats/equipped-stats.component';
+import { ItemListComponent } from './components/item-list/item-list.component';
+import { ItemSlotClearModel, ItemSlotComponent } from './components/item-slot/item-slot.component';
+import { DecorationModel } from './models/decoration.model';
+import { ItemModel } from './models/item.model';
 import { ItemsService } from './services/items.service';
+import { SkillService } from './services/skill.service';
+import { EquipmentCategoryType } from './types/equipment-category.type';
+import { ItemType } from './types/item.type';
+import { TooltipComponent } from './components/tooltip/tooltip.component';
 
 @Component({
 	selector: 'mhw-builder-root',
@@ -28,8 +28,9 @@ export class AppComponent implements OnInit, AfterViewInit, AfterContentInit {
 
 	@ViewChild(EquippedStatsComponent) equippedStatsComponent: EquippedStatsComponent;
 	@ViewChild(EquippedSkillsComponent) equippedSkillsComponent: EquippedSkillsComponent;
-	@ViewChild(ItemStatsComponent) itemStatsComponent: ItemStatsComponent;
-	@ViewChild('itemStats') itemStatsContainer: ElementRef;
+	@ViewChild(TooltipComponent) tooltipComponent: TooltipComponent;
+	@ViewChild('equipmentItemList') equipmentItemListComponent: ItemListComponent;
+	@ViewChild('decorationItemList') decorationItemListComponent: ItemListComponent;
 	@ViewChild('weaponSlot') weaponSlot: ItemSlotComponent;
 	@ViewChild('headSlot') headSlot: ItemSlotComponent;
 	@ViewChild('chestSlot') chestSlot: ItemSlotComponent;
@@ -44,23 +45,14 @@ export class AppComponent implements OnInit, AfterViewInit, AfterContentInit {
 	equippedDecorations = new Array<DecorationModel>();
 
 	constructor(
-		private tooltipService: TooltipService,
 		private skillService: SkillService,
 		private itemsService: ItemsService,
-		private renderer: Renderer2,
 		private location: Location,
 		private changeDetector: ChangeDetectorRef
 	) { }
 
 	ngOnInit() {
-		this.tooltipService.subject.subscribe((thing: ItemModel | DecorationModel) => {
-			if (!thing) {
-				this.renderer.setStyle(this.itemStatsContainer.nativeElement, 'display', 'none');
-			} else {
-				this.renderer.setStyle(this.itemStatsContainer.nativeElement, 'display', 'block');
-				this.itemStatsComponent.setItem(thing);
-			}
-		});
+
 	}
 
 	ngAfterContentInit() {
@@ -151,6 +143,7 @@ export class AppComponent implements OnInit, AfterViewInit, AfterContentInit {
 
 		this.selectedEquipmentSlot = equipmentSlot;
 		this.selectedEquipmentSlot.selected = true;
+		setTimeout(() => this.equipmentItemListComponent.searchBox.nativeElement.focus(), 100);
 	}
 
 	decorationSlotSelected(decorationSlot: DecorationSlotComponent) {
@@ -166,22 +159,11 @@ export class AppComponent implements OnInit, AfterViewInit, AfterContentInit {
 
 		this.selectedDecorationSlot = decorationSlot;
 		this.selectedDecorationSlot.selected = true;
+		setTimeout(() => this.decorationItemListComponent.searchBox.nativeElement.focus(), 100);
 	}
 
 	moveTooltip(event: MouseEvent) {
-		let newTop = event.clientY + 40;
-		let newLeft = event.clientX + 40;
-
-		if (window.innerHeight < newTop + this.itemStatsContainer.nativeElement.scrollHeight) {
-			newTop = window.innerHeight - this.itemStatsContainer.nativeElement.scrollHeight - 20;
-		}
-
-		if (window.innerWidth < newLeft + this.itemStatsContainer.nativeElement.scrollWidth) {
-			newLeft = window.innerWidth - this.itemStatsContainer.nativeElement.scrollWidth;
-		}
-
-		this.renderer.setStyle(this.itemStatsContainer.nativeElement, 'left', newLeft + 'px');
-		this.renderer.setStyle(this.itemStatsContainer.nativeElement, 'top', newTop + 'px');
+		this.tooltipComponent.move(event.clientX, event.clientY);
 	}
 
 	updateBuildId() {
@@ -251,37 +233,39 @@ export class AppComponent implements OnInit, AfterViewInit, AfterContentInit {
 	}
 
 	loadBuildSlot(slotHash: string, slot: ItemSlotComponent) {
-		const slotParts = slotHash.split('d');
-		const itemParts = slotParts[0].split('l');
-		const equipmentId = parseInt(itemParts[0], 10);
-		if (equipmentId != null) {
-			let equipment: ItemModel;
-			if (slot.slotName == ItemType.Weapon) {
-				equipment = this.itemsService.getWeapon(equipmentId);
-			} else {
-				equipment = this.itemsService.getArmorById(equipmentId);
-			}
+		if (slotHash) {
+			const slotParts = slotHash.split('d');
+			const itemParts = slotParts[0].split('l');
+			const equipmentId = parseInt(itemParts[0], 10);
+			if (equipmentId != null) {
+				let equipment: ItemModel;
+				if (slot.slotName == ItemType.Weapon) {
+					equipment = this.itemsService.getWeapon(equipmentId);
+				} else {
+					equipment = this.itemsService.getArmorById(equipmentId);
+				}
 
-			if (itemParts.length > 1) {
-				const level = parseInt(itemParts[1], 10);
-				equipment.equippedLevel = level;
-			}
+				if (itemParts.length > 1) {
+					const level = parseInt(itemParts[1], 10);
+					equipment.equippedLevel = level;
+				}
 
-			if (equipment) {
-				this.equippedItems.push(equipment);
-				slot.item = equipment;
+				if (equipment) {
+					this.equippedItems.push(equipment);
+					slot.item = equipment;
 
-				this.changeDetector.detectChanges();
+					this.changeDetector.detectChanges();
 
-				for (let i = 1; i < slotParts.length; i++) {
-					const decorationId = parseInt(slotParts[i], 10);
-					if (decorationId) {
-						const decoration = this.itemsService.getDecoration(decorationId);
-						if (decoration) {
-							const newDecoration = Object.assign({}, decoration);
-							slot.decorationSlots.toArray()[i - 1].decoration = newDecoration;
-							newDecoration.equipmentId = equipment.id;
-							this.equippedDecorations.push(newDecoration);
+					for (let i = 1; i < slotParts.length; i++) {
+						const decorationId = parseInt(slotParts[i], 10);
+						if (decorationId) {
+							const decoration = this.itemsService.getDecoration(decorationId);
+							if (decoration) {
+								const newDecoration = Object.assign({}, decoration);
+								slot.decorationSlots.toArray()[i - 1].decoration = newDecoration;
+								newDecoration.equipmentId = equipment.id;
+								this.equippedDecorations.push(newDecoration);
+							}
 						}
 					}
 				}

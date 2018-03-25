@@ -8,12 +8,6 @@
 	</div>
 
 	<div class="filter-container">
-		<!-- <mhw-builder-select-list 
-			[items]="weaponTypes" 
-			[itemNameProperty]="value"
-			placeholderText="Select weapon type"
-			(itemSelected)="filterItemSelected($event)"></mhw-builder-select-list> -->
-
 		<div class="button-row">
 			<button class="weapon-filter">
 				<img src="assets/images/weapons/greatsword-icon.png">
@@ -93,7 +87,10 @@
 				</li>
 			</div>
 			<div *ngFor="let decoration of decorations">
-				<li [hidden]="!decoration.visible" (click)="selectDecoration(decoration)" (mouseenter)="setTooltipItem(decoration)" (mouseleave)="clearTooltipItem()">{{decoration.name}}</li>
+				<li [hidden]="!decoration.visible"
+					(click)="selectDecoration(decoration)"
+					(mouseenter)="setTooltipDecoration(decoration)"
+					(mouseleave)="clearTooltipDecoration()">{{decoration.name}}</li>
 			</div>
 		</ul>
 	</div>

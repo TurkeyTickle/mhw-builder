@@ -1,356 +1,396 @@
 [
-	{
-		"name": "Chrome Razor II",
-		"rarity": 6,
-		"itemType": "Weapon",
-		"weaponType": "GreatSword",
-		"baseAttack": 864,
-		"maxSharpness": "Blue",
-		"baseAffinityPercent": 0,
-		"ailment": "Poison",
-		"ailmentBaseAttack": 420,
-		"ailmentHidden": true,
-		"slots": [
-			{
-				"level": 1
-			},
-			{
-				"level": 1
-			}
-		]
-	},
-	{
-		"name": "Purgation's Atrocity",
-		"rarity": 8,
-		"itemType": "Weapon",
-		"weaponType": "GreatSword",
-		"baseAttack": 1008,
-		"maxSharpness": "Blue",
-		"baseAffinityPercent": 0,
-		"element": "Dragon",
-		"elementBaseAttack": 150,
-		"elderseal": "High",
-		"slots": [
-			{
-				"level": 1
-			}
-		]
-	},
-	{
-		"name": "Lightning Punisher III",
-		"rarity": 6,
-		"itemType": "Weapon",
-		"weaponType": "GreatSword",
-		"baseAttack": 912,
-		"maxSharpness": "Blue",
-		"baseAffinityPercent": 0,
-		"element": "Thunder",
-		"elementBaseAttack": 240,
-		"slots": [
-			{
-				"level": 2
-			}
-		]
-	},
-	{
-		"name": "Frost Blade II",
-		"rarity": 6,
-		"itemType": "Weapon",
-		"weaponType": "GreatSword",
-		"baseAttack": 768,
-		"maxSharpness": "Blue",
-		"baseAffinityPercent": 0,
-		"element": "Ice",
-		"elementBaseAttack": 390,
-		"slots": [
-			{
-				"level": 3
-			}
-		]
-	},
-	{
-		"name": "Jagras Hacker III",
-		"rarity": 6,
-		"itemType": "Weapon",
-		"weaponType": "GreatSword",
-		"baseAttack": 912,
-		"maxSharpness": "Blue",
-		"baseAffinityPercent": 0,
-		"element": "Water",
-		"elementBaseAttack": 300,
-		"elementHidden": true,
-		"slots": [
-			{
-				"level": 3
-			},
-			{
-				"level": 3
-			}
-		]
-	},
-	{
-		"name": "Malady's Kiss III",
-		"rarity": 6,
-		"itemType": "Weapon",
-		"weaponType": "GreatSword",
-		"baseAttack": 768,
-		"maxSharpness": "Blue",
-		"baseAffinityPercent": 20,
-		"ailment": "Paralysis",
-		"ailmentBaseAttack": 450
-	},
-	{
-		"name": "Lava Blaze II",
-		"rarity": 7,
-		"itemType": "Weapon",
-		"weaponType": "GreatSword",
-		"baseAttack": 864,
-		"maxSharpness": "Blue",
-		"baseAffinityPercent": 0,
-		"element": "Fire",
-		"elementBaseAttack": 330,
-		"slots": [
-			{
-				"level": 2
-			},
-			{
-				"level": 2
-			}
-		]
-	},
-	{
-		"name": "Datura Blaze II",
-		"rarity": 7,
-		"itemType": "Weapon",
-		"weaponType": "GreatSword",
-		"baseAttack": 816,
-		"maxSharpness": "Blue",
-		"baseAffinityPercent": 0,
-		"ailment": "Poison",
-		"ailmentBaseAttack": 540,
-		"slots": [
-			{
-				"level": 2
-			},
-			{
-				"level": 1
-			}
-		]
-	},
-	{
-		"name": "Rathalos Glinsword",
-		"rarity": 8,
-		"itemType": "Weapon",
-		"weaponType": "GreatSword",
-		"baseAttack": 912,
-		"maxSharpness": "Blue",
-		"baseAffinityPercent": 15,
-		"element": "Fire",
-		"elementBaseAttack": 240,
-		"slots": [
-			{
-				"level": 1
-			}
-		]
-	},
-	{
-		"name": "Giant Jawblade II",
-		"rarity": 6,
-		"itemType": "Weapon",
-		"weaponType": "GreatSword",
-		"baseAttack": 912,
-		"maxSharpness": "Blue",
-		"baseAffinityPercent": 15,
-		"element": "Ice",
-		"elementBaseAttack": 300,
-		"elementHidden": true,
-		"baseDefense": 10,
-		"slots": [
-			{
-				"level": 3
-			}
-		]
-	},
-	{
-		"name": "Leviathan's Fury",
-		"rarity": 8,
-		"itemType": "Weapon",
-		"weaponType": "GreatSword",
-		"baseAttack": 960,
-		"maxSharpness": "Blue",
-		"baseAffinityPercent": 0,
-		"element": "Dragon",
-		"elementBaseAttack": 300,
-		"elderseal": "Average",
-		"baseDefense": 0,
-		"slots": [
-			{
-				"level": 2
-			}
-		]
-	},
-	{
-		"name": "Gnashing Flammenzahn",
-		"rarity": 7,
-		"itemType": "Weapon",
-		"weaponType": "GreatSword",
-		"baseAttack": 1008,
-		"maxSharpness": "Blue",
-		"baseAffinityPercent": -30,
-		"element": "Fire",
-		"elementBaseAttack": 480
-	},
-	{
-		"name": "Water Golem III",
-		"rarity": 6,
-		"itemType": "Weapon",
-		"weaponType": "GreatSword",
-		"baseAttack": 912,
-		"maxSharpness": "Blue",
-		"baseAffinityPercent": 0,
-		"element": "Water",
-		"elementBaseAttack": 300,
-		"slots": [
-			{
-				"level": 2
-			}
-		]
-	},
-	{
-		"name": "Barroth Shredder III",
-		"rarity": 6,
-		"itemType": "Weapon",
-		"weaponType": "GreatSword",
-		"baseAttack": 960,
-		"maxSharpness": "Blue",
-		"baseAffinityPercent": -20,
-		"ailment": "Paralysis",
-		"ailmentBaseAttack": 390,
-		"ailmentHidden": true,
-		"baseDefense": 15,
-		"slots": [
-			{
-				"level": 2
-			},
-			{
-				"level": 1
-			}
-		]
-	},
-	{
-		"name": "Radobaan Slab III",
-		"rarity": 6,
-		"itemType": "Weapon",
-		"weaponType": "GreatSword",
-		"baseAttack": 912,
-		"maxSharpness": "Blue",
-		"baseAffinityPercent": 0,
-		"ailment": "Sleep",
-		"ailmentBaseAttack": 270,
-		"baseDefense": 20
-	},
-	{
-		"name": "Dragonbone Cleaver III",
-		"rarity": 6,
-		"itemType": "Weapon",
-		"weaponType": "GreatSword",
-		"baseAttack": 768,
-		"maxSharpness": "Blue",
-		"baseAffinityPercent": 0,
-		"element": "Dragon",
-		"elementBaseAttack": 420,
-		"elderseal": "Low",
-		"slots": [
-			{
-				"level": 1
-			},
-			{
-				"level": 1
-			}
-		]
-	},
-	{
-		"name": "King Thundersword",
-		"rarity": 8,
-		"itemType": "Weapon",
-		"weaponType": "GreatSword",
-		"baseAttack": 768,
-		"maxSharpness": "Blue",
-		"baseAffinityPercent": 0,
-		"element": "Thunder",
-		"elementBaseAttack": 540
-	},
-	{
-		"name": "Magda Potestas II",
-		"rarity": 7,
-		"itemType": "Weapon",
-		"weaponType": "GreatSword",
-		"baseAttack": 1056,
-		"maxSharpness": "Green",
-		"baseAffinityPercent": -20,
-		"ailment": "Blast",
-		"ailmentBaseAttack": 420,
-		"baseDefense": 20,
-		"slots": [
-			{
-				"level": 2
-			}
-		]
-	},
-	{
-		"name": "Daora's Decimator",
-		"rarity": 8,
-		"itemType": "Weapon",
-		"weaponType": "GreatSword",
-		"baseAttack": 864,
-		"maxSharpness": "Blue",
-		"baseAffinityPercent": 10,
-		"element": "Ice",
-		"elementBaseAttack": 270,
-		"baseDefense": 0,
-		"slots": [
-			{
-				"level": 2
-			}
-		]
-	},
-	{
-		"name": "Xeno Maliq",
-		"rarity": 8,
-		"itemType": "Weapon",
-		"weaponType": "GreatSword",
-		"baseAttack": 816,
-		"maxSharpness": "White",
-		"baseAffinityPercent": 15,
-		"element": "Dragon",
-		"elementBaseAttack": 210,
-		"elderseal": "Low",
-		"baseDefense": 0,
-		"slots": [
-			{
-				"level": 3
-			},
-			{
-				"level": 3
-			}
-		]
-	},
-	{
-		"name": "Great Wyvern Jawblade",
-		"rarity": 8,
-		"itemType": "Weapon",
-		"weaponType": "GreatSword",
-		"baseAttack": 960,
-		"maxSharpness": "Blue",
-		"baseAffinityPercent": 0,
-		"ailment": "Blast",
-		"ailmentBaseAttack": 330,
-		"ailmentHidden": true,
-		"baseDefense": 20,
-		"slots": [
-			{
-				"level": 3
-			}
-		]
-	}
+  {
+    "name": "Chrome Razor II",
+    "rarity": 6,
+    "itemType": "Weapon",
+    "weaponType": "GreatSword",
+    "baseAttack": 864,
+    "maxSharpness": "Blue",
+    "baseAffinityPercent": 0,
+    "ailment": "Poison",
+    "ailmentBaseAttack": 420,
+    "ailmentHidden": true,
+    "slots": [
+      {
+        "level": 1
+      },
+      {
+        "level": 1
+      }
+    ],
+    "id": 1
+  },
+  {
+    "name": "Purgation's Atrocity",
+    "rarity": 8,
+    "itemType": "Weapon",
+    "weaponType": "GreatSword",
+    "baseAttack": 1008,
+    "maxSharpness": "Blue",
+    "baseAffinityPercent": 0,
+    "element": "Dragon",
+    "elementBaseAttack": 150,
+    "elementAttackIncreaseCapOverride": 0.33,
+    "elderseal": "High",
+    "slots": [
+      {
+        "level": 1
+      }
+    ],
+    "id": 2
+  },
+  {
+    "name": "Lightning Punisher III",
+    "rarity": 6,
+    "itemType": "Weapon",
+    "weaponType": "GreatSword",
+    "baseAttack": 912,
+    "maxSharpness": "Blue",
+    "baseAffinityPercent": 0,
+    "element": "Thunder",
+    "elementBaseAttack": 240,
+    "slots": [
+      {
+        "level": 2
+      }
+    ],
+    "id": 3
+  },
+  {
+    "name": "Frost Blade II",
+    "rarity": 6,
+    "itemType": "Weapon",
+    "weaponType": "GreatSword",
+    "baseAttack": 768,
+    "maxSharpness": "Blue",
+    "baseAffinityPercent": 0,
+    "element": "Ice",
+    "elementBaseAttack": 390,
+    "slots": [
+      {
+        "level": 3
+      }
+    ],
+    "id": 4
+  },
+  {
+    "name": "Jagras Hacker III",
+    "rarity": 6,
+    "itemType": "Weapon",
+    "weaponType": "GreatSword",
+    "baseAttack": 912,
+    "maxSharpness": "Blue",
+    "baseAffinityPercent": 0,
+    "element": "Water",
+    "elementBaseAttack": 300,
+    "elementHidden": true,
+    "slots": [
+      {
+        "level": 3
+      },
+      {
+        "level": 3
+      }
+    ],
+    "id": 5
+  },
+  {
+    "name": "Malady's Kiss III",
+    "rarity": 6,
+    "itemType": "Weapon",
+    "weaponType": "GreatSword",
+    "baseAttack": 768,
+    "maxSharpness": "Blue",
+    "baseAffinityPercent": 20,
+    "ailment": "Paralysis",
+    "ailmentBaseAttack": 450,
+    "id": 6,
+    "slots": []
+  },
+  {
+    "name": "Lava Blaze II",
+    "rarity": 7,
+    "itemType": "Weapon",
+    "weaponType": "GreatSword",
+    "baseAttack": 864,
+    "maxSharpness": "Blue",
+    "baseAffinityPercent": 0,
+    "element": "Fire",
+    "elementBaseAttack": 330,
+    "slots": [
+      {
+        "level": 2
+      },
+      {
+        "level": 2
+      }
+    ],
+    "id": 7
+  },
+  {
+    "name": "Datura Blaze II",
+    "rarity": 7,
+    "itemType": "Weapon",
+    "weaponType": "GreatSword",
+    "baseAttack": 816,
+    "maxSharpness": "Blue",
+    "baseAffinityPercent": 0,
+    "ailment": "Poison",
+    "ailmentBaseAttack": 540,
+    "slots": [
+      {
+        "level": 2
+      },
+      {
+        "level": 1
+      }
+    ],
+    "id": 8
+  },
+  {
+    "name": "Rathalos Glinsword",
+    "rarity": 8,
+    "itemType": "Weapon",
+    "weaponType": "GreatSword",
+    "baseAttack": 912,
+    "maxSharpness": "Blue",
+    "baseAffinityPercent": 15,
+    "element": "Fire",
+    "elementBaseAttack": 240,
+    "slots": [
+      {
+        "level": 1
+      }
+    ],
+    "id": 9
+  },
+  {
+    "name": "Giant Jawblade II",
+    "rarity": 6,
+    "itemType": "Weapon",
+    "weaponType": "GreatSword",
+    "baseAttack": 912,
+    "maxSharpness": "Blue",
+    "baseAffinityPercent": 15,
+    "element": "Ice",
+    "elementBaseAttack": 300,
+    "elementHidden": true,
+    "baseDefense": 10,
+    "slots": [
+      {
+        "level": 3
+      }
+    ],
+    "id": 10
+  },
+  {
+    "name": "Leviathan's Fury",
+    "rarity": 8,
+    "itemType": "Weapon",
+    "weaponType": "GreatSword",
+    "baseAttack": 960,
+    "maxSharpness": "Blue",
+    "baseAffinityPercent": 0,
+    "element": "Dragon",
+    "elementBaseAttack": 300,
+    "elderseal": "Average",
+    "baseDefense": 0,
+    "slots": [
+      {
+        "level": 2
+      }
+    ],
+    "id": 11
+  },
+  {
+    "name": "Gnashing Flammenzahn",
+    "rarity": 7,
+    "itemType": "Weapon",
+    "weaponType": "GreatSword",
+    "baseAttack": 1008,
+    "maxSharpness": "Blue",
+    "baseAffinityPercent": -30,
+    "element": "Fire",
+    "elementBaseAttack": 480,
+    "id": 12,
+    "slots": []
+  },
+  {
+    "name": "Water Golem III",
+    "rarity": 6,
+    "itemType": "Weapon",
+    "weaponType": "GreatSword",
+    "baseAttack": 912,
+    "maxSharpness": "Blue",
+    "baseAffinityPercent": 0,
+    "element": "Water",
+    "elementBaseAttack": 300,
+    "slots": [
+      {
+        "level": 2
+      }
+    ],
+    "id": 13
+  },
+  {
+    "name": "Barroth Shredder III",
+    "rarity": 6,
+    "itemType": "Weapon",
+    "weaponType": "GreatSword",
+    "baseAttack": 960,
+    "maxSharpness": "Blue",
+    "baseAffinityPercent": -20,
+    "ailment": "Paralysis",
+    "ailmentBaseAttack": 390,
+    "ailmentHidden": true,
+    "baseDefense": 15,
+    "slots": [
+      {
+        "level": 2
+      },
+      {
+        "level": 1
+      }
+    ],
+    "id": 14
+  },
+  {
+    "name": "Radobaan Slab III",
+    "rarity": 6,
+    "itemType": "Weapon",
+    "weaponType": "GreatSword",
+    "baseAttack": 912,
+    "maxSharpness": "Blue",
+    "baseAffinityPercent": 0,
+    "ailment": "Sleep",
+    "ailmentBaseAttack": 270,
+    "baseDefense": 20,
+    "id": 15,
+    "slots": []
+  },
+  {
+    "name": "Dragonbone Cleaver III",
+    "rarity": 6,
+    "itemType": "Weapon",
+    "weaponType": "GreatSword",
+    "baseAttack": 768,
+    "maxSharpness": "Blue",
+    "baseAffinityPercent": 0,
+    "element": "Dragon",
+    "elementBaseAttack": 420,
+    "elderseal": "Low",
+    "slots": [
+      {
+        "level": 1
+      },
+      {
+        "level": 1
+      }
+    ],
+    "id": 16
+  },
+  {
+    "name": "King Thundersword",
+    "rarity": 8,
+    "itemType": "Weapon",
+    "weaponType": "GreatSword",
+    "baseAttack": 768,
+    "maxSharpness": "Blue",
+    "baseAffinityPercent": 0,
+    "element": "Thunder",
+    "elementBaseAttack": 540,
+    "id": 17,
+    "slots": []
+  },
+  {
+    "name": "Magda Potestas II",
+    "rarity": 7,
+    "itemType": "Weapon",
+    "weaponType": "GreatSword",
+    "baseAttack": 1056,
+    "maxSharpness": "Green",
+    "baseAffinityPercent": -20,
+    "ailment": "Blast",
+    "ailmentBaseAttack": 420,
+    "baseDefense": 20,
+    "slots": [
+      {
+        "level": 2
+      }
+    ],
+    "id": 18
+  },
+  {
+    "name": "Daora's Decimator",
+    "rarity": 8,
+    "itemType": "Weapon",
+    "weaponType": "GreatSword",
+    "baseAttack": 864,
+    "maxSharpness": "Blue",
+    "baseAffinityPercent": 10,
+    "element": "Ice",
+    "elementBaseAttack": 270,
+    "baseDefense": 0,
+    "slots": [
+      {
+        "level": 2
+      }
+    ],
+    "id": 19
+  },
+  {
+    "name": "Xeno Maliq",
+    "rarity": 8,
+    "itemType": "Weapon",
+    "weaponType": "GreatSword",
+    "baseAttack": 816,
+    "maxSharpness": "White",
+    "baseAffinityPercent": 15,
+    "element": "Dragon",
+    "elementBaseAttack": 210,
+    "elderseal": "Low",
+    "baseDefense": 0,
+    "slots": [
+      {
+        "level": 3
+      },
+      {
+        "level": 3
+      }
+    ],
+    "id": 20
+  },
+  {
+    "name": "Great Wyvern Jawblade",
+    "rarity": 8,
+    "itemType": "Weapon",
+    "weaponType": "GreatSword",
+    "baseAttack": 960,
+    "maxSharpness": "Blue",
+    "baseAffinityPercent": 0,
+    "ailment": "Blast",
+    "ailmentBaseAttack": 330,
+    "ailmentHidden": true,
+    "baseDefense": 20,
+    "slots": [
+      {
+        "level": 3
+      }
+    ],
+    "id": 21
+  },
+  {
+    "name": "Anguish",
+    "rarity": 7,
+    "itemType": "Weapon",
+    "weaponType": "GreatSword",
+    "baseAttack": 1104,
+    "maxSharpness": "Blue",
+    "baseAffinityPercent": -30,
+    "element": "Dragon",
+    "elementBaseAttack": 240,
+    "elderseal": "High",
+    "id": 274,
+    "slots": []
+  }
 ]

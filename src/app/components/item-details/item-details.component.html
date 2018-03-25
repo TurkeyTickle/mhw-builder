@@ -3,7 +3,7 @@
 	<hr>
 	<ul>
 		<div *ngIf="item?.equipmentCategory == 'Weapon'">
-			<li>Weapon Type: {{itemsService.getWeaponTypeName(item?.weaponType)}}</li>
+			<li>Weapon Type: {{getWeaponTypeName(item?.weaponType)}}</li>
 			<li *ngIf="item?.maxSharpness">Max Sharpness: {{item?.maxSharpness}}</li>
 			<li>Attack: {{item?.baseAttack}}</li>
 			<li>Affinity: {{item?.baseAffinityPercent}}%</li>
@@ -36,10 +36,19 @@
 		</div>
 	</ul>
 
+	<div class="slots-container">
+		<div *ngIf="item?.slots[0]?.level">
+			<img [src]="'assets/images/slot-' + item?.slots[0]?.level + '-icon.png'">
+		</div>
+		<div *ngIf="item?.slots[1]?.level">
+			<img [src]="'assets/images/slot-' + item?.slots[1]?.level + '-icon.png'">
+		</div>
+		<div *ngIf="item?.slots[2]?.level">
+			<img [src]="'assets/images/slot-' + item?.slots[2]?.level + '-icon.png'">
+		</div>
+	</div>
+
 	<div *ngIf="skills?.length" class="skills-container">
-		<br />
-		<h3>Skills</h3>
-		<hr>
 		<ul>
 			<div *ngFor="let skill of skills">
 				<div *ngIf="skill.levels">
@@ -53,7 +62,7 @@
 					</li>
 				</div>
 				
-				<div *ngIf="skill.setLevels">
+				<!-- <div *ngIf="skill.setLevels">
 					<li *ngFor="let setLevel of skill.setLevels">
 						<div class="skill-header">
 							<h4 class="skill-name">{{skill.name}}</h4>
@@ -62,7 +71,7 @@
 						<hr>
 						<span>{{setLevel.description}}</span>
 					</li>
-				</div>
+				</div> -->
 			</div>
 		</ul>
 	</div>

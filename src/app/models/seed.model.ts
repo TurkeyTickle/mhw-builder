@@ -1,8 +1,8 @@
-import { SkillModel } from './skill.model';
-import { ItemModel } from './item.model';
-import { WeaponModifierModel } from './weapon-modifier.model';
 import { DecorationModel } from './decoration.model';
+import { ItemModel } from './item.model';
 import { SetBonusModel } from './set-bonus.model';
+import { SkillModel } from './skill.model';
+import { WeaponModifierModel } from './weapon-modifier.model';
 
 export class SeedModel {
 	weaponModifiers: WeaponModifierModel[];

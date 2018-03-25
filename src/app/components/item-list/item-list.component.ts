@@ -1,11 +1,12 @@
-import { Component, OnInit, Input, Output, EventEmitter, ViewChild, ElementRef } from '@angular/core';
-import { ItemType } from '../../types/item.type';
-import { ItemModel } from '../../models/item.model';
-import { ItemsService } from '../../services/items.service';
+import { Component, ElementRef, EventEmitter, Input, OnInit, Output, ViewChild } from '@angular/core';
+
 import { DecorationModel } from '../../models/decoration.model';
-import { TooltipService } from '../../services/tooltip.service';
-import { SearchItemModel } from '../../models/search-item.model';
+import { ItemModel } from '../../models/item.model';
 import { SearchDecorationModel } from '../../models/search-decoration.model';
+import { SearchItemModel } from '../../models/search-item.model';
+import { ItemsService } from '../../services/items.service';
+import { TooltipService } from '../../services/tooltip.service';
+import { ItemType } from '../../types/item.type';
 import { WeaponType } from '../../types/weapon.type';
 import { EnumHelpers } from '../../core/enum-helpers';
 
@@ -80,6 +81,14 @@ export class ItemListComponent implements OnInit {
 					if (item.weaponType) {
 						item.visible = this.itemsService.getWeaponTypeName(item.weaponType).toLowerCase().includes(query);
 					}
+
+					if (item.visible) { continue; }
+
+					if (item.tags) {
+						item.visible = item.tags.some(tag => tag.includes(query));
+					}
+
+					if (item.visible) { continue; }
 				}
 			}
 
@@ -129,7 +138,7 @@ export class ItemListComponent implements OnInit {
 		this.decorationSelected.emit(newDecoration);
 	}
 
-	setTooltipItem(item: ItemModel | DecorationModel) {
+	setTooltipItem(item: ItemModel) {
 		this.tooltipService.setItem(item);
 	}
 
@@ -137,27 +146,16 @@ export class ItemListComponent implements OnInit {
 		this.tooltipService.setItem(null);
 	}
 
-	filterItemSelected(event: any) {
-
+	setTooltipDecoration(decoration: DecorationModel) {
+		this.tooltipService.setDecoration(decoration);
 	}
 
-	// getDamageIcons(item: ItemModel): string[] {
-	// 	const results = new Array<string>();
-
-	// 	if (item.element) {
-	// 		results.push(`assets/images/${item.element.toLowerCase()}${item.elementHidden ? '-gray' : ''}-icon.png`);
-	// 	}
-
-	// 	if (item.ailment) {
-	// 		results.push(`assets/images/${item.ailment.toLowerCase()}${item.ailmentHidden ? '-gray' : ''}-icon.png`);
-	// 	}
-
-	// 	return results;
-	// }
+	clearTooltipDecoration() {
+		this.tooltipService.setDecoration(null);
+	}
 
 	getElementIcon(item: ItemModel): string {
 		return `assets/images/${item.element.toLowerCase()}${item.elementHidden ? '-gray' : ''}-icon.png`;
-
 	}
 
 	getAilmentIcon(item: ItemModel): string {

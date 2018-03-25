@@ -1,33 +1,40 @@
-import { BrowserModule } from '@angular/platform-browser';
-import { NgModule, APP_INITIALIZER } from '@angular/core';
+import { Location, LocationStrategy, PathLocationStrategy } from '@angular/common';
 import { HttpClientModule } from '@angular/common/http';
+import { APP_INITIALIZER, NgModule } from '@angular/core';
+import { BrowserModule } from '@angular/platform-browser';
 
 import { AppComponent } from './app.component';
-import { ItemSlotComponent } from './components/item-slot/item-slot.component';
-import { ItemsService } from './services/items.service';
-import { AppDataProvider } from './providers/app-data.provider';
-import { ItemListComponent } from './components/item-list/item-list.component';
-import { EquippedStatsComponent } from './components/equipped-stats/equipped-stats.component';
-import { EquippedSkillsComponent } from './components/equipped-skills/equipped-skills.component';
 import { DecorationSlotComponent } from './components/decoration-slot/decoration-slot.component';
-import { ItemStatsComponent } from './components/item-stats/item-stats.component';
-import { TooltipService } from './services/tooltip.service';
+import { EquippedSkillsComponent } from './components/equipped-skills/equipped-skills.component';
+import { EquippedStatsComponent } from './components/equipped-stats/equipped-stats.component';
+import { ItemListComponent } from './components/item-list/item-list.component';
+import { ItemSlotComponent } from './components/item-slot/item-slot.component';
+import { ItemDetailsComponent } from './components/item-details/item-details.component';
+import { AppDataProvider } from './providers/app-data.provider';
+import { ItemsService } from './services/items.service';
 import { SkillService } from './services/skill.service';
+import { TooltipService } from './services/tooltip.service';
 import { KeysPipe } from './core/pipes/keys.pipe';
 import { SelectListComponent } from './components/select-list/select-list.component';
-import { Location, LocationStrategy, PathLocationStrategy } from '@angular/common';
+import { TooltipComponent } from './components/tooltip/tooltip.component';
+import { SkillDetailsComponent } from './components/skill-details/skill-details.component';
+import { DecorationDetailsComponent } from './components/decoration-details/decoration-details.component';
 
 @NgModule({
 	declarations: [
 		KeysPipe,
 		AppComponent,
+		TooltipComponent,
 		ItemSlotComponent,
 		ItemListComponent,
 		EquippedStatsComponent,
 		EquippedSkillsComponent,
 		DecorationSlotComponent,
-		ItemStatsComponent,
-		SelectListComponent
+		ItemDetailsComponent,
+		SelectListComponent,
+		ItemDetailsComponent,
+		DecorationDetailsComponent,
+		SkillDetailsComponent,
 	],
 	imports: [
 		BrowserModule,

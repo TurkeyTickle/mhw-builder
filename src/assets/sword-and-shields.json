@@ -1,307 +1,346 @@
 [
-	{
-		"name": "Chrome Slicer II",
-		"itemType": "Weapon",
-		"weaponType": "SwordAndShield",
-		"baseAttack": 252,
-		"maxSharpness": "Blue",
-		"baseAffinityPercent": 0,
-		"ailment": "Sleep",
-		"ailmentBaseAttack": 240,
-		"ailmentHidden": true,
-		"slots": [
-			{
-				"level": 1
-			},
-			{
-				"level": 1
-			}
-		]
-	},
-	{
-		"name": "Eradication Vanguard",
-		"itemType": "Weapon",
-		"weaponType": "SwordAndShield",
-		"baseAttack": 294,
-		"maxSharpness": "Blue",
-		"baseAffinityPercent": 0,
-		"element": "Dragon",
-		"elementBaseAttack": 150,
-		"elderseal": "High",
-		"slots": [
-			{
-				"level": 1
-			}
-		]
-	},
-	{
-		"name": "Corona",
-		"itemType": "Weapon",
-		"weaponType": "SwordAndShield",
-		"baseAttack": 266,
-		"maxSharpness": "Blue",
-		"baseAffinityPercent": 20,
-		"element": "Fire",
-		"elementBaseAttack": 180,
-		"slots": [
-			{
-				"level": 1
-			}
-		]
-	},
-	{
-		"name": "Corona",
-		"itemType": "Weapon",
-		"weaponType": "SwordAndShield",
-		"baseAttack": 280,
-		"maxSharpness": "Blue",
-		"baseAffinityPercent": 0,
-		"element": "Thunder",
-		"elementBaseAttack": 330,
-		"elementHidden": true,
-		"baseDefense": 20,
-		"slots": [
-			{
-				"level": 3
-			}
-		]
-	},
-	{
-		"name": "Rogue Wave III",
-		"itemType": "Weapon",
-		"weaponType": "SwordAndShield",
-		"baseAttack": 252,
-		"maxSharpness": "Blue",
-		"baseAffinityPercent": 0,
-		"element": "Water",
-		"elementBaseAttack": 240,
-		"slots": [
-			{
-				"level": 2
-			}
-		]
-	},
-	{
-		"name": "Legia Rimespire",
-		"itemType": "Weapon",
-		"weaponType": "SwordAndShield",
-		"baseAttack": 224,
-		"maxSharpness": "White",
-		"baseAffinityPercent": 0,
-		"element": "Ice",
-		"elementBaseAttack": 330,
-		"slots": [
-			{
-				"level": 1
-			}
-		]
-	},
-	{
-		"name": "Royal Rose",
-		"itemType": "Weapon",
-		"weaponType": "SwordAndShield",
-		"baseAttack": 266,
-		"maxSharpness": "Blue",
-		"baseAffinityPercent": 10,
-		"ailment": "Poison",
-		"ailmentBaseAttack": 240,
-		"slots": [
-			{
-				"level": 1
-			}
-		]
-	},
-	{
-		"name": "Lumu Tabar III",
-		"itemType": "Weapon",
-		"weaponType": "SwordAndShield",
-		"baseAttack": 238,
-		"maxSharpness": "Blue",
-		"baseAffinityPercent": 0,
-		"ailment": "Blast",
-		"ailmentBaseAttack": 330,
-		"ailmentHidden": true,
-		"slots": [
-			{
-				"level": 3
-			},
-			{
-				"level": 1
-			}
-		]
-	},
-	{
-		"name": "Datura Blossom III",
-		"itemType": "Weapon",
-		"weaponType": "SwordAndShield",
-		"baseAttack": 238,
-		"maxSharpness": "Blue",
-		"baseAffinityPercent": 0,
-		"ailment": "Poison",
-		"ailmentBaseAttack": 390,
-		"slots": [
-			{
-				"level": 2
-			},
-			{
-				"level": 1
-			}
-		]
-	},
-	{
-		"name": "Malady's Tabar III",
-		"itemType": "Weapon",
-		"weaponType": "SwordAndShield",
-		"baseAttack": 224,
-		"maxSharpness": "Blue",
-		"baseAffinityPercent": 20,
-		"ailment": "Paralysis",
-		"ailmentBaseAttack": 240
-	},
-	{
-		"name": "Grand Barong II",
-		"itemType": "Weapon",
-		"weaponType": "SwordAndShield",
-		"baseAttack": 266,
-		"maxSharpness": "Blue",
-		"baseAffinityPercent": 0,
-		"ailment": "Paralysis",
-		"ailmentBaseAttack": 300,
-		"baseDefense": 10,
-		"slots": [
-			{
-				"level": 3
-			}
-		]
-	},
-	{
-		"name": "Baan Claw III",
-		"itemType": "Weapon",
-		"weaponType": "SwordAndShield",
-		"baseAttack": 266,
-		"maxSharpness": "Blue",
-		"baseAffinityPercent": 0,
-		"ailment": "Sleep",
-		"ailmentBaseAttack": 210,
-		"baseDefense": 20
-	},
-	{
-		"name": "Jagras Garotte III",
-		"itemType": "Weapon",
-		"weaponType": "SwordAndShield",
-		"baseAttack": 266,
-		"maxSharpness": "Blue",
-		"baseAffinityPercent": 0,
-		"element": "Water",
-		"elementBaseAttack": 360,
-		"elementHidden": true,
-		"slots": [
-			{
-				"level": 3
-			},
-			{
-				"level": 2
-			}
-		]
-	},
-	{
-		"name": "Lightning Nemesis III",
-		"itemType": "Weapon",
-		"weaponType": "SwordAndShield",
-		"baseAttack": 266,
-		"maxSharpness": "Blue",
-		"baseAffinityPercent": 0,
-		"element": "Thunder",
-		"elementBaseAttack": 210,
-		"slots": [
-			{
-				"level": 2
-			}
-		]
-	},
-	{
-		"name": "Barroth Club II",
-		"itemType": "Weapon",
-		"weaponType": "SwordAndShield",
-		"baseAttack": 294,
-		"maxSharpness": "Blue",
-		"baseAffinityPercent": -10,
-		"ailment": "Paralysis",
-		"ailmentBaseAttack": 180,
-		"ailmentHidden": true,
-		"baseDefense": 15,
-		"slots": [
-			{
-				"level": 2
-			},
-			{
-				"level": 1
-			}
-		]
-	},
-	{
-		"name": "Gnashing Flammensucher",
-		"itemType": "Weapon",
-		"weaponType": "SwordAndShield",
-		"baseAttack": 294,
-		"maxSharpness": "Blue",
-		"baseAffinityPercent": -20,
-		"element": "Fire",
-		"elementBaseAttack": 240
-	},
-	{
-		"name": "Dragonbone Sword III",
-		"itemType": "Weapon",
-		"weaponType": "SwordAndShield",
-		"baseAttack": 196,
-		"maxSharpness": "Blue",
-		"baseAffinityPercent": 0,
-		"element": "Dragon",
-		"elementBaseAttack": 450,
-		"elderseal": "Low",
-		"slots": [
-			{
-				"level": 1
-			}
-		]
-	},
-	{
-		"name": "Thunderbolt Sword",
-		"itemType": "Weapon",
-		"weaponType": "SwordAndShield",
-		"baseAttack": 224,
-		"maxSharpness": "Blue",
-		"baseAffinityPercent": 0,
-		"element": "Thunder",
-		"elementBaseAttack": 360
-	},
-	{
-		"name": "Teostra's Emblem",
-		"itemType": "Weapon",
-		"weaponType": "SwordAndShield",
-		"baseAttack": 266,
-		"maxSharpness": "Blue",
-		"baseAffinityPercent": 0,
-		"ailment": "Blast",
-		"ailmentBaseAttack": 240
-	},
-	{
-		"name": "Xeno Mabura",
-		"itemType": "Weapon",
-		"weaponType": "SwordAndShield",
-		"baseAttack": 238,
-		"maxSharpness": "White",
-		"baseAffinityPercent": 15,
-		"element": "Dragon",
-		"elementBaseAttack": 270,
-		"elderseal": "Low",
-		"slots": [
-			{
-				"level": 3
-			},
-			{
-				"level": 3
-			}
-		]
-	}
+  {
+    "name": "Chrome Slicer II",
+    "itemType": "Weapon",
+    "weaponType": "SwordAndShield",
+    "baseAttack": 252,
+    "maxSharpness": "Blue",
+    "baseAffinityPercent": 0,
+    "ailment": "Sleep",
+    "ailmentBaseAttack": 240,
+    "ailmentHidden": true,
+    "slots": [
+      {
+        "level": 1
+      },
+      {
+        "level": 1
+      }
+    ],
+    "id": 42
+  },
+  {
+    "name": "Eradication Vanguard",
+    "itemType": "Weapon",
+    "weaponType": "SwordAndShield",
+    "baseAttack": 294,
+    "maxSharpness": "Blue",
+    "baseAffinityPercent": 0,
+    "element": "Dragon",
+    "elementBaseAttack": 150,
+    "elementAttackIncreaseCapOverride": 0.33,
+    "elderseal": "High",
+    "slots": [
+      {
+        "level": 1
+      }
+    ],
+    "id": 43
+  },
+  {
+    "name": "Corona",
+    "itemType": "Weapon",
+    "weaponType": "SwordAndShield",
+    "baseAttack": 266,
+    "maxSharpness": "Blue",
+    "baseAffinityPercent": 20,
+    "element": "Fire",
+    "elementBaseAttack": 180,
+    "slots": [
+      {
+        "level": 1
+      }
+    ],
+    "id": 44
+  },
+  {
+    "name": "Corona",
+    "itemType": "Weapon",
+    "weaponType": "SwordAndShield",
+    "baseAttack": 280,
+    "maxSharpness": "Blue",
+    "baseAffinityPercent": 0,
+    "element": "Thunder",
+    "elementBaseAttack": 330,
+    "elementHidden": true,
+    "baseDefense": 20,
+    "slots": [
+      {
+        "level": 3
+      }
+    ],
+    "id": 45
+  },
+  {
+    "name": "Rogue Wave III",
+    "itemType": "Weapon",
+    "weaponType": "SwordAndShield",
+    "baseAttack": 252,
+    "maxSharpness": "Blue",
+    "baseAffinityPercent": 0,
+    "element": "Water",
+    "elementBaseAttack": 240,
+    "slots": [
+      {
+        "level": 2
+      }
+    ],
+    "id": 46
+  },
+  {
+    "name": "Legia Rimespire",
+    "itemType": "Weapon",
+    "weaponType": "SwordAndShield",
+    "baseAttack": 224,
+    "maxSharpness": "White",
+    "baseAffinityPercent": 0,
+    "element": "Ice",
+    "elementBaseAttack": 330,
+    "slots": [
+      {
+        "level": 1
+      }
+    ],
+    "id": 47
+  },
+  {
+    "name": "Royal Rose",
+    "itemType": "Weapon",
+    "weaponType": "SwordAndShield",
+    "baseAttack": 266,
+    "maxSharpness": "Blue",
+    "baseAffinityPercent": 10,
+    "ailment": "Poison",
+    "ailmentBaseAttack": 240,
+    "slots": [
+      {
+        "level": 1
+      }
+    ],
+    "id": 48
+  },
+  {
+    "name": "Lumu Tabar III",
+    "itemType": "Weapon",
+    "weaponType": "SwordAndShield",
+    "baseAttack": 238,
+    "maxSharpness": "Blue",
+    "baseAffinityPercent": 0,
+    "ailment": "Blast",
+    "ailmentBaseAttack": 330,
+    "ailmentHidden": true,
+    "slots": [
+      {
+        "level": 3
+      },
+      {
+        "level": 1
+      }
+    ],
+    "id": 49
+  },
+  {
+    "name": "Datura Blossom III",
+    "itemType": "Weapon",
+    "weaponType": "SwordAndShield",
+    "baseAttack": 238,
+    "maxSharpness": "Blue",
+    "baseAffinityPercent": 0,
+    "ailment": "Poison",
+    "ailmentBaseAttack": 390,
+    "slots": [
+      {
+        "level": 2
+      },
+      {
+        "level": 1
+      }
+    ],
+    "id": 50
+  },
+  {
+    "name": "Malady's Tabar III",
+    "itemType": "Weapon",
+    "weaponType": "SwordAndShield",
+    "baseAttack": 224,
+    "maxSharpness": "Blue",
+    "baseAffinityPercent": 20,
+    "ailment": "Paralysis",
+    "ailmentBaseAttack": 240,
+    "id": 51,
+    "slots": []
+  },
+  {
+    "name": "Grand Barong II",
+    "itemType": "Weapon",
+    "weaponType": "SwordAndShield",
+    "baseAttack": 266,
+    "maxSharpness": "Blue",
+    "baseAffinityPercent": 0,
+    "ailment": "Paralysis",
+    "ailmentBaseAttack": 300,
+    "baseDefense": 10,
+    "slots": [
+      {
+        "level": 3
+      }
+    ],
+    "id": 52
+  },
+  {
+    "name": "Baan Claw III",
+    "itemType": "Weapon",
+    "weaponType": "SwordAndShield",
+    "baseAttack": 266,
+    "maxSharpness": "Blue",
+    "baseAffinityPercent": 0,
+    "ailment": "Sleep",
+    "ailmentBaseAttack": 210,
+    "baseDefense": 20,
+    "id": 53,
+    "slots": []
+  },
+  {
+    "name": "Jagras Garotte III",
+    "itemType": "Weapon",
+    "weaponType": "SwordAndShield",
+    "baseAttack": 266,
+    "maxSharpness": "Blue",
+    "baseAffinityPercent": 0,
+    "element": "Water",
+    "elementBaseAttack": 360,
+    "elementHidden": true,
+    "slots": [
+      {
+        "level": 3
+      },
+      {
+        "level": 2
+      }
+    ],
+    "id": 54
+  },
+  {
+    "name": "Lightning Nemesis III",
+    "itemType": "Weapon",
+    "weaponType": "SwordAndShield",
+    "baseAttack": 266,
+    "maxSharpness": "Blue",
+    "baseAffinityPercent": 0,
+    "element": "Thunder",
+    "elementBaseAttack": 210,
+    "slots": [
+      {
+        "level": 2
+      }
+    ],
+    "id": 55
+  },
+  {
+    "name": "Barroth Club II",
+    "itemType": "Weapon",
+    "weaponType": "SwordAndShield",
+    "baseAttack": 294,
+    "maxSharpness": "Blue",
+    "baseAffinityPercent": -10,
+    "ailment": "Paralysis",
+    "ailmentBaseAttack": 180,
+    "ailmentHidden": true,
+    "baseDefense": 15,
+    "slots": [
+      {
+        "level": 2
+      },
+      {
+        "level": 1
+      }
+    ],
+    "id": 56
+  },
+  {
+    "name": "Gnashing Flammensucher",
+    "itemType": "Weapon",
+    "weaponType": "SwordAndShield",
+    "baseAttack": 294,
+    "maxSharpness": "Blue",
+    "baseAffinityPercent": -20,
+    "element": "Fire",
+    "elementBaseAttack": 240,
+    "id": 57,
+    "slots": []
+  },
+  {
+    "name": "Dragonbone Sword III",
+    "itemType": "Weapon",
+    "weaponType": "SwordAndShield",
+    "baseAttack": 196,
+    "maxSharpness": "Blue",
+    "baseAffinityPercent": 0,
+    "element": "Dragon",
+    "elementBaseAttack": 450,
+    "elderseal": "Low",
+    "slots": [
+      {
+        "level": 1
+      }
+    ],
+    "id": 58
+  },
+  {
+    "name": "Thunderbolt Sword",
+    "itemType": "Weapon",
+    "weaponType": "SwordAndShield",
+    "baseAttack": 224,
+    "maxSharpness": "Blue",
+    "baseAffinityPercent": 0,
+    "element": "Thunder",
+    "elementBaseAttack": 360,
+    "id": 59,
+    "slots": []
+  },
+  {
+    "name": "Teostra's Emblem",
+    "itemType": "Weapon",
+    "weaponType": "SwordAndShield",
+    "baseAttack": 266,
+    "maxSharpness": "Blue",
+    "baseAffinityPercent": 0,
+    "ailment": "Blast",
+    "ailmentBaseAttack": 240,
+    "id": 60,
+    "slots": []
+  },
+  {
+    "name": "Xeno Mabura",
+    "itemType": "Weapon",
+    "weaponType": "SwordAndShield",
+    "baseAttack": 238,
+    "maxSharpness": "White",
+    "baseAffinityPercent": 15,
+    "element": "Dragon",
+    "elementBaseAttack": 270,
+    "elderseal": "Low",
+    "slots": [
+      {
+        "level": 3
+      },
+      {
+        "level": 3
+      }
+    ],
+    "id": 61
+  },
+  {
+    "name": "Fatal Bite",
+    "itemType": "Weapon",
+    "weaponType": "SwordAndShield",
+    "baseAttack": 308,
+    "maxSharpness": "Blue",
+    "baseAffinityPercent": -20,
+    "element": "Dragon",
+    "elementBaseAttack": 210,
+    "elderseal": "High",
+    "id": 276,
+    "slots": []
+  }
 ]

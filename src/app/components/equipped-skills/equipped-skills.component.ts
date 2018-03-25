@@ -1,7 +1,10 @@
 import { Component, OnInit } from '@angular/core';
+
+import { EquippedSetBonusModel } from '../../models/equipped-set-bonus.model';
 import { EquippedSkillModel } from '../../models/equipped-skill.model';
 import { SkillService } from '../../services/skill.service';
-import { EquippedSetBonusModel } from '../../models/equipped-set-bonus.model';
+import { TooltipService } from '../../services/tooltip.service';
+import { AnchorType } from '../../types/anchor.type';
 
 @Component({
 	selector: 'mhw-builder-equipped-skills',
@@ -13,7 +16,8 @@ export class EquippedSkillsComponent implements OnInit {
 	setBonuses: EquippedSetBonusModel[];
 
 	constructor(
-		private skillService: SkillService
+		private skillService: SkillService,
+		private tooltipService: TooltipService
 	) { }
 
 	ngOnInit() { }
@@ -41,5 +45,15 @@ export class EquippedSkillsComponent implements OnInit {
 	update() {
 		this.skills = this.skillService.skills;
 		this.setBonuses = this.skillService.setBonuses;
+	}
+
+	skillMouseEnter(equippedSkill: EquippedSkillModel) {
+		this.tooltipService.anchorPoint = AnchorType.TopRight;
+		this.tooltipService.setEquippedSkill(equippedSkill);
+	}
+
+	skillMouseLeave() {
+		this.tooltipService.anchorPoint = AnchorType.TopLeft;
+		this.tooltipService.setEquippedSkill(null);
 	}
 }

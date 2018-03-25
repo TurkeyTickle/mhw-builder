@@ -78,8 +78,8 @@
 	<div class="item-list-container">
 		<!-- <h2>Items</h2> -->
 
-		<mhw-builder-item-list [hidden]="!selectedEquipmentSlot" itemType="{{selectedEquipmentSlot?.slotName}}" (itemSelected)="selectItem($event)"></mhw-builder-item-list>
-		<mhw-builder-item-list [hidden]="!selectedDecorationSlot" itemType="Decoration" [decorationLevel]="selectedDecorationSlot?.level" (decorationSelected)="selectDecoration($event)"></mhw-builder-item-list>
+		<mhw-builder-item-list #equipmentItemList [hidden]="!selectedEquipmentSlot" itemType="{{selectedEquipmentSlot?.slotName}}" (itemSelected)="selectItem($event)"></mhw-builder-item-list>
+		<mhw-builder-item-list #decorationItemList [hidden]="!selectedDecorationSlot" itemType="Decoration" [decorationLevel]="selectedDecorationSlot?.level" (decorationSelected)="selectDecoration($event)"></mhw-builder-item-list>
 	</div>
 
 	<div class="stats-container">
@@ -92,7 +92,5 @@
 		</div>
 	</div>
 
-	<div #itemStats class="item-stats-container" hidden='true'>
-		<mhw-builder-item-stats></mhw-builder-item-stats>
-	</div>
+	<mhw-builder-tooltip></mhw-builder-tooltip>
 </div>

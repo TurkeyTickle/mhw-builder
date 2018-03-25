@@ -22,10 +22,14 @@ li {
 	border-bottom: 1px black solid;
 
 	.info-container {
-		display: flex;
+		display: -webkit-box;
 
 		.name-container {
 			flex-grow: 1;
+			white-space: nowrap;
+			overflow: hidden;
+			text-overflow: ellipsis;
+			min-width: 0;
 		}
 
 		.stat-container {
@@ -34,13 +38,11 @@ li {
 			.attack-container {
 				display: inline-flex;
 
-				div {
-					flex-grow: 0;
+				div, img {
+					white-space: nowrap;
+					overflow: hidden;
+					text-overflow: ellipsis;
 					line-height: $itemHeight;
-				}
-
-				img {
-					flex-grow: 0;
 					max-height: $itemHeight;
 				}
 			}
@@ -125,7 +127,7 @@ li:hover {
 .items-container {
 	overflow-y: auto;
     position: absolute;
-    top: 120px;
+    top: 150px;
     bottom: 0px;
     right: 0px;
 	left: 0px;

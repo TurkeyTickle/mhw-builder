@@ -13,25 +13,25 @@
 
 		<div *ngIf="ailment && !ailmentHidden">
 			<li>Ailment: {{ailment}}</li>
-			<li>Ailment Attack: {{ailmentAttack + effectivePassiveAilmentAttack}}</li>
+			<li>Ailment Attack: {{totalAilmentAttack}} {{ailmentCapped ? '(Capped)' : ''}}</li>
 			<li>Ailment Buildup Rate: {{100 + effectivePassiveAilmentBuildupPercent}}%</li>
 		</div>
 
 		<div *ngIf="element && !elementHidden">
 			<li>Element: {{element}}</li>
-			<li>Element Attack: {{elementAttack + effectivePassiveElementAttack}}</li>
+			<li>Element Attack: {{totalElementAttack}} {{elementCapped ? '(Capped)' : ''}}</li>
 		</div>
 
 		<div [style.color]="getHiddenElemColor()">
 			<div *ngIf="ailment && ailmentHidden">
 				<li>Ailment: {{ailment}}</li>
-				<li>Ailment Attack: {{totalAilmentAttack}} ({{ailmentAttack + effectivePassiveAilmentAttack}} * {{elementAttackMultiplier}})</li>
+				<li>Ailment Attack: {{totalAilmentAttack}} ({{baseAilmentAttack}} * {{elementAttackMultiplier}}) {{ailmentCapped ? '(Capped)' : ''}}</li>
 				<li>Ailment Buildup Rate: {{100 + effectivePassiveAilmentBuildupPercent}}%</li>
 			</div>
 			
 			<div *ngIf="element && elementHidden">
 				<li>Element: {{element}}</li>
-				<li>Element Attack: {{totalElementAttack}} ({{elementAttack + effectivePassiveElementAttack}} * {{elementAttackMultiplier}})</li>
+				<li>Element Attack: {{totalElementAttack}} ({{baseElementAttack}} * {{elementAttackMultiplier}}) {{elementCapped ? '(Capped)' : ''}}</li>
 			</div>
 		</div>		
 

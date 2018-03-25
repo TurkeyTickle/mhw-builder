@@ -5,12 +5,10 @@ http://www.mhw-builder.turkeytickle.com
 All the item and skill data entry has been by far the most time consuming part, and it's still missing a ton of items, but most of the highest rarity level stuff should be there. Also, keep in mind that all the data there has been entered by hand using references from in-game, kirikano and the wiki so there's bound to be some mistakes - let me know if you notice any.
 
 Missing features / To do in very rough priority order:
-- Linkable/saveable builds
 - Finish high rarity armor data entry - probably just rarity 6-8 for now.
 - Show descriptions for all skill levels somewhere or at least the description for the active skill level based on the items you have equipped.
 - Show weapon/armor decoration slots on the tooltip.
 - Show bowgun deviation in tooltips and attack stat sheet.
-- Show some basic weapon/armor info in the item list so it's easier to compare at a glance instead of mousing over everything to look at the tooltip.
 - Weapon augments
 - Armor augments/upgrading
 - Kinsects and bowgun mods

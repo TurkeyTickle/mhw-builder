@@ -45,15 +45,15 @@
 		"levels": [
 			{
 				"description": "Increases damage dealt by critical hits by 30%.",
-				"passiveCriticalBoostPercent": 30
+				"passiveCriticalBoostPercent": 5
 			},
 			{
 				"description": "Increases damage dealt by critical hits by 35%.",
-				"passiveCriticalBoostPercent": 35
+				"passiveCriticalBoostPercent": 10
 			},
 			{
 				"description": "Increases damage dealt by critical hits by 40%.",
-				"passiveCriticalBoostPercent": 40
+				"passiveCriticalBoostPercent": 15
 			}
 		]
 	},
@@ -732,7 +732,7 @@
 	{
 		"id": "peakPerformance",
 		"name": "Peak Performance",
-		"description": "Increases attack when your health is full",
+		"description": "Increases attack when your health is full.",
 		"levels": [
 			{
 				"description": "While active, grants attack +5.",

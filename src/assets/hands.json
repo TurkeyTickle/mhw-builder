@@ -1,959 +1,1196 @@
 [
-	{
-		"name": "Xeno'jiva Claws Beta",
-		"itemType": "Hands",
-		"baseDefense": 72,
-		"fireResist": -3,
-		"waterResist": 2,
-		"thunderResist": 2,
-		"iceResist": 2,
-		"dragonResist": -4,
-		"skills": [
-			{
-				"id": "flinchFree",
-				"level": 1
-			},
-			{
-				"id": "xenojivaDivinity"
-			}
-		],
-		"slots": [
-			{
-				"level": 3
-			}
-		]
-	},	
-	{
-		"name": "Xeno'jiva Claws Alpha",
-		"itemType": "Hands",
-		"baseDefense": 72,
-		"fireResist": -3,
-		"waterResist": 2,
-		"thunderResist": 2,
-		"iceResist": 2,
-		"dragonResist": -4,
-		"skills": [
-			{
-				"id": "flinchFree",
-				"level": 1
-			},
-			{
-				"id": "criticalBoost",
-				"level": 1
-			},
-			{
-				"id": "xenojivaDivinity"
-			}
-		],
-		"slots": [
-			{
-				"level": 1
-			}
-		]
-	},
-	{
-		"name": "Kirin Longarms Beta",
-		"itemType": "Hands",
-		"baseDefense": 64,
-		"fireResist": -3,
-		"waterResist": -2,
-		"thunderResist": 4,
-		"iceResist": -2,
-		"dragonResist": 2,
-		"skills": [
-			{
-				"id": "thunderAttack",
-				"level": 2
-			},
-			{
-				"id": "kirinFavor"
-			}
-		],
-		"slots": [
-			{
-				"level": 1
-			},
-			{
-				"level": 1
-			}
-		]
-	},
-	{
-		"name": "Kirin Longarms Alpha",
-		"itemType": "Hands",
-		"baseDefense": 64,
-		"fireResist": -3,
-		"waterResist": -2,
-		"thunderResist": 4,
-		"iceResist": -2,
-		"dragonResist": 2,
-		"skills": [
-			{
-				"id": "thunderAttack",
-				"level": 2
-			},
-			{
-				"id": "marathonRunner",
-				"level": 1
-			},
-			{
-				"id": "kirinFavor"
-			}
-		]
-	},
-	{
-		"name": "Vaal Hazak Braces Beta",
-		"itemType": "Hands",
-		"baseDefense": 64,
-		"fireResist": -4,
-		"waterResist": 4,
-		"thunderResist": 1,
-		"iceResist": -1,
-		"dragonResist": -3,
-		"skills": [
-			{
-				"id": "peakPerformance",
-				"level": 1
-			},
-			{
-				"id": "vaalHazakVitality"
-			}
-		],
-		"slots": [
-			{
-				"level": 1
-			},
-			{
-				"level": 1
-			},
-			{
-				"level": 1
-			}
-		]
-	},
-	{
-		"name": "Vaal Hazak Braces Alpha",
-		"itemType": "Hands",
-		"baseDefense": 64,
-		"fireResist": -4,
-		"waterResist": 4,
-		"thunderResist": 1,
-		"iceResist": -1,
-		"dragonResist": -3,
-		"skills": [
-			{
-				"id": "peakPerformance",
-				"level": 1
-			},
-			{
-				"id": "recoverySpeed",
-				"level": 1
-			},
-			{
-				"id": "vaalHazakVitality"
-			}
-		],
-		"slots": [
-			{
-				"level": 1
-			}
-		]
-	},
-	{
-		"name": "Kushala Grip Beta",
-		"itemType": "Hands",
-		"baseDefense": 64,
-		"fireResist": 0,
-		"waterResist": 2,
-		"thunderResist": -3,
-		"iceResist": 4,
-		"dragonResist": -2,
-		"skills": [
-			{
-				"id": "evadeWindow",
-				"level": 2
-			},
-			{
-				"id": "kushalaDaoraFlight"
-			}
-		],
-		"slots": [
-			{
-				"level": 3
-			}
-		]
-	},
-	{
-		"name": "Kushala Grip Alpha",
-		"itemType": "Hands",
-		"baseDefense": 64,
-		"fireResist": 0,
-		"waterResist": 2,
-		"thunderResist": -3,
-		"iceResist": 4,
-		"dragonResist": -2,
-		"skills": [
-			{
-				"id": "evadeWindow",
-				"level": 2
-			},
-			{
-				"id": "handicraft",
-				"level": 1
-			},
-			{
-				"id": "kushalaDaoraFlight"
-			}
-		]
-	},
-	{
-		"name": "Kaiser Vambraces Beta",
-		"itemType": "Hands",
-		"baseDefense": 64,
-		"fireResist": 3,
-		"waterResist": -3,
-		"thunderResist": 1,
-		"iceResist": -3,
-		"dragonResist": 1,
-		"skills": [
-			{
-				"id": "weaknessExploit",
-				"level": 1
-			},
-			{
-				"id": "teostraTechnique"
-			}
-		],
-		"slots": [
-			{
-				"level": 3
-			}
-		]
-	},
-	{
-		"name": "Kaiser Vambraces Alpha",
-		"itemType": "Hands",
-		"baseDefense": 64,
-		"fireResist": 3,
-		"waterResist": -3,
-		"thunderResist": 1,
-		"iceResist": -3,
-		"dragonResist": 1,
-		"skills": [
-			{
-				"id": "weaknessExploit",
-				"level": 2
-			},
-			{
-				"id": "teostraTechnique"
-			}
-		],
-		"slots": [
-			{
-				"level": 1
-			}
-		]
-	},
-	{
-		"name": "Nergigante Vambraces Beta",
-		"itemType": "Hands",
-		"baseDefense": 64,
-		"fireResist": 1,
-		"waterResist": 1,
-		"thunderResist": -3,
-		"iceResist": 1,
-		"dragonResist": -3,
-		"skills": [
-			{
-				"id": "agitator",
-				"level": 2
-			},
-			{
-				"id": "nergiganteHunger"
-			}
-		],
-		"slots": [
-			{
-				"level": 1
-			}
-		]
-	},
-	{
-		"name": "Nergigante Vambraces Alpha",
-		"itemType": "Hands",
-		"baseDefense": 64,
-		"fireResist": 1,
-		"waterResist": 1,
-		"thunderResist": -3,
-		"iceResist": 1,
-		"dragonResist": -3,
-		"skills": [
-			{
-				"id": "agitator",
-				"level": 2
-			},
-			{
-				"id": "attackBoost",
-				"level": 1
-			},
-			{
-				"id": "nergiganteHunger"
-			}
-		]
-	},
-	{
-		"name": "Death Stench Grip Beta",
-		"itemType": "Hands",
-		"baseDefense": 62,
-		"fireResist": 3,
-		"waterResist": 2,
-		"thunderResist": -2,
-		"iceResist": 3,
-		"dragonResist": -4,
-		"skills": [
-			{
-				"id": "focus",
-				"level": 2
-			}
-		],
-		"slots": [
-			{
-				"level": 1
-			},
-			{
-				"level": 1
-			}
-		]
-	},
-	{
-		"name": "Death Stench Grip Alpha",
-		"itemType": "Hands",
-		"baseDefense": 62,
-		"fireResist": 3,
-		"waterResist": 2,
-		"thunderResist": -2,
-		"iceResist": 3,
-		"dragonResist": -4,
-		"skills": [
-			{
-				"id": "focus",
-				"level": 2
-			},
-			{
-				"id": "dragonAttack",
-				"level": 1
-			}
-		],
-		"slots": [
-			{
-				"level": 1
-			}
-		]
-	},
-	{
-		"name": "Dober Vambraces Beta",
-		"itemType": "Hands",
-		"baseDefense": 60,
-		"fireResist": -2,
-		"waterResist": 0,
-		"thunderResist": -1,
-		"iceResist": -1,
-		"dragonResist": 4,
-		"skills": [
-			{
-				"id": "staminaSurge",
-				"level": 1
-			},
-			{
-				"id": "mushroomancer",
-				"level": 1
-			}
-		],
-		"slots": [
-			{
-				"level": 1
-			},
-			{
-				"level": 1
-			}
-		]
-	},
-	{
-		"name": "Dober Vambraces Alpha",
-		"itemType": "Hands",
-		"baseDefense": 60,
-		"fireResist": -2,
-		"waterResist": 0,
-		"thunderResist": -1,
-		"iceResist": -1,
-		"dragonResist": 4,
-		"skills": [
-			{
-				"id": "staminaSurge",
-				"level": 2
-			},
-			{
-				"id": "mushroomancer",
-				"level": 1
-			}
-		]
-	},
-	{
-		"name": "Damascus Vambraces Beta",
-		"itemType": "Hands",
-		"baseDefense": 60,
-		"fireResist": 4,
-		"waterResist": -2,
-		"thunderResist": 0,
-		"iceResist": 0,
-		"dragonResist": 0,
-		"skills": [
-			{
-				"id": "handicraft",
-				"level": 1
-			}
-		],
-		"slots": [
-			{
-				"level": 1
-			}
-		]
-	},
-	{
-		"name": "Damascus Vambraces Alpha",
-		"itemType": "Hands",
-		"baseDefense": 60,
-		"fireResist": 4,
-		"waterResist": -2,
-		"thunderResist": 0,
-		"iceResist": 0,
-		"dragonResist": 0,
-		"skills": [
-			{
-				"id": "handicraft",
-				"level": 1
-			},
-			{
-				"id": "speedSharpening",
-				"level": 1
-			}
-		]
-	},
-	{
-		"name": "Bazel Vambraces Beta",
-		"itemType": "Hands",
-		"baseDefense": 58,
-		"fireResist": 3,
-		"waterResist": 1,
-		"thunderResist": -4,
-		"iceResist": -2,
-		"dragonResist": -2,
-		"skills": [
-			{
-				"id": "criticalDraw",
-				"level": 2
-			},
-			{
-				"id": "bazelgeuseProtection"
-			}
-		],
-		"slots": [
-			{
-				"level": 3
-			}
-		]
-	},
-	{
-		"name": "Bazel Vambraces Alpha",
-		"itemType": "Hands",
-		"baseDefense": 58,
-		"fireResist": 3,
-		"waterResist": 1,
-		"thunderResist": -4,
-		"iceResist": -2,
-		"dragonResist": -2,
-		"skills": [
-			{
-				"id": "criticalDraw",
-				"level": 2
-			},
-			{
-				"id": "earplugs",
-				"level": 1
-			},
-			{
-				"id": "bazelgeuseProtection"
-			}
-		]
-	},
-	{
-		"name": "Uragaan Vambraces Beta",
-		"itemType": "Hands",
-		"baseDefense": 60,
-		"fireResist": 4,
-		"waterResist": -3,
-		"thunderResist": 1,
-		"iceResist": -2,
-		"dragonResist": -2,
-		"skills": [
-			{
-				"id": "guard",
-				"level": 1
-			},
-			{
-				"id": "uragaanProtection"
-			}
-		],
-		"slots": [
-			{
-				"level": 2
-			}
-		]
-	},
-	{
-		"name": "Uragaan Vambraces Alpha",
-		"itemType": "Hands",
-		"baseDefense": 60,
-		"fireResist": 4,
-		"waterResist": -3,
-		"thunderResist": 1,
-		"iceResist": -2,
-		"dragonResist": -2,
-		"skills": [
-			{
-				"id": "guard",
-				"level": 1
-			},
-			{
-				"id": "defenseBoost",
-				"level": 1
-			},
-			{
-				"id": "uragaanProtection"
-			}
-		],
-		"slots": [
-			{
-				"level": 1
-			}
-		]
-	},
-	{
-		"name": "Diablos Nero Braces Beta",
-		"itemType": "Hands",
-		"baseDefense": 56,
-		"fireResist": 2,
-		"waterResist": -3,
-		"thunderResist": 0,
-		"iceResist": -4,
-		"dragonResist": 2,
-		"skills": [
-			{
-				"id": "focus",
-				"level": 1
-			},
-			{
-				"id": "diablosMastery"
-			}
-		],
-		"slots": [
-			{
-				"level": 2
-			},
-			{
-				"level": 1
-			}
-		]
-	},
-	{
-		"name": "Diablos Nero Braces Alpha",
-		"itemType": "Hands",
-		"baseDefense": 56,
-		"fireResist": 2,
-		"waterResist": -3,
-		"thunderResist": 0,
-		"iceResist": -4,
-		"dragonResist": 2,
-		"skills": [
-			{
-				"id": "focus",
-				"level": 1
-			},
-			{
-				"id": "marathonRunner",
-				"level": 1
-			},
-			{
-				"id": "diablosMastery"
-			}
-		]
-	},
-	{
-		"name": "Rath Soul Braces Beta",
-		"itemType": "Hands",
-		"baseDefense": 56,
-		"fireResist": 3,
-		"waterResist": 2,
-		"thunderResist": 2,
-		"iceResist": -3,
-		"dragonResist": -4,
-		"skills": [
-			{
-				"id": "focus",
-				"level": 1
-			},
-			{
-				"id": "rathalosMastery"
-			}
-		],
-		"slots": [
-			{
-				"level": 2
-			}
-		]
-	},
-	{
-		"name": "Rath Soul Braces Alpha",
-		"itemType": "Hands",
-		"baseDefense": 56,
-		"fireResist": 3,
-		"waterResist": 2,
-		"thunderResist": 2,
-		"iceResist": -3,
-		"dragonResist": -4,
-		"skills": [
-			{
-				"id": "focus",
-				"level": 1
-			},
-			{
-				"id": "windproof",
-				"level": 1
-			},
-			{
-				"id": "rathalosMastery"
-			}
-		],
-		"slots": [
-			{
-				"level": 1
-			}
-		]
-	},
-	{
-		"name": "Diablos Vambraces Beta",
-		"itemType": "Hands",
-		"baseDefense": 54,
-		"fireResist": 3,
-		"waterResist": -2,
-		"thunderResist": 0,
-		"iceResist": -3,
-		"dragonResist": 2,
-		"skills": [
-			{
-				"id": "heroics",
-				"level": 2
-			},
-			{
-				"id": "diablosMastery"
-			}
-		],
-		"slots": [
-			{
-				"level": 2
-			}
-		]
-	},
-	{
-		"name": "Diablos Vambraces Alpha",
-		"itemType": "Hands",
-		"baseDefense": 54,
-		"fireResist": 3,
-		"waterResist": -2,
-		"thunderResist": 0,
-		"iceResist": -3,
-		"dragonResist": 2,
-		"skills": [
-			{
-				"id": "heroics",
-				"level": 2
-			},
-			{
-				"id": "tremorResistance",
-				"level": 1
-			},
-			{
-				"id": "diablosMastery"
-			}
-		]
-	},
-	{
-		"name": "Rathalos Vambraces Beta",
-		"itemType": "Hands",
-		"baseDefense": 54,
-		"fireResist": 3,
-		"waterResist": 1,
-		"thunderResist": -2,
-		"iceResist": 1,
-		"dragonResist": -3,
-		"skills": [
-			{
-				"id": "fireResistance",
-				"level": 2
-			},
-			{
-				"id": "rathalosMastery"
-			}
-		],
-		"slots": [
-			{
-				"level": 1
-			}
-		]
-	},
-	{
-		"name": "Rathalos Vambraces Alpha",
-		"itemType": "Hands",
-		"baseDefense": 54,
-		"fireResist": 3,
-		"waterResist": 1,
-		"thunderResist": -2,
-		"iceResist": 1,
-		"dragonResist": -3,
-		"skills": [
-			{
-				"id": "fireResistance",
-				"level": 2
-			},
-			{
-				"id": "attackBoost",
-				"level": 1
-			},
-			{
-				"id": "rathalosMastery"
-			}
-		]
-	},
-	{
-		"name": "Odogaron Vambraces Beta",
-		"itemType": "Hands",
-		"baseDefense": 54,
-		"fireResist": 2,
-		"waterResist": 2,
-		"thunderResist": -2,
-		"iceResist": -3,
-		"dragonResist": 0,
-		"skills": [
-			{
-				"id": "constitution",
-				"level": 1
-			},
-			{
-				"id": "odogaronMastery"
-			}
-		],
-		"slots": [
-			{
-				"level": 1
-			}
-		]
-	},
-	{
-		"name": "Odogaron Vambraces Alpha",
-		"itemType": "Hands",
-		"baseDefense": 54,
-		"fireResist": 2,
-		"waterResist": 2,
-		"thunderResist": -2,
-		"iceResist": -3,
-		"dragonResist": 0,
-		"skills": [
-			{
-				"id": "constitution",
-				"level": 1
-			},
-			{
-				"id": "criticalEye",
-				"level": 1
-			},
-			{
-				"id": "odogaronMastery"
-			}
-		]
-	},
-	{
-		"name": "Legiana Vambraces Beta",
-		"itemType": "Hands",
-		"baseDefense": 54,
-		"fireResist": -1,
-		"waterResist": 2,
-		"thunderResist": -3,
-		"iceResist": 3,
-		"dragonResist": 0,
-		"skills": [
-			{
-				"id": "airborne",
-				"level": 1
-			},
-			{
-				"id": "legianaFavor"
-			}
-		],
-		"slots": [
-			{
-				"level": 3
-			}
-		]
-	},
-	{
-		"name": "Legiana Vambraces Alpha",
-		"itemType": "Hands",
-		"baseDefense": 54,
-		"fireResist": -1,
-		"waterResist": 2,
-		"thunderResist": -3,
-		"iceResist": 3,
-		"dragonResist": 0,
-		"skills": [
-			{
-				"id": "airborne",
-				"level": 1
-			},
-			{
-				"id": "evadeWindow",
-				"level": 1
-			},
-			{
-				"id": "legianaFavor"
-			}
-		]
-	},
-	{
-		"name": "Lavasioth Vambraces Beta",
-		"itemType": "Hands",
-		"baseDefense": 56,
-		"fireResist": 3,
-		"waterResist": -3,
-		"thunderResist": 1,
-		"iceResist": -2,
-		"dragonResist": 2,
-		"skills": [
-			{
-				"id": "affinitySliding",
-				"level": 1
-			}
-		],
-		"slots": [
-			{
-				"level": 3
-			}
-		]
-	},
-	{
-		"name": "Lavasioth Vambraces Alpha",
-		"itemType": "Hands",
-		"baseDefense": 56,
-		"fireResist": 3,
-		"waterResist": -3,
-		"thunderResist": 1,
-		"iceResist": -2,
-		"dragonResist": 2,
-		"skills": [
-			{
-				"id": "affinitySliding",
-				"level": 1
-			},
-			{
-				"id": "wideRange",
-				"level": 1
-			}
-		],
-		"slots": [
-			{
-				"level": 2
-			}
-		]
-	},
-	{
-		"name": "Ingot Vambraces Beta",
-		"itemType": "Hands",
-		"baseDefense": 50,
-		"fireResist": -2,
-		"waterResist": 0,
-		"thunderResist": 3,
-		"iceResist": -1,
-		"dragonResist": 0,
-		"skills": [
-			{
-				"id": "healthBoost",
-				"level": 2
-			}
-		],
-		"slots": [
-			{
-				"level": 1
-			}
-		]
-	},
-	{
-		"name": "Ingot Vambraces Alpha",
-		"itemType": "Hands",
-		"baseDefense": 50,
-		"fireResist": -2,
-		"waterResist": 0,
-		"thunderResist": 3,
-		"iceResist": -1,
-		"dragonResist": 0,
-		"skills": [
-			{
-				"id": "healthBoost",
-				"level": 2
-			},
-			{
-				"id": "thunderAttack",
-				"level": 1
-			}
-		]
-	},
-	{
-		"name": "High Metal Vambraces Beta",
-		"itemType": "Hands",
-		"baseDefense": 50,
-		"fireResist": 0,
-		"waterResist": -1,
-		"thunderResist": -2,
-		"iceResist": 3,
-		"dragonResist": 0,
-		"skills": [
-			{
-				"id": "defenseBoost",
-				"level": 2
-			}
-		],
-		"slots": [
-			{
-				"level": 1
-			}
-		]
-	},
-	{
-		"name": "High Metal Vambraces Alpha",
-		"itemType": "Hands",
-		"baseDefense": 50,
-		"fireResist": 0,
-		"waterResist": -1,
-		"thunderResist": -2,
-		"iceResist": 3,
-		"dragonResist": 0,
-		"skills": [
-			{
-				"id": "defenseBoost",
-				"level": 2
-			},
-			{
-				"id": "iceAttack",
-				"level": 1
-			}
-		]
-	}
+  {
+    "name": "Xeno'jiva Claws Beta",
+    "itemType": "Hands",
+    "tags": [
+      "xenojiva"
+    ],
+    "baseDefense": 72,
+    "fireResist": -3,
+    "waterResist": 2,
+    "thunderResist": 2,
+    "iceResist": 2,
+    "dragonResist": -4,
+    "skills": [
+      {
+        "id": "flinchFree",
+        "level": 1
+      },
+      {
+        "id": "xenojivaDivinity"
+      }
+    ],
+    "slots": [
+      {
+        "level": 3
+      }
+    ],
+    "id": 93
+  },
+  {
+    "name": "Xeno'jiva Claws Alpha",
+    "itemType": "Hands",
+    "tags": [
+      "xenojiva"
+    ],
+    "baseDefense": 72,
+    "fireResist": -3,
+    "waterResist": 2,
+    "thunderResist": 2,
+    "iceResist": 2,
+    "dragonResist": -4,
+    "skills": [
+      {
+        "id": "flinchFree",
+        "level": 1
+      },
+      {
+        "id": "criticalBoost",
+        "level": 1
+      },
+      {
+        "id": "xenojivaDivinity"
+      }
+    ],
+    "slots": [
+      {
+        "level": 1
+      }
+    ],
+    "id": 94
+  },
+  {
+    "name": "Kirin Longarms Beta",
+    "itemType": "Hands",
+    "baseDefense": 64,
+    "fireResist": -3,
+    "waterResist": -2,
+    "thunderResist": 4,
+    "iceResist": -2,
+    "dragonResist": 2,
+    "skills": [
+      {
+        "id": "thunderAttack",
+        "level": 2
+      },
+      {
+        "id": "kirinFavor"
+      }
+    ],
+    "slots": [
+      {
+        "level": 1
+      },
+      {
+        "level": 1
+      }
+    ],
+    "id": 95
+  },
+  {
+    "name": "Kirin Longarms Alpha",
+    "itemType": "Hands",
+    "baseDefense": 64,
+    "fireResist": -3,
+    "waterResist": -2,
+    "thunderResist": 4,
+    "iceResist": -2,
+    "dragonResist": 2,
+    "skills": [
+      {
+        "id": "thunderAttack",
+        "level": 2
+      },
+      {
+        "id": "marathonRunner",
+        "level": 1
+      },
+      {
+        "id": "kirinFavor"
+      }
+    ],
+    "id": 96,
+    "slots": []
+  },
+  {
+    "name": "Vaal Hazak Braces Beta",
+    "itemType": "Hands",
+    "baseDefense": 64,
+    "fireResist": -4,
+    "waterResist": 4,
+    "thunderResist": 1,
+    "iceResist": -1,
+    "dragonResist": -3,
+    "skills": [
+      {
+        "id": "peakPerformance",
+        "level": 1
+      },
+      {
+        "id": "vaalHazakVitality"
+      }
+    ],
+    "slots": [
+      {
+        "level": 1
+      },
+      {
+        "level": 1
+      },
+      {
+        "level": 1
+      }
+    ],
+    "id": 97
+  },
+  {
+    "name": "Vaal Hazak Braces Alpha",
+    "itemType": "Hands",
+    "baseDefense": 64,
+    "fireResist": -4,
+    "waterResist": 4,
+    "thunderResist": 1,
+    "iceResist": -1,
+    "dragonResist": -3,
+    "skills": [
+      {
+        "id": "peakPerformance",
+        "level": 1
+      },
+      {
+        "id": "recoverySpeed",
+        "level": 1
+      },
+      {
+        "id": "vaalHazakVitality"
+      }
+    ],
+    "slots": [
+      {
+        "level": 1
+      }
+    ],
+    "id": 98
+  },
+  {
+    "name": "Kushala Grip Beta",
+    "itemType": "Hands",
+    "tags": [
+      "kushala daora"
+    ],
+    "baseDefense": 64,
+    "fireResist": 0,
+    "waterResist": 2,
+    "thunderResist": -3,
+    "iceResist": 4,
+    "dragonResist": -2,
+    "skills": [
+      {
+        "id": "evadeWindow",
+        "level": 2
+      },
+      {
+        "id": "kushalaDaoraFlight"
+      }
+    ],
+    "slots": [
+      {
+        "level": 3
+      }
+    ],
+    "id": 99
+  },
+  {
+    "name": "Kushala Grip Alpha",
+    "itemType": "Hands",
+    "tags": [
+      "kushala daora"
+    ],
+    "baseDefense": 64,
+    "fireResist": 0,
+    "waterResist": 2,
+    "thunderResist": -3,
+    "iceResist": 4,
+    "dragonResist": -2,
+    "skills": [
+      {
+        "id": "evadeWindow",
+        "level": 2
+      },
+      {
+        "id": "handicraft",
+        "level": 1
+      },
+      {
+        "id": "kushalaDaoraFlight"
+      }
+    ],
+    "id": 100,
+    "slots": []
+  },
+  {
+    "name": "Kaiser Vambraces Beta",
+    "itemType": "Hands",
+    "tags": [
+      "teostra"
+    ],
+    "baseDefense": 64,
+    "fireResist": 3,
+    "waterResist": -3,
+    "thunderResist": 1,
+    "iceResist": -3,
+    "dragonResist": 1,
+    "skills": [
+      {
+        "id": "weaknessExploit",
+        "level": 1
+      },
+      {
+        "id": "teostraTechnique"
+      }
+    ],
+    "slots": [
+      {
+        "level": 3
+      }
+    ],
+    "id": 101
+  },
+  {
+    "name": "Kaiser Vambraces Alpha",
+    "itemType": "Hands",
+    "tags": [
+      "teostra"
+    ],
+    "baseDefense": 64,
+    "fireResist": 3,
+    "waterResist": -3,
+    "thunderResist": 1,
+    "iceResist": -3,
+    "dragonResist": 1,
+    "skills": [
+      {
+        "id": "weaknessExploit",
+        "level": 2
+      },
+      {
+        "id": "teostraTechnique"
+      }
+    ],
+    "slots": [
+      {
+        "level": 1
+      }
+    ],
+    "id": 102
+  },
+  {
+    "name": "Nergigante Vambraces Beta",
+    "itemType": "Hands",
+    "baseDefense": 64,
+    "fireResist": 1,
+    "waterResist": 1,
+    "thunderResist": -3,
+    "iceResist": 1,
+    "dragonResist": -3,
+    "skills": [
+      {
+        "id": "agitator",
+        "level": 2
+      },
+      {
+        "id": "nergiganteHunger"
+      }
+    ],
+    "slots": [
+      {
+        "level": 1
+      }
+    ],
+    "id": 103
+  },
+  {
+    "name": "Nergigante Vambraces Alpha",
+    "itemType": "Hands",
+    "baseDefense": 64,
+    "fireResist": 1,
+    "waterResist": 1,
+    "thunderResist": -3,
+    "iceResist": 1,
+    "dragonResist": -3,
+    "skills": [
+      {
+        "id": "agitator",
+        "level": 2
+      },
+      {
+        "id": "attackBoost",
+        "level": 1
+      },
+      {
+        "id": "nergiganteHunger"
+      }
+    ],
+    "id": 104,
+    "slots": []
+  },
+  {
+    "name": "Death Stench Grip Beta",
+    "itemType": "Hands",
+    "baseDefense": 62,
+    "fireResist": 3,
+    "waterResist": 2,
+    "thunderResist": -2,
+    "iceResist": 3,
+    "dragonResist": -4,
+    "skills": [
+      {
+        "id": "focus",
+        "level": 2
+      }
+    ],
+    "slots": [
+      {
+        "level": 1
+      },
+      {
+        "level": 1
+      }
+    ],
+    "id": 105
+  },
+  {
+    "name": "Death Stench Grip Alpha",
+    "itemType": "Hands",
+    "baseDefense": 62,
+    "fireResist": 3,
+    "waterResist": 2,
+    "thunderResist": -2,
+    "iceResist": 3,
+    "dragonResist": -4,
+    "skills": [
+      {
+        "id": "focus",
+        "level": 2
+      },
+      {
+        "id": "dragonAttack",
+        "level": 1
+      }
+    ],
+    "slots": [
+      {
+        "level": 1
+      }
+    ],
+    "id": 106
+  },
+  {
+    "name": "Dober Vambraces Beta",
+    "itemType": "Hands",
+    "baseDefense": 60,
+    "fireResist": -2,
+    "waterResist": 0,
+    "thunderResist": -1,
+    "iceResist": -1,
+    "dragonResist": 4,
+    "skills": [
+      {
+        "id": "staminaSurge",
+        "level": 1
+      },
+      {
+        "id": "mushroomancer",
+        "level": 1
+      }
+    ],
+    "slots": [
+      {
+        "level": 1
+      },
+      {
+        "level": 1
+      }
+    ],
+    "id": 107
+  },
+  {
+    "name": "Dober Vambraces Alpha",
+    "itemType": "Hands",
+    "baseDefense": 60,
+    "fireResist": -2,
+    "waterResist": 0,
+    "thunderResist": -1,
+    "iceResist": -1,
+    "dragonResist": 4,
+    "skills": [
+      {
+        "id": "staminaSurge",
+        "level": 2
+      },
+      {
+        "id": "mushroomancer",
+        "level": 1
+      }
+    ],
+    "id": 108,
+    "slots": []
+  },
+  {
+    "name": "Damascus Vambraces Beta",
+    "itemType": "Hands",
+    "baseDefense": 60,
+    "fireResist": 4,
+    "waterResist": -2,
+    "thunderResist": 0,
+    "iceResist": 0,
+    "dragonResist": 0,
+    "skills": [
+      {
+        "id": "handicraft",
+        "level": 1
+      }
+    ],
+    "slots": [
+      {
+        "level": 1
+      }
+    ],
+    "id": 109
+  },
+  {
+    "name": "Damascus Vambraces Alpha",
+    "itemType": "Hands",
+    "baseDefense": 60,
+    "fireResist": 4,
+    "waterResist": -2,
+    "thunderResist": 0,
+    "iceResist": 0,
+    "dragonResist": 0,
+    "skills": [
+      {
+        "id": "handicraft",
+        "level": 1
+      },
+      {
+        "id": "speedSharpening",
+        "level": 1
+      }
+    ],
+    "id": 110,
+    "slots": []
+  },
+  {
+    "name": "Bazel Vambraces Beta",
+    "itemType": "Hands",
+    "tags": [
+      "bazelgeuse",
+      "dodogama"
+    ],
+    "baseDefense": 58,
+    "fireResist": 3,
+    "waterResist": 1,
+    "thunderResist": -4,
+    "iceResist": -2,
+    "dragonResist": -2,
+    "skills": [
+      {
+        "id": "criticalDraw",
+        "level": 2
+      },
+      {
+        "id": "bazelgeuseProtection"
+      }
+    ],
+    "slots": [
+      {
+        "level": 3
+      }
+    ],
+    "id": 111
+  },
+  {
+    "name": "Bazel Vambraces Alpha",
+    "itemType": "Hands",
+    "tags": [
+      "bazelgeuse",
+      "dodogama"
+    ],
+    "baseDefense": 58,
+    "fireResist": 3,
+    "waterResist": 1,
+    "thunderResist": -4,
+    "iceResist": -2,
+    "dragonResist": -2,
+    "skills": [
+      {
+        "id": "criticalDraw",
+        "level": 2
+      },
+      {
+        "id": "earplugs",
+        "level": 1
+      },
+      {
+        "id": "bazelgeuseProtection"
+      }
+    ],
+    "id": 112,
+    "slots": []
+  },
+  {
+    "name": "Uragaan Vambraces Beta",
+    "itemType": "Hands",
+    "baseDefense": 60,
+    "fireResist": 4,
+    "waterResist": -3,
+    "thunderResist": 1,
+    "iceResist": -2,
+    "dragonResist": -2,
+    "skills": [
+      {
+        "id": "guard",
+        "level": 1
+      },
+      {
+        "id": "uragaanProtection"
+      }
+    ],
+    "slots": [
+      {
+        "level": 2
+      }
+    ],
+    "id": 113
+  },
+  {
+    "name": "Uragaan Vambraces Alpha",
+    "itemType": "Hands",
+    "baseDefense": 60,
+    "fireResist": 4,
+    "waterResist": -3,
+    "thunderResist": 1,
+    "iceResist": -2,
+    "dragonResist": -2,
+    "skills": [
+      {
+        "id": "guard",
+        "level": 1
+      },
+      {
+        "id": "defenseBoost",
+        "level": 1
+      },
+      {
+        "id": "uragaanProtection"
+      }
+    ],
+    "slots": [
+      {
+        "level": 1
+      }
+    ],
+    "id": 114
+  },
+  {
+    "name": "Diablos Nero Braces Beta",
+    "itemType": "Hands",
+    "tags": [
+      "black diablos"
+    ],
+    "baseDefense": 56,
+    "fireResist": 2,
+    "waterResist": -3,
+    "thunderResist": 0,
+    "iceResist": -4,
+    "dragonResist": 2,
+    "skills": [
+      {
+        "id": "focus",
+        "level": 1
+      },
+      {
+        "id": "diablosMastery"
+      }
+    ],
+    "slots": [
+      {
+        "level": 2
+      },
+      {
+        "level": 1
+      }
+    ],
+    "id": 115
+  },
+  {
+    "name": "Diablos Nero Braces Alpha",
+    "itemType": "Hands",
+    "tags": [
+      "black diablos"
+    ],
+    "baseDefense": 56,
+    "fireResist": 2,
+    "waterResist": -3,
+    "thunderResist": 0,
+    "iceResist": -4,
+    "dragonResist": 2,
+    "skills": [
+      {
+        "id": "focus",
+        "level": 1
+      },
+      {
+        "id": "marathonRunner",
+        "level": 1
+      },
+      {
+        "id": "diablosMastery"
+      }
+    ],
+    "id": 116,
+    "slots": []
+  },
+  {
+    "name": "Rath Soul Braces Beta",
+    "itemType": "Hands",
+    "tags": [
+      "azure rathalos"
+    ],
+    "baseDefense": 56,
+    "fireResist": 3,
+    "waterResist": 2,
+    "thunderResist": 2,
+    "iceResist": -3,
+    "dragonResist": -4,
+    "skills": [
+      {
+        "id": "focus",
+        "level": 1
+      },
+      {
+        "id": "rathalosMastery"
+      }
+    ],
+    "slots": [
+      {
+        "level": 2
+      }
+    ],
+    "id": 117
+  },
+  {
+    "name": "Rath Soul Braces Alpha",
+    "itemType": "Hands",
+    "tags": [
+      "azure rathalos"
+    ],
+    "baseDefense": 56,
+    "fireResist": 3,
+    "waterResist": 2,
+    "thunderResist": 2,
+    "iceResist": -3,
+    "dragonResist": -4,
+    "skills": [
+      {
+        "id": "focus",
+        "level": 1
+      },
+      {
+        "id": "windproof",
+        "level": 1
+      },
+      {
+        "id": "rathalosMastery"
+      }
+    ],
+    "slots": [
+      {
+        "level": 1
+      }
+    ],
+    "id": 118
+  },
+  {
+    "name": "Diablos Vambraces Beta",
+    "itemType": "Hands",
+    "baseDefense": 54,
+    "fireResist": 3,
+    "waterResist": -2,
+    "thunderResist": 0,
+    "iceResist": -3,
+    "dragonResist": 2,
+    "skills": [
+      {
+        "id": "heroics",
+        "level": 2
+      },
+      {
+        "id": "diablosMastery"
+      }
+    ],
+    "slots": [
+      {
+        "level": 2
+      }
+    ],
+    "id": 119
+  },
+  {
+    "name": "Diablos Vambraces Alpha",
+    "itemType": "Hands",
+    "baseDefense": 54,
+    "fireResist": 3,
+    "waterResist": -2,
+    "thunderResist": 0,
+    "iceResist": -3,
+    "dragonResist": 2,
+    "skills": [
+      {
+        "id": "heroics",
+        "level": 2
+      },
+      {
+        "id": "tremorResistance",
+        "level": 1
+      },
+      {
+        "id": "diablosMastery"
+      }
+    ],
+    "id": 120,
+    "slots": []
+  },
+  {
+    "name": "Rathalos Vambraces Beta",
+    "itemType": "Hands",
+    "baseDefense": 54,
+    "fireResist": 3,
+    "waterResist": 1,
+    "thunderResist": -2,
+    "iceResist": 1,
+    "dragonResist": -3,
+    "skills": [
+      {
+        "id": "fireResistance",
+        "level": 2
+      },
+      {
+        "id": "rathalosMastery"
+      }
+    ],
+    "slots": [
+      {
+        "level": 1
+      }
+    ],
+    "id": 121
+  },
+  {
+    "name": "Rathalos Vambraces Alpha",
+    "itemType": "Hands",
+    "baseDefense": 54,
+    "fireResist": 3,
+    "waterResist": 1,
+    "thunderResist": -2,
+    "iceResist": 1,
+    "dragonResist": -3,
+    "skills": [
+      {
+        "id": "fireResistance",
+        "level": 2
+      },
+      {
+        "id": "attackBoost",
+        "level": 1
+      },
+      {
+        "id": "rathalosMastery"
+      }
+    ],
+    "id": 122,
+    "slots": []
+  },
+  {
+    "name": "Odogaron Vambraces Beta",
+    "itemType": "Hands",
+    "baseDefense": 54,
+    "fireResist": 2,
+    "waterResist": 2,
+    "thunderResist": -2,
+    "iceResist": -3,
+    "dragonResist": 0,
+    "skills": [
+      {
+        "id": "constitution",
+        "level": 1
+      },
+      {
+        "id": "odogaronMastery"
+      }
+    ],
+    "slots": [
+      {
+        "level": 1
+      }
+    ],
+    "id": 123
+  },
+  {
+    "name": "Odogaron Vambraces Alpha",
+    "itemType": "Hands",
+    "baseDefense": 54,
+    "fireResist": 2,
+    "waterResist": 2,
+    "thunderResist": -2,
+    "iceResist": -3,
+    "dragonResist": 0,
+    "skills": [
+      {
+        "id": "constitution",
+        "level": 1
+      },
+      {
+        "id": "criticalEye",
+        "level": 1
+      },
+      {
+        "id": "odogaronMastery"
+      }
+    ],
+    "id": 124,
+    "slots": []
+  },
+  {
+    "name": "Legiana Vambraces Beta",
+    "itemType": "Hands",
+    "baseDefense": 54,
+    "fireResist": -1,
+    "waterResist": 2,
+    "thunderResist": -3,
+    "iceResist": 3,
+    "dragonResist": 0,
+    "skills": [
+      {
+        "id": "airborne",
+        "level": 1
+      },
+      {
+        "id": "legianaFavor"
+      }
+    ],
+    "slots": [
+      {
+        "level": 3
+      }
+    ],
+    "id": 125
+  },
+  {
+    "name": "Legiana Vambraces Alpha",
+    "itemType": "Hands",
+    "baseDefense": 54,
+    "fireResist": -1,
+    "waterResist": 2,
+    "thunderResist": -3,
+    "iceResist": 3,
+    "dragonResist": 0,
+    "skills": [
+      {
+        "id": "airborne",
+        "level": 1
+      },
+      {
+        "id": "evadeWindow",
+        "level": 1
+      },
+      {
+        "id": "legianaFavor"
+      }
+    ],
+    "id": 126,
+    "slots": []
+  },
+  {
+    "name": "Lavasioth Vambraces Beta",
+    "itemType": "Hands",
+    "baseDefense": 56,
+    "fireResist": 3,
+    "waterResist": -3,
+    "thunderResist": 1,
+    "iceResist": -2,
+    "dragonResist": 2,
+    "skills": [
+      {
+        "id": "affinitySliding",
+        "level": 1
+      }
+    ],
+    "slots": [
+      {
+        "level": 3
+      }
+    ],
+    "id": 127
+  },
+  {
+    "name": "Lavasioth Vambraces Alpha",
+    "itemType": "Hands",
+    "baseDefense": 56,
+    "fireResist": 3,
+    "waterResist": -3,
+    "thunderResist": 1,
+    "iceResist": -2,
+    "dragonResist": 2,
+    "skills": [
+      {
+        "id": "affinitySliding",
+        "level": 1
+      },
+      {
+        "id": "wideRange",
+        "level": 1
+      }
+    ],
+    "slots": [
+      {
+        "level": 2
+      }
+    ],
+    "id": 128
+  },
+  {
+    "name": "Ingot Vambraces Beta",
+    "itemType": "Hands",
+    "baseDefense": 50,
+    "fireResist": -2,
+    "waterResist": 0,
+    "thunderResist": 3,
+    "iceResist": -1,
+    "dragonResist": 0,
+    "skills": [
+      {
+        "id": "healthBoost",
+        "level": 2
+      }
+    ],
+    "slots": [
+      {
+        "level": 1
+      }
+    ],
+    "id": 129
+  },
+  {
+    "name": "Ingot Vambraces Alpha",
+    "itemType": "Hands",
+    "baseDefense": 50,
+    "fireResist": -2,
+    "waterResist": 0,
+    "thunderResist": 3,
+    "iceResist": -1,
+    "dragonResist": 0,
+    "skills": [
+      {
+        "id": "healthBoost",
+        "level": 2
+      },
+      {
+        "id": "thunderAttack",
+        "level": 1
+      }
+    ],
+    "id": 130,
+    "slots": []
+  },
+  {
+    "name": "High Metal Vambraces Beta",
+    "itemType": "Hands",
+    "baseDefense": 50,
+    "fireResist": 0,
+    "waterResist": -1,
+    "thunderResist": -2,
+    "iceResist": 3,
+    "dragonResist": 0,
+    "skills": [
+      {
+        "id": "defenseBoost",
+        "level": 2
+      }
+    ],
+    "slots": [
+      {
+        "level": 1
+      }
+    ],
+    "id": 131
+  },
+  {
+    "name": "High Metal Vambraces Alpha",
+    "itemType": "Hands",
+    "baseDefense": 50,
+    "fireResist": 0,
+    "waterResist": -1,
+    "thunderResist": -2,
+    "iceResist": 3,
+    "dragonResist": 0,
+    "skills": [
+      {
+        "id": "defenseBoost",
+        "level": 2
+      },
+      {
+        "id": "iceAttack",
+        "level": 1
+      }
+    ],
+    "id": 132,
+    "slots": []
+  },
+  {
+    "name": "Commission Vambraces Beta",
+    "itemType": "Hands",
+    "baseDefense": 70,
+    "fireResist": 2,
+    "waterResist": 2,
+    "thunderResist": 2,
+    "iceResist": 2,
+    "dragonResist": 2,
+    "skills": [
+      {
+        "id": "blindsider",
+        "level": 1
+      }
+    ],
+    "slots": [
+      {
+        "level": 2
+      }
+    ],
+    "id": 133
+  },
+  {
+    "name": "Commission Vambraces Alpha",
+    "itemType": "Hands",
+    "baseDefense": 70,
+    "fireResist": 2,
+    "waterResist": 2,
+    "thunderResist": 2,
+    "iceResist": 2,
+    "dragonResist": 2,
+    "skills": [
+      {
+        "id": "blindsider",
+        "level": 1
+      },
+      {
+        "id": "carvingPro",
+        "level": 1
+      }
+    ],
+    "slots": [
+      {
+        "level": 1
+      }
+    ],
+    "id": 134
+  },
+  {
+    "name": "Guild Cross Vambraces Beta",
+    "itemType": "Hands",
+    "baseDefense": 62,
+    "fireResist": 0,
+    "waterResist": 0,
+    "thunderResist": 0,
+    "iceResist": 0,
+    "dragonResist": 0,
+    "skills": [
+      {
+        "id": "toolSpecialist",
+        "level": 1
+      }
+    ],
+    "slots": [
+      {
+        "level": 3
+      }
+    ],
+    "id": 135
+  },
+  {
+    "name": "Guild Cross Vambraces Alpha",
+    "itemType": "Hands",
+    "baseDefense": 62,
+    "fireResist": 0,
+    "waterResist": 0,
+    "thunderResist": 0,
+    "iceResist": 0,
+    "dragonResist": 0,
+    "skills": [
+      {
+        "id": "toolSpecialist",
+        "level": 1
+      },
+      {
+        "id": "waterResistance",
+        "level": 2
+      }
+    ],
+    "slots": [
+      {
+        "level": 1
+      }
+    ],
+    "id": 136
+  },
+  {
+    "name": "Vangis Vambraces Alpha",
+    "tags": [
+      "deviljho"
+    ],
+    "itemType": "Hands",
+    "baseDefense": 58,
+    "fireResist": 1,
+    "waterResist": 1,
+    "thunderResist": -3,
+    "iceResist": 2,
+    "dragonResist": -3,
+    "skills": [
+      {
+        "id": "latentPower",
+        "level": 2
+      },
+      {
+        "id": "partbreaker",
+        "level": 1
+      }
+    ],
+    "id": 325,
+    "slots": []
+  },
+  {
+    "name": "Vangis Vambraces Beta",
+    "tags": [
+      "deviljho"
+    ],
+    "itemType": "Hands",
+    "baseDefense": 58,
+    "fireResist": 1,
+    "waterResist": 1,
+    "thunderResist": -3,
+    "iceResist": 2,
+    "dragonResist": -3,
+    "skills": [
+      {
+        "id": "latentPower",
+        "level": 2
+      }
+    ],
+    "slots": [
+      {
+        "level": 2
+      }
+    ],
+    "id": 326
+  }
 ]

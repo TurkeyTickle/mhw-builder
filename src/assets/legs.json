@@ -1,962 +1,1213 @@
 [
-	{
-		"name": "Xeno'jiva Spine Beta",
-		"itemType": "Legs",
-		"baseDefense": 72,
-		"fireResist": -3,
-		"waterResist": 2,
-		"thunderResist": 2,
-		"iceResist": 2,
-		"dragonResist": -4,
-		"skills": [
-			{
-				"id": "blightResistance",
-				"level": 2
-			},
-			{
-				"id": "xenojivaDivinity"
-			}
-		],
-		"slots": [
-			{
-				"level": 2
-			},
-			{
-				"level": 1
-			}
-		]
-	},
-	{
-		"name": "Xeno'jiva Spine Alpha",
-		"itemType": "Legs",
-		"baseDefense": 72,
-		"fireResist": -3,
-		"waterResist": 2,
-		"thunderResist": 2,
-		"iceResist": 2,
-		"dragonResist": -4,
-		"skills": [
-			{
-				"id": "blightResistance",
-				"level": 2
-			},			
-			{
-				"id": "specialAmmoBoost",
-				"level": 1
-			},
-			{
-				"id": "xenojivaDivinity"
-			}
-		],
-		"slots": [
-			{
-				"level": 2
-			}
-		]
-	},
-	{
-		"name": "Kirin Hoop Beta",
-		"itemType": "Legs",
-		"baseDefense": 64,
-		"fireResist": -3,
-		"waterResist": -2,
-		"thunderResist": 4,
-		"iceResist": -2,
-		"dragonResist": 2,
-		"skills": [
-			{
-				"id": "blightResistance",
-				"level": 1
-			},
-			{
-				"id": "kirinFavor"
-			}
-		],
-		"slots": [
-			{
-				"level": 1
-			},
-			{
-				"level": 1
-			},
-			{
-				"level": 1
-			}
-		]
-	},
-	{
-		"name": "Kirin Hoop Alpha",
-		"itemType": "Legs",
-		"baseDefense": 64,
-		"fireResist": -3,
-		"waterResist": -2,
-		"thunderResist": 4,
-		"iceResist": -2,
-		"dragonResist": 2,
-		"skills": [
-			{
-				"id": "blightResistance",
-				"level": 1
-			},
-			{
-				"id": "freeElemAmmoUp",
-				"level": 1
-			},
-			{
-				"id": "kirinFavor"
-			}
-		]
-	},
-	{
-		"name": "Vaal Hazak Coil Beta",
-		"itemType": "Legs",
-		"baseDefense": 64,
-		"fireResist": -4,
-		"waterResist": 4,
-		"thunderResist": 1,
-		"iceResist": -1,
-		"dragonResist": -3,
-		"skills": [
-			{
-				"id": "peakPerformance",
-				"level": 1
-			},
-			{
-				"id": "vaalHazakVitality"
-			}
-		],
-		"slots": [
-			{
-				"level": 1
-			},
-			{
-				"level": 1
-			}
-		]
-	},
-	{
-		"name": "Vaal Hazak Coil Alpha",
-		"itemType": "Legs",
-		"baseDefense": 64,
-		"fireResist": -4,
-		"waterResist": 4,
-		"thunderResist": 1,
-		"iceResist": -1,
-		"dragonResist": -3,
-		"skills": [
-			{
-				"id": "peakPerformance",
-				"level": 1
-			},
-			{
-				"id": "effluviaResistance",
-				"level": 1
-			},
-			{
-				"id": "vaalHazakVitality"
-			}
-		],
-		"slots": [
-			{
-				"level": 1
-			}
-		]
-	},
-	{
-		"name": "Kushala Cocoon Beta",
-		"itemType": "Legs",
-		"baseDefense": 64,
-		"fireResist": 0,
-		"waterResist": 2,
-		"thunderResist": -3,
-		"iceResist": -4,
-		"dragonResist": -2,
-		"skills": [
-			{
-				"id": "iceAttack",
-				"level": 2
-			},
-			{
-				"id": "kushalaDaoraFlight"
-			}
-		],
-		"slots": [
-			{
-				"level": 1
-			},
-			{
-				"level": 1
-			}
-		]
-	},
-	{
-		"name": "Kushala Cocoon Alpha",
-		"itemType": "Legs",
-		"baseDefense": 64,
-		"fireResist": 0,
-		"waterResist": 2,
-		"thunderResist": -3,
-		"iceResist": -4,
-		"dragonResist": -2,
-		"skills": [
-			{
-				"id": "iceAttack",
-				"level": 2
-			},
-			{
-				"id": "evadeExtender",
-				"level": 1
-			},
-			{
-				"id": "kushalaDaoraFlight"
-			}
-		]
-	},
-	{
-		"name": "Kaiser Coil Beta",
-		"itemType": "Legs",
-		"baseDefense": 64,
-		"fireResist": 3,
-		"waterResist": -3,
-		"thunderResist": 1,
-		"iceResist": -3,
-		"dragonResist": 1,
-		"skills": [
-			{
-				"id": "blastAttack",
-				"level": 2
-			},
-			{
-				"id": "teostraTechnique"
-			}
-		],
-		"slots": [
-			{
-				"level": 2
-			}
-		]
-	},
-	{
-		"name": "Kaiser Coil Alpha",
-		"itemType": "Legs",
-		"baseDefense": 64,
-		"fireResist": 3,
-		"waterResist": -3,
-		"thunderResist": 1,
-		"iceResist": -3,
-		"dragonResist": 1,
-		"skills": [
-			{
-				"id": "blastAttack",
-				"level": 2
-			},
-			{
-				"id": "weaknessExploit",
-				"level": 1
-			},
-			{
-				"id": "teostraTechnique"
-			}
-		]
-	},
-	{
-		"name": "Nergigante Coil Beta",
-		"itemType": "Legs",
-		"baseDefense": 64,
-		"fireResist": 1,
-		"waterResist": 1,
-		"thunderResist": -3,
-		"iceResist": 1,
-		"dragonResist": -3,
-		"skills": [
-			{
-				"id": "attackBoost",
-				"level": 2
-			},
-			{
-				"id": "nergiganteHunger"
-			}
-		],
-		"slots": [
-			{
-				"level": 2
-			}
-		]
-	},
-	{
-		"name": "Nergigante Coil Alpha",
-		"itemType": "Legs",
-		"baseDefense": 64,
-		"fireResist": 1,
-		"waterResist": 1,
-		"thunderResist": -3,
-		"iceResist": 1,
-		"dragonResist": -3,
-		"skills": [
-			{
-				"id": "attackBoost",
-				"level": 2
-			},
-			{
-				"id": "staminaSurge",
-				"level": 1
-			},
-			{
-				"id": "nergiganteHunger"
-			}
-		]
-	},
-	{
-		"name": "Death Stench Bowels Beta",
-		"itemType": "Legs",
-		"baseDefense": 62,
-		"fireResist": 3,
-		"waterResist": 2,
-		"thunderResist": -2,
-		"iceResist": 3,
-		"dragonResist": -4,
-		"skills": [
-			{
-				"id": "dragonAttack",
-				"level": 2
-			}
-		],
-		"slots": [
-			{
-				"level": 1
-			},
-			{
-				"level": 1
-			}
-		]
-	},
-	{
-		"name": "Death Stench Bowels Alpha",
-		"itemType": "Legs",
-		"baseDefense": 62,
-		"fireResist": 3,
-		"waterResist": 2,
-		"thunderResist": -2,
-		"iceResist": 3,
-		"dragonResist": -4,
-		"skills": [
-			{
-				"id": "dragonAttack",
-				"level": 2
-			},
-			{
-				"id": "focus",
-				"level": 1
-			}
-		]
-	},
-	{
-		"name": "Dober Coil Beta",
-		"itemType": "Legs",
-		"baseDefense": 60,
-		"fireResist": -2,
-		"waterResist": 0,
-		"thunderResist": -1,
-		"iceResist": -1,
-		"dragonResist": 4,
-		"skills": [
-			{
-				"id": "dragonResistance",
-				"level": 2
-			}
-		],
-		"slots": [
-			{
-				"level": 3
-			}
-		]
-	},
-	{
-		"name": "Dober Coil Alpha",
-		"itemType": "Legs",
-		"baseDefense": 60,
-		"fireResist": -2,
-		"waterResist": 0,
-		"thunderResist": -1,
-		"iceResist": -1,
-		"dragonResist": 4,
-		"skills": [
-			{
-				"id": "dragonResistance",
-				"level": 2
-			},
-			{
-				"id": "attackBoost",
-				"level": 1
-			}
-		],
-		"slots": [
-			{
-				"level": 2
-			}
-		]
-	},
-	{
-		"name": "Damascus Coil Beta",
-		"itemType": "Legs",
-		"baseDefense": 60,
-		"fireResist": 4,
-		"waterResist": -2,
-		"thunderResist": 0,
-		"iceResist": 0,
-		"dragonResist": 0,
-		"skills": [
-			{
-				"id": "focus",
-				"level": 1
-			}
-		],
-		"slots": [
-			{
-				"level": 1
-			},
-			{
-				"level": 1
-			},
-			{
-				"level": 1
-			}
-		]
-	},
-	{
-		"name": "Damascus Coil Alpha",
-		"itemType": "Legs",
-		"baseDefense": 60,
-		"fireResist": 4,
-		"waterResist": -2,
-		"thunderResist": 0,
-		"iceResist": 0,
-		"dragonResist": 0,
-		"skills": [
-			{
-				"id": "focus",
-				"level": 1
-			},
-			{
-				"id": "ironSkin",
-				"level": 2
-			}
-		],
-		"slots": [
-			{
-				"level": 1
-			}
-		]
-	},
-	{
-		"name": "Bazel Coil Beta",
-		"itemType": "Legs",
-		"baseDefense": 58,
-		"fireResist": 3,
-		"waterResist": 1,
-		"thunderResist": -4,
-		"iceResist": -2,
-		"dragonResist": -2,
-		"skills": [
-			{
-				"id": "earplugs",
-				"level": 2
-			},
-			{
-				"id": "bazelgeuseProtection"
-			}
-		],
-		"slots": [
-			{
-				"level": 3
-			}
-		]
-	},
-	{
-		"name": "Bazel Coil Alpha",
-		"itemType": "Legs",
-		"baseDefense": 58,
-		"fireResist": 3,
-		"waterResist": 1,
-		"thunderResist": -4,
-		"iceResist": -2,
-		"dragonResist": -2,
-		"skills": [
-			{
-				"id": "earplugs",
-				"level": 2
-			},
-			{
-				"id": "jumpMaster",
-				"level": 1
-			},
-			{
-				"id": "bazelgeuseProtection"
-			}
-		],
-		"slots": [
-			{
-				"level": 1
-			}
-		]
-	},
-	{
-		"name": "Uragaan Coil Beta",
-		"itemType": "Legs",
-		"baseDefense": 60,
-		"fireResist": 4,
-		"waterResist": -3,
-		"thunderResist": 1,
-		"iceResist": -2,
-		"dragonResist": -2,
-		"skills": [
-			{
-				"id": "partbreaker",
-				"level": 1
-			},
-			{
-				"id": "uragaanProtection"
-			}
-		],
-		"slots": [
-			{
-				"level": 2
-			},
-			{
-				"level": 1
-			}
-		]
-	},
-	{
-		"name": "Uragaan Coil Alpha",
-		"itemType": "Legs",
-		"baseDefense": 60,
-		"fireResist": 4,
-		"waterResist": -3,
-		"thunderResist": 1,
-		"iceResist": -2,
-		"dragonResist": -2,
-		"skills": [
-			{
-				"id": "partbreaker",
-				"level": 1
-			},
-			{
-				"id": "thunderResistance",
-				"level": 1
-			},
-			{
-				"id": "uragaanProtection"
-			}
-		],
-		"slots": [
-			{
-				"level": 1
-			},
-			{
-				"level": 1
-			}
-		]
-	},
-	{
-		"name": "Diablos Nero Coil Beta",
-		"itemType": "Legs",
-		"baseDefense": 56,
-		"fireResist": 2,
-		"waterResist": -3,
-		"thunderResist": 0,
-		"iceResist": -4,
-		"dragonResist": 2,
-		"skills": [
-			{
-				"id": "resentment",
-				"level": 1
-			},
-			{
-				"id": "diablosMastery"
-			}
-		],
-		"slots": [
-			{
-				"level": 2
-			}
-		]
-	},
-	{
-		"name": "Diablos Nero Coil Alpha",
-		"itemType": "Legs",
-		"baseDefense": 56,
-		"fireResist": 2,
-		"waterResist": -3,
-		"thunderResist": 0,
-		"iceResist": -4,
-		"dragonResist": 2,
-		"skills": [
-			{
-				"id": "resentment",
-				"level": 1
-			},
-			{
-				"id": "partbreaker",
-				"level": 1
-			},
-			{
-				"id": "diablosMastery"
-			}
-		]
-	},
-	{
-		"name": "Rath Soul Coil Beta",
-		"itemType": "Legs",
-		"baseDefense": 56,
-		"fireResist": 3,
-		"waterResist": 2,
-		"thunderResist": 2,
-		"iceResist": -3,
-		"dragonResist": -4,
-		"skills": [
-			{
-				"id": "windproof",
-				"level": 2
-			},
-			{
-				"id": "rathalosMastery"
-			}
-		],
-		"slots": [
-			{
-				"level": 3
-			}
-		]
-	},
-	{
-		"name": "Rath Soul Coil Alpha",
-		"itemType": "Legs",
-		"baseDefense": 56,
-		"fireResist": 3,
-		"waterResist": 2,
-		"thunderResist": 2,
-		"iceResist": -3,
-		"dragonResist": -4,
-		"skills": [
-			{
-				"id": "windproof",
-				"level": 2
-			},
-			{
-				"id": "piercingShots",
-				"level": 1
-			},
-			{
-				"id": "rathalosMastery"
-			}
-		]
-	},
-	{
-		"name": "Diablos Coil Beta",
-		"itemType": "Legs",
-		"baseDefense": 54,
-		"fireResist": 3,
-		"waterResist": -2,
-		"thunderResist": 0,
-		"iceResist": -3,
-		"dragonResist": 2,
-		"skills": [
-			{
-				"id": "marathonRunner",
-				"level": 2
-			},
-			{
-				"id": "diablosMastery"
-			}
-		],
-		"slots": [
-			{
-				"level": 2
-			}
-		]
-	},
-	{
-		"name": "Diablos Coil Alpha",
-		"itemType": "Legs",
-		"baseDefense": 54,
-		"fireResist": 3,
-		"waterResist": -2,
-		"thunderResist": 0,
-		"iceResist": -3,
-		"dragonResist": 2,
-		"skills": [
-			{
-				"id": "marathonRunner",
-				"level": 2
-			},
-			{
-				"id": "criticalDraw",
-				"level": 1
-			},
-			{
-				"id": "diablosMastery"
-			}
-		]
-	},
-	{
-		"name": "Rathalos Coil Beta",
-		"itemType": "Legs",
-		"baseDefense": 54,
-		"fireResist": 3,
-		"waterResist": 1,
-		"thunderResist": -2,
-		"iceResist": 1,
-		"dragonResist": -3,
-		"skills": [
-			{
-				"id": "fireAttack",
-				"level": 2
-			},
-			{
-				"id": "rathalosMastery"
-			}
-		],
-		"slots": [
-			{
-				"level": 2
-			}
-		]
-	},
-	{
-		"name": "Rathalos Coil Alpha",
-		"itemType": "Legs",
-		"baseDefense": 54,
-		"fireResist": 3,
-		"waterResist": 1,
-		"thunderResist": -2,
-		"iceResist": 1,
-		"dragonResist": -3,
-		"skills": [
-			{
-				"id": "fireAttack",
-				"level": 2
-			},
-			{
-				"id": "focus",
-				"level": 1
-			},
-			{
-				"id": "rathalosMastery"
-			}
-		]
-	},
-	{
-		"name": "Odogaron Coil Beta",
-		"itemType": "Legs",
-		"baseDefense": 54,
-		"fireResist": 2,
-		"waterResist": 2,
-		"thunderResist": -2,
-		"iceResist": -3,
-		"dragonResist": 0,
-		"skills": [
-			{
-				"id": "criticalEye",
-				"level": 2
-			},
-			{
-				"id": "odogaronMastery"
-			}
-		],
-		"slots": [
-			{
-				"level": 2
-			}
-		]
-	},
-	{
-		"name": "Odogaron Coil Alpha",
-		"itemType": "Legs",
-		"baseDefense": 54,
-		"fireResist": 2,
-		"waterResist": 2,
-		"thunderResist": -2,
-		"iceResist": -3,
-		"dragonResist": 0,
-		"skills": [
-			{
-				"id": "criticalEye",
-				"level": 2
-			},
-			{
-				"id": "speedSharpening",
-				"level": 1
-			},
-			{
-				"id": "odogaronMastery"
-			}
-		]
-	},
-	{
-		"name": "Legiana Coil Beta",
-		"itemType": "Legs",
-		"baseDefense": 54,
-		"fireResist": -1,
-		"waterResist": 2,
-		"thunderResist": -3,
-		"iceResist": 3,
-		"dragonResist": 0,
-		"skills": [
-			{
-				"id": "iceAttack",
-				"level": 2
-			},
-			{
-				"id": "legianaFavor"
-			}
-		],
-		"slots": [
-			{
-				"level": 2
-			}
-		]
-	},
-	{
-		"name": "Legiana Coil Alpha",
-		"itemType": "Legs",
-		"baseDefense": 54,
-		"fireResist": -1,
-		"waterResist": 2,
-		"thunderResist": -3,
-		"iceResist": 3,
-		"dragonResist": 0,
-		"skills": [
-			{
-				"id": "iceAttack",
-				"level": 2
-			},
-			{
-				"id": "windproof",
-				"level": 1
-			},
-			{
-				"id": "legianaFavor"
-			}
-		]
-	},
-	{
-		"name": "Lavasioth Coil Beta",
-		"itemType": "Legs",
-		"baseDefense": 56,
-		"fireResist": 3,
-		"waterResist": -3,
-		"thunderResist": 1,
-		"iceResist": -2,
-		"dragonResist": 2,
-		"skills": [
-			{
-				"id": "quickSheath",
-				"level": 2
-			}
-		],
-		"slots": [
-			{
-				"level": 1
-			}
-		]
-	},
-	{
-		"name": "Lavasioth Coil Alpha",
-		"itemType": "Legs",
-		"baseDefense": 56,
-		"fireResist": 3,
-		"waterResist": -3,
-		"thunderResist": 1,
-		"iceResist": -2,
-		"dragonResist": 2,
-		"skills": [
-			{
-				"id": "quickSheath",
-				"level": 2
-			},
-			{
-				"id": "recoveryUp",
-				"level": 1
-			}
-		]
-	},
-	{
-		"name": "Ingot Coil Beta",
-		"itemType": "Legs",
-		"baseDefense": 50,
-		"fireResist": -2,
-		"waterResist": 0,
-		"thunderResist": 3,
-		"iceResist": -1,
-		"dragonResist": 0,
-		"skills": [
-			{
-				"id": "windproof",
-				"level": 1
-			}
-		],
-		"slots": [
-			{
-				"level": 3
-			}
-		]
-	},
-	{
-		"name": "Ingot Coil Alpha",
-		"itemType": "Legs",
-		"baseDefense": 50,
-		"fireResist": -2,
-		"waterResist": 0,
-		"thunderResist": 3,
-		"iceResist": -1,
-		"dragonResist": 0,
-		"skills": [
-			{
-				"id": "windproof",
-				"level": 2
-			}
-		]
-	},
-	{
-		"name": "High Metal Coil Beta",
-		"itemType": "Legs",
-		"baseDefense": 50,
-		"fireResist": 0,
-		"waterResist": -1,
-		"thunderResist": -2,
-		"iceResist": 3,
-		"dragonResist": 0,
-		"skills": [
-			{
-				"id": "capacityBoost",
-				"level": 1
-			}
-		],
-		"slots": [
-			{
-				"level": 1
-			}
-		]
-	},
-	{
-		"name": "High Metal Coil Alpha",
-		"itemType": "Legs",
-		"baseDefense": 50,
-		"fireResist": 0,
-		"waterResist": -1,
-		"thunderResist": -2,
-		"iceResist": 3,
-		"dragonResist": 0,
-		"skills": [
-			{
-				"id": "capacityBoost",
-				"level": 1
-			},
-			{
-				"id": "defenseBoost",
-				"level": 1
-			}
-		]
-	}
+  {
+    "name": "Xeno'jiva Spine Beta",
+    "itemType": "Legs",
+    "tags": [
+      "xenojiva"
+    ],
+    "baseDefense": 72,
+    "fireResist": -3,
+    "waterResist": 2,
+    "thunderResist": 2,
+    "iceResist": 2,
+    "dragonResist": -4,
+    "skills": [
+      {
+        "id": "blightResistance",
+        "level": 2
+      },
+      {
+        "id": "xenojivaDivinity"
+      }
+    ],
+    "slots": [
+      {
+        "level": 2
+      },
+      {
+        "level": 1
+      }
+    ],
+    "id": 137
+  },
+  {
+    "name": "Xeno'jiva Spine Alpha",
+    "itemType": "Legs",
+    "tags": [
+      "xenojiva"
+    ],
+    "baseDefense": 72,
+    "fireResist": -3,
+    "waterResist": 2,
+    "thunderResist": 2,
+    "iceResist": 2,
+    "dragonResist": -4,
+    "skills": [
+      {
+        "id": "blightResistance",
+        "level": 2
+      },
+      {
+        "id": "specialAmmoBoost",
+        "level": 1
+      },
+      {
+        "id": "xenojivaDivinity"
+      }
+    ],
+    "slots": [
+      {
+        "level": 2
+      }
+    ],
+    "id": 138
+  },
+  {
+    "name": "Kirin Hoop Beta",
+    "itemType": "Legs",
+    "baseDefense": 64,
+    "fireResist": -3,
+    "waterResist": -2,
+    "thunderResist": 4,
+    "iceResist": -2,
+    "dragonResist": 2,
+    "skills": [
+      {
+        "id": "blightResistance",
+        "level": 1
+      },
+      {
+        "id": "kirinFavor"
+      }
+    ],
+    "slots": [
+      {
+        "level": 1
+      },
+      {
+        "level": 1
+      },
+      {
+        "level": 1
+      }
+    ],
+    "id": 139
+  },
+  {
+    "name": "Kirin Hoop Alpha",
+    "itemType": "Legs",
+    "baseDefense": 64,
+    "fireResist": -3,
+    "waterResist": -2,
+    "thunderResist": 4,
+    "iceResist": -2,
+    "dragonResist": 2,
+    "skills": [
+      {
+        "id": "blightResistance",
+        "level": 1
+      },
+      {
+        "id": "freeElemAmmoUp",
+        "level": 1
+      },
+      {
+        "id": "kirinFavor"
+      }
+    ],
+    "id": 140,
+    "slots": []
+  },
+  {
+    "name": "Vaal Hazak Coil Beta",
+    "itemType": "Legs",
+    "baseDefense": 64,
+    "fireResist": -4,
+    "waterResist": 4,
+    "thunderResist": 1,
+    "iceResist": -1,
+    "dragonResist": -3,
+    "skills": [
+      {
+        "id": "peakPerformance",
+        "level": 1
+      },
+      {
+        "id": "vaalHazakVitality"
+      }
+    ],
+    "slots": [
+      {
+        "level": 1
+      },
+      {
+        "level": 1
+      }
+    ],
+    "id": 141
+  },
+  {
+    "name": "Vaal Hazak Coil Alpha",
+    "itemType": "Legs",
+    "baseDefense": 64,
+    "fireResist": -4,
+    "waterResist": 4,
+    "thunderResist": 1,
+    "iceResist": -1,
+    "dragonResist": -3,
+    "skills": [
+      {
+        "id": "peakPerformance",
+        "level": 1
+      },
+      {
+        "id": "effluviaResistance",
+        "level": 1
+      },
+      {
+        "id": "vaalHazakVitality"
+      }
+    ],
+    "slots": [
+      {
+        "level": 1
+      }
+    ],
+    "id": 142
+  },
+  {
+    "name": "Kushala Cocoon Beta",
+    "itemType": "Legs",
+    "tags": [
+      "kushala daora"
+    ],
+    "baseDefense": 64,
+    "fireResist": 0,
+    "waterResist": 2,
+    "thunderResist": -3,
+    "iceResist": -4,
+    "dragonResist": -2,
+    "skills": [
+      {
+        "id": "iceAttack",
+        "level": 2
+      },
+      {
+        "id": "kushalaDaoraFlight"
+      }
+    ],
+    "slots": [
+      {
+        "level": 1
+      },
+      {
+        "level": 1
+      }
+    ],
+    "id": 143
+  },
+  {
+    "name": "Kushala Cocoon Alpha",
+    "itemType": "Legs",
+    "tags": [
+      "kushala daora"
+    ],
+    "baseDefense": 64,
+    "fireResist": 0,
+    "waterResist": 2,
+    "thunderResist": -3,
+    "iceResist": -4,
+    "dragonResist": -2,
+    "skills": [
+      {
+        "id": "iceAttack",
+        "level": 2
+      },
+      {
+        "id": "evadeExtender",
+        "level": 1
+      },
+      {
+        "id": "kushalaDaoraFlight"
+      }
+    ],
+    "id": 144,
+    "slots": []
+  },
+  {
+    "name": "Kaiser Coil Beta",
+    "itemType": "Legs",
+    "tags": [
+      "teostra"
+    ],
+    "baseDefense": 64,
+    "fireResist": 3,
+    "waterResist": -3,
+    "thunderResist": 1,
+    "iceResist": -3,
+    "dragonResist": 1,
+    "skills": [
+      {
+        "id": "blastAttack",
+        "level": 2
+      },
+      {
+        "id": "teostraTechnique"
+      }
+    ],
+    "slots": [
+      {
+        "level": 2
+      }
+    ],
+    "id": 145
+  },
+  {
+    "name": "Kaiser Coil Alpha",
+    "itemType": "Legs",
+    "tags": [
+      "teostra"
+    ],
+    "baseDefense": 64,
+    "fireResist": 3,
+    "waterResist": -3,
+    "thunderResist": 1,
+    "iceResist": -3,
+    "dragonResist": 1,
+    "skills": [
+      {
+        "id": "blastAttack",
+        "level": 2
+      },
+      {
+        "id": "weaknessExploit",
+        "level": 1
+      },
+      {
+        "id": "teostraTechnique"
+      }
+    ],
+    "id": 146,
+    "slots": []
+  },
+  {
+    "name": "Nergigante Coil Beta",
+    "itemType": "Legs",
+    "baseDefense": 64,
+    "fireResist": 1,
+    "waterResist": 1,
+    "thunderResist": -3,
+    "iceResist": 1,
+    "dragonResist": -3,
+    "skills": [
+      {
+        "id": "attackBoost",
+        "level": 2
+      },
+      {
+        "id": "nergiganteHunger"
+      }
+    ],
+    "slots": [
+      {
+        "level": 2
+      }
+    ],
+    "id": 147
+  },
+  {
+    "name": "Nergigante Coil Alpha",
+    "itemType": "Legs",
+    "baseDefense": 64,
+    "fireResist": 1,
+    "waterResist": 1,
+    "thunderResist": -3,
+    "iceResist": 1,
+    "dragonResist": -3,
+    "skills": [
+      {
+        "id": "attackBoost",
+        "level": 2
+      },
+      {
+        "id": "staminaSurge",
+        "level": 1
+      },
+      {
+        "id": "nergiganteHunger"
+      }
+    ],
+    "id": 148,
+    "slots": []
+  },
+  {
+    "name": "Death Stench Bowels Beta",
+    "itemType": "Legs",
+    "baseDefense": 62,
+    "fireResist": 3,
+    "waterResist": 2,
+    "thunderResist": -2,
+    "iceResist": 3,
+    "dragonResist": -4,
+    "skills": [
+      {
+        "id": "dragonAttack",
+        "level": 2
+      }
+    ],
+    "slots": [
+      {
+        "level": 1
+      },
+      {
+        "level": 1
+      }
+    ],
+    "id": 149
+  },
+  {
+    "name": "Death Stench Bowels Alpha",
+    "itemType": "Legs",
+    "baseDefense": 62,
+    "fireResist": 3,
+    "waterResist": 2,
+    "thunderResist": -2,
+    "iceResist": 3,
+    "dragonResist": -4,
+    "skills": [
+      {
+        "id": "dragonAttack",
+        "level": 2
+      },
+      {
+        "id": "focus",
+        "level": 1
+      }
+    ],
+    "id": 150,
+    "slots": []
+  },
+  {
+    "name": "Dober Coil Beta",
+    "itemType": "Legs",
+    "baseDefense": 60,
+    "fireResist": -2,
+    "waterResist": 0,
+    "thunderResist": -1,
+    "iceResist": -1,
+    "dragonResist": 4,
+    "skills": [
+      {
+        "id": "dragonResistance",
+        "level": 2
+      }
+    ],
+    "slots": [
+      {
+        "level": 3
+      }
+    ],
+    "id": 151
+  },
+  {
+    "name": "Dober Coil Alpha",
+    "itemType": "Legs",
+    "baseDefense": 60,
+    "fireResist": -2,
+    "waterResist": 0,
+    "thunderResist": -1,
+    "iceResist": -1,
+    "dragonResist": 4,
+    "skills": [
+      {
+        "id": "dragonResistance",
+        "level": 2
+      },
+      {
+        "id": "attackBoost",
+        "level": 1
+      }
+    ],
+    "slots": [
+      {
+        "level": 2
+      }
+    ],
+    "id": 152
+  },
+  {
+    "name": "Damascus Coil Beta",
+    "itemType": "Legs",
+    "baseDefense": 60,
+    "fireResist": 4,
+    "waterResist": -2,
+    "thunderResist": 0,
+    "iceResist": 0,
+    "dragonResist": 0,
+    "skills": [
+      {
+        "id": "focus",
+        "level": 1
+      }
+    ],
+    "slots": [
+      {
+        "level": 1
+      },
+      {
+        "level": 1
+      },
+      {
+        "level": 1
+      }
+    ],
+    "id": 153
+  },
+  {
+    "name": "Damascus Coil Alpha",
+    "itemType": "Legs",
+    "baseDefense": 60,
+    "fireResist": 4,
+    "waterResist": -2,
+    "thunderResist": 0,
+    "iceResist": 0,
+    "dragonResist": 0,
+    "skills": [
+      {
+        "id": "focus",
+        "level": 1
+      },
+      {
+        "id": "ironSkin",
+        "level": 2
+      }
+    ],
+    "slots": [
+      {
+        "level": 1
+      }
+    ],
+    "id": 154
+  },
+  {
+    "name": "Bazel Coil Beta",
+    "itemType": "Legs",
+    "tags": [
+      "bazelgeuse",
+      "dodogama"
+    ],
+    "baseDefense": 58,
+    "fireResist": 3,
+    "waterResist": 1,
+    "thunderResist": -4,
+    "iceResist": -2,
+    "dragonResist": -2,
+    "skills": [
+      {
+        "id": "earplugs",
+        "level": 2
+      },
+      {
+        "id": "bazelgeuseProtection"
+      }
+    ],
+    "slots": [
+      {
+        "level": 3
+      }
+    ],
+    "id": 155
+  },
+  {
+    "name": "Bazel Coil Alpha",
+    "itemType": "Legs",
+    "tags": [
+      "bazelgeuse",
+      "dodogama"
+    ],
+    "baseDefense": 58,
+    "fireResist": 3,
+    "waterResist": 1,
+    "thunderResist": -4,
+    "iceResist": -2,
+    "dragonResist": -2,
+    "skills": [
+      {
+        "id": "earplugs",
+        "level": 2
+      },
+      {
+        "id": "jumpMaster",
+        "level": 1
+      },
+      {
+        "id": "bazelgeuseProtection"
+      }
+    ],
+    "slots": [
+      {
+        "level": 1
+      }
+    ],
+    "id": 156
+  },
+  {
+    "name": "Uragaan Coil Beta",
+    "itemType": "Legs",
+    "baseDefense": 60,
+    "fireResist": 4,
+    "waterResist": -3,
+    "thunderResist": 1,
+    "iceResist": -2,
+    "dragonResist": -2,
+    "skills": [
+      {
+        "id": "partbreaker",
+        "level": 1
+      },
+      {
+        "id": "uragaanProtection"
+      }
+    ],
+    "slots": [
+      {
+        "level": 2
+      },
+      {
+        "level": 1
+      }
+    ],
+    "id": 157
+  },
+  {
+    "name": "Uragaan Coil Alpha",
+    "itemType": "Legs",
+    "baseDefense": 60,
+    "fireResist": 4,
+    "waterResist": -3,
+    "thunderResist": 1,
+    "iceResist": -2,
+    "dragonResist": -2,
+    "skills": [
+      {
+        "id": "partbreaker",
+        "level": 1
+      },
+      {
+        "id": "thunderResistance",
+        "level": 1
+      },
+      {
+        "id": "uragaanProtection"
+      }
+    ],
+    "slots": [
+      {
+        "level": 1
+      },
+      {
+        "level": 1
+      }
+    ],
+    "id": 158
+  },
+  {
+    "name": "Diablos Nero Coil Beta",
+    "itemType": "Legs",
+    "tags": [
+      "black diablos"
+    ],
+    "baseDefense": 56,
+    "fireResist": 2,
+    "waterResist": -3,
+    "thunderResist": 0,
+    "iceResist": -4,
+    "dragonResist": 2,
+    "skills": [
+      {
+        "id": "resentment",
+        "level": 1
+      },
+      {
+        "id": "diablosMastery"
+      }
+    ],
+    "slots": [
+      {
+        "level": 2
+      }
+    ],
+    "id": 159
+  },
+  {
+    "name": "Diablos Nero Coil Alpha",
+    "itemType": "Legs",
+    "tags": [
+      "black diablos"
+    ],
+    "baseDefense": 56,
+    "fireResist": 2,
+    "waterResist": -3,
+    "thunderResist": 0,
+    "iceResist": -4,
+    "dragonResist": 2,
+    "skills": [
+      {
+        "id": "resentment",
+        "level": 1
+      },
+      {
+        "id": "partbreaker",
+        "level": 1
+      },
+      {
+        "id": "diablosMastery"
+      }
+    ],
+    "id": 160,
+    "slots": []
+  },
+  {
+    "name": "Rath Soul Coil Beta",
+    "itemType": "Legs",
+    "tags": [
+      "azure rathalos"
+    ],
+    "baseDefense": 56,
+    "fireResist": 3,
+    "waterResist": 2,
+    "thunderResist": 2,
+    "iceResist": -3,
+    "dragonResist": -4,
+    "skills": [
+      {
+        "id": "windproof",
+        "level": 2
+      },
+      {
+        "id": "rathalosMastery"
+      }
+    ],
+    "slots": [
+      {
+        "level": 3
+      }
+    ],
+    "id": 161
+  },
+  {
+    "name": "Rath Soul Coil Alpha",
+    "itemType": "Legs",
+    "tags": [
+      "azure rathalos"
+    ],
+    "baseDefense": 56,
+    "fireResist": 3,
+    "waterResist": 2,
+    "thunderResist": 2,
+    "iceResist": -3,
+    "dragonResist": -4,
+    "skills": [
+      {
+        "id": "windproof",
+        "level": 2
+      },
+      {
+        "id": "piercingShots",
+        "level": 1
+      },
+      {
+        "id": "rathalosMastery"
+      }
+    ],
+    "id": 162,
+    "slots": []
+  },
+  {
+    "name": "Diablos Coil Beta",
+    "itemType": "Legs",
+    "baseDefense": 54,
+    "fireResist": 3,
+    "waterResist": -2,
+    "thunderResist": 0,
+    "iceResist": -3,
+    "dragonResist": 2,
+    "skills": [
+      {
+        "id": "marathonRunner",
+        "level": 2
+      },
+      {
+        "id": "diablosMastery"
+      }
+    ],
+    "slots": [
+      {
+        "level": 2
+      }
+    ],
+    "id": 163
+  },
+  {
+    "name": "Diablos Coil Alpha",
+    "itemType": "Legs",
+    "baseDefense": 54,
+    "fireResist": 3,
+    "waterResist": -2,
+    "thunderResist": 0,
+    "iceResist": -3,
+    "dragonResist": 2,
+    "skills": [
+      {
+        "id": "marathonRunner",
+        "level": 2
+      },
+      {
+        "id": "criticalDraw",
+        "level": 1
+      },
+      {
+        "id": "diablosMastery"
+      }
+    ],
+    "id": 164,
+    "slots": []
+  },
+  {
+    "name": "Rathalos Coil Beta",
+    "itemType": "Legs",
+    "baseDefense": 54,
+    "fireResist": 3,
+    "waterResist": 1,
+    "thunderResist": -2,
+    "iceResist": 1,
+    "dragonResist": -3,
+    "skills": [
+      {
+        "id": "fireAttack",
+        "level": 2
+      },
+      {
+        "id": "rathalosMastery"
+      }
+    ],
+    "slots": [
+      {
+        "level": 2
+      }
+    ],
+    "id": 165
+  },
+  {
+    "name": "Rathalos Coil Alpha",
+    "itemType": "Legs",
+    "baseDefense": 54,
+    "fireResist": 3,
+    "waterResist": 1,
+    "thunderResist": -2,
+    "iceResist": 1,
+    "dragonResist": -3,
+    "skills": [
+      {
+        "id": "fireAttack",
+        "level": 2
+      },
+      {
+        "id": "focus",
+        "level": 1
+      },
+      {
+        "id": "rathalosMastery"
+      }
+    ],
+    "id": 166,
+    "slots": []
+  },
+  {
+    "name": "Odogaron Coil Beta",
+    "itemType": "Legs",
+    "baseDefense": 54,
+    "fireResist": 2,
+    "waterResist": 2,
+    "thunderResist": -2,
+    "iceResist": -3,
+    "dragonResist": 0,
+    "skills": [
+      {
+        "id": "criticalEye",
+        "level": 2
+      },
+      {
+        "id": "odogaronMastery"
+      }
+    ],
+    "slots": [
+      {
+        "level": 2
+      }
+    ],
+    "id": 167
+  },
+  {
+    "name": "Odogaron Coil Alpha",
+    "itemType": "Legs",
+    "baseDefense": 54,
+    "fireResist": 2,
+    "waterResist": 2,
+    "thunderResist": -2,
+    "iceResist": -3,
+    "dragonResist": 0,
+    "skills": [
+      {
+        "id": "criticalEye",
+        "level": 2
+      },
+      {
+        "id": "speedSharpening",
+        "level": 1
+      },
+      {
+        "id": "odogaronMastery"
+      }
+    ],
+    "id": 168,
+    "slots": []
+  },
+  {
+    "name": "Legiana Coil Beta",
+    "itemType": "Legs",
+    "baseDefense": 54,
+    "fireResist": -1,
+    "waterResist": 2,
+    "thunderResist": -3,
+    "iceResist": 3,
+    "dragonResist": 0,
+    "skills": [
+      {
+        "id": "iceAttack",
+        "level": 2
+      },
+      {
+        "id": "legianaFavor"
+      }
+    ],
+    "slots": [
+      {
+        "level": 2
+      }
+    ],
+    "id": 169
+  },
+  {
+    "name": "Legiana Coil Alpha",
+    "itemType": "Legs",
+    "baseDefense": 54,
+    "fireResist": -1,
+    "waterResist": 2,
+    "thunderResist": -3,
+    "iceResist": 3,
+    "dragonResist": 0,
+    "skills": [
+      {
+        "id": "iceAttack",
+        "level": 2
+      },
+      {
+        "id": "windproof",
+        "level": 1
+      },
+      {
+        "id": "legianaFavor"
+      }
+    ],
+    "id": 170,
+    "slots": []
+  },
+  {
+    "name": "Lavasioth Coil Beta",
+    "itemType": "Legs",
+    "baseDefense": 56,
+    "fireResist": 3,
+    "waterResist": -3,
+    "thunderResist": 1,
+    "iceResist": -2,
+    "dragonResist": 2,
+    "skills": [
+      {
+        "id": "quickSheath",
+        "level": 2
+      }
+    ],
+    "slots": [
+      {
+        "level": 1
+      }
+    ],
+    "id": 171
+  },
+  {
+    "name": "Lavasioth Coil Alpha",
+    "itemType": "Legs",
+    "baseDefense": 56,
+    "fireResist": 3,
+    "waterResist": -3,
+    "thunderResist": 1,
+    "iceResist": -2,
+    "dragonResist": 2,
+    "skills": [
+      {
+        "id": "quickSheath",
+        "level": 2
+      },
+      {
+        "id": "recoveryUp",
+        "level": 1
+      }
+    ],
+    "id": 172,
+    "slots": []
+  },
+  {
+    "name": "Ingot Coil Beta",
+    "itemType": "Legs",
+    "baseDefense": 50,
+    "fireResist": -2,
+    "waterResist": 0,
+    "thunderResist": 3,
+    "iceResist": -1,
+    "dragonResist": 0,
+    "skills": [
+      {
+        "id": "windproof",
+        "level": 1
+      }
+    ],
+    "slots": [
+      {
+        "level": 3
+      }
+    ],
+    "id": 173
+  },
+  {
+    "name": "Ingot Coil Alpha",
+    "itemType": "Legs",
+    "baseDefense": 50,
+    "fireResist": -2,
+    "waterResist": 0,
+    "thunderResist": 3,
+    "iceResist": -1,
+    "dragonResist": 0,
+    "skills": [
+      {
+        "id": "windproof",
+        "level": 2
+      }
+    ],
+    "id": 174,
+    "slots": []
+  },
+  {
+    "name": "High Metal Coil Beta",
+    "itemType": "Legs",
+    "baseDefense": 50,
+    "fireResist": 0,
+    "waterResist": -1,
+    "thunderResist": -2,
+    "iceResist": 3,
+    "dragonResist": 0,
+    "skills": [
+      {
+        "id": "capacityBoost",
+        "level": 1
+      }
+    ],
+    "slots": [
+      {
+        "level": 1
+      }
+    ],
+    "id": 175
+  },
+  {
+    "name": "High Metal Coil Alpha",
+    "itemType": "Legs",
+    "baseDefense": 50,
+    "fireResist": 0,
+    "waterResist": -1,
+    "thunderResist": -2,
+    "iceResist": 3,
+    "dragonResist": 0,
+    "skills": [
+      {
+        "id": "capacityBoost",
+        "level": 1
+      },
+      {
+        "id": "defenseBoost",
+        "level": 1
+      }
+    ],
+    "id": 176,
+    "slots": []
+  },
+  {
+    "name": "Commission Belt Beta",
+    "itemType": "Legs",
+    "baseDefense": 70,
+    "fireResist": 2,
+    "waterResist": 2,
+    "thunderResist": 2,
+    "iceResist": 2,
+    "dragonResist": 2,
+    "skills": [
+      {
+        "id": "mushroomancer",
+        "level": 1
+      }
+    ],
+    "slots": [
+      {
+        "level": 2
+      }
+    ],
+    "id": 177
+  },
+  {
+    "name": "Commission Belt Alpha",
+    "itemType": "Legs",
+    "baseDefense": 70,
+    "fireResist": 2,
+    "waterResist": 2,
+    "thunderResist": 2,
+    "iceResist": 2,
+    "dragonResist": 2,
+    "skills": [
+      {
+        "id": "mushroomancer",
+        "level": 1
+      },
+      {
+        "id": "proTransporter",
+        "level": 1
+      }
+    ],
+    "slots": [
+      {
+        "level": 1
+      }
+    ],
+    "id": 178
+  },
+  {
+    "name": "Guild Cross Coil Beta",
+    "itemType": "Legs",
+    "baseDefense": 62,
+    "fireResist": 0,
+    "waterResist": 0,
+    "thunderResist": 0,
+    "iceResist": 0,
+    "dragonResist": 0,
+    "skills": [
+      {
+        "id": "fortify",
+        "level": 1
+      }
+    ],
+    "slots": [
+      {
+        "level": 1
+      },
+      {
+        "level": 1
+      },
+      {
+        "level": 1
+      }
+    ],
+    "id": 179
+  },
+  {
+    "name": "Guild Cross Coil Alpha",
+    "itemType": "Legs",
+    "baseDefense": 62,
+    "fireResist": 0,
+    "waterResist": 0,
+    "thunderResist": 0,
+    "iceResist": 0,
+    "dragonResist": 0,
+    "skills": [
+      {
+        "id": "fortify",
+        "level": 1
+      },
+      {
+        "id": "dragonResistance",
+        "level": 2
+      }
+    ],
+    "slots": [
+      {
+        "level": 1
+      }
+    ],
+    "id": 180
+  },
+  {
+    "name": "Vangis Coil Alpha",
+    "tags": [
+      "deviljho"
+    ],
+    "itemType": "Legs",
+    "baseDefense": 58,
+    "fireResist": 1,
+    "waterResist": 1,
+    "thunderResist": -3,
+    "iceResist": 2,
+    "dragonResist": -3,
+    "skills": [
+      {
+        "id": "latentPower",
+        "level": 1
+      },
+      {
+        "id": "handicraft",
+        "level": 1
+      }
+    ],
+    "slots": [
+      {
+        "level": 1
+      }
+    ],
+    "id": 327
+  },
+  {
+    "name": "Vangis Coil Beta",
+    "tags": [
+      "deviljho"
+    ],
+    "itemType": "Legs",
+    "baseDefense": 58,
+    "fireResist": 1,
+    "waterResist": 1,
+    "thunderResist": -3,
+    "iceResist": 2,
+    "dragonResist": -3,
+    "skills": [
+      {
+        "id": "latentPower",
+        "level": 1
+      }
+    ],
+    "slots": [
+      {
+        "level": 3
+      },
+      {
+        "level": 1
+      }
+    ],
+    "id": 328
+  }
 ]
