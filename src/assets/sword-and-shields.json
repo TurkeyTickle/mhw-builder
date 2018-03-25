@@ -1,6 +1,8 @@
 [
   {
     "name": "Chrome Slicer II",
+	"tags": ["ore", "sleep", "hidden"],
+	"rarity": 6,
     "itemType": "Weapon",
     "weaponType": "SwordAndShield",
     "baseAttack": 252,
@@ -21,6 +23,8 @@
   },
   {
     "name": "Eradication Vanguard",
+	"tags": ["nergigante", "dragon"],
+	"rarity": 8,
     "itemType": "Weapon",
     "weaponType": "SwordAndShield",
     "baseAttack": 294,
@@ -39,6 +43,8 @@
   },
   {
     "name": "Corona",
+	"tags": ["rathalos", "fire"],
+	"rarity": 7,
     "itemType": "Weapon",
     "weaponType": "SwordAndShield",
     "baseAttack": 266,
@@ -54,7 +60,9 @@
     "id": 44
   },
   {
-    "name": "Corona",
+    "name": "Master Bang",
+	"tags": ["workshop", "thunder", "hidden"],
+	"rarity": 7,
     "itemType": "Weapon",
     "weaponType": "SwordAndShield",
     "baseAttack": 280,
@@ -73,6 +81,8 @@
   },
   {
     "name": "Rogue Wave III",
+	"tags": ["water"],
+	"rarity": 6,
     "itemType": "Weapon",
     "weaponType": "SwordAndShield",
     "baseAttack": 252,
@@ -89,6 +99,8 @@
   },
   {
     "name": "Legia Rimespire",
+	"tags": ["legiana", "ice"],
+	"rarity": 8,
     "itemType": "Weapon",
     "weaponType": "SwordAndShield",
     "baseAttack": 224,
@@ -105,6 +117,8 @@
   },
   {
     "name": "Royal Rose",
+	"tags": ["rathian", "poison"],
+	"rarity": 7,
     "itemType": "Weapon",
     "weaponType": "SwordAndShield",
     "baseAttack": 266,
@@ -121,6 +135,8 @@
   },
   {
     "name": "Lumu Tabar III",
+	"tags": ["paolumu", "blast", "hidden"],
+	"rarity": 6,
     "itemType": "Weapon",
     "weaponType": "SwordAndShield",
     "baseAttack": 238,
@@ -141,6 +157,8 @@
   },
   {
     "name": "Datura Blossom III",
+	"tags": ["pukei-pukei", "poison"],
+	"rarity": 6,
     "itemType": "Weapon",
     "weaponType": "SwordAndShield",
     "baseAttack": 238,
@@ -160,6 +178,8 @@
   },
   {
     "name": "Malady's Tabar III",
+	"tags": ["great", "girros", "paralysis"],
+	"rarity": 6,
     "itemType": "Weapon",
     "weaponType": "SwordAndShield",
     "baseAttack": 224,
@@ -172,13 +192,16 @@
   },
   {
     "name": "Grand Barong II",
+	"tags": ["bone", "paralysis", "hidden"],
+	"rarity": 6,
     "itemType": "Weapon",
     "weaponType": "SwordAndShield",
     "baseAttack": 266,
     "maxSharpness": "Blue",
     "baseAffinityPercent": 0,
     "ailment": "Paralysis",
-    "ailmentBaseAttack": 300,
+	"ailmentBaseAttack": 300,
+	"ailmentHidden": true,
     "baseDefense": 10,
     "slots": [
       {
@@ -189,6 +212,8 @@
   },
   {
     "name": "Baan Claw III",
+	"tags": ["radobaan", "sleep"],
+	"rarity": 6,
     "itemType": "Weapon",
     "weaponType": "SwordAndShield",
     "baseAttack": 266,
@@ -202,6 +227,8 @@
   },
   {
     "name": "Jagras Garotte III",
+	"tags": ["great", "jagras", "water", "hidden"],
+	"rarity": 6,
     "itemType": "Weapon",
     "weaponType": "SwordAndShield",
     "baseAttack": 266,
@@ -222,6 +249,8 @@
   },
   {
     "name": "Lightning Nemesis III",
+	"tags": ["thunder"],
+	"rarity": 6,
     "itemType": "Weapon",
     "weaponType": "SwordAndShield",
     "baseAttack": 266,
@@ -238,6 +267,8 @@
   },
   {
     "name": "Barroth Club II",
+	"tags": ["barroth", "paralysis", "hidden"],
+	"rarity": 6,
     "itemType": "Weapon",
     "weaponType": "SwordAndShield",
     "baseAttack": 294,
@@ -259,6 +290,8 @@
   },
   {
     "name": "Gnashing Flammensucher",
+	"tags": ["anjanath", "fire"],
+	"rarity": 7,
     "itemType": "Weapon",
     "weaponType": "SwordAndShield",
     "baseAttack": 294,
@@ -271,6 +304,8 @@
   },
   {
     "name": "Dragonbone Sword III",
+	"tags": ["dragonbone", "dragon"],
+	"rarity": 6,
     "itemType": "Weapon",
     "weaponType": "SwordAndShield",
     "baseAttack": 196,
@@ -288,6 +323,8 @@
   },
   {
     "name": "Thunderbolt Sword",
+	"tags": ["kirin", "thunder"],
+	"rarity": 7,
     "itemType": "Weapon",
     "weaponType": "SwordAndShield",
     "baseAttack": 224,
@@ -300,6 +337,8 @@
   },
   {
     "name": "Teostra's Emblem",
+	"tags": ["blacksteel", "teostra", "blast"],
+	"rarity": 8,
     "itemType": "Weapon",
     "weaponType": "SwordAndShield",
     "baseAttack": 266,
@@ -312,6 +351,8 @@
   },
   {
     "name": "Xeno Mabura",
+	"tags": ["xeno'jiva", "dragon"],
+	"rarity": 8,
     "itemType": "Weapon",
     "weaponType": "SwordAndShield",
     "baseAttack": 238,
@@ -332,6 +373,8 @@
   },
   {
     "name": "Fatal Bite",
+	"tags": ["deviljho", "dragon"],
+	"rarity": 7,
     "itemType": "Weapon",
     "weaponType": "SwordAndShield",
     "baseAttack": 308,

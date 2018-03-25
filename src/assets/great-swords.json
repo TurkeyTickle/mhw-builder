@@ -1,6 +1,7 @@
 [
   {
     "name": "Chrome Razor II",
+	"tags": ["ore", "poison", "hidden"],
     "rarity": 6,
     "itemType": "Weapon",
     "weaponType": "GreatSword",
@@ -21,7 +22,8 @@
     "id": 1
   },
   {
-    "name": "Purgation's Atrocity",
+	"name": "Purgation's Atrocity",
+	"tags": ["nergigante", "dragon"],
     "rarity": 8,
     "itemType": "Weapon",
     "weaponType": "GreatSword",
@@ -41,6 +43,7 @@
   },
   {
     "name": "Lightning Punisher III",
+	"tags": ["tzitzi-ya-ku", "thunder"],
     "rarity": 6,
     "itemType": "Weapon",
     "weaponType": "GreatSword",
@@ -58,6 +61,7 @@
   },
   {
     "name": "Frost Blade II",
+	"tags": ["legiana", "ice"],
     "rarity": 6,
     "itemType": "Weapon",
     "weaponType": "GreatSword",
@@ -75,6 +79,7 @@
   },
   {
     "name": "Jagras Hacker III",
+	"tags": ["great", "jagras", "water", "hidden"],
     "rarity": 6,
     "itemType": "Weapon",
     "weaponType": "GreatSword",
@@ -96,6 +101,7 @@
   },
   {
     "name": "Malady's Kiss III",
+	"tags": ["great", "girros", "paralysis"],
     "rarity": 6,
     "itemType": "Weapon",
     "weaponType": "GreatSword",
@@ -109,6 +115,7 @@
   },
   {
     "name": "Lava Blaze II",
+	"tags": ["lavasioth", "fire"],
     "rarity": 7,
     "itemType": "Weapon",
     "weaponType": "GreatSword",
@@ -129,6 +136,7 @@
   },
   {
     "name": "Datura Blaze II",
+	"tags": ["pukei-pukei", "poison"],
     "rarity": 7,
     "itemType": "Weapon",
     "weaponType": "GreatSword",
@@ -149,6 +157,7 @@
   },
   {
     "name": "Rathalos Glinsword",
+	"tags": ["fire"],
     "rarity": 8,
     "itemType": "Weapon",
     "weaponType": "GreatSword",
@@ -166,6 +175,7 @@
   },
   {
     "name": "Giant Jawblade II",
+	"tags": ["bone", "ice", "hidden"],
     "rarity": 6,
     "itemType": "Weapon",
     "weaponType": "GreatSword",
@@ -185,6 +195,7 @@
   },
   {
     "name": "Leviathan's Fury",
+	"tags": ["vaal", "hazak", "dragon"],
     "rarity": 8,
     "itemType": "Weapon",
     "weaponType": "GreatSword",
@@ -204,6 +215,7 @@
   },
   {
     "name": "Gnashing Flammenzahn",
+	"tags": ["anjanath", "fire"],
     "rarity": 7,
     "itemType": "Weapon",
     "weaponType": "GreatSword",
@@ -217,6 +229,7 @@
   },
   {
     "name": "Water Golem III",
+	"tags": ["water"],
     "rarity": 6,
     "itemType": "Weapon",
     "weaponType": "GreatSword",
@@ -234,6 +247,7 @@
   },
   {
     "name": "Barroth Shredder III",
+	"tags": ["barroth", "paralysis", "hidden"],
     "rarity": 6,
     "itemType": "Weapon",
     "weaponType": "GreatSword",
@@ -256,6 +270,7 @@
   },
   {
     "name": "Radobaan Slab III",
+	"tags": ["radobaan", "sleep"],
     "rarity": 6,
     "itemType": "Weapon",
     "weaponType": "GreatSword",
@@ -270,6 +285,7 @@
   },
   {
     "name": "Dragonbone Cleaver III",
+	"tags": ["dragon"],
     "rarity": 6,
     "itemType": "Weapon",
     "weaponType": "GreatSword",
@@ -291,6 +307,7 @@
   },
   {
     "name": "King Thundersword",
+	"tags": ["kirin", "thunder"],
     "rarity": 8,
     "itemType": "Weapon",
     "weaponType": "GreatSword",
@@ -304,6 +321,7 @@
   },
   {
     "name": "Magda Potestas II",
+	"tags": ["zorah", "magdaros", "blast"],
     "rarity": 7,
     "itemType": "Weapon",
     "weaponType": "GreatSword",
@@ -322,6 +340,7 @@
   },
   {
     "name": "Daora's Decimator",
+	"tags": ["blacksteel", "kushala", "daora", "ice"],
     "rarity": 8,
     "itemType": "Weapon",
     "weaponType": "GreatSword",
@@ -340,6 +359,7 @@
   },
   {
     "name": "Xeno Maliq",
+	"tags": ["xeno'jiva", "dragon"],
     "rarity": 8,
     "itemType": "Weapon",
     "weaponType": "GreatSword",
@@ -362,6 +382,7 @@
   },
   {
     "name": "Great Wyvern Jawblade",
+	"tags": ["workshop", "blast", "hidden"],
     "rarity": 8,
     "itemType": "Weapon",
     "weaponType": "GreatSword",
@@ -381,6 +402,7 @@
   },
   {
     "name": "Anguish",
+	"tags": ["deviljho", "dragon"],
     "rarity": 7,
     "itemType": "Weapon",
     "weaponType": "GreatSword",

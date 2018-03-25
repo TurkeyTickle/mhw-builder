@@ -1,6 +1,8 @@
 [
   {
     "name": "Chrome Guardian II",
+	"tags": ["ore", "thunder"],
+	"rarity": 6,
     "itemType": "Weapon",
     "weaponType": "ChargeBlade",
     "baseAttack": 648,
@@ -21,6 +23,8 @@
   },
   {
     "name": "Devastation's Thorns",
+	"tags": ["nergigante", "dragon"],
+	"rarity": 8,
     "itemType": "Weapon",
     "weaponType": "ChargeBlade",
     "baseAttack": 756,
@@ -39,6 +43,8 @@
   },
   {
     "name": "Halberion Blade",
+	"tags": ["rathalos", "fire"],
+	"rarity": 7,
     "itemType": "Weapon",
     "weaponType": "ChargeBlade",
     "baseAttack": 684,
@@ -55,6 +61,8 @@
   },
   {
     "name": "Jyura Depth III",
+	"tags": ["jyuratodus", "water"],
+	"rarity": 6,
     "itemType": "Weapon",
     "weaponType": "ChargeBlade",
     "baseAttack": 684,
@@ -71,6 +79,8 @@
   },
   {
     "name": "Gigafrost II",
+	"tags": ["legiana", "ice"],
+	"rarity": 6,
     "itemType": "Weapon",
     "weaponType": "ChargeBlade",
     "baseAttack": 612,
@@ -90,6 +100,8 @@
   },
   {
     "name": "Dear Hacatelia",
+	"tags": ["rathian", "poison"],
+	"rarity": 7,
     "itemType": "Weapon",
     "weaponType": "ChargeBlade",
     "baseAttack": 684,
@@ -109,13 +121,16 @@
   },
   {
     "name": "Mighty Strongarm II",
+	"tags": ["bone", "blast", "hidden"],
+	"rarity": 6,
     "itemType": "Weapon",
     "weaponType": "ChargeBlade",
     "baseAttack": 684,
     "maxSharpness": "Blue",
     "baseAffinityPercent": 0,
     "ailment": "Blast",
-    "ailmentBaseAttack": 240,
+	"ailmentBaseAttack": 240,
+	"ailmentHidden": true,
     "baseDefense": 10,
     "slots": [
       {
@@ -126,6 +141,8 @@
   },
   {
     "name": "Diablos Tyrannis II",
+	"tags": ["ice", "hidden"],
+	"rarity": 7,
     "itemType": "Weapon",
     "weaponType": "ChargeBlade",
     "baseAttack": 828,
@@ -140,6 +157,8 @@
   },
   {
     "name": "Jagras Escudo III",
+	"tags": ["great", "jagras", "sleep", "hidden"],
+	"rarity": 6,
     "itemType": "Weapon",
     "weaponType": "ChargeBlade",
     "baseAttack": 684,
@@ -160,6 +179,8 @@
   },
   {
     "name": "Gama Silt II",
+	"tags": ["dodogama", "blast"],
+	"rarity": 7,
     "itemType": "Weapon",
     "weaponType": "ChargeBlade",
     "baseAttack": 612,
@@ -179,6 +200,8 @@
   },
   {
     "name": "Girros Nadja III",
+	"tags": ["great", "girros", "paralysis"],
+	"rarity": 6,
     "itemType": "Weapon",
     "weaponType": "ChargeBlade",
     "baseAttack": 576,
@@ -191,6 +214,8 @@
   },
   {
     "name": "Hazak Aspida II",
+	"tags": ["vaal", "dragon"],
+	"rarity": 7,
     "itemType": "Weapon",
     "weaponType": "ChargeBlade",
     "baseAttack": 684,
@@ -208,6 +233,8 @@
   },
   {
     "name": "Kadachi Kaina III",
+	"tags": ["tobi-kadachi", "thunder"],
+	"rarity": 6,
     "itemType": "Weapon",
     "weaponType": "ChargeBlade",
     "baseAttack": 648,
@@ -224,6 +251,8 @@
   },
   {
     "name": "Odium",
+	"tags": ["odogaron", "fire", "hidden"],
+	"rarity": 8,
     "itemType": "Weapon",
     "weaponType": "ChargeBlade",
     "baseAttack": 576,
@@ -237,6 +266,8 @@
   },
   {
     "name": "Dragonbone Cutter III",
+	"tags": ["dragon"],
+	"rarity": 6,
     "itemType": "Weapon",
     "weaponType": "ChargeBlade",
     "baseAttack": 576,
@@ -257,6 +288,8 @@
   },
   {
     "name": "Avenging Magda Manus",
+	"tags": ["zorah", "magdaros", "blast"],
+	"rarity": 8,
     "itemType": "Weapon",
     "weaponType": "ChargeBlade",
     "baseAttack": 756,
@@ -270,6 +303,8 @@
   },
   {
     "name": "Daora's Thwartoise",
+	"tags": ["blacksteel", "kushala", "ice"],
+	"rarity": 8,
     "itemType": "Weapon",
     "weaponType": "ChargeBlade",
     "baseAttack": 648,
@@ -289,6 +324,8 @@
   },
   {
     "name": "Xeno Ra'atz",
+	"tags": ["xeno'jiva", "dragon"],
+	"rarity": 8,
     "itemType": "Weapon",
     "weaponType": "ChargeBlade",
     "baseAttack": 648,
@@ -309,6 +346,8 @@
   },
   {
     "name": "Oppressor's Charge Blade",
+	"tags": ["deviljho", "dragon"],
+	"rarity": 7,
     "itemType": "Weapon",
     "weaponType": "ChargeBlade",
     "baseAttack": 792,

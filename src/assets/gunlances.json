@@ -1,6 +1,8 @@
 [
   {
     "name": "Chrome Gunlance II",
+	"tags": ["ore", "blast", "hidden"],
+	"rarity": 6,
     "itemType": "Weapon",
     "weaponType": "Gunlance",
     "baseAttack": 414,
@@ -21,6 +23,8 @@
   },
   {
     "name": "Eradication Flame",
+	"tags": ["nergigante", "dragon"],
+	"rarity": 8,
     "itemType": "Weapon",
     "weaponType": "Gunlance",
     "baseAttack": 483,
@@ -39,6 +43,8 @@
   },
   {
     "name": "Mythic Kadachi Striker",
+	"tags": ["tobi-kadachi", "thunder"],
+	"rarity": 7,
     "itemType": "Weapon",
     "weaponType": "Gunlance",
     "baseAttack": 414,
@@ -55,6 +61,8 @@
   },
   {
     "name": "Blue Chariot",
+	"tags": ["rathalos", "fire"],
+	"rarity": 8,
     "itemType": "Weapon",
     "weaponType": "Gunlance",
     "baseAttack": 437,
@@ -71,6 +79,8 @@
   },
   {
     "name": "Royal Burst",
+	"tags": ["rathian", "poison"],
+	"rarity": 6,
     "itemType": "Weapon",
     "weaponType": "Gunlance",
     "baseAttack": 437,
@@ -87,6 +97,8 @@
   },
   {
     "name": "Jyura Buster III",
+	"tags": ["jyuratodus", "water"],
+	"rarity": 6,
     "itemType": "Weapon",
     "weaponType": "Gunlance",
     "baseAttack": 437,
@@ -103,6 +115,8 @@
   },
   {
     "name": "Legiana Cannon II",
+	"tags": ["legiana", "ice"],
+	"rarity": 7,
     "itemType": "Weapon",
     "weaponType": "Gunlance",
     "baseAttack": 368,
@@ -115,6 +129,8 @@
   },
   {
     "name": "Great Bone Gunlance II",
+	"tags": ["bone", "thunder", "hidden"],
+	"rarity": 6,
     "itemType": "Weapon",
     "weaponType": "Gunlance",
     "baseAttack": 437,
@@ -133,6 +149,8 @@
   },
   {
     "name": "Bazel Buster II",
+	"tags": ["bazelgeuse", "blast"],
+	"rarity": 7,
     "itemType": "Weapon",
     "weaponType": "Gunlance",
     "baseAttack": 460,
@@ -149,6 +167,8 @@
   },
   {
     "name": "Glutton Gunlance III",
+	"tags": ["great", "jagras", "sleep", "hidden"],
+	"rarity": 6,
     "itemType": "Weapon",
     "weaponType": "Gunlance",
     "baseAttack": 437,
@@ -169,6 +189,8 @@
   },
   {
     "name": "Deathfang Gunlance III",
+	"tags": ["great", "girros", "paralysis"],
+	"rarity": 6,
     "itemType": "Weapon",
     "weaponType": "Gunlance",
     "baseAttack": 368,
@@ -181,6 +203,8 @@
   },
   {
     "name": "Hazak Spysa II",
+	"tags": ["vaal", "hazak", "dragon"],
+	"rarity": 7,
     "itemType": "Weapon",
     "weaponType": "Gunlance",
     "baseAttack": 460,
@@ -198,6 +222,8 @@
   },
   {
     "name": "Barroth Blaster III",
+	"tags": ["barroth", "paralysis", "hidden"],
+	"rarity": 6,
     "itemType": "Weapon",
     "weaponType": "Gunlance",
     "baseAttack": 460,
@@ -212,6 +238,8 @@
   },
   {
     "name": "Anja Cannon III",
+	"tags": ["anjanath", "fire"],
+	"rarity": 6,
     "itemType": "Weapon",
     "weaponType": "Gunlance",
     "baseAttack": 483,
@@ -224,6 +252,8 @@
   },
   {
     "name": "Dragonbone Gunlance III",
+	"tags": ["dragonbone", "dragon"],
+	"rarity": 6,
     "itemType": "Weapon",
     "weaponType": "Gunlance",
     "baseAttack": 368,
@@ -244,6 +274,8 @@
   },
   {
     "name": "Earthshaker Magda Lahat",
+	"tags": ["zorah", "magdaros", "blast"],
+	"rarity": 8,
     "itemType": "Weapon",
     "weaponType": "Gunlance",
     "baseAttack": 460,
@@ -257,6 +289,8 @@
   },
   {
     "name": "Daora's Brigia",
+	"tags": ["kushala", "daora", "ice"],
+	"rarity": 8,
     "itemType": "Weapon",
     "weaponType": "Gunlance",
     "baseAttack": 414,
@@ -273,6 +307,8 @@
   },
   {
     "name": "Xeno Hemta",
+	"tags": ["xeno'jiva", "dragon"],
+	"rarity": 8,
     "itemType": "Weapon",
     "weaponType": "Gunlance",
     "baseAttack": 391,
@@ -293,6 +329,8 @@
   },
   {
     "name": "Insatiable Gunlance",
+	"tags": ["deviljho", "dragon"],
+	"rarity": 7,
     "itemType": "Weapon",
     "weaponType": "Gunlance",
     "baseAttack": 529,

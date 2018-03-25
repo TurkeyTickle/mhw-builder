@@ -1,6 +1,7 @@
 [
   {
-    "name": "Iron Gospel",
+    "name": "Iron Gospel II",
+	"tags": ["ore", "water", "hidden"],
     "rarity": 6,
     "itemType": "Weapon",
     "weaponType": "LongSword",
@@ -22,6 +23,7 @@
   },
   {
     "name": "Extermination's Edge",
+	"tags": ["nergigante", "dragon"],
     "rarity": 8,
     "itemType": "Weapon",
     "weaponType": "LongSword",
@@ -41,6 +43,7 @@
   },
   {
     "name": "Dazzling Flash III",
+	"tags": ["tzitzi-ya-ku", "thunder", "hidden"],
     "rarity": 6,
     "itemType": "Weapon",
     "weaponType": "LongSword",
@@ -59,6 +62,7 @@
   },
   {
     "name": "Last Dance III",
+	"tags": ["kulu-ya-ku", "sleep", "hidden"],
     "rarity": 6,
     "itemType": "Weapon",
     "weaponType": "LongSword",
@@ -67,11 +71,13 @@
     "baseAffinityPercent": 20,
     "ailment": "Sleep",
     "ailmentBaseAttack": 270,
+    "ailmentHidden": true,
     "id": 25,
     "slots": []
   },
   {
     "name": "Brazenridge II",
+	"tags": ["uragaan", "fire"],
     "rarity": 7,
     "itemType": "Weapon",
     "weaponType": "LongSword",
@@ -93,6 +99,7 @@
   },
   {
     "name": "Wyvern Blade \"Holly\"",
+	"tags": ["rathian", "poison"],
     "rarity": 7,
     "itemType": "Weapon",
     "weaponType": "LongSword",
@@ -110,6 +117,7 @@
   },
   {
     "name": "Wyvern Blade \"Indigo\"",
+	"tags": ["rathalos", "fire"],
     "rarity": 8,
     "itemType": "Weapon",
     "weaponType": "LongSword",
@@ -127,6 +135,7 @@
   },
   {
     "name": "Bone Reaper II",
+	"tags": ["bone", "sleep", "hidden"],
     "rarity": 6,
     "itemType": "Weapon",
     "weaponType": "LongSword",
@@ -146,6 +155,7 @@
   },
   {
     "name": "Bazel Varga Rookslayer",
+	"tags": ["bazelgeuse", "blast"],
     "rarity": 8,
     "itemType": "Weapon",
     "weaponType": "LongSword",
@@ -166,6 +176,7 @@
   },
   {
     "name": "Anja Scimitar III",
+	"tags": ["anjanath", "fire"],
     "rarity": 6,
     "itemType": "Weapon",
     "weaponType": "LongSword",
@@ -179,6 +190,7 @@
   },
   {
     "name": "Dipterus III",
+	"tags": ["jyuratodus", "water"],
     "rarity": 6,
     "itemType": "Weapon",
     "weaponType": "LongSword",
@@ -196,6 +208,7 @@
   },
   {
     "name": "Hazak Grosser II",
+	"tags": ["vaal", "hazak", "dragon"],
     "rarity": 7,
     "itemType": "Weapon",
     "weaponType": "LongSword",
@@ -214,6 +227,7 @@
   },
   {
     "name": "Kadachi Fang III",
+	"tags": ["tobi-kadachi", "thunder"],
     "rarity": 6,
     "itemType": "Weapon",
     "weaponType": "LongSword",
@@ -231,6 +245,7 @@
   },
   {
     "name": "Legia Stealer",
+	"tags": ["legiana", "ice"],
     "rarity": 8,
     "itemType": "Weapon",
     "weaponType": "LongSword",
@@ -244,6 +259,7 @@
   },
   {
     "name": "Dark Scimitar III",
+	"tags": ["hornetaur", "paralysis", "hidden"],
     "rarity": 6,
     "itemType": "Weapon",
     "weaponType": "LongSword",
@@ -262,6 +278,7 @@
   },
   {
     "name": "Dragonbone Stabber III",
+	"tags": ["dragonbone", "dragon"],
     "rarity": 6,
     "itemType": "Weapon",
     "weaponType": "LongSword",
@@ -280,6 +297,7 @@
   },
   {
     "name": "Magda Facultas II",
+	"tags": ["zorah", "magdaros", "blast"],
     "rarity": 7,
     "itemType": "Weapon",
     "weaponType": "LongSword",
@@ -298,6 +316,7 @@
   },
   {
     "name": "Imperial Shimmer",
+	"tags": ["blacksteel", "teostra", "blast"],
     "rarity": 8,
     "itemType": "Weapon",
     "weaponType": "LongSword",
@@ -311,6 +330,7 @@
   },
   {
     "name": "Xeno Cypher",
+	"tags": ["xeno'jiva", "dragon"],
     "rarity": 8,
     "itemType": "Weapon",
     "weaponType": "LongSword",
@@ -333,6 +353,7 @@
   },
   {
     "name": "Divine Slasher",
+	"tags": ["workshop", "dragon", "hidden"],
     "rarity": 8,
     "itemType": "Weapon",
     "weaponType": "LongSword",
@@ -353,6 +374,7 @@
   },
   {
     "name": "Reaver \"Calamity\"",
+	"tags": ["deviljho", "dragon"],
     "rarity": 7,
     "itemType": "Weapon",
     "weaponType": "LongSword",

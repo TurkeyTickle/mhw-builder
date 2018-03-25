@@ -1,6 +1,8 @@
 [
   {
     "name": "Chrome Assault II",
+	"tags": ["ore"],
+	"rarity": 6,
     "itemType": "Weapon",
     "weaponType": "HeavyBowgun",
     "baseAttack": 255,
@@ -17,6 +19,8 @@
   },
   {
     "name": "Destruction's Fusillade",
+	"tags": ["nergigante"],
+	"rarity": 8,
     "itemType": "Weapon",
     "weaponType": "HeavyBowgun",
     "baseAttack": 285,
@@ -31,6 +35,8 @@
   },
   {
     "name": "Water Cannon III",
+	"tags": ["jyuratodus"],
+	"rarity": 6,
     "itemType": "Weapon",
     "weaponType": "HeavyBowgun",
     "baseAttack": 255,
@@ -44,6 +50,8 @@
   },
   {
     "name": "Arma Destroyer III",
+	"tags": ["tzitzi-ya-ku"],
+	"rarity": 6,
     "itemType": "Weapon",
     "weaponType": "HeavyBowgun",
     "baseAttack": 255,
@@ -53,6 +61,8 @@
   },
   {
     "name": "Legia Shattercryst",
+	"tags": ["legiana"],
+	"rarity": 8,
     "itemType": "Weapon",
     "weaponType": "HeavyBowgun",
     "baseAttack": 255,
@@ -66,6 +76,8 @@
   },
   {
     "name": "Gluttonous Fangcannon",
+	"tags": ["great", "jagras"],
+	"rarity": 7,
     "itemType": "Weapon",
     "weaponType": "HeavyBowgun",
     "baseAttack": 270,
@@ -79,6 +91,8 @@
   },
   {
     "name": "Gnashing Flammenkanone",
+	"tags": ["anjanath"],
+	"rarity": 7,
     "itemType": "Weapon",
     "weaponType": "HeavyBowgun",
     "baseAttack": 300,
@@ -92,6 +106,8 @@
   },
   {
     "name": "Power Shooter II",
+	"tags": ["bone"],
+	"rarity": 6,
     "itemType": "Weapon",
     "weaponType": "HeavyBowgun",
     "baseAttack": 270,
@@ -105,6 +121,8 @@
   },
   {
     "name": "Griffon Blazooka",
+	"tags": ["diablos"],
+	"rarity": 8,
     "itemType": "Weapon",
     "weaponType": "HeavyBowgun",
     "baseAttack": 330,
@@ -119,6 +137,8 @@
   },
   {
     "name": "Datura Blaster III",
+	"tags": ["pukei-pukei"],
+	"rarity": 6,
     "itemType": "Weapon",
     "weaponType": "HeavyBowgun",
     "baseAttack": 255,
@@ -135,6 +155,8 @@
   },
   {
     "name": "Baan Roar III",
+	"tags": ["radobaan"],
+	"rarity": 6,
     "itemType": "Weapon",
     "weaponType": "HeavyBowgun",
     "baseAttack": 270,
@@ -145,6 +167,8 @@
   },
   {
     "name": "Gama Cannon II",
+	"tags": ["dodogama"],
+	"rarity": 7,
     "itemType": "Weapon",
     "weaponType": "HeavyBowgun",
     "baseAttack": 255,
@@ -158,6 +182,8 @@
   },
   {
     "name": "Kadachi Lion III",
+	"tags": ["tobi-kadachi"],
+	"rarity": 6,
     "itemType": "Weapon",
     "weaponType": "HeavyBowgun",
     "baseAttack": 255,
@@ -171,6 +197,8 @@
   },
   {
     "name": "Dragonbone Cannon III",
+	"tags": ["dragonbone"],
+	"rarity": 6,
     "itemType": "Weapon",
     "weaponType": "HeavyBowgun",
     "baseAttack": 255,
@@ -184,6 +212,8 @@
   },
   {
     "name": "Quickquiver",
+	"tags": ["kirin"],
+	"rarity": 8,
     "itemType": "Weapon",
     "weaponType": "HeavyBowgun",
     "baseAttack": 255,
@@ -197,6 +227,8 @@
   },
   {
     "name": "Magda Gemitus II",
+	"tags": ["zorah", "magdaros"],
+	"rarity": 7,
     "itemType": "Weapon",
     "weaponType": "HeavyBowgun",
     "baseAttack": 315,
@@ -211,6 +243,8 @@
   },
   {
     "name": "Teostra's Flames",
+	"tags": ["blacksteel", "teostra"],
+	"rarity": 8,
     "itemType": "Weapon",
     "weaponType": "HeavyBowgun",
     "baseAttack": 270,
@@ -220,6 +254,8 @@
   },
   {
     "name": "Xeno Jiiqa",
+	"tags": ["xeno'jiva"],
+	"rarity": 8,
     "itemType": "Weapon",
     "weaponType": "HeavyBowgun",
     "baseAttack": 255,
@@ -236,6 +272,8 @@
   },
   {
     "name": "Dark Devourer",
+	"tags": ["deviljho"],
+	"rarity": 7,
     "itemType": "Weapon",
     "weaponType": "HeavyBowgun",
     "baseAttack": 345,

@@ -1,6 +1,8 @@
 [
   {
     "name": "Cross Blitz II",
+	"tags": ["ore"],
+	"rarity": 6,
     "itemType": "Weapon",
     "weaponType": "LightBowgun",
     "baseAttack": 234,
@@ -17,6 +19,8 @@
   },
   {
     "name": "Cataclysm's Trigger",
+	"tags": ["nergigante"],
+	"rarity": 8,
     "itemType": "Weapon",
     "weaponType": "LightBowgun",
     "baseAttack": 260,
@@ -31,6 +35,8 @@
   },
   {
     "name": "Lumu Typhon III",
+	"tags": ["paolumu"],
+	"rarity": 6,
     "itemType": "Weapon",
     "weaponType": "LightBowgun",
     "baseAttack": 221,
@@ -44,6 +50,8 @@
   },
   {
     "name": "Bazel Typhoon II",
+	"tags": ["bazelgeuse"],
+	"rarity": 7,
     "itemType": "Weapon",
     "weaponType": "LightBowgun",
     "baseAttack": 260,
@@ -53,6 +61,8 @@
   },
   {
     "name": "Jagras Fire",
+	"tags": ["great", "jagras"],
+	"rarity": 6,
     "itemType": "Weapon",
     "weaponType": "LightBowgun",
     "baseAttack": 247,
@@ -69,6 +79,8 @@
   },
   {
     "name": "Rathbuster II",
+	"tags": ["rathalos"],
+	"rarity": 7,
     "itemType": "Weapon",
     "weaponType": "LightBowgun",
     "baseAttack": 247,
@@ -82,6 +94,8 @@
   },
   {
     "name": "Lightning Blitz III",
+	"tags": ["tobi-kadachi"],
+	"rarity": 6,
     "itemType": "Weapon",
     "weaponType": "LightBowgun",
     "baseAttack": 234,
@@ -95,6 +109,8 @@
   },
   {
     "name": "Frost Blitz II",
+	"tags": ["legiana"],
+	"rarity": 6,
     "itemType": "Weapon",
     "weaponType": "LightBowgun",
     "baseAttack": 247,
@@ -104,6 +120,8 @@
   },
   {
     "name": "Sniper Shot II",
+	"tags": ["bone"],
+	"rarity": 6,
     "itemType": "Weapon",
     "weaponType": "LightBowgun",
     "baseAttack": 247,
@@ -118,6 +136,8 @@
   },
   {
     "name": "Gulogleth's Wail",
+	"tags": ["vaal", "hazak"],
+	"rarity": 8,
     "itemType": "Weapon",
     "weaponType": "LightBowgun",
     "baseAttack": 260,
@@ -131,6 +151,8 @@
   },
   {
     "name": "Anja Buster III",
+	"tags": ["anjanath"],
+	"rarity": 6,
     "itemType": "Weapon",
     "weaponType": "LightBowgun",
     "baseAttack": 273,
@@ -140,6 +162,8 @@
   },
   {
     "name": "Jyura Bullet III",
+	"tags": ["jyuratodus"],
+	"rarity": 6,
     "itemType": "Weapon",
     "weaponType": "LightBowgun",
     "baseAttack": 247,
@@ -156,6 +180,8 @@
   },
   {
     "name": "Lava Bullet II",
+	"tags": ["lavasioth"],
+	"rarity": 7,
     "itemType": "Weapon",
     "weaponType": "LightBowgun",
     "baseAttack": 234,
@@ -172,6 +198,8 @@
   },
   {
     "name": "Barroth Shot III",
+	"tags": ["barroth"],
+	"rarity": 6,
     "itemType": "Weapon",
     "weaponType": "LightBowgun",
     "baseAttack": 260,
@@ -186,6 +214,8 @@
   },
   {
     "name": "Karma",
+	"tags": ["odogaron"],
+	"rarity": 8,
     "itemType": "Weapon",
     "weaponType": "LightBowgun",
     "baseAttack": 234,
@@ -199,6 +229,8 @@
   },
   {
     "name": "Dragonbone Bowgun III",
+	"tags": ["dragonbone"],
+	"rarity": 6,
     "itemType": "Weapon",
     "weaponType": "LightBowgun",
     "baseAttack": 208,
@@ -212,6 +244,8 @@
   },
   {
     "name": "Dai-Onigashima",
+	"tags": ["workshop", "bazelgeuse"],
+	"rarity": 8,
     "itemType": "Weapon",
     "weaponType": "LightBowgun",
     "baseAttack": 221,
@@ -225,6 +259,8 @@
   },
   {
     "name": "Mythical Three-Horn",
+	"tags": ["kirin"],
+	"rarity": 8,
     "itemType": "Weapon",
     "weaponType": "LightBowgun",
     "baseAttack": 208,
@@ -234,6 +270,8 @@
   },
   {
     "name": "Daora's Hornet",
+	"tags": ["kushala", "daora"],
+	"rarity": 8,
     "itemType": "Weapon",
     "weaponType": "LightBowgun",
     "baseAttack": 234,
@@ -247,6 +285,8 @@
   },
   {
     "name": "Xeno Nequiina",
+	"tags": ["xeno'jiva"],
+	"rarity": 8,
     "itemType": "Weapon",
     "weaponType": "LightBowgun",
     "baseAttack": 234,
@@ -263,6 +303,8 @@
   },
   {
     "name": "Great Bowgun",
+	"tags": ["workshop"],
+	"rarity": 8,
     "itemType": "Weapon",
     "weaponType": "LightBowgun",
     "baseAttack": 260,
@@ -277,6 +319,8 @@
   },
   {
     "name": "Devil's Madness",
+	"tags": ["deviljho"],
+	"rarity": 7,
     "itemType": "Weapon",
     "weaponType": "LightBowgun",
     "baseAttack": 299,

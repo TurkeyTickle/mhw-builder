@@ -1,6 +1,12 @@
 [
   {
     "name": "Alloy Bow II",
+    "tags": [
+      "ore",
+      "thunder",
+      "hidden"
+    ],
+    "rarity": 6,
     "itemType": "Weapon",
     "weaponType": "Bow",
     "baseAttack": 204,
@@ -21,6 +27,11 @@
   },
   {
     "name": "Doom's Shaft",
+    "tags": [
+      "nergigante",
+      "dragon"
+    ],
+    "rarity": 8,
     "itemType": "Weapon",
     "weaponType": "Bow",
     "baseAttack": 240,
@@ -38,6 +49,12 @@
   },
   {
     "name": "Archer's Dance III",
+    "tags": [
+      "kulu-ya-ku",
+      "blast",
+      "hidden"
+    ],
+    "rarity": 6,
     "itemType": "Weapon",
     "weaponType": "Bow",
     "baseAttack": 204,
@@ -50,6 +67,11 @@
   },
   {
     "name": "Giracles",
+    "tags": [
+      "uragaan",
+      "fire"
+    ],
+    "rarity": 8,
     "itemType": "Weapon",
     "weaponType": "Bow",
     "baseAttack": 228,
@@ -66,6 +88,12 @@
   },
   {
     "name": "Princess Arrow III",
+    "tags": [
+      "rathian",
+      "dragon",
+      "hidden"
+    ],
+    "rarity": 6,
     "itemType": "Weapon",
     "weaponType": "Bow",
     "baseAttack": 216,
@@ -86,6 +114,11 @@
   },
   {
     "name": "Rathslinger III",
+    "tags": [
+      "rathalos",
+      "fire"
+    ],
+    "rarity": 7,
     "itemType": "Weapon",
     "weaponType": "Bow",
     "baseAttack": 216,
@@ -101,6 +134,11 @@
   },
   {
     "name": "Water Shot III",
+    "tags": [
+      "jyuratodus",
+      "water"
+    ],
+    "rarity": 6,
     "itemType": "Weapon",
     "weaponType": "Bow",
     "baseAttack": 204,
@@ -116,6 +154,11 @@
   },
   {
     "name": "Legia Snowfletcher",
+    "tags": [
+      "legiana",
+      "ice"
+    ],
+    "rarity": 8,
     "itemType": "Weapon",
     "weaponType": "Bow",
     "baseAttack": 180,
@@ -127,6 +170,12 @@
   },
   {
     "name": "Hunter's Proudbow II",
+    "tags": [
+      "bone",
+      "water",
+      "hidden"
+    ],
+    "rarity": 6,
     "itemType": "Weapon",
     "weaponType": "Bow",
     "baseAttack": 216,
@@ -144,6 +193,12 @@
   },
   {
     "name": "Hazak Velos II",
+    "tags": [
+      "vaal",
+      "hazak",
+      "dragon"
+    ],
+    "rarity": 7,
     "itemType": "Weapon",
     "weaponType": "Bow",
     "baseAttack": 228,
@@ -160,6 +215,12 @@
   },
   {
     "name": "Cera Coilbender",
+    "tags": [
+      "diablos",
+      "ice",
+      "hidden"
+    ],
+    "rarity": 8,
     "itemType": "Weapon",
     "weaponType": "Bow",
     "baseAttack": 264,
@@ -180,6 +241,12 @@
   },
   {
     "name": "Datura String III",
+    "tags": [
+      "pukei-pukei",
+      "blast",
+      "hidden"
+    ],
+    "rarity": 6,
     "itemType": "Weapon",
     "weaponType": "Bow",
     "baseAttack": 204,
@@ -199,6 +266,11 @@
   },
   {
     "name": "Anja Arch III",
+    "tags": [
+      "anjanath",
+      "fire"
+    ],
+    "rarity": 6,
     "itemType": "Weapon",
     "weaponType": "Bow",
     "baseAttack": 240,
@@ -210,6 +282,11 @@
   },
   {
     "name": "Flying Kadachi Strikebow",
+    "tags": [
+      "tobi-kadachi",
+      "thunder"
+    ],
+    "rarity": 7,
     "itemType": "Weapon",
     "weaponType": "Bow",
     "baseAttack": 204,
@@ -225,6 +302,7 @@
   },
   {
     "name": "Dragonbone Bow III",
+    "rarity": 6,
     "itemType": "Weapon",
     "weaponType": "Bow",
     "baseAttack": 180,
@@ -244,6 +322,12 @@
   },
   {
     "name": "Daora's Sagittarii",
+    "tags": [
+      "kushala",
+      "blacksteel",
+      "ice"
+    ],
+    "rarity": 8,
     "itemType": "Weapon",
     "weaponType": "Bow",
     "baseAttack": 204,
@@ -262,6 +346,11 @@
   },
   {
     "name": "Xeno Metora",
+    "tags": [
+      "xeno'jiva",
+      "dragon"
+    ],
+    "rarity": 8,
     "itemType": "Weapon",
     "weaponType": "Bow",
     "baseAttack": 204,
@@ -281,6 +370,11 @@
   },
   {
     "name": "Great Hunter's Bow",
+    "tags": [
+      "workshop",
+      "blast"
+    ],
+    "rarity": 8,
     "itemType": "Weapon",
     "weaponType": "Bow",
     "baseAttack": 228,
@@ -297,6 +391,11 @@
   },
   {
     "name": "Villainous Brace",
+    "tags": [
+      "deviljho",
+      "dragon"
+    ],
+    "rarity": 7,
     "itemType": "Weapon",
     "weaponType": "Bow",
     "baseAttack": 276,
@@ -306,5 +405,26 @@
     "elderseal": "High",
     "id": 287,
     "slots": []
+  },
+  {
+    "name": "Aloy's War Bow",
+    "tags": [
+      "thunder",
+      "hidden"
+    ],
+    "rarity": 6,
+    "itemType": "Weapon",
+    "weaponType": "Bow",
+    "baseAttack": 192,
+    "baseAffinityPercent": 30,
+    "element": "Thunder",
+    "elementBaseAttack": 240,
+    "elementHidden": true,
+    "slots": [
+      {
+        "level": 3
+      }
+    ],
+    "id": 288
   }
 ]

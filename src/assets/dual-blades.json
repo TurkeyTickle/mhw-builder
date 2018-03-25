@@ -1,6 +1,8 @@
 [
   {
     "name": "Chrome Slicers II",
+	"tags": ["ore", "poison", "hidden"],
+	"rarity": 6,
     "itemType": "Weapon",
     "weaponType": "DualBlades",
     "baseAttack": 252,
@@ -21,6 +23,8 @@
   },
   {
     "name": "Decimation Claws",
+	"tags": ["nergigante", "dragon"],
+	"rarity": 8,
     "itemType": "Weapon",
     "weaponType": "DualBlades",
     "baseAttack": 294,
@@ -39,6 +43,8 @@
   },
   {
     "name": "Dual Destroyers III",
+	"tags": ["tzitzi-ya-ku", "thunder", "hidden"],
+	"rarity": 6,
     "itemType": "Weapon",
     "weaponType": "DualBlades",
     "baseAttack": 252,
@@ -56,6 +62,8 @@
   },
   {
     "name": "Bazelhawk Rookslayer",
+	"tags": ["bazelgeuse", "blast"],
+	"rarity": 8,
     "itemType": "Weapon",
     "weaponType": "DualBlades",
     "baseAttack": 280,
@@ -72,6 +80,8 @@
   },
   {
     "name": "Freeze Chain II",
+	"tags": ["legiana", "ice"],
+	"rarity": 6,
     "itemType": "Weapon",
     "weaponType": "DualBlades",
     "baseAttack": 252,
@@ -88,6 +98,8 @@
   },
   {
     "name": "Arcanaria III",
+	"tags": ["kulu-ya-ku", "sleep"],
+	"rarity": 6,
     "itemType": "Weapon",
     "weaponType": "DualBlades",
     "baseAttack": 238,
@@ -100,6 +112,8 @@
   },
   {
     "name": "Holy Sabers",
+	"tags": ["workshop", "water"],
+	"rarity": 7,
     "itemType": "Weapon",
     "weaponType": "DualBlades",
     "baseAttack": 252,
@@ -116,6 +130,8 @@
   },
   {
     "name": "Strong Hatchets II",
+	"tags": ["bone", "blast"],
+	"rarity": 6,
     "itemType": "Weapon",
     "weaponType": "DualBlades",
     "baseAttack": 266,
@@ -133,6 +149,8 @@
   },
   {
     "name": "Anja Cyclone III",
+	"tags": ["anjanath", "fire"],
+	"rarity": 7,
     "itemType": "Weapon",
     "weaponType": "DualBlades",
     "baseAttack": 252,
@@ -145,6 +163,8 @@
   },
   {
     "name": "Diablos Clubs II",
+	"tags": ["ice", "hidden"],
+	"rarity": 7,
     "itemType": "Weapon",
     "weaponType": "DualBlades",
     "baseAttack": 322,
@@ -163,6 +183,8 @@
   },
   {
     "name": "Jyura Hatchets III",
+	"tags": ["jyuratodus", "water"],
+	"rarity": 6,
     "itemType": "Weapon",
     "weaponType": "DualBlades",
     "baseAttack": 266,
@@ -179,6 +201,8 @@
   },
   {
     "name": "Lava Cyclone II",
+	"tags": ["lavasioth", "fire"],
+	"rarity": 7,
     "itemType": "Weapon",
     "weaponType": "DualBlades",
     "baseAttack": 252,
@@ -198,6 +222,8 @@
   },
   {
     "name": "Dark Ripper III",
+	"tags": ["hornetaur", "paralysis", "hidden"],
+	"rarity": 6,
     "itemType": "Weapon",
     "weaponType": "DualBlades",
     "baseAttack": 224,
@@ -215,6 +241,8 @@
   },
   {
     "name": "Kadachi Claws III",
+	"tags": ["tobi-kadachi", "thunder"],
+	"rarity": 6,
     "itemType": "Weapon",
     "weaponType": "DualBlades",
     "baseAttack": 252,
@@ -231,6 +259,8 @@
   },
   {
     "name": "Sin",
+	"tags": ["odogaron", "fire", "hidden"],
+	"rarity": 8,
     "itemType": "Weapon",
     "weaponType": "DualBlades",
     "baseAttack": 224,
@@ -244,6 +274,8 @@
   },
   {
     "name": "Enduring Schism",
+	"tags": ["dragonbone", "dragon"],
+	"rarity": 7,
     "itemType": "Weapon",
     "weaponType": "DualBlades",
     "baseAttack": 196,
@@ -264,6 +296,8 @@
   },
   {
     "name": "Monarch",
+	"tags": ["kirin", "thunder"],
+	"rarity": 8,
     "itemType": "Weapon",
     "weaponType": "DualBlades",
     "baseAttack": 224,
@@ -276,6 +310,8 @@
   },
   {
     "name": "Magda Ungulae II",
+	"tags": ["zorah", "magdaros", "blast"],
+	"rarity": 7,
     "itemType": "Weapon",
     "weaponType": "DualBlades",
     "baseAttack": 308,
@@ -293,6 +329,8 @@
   },
   {
     "name": "Fire and Ice",
+	"tags": ["blacksteel", "ice", "blast"],
+	"rarity": 8,
     "itemType": "Weapon",
     "weaponType": "DualBlades",
     "baseAttack": 252,
@@ -311,6 +349,8 @@
   },
   {
     "name": "Xeno Raqs",
+	"tags": ["xeno'jiva", "dragon"],
+	"rarity": 8,
     "itemType": "Weapon",
     "weaponType": "DualBlades",
     "baseAttack": 238,
@@ -331,6 +371,8 @@
   },
   {
     "name": "Nergal Gouge",
+	"tags": ["nergigante", "dragon"],
+	"rarity": 7,
     "itemType": "Weapon",
     "weaponType": "DualBlades",
     "baseAttack": 280,
@@ -348,6 +390,8 @@
   },
   {
     "name": "Wrathful Predation",
+	"tags": ["deviljho", "dragon"],
+	"rarity": 7,
     "itemType": "Weapon",
     "weaponType": "DualBlades",
     "baseAttack": 308,

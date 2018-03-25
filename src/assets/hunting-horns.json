@@ -1,6 +1,8 @@
 [
   {
     "name": "Fortissimo II",
+	"tags": ["ore", "paralysis", "hidden"],
+	"rarity": 6,
     "itemType": "Weapon",
     "weaponType": "HuntingHorn",
     "baseAttack": 756,
@@ -21,6 +23,8 @@
   },
   {
     "name": "Desolation's Overture",
+	"tags": ["nergigante", "dragon"],
+	"rarity": 8,
     "itemType": "Weapon",
     "weaponType": "HuntingHorn",
     "baseAttack": 882,
@@ -39,6 +43,8 @@
   },
   {
     "name": "Lightning Drum III",
+	"tags": ["tobi-kadachi", "thunder"],
+	"rarity": 6,
     "itemType": "Weapon",
     "weaponType": "HuntingHorn",
     "baseAttack": 756,
@@ -55,6 +61,8 @@
   },
   {
     "name": "Dancing Davul III",
+	"tags": ["kulu-ya-ku", "sleep", "hidden"],
+	"rarity": 6,
     "itemType": "Weapon",
     "weaponType": "HuntingHorn",
     "baseAttack": 714,
@@ -68,6 +76,8 @@
   },
   {
     "name": "Royal Chordmaker",
+	"tags": ["rathian", "fire"],
+	"rarity": 7,
     "itemType": "Weapon",
     "weaponType": "HuntingHorn",
     "baseAttack": 798,
@@ -84,6 +94,8 @@
   },
   {
     "name": "Water Tamtam III",
+	"tags": ["jyuratodus", "water"],
+	"rarity": 6,
     "itemType": "Weapon",
     "weaponType": "HuntingHorn",
     "baseAttack": 756,
@@ -100,6 +112,8 @@
   },
   {
     "name": "Legia Sectored",
+	"tags": ["legiana", "ice"],
+	"rarity": 7,
     "itemType": "Weapon",
     "weaponType": "HuntingHorn",
     "baseAttack": 672,
@@ -112,6 +126,8 @@
   },
   {
     "name": "Heavy Bone Horn II",
+	"tags": ["bone", "ice", "hidden"],
+	"rarity": 6,
     "itemType": "Weapon",
     "weaponType": "HuntingHorn",
     "baseAttack": 798,
@@ -130,6 +146,8 @@
   },
   {
     "name": "Gama Horn II",
+	"tags": ["dodogama", "blast"],
+	"rarity": 7,
     "itemType": "Weapon",
     "weaponType": "HuntingHorn",
     "baseAttack": 798,
@@ -149,6 +167,8 @@
   },
   {
     "name": "Anja Bone III",
+	"tags": ["anjanath", "fire"],
+	"rarity": 6,
     "itemType": "Weapon",
     "weaponType": "HuntingHorn",
     "baseAttack": 882,
@@ -161,6 +181,8 @@
   },
   {
     "name": "Datura Horn III",
+	"tags": ["pukei-pukei", "poison"],
+	"rarity": 6,
     "itemType": "Weapon",
     "weaponType": "HuntingHorn",
     "baseAttack": 714,
@@ -180,6 +202,8 @@
   },
   {
     "name": "Lumu Barone III",
+	"tags": ["paolumu", "water", "hidden"],
+	"rarity": 6,
     "itemType": "Weapon",
     "weaponType": "HuntingHorn",
     "baseAttack": 714,
@@ -200,6 +224,8 @@
   },
   {
     "name": "Razelreid Rookslayer",
+	"tags": ["bazelgeuse", "blast"],
+	"rarity": 8,
     "itemType": "Weapon",
     "weaponType": "HuntingHorn",
     "baseAttack": 840,
@@ -219,6 +245,8 @@
   },
   {
     "name": "Queen Vespoid Horn",
+	"tags": ["vespoid", "paralysis"],
+	"rarity": 7,
     "itemType": "Weapon",
     "weaponType": "HuntingHorn",
     "baseAttack": 672,
@@ -238,6 +266,8 @@
   },
   {
     "name": "Baan Horn III",
+	"tags": ["radobaan", "sleep"],
+	"rarity": 6,
     "itemType": "Weapon",
     "weaponType": "HuntingHorn",
     "baseAttack": 798,
@@ -251,6 +281,8 @@
   },
   {
     "name": "Dragonbone Auldhorn III",
+	"tags": ["dragonbone", "dragon"],
+	"rarity": 6,
     "itemType": "Weapon",
     "weaponType": "HuntingHorn",
     "baseAttack": 672,
@@ -271,6 +303,8 @@
   },
   {
     "name": "Thunderbolt Horn II",
+	"tags": ["kirin", "thunder"],
+	"rarity": 7,
     "itemType": "Weapon",
     "weaponType": "HuntingHorn",
     "baseAttack": 672,
@@ -283,6 +317,8 @@
   },
   {
     "name": "Teostra's Orphée",
+	"tags": ["blacksteel", "teostra"],
+	"rarity": 8,
     "itemType": "Weapon",
     "weaponType": "HuntingHorn",
     "baseAttack": 798,
@@ -295,6 +331,8 @@
   },
   {
     "name": "Xeno Manasheena",
+	"tags": ["xeno'jiva", "dragon"],
+	"rarity": 8,
     "itemType": "Weapon",
     "weaponType": "HuntingHorn",
     "baseAttack": 714,
@@ -315,6 +353,8 @@
   },
   {
     "name": "Deep Vero",
+	"tags": ["deviljho", "dragon"],
+	"rarity": 7,
     "itemType": "Weapon",
     "weaponType": "HuntingHorn",
     "baseAttack": 924,

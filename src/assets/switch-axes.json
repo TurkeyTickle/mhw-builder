@@ -1,6 +1,8 @@
 [
   {
     "name": "Perfected Alloy Axe II",
+	"tags": ["ore", "poison", "hidden"],
+	"rarity": 6,
     "itemType": "Weapon",
     "weaponType": "SwitchAxe",
     "baseAttack": 630,
@@ -21,6 +23,8 @@
   },
   {
     "name": "Dying Light",
+	"tags": ["nergigante", "dragon"],
+	"rarity": 8,
     "itemType": "Weapon",
     "weaponType": "SwitchAxe",
     "baseAttack": 700,
@@ -39,6 +43,8 @@
   },
   {
     "name": "Legia Frostreaver",
+	"tags": ["legiana", "ice"],
+	"rarity": 7,
     "itemType": "Weapon",
     "weaponType": "SwitchAxe",
     "baseAttack": 560,
@@ -51,6 +57,8 @@
   },
   {
     "name": "Lightning Chopper III",
+	"tags": ["tobi-kadachi", "thunder"],
+	"rarity": 6,
     "itemType": "Weapon",
     "weaponType": "SwitchAxe",
     "baseAttack": 630,
@@ -67,6 +75,8 @@
   },
   {
     "name": "Motor Chopper II",
+	"tags": ["uragaan", "fire"],
+	"rarity": 7,
     "itemType": "Weapon",
     "weaponType": "SwitchAxe",
     "baseAttack": 735,
@@ -84,6 +94,8 @@
   },
   {
     "name": "Jagras Raider III",
+	"tags": ["great", "jagras", "sleep", "hidden"],
+	"rarity": 6,
     "itemType": "Weapon",
     "weaponType": "SwitchAxe",
     "baseAttack": 665,
@@ -104,6 +116,8 @@
   },
   {
     "name": "Bazel Raider II",
+	"tags": ["bazelgeuse", "blast"],
+	"rarity": 7,
     "itemType": "Weapon",
     "weaponType": "SwitchAxe",
     "baseAttack": 700,
@@ -120,6 +134,8 @@
   },
   {
     "name": "Rathbringer Axe II",
+	"tags": ["rathalos", "fire"],
+	"rarity": 7,
     "itemType": "Weapon",
     "weaponType": "SwitchAxe",
     "baseAttack": 665,
@@ -136,6 +152,8 @@
   },
   {
     "name": "Power Smasher II",
+	"tags": ["bone"],
+	"rarity": 6,
     "itemType": "Weapon",
     "weaponType": "SwitchAxe",
     "baseAttack": 665,
@@ -152,6 +170,8 @@
   },
   {
     "name": "Hazak Demios II",
+	"tags": ["vaal", "hazak", "dragon"],
+	"rarity": 7,
     "itemType": "Weapon",
     "weaponType": "SwitchAxe",
     "baseAttack": 700,
@@ -169,6 +189,8 @@
   },
   {
     "name": "Jyura Drought III",
+	"tags": ["jyuratodus", "water"],
+	"rarity": 7,
     "itemType": "Weapon",
     "weaponType": "SwitchAxe",
     "baseAttack": 665,
@@ -185,6 +207,8 @@
   },
   {
     "name": "Lumu Smasher III",
+	"tags": ["paolumu", "blast", "hidden"],
+	"rarity": 7,
     "itemType": "Weapon",
     "weaponType": "SwitchAxe",
     "baseAttack": 595,
@@ -202,6 +226,8 @@
   },
   {
     "name": "Barroth Grinder III",
+	"tags": ["barroth", "paralysis", "hidden"],
+	"rarity": 6,
     "itemType": "Weapon",
     "weaponType": "SwitchAxe",
     "baseAttack": 735,
@@ -223,6 +249,8 @@
   },
   {
     "name": "Axe of Demons",
+	"tags": ["diablos", "ice", "hidden"],
+	"rarity": 8,
     "itemType": "Weapon",
     "weaponType": "SwitchAxe",
     "baseAttack": 805,
@@ -241,6 +269,8 @@
   },
   {
     "name": "Gnashing Flammenbeil",
+	"tags": ["anjanath", "fire"],
+	"rarity": 7,
     "itemType": "Weapon",
     "weaponType": "SwitchAxe",
     "baseAttack": 735,
@@ -253,6 +283,8 @@
   },
   {
     "name": "Dragonbone Slicer III",
+	"tags": ["dragonbone", "dragon"],
+	"rarity": 6,
     "itemType": "Weapon",
     "weaponType": "SwitchAxe",
     "baseAttack": 560,
@@ -273,6 +305,8 @@
   },
   {
     "name": "Kirin Thunderpeal",
+	"tags": ["kirin", "thunder"],
+	"rarity": 8,
     "itemType": "Weapon",
     "weaponType": "SwitchAxe",
     "baseAttack": 560,
@@ -285,6 +319,8 @@
   },
   {
     "name": "Teostra's Castle",
+	"tags": ["blacksteel", "teostra", "blast"],
+	"rarity": 8,
     "itemType": "Weapon",
     "weaponType": "SwitchAxe",
     "baseAttack": 665,
@@ -297,6 +333,8 @@
   },
   {
     "name": "Xeno Martshu",
+	"tags": ["xeno'jiva", "dragon"],
+	"rarity": 8,
     "itemType": "Weapon",
     "weaponType": "SwitchAxe",
     "baseAttack": 595,
@@ -317,6 +355,8 @@
   },
   {
     "name": "Terror Tyrannos",
+	"tags": ["deviljho", "dragon"],
+	"rarity": 7,
     "itemType": "Weapon",
     "weaponType": "SwitchAxe",
     "baseAttack": 770,
