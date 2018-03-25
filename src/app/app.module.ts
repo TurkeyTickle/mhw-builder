@@ -28,6 +28,7 @@ import { DecorationDetailsComponent } from './components/decoration-details/deco
 		EquippedSkillsComponent,
 		DecorationSlotComponent,
 		ItemDetailsComponent,
+		ItemDetailsComponent,
 		DecorationDetailsComponent,
 		SkillDetailsComponent,
 	],

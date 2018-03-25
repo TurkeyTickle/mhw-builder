@@ -19,9 +19,7 @@ button {
 	border: none;
 	outline: none;
 	color: rgb(150, 150, 150);
-	height: 28px;
 	cursor: pointer;
-	width: 40px;
 }
 
 button:hover {

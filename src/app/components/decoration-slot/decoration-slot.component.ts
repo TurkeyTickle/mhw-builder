@@ -34,7 +34,8 @@ export class DecorationSlotComponent implements OnInit {
 
 	ngOnInit() { }
 
-	clearClicked() {
+	clearClicked(event: Event) {
+		event.stopPropagation();
 		this.clearTooltipItem();
 		this.decoration = null;
 	}

@@ -7,6 +7,7 @@ import { SearchItemModel } from '../../models/search-item.model';
 import { ItemsService } from '../../services/items.service';
 import { TooltipService } from '../../services/tooltip.service';
 import { ItemType } from '../../types/item.type';
+import { WeaponType } from '../../types/weapon.type';
 
 @Component({
 	selector: 'mhw-builder-item-list',
@@ -38,6 +39,8 @@ export class ItemListComponent implements OnInit {
 
 	items: SearchItemModel[];
 	decorations: SearchDecorationModel[];
+
+	weaponTypeFilter?: WeaponType;
 
 	constructor(
 		private itemsService: ItemsService,
@@ -123,6 +126,8 @@ export class ItemListComponent implements OnInit {
 				decoration.visible = true;
 			}
 		}
+
+		this.applyWeaponFilter();
 	}
 
 	selectItem(item: ItemModel) {
@@ -157,5 +162,25 @@ export class ItemListComponent implements OnInit {
 
 	getAilmentIcon(item: ItemModel): string {
 		return `assets/images/${item.ailment.toLowerCase()}${item.ailmentHidden ? '-gray' : ''}-icon.png`;
+	}
+
+	weaponFilterClicked(weaponType: WeaponType) {
+		if (!this.weaponTypeFilter || this.weaponTypeFilter != weaponType) {
+			this.weaponTypeFilter = weaponType;
+		} else if (this.weaponTypeFilter == weaponType) {
+			this.weaponTypeFilter = null;
+		}
+
+		this.applyWeaponFilter();
+	}
+
+	applyWeaponFilter() {
+		if (this.items) {
+			for (const item of this.items) {
+				if (item.itemType == ItemType.Weapon) {
+					item.visible = !this.weaponTypeFilter || item.weaponType == this.weaponTypeFilter;
+				}
+			}
+		}
 	}
 }

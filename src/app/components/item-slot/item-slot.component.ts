@@ -80,7 +80,9 @@ export class ItemSlotComponent implements OnInit {
 		}
 	}
 
-	equipmentClearClicked() {
+	equipmentClearClicked(event: Event) {
+		event.stopPropagation();
+
 		const model: ItemSlotClearModel = {
 			item: this.item,
 			decorations: this.decorations
