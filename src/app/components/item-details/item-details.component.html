@@ -36,6 +36,18 @@
 		</div>
 	</ul>
 
+	<div class="slots-container">
+		<div *ngIf="item?.slots[0]?.level">
+			<img [src]="'assets/images/slot-' + item?.slots[0]?.level + '-icon.png'">
+		</div>
+		<div *ngIf="item?.slots[1]?.level">
+			<img [src]="'assets/images/slot-' + item?.slots[1]?.level + '-icon.png'">
+		</div>
+		<div *ngIf="item?.slots[2]?.level">
+			<img [src]="'assets/images/slot-' + item?.slots[2]?.level + '-icon.png'">
+		</div>
+	</div>
+
 	<div *ngIf="skills?.length" class="skills-container">
 		<ul>
 			<div *ngFor="let skill of skills">
