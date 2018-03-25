@@ -14,7 +14,6 @@ import { AppDataProvider } from './providers/app-data.provider';
 import { ItemsService } from './services/items.service';
 import { SkillService } from './services/skill.service';
 import { TooltipService } from './services/tooltip.service';
-import { KeysPipe } from './core/pipes/keys.pipe';
 import { SelectListComponent } from './components/select-list/select-list.component';
 import { TooltipComponent } from './components/tooltip/tooltip.component';
 import { SkillDetailsComponent } from './components/skill-details/skill-details.component';
@@ -22,7 +21,6 @@ import { DecorationDetailsComponent } from './components/decoration-details/deco
 
 @NgModule({
 	declarations: [
-		KeysPipe,
 		AppComponent,
 		TooltipComponent,
 		ItemSlotComponent,
