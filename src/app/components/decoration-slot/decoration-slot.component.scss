@@ -22,20 +22,19 @@ $slotHeight: 30px;
 		line-height: $slotHeight;
 		text-overflow: ellipsis;
 		overflow: hidden;
-		// white-space: nowrap;
 	}
 	
 	.clear-button {
 		flex-grow: 0;
 		flex-shrink: 0;
 		height: $slotHeight;
+		width: 34px;
 	}
 }
 
 :host {
 	flex-grow: 1;
 	flex-basis: 0;
-	// max-width: 33%;
 	padding: 0px 2px 0px 2px;
 }
 
