@@ -65,17 +65,18 @@ li:hover {
 	background-color: rgb(50,50,50);
 	padding: 0px 0px 0px 12px;	
 	margin-bottom: 4px;
-	display: flex;
 	border-radius: 3px;
+	flex-grow: 0;
+	flex-shrink: 0;
+	display: flex;
 
 	input {
 		background-color: rgb(50,50,50);
 		border: none;
 		color: white;
 		font-size: 16px;
-		flex-grow: 1;
-		min-width: 0;
 		height: $height;
+		flex-grow: 1;
 	}
 
 	input:focus {
@@ -86,12 +87,14 @@ li:hover {
 		padding-top: 4px;
 		height: $height;
 		width: 36px;
+		flex-grow: 0;
 	}
 }
 
 .filter-container {
 	$height: 42px;
 	margin-bottom: 4px;
+	flex-grow: 0;
 
 	.button-row {
 		width: 100%;
@@ -120,5 +123,6 @@ li:hover {
 .items-container {
 	overflow-y: auto;
 	border-radius: 3px;
+	flex-grow: 1;
 }
 
