@@ -1,5 +1,5 @@
 import { Location } from '@angular/common';
-import { AfterContentInit, AfterViewInit, ChangeDetectorRef, Component, OnInit, ViewChild } from '@angular/core';
+import { AfterViewInit, ChangeDetectorRef, Component, ViewChild } from '@angular/core';
 import * as _ from 'lodash';
 
 import { DecorationSlotComponent } from './components/decoration-slot/decoration-slot.component';
@@ -21,7 +21,7 @@ import { TooltipComponent } from './components/tooltip/tooltip.component';
 	styleUrls: ['./app.component.scss']
 })
 
-export class AppComponent implements OnInit, AfterViewInit, AfterContentInit {
+export class AppComponent implements AfterViewInit {
 	public itemTypes = ItemType;
 	title = 'MHW Builder';
 	buildId = '';
@@ -51,13 +51,6 @@ export class AppComponent implements OnInit, AfterViewInit, AfterContentInit {
 		private changeDetector: ChangeDetectorRef
 	) { }
 
-	ngOnInit() {
-
-	}
-
-	ngAfterContentInit() {
-		// this.loadBuild();
-	}
 
 	ngAfterViewInit() {
 		setTimeout(() => this.loadBuild(), 100);
@@ -109,6 +102,10 @@ export class AppComponent implements OnInit, AfterViewInit, AfterContentInit {
 			for (const decoration of clear.decorations) {
 				this.decorationCleared(decoration);
 			}
+		}
+
+		if (this.selectedDecorationSlot && this.selectedDecorationSlot.item === clear.item) {
+			this.selectedDecorationSlot = null;
 		}
 
 		this.updateStatsAndSkills();
