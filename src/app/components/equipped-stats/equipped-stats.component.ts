@@ -9,6 +9,7 @@ import { SkillService } from '../../services/skill.service';
 import { AilmentType } from '../../types/ailment.type';
 import { ElementType } from '../../types/element.type';
 import { SharpnessType } from '../../types/sharpness.type';
+import { SharpnessLevelModel } from '../../models/sharpness-level.model';
 
 @Component({
 	selector: 'mhw-builder-equipped-stats',
@@ -25,6 +26,8 @@ export class EquippedStatsComponent implements OnInit {
 	passiveAttack: number;
 	activeAttack: number;
 	maxSharpness: SharpnessType;
+	passiveSharpness: number;
+	effectiveSharpnessLevel: SharpnessLevelModel;
 	weaponAttackModifier: number;
 	affinity: number;
 	passiveAffinity: number;
@@ -115,6 +118,8 @@ export class EquippedStatsComponent implements OnInit {
 		this.passiveAttack = 0;
 		this.activeAttack = 0;
 		this.maxSharpness = null;
+		this.passiveSharpness = 0;
+		this.effectiveSharpnessLevel = null;
 		this.weaponAttackModifier = 0;
 		this.affinity = 0;
 		this.passiveAffinity = 0;
@@ -224,6 +229,7 @@ export class EquippedStatsComponent implements OnInit {
 				if (level.passiveAffinity) { this.passiveAffinity += level.passiveAffinity; }
 				if (level.activeAffinity) { this.activeAffinity += level.activeAffinity; }
 				if (level.weakPointAffinity) { this.weakPointAffinity += level.weakPointAffinity; }
+				if (level.passiveSharpness) { this.passiveSharpness += level.passiveSharpness; }
 
 				if (level.passiveCriticalBoostPercent) { this.passiveCriticalBoostPercent += level.passiveCriticalBoostPercent; }
 
@@ -339,6 +345,10 @@ export class EquippedStatsComponent implements OnInit {
 
 		this.elementCapped = this.totalElementAttack > 0 && this.totalElementAttack >= elementCap;
 		this.ailmentCapped = this.totalAilmentAttack > 0 && this.totalAilmentAttack >= ailmentCap;
+
+		if (weapon && weapon.sharpnessLevels) {
+			this.effectiveSharpnessLevel = weapon.sharpnessLevels[Math.min(this.passiveSharpness / 10, weapon.sharpnessLevels.length - 1)];
+		}
 	}
 
 	nearestTen(value: number): number {

@@ -6,7 +6,32 @@
     "itemType": "Weapon",
     "weaponType": "SwitchAxe",
     "baseAttack": 630,
-    "maxSharpness": "Blue",
+	"sharpnessLevels": [
+		{
+			"color": "Blue",
+			"value": 60
+		},
+		{
+			"color": "Blue",
+			"value": 70
+		},
+		{
+			"color": "Blue",
+			"value": 80
+		},
+		{
+			"color": "Blue",
+			"value": 90
+		},
+		{
+			"color": "White",
+			"value": 10
+		},
+		{
+			"color": "White",
+			"value": 20
+		}
+	],
     "baseAffinityPercent": 0,
     "ailment": "Poison",
     "ailmentBaseAttack": 420,
@@ -28,7 +53,12 @@
     "itemType": "Weapon",
     "weaponType": "SwitchAxe",
     "baseAttack": 700,
-    "maxSharpness": "Blue",
+	"sharpnessLevels": [
+		{
+			"color": "Blue",
+			"value": 80
+		}
+	],
     "baseAffinityPercent": 0,
     "element": "Dragon",
     "elementBaseAttack": 150,
@@ -48,7 +78,32 @@
     "itemType": "Weapon",
     "weaponType": "SwitchAxe",
     "baseAttack": 560,
-    "maxSharpness": "White",
+	"sharpnessLevels": [
+		{
+			"color": "White",
+			"value": 10
+		},
+		{
+			"color": "White",
+			"value": 20
+		},
+		{
+			"color": "White",
+			"value": 30
+		},
+		{
+			"color": "White",
+			"value": 40
+		},
+		{
+			"color": "White",
+			"value": 50
+		},
+		{
+			"color": "White",
+			"value": 60
+		}
+	],
     "baseAffinityPercent": 0,
     "element": "Ice",
     "elementBaseAttack": 300,
@@ -62,7 +117,32 @@
     "itemType": "Weapon",
     "weaponType": "SwitchAxe",
     "baseAttack": 630,
-    "maxSharpness": "Blue",
+	"sharpnessLevels": [
+		{
+			"color": "Blue",
+			"value": 40
+		},
+		{
+			"color": "Blue",
+			"value": 50
+		},
+		{
+			"color": "Blue",
+			"value": 60
+		},
+		{
+			"color": "Blue",
+			"value": 70
+		},
+		{
+			"color": "White",
+			"value": 10
+		},
+		{
+			"color": "White",
+			"value": 20
+		}
+	],
     "baseAffinityPercent": 0,
     "element": "Thunder",
     "elementBaseAttack": 180,
@@ -80,7 +160,32 @@
     "itemType": "Weapon",
     "weaponType": "SwitchAxe",
     "baseAttack": 735,
-    "maxSharpness": "Blue",
+	"sharpnessLevels": [
+		{
+			"color": "Blue",
+			"value": 40
+		},
+		{
+			"color": "Blue",
+			"value": 50
+		},
+		{
+			"color": "Blue",
+			"value": 60
+		},
+		{
+			"color": "Blue",
+			"value": 70
+		},
+		{
+			"color": "Blue",
+			"value": 80
+		},
+		{
+			"color": "Blue",
+			"value": 90
+		}
+	],
     "baseAffinityPercent": 0,
     "element": "Fire",
     "elementBaseAttack": 120,
@@ -99,7 +204,32 @@
     "itemType": "Weapon",
     "weaponType": "SwitchAxe",
     "baseAttack": 665,
-    "maxSharpness": "Blue",
+	"sharpnessLevels": [
+		{
+			"color": "Blue",
+			"value": 30
+		},
+		{
+			"color": "Blue",
+			"value": 40
+		},
+		{
+			"color": "Blue",
+			"value": 50
+		},
+		{
+			"color": "Blue",
+			"value": 60
+		},
+		{
+			"color": "Blue",
+			"value": 70
+		},
+		{
+			"color": "Blue",
+			"value": 80
+		}
+	],
     "baseAffinityPercent": 0,
     "ailment": "Sleep",
     "ailmentBaseAttack": 240,
@@ -121,7 +251,32 @@
     "itemType": "Weapon",
     "weaponType": "SwitchAxe",
     "baseAttack": 700,
-    "maxSharpness": "Blue",
+	"sharpnessLevels": [
+		{
+			"color": "Blue",
+			"value": 20
+		},
+		{
+			"color": "White",
+			"value": 10
+		},
+		{
+			"color": "White",
+			"value": 20
+		},
+		{
+			"color": "White",
+			"value": 30
+		},
+		{
+			"color": "White",
+			"value": 40
+		},
+		{
+			"color": "White",
+			"value": 50
+		}
+	],
     "baseAffinityPercent": -15,
     "ailment": "Blast",
     "ailmentBaseAttack": 180,
@@ -139,7 +294,32 @@
     "itemType": "Weapon",
     "weaponType": "SwitchAxe",
     "baseAttack": 665,
-    "maxSharpness": "Blue",
+	"sharpnessLevels": [
+		{
+			"color": "Blue",
+			"value": 40
+		},
+		{
+			"color": "Blue",
+			"value": 50
+		},
+		{
+			"color": "Blue",
+			"value": 60
+		},
+		{
+			"color": "Blue",
+			"value": 70
+		},
+		{
+			"color": "White",
+			"value": 10
+		},
+		{
+			"color": "White",
+			"value": 20
+		}
+	],
     "baseAffinityPercent": 15,
     "element": "Fire",
     "elementBaseAttack": 150,
@@ -157,7 +337,32 @@
     "itemType": "Weapon",
     "weaponType": "SwitchAxe",
     "baseAttack": 665,
-    "maxSharpness": "Blue",
+	"sharpnessLevels": [
+		{
+			"color": "Blue",
+			"value": 40
+		},
+		{
+			"color": "Blue",
+			"value": 50
+		},
+		{
+			"color": "Blue",
+			"value": 60
+		},
+		{
+			"color": "Blue",
+			"value": 70
+		},
+		{
+			"color": "Blue",
+			"value": 80
+		},
+		{
+			"color": "Blue",
+			"value": 90
+		}
+	],
     "baseAffinityPercent": 10,
     "elderseal": "Average",
     "baseDefense": 10,
@@ -175,7 +380,32 @@
     "itemType": "Weapon",
     "weaponType": "SwitchAxe",
     "baseAttack": 700,
-    "maxSharpness": "Blue",
+	"sharpnessLevels": [
+		{
+			"color": "Blue",
+			"value": 40
+		},
+		{
+			"color": "Blue",
+			"value": 50
+		},
+		{
+			"color": "White",
+			"value": 10
+		},
+		{
+			"color": "White",
+			"value": 20
+		},
+		{
+			"color": "White",
+			"value": 30
+		},
+		{
+			"color": "White",
+			"value": 40
+		}
+	],
     "baseAffinityPercent": 0,
     "element": "Dragon",
     "elementBaseAttack": 210,
@@ -194,7 +424,32 @@
     "itemType": "Weapon",
     "weaponType": "SwitchAxe",
     "baseAttack": 665,
-    "maxSharpness": "Blue",
+	"sharpnessLevels": [
+		{
+			"color": "Blue",
+			"value": 20
+		},
+		{
+			"color": "Blue",
+			"value": 30
+		},
+		{
+			"color": "Blue",
+			"value": 40
+		},
+		{
+			"color": "Blue",
+			"value": 50
+		},
+		{
+			"color": "White",
+			"value": 10
+		},
+		{
+			"color": "White",
+			"value": 20
+		}
+	],
     "baseAffinityPercent": 0,
     "element": "Water",
     "elementBaseAttack": 330,
@@ -212,7 +467,32 @@
     "itemType": "Weapon",
     "weaponType": "SwitchAxe",
     "baseAttack": 595,
-    "maxSharpness": "Blue",
+	"sharpnessLevels": [
+		{
+			"color": "Blue",
+			"value": 50
+		},
+		{
+			"color": "Blue",
+			"value": 60
+		},
+		{
+			"color": "Blue",
+			"value": 70
+		},
+		{
+			"color": "White",
+			"value": 10
+		},
+		{
+			"color": "White",
+			"value": 20
+		},
+		{
+			"color": "White",
+			"value": 30
+		}
+	],
     "baseAffinityPercent": 20,
     "ailment": "Blast",
     "ailmentBaseAttack": 420,
@@ -231,7 +511,32 @@
     "itemType": "Weapon",
     "weaponType": "SwitchAxe",
     "baseAttack": 735,
-    "maxSharpness": "Blue",
+	"sharpnessLevels": [
+		{
+			"color": "Blue",
+			"value": 30
+		},
+		{
+			"color": "Blue",
+			"value": 40
+		},
+		{
+			"color": "Blue",
+			"value": 50
+		},
+		{
+			"color": "Blue",
+			"value": 60
+		},
+		{
+			"color": "Blue",
+			"value": 70
+		},
+		{
+			"color": "Blue",
+			"value": 80
+		}
+	],
     "baseAffinityPercent": -20,
     "ailment": "Paralysis",
     "ailmentBaseAttack": 330,
@@ -254,7 +559,32 @@
     "itemType": "Weapon",
     "weaponType": "SwitchAxe",
     "baseAttack": 805,
-    "maxSharpness": "Blue",
+	"sharpnessLevels": [
+		{
+			"color": "Blue",
+			"value": 30
+		},
+		{
+			"color": "Blue",
+			"value": 40
+		},
+		{
+			"color": "Blue",
+			"value": 50
+		},
+		{
+			"color": "Blue",
+			"value": 60
+		},
+		{
+			"color": "White",
+			"value": 10
+		},
+		{
+			"color": "White",
+			"value": 20
+		}
+	],
     "baseAffinityPercent": -30,
     "element": "Ice",
     "elementBaseAttack": 180,
@@ -274,7 +604,32 @@
     "itemType": "Weapon",
     "weaponType": "SwitchAxe",
     "baseAttack": 735,
-    "maxSharpness": "Blue",
+	"sharpnessLevels": [
+		{
+			"color": "Blue",
+			"value": 30
+		},
+		{
+			"color": "Blue",
+			"value": 40
+		},
+		{
+			"color": "Blue",
+			"value": 50
+		},
+		{
+			"color": "Blue",
+			"value": 60
+		},
+		{
+			"color": "Blue",
+			"value": 70
+		},
+		{
+			"color": "Blue",
+			"value": 80
+		}
+	],
     "baseAffinityPercent": -20,
     "element": "Fire",
     "elementBaseAttack": 300,
@@ -288,7 +643,32 @@
     "itemType": "Weapon",
     "weaponType": "SwitchAxe",
     "baseAttack": 560,
-    "maxSharpness": "Blue",
+	"sharpnessLevels": [
+		{
+			"color": "Blue",
+			"value": 40
+		},
+		{
+			"color": "Blue",
+			"value": 50
+		},
+		{
+			"color": "Blue",
+			"value": 60
+		},
+		{
+			"color": "Blue",
+			"value": 70
+		},
+		{
+			"color": "White",
+			"value": 10
+		},
+		{
+			"color": "White",
+			"value": 20
+		}
+	],
     "baseAffinityPercent": 0,
     "element": "Dragon",
     "elementBaseAttack": 330,
@@ -310,7 +690,32 @@
     "itemType": "Weapon",
     "weaponType": "SwitchAxe",
     "baseAttack": 560,
-    "maxSharpness": "Blue",
+	"sharpnessLevels": [
+		{
+			"color": "Blue",
+			"value": 60
+		},
+		{
+			"color": "Blue",
+			"value": 70
+		},
+		{
+			"color": "Blue",
+			"value": 80
+		},
+		{
+			"color": "Blue",
+			"value": 90
+		},
+		{
+			"color": "Blue",
+			"value": 100
+		},
+		{
+			"color": "Blue",
+			"value": 110
+		}
+	],
     "baseAffinityPercent": 0,
     "element": "Thunder",
     "elementBaseAttack": 450,
@@ -324,7 +729,32 @@
     "itemType": "Weapon",
     "weaponType": "SwitchAxe",
     "baseAttack": 665,
-    "maxSharpness": "Blue",
+	"sharpnessLevels": [
+		{
+			"color": "Blue",
+			"value": 40
+		},
+		{
+			"color": "Blue",
+			"value": 50
+		},
+		{
+			"color": "Blue",
+			"value": 60
+		},
+		{
+			"color": "White",
+			"value": 10
+		},
+		{
+			"color": "White",
+			"value": 20
+		},
+		{
+			"color": "White",
+			"value": 30
+		}
+	],
     "baseAffinityPercent": 0,
     "ailment": "Blast",
     "ailmentBaseAttack": 300,
@@ -338,7 +768,32 @@
     "itemType": "Weapon",
     "weaponType": "SwitchAxe",
     "baseAttack": 595,
-    "maxSharpness": "White",
+	"sharpnessLevels": [
+		{
+			"color": "White",
+			"value": 10
+		},
+		{
+			"color": "White",
+			"value": 20
+		},
+		{
+			"color": "White",
+			"value": 30
+		},
+		{
+			"color": "White",
+			"value": 40
+		},
+		{
+			"color": "White",
+			"value": 50
+		},
+		{
+			"color": "White",
+			"value": 60
+		}
+	],
     "baseAffinityPercent": 15,
     "element": "Dragon",
     "elementBaseAttack": 150,
@@ -360,7 +815,32 @@
     "itemType": "Weapon",
     "weaponType": "SwitchAxe",
     "baseAttack": 770,
-    "maxSharpness": "Blue",
+	"sharpnessLevels": [
+		{
+			"color": "Blue",
+			"value": 40
+		},
+		{
+			"color": "White",
+			"value": 10
+		},
+		{
+			"color": "White",
+			"value": 20
+		},
+		{
+			"color": "White",
+			"value": 30
+		},
+		{
+			"color": "White",
+			"value": 40
+		},
+		{
+			"color": "White",
+			"value": 50
+		}
+	],
     "baseAffinityPercent": -25,
     "element": "Dragon",
     "elementBaseAttack": 180,

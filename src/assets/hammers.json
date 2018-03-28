@@ -7,7 +7,32 @@
     "weaponType": "Hammer",
     "baseAttack": 936,
     "baseAffinityPercent": 0,
-    "maxSharpness": "Blue",
+	"sharpnessLevels": [
+		{
+			"color": "Blue",
+			"value": 60
+		},
+		{
+			"color": "Blue",
+			"value": 70
+		},
+		{
+			"color": "Blue",
+			"value": 80
+		},
+		{
+			"color": "Blue",
+			"value": 90
+		},
+		{
+			"color": "White",
+			"value": 10
+		},
+		{
+			"color": "White",
+			"value": 20
+		}
+	],
     "ailment": "Blast",
     "ailmentBaseAttack": 270,
     "ailmentHidden": true,
@@ -29,7 +54,12 @@
     "weaponType": "Hammer",
     "baseAttack": 1092,
     "baseAffinityPercent": 0,
-    "maxSharpness": "Blue",
+	"sharpnessLevels": [
+		{
+			"color": "Blue",
+			"value": 80
+		}
+	],
     "element": "Dragon",
     "elementBaseAttack": 120,
     "elementAttackIncreaseCapOverride": 0.33,
@@ -49,7 +79,32 @@
     "weaponType": "Hammer",
     "baseAttack": 936,
     "baseAffinityPercent": 0,
-    "maxSharpness": "Blue",
+	"sharpnessLevels": [
+		{
+			"color": "Blue",
+			"value": 30
+		},
+		{
+			"color": "Blue",
+			"value": 40
+		},
+		{
+			"color": "Blue",
+			"value": 50
+		},
+		{
+			"color": "Blue",
+			"value": 60
+		},
+		{
+			"color": "Blue",
+			"value": 70
+		},
+		{
+			"color": "Blue",
+			"value": 80
+		}
+	],
     "element": "Ice",
     "elementBaseAttack": 450,
     "slots": [
@@ -67,7 +122,32 @@
     "weaponType": "Hammer",
     "baseAttack": 936,
     "baseAffinityPercent": 0,
-    "maxSharpness": "Blue",
+	"sharpnessLevels": [
+		{
+			"color": "Blue",
+			"value": 40
+		},
+		{
+			"color": "Blue",
+			"value": 50
+		},
+		{
+			"color": "Blue",
+			"value": 60
+		},
+		{
+			"color": "Blue",
+			"value": 70
+		},
+		{
+			"color": "White",
+			"value": 10
+		},
+		{
+			"color": "White",
+			"value": 20
+		}
+	],
     "element": "Water",
     "elementBaseAttack": 240,
     "slots": [
@@ -85,7 +165,32 @@
     "weaponType": "Hammer",
     "baseAttack": 832,
     "baseAffinityPercent": 20,
-    "maxSharpness": "Blue",
+	"sharpnessLevels": [
+		{
+			"color": "Blue",
+			"value": 40
+		},
+		{
+			"color": "Blue",
+			"value": 50
+		},
+		{
+			"color": "Blue",
+			"value": 60
+		},
+		{
+			"color": "White",
+			"value": 10
+		},
+		{
+			"color": "White",
+			"value": 20
+		},
+		{
+			"color": "White",
+			"value": 30
+		}
+	],
     "ailment": "Paralysis",
     "ailmentBaseAttack": 390,
     "id": 87,
@@ -99,7 +204,32 @@
     "weaponType": "Hammer",
     "baseAttack": 936,
     "baseAffinityPercent": 0,
-    "maxSharpness": "Blue",
+	"sharpnessLevels": [
+		{
+			"color": "Blue",
+			"value": 40
+		},
+		{
+			"color": "Blue",
+			"value": 50
+		},
+		{
+			"color": "Blue",
+			"value": 60
+		},
+		{
+			"color": "Blue",
+			"value": 70
+		},
+		{
+			"color": "Blue",
+			"value": 80
+		},
+		{
+			"color": "Blue",
+			"value": 90
+		}
+	],
     "ailment": "Poison",
     "ailmentBaseAttack": 540,
     "slots": [
@@ -120,7 +250,32 @@
     "weaponType": "Hammer",
     "baseAttack": 988,
     "baseAffinityPercent": 0,
-    "maxSharpness": "Blue",
+	"sharpnessLevels": [
+		{
+			"color": "Blue",
+			"value": 40
+		},
+		{
+			"color": "Blue",
+			"value": 50
+		},
+		{
+			"color": "Blue",
+			"value": 60
+		},
+		{
+			"color": "White",
+			"value": 10
+		},
+		{
+			"color": "White",
+			"value": 20
+		},
+		{
+			"color": "White",
+			"value": 30
+		}
+	],
     "element": "Thunder",
     "elementBaseAttack": 300,
     "slots": [
@@ -138,7 +293,32 @@
     "weaponType": "Hammer",
     "baseAttack": 988,
     "baseAffinityPercent": 0,
-    "maxSharpness": "Blue",
+	"sharpnessLevels": [
+		{
+			"color": "Blue",
+			"value": 30
+		},
+		{
+			"color": "Blue",
+			"value": 40
+		},
+		{
+			"color": "Blue",
+			"value": 50
+		},
+		{
+			"color": "Blue",
+			"value": 60
+		},
+		{
+			"color": "Blue",
+			"value": 70
+		},
+		{
+			"color": "Blue",
+			"value": 80
+		}
+	],
     "element": "Thunder",
     "elementBaseAttack": 420,
     "elementHidden": true,
@@ -158,7 +338,32 @@
     "weaponType": "Hammer",
     "baseAttack": 1040,
     "baseAffinityPercent": 0,
-    "maxSharpness": "Blue",
+	"sharpnessLevels": [
+		{
+			"color": "Blue",
+			"value": 40
+		},
+		{
+			"color": "Blue",
+			"value": 50
+		},
+		{
+			"color": "White",
+			"value": 10
+		},
+		{
+			"color": "White",
+			"value": 20
+		},
+		{
+			"color": "White",
+			"value": 30
+		},
+		{
+			"color": "White",
+			"value": 40
+		}
+	],
     "element": "Dragon",
     "elementBaseAttack": 270,
     "elderseal": "Average",
@@ -177,7 +382,32 @@
     "weaponType": "Hammer",
     "baseAttack": 988,
     "baseAffinityPercent": 0,
-    "maxSharpness": "Blue",
+	"sharpnessLevels": [
+		{
+			"color": "Blue",
+			"value": 30
+		},
+		{
+			"color": "Blue",
+			"value": 40
+		},
+		{
+			"color": "Blue",
+			"value": 50
+		},
+		{
+			"color": "Blue",
+			"value": 60
+		},
+		{
+			"color": "Blue",
+			"value": 70
+		},
+		{
+			"color": "Blue",
+			"value": 80
+		}
+	],
     "ailment": "Sleep",
     "ailmentBaseAttack": 270,
     "baseDefense": 20,
@@ -192,7 +422,32 @@
     "weaponType": "Hammer",
     "baseAttack": 1092,
     "baseAffinityPercent": 0,
-    "maxSharpness": "Blue",
+	"sharpnessLevels": [
+		{
+			"color": "Blue",
+			"value": 20
+		},
+		{
+			"color": "Blue",
+			"value": 30
+		},
+		{
+			"color": "Blue",
+			"value": 40
+		},
+		{
+			"color": "Blue",
+			"value": 50
+		},
+		{
+			"color": "Blue",
+			"value": 60
+		},
+		{
+			"color": "Blue",
+			"value": 70
+		}
+	],
     "element": "Fire",
     "elementBaseAttack": 120,
     "baseDefense": 30,
@@ -204,14 +459,39 @@
     "id": 93
   },
   {
-    "name": "Crusing Beak III",
+    "name": "Crushing Beak III",
 	"tags": ["kulu-ya-ku", "sleep", "hidden"],
 	"rarity": 6,
     "itemType": "Weapon",
     "weaponType": "Hammer",
     "baseAttack": 884,
     "baseAffinityPercnt": 25,
-    "maxSharpness": "Blue",
+	"sharpnessLevels": [
+		{
+			"color": "Blue",
+			"value": 40
+		},
+		{
+			"color": "Blue",
+			"value": 50
+		},
+		{
+			"color": "Blue",
+			"value": 60
+		},
+		{
+			"color": "Blue",
+			"value": 70
+		},
+		{
+			"color": "White",
+			"value": 10
+		},
+		{
+			"color": "White",
+			"value": 20
+		}
+	],
     "ailment": "Sleep",
     "ailmentBaseAttack": 360,
     "ailmentHidden": true,
@@ -226,7 +506,32 @@
     "weaponType": "Hammer",
     "baseAttack": 1196,
     "baseAffinityPercent": -25,
-    "maxSharpness": "Blue",
+	"sharpnessLevels": [
+		{
+			"color": "Blue",
+			"value": 20
+		},
+		{
+			"color": "Blue",
+			"value": 30
+		},
+		{
+			"color": "Blue",
+			"value": 40
+		},
+		{
+			"color": "Blue",
+			"value": 50
+		},
+		{
+			"color": "White",
+			"value": 10
+		},
+		{
+			"color": "White",
+			"value": 20
+		}
+	],
     "element": "Ice",
 	"elementBaseAttack": 150,
 	"elementHidden": true,
@@ -246,7 +551,32 @@
     "weaponType": "Hammer",
     "baseAttack": 1040,
     "baseAffinityPercent": -10,
-    "maxSharpness": "Blue",
+	"sharpnessLevels": [
+		{
+			"color": "Blue",
+			"value": 30
+		},
+		{
+			"color": "Blue",
+			"value": 40
+		},
+		{
+			"color": "Blue",
+			"value": 50
+		},
+		{
+			"color": "Blue",
+			"value": 60
+		},
+		{
+			"color": "Blue",
+			"value": 70
+		},
+		{
+			"color": "Blue",
+			"value": 80
+		}
+	],
     "ailment": "Paralysis",
     "ailmentBaseAttack": 390,
     "ailmentHidden": true,
@@ -269,7 +599,32 @@
     "weaponType": "Hammer",
     "baseAttack": 1092,
     "baseAffinityPercent": -20,
-    "maxSharpness": "Blue",
+	"sharpnessLevels": [
+		{
+			"color": "Blue",
+			"value": 20
+		},
+		{
+			"color": "Blue",
+			"value": 30
+		},
+		{
+			"color": "Blue",
+			"value": 40
+		},
+		{
+			"color": "Blue",
+			"value": 50
+		},
+		{
+			"color": "Blue",
+			"value": 60
+		},
+		{
+			"color": "Blue",
+			"value": 70
+		}
+	],
     "element": "Fire",
     "elementBaseAttack": 450,
     "id": 97,
@@ -283,7 +638,32 @@
     "weaponType": "Hammer",
     "baseAttack": 832,
     "baseAffinityPercent": 0,
-    "maxSharpness": "Blue",
+	"sharpnessLevels": [
+		{
+			"color": "Blue",
+			"value": 40
+		},
+		{
+			"color": "Blue",
+			"value": 50
+		},
+		{
+			"color": "Blue",
+			"value": 60
+		},
+		{
+			"color": "Blue",
+			"value": 70
+		},
+		{
+			"color": "White",
+			"value": 10
+		},
+		{
+			"color": "White",
+			"value": 20
+		}
+	],
     "element": "Dragon",
     "elementBaseAttack": 420,
     "elderseal": "Low",
@@ -302,7 +682,32 @@
     "weaponType": "Hammer",
     "baseAttack": 1144,
     "baseAffinityPercent": -20,
-    "maxSharpness": "Green",
+	"sharpnessLevels": [
+		{
+			"color": "Green",
+			"value": 70
+		},
+		{
+			"color": "Green",
+			"value": 80
+		},
+		{
+			"color": "Blue",
+			"value": 10
+		},
+		{
+			"color": "Blue",
+			"value": 20
+		},
+		{
+			"color": "Blue",
+			"value": 30
+		},
+		{
+			"color": "Blue",
+			"value": 40
+		}
+	],
     "ailment": "Blast",
     "ailmentBaseAttack": 420,
     "baseDefense": 20,
@@ -321,7 +726,32 @@
     "weaponType": "Hammer",
     "baseAttack": 1040,
     "baseAffinityPercent": 10,
-    "maxSharpness": "Blue",
+	"sharpnessLevels": [
+		{
+			"color": "Blue",
+			"value": 40
+		},
+		{
+			"color": "Blue",
+			"value": 50
+		},
+		{
+			"color": "Blue",
+			"value": 60
+		},
+		{
+			"color": "Blue",
+			"value": 70
+		},
+		{
+			"color": "White",
+			"value": 10
+		},
+		{
+			"color": "White",
+			"value": 20
+		}
+	],
     "element": "Ice",
     "elementBaseAttack": 150,
     "slots": [
@@ -339,7 +769,32 @@
     "weaponType": "Hammer",
     "baseAttack": 884,
     "baseAffinityPercent": 15,
-    "maxSharpness": "White",
+	"sharpnessLevels": [
+		{
+			"color": "White",
+			"value": 10
+		},
+		{
+			"color": "White",
+			"value": 20
+		},
+		{
+			"color": "White",
+			"value": 30
+		},
+		{
+			"color": "White",
+			"value": 40
+		},
+		{
+			"color": "White",
+			"value": 50
+		},
+		{
+			"color": "White",
+			"value": 60
+		}
+	],
     "element": "Dragon",
     "elementBaseAttack": 180,
     "elderseal": "Low",
@@ -361,7 +816,32 @@
     "weaponType": "Hammer",
     "baseAttack": 936,
     "baseAffinityPercent": 0,
-    "maxSharpness": "Blue",
+	"sharpnessLevels": [
+		{
+			"color": "Blue",
+			"value": 30
+		},
+		{
+			"color": "Blue",
+			"value": 40
+		},
+		{
+			"color": "Blue",
+			"value": 50
+		},
+		{
+			"color": "White",
+			"value": 10
+		},
+		{
+			"color": "White",
+			"value": 20
+		},
+		{
+			"color": "White",
+			"value": 30
+		}
+	],
     "ailment": "Paralysis",
     "ailmentBaseAttack": 210,
     "baseDefense": 20,
@@ -373,26 +853,6 @@
     "id": 102
   },
   {
-    "name": "Grandrock I",
-	"tags": ["bone", "thunder", "hidden"],
-	"rarity": 6,
-    "itemType": "Weapon",
-    "weaponType": "Hammer",
-    "baseAttack": 884,
-    "baseAffinityPercent": 0,
-    "maxSharpness": "Blue",
-    "element": "Thunder",
-	"elementBaseAttack": 390,
-	"elementHidden": true,
-    "baseDefense": 10,
-    "slots": [
-      {
-        "level": 2
-      }
-    ],
-    "id": 103
-  },
-  {
     "name": "Devil's Crush",
 	"tags": ["deviljho", "dragon"],
 	"rarity": 7,
@@ -400,7 +860,32 @@
     "weaponType": "Hammer",
     "baseAttack": 1196,
     "baseAffinityPercent": -30,
-    "maxSharpness": "Blue",
+	"sharpnessLevels": [
+		{
+			"color": "Blue",
+			"value": 40
+		},
+		{
+			"color": "White",
+			"value": 10
+		},
+		{
+			"color": "White",
+			"value": 20
+		},
+		{
+			"color": "White",
+			"value": 30
+		},
+		{
+			"color": "White",
+			"value": 40
+		},
+		{
+			"color": "White",
+			"value": 50
+		}
+	],
     "element": "Dragon",
     "elementBaseAttack": 210,
     "elderseal": "High",

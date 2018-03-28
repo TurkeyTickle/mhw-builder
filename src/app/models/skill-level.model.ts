@@ -9,6 +9,8 @@ export class SkillLevel {
 	activeAffinity: number;
 	weakPointAffinity: number;
 
+	passiveSharpness: number;
+
 	hiddenElementUp: number;
 
 	passiveFireAttack: number;

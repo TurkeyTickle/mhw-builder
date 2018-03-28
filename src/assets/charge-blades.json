@@ -6,7 +6,32 @@
     "itemType": "Weapon",
     "weaponType": "ChargeBlade",
     "baseAttack": 648,
-    "maxSharpness": "Blue",
+	"sharpnessLevels": [
+		{
+			"color": "Blue",
+			"value": 60
+		},
+		{
+			"color": "Blue",
+			"value": 70
+		},
+		{
+			"color": "Blue",
+			"value": 80
+		},
+		{
+			"color": "Blue",
+			"value": 90
+		},
+		{
+			"color": "White",
+			"value": 10
+		},
+		{
+			"color": "White",
+			"value": 20
+		}
+	],
     "baseAffinityPercent": 0,
     "element": "Thunder",
     "elementBaseAttack": 270,
@@ -28,7 +53,12 @@
     "itemType": "Weapon",
     "weaponType": "ChargeBlade",
     "baseAttack": 756,
-    "maxSharpness": "Blue",
+	"sharpnessLevels": [
+		{
+			"color": "Blue",
+			"value": 90
+		}
+	],
     "baseAffinityPercent": 0,
     "element": "Dragon",
     "elementBaseAttack": 150,
@@ -48,7 +78,32 @@
     "itemType": "Weapon",
     "weaponType": "ChargeBlade",
     "baseAttack": 684,
-    "maxSharpness": "Blue",
+	"sharpnessLevels": [
+		{
+			"color": "Blue",
+			"value": 50
+		},
+		{
+			"color": "Blue",
+			"value": 60
+		},
+		{
+			"color": "White",
+			"value": 10
+		},
+		{
+			"color": "White",
+			"value": 20
+		},
+		{
+			"color": "White",
+			"value": 30
+		},
+		{
+			"color": "White",
+			"value": 40
+		}
+	],
     "baseAffinityPercent": 20,
     "element": "Fire",
     "elementBaseAttack": 240,
@@ -66,7 +121,32 @@
     "itemType": "Weapon",
     "weaponType": "ChargeBlade",
     "baseAttack": 684,
-    "maxSharpness": "Blue",
+	"sharpnessLevels": [
+		{
+			"color": "Blue",
+			"value": 30
+		},
+		{
+			"color": "Blue",
+			"value": 40
+		},
+		{
+			"color": "Blue",
+			"value": 50
+		},
+		{
+			"color": "White",
+			"value": 10
+		},
+		{
+			"color": "White",
+			"value": 20
+		},
+		{
+			"color": "White",
+			"value": 30
+		}
+	],
     "baseAffinityPercent": 0,
     "element": "Water",
     "elementBaseAttack": 270,
@@ -84,7 +164,32 @@
     "itemType": "Weapon",
     "weaponType": "ChargeBlade",
     "baseAttack": 612,
-    "maxSharpness": "Blue",
+	"sharpnessLevels": [
+		{
+			"color": "Blue",
+			"value": 40
+		},
+		{
+			"color": "Blue",
+			"value": 50
+		},
+		{
+			"color": "Blue",
+			"value": 60
+		},
+		{
+			"color": "Blue",
+			"value": 70
+		},
+		{
+			"color": "White",
+			"value": 10
+		},
+		{
+			"color": "White",
+			"value": 20
+		}
+	],
     "baseAffinityPercent": 0,
     "element": "Ice",
     "elementBaseAttack": 240,
@@ -105,7 +210,32 @@
     "itemType": "Weapon",
     "weaponType": "ChargeBlade",
     "baseAttack": 684,
-    "maxSharpness": "Blue",
+	"sharpnessLevels": [
+		{
+			"color": "Blue",
+			"value": 50
+		},
+		{
+			"color": "Blue",
+			"value": 60
+		},
+		{
+			"color": "White",
+			"value": 10
+		},
+		{
+			"color": "White",
+			"value": 20
+		},
+		{
+			"color": "White",
+			"value": 30
+		},
+		{
+			"color": "White",
+			"value": 40
+		}
+	],
     "baseAffinityPercent": 0,
     "ailment": "Poison",
     "ailmentBaseAttack": 330,
@@ -126,7 +256,32 @@
     "itemType": "Weapon",
     "weaponType": "ChargeBlade",
     "baseAttack": 684,
-    "maxSharpness": "Blue",
+	"sharpnessLevels": [
+		{
+			"color": "Blue",
+			"value": 50
+		},
+		{
+			"color": "Blue",
+			"value": 60
+		},
+		{
+			"color": "Blue",
+			"value": 70
+		},
+		{
+			"color": "Blue",
+			"value": 80
+		},
+		{
+			"color": "Blue",
+			"value": 90
+		},
+		{
+			"color": "Blue",
+			"value": 100
+		}
+	],
     "baseAffinityPercent": 0,
     "ailment": "Blast",
 	"ailmentBaseAttack": 240,
@@ -146,7 +301,32 @@
     "itemType": "Weapon",
     "weaponType": "ChargeBlade",
     "baseAttack": 828,
-    "maxSharpness": "Blue",
+	"sharpnessLevels": [
+		{
+			"color": "Blue",
+			"value": 30
+		},
+		{
+			"color": "Blue",
+			"value": 40
+		},
+		{
+			"color": "Blue",
+			"value": 50
+		},
+		{
+			"color": "Blue",
+			"value": 60
+		},
+		{
+			"color": "White",
+			"value": 10
+		},
+		{
+			"color": "White",
+			"value": 20
+		}
+	],
     "baseAffinityPercent": -30,
     "element": "Ice",
     "elementBaseAttack": 180,
@@ -162,7 +342,32 @@
     "itemType": "Weapon",
     "weaponType": "ChargeBlade",
     "baseAttack": 684,
-    "maxSharpness": "Blue",
+	"sharpnessLevels": [
+		{
+			"color": "Blue",
+			"value": 40
+		},
+		{
+			"color": "Blue",
+			"value": 50
+		},
+		{
+			"color": "Blue",
+			"value": 60
+		},
+		{
+			"color": "Blue",
+			"value": 70
+		},
+		{
+			"color": "Blue",
+			"value": 80
+		},
+		{
+			"color": "Blue",
+			"value": 90
+		}
+	],
     "baseAffinityPercent": 0,
     "ailment": "Sleep",
     "ailmentBaseAttack": 180,
@@ -184,7 +389,32 @@
     "itemType": "Weapon",
     "weaponType": "ChargeBlade",
     "baseAttack": 612,
-    "maxSharpness": "Blue",
+	"sharpnessLevels": [
+		{
+			"color": "Blue",
+			"value": 50
+		},
+		{
+			"color": "Blue",
+			"value": 60
+		},
+		{
+			"color": "Blue",
+			"value": 70
+		},
+		{
+			"color": "Blue",
+			"value": 80
+		},
+		{
+			"color": "White",
+			"value": 10
+		},
+		{
+			"color": "White",
+			"value": 20
+		}
+	],
     "baseAffinityPercent": 0,
     "ailment": "Blast",
     "ailmentBaseAttack": 180,
@@ -205,7 +435,32 @@
     "itemType": "Weapon",
     "weaponType": "ChargeBlade",
     "baseAttack": 576,
-    "maxSharpness": "Blue",
+	"sharpnessLevels": [
+		{
+			"color": "Blue",
+			"value": 50
+		},
+		{
+			"color": "Blue",
+			"value": 60
+		},
+		{
+			"color": "Blue",
+			"value": 70
+		},
+		{
+			"color": "Blue",
+			"value": 80
+		},
+		{
+			"color": "White",
+			"value": 10
+		},
+		{
+			"color": "White",
+			"value": 20
+		}
+	],
     "baseAffinityPercent": 20,
     "ailment": "Paralysis",
     "ailmentBaseAttack": 300,
@@ -219,7 +474,32 @@
     "itemType": "Weapon",
     "weaponType": "ChargeBlade",
     "baseAttack": 684,
-    "maxSharpness": "Blue",
+	"sharpnessLevels": [
+		{
+			"color": "Blue",
+			"value": 40
+		},
+		{
+			"color": "Blue",
+			"value": 50
+		},
+		{
+			"color": "White",
+			"value": 10
+		},
+		{
+			"color": "White",
+			"value": 20
+		},
+		{
+			"color": "White",
+			"value": 30
+		},
+		{
+			"color": "White",
+			"value": 40
+		}
+	],
     "baseAffinityPercent": 0,
     "element": "Dragon",
     "elementBaseAttack": 270,
@@ -238,7 +518,32 @@
     "itemType": "Weapon",
     "weaponType": "ChargeBlade",
     "baseAttack": 648,
-    "maxSharpness": "Blue",
+	"sharpnessLevels": [
+		{
+			"color": "Blue",
+			"value": 50
+		},
+		{
+			"color": "Blue",
+			"value": 60
+		},
+		{
+			"color": "White",
+			"value": 10
+		},
+		{
+			"color": "White",
+			"value": 20
+		},
+		{
+			"color": "White",
+			"value": 30
+		},
+		{
+			"color": "White",
+			"value": 40
+		}
+	],
     "baseAffinityPercent": 15,
     "element": "Thunder",
     "elementBaseAttack": 210,
@@ -256,7 +561,12 @@
     "itemType": "Weapon",
     "weaponType": "ChargeBlade",
     "baseAttack": 576,
-    "maxSharpness": "White",
+	"sharpnessLevels": [
+		{
+			"color": "White",
+			"value": 40
+		}
+	],
     "baseAffinityPercent": 25,
     "element": "Fire",
     "elementBaseAttack": 180,
@@ -271,7 +581,32 @@
     "itemType": "Weapon",
     "weaponType": "ChargeBlade",
     "baseAttack": 576,
-    "maxSharpness": "Blue",
+	"sharpnessLevels": [
+		{
+			"color": "Blue",
+			"value": 40
+		},
+		{
+			"color": "Blue",
+			"value": 50
+		},
+		{
+			"color": "Blue",
+			"value": 60
+		},
+		{
+			"color": "Blue",
+			"value": 70
+		},
+		{
+			"color": "White",
+			"value": 10
+		},
+		{
+			"color": "White",
+			"value": 20
+		}
+	],
     "baseAffinityPercent": 0,
     "element": "Dragon",
     "elementBaseAttack": 360,
@@ -293,7 +628,32 @@
     "itemType": "Weapon",
     "weaponType": "ChargeBlade",
     "baseAttack": 756,
-    "maxSharpness": "Green",
+	"sharpnessLevels": [
+		{
+			"color": "Green",
+			"value": 70
+		},
+		{
+			"color": "Green",
+			"value": 80
+		},
+		{
+			"color": "Green",
+			"value": 90
+		},
+		{
+			"color": "Blue",
+			"value": 10
+		},
+		{
+			"color": "Blue",
+			"value": 20
+		},
+		{
+			"color": "Blue",
+			"value": 30
+		}
+	],
     "baseAffinityPercent": -10,
     "ailment": "Blast",
     "ailmentBaseAttack": 210,
@@ -308,7 +668,32 @@
     "itemType": "Weapon",
     "weaponType": "ChargeBlade",
     "baseAttack": 648,
-    "maxSharpness": "Blue",
+	"sharpnessLevels": [
+		{
+			"color": "Blue",
+			"value": 40
+		},
+		{
+			"color": "Blue",
+			"value": 50
+		},
+		{
+			"color": "Blue",
+			"value": 60
+		},
+		{
+			"color": "Blue",
+			"value": 70
+		},
+		{
+			"color": "White",
+			"value": 10
+		},
+		{
+			"color": "White",
+			"value": 20
+		}
+	],
     "baseAffinityPercent": 15,
     "element": "Ice",
     "elementBaseAttack": 180,
@@ -329,7 +714,32 @@
     "itemType": "Weapon",
     "weaponType": "ChargeBlade",
     "baseAttack": 648,
-    "maxSharpness": "White",
+	"sharpnessLevels": [
+		{
+			"color": "White",
+			"value": 10
+		},
+		{
+			"color": "White",
+			"value": 20
+		},
+		{
+			"color": "White",
+			"value": 30
+		},
+		{
+			"color": "White",
+			"value": 40
+		},
+		{
+			"color": "White",
+			"value": 50
+		},
+		{
+			"color": "White",
+			"value": 60
+		}
+	],
     "baseAffinityPercent": 15,
     "element": "Dragon",
     "elementBaseAttack": 180,
@@ -351,7 +761,32 @@
     "itemType": "Weapon",
     "weaponType": "ChargeBlade",
     "baseAttack": 792,
-    "maxSharpness": "Blue",
+	"sharpnessLevels": [
+		{
+			"color": "Blue",
+			"value": 40
+		},
+		{
+			"color": "White",
+			"value": 10
+		},
+		{
+			"color": "White",
+			"value": 20
+		},
+		{
+			"color": "White",
+			"value": 30
+		},
+		{
+			"color": "White",
+			"value": 40
+		},
+		{
+			"color": "White",
+			"value": 50
+		}
+	],
     "baseAffinityPercent": -25,
     "element": "Dragon",
     "elementBaseAttack": 210,

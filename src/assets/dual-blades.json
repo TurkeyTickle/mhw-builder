@@ -6,7 +6,32 @@
     "itemType": "Weapon",
     "weaponType": "DualBlades",
     "baseAttack": 252,
-    "maxSharpness": "Blue",
+	"sharpnessLevels": [
+		{
+			"color": "Blue",
+			"value": 60
+		},
+		{
+			"color": "Blue",
+			"value": 70
+		},
+		{
+			"color": "Blue",
+			"value": 80
+		},
+		{
+			"color": "Blue",
+			"value": 90
+		},
+		{
+			"color": "White",
+			"value": 10
+		},
+		{
+			"color": "White",
+			"value": 20
+		}
+	],
     "baseAffinityPercent": 0,
     "ailment": "Poison",
     "ailmentBaseAttack": 270,
@@ -28,7 +53,12 @@
     "itemType": "Weapon",
     "weaponType": "DualBlades",
     "baseAttack": 294,
-    "maxSharpness": "Blue",
+	"sharpnessLevels": [
+		{
+			"color": "Blue",
+			"value": 100
+		}
+	],
     "baseAffinityPercent": 0,
     "element": "Dragon",
     "elementBaseAttack": 120,
@@ -48,7 +78,32 @@
     "itemType": "Weapon",
     "weaponType": "DualBlades",
     "baseAttack": 252,
-    "maxSharpness": "Blue",
+	"sharpnessLevels": [
+		{
+			"color": "Blue",
+			"value": 40
+		},
+		{
+			"color": "Blue",
+			"value": 50
+		},
+		{
+			"color": "White",
+			"value": 10
+		},
+		{
+			"color": "White",
+			"value": 20
+		},
+		{
+			"color": "White",
+			"value": 30
+		},
+		{
+			"color": "White",
+			"value": 40
+		}
+	],
     "baseAffinityPercent": 0,
     "element": "Thunder",
     "elementBaseAttack": 210,
@@ -67,7 +122,32 @@
     "itemType": "Weapon",
     "weaponType": "DualBlades",
     "baseAttack": 280,
-    "maxSharpness": "Blue",
+	"sharpnessLevels": [
+		{
+			"color": "Blue",
+			"value": 30
+		},
+		{
+			"color": "White",
+			"value": 10
+		},
+		{
+			"color": "White",
+			"value": 20
+		},
+		{
+			"color": "White",
+			"value": 30
+		},
+		{
+			"color": "White",
+			"value": 40
+		},
+		{
+			"color": "White",
+			"value": 50
+		}
+	],
     "baseAffinityPercent": -10,
     "ailment": "Blast",
     "ailmentBaseAttack": 150,
@@ -85,7 +165,32 @@
     "itemType": "Weapon",
     "weaponType": "DualBlades",
     "baseAttack": 252,
-    "maxSharpness": "Blue",
+	"sharpnessLevels": [
+		{
+			"color": "Blue",
+			"value": 40
+		},
+		{
+			"color": "Blue",
+			"value": 50
+		},
+		{
+			"color": "White",
+			"value": 10
+		},
+		{
+			"color": "White",
+			"value": 20
+		},
+		{
+			"color": "White",
+			"value": 30
+		},
+		{
+			"color": "White",
+			"value": 40
+		}
+	],
     "baseAffinityPercent": 0,
     "element": "Ice",
     "elementBaseAttack": 150,
@@ -103,7 +208,32 @@
     "itemType": "Weapon",
     "weaponType": "DualBlades",
     "baseAttack": 238,
-    "maxSharpness": "Blue",
+	"sharpnessLevels": [
+		{
+			"color": "Blue",
+			"value": 50
+		},
+		{
+			"color": "Blue",
+			"value": 60
+		},
+		{
+			"color": "Blue",
+			"value": 70
+		},
+		{
+			"color": "White",
+			"value": 10
+		},
+		{
+			"color": "White",
+			"value": 20
+		},
+		{
+			"color": "White",
+			"value": 30
+		}
+	],
     "baseAffinityPercent": 20,
     "ailment": "Sleep",
     "ailmentBaseAttack": 120,
@@ -117,7 +247,32 @@
     "itemType": "Weapon",
     "weaponType": "DualBlades",
     "baseAttack": 252,
-    "maxSharpness": "Blue",
+	"sharpnessLevels": [
+		{
+			"color": "Blue",
+			"value": 110
+		},
+		{
+			"color": "Blue",
+			"value": 120
+		},
+		{
+			"color": "White",
+			"value": 10
+		},
+		{
+			"color": "White",
+			"value": 20
+		},
+		{
+			"color": "White",
+			"value": 30
+		},
+		{
+			"color": "White",
+			"value": 40
+		}
+	],
     "baseAffinityPercent": 0,
     "element": "Water",
     "elementBaseAttack": 120,
@@ -135,7 +290,32 @@
     "itemType": "Weapon",
     "weaponType": "DualBlades",
     "baseAttack": 266,
-    "maxSharpness": "Blue",
+	"sharpnessLevels": [
+		{
+			"color": "Blue",
+			"value": 60
+		},
+		{
+			"color": "Blue",
+			"value": 70
+		},
+		{
+			"color": "Blue",
+			"value": 80
+		},
+		{
+			"color": "Blue",
+			"value": 90
+		},
+		{
+			"color": "Blue",
+			"value": 100
+		},
+		{
+			"color": "Blue",
+			"value": 110
+		}
+	],
     "baseAffinityPercent": 0,
     "ailment": "Blast",
     "ailmentBaseAttack": 180,
@@ -154,7 +334,32 @@
     "itemType": "Weapon",
     "weaponType": "DualBlades",
     "baseAttack": 252,
-    "maxSharpness": "Blue",
+	"sharpnessLevels": [
+		{
+			"color": "Blue",
+			"value": 40
+		},
+		{
+			"color": "Blue",
+			"value": 50
+		},
+		{
+			"color": "Blue",
+			"value": 60
+		},
+		{
+			"color": "Blue",
+			"value": 70
+		},
+		{
+			"color": "Blue",
+			"value": 80
+		},
+		{
+			"color": "Blue",
+			"value": 90
+		}
+	],
     "baseAffinityPercent": -20,
     "element": "Fire",
     "elementBaseAttack": 210,
@@ -168,7 +373,32 @@
     "itemType": "Weapon",
     "weaponType": "DualBlades",
     "baseAttack": 322,
-    "maxSharpness": "Blue",
+	"sharpnessLevels": [
+		{
+			"color": "Blue",
+			"value": 30
+		},
+		{
+			"color": "Blue",
+			"value": 40
+		},
+		{
+			"color": "Blue",
+			"value": 50
+		},
+		{
+			"color": "Blue",
+			"value": 60
+		},
+		{
+			"color": "White",
+			"value": 10
+		},
+		{
+			"color": "White",
+			"value": 20
+		}
+	],
     "baseAffinityPercent": -10,
     "element": "Ice",
     "elementBaseAttack": 90,
@@ -188,7 +418,32 @@
     "itemType": "Weapon",
     "weaponType": "DualBlades",
     "baseAttack": 266,
-    "maxSharpness": "Blue",
+	"sharpnessLevels": [
+		{
+			"color": "Blue",
+			"value": 30
+		},
+		{
+			"color": "Blue",
+			"value": 40
+		},
+		{
+			"color": "Blue",
+			"value": 50
+		},
+		{
+			"color": "White",
+			"value": 10
+		},
+		{
+			"color": "White",
+			"value": 20
+		},
+		{
+			"color": "White",
+			"value": 30
+		}
+	],
     "baseAffinityPercent": 0,
     "element": "Water",
     "elementBaseAttack": 210,
@@ -206,7 +461,32 @@
     "itemType": "Weapon",
     "weaponType": "DualBlades",
     "baseAttack": 252,
-    "maxSharpness": "Blue",
+	"sharpnessLevels": [
+		{
+			"color": "Blue",
+			"value": 40
+		},
+		{
+			"color": "Blue",
+			"value": 50
+		},
+		{
+			"color": "White",
+			"value": 10
+		},
+		{
+			"color": "White",
+			"value": 20
+		},
+		{
+			"color": "White",
+			"value": 30
+		},
+		{
+			"color": "White",
+			"value": 40
+		}
+	],
     "baseAffinityPercent": 0,
     "element": "Fire",
     "elementBaseAttack": 150,
@@ -227,7 +507,32 @@
     "itemType": "Weapon",
     "weaponType": "DualBlades",
     "baseAttack": 224,
-    "maxSharpness": "White",
+	"sharpnessLevels": [
+		{
+			"color": "White",
+			"value": 30
+		},
+		{
+			"color": "White",
+			"value": 40
+		},
+		{
+			"color": "White",
+			"value": 50
+		},
+		{
+			"color": "White",
+			"value": 60
+		},
+		{
+			"color": "White",
+			"value": 70
+		},
+		{
+			"color": "White",
+			"value": 80
+		}
+	],
     "baseAffinityPercent": 0,
     "ailment": "Paralysis",
     "ailmentBaseAttack": 90,
@@ -246,7 +551,32 @@
     "itemType": "Weapon",
     "weaponType": "DualBlades",
     "baseAttack": 252,
-    "maxSharpness": "Blue",
+	"sharpnessLevels": [
+		{
+			"color": "Blue",
+			"value": 40
+		},
+		{
+			"color": "Blue",
+			"value": 50
+		},
+		{
+			"color": "White",
+			"value": 10
+		},
+		{
+			"color": "White",
+			"value": 20
+		},
+		{
+			"color": "White",
+			"value": 30
+		},
+		{
+			"color": "White",
+			"value": 40
+		}
+	],
     "baseAffinityPercent": 10,
     "element": "Thunder",
     "elementBaseAttack": 150,
@@ -264,7 +594,12 @@
     "itemType": "Weapon",
     "weaponType": "DualBlades",
     "baseAttack": 224,
-    "maxSharpness": "White",
+	"sharpnessLevels": [
+		{
+			"color": "White",
+			"value": 40
+		}
+	],
     "baseAffinityPercent": 20,
     "element": "Fire",
     "elementBaseAttack": 180,
@@ -279,7 +614,32 @@
     "itemType": "Weapon",
     "weaponType": "DualBlades",
     "baseAttack": 196,
-    "maxSharpness": "Blue",
+	"sharpnessLevels": [
+		{
+			"color": "Blue",
+			"value": 50
+		},
+		{
+			"color": "Blue",
+			"value": 60
+		},
+		{
+			"color": "Blue",
+			"value": 70
+		},
+		{
+			"color": "Blue",
+			"value": 80
+		},
+		{
+			"color": "White",
+			"value": 10
+		},
+		{
+			"color": "White",
+			"value": 20
+		}
+	],
     "baseAffinityPercent": 0,
     "element": "Dragon",
     "elementBaseAttack": 270,
@@ -301,7 +661,32 @@
     "itemType": "Weapon",
     "weaponType": "DualBlades",
     "baseAttack": 224,
-    "maxSharpness": "Blue",
+	"sharpnessLevels": [
+		{
+			"color": "Blue",
+			"value": 80
+		},
+		{
+			"color": "Blue",
+			"value": 90
+		},
+		{
+			"color": "Blue",
+			"value": 100
+		},
+		{
+			"color": "Blue",
+			"value": 110
+		},
+		{
+			"color": "Blue",
+			"value": 120
+		},
+		{
+			"color": "Blue",
+			"value": 130
+		}
+	],
     "baseAffinityPercent": 0,
     "element": "Thunder",
     "elementBaseAttack": 270,
@@ -315,7 +700,32 @@
     "itemType": "Weapon",
     "weaponType": "DualBlades",
     "baseAttack": 308,
-    "maxSharpness": "Green",
+	"sharpnessLevels": [
+		{
+			"color": "Green",
+			"value": 80
+		},
+		{
+			"color": "Green",
+			"value": 90
+		},
+		{
+			"color": "Blue",
+			"value": 10
+		},
+		{
+			"color": "Blue",
+			"value": 20
+		},
+		{
+			"color": "Blue",
+			"value": 30
+		},
+		{
+			"color": "Blue",
+			"value": 40
+		}
+	],
     "baseAffinityPercent": -20,
     "ailment": "Blast",
     "ailmentBaseAttack": 210,
@@ -335,7 +745,32 @@
     "weaponType": "DualBlades",
     "baseAttack": 252,
     "baseAffinityPercent": 10,
-    "maxSharpness": "Blue",
+	"sharpnessLevels": [
+		{
+			"color": "Blue",
+			"value": 60
+		},
+		{
+			"color": "Blue",
+			"value": 70
+		},
+		{
+			"color": "White",
+			"value": 10
+		},
+		{
+			"color": "White",
+			"value": 20
+		},
+		{
+			"color": "White",
+			"value": 30
+		},
+		{
+			"color": "White",
+			"value": 40
+		}
+	],
     "element": "Ice",
     "elementBaseAttack": 240,
     "ailment": "Blast",
@@ -355,7 +790,32 @@
     "weaponType": "DualBlades",
     "baseAttack": 238,
     "baseAffinityPercent": 15,
-    "maxSharpness": "White",
+	"sharpnessLevels": [
+		{
+			"color": "White",
+			"value": 20
+		},
+		{
+			"color": "White",
+			"value": 30
+		},
+		{
+			"color": "White",
+			"value": 40
+		},
+		{
+			"color": "White",
+			"value": 50
+		},
+		{
+			"color": "White",
+			"value": 60
+		},
+		{
+			"color": "White",
+			"value": 70
+		}
+	],
     "element": "Dragon",
     "elementBaseAttack": 150,
     "elderseal": "Low",
@@ -370,32 +830,38 @@
     "id": 81
   },
   {
-    "name": "Nergal Gouge",
-	"tags": ["nergigante", "dragon"],
-	"rarity": 7,
-    "itemType": "Weapon",
-    "weaponType": "DualBlades",
-    "baseAttack": 280,
-    "maxSharpness": "Blue",
-    "baseAffinityPercent": 0,
-    "element": "Dragon",
-    "elementBaseAttack": 90,
-    "elderseal": "High",
-    "slots": [
-      {
-        "level": 1
-      }
-    ],
-    "id": 82
-  },
-  {
     "name": "Wrathful Predation",
 	"tags": ["deviljho", "dragon"],
 	"rarity": 7,
     "itemType": "Weapon",
     "weaponType": "DualBlades",
     "baseAttack": 308,
-    "maxSharpness": "Blue",
+	"sharpnessLevels": [
+		{
+			"color": "Blue",
+			"value": 50
+		},
+		{
+			"color": "White",
+			"value": 10
+		},
+		{
+			"color": "White",
+			"value": 20
+		},
+		{
+			"color": "White",
+			"value": 30
+		},
+		{
+			"color": "White",
+			"value": 40
+		},
+		{
+			"color": "White",
+			"value": 50
+		}
+	],
     "baseAffinityPercent": -20,
     "element": "Dragon",
     "elementBaseAttack": 180,

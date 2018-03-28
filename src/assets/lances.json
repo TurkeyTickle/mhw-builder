@@ -6,7 +6,32 @@
     "itemType": "Weapon",
     "weaponType": "Lance",
     "baseAttack": 414,
-    "maxSharpness": "Blue",
+	"sharpnessLevels": [
+		{
+			"color": "Blue",
+			"value": 60
+		},
+		{
+			"color": "Blue",
+			"value": 70
+		},
+		{
+			"color": "Blue",
+			"value": 80
+		},
+		{
+			"color": "Blue",
+			"value": 90
+		},
+		{
+			"color": "White",
+			"value": 10
+		},
+		{
+			"color": "White",
+			"value": 20
+		}
+	],
     "baseAffinityPercent": 0,
     "ailment": "Paralysis",
     "ailmentBaseAttack": 270,
@@ -28,7 +53,12 @@
     "itemType": "Weapon",
     "weaponType": "Lance",
     "baseAttack": 483,
-    "maxSharpness": "Blue",
+	"sharpnessLevels": [
+		{
+			"color": "Blue",
+			"value": 80
+		}
+	],
     "baseAffinityPercent": 0,
     "element": "Dragon",
     "elementBaseAttack": 150,
@@ -48,7 +78,32 @@
     "itemType": "Weapon",
     "weaponType": "Lance",
     "baseAttack": 368,
-    "maxSharpness": "White",
+	"sharpnessLevels": [
+		{
+			"color": "White",
+			"value": 10
+		},
+		{
+			"color": "White",
+			"value": 20
+		},
+		{
+			"color": "White",
+			"value": 30
+		},
+		{
+			"color": "White",
+			"value": 40
+		},
+		{
+			"color": "White",
+			"value": 50
+		},
+		{
+			"color": "White",
+			"value": 60
+		}
+	],
     "baseAffinityPercent": 0,
     "element": "Ice",
     "elementBaseAttack": 360,
@@ -62,7 +117,32 @@
     "itemType": "Weapon",
     "weaponType": "Lance",
     "baseAttack": 391,
-    "maxSharpness": "Blue",
+	"sharpnessLevels": [
+		{
+			"color": "Blue",
+			"value": 40
+		},
+		{
+			"color": "Blue",
+			"value": 50
+		},
+		{
+			"color": "Blue",
+			"value": 60
+		},
+		{
+			"color": "White",
+			"value": 10
+		},
+		{
+			"color": "White",
+			"value": 20
+		},
+		{
+			"color": "White",
+			"value": 30
+		}
+	],
     "baseAffinityPercent": 25,
     "ailment": "Sleep",
     "ailmentBaseAttack": 360,
@@ -77,7 +157,32 @@
     "itemType": "Weapon",
     "weaponType": "Lance",
     "baseAttack": 391,
-    "maxSharpness": "Blue",
+	"sharpnessLevels": [
+		{
+			"color": "Blue",
+			"value": 40
+		},
+		{
+			"color": "Blue",
+			"value": 50
+		},
+		{
+			"color": "Blue",
+			"value": 60
+		},
+		{
+			"color": "Blue",
+			"value": 70
+		},
+		{
+			"color": "White",
+			"value": 10
+		},
+		{
+			"color": "White",
+			"value": 20
+		}
+	],
     "baseAffinityPercent": 0,
     "ailment": "Blast",
     "ailmentBaseAttack": 210,
@@ -98,7 +203,32 @@
     "itemType": "Weapon",
     "weaponType": "Lance",
     "baseAttack": 414,
-    "maxSharpness": "Blue",
+	"sharpnessLevels": [
+		{
+			"color": "Blue",
+			"value": 40
+		},
+		{
+			"color": "Blue",
+			"value": 50
+		},
+		{
+			"color": "Blue",
+			"value": 60
+		},
+		{
+			"color": "Blue",
+			"value": 70
+		},
+		{
+			"color": "White",
+			"value": 10
+		},
+		{
+			"color": "White",
+			"value": 20
+		}
+	],
     "baseAffinityPercent": 0,
     "element": "Thunder",
     "elementBaseAttack": 240,
@@ -116,7 +246,32 @@
     "itemType": "Weapon",
     "weaponType": "Lance",
     "baseAttack": 391,
-    "maxSharpness": "Blue",
+	"sharpnessLevels": [
+		{
+			"color": "Blue",
+			"value": 40
+		},
+		{
+			"color": "Blue",
+			"value": 50
+		},
+		{
+			"color": "Blue",
+			"value": 60
+		},
+		{
+			"color": "Blue",
+			"value": 70
+		},
+		{
+			"color": "Blue",
+			"value": 80
+		},
+		{
+			"color": "Blue",
+			"value": 90
+		}
+	],
     "baseAffinityPercent": 0,
     "ailment": "Poison",
     "ailmentBaseAttack": 540,
@@ -137,7 +292,32 @@
     "itemType": "Weapon",
     "weaponType": "Lance",
     "baseAttack": 437,
-    "maxSharpness": "Blue",
+	"sharpnessLevels": [
+		{
+			"color": "Blue",
+			"value": 40
+		},
+		{
+			"color": "Blue",
+			"value": 50
+		},
+		{
+			"color": "Blue",
+			"value": 60
+		},
+		{
+			"color": "White",
+			"value": 10
+		},
+		{
+			"color": "White",
+			"value": 20
+		},
+		{
+			"color": "White",
+			"value": 30
+		}
+	],
     "baseAffinityPercent": 20,
     "element": "Fire",
     "elementBaseAttack": 300,
@@ -155,7 +335,32 @@
     "itemType": "Weapon",
     "weaponType": "Lance",
     "baseAttack": 437,
-    "maxSharpness": "Blue",
+	"sharpnessLevels": [
+		{
+			"color": "Blue",
+			"value": 40
+		},
+		{
+			"color": "Blue",
+			"value": 50
+		},
+		{
+			"color": "Blue",
+			"value": 60
+		},
+		{
+			"color": "Blue",
+			"value": 70
+		},
+		{
+			"color": "Blue",
+			"value": 80
+		},
+		{
+			"color": "Blue",
+			"value": 90
+		}
+	],
     "baseAffinityPercent": 0,
     "ailment": "Poison",
     "ailmentBaseAttack": 240,
@@ -175,7 +380,32 @@
     "itemType": "Weapon",
     "weaponType": "Lance",
     "baseAttack": 460,
-    "maxSharpness": "Blue",
+	"sharpnessLevels": [
+		{
+			"color": "Blue",
+			"value": 40
+		},
+		{
+			"color": "Blue",
+			"value": 50
+		},
+		{
+			"color": "White",
+			"value": 10
+		},
+		{
+			"color": "White",
+			"value": 20
+		},
+		{
+			"color": "White",
+			"value": 30
+		},
+		{
+			"color": "White",
+			"value": 40
+		}
+	],
     "baseAffinityPercent": 0,
     "element": "Dragon",
     "elementBaseAttack": 270,
@@ -194,7 +424,32 @@
     "itemType": "Weapon",
     "weaponType": "Lance",
     "baseAttack": 368,
-    "maxSharpness": "White",
+	"sharpnessLevels": [
+		{
+			"color": "White",
+			"value": 30
+		},
+		{
+			"color": "White",
+			"value": 40
+		},
+		{
+			"color": "White",
+			"value": 50
+		},
+		{
+			"color": "White",
+			"value": 60
+		},
+		{
+			"color": "White",
+			"value": 70
+		},
+		{
+			"color": "White",
+			"value": 80
+		}
+	],
     "baseAffinityPercent": 0,
     "ailment": "Blast",
     "ailmentBaseAttack": 240,
@@ -213,7 +468,32 @@
     "itemType": "Weapon",
     "weaponType": "Lance",
     "baseAttack": 460,
-    "maxSharpness": "Blue",
+	"sharpnessLevels": [
+		{
+			"color": "Blue",
+			"value": 40
+		},
+		{
+			"color": "Blue",
+			"value": 50
+		},
+		{
+			"color": "Blue",
+			"value": 60
+		},
+		{
+			"color": "Blue",
+			"value": 70
+		},
+		{
+			"color": "Blue",
+			"value": 80
+		},
+		{
+			"color": "Blue",
+			"value": 90
+		}
+	],
     "baseAffinityPercent": -20,
     "ailment": "Paralysis",
     "ailmentBaseAttack": 390,
@@ -236,7 +516,12 @@
     "itemType": "Weapon",
     "weaponType": "Lance",
     "baseAttack": 391,
-    "maxSharpness": "White",
+	"sharpnessLevels": [
+		{
+			"color": "White",
+			"value": 30
+		}
+	],
     "baseAffinityPercent": 30,
     "element": "Fire",
     "elementBaseAttack": 210,
@@ -251,7 +536,32 @@
     "itemType": "Weapon",
     "weaponType": "Lance",
     "baseAttack": 437,
-    "maxSharpness": "Blue",
+	"sharpnessLevels": [
+		{
+			"color": "Blue",
+			"value": 30
+		},
+		{
+			"color": "Blue",
+			"value": 40
+		},
+		{
+			"color": "Blue",
+			"value": 50
+		},
+		{
+			"color": "Blue",
+			"value": 60
+		},
+		{
+			"color": "Blue",
+			"value": 70
+		},
+		{
+			"color": "Blue",
+			"value": 80
+		}
+	],
     "baseAffinityPercent": 0,
     "element": "Water",
     "elementBaseAttack": 300,
@@ -269,7 +579,32 @@
     "itemType": "Weapon",
     "weaponType": "Lance",
     "baseAttack": 368,
-    "maxSharpness": "Blue",
+	"sharpnessLevels": [
+		{
+			"color": "Blue",
+			"value": 40
+		},
+		{
+			"color": "Blue",
+			"value": 50
+		},
+		{
+			"color": "Blue",
+			"value": 60
+		},
+		{
+			"color": "Blue",
+			"value": 70
+		},
+		{
+			"color": "White",
+			"value": 10
+		},
+		{
+			"color": "White",
+			"value": 20
+		}
+	],
     "baseAffinityPercent": 0,
     "element": "Dragon",
     "elementBaseAttack": 420,
@@ -291,7 +626,32 @@
     "itemType": "Weapon",
     "weaponType": "Lance",
     "baseAttack": 460,
-    "maxSharpness": "Blue",
+	"sharpnessLevels": [
+		{
+			"color": "Blue",
+			"value": 20
+		},
+		{
+			"color": "White",
+			"value": 10
+		},
+		{
+			"color": "White",
+			"value": 20
+		},
+		{
+			"color": "White",
+			"value": 30
+		},
+		{
+			"color": "White",
+			"value": 40
+		},
+		{
+			"color": "White",
+			"value": 50
+		}
+	],
     "baseAffinityPercent": -10,
     "ailment": "Blast",
     "ailmentBaseAttack": 210,
@@ -305,7 +665,32 @@
     "itemType": "Weapon",
     "weaponType": "Lance",
     "baseAttack": 368,
-    "maxSharpness": "Blue",
+	"sharpnessLevels": [
+		{
+			"color": "Blue",
+			"value": 60
+		},
+		{
+			"color": "Blue",
+			"value": 70
+		},
+		{
+			"color": "Blue",
+			"value": 80
+		},
+		{
+			"color": "Blue",
+			"value": 90
+		},
+		{
+			"color": "Blue",
+			"value": 100
+		},
+		{
+			"color": "Blue",
+			"value": 110
+		}
+	],
     "baseAffinityPercent": 10,
     "element": "Thunder",
     "elementBaseAttack": 540,
@@ -319,7 +704,32 @@
     "itemType": "Weapon",
     "weaponType": "Lance",
     "baseAttack": 414,
-    "maxSharpness": "Blue",
+	"sharpnessLevels": [
+		{
+			"color": "Blue",
+			"value": 40
+		},
+		{
+			"color": "Blue",
+			"value": 50
+		},
+		{
+			"color": "Blue",
+			"value": 60
+		},
+		{
+			"color": "Blue",
+			"value": 70
+		},
+		{
+			"color": "White",
+			"value": 10
+		},
+		{
+			"color": "White",
+			"value": 20
+		}
+	],
     "baseAffinityPercent": 10,
     "element": "Ice",
     "elementBaseAttack": 240,
@@ -337,7 +747,32 @@
     "itemType": "Weapon",
     "weaponType": "Lance",
     "baseAttack": 391,
-    "maxSharpness": "White",
+	"sharpnessLevels": [
+		{
+			"color": "White",
+			"value": 10
+		},
+		{
+			"color": "White",
+			"value": 20
+		},
+		{
+			"color": "White",
+			"value": 30
+		},
+		{
+			"color": "White",
+			"value": 40
+		},
+		{
+			"color": "White",
+			"value": 50
+		},
+		{
+			"color": "White",
+			"value": 60
+		}
+	],
     "baseAffinityPercent": 15,
     "element": "Dragon",
     "elementBaseAttack": 180,
@@ -359,7 +794,32 @@
     "itemType": "Weapon",
     "weaponType": "Lance",
     "baseAttack": 460,
-    "maxSharpness": "Blue",
+	"sharpnessLevels": [
+		{
+			"color": "Blue",
+			"value": 30
+		},
+		{
+			"color": "Blue",
+			"value": 40
+		},
+		{
+			"color": "Blue",
+			"value": 50
+		},
+		{
+			"color": "Blue",
+			"value": 60
+		},
+		{
+			"color": "Blue",
+			"value": 70
+		},
+		{
+			"color": "Blue",
+			"value": 80
+		}
+	],
     "baseAffinityPercent": 0,
     "element": "Fire",
     "elementBaseAttack": 330,
@@ -379,7 +839,32 @@
     "itemType": "Weapon",
     "weaponType": "Lance",
     "baseAttack": 529,
-    "maxSharpness": "Blue",
+	"sharpnessLevels": [
+		{
+			"color": "Blue",
+			"value": 40
+		},
+		{
+			"color": "White",
+			"value": 10
+		},
+		{
+			"color": "White",
+			"value": 20
+		},
+		{
+			"color": "White",
+			"value": 30
+		},
+		{
+			"color": "White",
+			"value": 40
+		},
+		{
+			"color": "White",
+			"value": 50
+		}
+	],
     "baseAffinityPercent": -25,
     "element": "Dragon",
     "elementBaseAttack": 210,

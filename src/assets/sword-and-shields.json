@@ -6,7 +6,32 @@
     "itemType": "Weapon",
     "weaponType": "SwordAndShield",
     "baseAttack": 252,
-    "maxSharpness": "Blue",
+	"sharpnessLevels": [
+		{
+			"color": "Blue",
+			"value": 70
+		},
+		{
+			"color": "Blue",
+			"value": 80
+		},
+		{
+			"color": "Blue",
+			"value": 90
+		},
+		{
+			"color": "White",
+			"value": 10
+		},
+		{
+			"color": "White",
+			"value": 20
+		},
+		{
+			"color": "White",
+			"value": 30
+		}
+	],
     "baseAffinityPercent": 0,
     "ailment": "Sleep",
     "ailmentBaseAttack": 240,
@@ -28,7 +53,12 @@
     "itemType": "Weapon",
     "weaponType": "SwordAndShield",
     "baseAttack": 294,
-    "maxSharpness": "Blue",
+	"sharpnessLevels": [
+		{
+			"color": "Blue",
+			"value": 100
+		}
+	],
     "baseAffinityPercent": 0,
     "element": "Dragon",
     "elementBaseAttack": 150,
@@ -48,7 +78,32 @@
     "itemType": "Weapon",
     "weaponType": "SwordAndShield",
     "baseAttack": 266,
-    "maxSharpness": "Blue",
+	"sharpnessLevels": [
+		{
+			"color": "Blue",
+			"value": 40
+		},
+		{
+			"color": "Blue",
+			"value": 50
+		},
+		{
+			"color": "Blue",
+			"value": 60
+		},
+		{
+			"color": "White",
+			"value": 10
+		},
+		{
+			"color": "White",
+			"value": 20
+		},
+		{
+			"color": "White",
+			"value": 30
+		}
+	],
     "baseAffinityPercent": 20,
     "element": "Fire",
     "elementBaseAttack": 180,
@@ -66,7 +121,32 @@
     "itemType": "Weapon",
     "weaponType": "SwordAndShield",
     "baseAttack": 280,
-    "maxSharpness": "Blue",
+	"sharpnessLevels": [
+		{
+			"color": "Blue",
+			"value": 50
+		},
+		{
+			"color": "Blue",
+			"value": 60
+		},
+		{
+			"color": "Blue",
+			"value": 70
+		},
+		{
+			"color": "Blue",
+			"value": 80
+		},
+		{
+			"color": "Blue",
+			"value": 90
+		},
+		{
+			"color": "Blue",
+			"value": 100
+		}
+	],
     "baseAffinityPercent": 0,
     "element": "Thunder",
     "elementBaseAttack": 330,
@@ -86,7 +166,32 @@
     "itemType": "Weapon",
     "weaponType": "SwordAndShield",
     "baseAttack": 252,
-    "maxSharpness": "Blue",
+	"sharpnessLevels": [
+		{
+			"color": "Blue",
+			"value": 30
+		},
+		{
+			"color": "Blue",
+			"value": 40
+		},
+		{
+			"color": "Blue",
+			"value": 50
+		},
+		{
+			"color": "White",
+			"value": 10
+		},
+		{
+			"color": "White",
+			"value": 20
+		},
+		{
+			"color": "White",
+			"value": 30
+		}
+	],
     "baseAffinityPercent": 0,
     "element": "Water",
     "elementBaseAttack": 240,
@@ -104,7 +209,32 @@
     "itemType": "Weapon",
     "weaponType": "SwordAndShield",
     "baseAttack": 224,
-    "maxSharpness": "White",
+	"sharpnessLevels": [
+		{
+			"color": "White",
+			"value": 20
+		},
+		{
+			"color": "White",
+			"value": 30
+		},
+		{
+			"color": "White",
+			"value": 40
+		},
+		{
+			"color": "White",
+			"value": 50
+		},
+		{
+			"color": "White",
+			"value": 60
+		},
+		{
+			"color": "White",
+			"value": 70
+		}
+	],
     "baseAffinityPercent": 0,
     "element": "Ice",
     "elementBaseAttack": 330,
@@ -122,7 +252,32 @@
     "itemType": "Weapon",
     "weaponType": "SwordAndShield",
     "baseAttack": 266,
-    "maxSharpness": "Blue",
+	"sharpnessLevels": [
+		{
+			"color": "Blue",
+			"value": 40
+		},
+		{
+			"color": "Blue",
+			"value": 50
+		},
+		{
+			"color": "Blue",
+			"value": 60
+		},
+		{
+			"color": "White",
+			"value": 10
+		},
+		{
+			"color": "White",
+			"value": 20
+		},
+		{
+			"color": "White",
+			"value": 30
+		}
+	],
     "baseAffinityPercent": 10,
     "ailment": "Poison",
     "ailmentBaseAttack": 240,
@@ -140,7 +295,32 @@
     "itemType": "Weapon",
     "weaponType": "SwordAndShield",
     "baseAttack": 238,
-    "maxSharpness": "Blue",
+	"sharpnessLevels": [
+		{
+			"color": "Blue",
+			"value": 40
+		},
+		{
+			"color": "Blue",
+			"value": 50
+		},
+		{
+			"color": "White",
+			"value": 10
+		},
+		{
+			"color": "White",
+			"value": 20
+		},
+		{
+			"color": "White",
+			"value": 30
+		},
+		{
+			"color": "White",
+			"value": 40
+		}
+	],
     "baseAffinityPercent": 0,
     "ailment": "Blast",
     "ailmentBaseAttack": 330,
@@ -162,7 +342,32 @@
     "itemType": "Weapon",
     "weaponType": "SwordAndShield",
     "baseAttack": 238,
-    "maxSharpness": "Blue",
+	"sharpnessLevels": [
+		{
+			"color": "Blue",
+			"value": 50
+		},
+		{
+			"color": "Blue",
+			"value": 60
+		},
+		{
+			"color": "Blue",
+			"value": 70
+		},
+		{
+			"color": "Blue",
+			"value": 80
+		},
+		{
+			"color": "Blue",
+			"value": 90
+		},
+		{
+			"color": "Blue",
+			"value": 100
+		}
+	],
     "baseAffinityPercent": 0,
     "ailment": "Poison",
     "ailmentBaseAttack": 390,
@@ -183,7 +388,32 @@
     "itemType": "Weapon",
     "weaponType": "SwordAndShield",
     "baseAttack": 224,
-    "maxSharpness": "Blue",
+	"sharpnessLevels": [
+		{
+			"color": "Blue",
+			"value": 40
+		},
+		{
+			"color": "Blue",
+			"value": 50
+		},
+		{
+			"color": "White",
+			"value": 10
+		},
+		{
+			"color": "White",
+			"value": 20
+		},
+		{
+			"color": "White",
+			"value": 30
+		},
+		{
+			"color": "White",
+			"value": 40
+		}
+	],
     "baseAffinityPercent": 20,
     "ailment": "Paralysis",
     "ailmentBaseAttack": 240,
@@ -197,7 +427,32 @@
     "itemType": "Weapon",
     "weaponType": "SwordAndShield",
     "baseAttack": 266,
-    "maxSharpness": "Blue",
+	"sharpnessLevels": [
+		{
+			"color": "Blue",
+			"value": 50
+		},
+		{
+			"color": "Blue",
+			"value": 60
+		},
+		{
+			"color": "Blue",
+			"value": 70
+		},
+		{
+			"color": "Blue",
+			"value": 80
+		},
+		{
+			"color": "Blue",
+			"value": 90
+		},
+		{
+			"color": "Blue",
+			"value": 100
+		}
+	],
     "baseAffinityPercent": 0,
     "ailment": "Paralysis",
 	"ailmentBaseAttack": 300,
@@ -217,7 +472,32 @@
     "itemType": "Weapon",
     "weaponType": "SwordAndShield",
     "baseAttack": 266,
-    "maxSharpness": "Blue",
+	"sharpnessLevels": [
+		{
+			"color": "Blue",
+			"value": 40
+		},
+		{
+			"color": "Blue",
+			"value": 50
+		},
+		{
+			"color": "Blue",
+			"value": 60
+		},
+		{
+			"color": "Blue",
+			"value": 70
+		},
+		{
+			"color": "Blue",
+			"value": 80
+		},
+		{
+			"color": "Blue",
+			"value": 90
+		}
+	],
     "baseAffinityPercent": 0,
     "ailment": "Sleep",
     "ailmentBaseAttack": 210,
@@ -232,7 +512,32 @@
     "itemType": "Weapon",
     "weaponType": "SwordAndShield",
     "baseAttack": 266,
-    "maxSharpness": "Blue",
+	"sharpnessLevels": [
+		{
+			"color": "Blue",
+			"value": 50
+		},
+		{
+			"color": "Blue",
+			"value": 60
+		},
+		{
+			"color": "Blue",
+			"value": 70
+		},
+		{
+			"color": "Blue",
+			"value": 80
+		},
+		{
+			"color": "Blue",
+			"value": 90
+		},
+		{
+			"color": "Blue",
+			"value": 100
+		}
+	],
     "baseAffinityPercent": 0,
     "element": "Water",
     "elementBaseAttack": 360,
@@ -254,7 +559,32 @@
     "itemType": "Weapon",
     "weaponType": "SwordAndShield",
     "baseAttack": 266,
-    "maxSharpness": "Blue",
+	"sharpnessLevels": [
+		{
+			"color": "Blue",
+			"value": 40
+		},
+		{
+			"color": "Blue",
+			"value": 50
+		},
+		{
+			"color": "Blue",
+			"value": 60
+		},
+		{
+			"color": "Blue",
+			"value": 70
+		},
+		{
+			"color": "Blue",
+			"value": 80
+		},
+		{
+			"color": "Blue",
+			"value": 90
+		}
+	],
     "baseAffinityPercent": 0,
     "element": "Thunder",
     "elementBaseAttack": 210,
@@ -272,7 +602,32 @@
     "itemType": "Weapon",
     "weaponType": "SwordAndShield",
     "baseAttack": 294,
-    "maxSharpness": "Blue",
+	"sharpnessLevels": [
+		{
+			"color": "Blue",
+			"value": 40
+		},
+		{
+			"color": "Blue",
+			"value": 50
+		},
+		{
+			"color": "Blue",
+			"value": 60
+		},
+		{
+			"color": "Blue",
+			"value": 70
+		},
+		{
+			"color": "Blue",
+			"value": 80
+		},
+		{
+			"color": "Blue",
+			"value": 90
+		}
+	],
     "baseAffinityPercent": -10,
     "ailment": "Paralysis",
     "ailmentBaseAttack": 180,
@@ -295,7 +650,32 @@
     "itemType": "Weapon",
     "weaponType": "SwordAndShield",
     "baseAttack": 294,
-    "maxSharpness": "Blue",
+	"sharpnessLevels": [
+		{
+			"color": "Blue",
+			"value": 40
+		},
+		{
+			"color": "Blue",
+			"value": 50
+		},
+		{
+			"color": "Blue",
+			"value": 60
+		},
+		{
+			"color": "Blue",
+			"value": 70
+		},
+		{
+			"color": "Blue",
+			"value": 80
+		},
+		{
+			"color": "Blue",
+			"value": 90
+		}
+	],
     "baseAffinityPercent": -20,
     "element": "Fire",
     "elementBaseAttack": 240,
@@ -309,7 +689,32 @@
     "itemType": "Weapon",
     "weaponType": "SwordAndShield",
     "baseAttack": 196,
-    "maxSharpness": "Blue",
+	"sharpnessLevels": [
+		{
+			"color": "Blue",
+			"value": 40
+		},
+		{
+			"color": "Blue",
+			"value": 50
+		},
+		{
+			"color": "Blue",
+			"value": 60
+		},
+		{
+			"color": "White",
+			"value": 10
+		},
+		{
+			"color": "White",
+			"value": 20
+		},
+		{
+			"color": "White",
+			"value": 30
+		}
+	],
     "baseAffinityPercent": 0,
     "element": "Dragon",
     "elementBaseAttack": 450,
@@ -328,7 +733,32 @@
     "itemType": "Weapon",
     "weaponType": "SwordAndShield",
     "baseAttack": 224,
-    "maxSharpness": "Blue",
+	"sharpnessLevels": [
+		{
+			"color": "Blue",
+			"value": 70
+		},
+		{
+			"color": "Blue",
+			"value": 80
+		},
+		{
+			"color": "Blue",
+			"value": 90
+		},
+		{
+			"color": "Blue",
+			"value": 100
+		},
+		{
+			"color": "Blue",
+			"value": 110
+		},
+		{
+			"color": "Blue",
+			"value": 120
+		}
+	],
     "baseAffinityPercent": 0,
     "element": "Thunder",
     "elementBaseAttack": 360,
@@ -342,7 +772,32 @@
     "itemType": "Weapon",
     "weaponType": "SwordAndShield",
     "baseAttack": 266,
-    "maxSharpness": "Blue",
+	"sharpnessLevels": [
+		{
+			"color": "Blue",
+			"value": 50
+		},
+		{
+			"color": "Blue",
+			"value": 60
+		},
+		{
+			"color": "White",
+			"value": 10
+		},
+		{
+			"color": "White",
+			"value": 20
+		},
+		{
+			"color": "White",
+			"value": 30
+		},
+		{
+			"color": "White",
+			"value": 40
+		}
+	],
     "baseAffinityPercent": 0,
     "ailment": "Blast",
     "ailmentBaseAttack": 240,
@@ -356,7 +811,32 @@
     "itemType": "Weapon",
     "weaponType": "SwordAndShield",
     "baseAttack": 238,
-    "maxSharpness": "White",
+	"sharpnessLevels": [
+		{
+			"color": "White",
+			"value": 10
+		},
+		{
+			"color": "White",
+			"value": 20
+		},
+		{
+			"color": "White",
+			"value": 30
+		},
+		{
+			"color": "White",
+			"value": 40
+		},
+		{
+			"color": "White",
+			"value": 50
+		},
+		{
+			"color": "White",
+			"value": 60
+		}
+	],
     "baseAffinityPercent": 15,
     "element": "Dragon",
     "elementBaseAttack": 270,
@@ -378,7 +858,32 @@
     "itemType": "Weapon",
     "weaponType": "SwordAndShield",
     "baseAttack": 308,
-    "maxSharpness": "Blue",
+	"sharpnessLevels": [
+		{
+			"color": "Blue",
+			"value": 40
+		},
+		{
+			"color": "White",
+			"value": 10
+		},
+		{
+			"color": "White",
+			"value": 20
+		},
+		{
+			"color": "White",
+			"value": 30
+		},
+		{
+			"color": "White",
+			"value": 40
+		},
+		{
+			"color": "White",
+			"value": 50
+		}
+	],
     "baseAffinityPercent": -20,
     "element": "Dragon",
     "elementBaseAttack": 210,

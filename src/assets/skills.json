@@ -765,23 +765,23 @@
 		"levels": [
 			{
 				"description": "Weapon sharpness +10",
-				"passiveWeaponSharpness": 10
+				"passiveSharpness": 10
 			},
 			{
 				"description": "Weapon sharpness +20",
-				"passiveWeaponSharpness": 20
+				"passiveSharpness": 20
 			},
 			{
 				"description": "Weapon sharpness +30",
-				"passiveWeaponSharpness": 30
+				"passiveSharpness": 30
 			},
 			{
 				"description": "Weapon sharpness +40",
-				"passiveWeaponSharpness": 40
+				"passiveSharpness": 40
 			},
 			{
 				"description": "Weapon sharpness +50",
-				"passiveWeaponSharpness": 50
+				"passiveSharpness": 50
 			}
 		]
 	},

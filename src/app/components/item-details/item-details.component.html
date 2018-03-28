@@ -4,7 +4,7 @@
 	<ul>
 		<div *ngIf="item?.equipmentCategory == 'Weapon'">
 			<li>Weapon Type: {{getWeaponTypeName(item?.weaponType)}}</li>
-			<li *ngIf="item?.maxSharpness">Max Sharpness: {{item?.maxSharpness}}</li>
+			<li *ngIf="item?.sharpnessLevels">Sharpness: {{item?.sharpnessLevels[0].color}}</li>
 			<li>Attack: {{item?.baseAttack}}</li>
 			<li>Affinity: {{item?.baseAffinityPercent}}%</li>
 

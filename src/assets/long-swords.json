@@ -6,7 +6,32 @@
     "itemType": "Weapon",
     "weaponType": "LongSword",
     "baseAttack": 594,
-    "maxSharpness": "Blue",
+	"sharpnessLevels": [
+		{
+			"color": "Blue",
+			"value": 70
+		},
+		{
+			"color": "Blue",
+			"value": 80
+		},
+		{
+			"color": "Blue",
+			"value": 90
+		},
+		{
+			"color": "White",
+			"value": 10
+		},
+		{
+			"color": "White",
+			"value": 20
+		},
+		{
+			"color": "White",
+			"value": 30
+		}
+	],
     "baseAffinityPercent": 0,
     "element": "Water",
     "elementBaseAttack": 180,
@@ -28,7 +53,12 @@
     "itemType": "Weapon",
     "weaponType": "LongSword",
     "baseAttack": 693,
-    "maxSharpness": "Blue",
+	"sharpnessLevels": [
+		{
+			"color": "Blue",
+			"value": 80
+		}
+	],
     "baseAffinityPercent": 0,
     "element": "Dragon",
     "elementBaseAttack": 120,
@@ -48,7 +78,32 @@
     "itemType": "Weapon",
     "weaponType": "LongSword",
     "baseAttack": 594,
-    "maxSharpness": "Blue",
+	"sharpnessLevels": [
+		{
+			"color": "Blue",
+			"value": 40
+		},
+		{
+			"color": "Blue",
+			"value": 50
+		},
+		{
+			"color": "White",
+			"value": 10
+		},
+		{
+			"color": "White",
+			"value": 20
+		},
+		{
+			"color": "White",
+			"value": 30
+		},
+		{
+			"color": "White",
+			"value": 40
+		}
+	],
     "baseAffinityPercent": 0,
     "element": "Thunder",
     "elementBaseAttack": 360,
@@ -67,7 +122,32 @@
     "itemType": "Weapon",
     "weaponType": "LongSword",
     "baseAttack": 561,
-    "maxSharpness": "Blue",
+	"sharpnessLevels": [
+		{
+			"color": "Blue",
+			"value": 50
+		},
+		{
+			"color": "Blue",
+			"value": 60
+		},
+		{
+			"color": "Blue",
+			"value": 70
+		},
+		{
+			"color": "Blue",
+			"value": 80
+		},
+		{
+			"color": "White",
+			"value": 10
+		},
+		{
+			"color": "White",
+			"value": 20
+		}
+	],
     "baseAffinityPercent": 20,
     "ailment": "Sleep",
     "ailmentBaseAttack": 270,
@@ -82,7 +162,32 @@
     "itemType": "Weapon",
     "weaponType": "LongSword",
     "baseAttack": 660,
-    "maxSharpness": "Blue",
+	"sharpnessLevels": [
+		{
+			"color": "Blue",
+			"value": 80
+		},
+		{
+			"color": "Blue",
+			"value": 90
+		},
+		{
+			"color": "Blue",
+			"value": 100
+		},
+		{
+			"color": "Blue",
+			"value": 110
+		},
+		{
+			"color": "Blue",
+			"value": 120
+		},
+		{
+			"color": "Blue",
+			"value": 130
+		}
+	],
     "baseAffinityPercent": -10,
     "element": "Fire",
     "elementBaseAttack": 120,
@@ -104,7 +209,32 @@
     "itemType": "Weapon",
     "weaponType": "LongSword",
     "baseAttack": 627,
-    "maxSharpness": "Blue",
+	"sharpnessLevels": [
+		{
+			"color": "Blue",
+			"value": 50
+		},
+		{
+			"color": "Blue",
+			"value": 60
+		},
+		{
+			"color": "Blue",
+			"value": 70
+		},
+		{
+			"color": "White",
+			"value": 10
+		},
+		{
+			"color": "White",
+			"value": 20
+		},
+		{
+			"color": "White",
+			"value": 30
+		}
+	],
     "baseAffinityPercent": 10,
     "ailment": "Poison",
     "ailmentBaseAttack": 330,
@@ -122,7 +252,32 @@
     "itemType": "Weapon",
     "weaponType": "LongSword",
     "baseAttack": 627,
-    "maxSharpness": "Blue",
+	"sharpnessLevels": [
+		{
+			"color": "Blue",
+			"value": 50
+		},
+		{
+			"color": "Blue",
+			"value": 60
+		},
+		{
+			"color": "White",
+			"value": 10
+		},
+		{
+			"color": "White",
+			"value": 20
+		},
+		{
+			"color": "White",
+			"value": 30
+		},
+		{
+			"color": "White",
+			"value": 40
+		}
+	],
     "baseAffinityPercent": 15,
     "element": "Fire",
     "elementBaseAttack": 240,
@@ -140,7 +295,32 @@
     "itemType": "Weapon",
     "weaponType": "LongSword",
     "baseAttack": 627,
-    "maxSharpness": "Blue",
+	"sharpnessLevels": [
+		{
+			"color": "Blue",
+			"value": 40
+		},
+		{
+			"color": "Blue",
+			"value": 50
+		},
+		{
+			"color": "Blue",
+			"value": 60
+		},
+		{
+			"color": "Blue",
+			"value": 70
+		},
+		{
+			"color": "Blue",
+			"value": 80
+		},
+		{
+			"color": "Blue",
+			"value": 90
+		}
+	],
     "baseAffinityPercent": 0,
     "ailment": "Sleep",
     "ailmentBaseAttack": 270,
@@ -160,7 +340,32 @@
     "itemType": "Weapon",
     "weaponType": "LongSword",
     "baseAttack": 660,
-    "maxSharpness": "Blue",
+	"sharpnessLevels": [
+		{
+			"color": "Blue",
+			"value": 30
+		},
+		{
+			"color": "White",
+			"value": 10
+		},
+		{
+			"color": "White",
+			"value": 20
+		},
+		{
+			"color": "White",
+			"value": 30
+		},
+		{
+			"color": "White",
+			"value": 40
+		},
+		{
+			"color": "White",
+			"value": 50
+		}
+	],
     "baseAffinityPercent": -10,
     "ailment": "Blast",
     "ailmentBaseAttack": 210,
@@ -181,7 +386,32 @@
     "itemType": "Weapon",
     "weaponType": "LongSword",
     "baseAttack": 693,
-    "maxSharpness": "Blue",
+	"sharpnessLevels": [
+		{
+			"color": "Blue",
+			"value": 30
+		},
+		{
+			"color": "Blue",
+			"value": 40
+		},
+		{
+			"color": "Blue",
+			"value": 50
+		},
+		{
+			"color": "Blue",
+			"value": 60
+		},
+		{
+			"color": "Blue",
+			"value": 70
+		},
+		{
+			"color": "Blue",
+			"value": 80
+		}
+	],
     "baseAffinityPercent": -20,
     "element": "Fire",
     "elementBaseAttack": 390,
@@ -195,7 +425,32 @@
     "itemType": "Weapon",
     "weaponType": "LongSword",
     "baseAttack": 627,
-    "maxSharpness": "Blue",
+	"sharpnessLevels": [
+		{
+			"color": "Blue",
+			"value": 20
+		},
+		{
+			"color": "Blue",
+			"value": 30
+		},
+		{
+			"color": "Blue",
+			"value": 40
+		},
+		{
+			"color": "White",
+			"value": 10
+		},
+		{
+			"color": "White",
+			"value": 20
+		},
+		{
+			"color": "White",
+			"value": 30
+		}
+	],
     "baseAffinityPercent": 0,
     "element": "Water",
     "elementBaseAttack": 360,
@@ -213,7 +468,32 @@
     "itemType": "Weapon",
     "weaponType": "LongSword",
     "baseAttack": 660,
-    "maxSharpness": "Blue",
+	"sharpnessLevels": [
+		{
+			"color": "Blue",
+			"value": 40
+		},
+		{
+			"color": "Blue",
+			"value": 50
+		},
+		{
+			"color": "White",
+			"value": 10
+		},
+		{
+			"color": "White",
+			"value": 20
+		},
+		{
+			"color": "White",
+			"value": 30
+		},
+		{
+			"color": "White",
+			"value": 40
+		}
+	],
     "baseAffinityPercent": 0,
     "element": "Dragon",
     "elementBaseAttack": 270,
@@ -232,7 +512,32 @@
     "itemType": "Weapon",
     "weaponType": "LongSword",
     "baseAttack": 594,
-    "maxSharpness": "Blue",
+	"sharpnessLevels": [
+		{
+			"color": "Blue",
+			"value": 40
+		},
+		{
+			"color": "Blue",
+			"value": 50
+		},
+		{
+			"color": "Blue",
+			"value": 60
+		},
+		{
+			"color": "White",
+			"value": 10
+		},
+		{
+			"color": "White",
+			"value": 20
+		},
+		{
+			"color": "White",
+			"value": 30
+		}
+	],
     "baseAffinityPercent": 15,
     "element": "Thunder",
     "elementBaseAttack": 270,
@@ -250,7 +555,32 @@
     "itemType": "Weapon",
     "weaponType": "LongSword",
     "baseAttack": 528,
-    "maxSharpness": "White",
+	"sharpnessLevels": [
+		{
+			"color": "White",
+			"value": 20
+		},
+		{
+			"color": "White",
+			"value": 30
+		},
+		{
+			"color": "White",
+			"value": 40
+		},
+		{
+			"color": "White",
+			"value": 50
+		},
+		{
+			"color": "White",
+			"value": 60
+		},
+		{
+			"color": "White",
+			"value": 70
+		}
+	],
     "baseAffinityPercent": 0,
     "element": "Ice",
     "elementBaseAttack": 360,
@@ -264,7 +594,32 @@
     "itemType": "Weapon",
     "weaponType": "LongSword",
     "baseAttack": 528,
-    "maxSharpness": "White",
+	"sharpnessLevels": [
+		{
+			"color": "White",
+			"value": 30
+		},
+		{
+			"color": "White",
+			"value": 40
+		},
+		{
+			"color": "White",
+			"value": 50
+		},
+		{
+			"color": "White",
+			"value": 60
+		},
+		{
+			"color": "White",
+			"value": 70
+		},
+		{
+			"color": "White",
+			"value": 80
+		}
+	],
     "baseAffinityPercent": 0,
     "ailment": "Paralysis",
     "ailmentBaseAttack": 240,
@@ -283,7 +638,32 @@
     "itemType": "Weapon",
     "weaponType": "LongSword",
     "baseAttack": 528,
-    "maxSharpness": "Blue",
+	"sharpnessLevels": [
+		{
+			"color": "Blue",
+			"value": 40
+		},
+		{
+			"color": "Blue",
+			"value": 50
+		},
+		{
+			"color": "Blue",
+			"value": 60
+		},
+		{
+			"color": "White",
+			"value": 10
+		},
+		{
+			"color": "White",
+			"value": 20
+		},
+		{
+			"color": "White",
+			"value": 30
+		}
+	],
     "baseAffinityPercent": 0,
     "element": "Dragon",
     "elementBaseAttack": 420,
@@ -302,7 +682,32 @@
     "itemType": "Weapon",
     "weaponType": "LongSword",
     "baseAttack": 726,
-    "maxSharpness": "Green",
+	"sharpnessLevels": [
+		{
+			"color": "Green",
+			"value": 70
+		},
+		{
+			"color": "Green",
+			"value": 80
+		},
+		{
+			"color": "Green",
+			"value": 90
+		},
+		{
+			"color": "Blue",
+			"value": 10
+		},
+		{
+			"color": "Blue",
+			"value": 20
+		},
+		{
+			"color": "Blue",
+			"value": 30
+		}
+	],
     "baseAffinityPercent": -20,
     "ailment": "Blast",
     "ailmentBaseAttack": 360,
@@ -321,7 +726,32 @@
     "itemType": "Weapon",
     "weaponType": "LongSword",
     "baseAttack": 627,
-    "maxSharpness": "Blue",
+	"sharpnessLevels": [
+		{
+			"color": "Blue",
+			"value": 50
+		},
+		{
+			"color": "Blue",
+			"value": 60
+		},
+		{
+			"color": "White",
+			"value": 10
+		},
+		{
+			"color": "White",
+			"value": 20
+		},
+		{
+			"color": "White",
+			"value": 30
+		},
+		{
+			"color": "White",
+			"value": 40
+		}
+	],
     "baseAffinityPercent": 0,
     "ailment": "Blast",
     "ailmentBaseAttack": 300,
@@ -335,7 +765,32 @@
     "itemType": "Weapon",
     "weaponType": "LongSword",
     "baseAttack": 594,
-    "maxSharpness": "White",
+	"sharpnessLevels": [
+		{
+			"color": "White",
+			"value": 10
+		},
+		{
+			"color": "White",
+			"value": 20
+		},
+		{
+			"color": "White",
+			"value": 30
+		},
+		{
+			"color": "White",
+			"value": 40
+		},
+		{
+			"color": "White",
+			"value": 50
+		},
+		{
+			"color": "White",
+			"value": 60
+		}
+	],
     "baseAffinityPercent": 15,
     "element": "Dragon",
     "elementBaseAttack": 180,
@@ -358,7 +813,32 @@
     "itemType": "Weapon",
     "weaponType": "LongSword",
     "baseAttack": 693,
-    "maxSharpness": "Blue",
+	"sharpnessLevels": [
+		{
+			"color": "Blue",
+			"value": 30
+		},
+		{
+			"color": "Blue",
+			"value": 40
+		},
+		{
+			"color": "Blue",
+			"value": 50
+		},
+		{
+			"color": "White",
+			"value": 10
+		},
+		{
+			"color": "White",
+			"value": 20
+		},
+		{
+			"color": "White",
+			"value": 30
+		}
+	],
     "baseAffinityPercent": 0,
     "element": "Dragon",
     "elementBaseAttack": 150,
@@ -379,7 +859,32 @@
     "itemType": "Weapon",
     "weaponType": "LongSword",
     "baseAttack": 759,
-    "maxSharpness": "Blue",
+	"sharpnessLevels": [
+		{
+			"color": "Blue",
+			"value": 40
+		},
+		{
+			"color": "White",
+			"value": 10
+		},
+		{
+			"color": "White",
+			"value": 20
+		},
+		{
+			"color": "White",
+			"value": 30
+		},
+		{
+			"color": "White",
+			"value": 40
+		},
+		{
+			"color": "White",
+			"value": 50
+		}
+	],
     "baseAffinityPercent": -25,
     "element": "Dragon",
     "elementBaseAttack": 210,
