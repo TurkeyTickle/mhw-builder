@@ -735,5 +735,38 @@
       }
     ],
     "id": 67
+  },
+  {
+    "name": "Forceshot Jewel 3",
+    "level": 3,
+    "skills": [
+      {
+        "id": "normalShots",
+        "level": 1
+      }
+    ],
+    "id": 68
+  },
+  {
+    "name": "Fungiform Jewel 1",
+    "level": 1,
+    "skills": [
+      {
+        "id": "mushroomancer",
+        "level": 1
+      }
+    ],
+    "id": 69
+  },
+  {
+    "name": "Spread Jewel 3",
+    "level": 3,
+    "skills": [
+      {
+        "id": "spreadPowerShots",
+        "level": 1
+      }
+    ],
+    "id": 70
   }
 ]

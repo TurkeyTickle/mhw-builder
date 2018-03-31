@@ -87,7 +87,7 @@ function updateItemIds() {
 
 	console.log('max decoration id is ' + maxDecorationId);
 	
-	maxDecorationId = assignIds('../src/assets/decorations.json', decorations, maxDecorationId);
+	maxDecorationId = assignIds('./src/assets/decorations.json', decorations, maxDecorationId);
 	
 	console.log('new max decoration id is ' + maxDecorationId);
 }
