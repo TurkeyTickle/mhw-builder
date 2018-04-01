@@ -4,7 +4,7 @@
 	<hr>
 	<ul>
 		<li>Attack: {{totalAttack}} ({{attack}} + {{passiveAttack}} * {{weaponAttackModifier}})</li>
-		<li *ngIf="activeAttack">Attack Potential: {{totalAttackPotential}} ({{attack}} + ({{passiveAttack}} + {{activeAttack}}) * {{weaponAttackModifier}})</li>
+		<li>Attack Potential: {{totalAttackPotential}} ({{attack}} + ({{passiveAttack}} + {{activeAttack}}) * {{weaponAttackModifier}})</li>
 		<!-- <li *ngIf="maxSharpness">Max Sharpness: {{maxSharpness}}</li> -->
 
 		<li *ngIf="effectiveSharpnessLevel">Sharpness: {{effectiveSharpnessLevel?.value}} {{effectiveSharpnessLevel?.color}}</li>
@@ -14,33 +14,23 @@
 		<li *ngIf="weakPointAffinity">Weak Point Affinity: {{affinity + passiveAffinity + weakPointAffinity}}%</li>
 		<li>Critical Boost: {{125 + passiveCriticalBoostPercent}}%</li>
 
-		<div *ngIf="ailment && !ailmentHidden">
-			<li>Ailment: {{ailment}}</li>
-			<li>Ailment Attack: {{totalAilmentAttack}} {{ailmentCapped ? '(Capped)' : ''}}</li>
-			<li>Ailment Buildup Rate: {{100 + effectivePassiveAilmentBuildupPercent}}%</li>
-		</div>
+		<li *ngIf="ailment && !ailmentHidden">Ailment: {{ailment}}</li>
+		<li *ngIf="ailment && !ailmentHidden">Ailment Attack: {{totalAilmentAttack}} {{ailmentCapped ? '(Capped)' : ''}}</li>
+		<li *ngIf="ailment && !ailmentHidden">Ailment Buildup Rate: {{100 + effectivePassiveAilmentBuildupPercent}}%</li>
 
-		<div *ngIf="element && !elementHidden">
-			<li>Element: {{element}}</li>
-			<li>Element Attack: {{totalElementAttack}} {{elementCapped ? '(Capped)' : ''}}</li>
-		</div>
+		<li *ngIf="element && !elementHidden">Element: {{element}}</li>
+		<li *ngIf="element && !elementHidden">Element Attack: {{totalElementAttack}} {{elementCapped ? '(Capped)' : ''}}</li>
 
 		<div [style.color]="getHiddenElemColor()">
-			<div *ngIf="ailment && ailmentHidden">
-				<li>Ailment: {{ailment}}</li>
-				<li>Ailment Attack: {{totalAilmentAttack}} ({{baseAilmentAttack}} * {{elementAttackMultiplier}}) {{ailmentCapped ? '(Capped)' : ''}}</li>
-				<li>Ailment Buildup Rate: {{100 + effectivePassiveAilmentBuildupPercent}}%</li>
-			</div>
-			
-			<div *ngIf="element && elementHidden">
-				<li>Element: {{element}}</li>
-				<li>Element Attack: {{totalElementAttack}} ({{baseElementAttack}} * {{elementAttackMultiplier}}) {{elementCapped ? '(Capped)' : ''}}</li>
-			</div>
+			<li *ngIf="ailment && ailmentHidden">Ailment: {{ailment}}</li>
+			<li *ngIf="ailment && ailmentHidden">Ailment Attack: {{totalAilmentAttack}} ({{baseAilmentAttack}} * {{elementAttackMultiplier}}) {{ailmentCapped ? '(Capped)' : ''}}</li>
+			<li *ngIf="ailment && ailmentHidden">Ailment Buildup Rate: {{100 + effectivePassiveAilmentBuildupPercent}}%</li>
+		
+			<li *ngIf="element && elementHidden">Element: {{element}}</li>
+			<li *ngIf="element && elementHidden">Element Attack: {{totalElementAttack}} ({{baseElementAttack}} * {{elementAttackMultiplier}}) {{elementCapped ? '(Capped)' : ''}}</li>
 		</div>		
 
-		<div *ngIf="elderseal">
-			<li>Elderseal: {{elderseal}}</li>
-		</div>
+		<li *ngIf="elderseal">Elderseal: {{elderseal}}</li>
 	</ul>
 
 	<br />

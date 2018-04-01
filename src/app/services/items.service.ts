@@ -10,6 +10,9 @@ import { WeaponModifierModel } from '../models/weapon-modifier.model';
 import { AppDataProvider } from '../providers/app-data.provider';
 import { ItemType } from '../types/item.type';
 import { WeaponType } from '../types/weapon.type';
+import { SharpnessModifierModel } from '../models/sharpness-modifier.model';
+import { SharpnessType } from '../types/sharpness.type';
+import { DamageType } from '../types/damage.type';
 
 @Injectable()
 export class ItemsService {
@@ -66,6 +69,12 @@ export class ItemsService {
 	getWeaponModifier(weaponType: WeaponType): WeaponModifierModel {
 		return _.find(this.appData.getWeaponModifiers(), (mod: WeaponModifierModel) => {
 			return mod.type == weaponType;
+		});
+	}
+
+	getSharpnessModifier(damageType: DamageType, sharpnessType: SharpnessType): SharpnessModifierModel {
+		return _.find(this.appData.getSharpnessModifiers(), mod => {
+			return mod.damageType == damageType && mod.sharpnessType == sharpnessType;
 		});
 	}
 

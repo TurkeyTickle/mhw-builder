@@ -9,6 +9,7 @@ import { SetBonusModel } from '../models/set-bonus.model';
 import { SkillModel } from '../models/skill.model';
 import { WeaponModifierModel } from '../models/weapon-modifier.model';
 import { EquipmentCategoryType } from '../types/equipment-category.type';
+import { SharpnessModifierModel } from '../models/sharpness-modifier.model';
 
 @Injectable()
 export class AppDataProvider {
@@ -20,6 +21,10 @@ export class AppDataProvider {
 
 	getWeaponModifiers(): WeaponModifierModel[] {
 		return this.seedData.weaponModifiers;
+	}
+
+	getSharpnessModifiers(): SharpnessModifierModel[] {
+		return this.seedData.sharpnessModifiers;
 	}
 
 	getWeapons(): ItemModel[] {
@@ -45,6 +50,7 @@ export class AppDataProvider {
 	load(): Promise<boolean> {
 		const items = [
 			this.loadWeaponModifiers(),
+			this.loadSharpnessModifiers(),
 			this.loadGreatSwords(),
 			this.loadLongSwords(),
 			this.loadSwordAndShields(),
@@ -73,22 +79,6 @@ export class AppDataProvider {
 		return Promise.all(items).then<boolean>(() => {
 			this.seedData.weapons = _.orderBy(this.seedData.weapons, ['weaponType', 'asc']);
 			this.seedData.armor = _.orderBy(this.seedData.armor, ['itemType', 'asc']);
-
-			// let armorIndex = 1;
-			// this.seedData.armor.forEach(armor => {
-			// 	armor.id = armorIndex++;
-			// });
-
-			// let weaponIndex = 1;
-			// this.seedData.weapons.forEach(weapon => {
-			// 	weapon.id = weaponIndex++;
-			// });
-
-			// let decorationIndex = 1;
-			// this.seedData.decorations.forEach(decoration => {
-			// 	decoration.id = decorationIndex++;
-			// });
-
 			return true;
 		});
 	}
@@ -97,6 +87,15 @@ export class AppDataProvider {
 		return new Promise(resolve => {
 			this.http.get<WeaponModifierModel[]>('../assets/weapon-modifiers.json').subscribe(items => {
 				this.seedData.weaponModifiers = this.seedData.weaponModifiers.concat(items);
+				resolve(true);
+			});
+		});
+	}
+
+	loadSharpnessModifiers(): Promise<boolean> {
+		return new Promise(resolve => {
+			this.http.get<SharpnessModifierModel[]>('../assets/sharpness-modifiers.json').subscribe(items => {
+				this.seedData.sharpnessModifiers = this.seedData.sharpnessModifiers.concat(items);
 				resolve(true);
 			});
 		});

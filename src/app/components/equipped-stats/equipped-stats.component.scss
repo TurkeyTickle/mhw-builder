@@ -9,4 +9,9 @@ ul {
 li {
 	list-style: none;
 	margin:4px;
+	padding:4px 0px;
+}
+
+li:nth-child(odd) {
+	background: #333333;
 }

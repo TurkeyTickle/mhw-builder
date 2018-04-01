@@ -10,6 +10,8 @@ import { AilmentType } from '../../types/ailment.type';
 import { ElementType } from '../../types/element.type';
 import { SharpnessType } from '../../types/sharpness.type';
 import { SharpnessLevelModel } from '../../models/sharpness-level.model';
+import { DamageType } from '../../types/damage.type';
+import { CalculationDetailModel } from '../../models/calculation.model';
 
 @Component({
 	selector: 'mhw-builder-equipped-stats',
@@ -28,6 +30,8 @@ export class EquippedStatsComponent implements OnInit {
 	maxSharpness: SharpnessType;
 	passiveSharpness: number;
 	effectiveSharpnessLevel: SharpnessLevelModel;
+	effectivePhysicalSharpnessModifier: number;
+	effectiveElementalSharpnessModifier: number;
 	weaponAttackModifier: number;
 	affinity: number;
 	passiveAffinity: number;
@@ -93,6 +97,8 @@ export class EquippedStatsComponent implements OnInit {
 	passiveIceResist: number;
 	passiveDragonResist: number;
 
+	stats = new Array<CalculationDetailModel>();
+
 	constructor(
 		private itemsService: ItemsService,
 		private skillService: SkillService
@@ -120,6 +126,8 @@ export class EquippedStatsComponent implements OnInit {
 		this.maxSharpness = null;
 		this.passiveSharpness = 0;
 		this.effectiveSharpnessLevel = null;
+		this.effectivePhysicalSharpnessModifier = 1;
+		this.effectiveElementalSharpnessModifier = 1;
 		this.weaponAttackModifier = 0;
 		this.affinity = 0;
 		this.passiveAffinity = 0;
@@ -319,8 +327,16 @@ export class EquippedStatsComponent implements OnInit {
 				break;
 		}
 
+		if (weapon && weapon.sharpnessLevels) {
+			this.effectiveSharpnessLevel = weapon.sharpnessLevels[Math.min(this.passiveSharpness / 10, weapon.sharpnessLevels.length - 1)];
+			const sharpnessModifier = this.itemsService.getSharpnessModifier(DamageType.Physical, this.effectiveSharpnessLevel.color);
+			if (sharpnessModifier) {
+				this.effectivePhysicalSharpnessModifier = sharpnessModifier.value;
+			}
+		}
+
 		this.totalAttack = this.attack + Math.round(this.passiveAttack * this.weaponAttackModifier);
-		this.totalAttackPotential = this.attack + Math.round((this.passiveAttack + this.activeAttack) * this.weaponAttackModifier);
+		this.totalAttackPotential = Math.round(this.totalAttack * this.effectivePhysicalSharpnessModifier) + Math.round(this.activeAttack * this.weaponAttackModifier);
 
 		const elementAttackIncreaseCap = weapon ? weapon.elementAttackIncreaseCapOverride || this.defaultElementAttackIncreaseCap : this.defaultElementAttackIncreaseCap;
 		const ailmentAttackIncreaseCap = weapon ? weapon.elementAttackIncreaseCapOverride || this.defaultElementAttackIncreaseCap : this.defaultElementAttackIncreaseCap;
@@ -345,10 +361,6 @@ export class EquippedStatsComponent implements OnInit {
 
 		this.elementCapped = this.totalElementAttack > 0 && this.totalElementAttack >= elementCap;
 		this.ailmentCapped = this.totalAilmentAttack > 0 && this.totalAilmentAttack >= ailmentCap;
-
-		if (weapon && weapon.sharpnessLevels) {
-			this.effectiveSharpnessLevel = weapon.sharpnessLevels[Math.min(this.passiveSharpness / 10, weapon.sharpnessLevels.length - 1)];
-		}
 	}
 
 	nearestTen(value: number): number {
@@ -369,5 +381,57 @@ export class EquippedStatsComponent implements OnInit {
 		} else {
 			return 'white';
 		}
+	}
+
+
+	buildCalcs() {
+		const attack: CalculationDetailModel = {
+			name: 'Attack',
+			value: this.totalAttack,
+			detailTemplate: '{attack} + {passiveAttack} * {weaponAttackModifier}',
+			detailVariables: [
+				{
+					name: 'attack',
+					value: this.attack
+				},
+				{
+					name: 'passiveAttack',
+					value: this.passiveAttack
+				},
+				{
+					name: 'weaponAttackModifer',
+					value: this.weaponAttackModifier
+				}
+			]
+		};
+
+		this.stats.push(attack);
+
+		const attackPotential: CalculationDetailModel = {
+			name: 'Attack Potential',
+			value: this.totalAttackPotential,
+			detailTemplate: '{attack} + ({passiveAttack} + {activeAttack}) * {weaponAttackModifier}',
+			detailVariables: [
+				{
+					name: 'attack',
+					value: this.attack
+				},
+				{
+					name: 'passiveAttack',
+					value: this.passiveAttack
+				},
+				{
+					name: 'activeAttack',
+					value: this.activeAttack
+				},
+				{
+					name: 'weaponAttackModifer',
+					value: this.weaponAttackModifier
+				}
+			]
+		};
+
+		this.stats.push(attackPotential);
+
 	}
 }
