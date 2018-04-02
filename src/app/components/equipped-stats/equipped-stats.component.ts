@@ -12,6 +12,8 @@ import { SharpnessType } from '../../types/sharpness.type';
 import { SharpnessLevelModel } from '../../models/sharpness-level.model';
 import { DamageType } from '../../types/damage.type';
 import { CalculationDetailModel } from '../../models/calculation.model';
+import { TooltipService } from '../../services/tooltip.service';
+import { AnchorType } from '../../types/anchor.type';
 
 @Component({
 	selector: 'mhw-builder-equipped-stats',
@@ -44,6 +46,7 @@ export class EquippedStatsComponent implements OnInit {
 	effectivePassiveElementAttack: number;
 	elementHidden: boolean;
 	effectiveElementAttack: number;
+	elementCap: number;
 	elementCapped: boolean;
 	totalElementAttack: number;
 
@@ -52,6 +55,7 @@ export class EquippedStatsComponent implements OnInit {
 	effectivePassiveAilmentAttack: number;
 	ailmentHidden: boolean;
 	effectiveAilmentAttack: number;
+	ailmentCap: number;
 	ailmentCapped: boolean;
 	totalAilmentAttack: number;
 
@@ -97,11 +101,13 @@ export class EquippedStatsComponent implements OnInit {
 	passiveIceResist: number;
 	passiveDragonResist: number;
 
-	stats = new Array<CalculationDetailModel>();
+	attackStats = new Array<CalculationDetailModel>();
+	defenseStats = new Array<CalculationDetailModel>();
 
 	constructor(
 		private itemsService: ItemsService,
-		private skillService: SkillService
+		private skillService: SkillService,
+		private tooltipService: TooltipService
 	) { }
 
 	ngOnInit() {
@@ -139,6 +145,7 @@ export class EquippedStatsComponent implements OnInit {
 		this.baseElementAttack = 0;
 		this.elementHidden = false;
 		this.effectiveElementAttack = 0;
+		this.elementCap = 0;
 		this.elementCapped = false;
 		this.totalElementAttack = 0;
 
@@ -146,6 +153,7 @@ export class EquippedStatsComponent implements OnInit {
 		this.baseAilmentAttack = 0;
 		this.ailmentHidden = false;
 		this.effectiveAilmentAttack = 0;
+		this.ailmentCap = 0;
 		this.ailmentCapped = false;
 		this.totalAilmentAttack = 0;
 
@@ -336,7 +344,7 @@ export class EquippedStatsComponent implements OnInit {
 		}
 
 		this.totalAttack = this.attack + Math.round(this.passiveAttack * this.weaponAttackModifier);
-		this.totalAttackPotential = Math.round(this.totalAttack * this.effectivePhysicalSharpnessModifier) + Math.round(this.activeAttack * this.weaponAttackModifier);
+		this.totalAttackPotential = Math.round(this.attack * this.effectivePhysicalSharpnessModifier + (this.passiveAttack + this.activeAttack) * this.weaponAttackModifier);
 
 		const elementAttackIncreaseCap = weapon ? weapon.elementAttackIncreaseCapOverride || this.defaultElementAttackIncreaseCap : this.defaultElementAttackIncreaseCap;
 		const ailmentAttackIncreaseCap = weapon ? weapon.elementAttackIncreaseCapOverride || this.defaultElementAttackIncreaseCap : this.defaultElementAttackIncreaseCap;
@@ -353,14 +361,16 @@ export class EquippedStatsComponent implements OnInit {
 			this.effectiveAilmentAttack = this.baseAilmentAttack;
 		}
 
-		const elementCap = this.nearestTen(Math.round(this.effectiveElementAttack + (this.effectiveElementAttack * elementAttackIncreaseCap)));
-		const ailmentCap = this.nearestTen(Math.round(this.effectiveAilmentAttack + (this.effectiveAilmentAttack * ailmentAttackIncreaseCap)));
+		this.elementCap = this.nearestTen(Math.round(this.effectiveElementAttack + (this.effectiveElementAttack * elementAttackIncreaseCap)));
+		this.ailmentCap = this.nearestTen(Math.round(this.effectiveAilmentAttack + (this.effectiveAilmentAttack * ailmentAttackIncreaseCap)));
 
-		this.totalElementAttack = Math.min(this.effectiveElementAttack + this.effectivePassiveElementAttack, elementCap);
-		this.totalAilmentAttack = Math.min(this.effectiveAilmentAttack + this.effectivePassiveAilmentAttack, ailmentCap);
+		this.totalElementAttack = Math.min(this.effectiveElementAttack + this.effectivePassiveElementAttack, this.elementCap);
+		this.totalAilmentAttack = Math.min(this.effectiveAilmentAttack + this.effectivePassiveAilmentAttack, this.ailmentCap);
 
-		this.elementCapped = this.totalElementAttack > 0 && this.totalElementAttack >= elementCap;
-		this.ailmentCapped = this.totalAilmentAttack > 0 && this.totalAilmentAttack >= ailmentCap;
+		this.elementCapped = this.totalElementAttack > 0 && this.totalElementAttack >= this.elementCap;
+		this.ailmentCapped = this.totalAilmentAttack > 0 && this.totalAilmentAttack >= this.ailmentCap;
+
+		this.buildCalcs();
 	}
 
 	nearestTen(value: number): number {
@@ -383,55 +393,463 @@ export class EquippedStatsComponent implements OnInit {
 		}
 	}
 
-
 	buildCalcs() {
+		this.buildAttackCalcs();
+		this.buildDefenseCalcs();
+	}
+
+	buildAttackCalcs() {
+		this.attackStats = [];
+
 		const attack: CalculationDetailModel = {
 			name: 'Attack',
 			value: this.totalAttack,
-			detailTemplate: '{attack} + {passiveAttack} * {weaponAttackModifier}',
+			detailTemplate: `{attack} + {passiveAttack} × {weaponModifier} ≈ ${this.totalAttack}`,
 			detailVariables: [
 				{
+					displayName: 'Base Weapon Attack',
 					name: 'attack',
-					value: this.attack
+					value: this.attack,
+					colorClass: 'green'
 				},
 				{
+					displayName: 'Passive Attack',
 					name: 'passiveAttack',
-					value: this.passiveAttack
+					value: this.passiveAttack,
+					colorClass: 'blue'
 				},
 				{
-					name: 'weaponAttackModifer',
-					value: this.weaponAttackModifier
+					displayName: 'Weapon Modifier',
+					name: 'weaponModifier',
+					value: this.weaponAttackModifier,
+					colorClass: 'yellow'
 				}
 			]
 		};
 
-		this.stats.push(attack);
+		this.attackStats.push(attack);
 
-		const attackPotential: CalculationDetailModel = {
-			name: 'Attack Potential',
-			value: this.totalAttackPotential,
-			detailTemplate: '{attack} + ({passiveAttack} + {activeAttack}) * {weaponAttackModifier}',
+		if (this.activeAttack) {
+			const attackPotential: CalculationDetailModel = {
+				name: 'Attack Potential',
+				value: this.totalAttackPotential,
+				detailTemplate: `({attack} × {sharpnessModifier}) + ({passiveAttack} + {activeAttack}) × {weaponModifier} ≈ ${this.totalAttackPotential}`,
+				detailVariables: [
+					{
+						displayName: 'Base Weapon Attack',
+						name: 'attack',
+						value: this.attack,
+						colorClass: 'green'
+					},
+					{
+						displayName: 'Sharpness Modifier',
+						name: 'sharpnessModifier',
+						value: this.effectivePhysicalSharpnessModifier,
+						colorClass: 'blue'
+					},
+					{
+						displayName: 'Passive Attack',
+						name: 'passiveAttack',
+						value: this.passiveAttack,
+						colorClass: 'yellow'
+					},
+					{
+						displayName: 'Active Attack',
+						name: 'activeAttack',
+						value: this.activeAttack,
+						colorClass: 'orange'
+					},
+					{
+						displayName: 'Weapon Modifier',
+						name: 'weaponModifier',
+						value: this.weaponAttackModifier,
+						colorClass: 'red'
+					},
+
+				]
+			};
+
+			this.attackStats.push(attackPotential);
+		}
+
+		const affinityValue = `${this.affinity + this.passiveAffinity}%`;
+		const affinity: CalculationDetailModel = {
+			name: 'Affinity',
+			value: affinityValue,
+			detailTemplate: `{affinity} + {passiveAffinity} = ${affinityValue}`,
 			detailVariables: [
 				{
-					name: 'attack',
-					value: this.attack
+					displayName: 'Weapon Base Affinity',
+					name: 'affinity',
+					value: this.affinity,
+					colorClass: 'green'
 				},
 				{
-					name: 'passiveAttack',
-					value: this.passiveAttack
-				},
-				{
-					name: 'activeAttack',
-					value: this.activeAttack
-				},
-				{
-					name: 'weaponAttackModifer',
-					value: this.weaponAttackModifier
+					displayName: 'Passive Affinity',
+					name: 'passiveAffinity',
+					value: this.passiveAffinity,
+					colorClass: 'blue'
 				}
 			]
 		};
 
-		this.stats.push(attackPotential);
+		this.attackStats.push(affinity);
 
+		if (this.activeAffinity) {
+			const value = `${this.affinity + this.passiveAffinity + this.weakPointAffinity + this.activeAffinity}%`;
+			const affinityPotential: CalculationDetailModel = {
+				name: 'Affinity Potential',
+				value: value,
+				detailTemplate: `{base} + {passive} + {weakPoint} + {active} = ${value}`,
+				detailVariables: [
+					{
+						displayName: 'Weapon Base Affinity',
+						name: 'base',
+						value: this.affinity,
+						colorClass: 'green'
+					},
+					{
+						displayName: 'Passive Affinity',
+						name: 'passive',
+						value: this.passiveAffinity,
+						colorClass: 'blue'
+					},
+					{
+						displayName: 'Weak Point Affinity',
+						name: 'weakPoint',
+						value: this.weakPointAffinity,
+						colorClass: 'yellow'
+					},
+					{
+						displayName: 'Active Affinity',
+						name: 'active',
+						value: this.activeAffinity,
+						colorClass: 'orange'
+					}
+				]
+			};
+
+			this.attackStats.push(affinityPotential);
+		}
+
+		if (this.effectiveSharpnessLevel) {
+			const sharpness: CalculationDetailModel = {
+				name: 'Sharpness',
+				value: `${this.effectiveSharpnessLevel.value} ${this.effectiveSharpnessLevel.color}`,
+			};
+
+			this.attackStats.push(sharpness);
+		}
+
+		const critBoostValue = `${125 + this.passiveCriticalBoostPercent}%`;
+		const critBoost: CalculationDetailModel = {
+			name: 'Critical Boost',
+			value: critBoostValue,
+			detailTemplate: `{base} + {passive} = ${critBoostValue}`,
+			detailVariables: [
+				{
+					displayName: 'Base Critical Boost',
+					name: 'base',
+					value: '125',
+					colorClass: 'green'
+				},
+				{
+					displayName: 'Passive Critical Boost',
+					name: 'passive',
+					value: this.passiveCriticalBoostPercent,
+					colorClass: 'blue'
+				}
+			]
+		};
+
+		this.attackStats.push(critBoost);
+
+		if (this.ailment) {
+			const ailment: CalculationDetailModel = {
+				name: 'Ailment',
+				value: this.ailment,
+				description: ''
+			};
+
+			this.attackStats.push(ailment);
+
+			if (this.ailmentHidden) {
+				if (this.elementAttackMultiplier < 1) {
+					ailment.description = 'Effectiveness reduced due to hidden ailment.';
+					ailment.iconColorClass = !this.elementAttackMultiplier ? 'red' : 'yellow';
+				}
+
+				let ailmentAttackTemplate: string;
+
+				if (this.elementAttackMultiplier) {
+					ailmentAttackTemplate = `{base} × {multiplier} + {passive} ≈ ${this.totalAilmentAttack}`;
+				} else {
+					ailmentAttackTemplate = `({base} + {passive}) × {multiplier} ≈ ${this.totalAilmentAttack}`;
+				}
+
+				if (this.ailmentCapped) {
+					ailmentAttackTemplate += ` (Capped)`;
+				}
+
+				const ailmentAttack: CalculationDetailModel = {
+					name: 'Ailment Attack',
+					value: this.totalAilmentAttack,
+					iconColorClass: ailment.iconColorClass,
+					description: `${ailment.description} Ailment Attack is rounded to the nearest multiple of 10.`,
+					detailTemplate: ailmentAttackTemplate,
+					detailVariables: [
+						{
+							displayName: 'Weapon Base Ailment Attack',
+							name: 'base',
+							value: this.baseAilmentAttack,
+							colorClass: 'green'
+						},
+						{
+							displayName: 'Hidden Ailment Multiplier',
+							name: 'multiplier',
+							value: this.elementAttackMultiplier,
+							colorClass: 'blue'
+						},
+						{
+							displayName: 'Passive Ailment Attack',
+							name: 'passive',
+							value: this.effectivePassiveAilmentAttack,
+							colorClass: 'yellow'
+						},
+						{
+							displayName: 'Ailment Attack Cap',
+							name: 'cap',
+							value: this.ailmentCap,
+							colorClass: 'orange'
+						}
+					]
+				};
+
+				this.attackStats.push(ailmentAttack);
+			} else {
+				let ailmentAttackTemplate = `{base} + {passive} = ${this.totalAilmentAttack}`;
+
+				if (this.ailmentCapped) {
+					ailmentAttackTemplate += ` (Capped)`;
+				}
+
+				const ailmentAttack: CalculationDetailModel = {
+					name: 'Ailment Attack',
+					value: this.totalAilmentAttack,
+					detailTemplate: ailmentAttackTemplate,
+					detailVariables: [
+						{
+							displayName: 'Weapon Base Ailment Attack',
+							name: 'base',
+							value: this.baseAilmentAttack,
+							colorClass: 'green'
+						},
+						{
+							displayName: 'Passive Ailment Attack',
+							name: 'passive',
+							value: this.effectivePassiveAilmentAttack,
+							colorClass: 'blue'
+						},
+						{
+							displayName: 'Ailment Attack Cap',
+							name: 'cap',
+							value: this.ailmentCap,
+							colorClass: 'yellow'
+						}
+					]
+				};
+
+				this.attackStats.push(ailmentAttack);
+			}
+
+			const ailmentBuildupRateValue = `${100 + this.effectivePassiveAilmentBuildupPercent}%`;
+			const ailmentBuildupRate: CalculationDetailModel = {
+				name: 'Ailment Buildup Rate',
+				value: ailmentBuildupRateValue,
+				detailTemplate: `{base} + {passive} = ${ailmentBuildupRateValue}`,
+				detailVariables: [
+					{
+						displayName: 'Base Buildup Rate',
+						name: 'base',
+						value: '100',
+						colorClass: 'green'
+					},
+					{
+						displayName: 'Passive Buildup Rate',
+						name: 'passive',
+						value: this.effectivePassiveAilmentBuildupPercent,
+						colorClass: 'blue'
+					}
+				]
+			};
+
+			this.attackStats.push(ailmentBuildupRate);
+		}
+
+		if (this.element) {
+			const element: CalculationDetailModel = {
+				name: 'Element',
+				value: this.element,
+				description: ''
+			};
+
+			this.attackStats.push(element);
+
+			if (this.elementHidden) {
+				if (this.elementAttackMultiplier < 1) {
+					element.description = 'Effectiveness reduced due to hidden element.';
+					element.iconColorClass = !this.elementAttackMultiplier ? 'red' : 'yellow';
+				}
+
+				let elementAttackTemplate: string;
+
+				if (this.elementAttackMultiplier) {
+					elementAttackTemplate = `{base} × {multiplier} + {passive} ≈ ${this.totalElementAttack}`;
+				} else {
+					elementAttackTemplate = `({base} + {passive}) × {multiplier} ≈ ${this.totalElementAttack}`;
+				}
+
+				if (this.elementCapped) {
+					elementAttackTemplate += ` (Capped)`;
+				}
+
+				const elementAttack: CalculationDetailModel = {
+					name: 'Element Attack',
+					value: this.totalElementAttack,
+					iconColorClass: element.iconColorClass,
+					description: `${element.description} Element Attack is rounded to the nearest multiple of 10.`,
+					detailTemplate: elementAttackTemplate,
+					detailVariables: [
+						{
+							displayName: 'Weapon Base Element Attack',
+							name: 'base',
+							value: this.baseElementAttack,
+							colorClass: 'green'
+						},
+						{
+							displayName: 'Hidden Element Multiplier',
+							name: 'multiplier',
+							value: this.elementAttackMultiplier,
+							colorClass: 'blue'
+						},
+						{
+							displayName: 'Passive Element Attack',
+							name: 'passive',
+							value: this.effectivePassiveElementAttack,
+							colorClass: 'yellow'
+						},
+						{
+							displayName: 'Element Attack Cap',
+							name: 'cap',
+							value: this.elementCap,
+							colorClass: 'orange'
+						}
+					]
+				};
+
+				this.attackStats.push(elementAttack);
+			} else {
+				let elementAttackTemplate = `{base} + {passive} = ${this.totalElementAttack}`;
+
+				if (this.elementCapped) {
+					elementAttackTemplate += ` (Capped)`;
+				}
+
+				const elementAttack: CalculationDetailModel = {
+					name: 'Element Attack',
+					value: this.totalElementAttack,
+					detailTemplate: elementAttackTemplate,
+					detailVariables: [
+						{
+							displayName: 'Weapon Base Element Attack',
+							name: 'base',
+							value: this.baseElementAttack,
+							colorClass: 'green'
+						},
+						{
+							displayName: 'Passive Element Attack',
+							name: 'passive',
+							value: this.effectivePassiveElementAttack,
+							colorClass: 'blue'
+						},
+						{
+							displayName: 'Element Attack Cap',
+							name: 'cap',
+							value: this.elementCap,
+							colorClass: 'yellow'
+						}
+					]
+				};
+
+				this.attackStats.push(elementAttack);
+			}
+		}
+
+		if (this.elderseal) {
+			const elderseal: CalculationDetailModel = {
+				name: 'Elderseal',
+				value: this.elderseal
+			};
+
+			this.attackStats.push(elderseal);
+		}
+	}
+
+	buildDefenseCalcs() {
+		this.defenseStats = [];
+
+		const defense: CalculationDetailModel = {
+			name: 'Defense',
+			value: this.defense + this.passiveDefense
+		};
+
+		this.defenseStats.push(defense);
+
+		const fireResist: CalculationDetailModel = {
+			name: 'Fire Resist',
+			value: this.fireResist + this.passiveFireResist
+		};
+
+		this.defenseStats.push(fireResist);
+
+		const waterResist: CalculationDetailModel = {
+			name: 'Water Resist',
+			value: this.waterResist + this.passiveWaterResist
+		};
+
+		this.defenseStats.push(waterResist);
+
+		const thunderResist: CalculationDetailModel = {
+			name: 'Thunder Resist',
+			value: this.thunderResist + this.passiveThunderResist
+		};
+
+		this.defenseStats.push(thunderResist);
+
+		const iceResist: CalculationDetailModel = {
+			name: 'Ice Resist',
+			value: this.iceResist + this.passiveIceResist
+		};
+
+		this.defenseStats.push(iceResist);
+
+		const dragonResist: CalculationDetailModel = {
+			name: 'Dragon Resist',
+			value: this.dragonResist + this.passiveDragonResist
+		};
+
+		this.defenseStats.push(dragonResist);
+	}
+
+	showCalcDetails(calc: CalculationDetailModel) {
+		if (calc.detailTemplate || calc.description) {
+			this.tooltipService.anchorPoint = AnchorType.TopRight;
+			this.tooltipService.setCalc(calc);
+		}
+	}
+
+	clearCalcDetails() {
+		this.tooltipService.anchorPoint = AnchorType.TopLeft;
+		this.tooltipService.setCalc(null);
 	}
 }

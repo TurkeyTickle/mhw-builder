@@ -1,0 +1,12 @@
+<div class="container">
+	<h3>{{calc.name}}</h3>
+	<hr>
+	<div class="template" [innerHTML]="detailTemplate"></div>
+	<div class="description">{{calc.description}}</div>
+	<ul>
+		<li *ngFor="let item of calc.detailVariables">
+			<span class="name">{{item.displayName}}</span>
+			<span class="value" [ngClass]="item.colorClass">{{item.value}}</span>
+	</li>
+	</ul>
+</div>

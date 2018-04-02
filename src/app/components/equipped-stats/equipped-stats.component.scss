@@ -1,3 +1,5 @@
+@import "~sass/common";
+
 h4 {
 	margin: 0px;
 }
@@ -8,8 +10,17 @@ ul {
 
 li {
 	list-style: none;
-	margin:4px;
-	padding:4px 0px;
+	padding:4px 4px;
+	cursor: default;
+
+	.value {
+		float: right;
+	}
+
+	.detail-icon {
+		float: left;
+		margin-right: 4px;	
+	}
 }
 
 li:nth-child(odd) {

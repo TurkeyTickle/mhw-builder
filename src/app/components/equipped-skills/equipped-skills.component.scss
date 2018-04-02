@@ -3,7 +3,20 @@ ul {
 }
 
 li {
-	cursor: default;
 	list-style: none;
-	margin:4px;
+	padding:4px 4px;
+	cursor: default;
+
+	.value {
+		float: right;
+	}
+
+	.detail-icon {
+		float: left;
+		margin-right: 4px;	
+	}
+}
+
+li:nth-child(odd) {
+	background: #333333;
 }

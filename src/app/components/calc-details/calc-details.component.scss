@@ -1,0 +1,55 @@
+
+@import "~sass/variables";
+
+h3, h4, h5 {
+	margin: 0px;
+}
+
+.template {
+	margin: 20px 10px;
+	text-align: center;
+}
+
+.description {
+	margin: 10px 0px;
+	text-align: center;
+	color: #adadad;
+}
+
+ul {
+	list-style: none;
+	padding:0px;
+	margin: 0px;
+
+	li {
+		padding: 4px;
+
+		.value {
+			float: right;
+		}
+	}
+
+	li:nth-child(odd) {
+		background: #4c4c4c;
+	}
+}
+
+::ng-deep .green {
+	color: $green;
+}
+
+::ng-deep .blue {
+	color: $blue;
+}
+
+::ng-deep .yellow {
+	color: $yellow;
+}
+
+::ng-deep .orange {
+	color: $orange;
+}
+
+::ng-deep .red {
+	color: $red;
+}
