@@ -429,7 +429,7 @@ export class EquippedStatsComponent implements OnInit {
 
 		this.attackStats.push(attack);
 
-		if (this.activeAttack) {
+		if (this.activeAttack || this.effectivePhysicalSharpnessModifier) {
 			const attackPotential: StatDetailModel = {
 				name: 'Attack Potential',
 				value: this.totalAttackPotential,
@@ -442,7 +442,7 @@ export class EquippedStatsComponent implements OnInit {
 						colorClass: 'green'
 					},
 					{
-						displayName: 'Sharpness Modifier',
+						displayName: 'Physical Sharpness Modifier',
 						name: 'sharpnessModifier',
 						value: this.effectivePhysicalSharpnessModifier,
 						colorClass: 'blue'
