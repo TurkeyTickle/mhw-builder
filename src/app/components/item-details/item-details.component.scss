@@ -1,3 +1,5 @@
+@import "~sass/common";
+
 ul {
 	padding: 0px;
 	margin: 0px;
@@ -9,6 +11,14 @@ li {
 
 h3, h4, h5 {
 	margin: 0px;
+}
+
+ul.striped-light {
+	li {
+		.value {
+			float: right;
+		}
+	}
 }
 
 .skills-container {
@@ -36,3 +46,4 @@ h3, h4, h5 {
 		display: inline;
 	}
 }
+

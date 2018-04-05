@@ -2,57 +2,23 @@
 
 	<h4>Attack</h4>
 	<hr>
-	<ul>
-		<li>Attack: {{totalAttack}} ({{attack}} + {{passiveAttack}} * {{weaponAttackModifier}})</li>
-		<li *ngIf="activeAttack">Attack Potential: {{totalAttackPotential}} ({{attack}} + ({{passiveAttack}} + {{activeAttack}}) * {{weaponAttackModifier}})</li>
-		<!-- <li *ngIf="maxSharpness">Max Sharpness: {{maxSharpness}}</li> -->
-
-		<li *ngIf="effectiveSharpnessLevel">Sharpness: {{effectiveSharpnessLevel?.value}} {{effectiveSharpnessLevel?.color}}</li>
-
-		<li>Affinity: {{affinity + passiveAffinity}}%</li>
-		<li *ngIf="activeAffinity">Affinity Potential: {{affinity + passiveAffinity + activeAffinity}}%</li>
-		<li *ngIf="weakPointAffinity">Weak Point Affinity: {{affinity + passiveAffinity + weakPointAffinity}}%</li>
-		<li>Critical Boost: {{125 + passiveCriticalBoostPercent}}%</li>
-
-		<div *ngIf="ailment && !ailmentHidden">
-			<li>Ailment: {{ailment}}</li>
-			<li>Ailment Attack: {{totalAilmentAttack}} {{ailmentCapped ? '(Capped)' : ''}}</li>
-			<li>Ailment Buildup Rate: {{100 + effectivePassiveAilmentBuildupPercent}}%</li>
-		</div>
-
-		<div *ngIf="element && !elementHidden">
-			<li>Element: {{element}}</li>
-			<li>Element Attack: {{totalElementAttack}} {{elementCapped ? '(Capped)' : ''}}</li>
-		</div>
-
-		<div [style.color]="getHiddenElemColor()">
-			<div *ngIf="ailment && ailmentHidden">
-				<li>Ailment: {{ailment}}</li>
-				<li>Ailment Attack: {{totalAilmentAttack}} ({{baseAilmentAttack}} * {{elementAttackMultiplier}}) {{ailmentCapped ? '(Capped)' : ''}}</li>
-				<li>Ailment Buildup Rate: {{100 + effectivePassiveAilmentBuildupPercent}}%</li>
-			</div>
-			
-			<div *ngIf="element && elementHidden">
-				<li>Element: {{element}}</li>
-				<li>Element Attack: {{totalElementAttack}} ({{baseElementAttack}} * {{elementAttackMultiplier}}) {{elementCapped ? '(Capped)' : ''}}</li>
-			</div>
-		</div>		
-
-		<div *ngIf="elderseal">
-			<li>Elderseal: {{elderseal}}</li>
-		</div>
+	<ul class="striped">
+		<li *ngFor="let stat of attackStats" (mouseenter)="showCalcDetails(stat)" (mouseleave)="clearCalcDetails()">
+			<span class="name">{{stat.name}}</span>
+			<span class="value">{{stat.value}}</span>
+			<span *ngIf="stat.calculationTemplate || stat.description" class="detail-icon" [ngClass]="stat.color"><i class="far fa-question-circle"></i></span>
+		</li>
 	</ul>
 
 	<br />
 
 	<h4>Defense</h4>
 	<hr>
-	<ul>
-		<li>Defense: {{defense + passiveDefense}}</li>
-		<li>Fire Resist: {{fireResist + passiveFireResist}}</li>
-		<li>Water Resist: {{waterResist + passiveWaterResist}}</li>
-		<li>Thunder Resist: {{thunderResist + passiveThunderResist}}</li>
-		<li>Ice Resist: {{iceResist + passiveIceResist}}</li>
-		<li>Dragon Resist: {{dragonResist + passiveDragonResist}}</li>
+	<ul class="striped">
+		<li *ngFor="let stat of defenseStats" (mouseenter)="showCalcDetails(stat)" (mouseleave)="clearCalcDetails()">
+			<span class="name">{{stat.name}}</span>
+			<span class="value">{{stat.value}}</span>
+			<span *ngIf="stat.calculationTemplate || stat.description" class="detail-icon" [ngClass]="stat.color"><i class="far fa-question-circle"></i></span>
+		</li>
 	</ul>
 </div>

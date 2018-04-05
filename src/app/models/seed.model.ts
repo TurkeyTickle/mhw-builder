@@ -3,9 +3,11 @@ import { ItemModel } from './item.model';
 import { SetBonusModel } from './set-bonus.model';
 import { SkillModel } from './skill.model';
 import { WeaponModifierModel } from './weapon-modifier.model';
+import { SharpnessModifierModel } from './sharpness-modifier.model';
 
 export class SeedModel {
 	weaponModifiers: WeaponModifierModel[];
+	sharpnessModifiers: SharpnessModifierModel[];
 	weapons: ItemModel[];
 	armor: ItemModel[];
 	setBonuses: SetBonusModel[];
@@ -14,6 +16,7 @@ export class SeedModel {
 
 	constructor() {
 		this.weaponModifiers = new Array<WeaponModifierModel>();
+		this.sharpnessModifiers = new Array<SharpnessModifierModel>();
 		this.weapons = new Array<ItemModel>();
 		this.armor = new Array<ItemModel>();
 		this.setBonuses = new Array<SetBonusModel>();

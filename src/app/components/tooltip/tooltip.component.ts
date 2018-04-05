@@ -5,6 +5,7 @@ import { DecorationModel } from '../../models/decoration.model';
 import { SkillModel } from '../../models/skill.model';
 import { AnchorType } from '../../types/anchor.type';
 import { EquippedSkillModel } from '../../models/equipped-skill.model';
+import { StatDetailModel } from '../../models/stat-detail.model';
 
 @Component({
 	selector: 'mhw-builder-tooltip',
@@ -19,6 +20,7 @@ export class TooltipComponent implements OnInit {
 	decoration: DecorationModel;
 	equippedSkill: EquippedSkillModel;
 	skill: SkillModel;
+	calc: StatDetailModel;
 	visible: boolean;
 
 	constructor(
@@ -67,6 +69,16 @@ export class TooltipComponent implements OnInit {
 				this.show();
 			}
 		});
+
+		this.tooltipService.calcSubject.subscribe(calc => {
+			if (!calc) {
+				this.hide();
+			} else {
+				this.reset();
+				this.calc = calc;
+				this.show();
+			}
+		});
 	}
 
 	reset() {
@@ -74,6 +86,7 @@ export class TooltipComponent implements OnInit {
 		this.decoration = null;
 		this.equippedSkill = null;
 		this.skill = null;
+		this.calc = null;
 	}
 
 	show() {

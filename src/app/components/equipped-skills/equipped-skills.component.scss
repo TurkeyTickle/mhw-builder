@@ -1,9 +1,20 @@
+@import "~sass/common";
+
 ul {
 	padding: 0px;
 }
 
 li {
-	cursor: default;
 	list-style: none;
-	margin:4px;
+	padding:4px 4px;
+	cursor: default;
+
+	.value {
+		float: right;
+	}
+
+	.detail-icon {
+		float: left;
+		margin-right: 4px;	
+	}
 }

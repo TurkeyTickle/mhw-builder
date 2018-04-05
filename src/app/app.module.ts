@@ -17,6 +17,7 @@ import { TooltipService } from './services/tooltip.service';
 import { TooltipComponent } from './components/tooltip/tooltip.component';
 import { SkillDetailsComponent } from './components/skill-details/skill-details.component';
 import { DecorationDetailsComponent } from './components/decoration-details/decoration-details.component';
+import { CalcDetailsComponent } from './components/calc-details/calc-details.component';
 
 @NgModule({
 	declarations: [
@@ -31,6 +32,7 @@ import { DecorationDetailsComponent } from './components/decoration-details/deco
 		ItemDetailsComponent,
 		DecorationDetailsComponent,
 		SkillDetailsComponent,
+		CalcDetailsComponent
 	],
 	imports: [
 		BrowserModule,

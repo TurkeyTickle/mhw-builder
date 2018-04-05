@@ -1,39 +1,11 @@
 <div class="container">
 	<h3>{{item?.name}}</h3>
 	<hr>
-	<ul>
-		<div *ngIf="item?.equipmentCategory == 'Weapon'">
-			<li>Weapon Type: {{getWeaponTypeName(item?.weaponType)}}</li>
-			<li *ngIf="item?.sharpnessLevels">Sharpness: {{item?.sharpnessLevels[0].color}}</li>
-			<li>Attack: {{item?.baseAttack}}</li>
-			<li>Affinity: {{item?.baseAffinityPercent}}%</li>
-
-			<div *ngIf="item?.ailment" [style.color]="item?.ailmentHidden ? 'gray' : 'white'">
-				<li>Ailment: {{item?.ailment}}</li>
-				<li>Ailment Attack: {{item?.ailmentBaseAttack}}</li>
-			</div>
-			
-			<div *ngIf="item?.element" [style.color]="item?.elementHidden ? 'gray' : 'white'">
-				<li>Element: {{item?.element}}</li>
-				<li>Elemental Attack: {{item?.elementBaseAttack}}</li>
-			</div>
-		</div>
-
-		<div *ngIf="item?.itemType == 'Charm'">
-			<li>Levels: {{item?.levels}}</li>
-		</div>		
-
-		<div *ngIf="item?.equipmentCategory">
-			<li *ngIf="item?.baseDefense">Defense: {{item?.baseDefense}}</li>
-			
-			<div *ngIf="item.equipmentCategory == 'Armor'">
-				<li>Fire Resist: {{item?.fireResist || 0}}</li>
-				<li>Water Resist: {{item?.waterResist || 0}}</li>
-				<li>Thunder Resist: {{item?.thunderResist || 0}}</li>
-				<li>Ice Resist: {{item?.iceResist || 0}}</li>
-				<li>Dragon Resist: {{item?.dragonResist || 0}}</li>
-			</div>
-		</div>
+	<ul class="striped-light">
+		<li *ngFor="let stat of stats">
+			<span class="name" [ngStyle]="{ color: stat.color }">{{stat.name}}</span>
+				<span class="value" [ngStyle]="{ color: stat.color }">{{stat.value}}</span>
+		</li>
 	</ul>
 
 	<div class="slots-container">

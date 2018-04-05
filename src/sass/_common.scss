@@ -1,0 +1,43 @@
+@import "./variables";
+
+ul.striped {
+	li {
+		padding: 2px 4px;
+	}
+
+	li:not([hidden]):nth-child(even) {
+		background: #333333;
+		border-radius: 2px;
+	}
+}
+
+ul.striped-light {
+	li {
+		padding: 2px 4px;
+	}
+
+	li:not([hidden]):nth-child(even) {
+		background: #444444;
+		border-radius: 2px;
+	}
+}
+
+.green {
+	color: $green;
+}
+
+.blue {
+	color: $blue;
+}
+
+.yellow {
+	color: $yellow;
+}
+
+.orange {
+	color: $orange;
+}
+
+.red {
+	color: $red;
+}
