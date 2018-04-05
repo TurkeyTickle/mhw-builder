@@ -568,14 +568,14 @@ export class EquippedStatsComponent implements OnInit {
 			const ailment: StatDetailModel = {
 				name: 'Ailment',
 				value: this.ailment,
-				description: ''
+				info: []
 			};
 
 			this.attackStats.push(ailment);
 
 			if (this.ailmentHidden) {
 				if (this.elementAttackMultiplier < 1) {
-					ailment.description = 'Effectiveness reduced due to hidden ailment.';
+					ailment.info.push('Effectiveness reduced due to hidden ailment.');
 					ailment.color = !this.elementAttackMultiplier ? 'red' : 'yellow';
 				}
 
@@ -588,14 +588,15 @@ export class EquippedStatsComponent implements OnInit {
 				}
 
 				if (this.ailmentCapped) {
-					ailmentAttackTemplate += ` (Capped)`;
+					ailment.info.push('Ailment attack is capped.');
+					ailment.color = 'yellow';
 				}
 
 				const ailmentAttack: StatDetailModel = {
 					name: 'Ailment Attack',
 					value: this.totalAilmentAttack,
 					color: ailment.color,
-					description: `${ailment.description} Ailment Attack is rounded to the nearest multiple of 10.`,
+					info: ailment.info,
 					calculationTemplate: ailmentAttackTemplate,
 					calculationVariables: [
 						{
@@ -627,16 +628,17 @@ export class EquippedStatsComponent implements OnInit {
 
 				this.attackStats.push(ailmentAttack);
 			} else {
-				let ailmentAttackTemplate = `{base} + {passive} = ${this.totalAilmentAttack}`;
-
 				if (this.ailmentCapped) {
-					ailmentAttackTemplate += ` (Capped)`;
+					ailment.info.push('Ailment attack is capped.');
+					ailment.color = 'yellow';
 				}
 
 				const ailmentAttack: StatDetailModel = {
 					name: 'Ailment Attack',
 					value: this.totalAilmentAttack,
-					calculationTemplate: ailmentAttackTemplate,
+					color: ailment.color,
+					info: ailment.info,
+					calculationTemplate: `{base} + {passive} = ${this.totalAilmentAttack}`,
 					calculationVariables: [
 						{
 							displayName: 'Weapon Base Ailment Attack',
@@ -690,14 +692,14 @@ export class EquippedStatsComponent implements OnInit {
 			const element: StatDetailModel = {
 				name: 'Element',
 				value: this.element,
-				description: ''
+				info: []
 			};
 
 			this.attackStats.push(element);
 
 			if (this.elementHidden) {
 				if (this.elementAttackMultiplier < 1) {
-					element.description = 'Effectiveness reduced due to hidden element.';
+					element.info.push('Effectiveness reduced due to hidden element.');
 					element.color = !this.elementAttackMultiplier ? 'red' : 'yellow';
 				}
 
@@ -710,14 +712,15 @@ export class EquippedStatsComponent implements OnInit {
 				}
 
 				if (this.elementCapped) {
-					elementAttackTemplate += ` (Capped)`;
+					element.info.push('Element attack is capped.');
+					element.color = 'yellow';
 				}
 
 				const elementAttack: StatDetailModel = {
 					name: 'Element Attack',
 					value: this.totalElementAttack,
 					color: element.color,
-					description: `${element.description} Element Attack is rounded to the nearest multiple of 10.`,
+					info: element.info,
 					calculationTemplate: elementAttackTemplate,
 					calculationVariables: [
 						{
@@ -749,16 +752,17 @@ export class EquippedStatsComponent implements OnInit {
 
 				this.attackStats.push(elementAttack);
 			} else {
-				let elementAttackTemplate = `{base} + {passive} = ${this.totalElementAttack}`;
-
 				if (this.elementCapped) {
-					elementAttackTemplate += ` (Capped)`;
+					element.info.push('Element Attack is capped.');
+					element.color = 'yellow';
 				}
 
 				const elementAttack: StatDetailModel = {
 					name: 'Element Attack',
 					value: this.totalElementAttack,
-					calculationTemplate: elementAttackTemplate,
+					color: element.color,
+					info: element.info,
+					calculationTemplate: `{base} + {passive} = ${this.totalElementAttack}`,
 					calculationVariables: [
 						{
 							displayName: 'Weapon Base Element Attack',
@@ -842,7 +846,7 @@ export class EquippedStatsComponent implements OnInit {
 	}
 
 	showCalcDetails(calc: StatDetailModel) {
-		if (calc.calculationTemplate || calc.description) {
+		if (calc.calculationTemplate || (calc.info && calc.info.length)) {
 			this.tooltipService.anchorPoint = AnchorType.TopRight;
 			this.tooltipService.setCalc(calc);
 		}

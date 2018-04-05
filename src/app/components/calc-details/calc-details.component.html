@@ -2,8 +2,10 @@
 	<h3>{{calc.name}}</h3>
 	<hr>
 	<div class="template" [innerHTML]="detailTemplate"></div>
-	<div class="description">{{calc.description}}</div>
-	<ul>
+	<ul class="info" *ngIf="calc.info">
+		<li *ngFor="let info of calc.info">{{info}}</li>
+	</ul>
+	<ul class="striped-light">
 		<li *ngFor="let item of calc.calculationVariables">
 			<span class="name">{{item.displayName}}</span>
 			<span class="value" [ngClass]="item.colorClass">{{item.value}}</span>
