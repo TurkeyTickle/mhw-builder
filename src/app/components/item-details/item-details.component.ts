@@ -5,6 +5,7 @@ import { ItemModel } from '../../models/item.model';
 import { SkillModel } from '../../models/skill.model';
 import { ItemsService } from '../../services/items.service';
 import { WeaponType } from '../../types/weapon.type';
+import { StatDetailModel } from '../../models/stat-detail.model';
 
 @Component({
 	selector: 'mhw-builder-item-details',
@@ -18,6 +19,7 @@ export class ItemDetailsComponent implements OnInit {
 	set item(item: ItemModel) {
 		this._item = item;
 		if (item) {
+			this.setupStats();
 			this.loadSkills();
 		} else {
 			this.skills = new Array<SkillModel>();
@@ -28,12 +30,17 @@ export class ItemDetailsComponent implements OnInit {
 	}
 
 	skills: SkillModel[];
+	stats: StatDetailModel[];
 
 	constructor(
 		private itemsService: ItemsService
 	) { }
 
 	ngOnInit() { }
+
+	setupStats() {
+
+	}
 
 	loadSkills() {
 		this.skills = this.itemsService.getSkills(this.item.skills);

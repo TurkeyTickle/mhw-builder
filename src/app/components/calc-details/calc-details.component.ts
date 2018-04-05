@@ -1,5 +1,5 @@
 import { Component, OnInit, Input } from '@angular/core';
-import { CalculationDetailModel } from '../../models/calculation.model';
+import { StatDetailModel } from '../../models/stat-detail.model';
 
 @Component({
 	selector: 'mhw-builder-calc-details',
@@ -8,9 +8,9 @@ import { CalculationDetailModel } from '../../models/calculation.model';
 })
 export class CalcDetailsComponent implements OnInit {
 
-	private _calc: CalculationDetailModel;
+	private _calc: StatDetailModel;
 	@Input()
-	public set calc(calc: CalculationDetailModel) {
+	public set calc(calc: StatDetailModel) {
 		this._calc = calc;
 		this.generateTemplate();
 	}
@@ -27,10 +27,10 @@ export class CalcDetailsComponent implements OnInit {
 	generateTemplate() {
 		this.detailTemplate = null;
 
-		if (this.calc.detailTemplate) {
-			let template = this.calc.detailTemplate;
+		if (this.calc.calculationTemplate) {
+			let template = this.calc.calculationTemplate;
 
-			for (const item of this.calc.detailVariables) {
+			for (const item of this.calc.calculationVariables) {
 				template = template.replace(`{${item.name}}`, `<span class="${item.colorClass}">${item.value}</span>`);
 			}
 

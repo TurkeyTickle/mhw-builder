@@ -6,7 +6,7 @@ import { ItemModel } from '../models/item.model';
 import { SkillModel } from '../models/skill.model';
 import { AnchorType } from '../types/anchor.type';
 import { EquippedSkillModel } from '../models/equipped-skill.model';
-import { CalculationDetailModel } from '../models/calculation.model';
+import { StatDetailModel } from '../models/stat-detail.model';
 
 @Injectable()
 export class TooltipService {
@@ -14,13 +14,13 @@ export class TooltipService {
 	public decorationSubject = new Subject<DecorationModel>();
 	public equippedSkillSubject = new Subject<EquippedSkillModel>();
 	public skillSubject = new Subject<SkillModel>();
-	public calcSubject = new Subject<CalculationDetailModel>();
+	public calcSubject = new Subject<StatDetailModel>();
 
 	public item: ItemModel;
 	public decoration: DecorationModel;
 	public equippedSkill: EquippedSkillModel;
 	public skill: SkillModel;
-	public calc: CalculationDetailModel;
+	public calc: StatDetailModel;
 
 	public anchorPoint: AnchorType;
 
@@ -60,7 +60,7 @@ export class TooltipService {
 		}
 	}
 
-	setCalc(calc: CalculationDetailModel) {
+	setCalc(calc: StatDetailModel) {
 		if (calc != this.calc) {
 			this.reset();
 			this.calc = calc;

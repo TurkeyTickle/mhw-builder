@@ -4,9 +4,9 @@
 	<div class="template" [innerHTML]="detailTemplate"></div>
 	<div class="description">{{calc.description}}</div>
 	<ul>
-		<li *ngFor="let item of calc.detailVariables">
+		<li *ngFor="let item of calc.calculationVariables">
 			<span class="name">{{item.displayName}}</span>
 			<span class="value" [ngClass]="item.colorClass">{{item.value}}</span>
-	</li>
+		</li>
 	</ul>
 </div>

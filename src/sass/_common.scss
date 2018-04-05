@@ -1,5 +1,16 @@
 @import "./variables";
 
+ul.striped {
+	li {
+		padding: 2px;
+	}
+
+	li:not([hidden]):nth-child(even) {
+		background: #4c4c4c;
+		border-radius: 2px;
+	}
+}
+
 .green {
 	color: $green;
 }

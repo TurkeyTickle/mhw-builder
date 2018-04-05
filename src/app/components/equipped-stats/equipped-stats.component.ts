@@ -11,7 +11,7 @@ import { ElementType } from '../../types/element.type';
 import { SharpnessType } from '../../types/sharpness.type';
 import { SharpnessLevelModel } from '../../models/sharpness-level.model';
 import { DamageType } from '../../types/damage.type';
-import { CalculationDetailModel } from '../../models/calculation.model';
+import { StatDetailModel } from '../../models/stat-detail.model';
 import { TooltipService } from '../../services/tooltip.service';
 import { AnchorType } from '../../types/anchor.type';
 
@@ -101,8 +101,8 @@ export class EquippedStatsComponent implements OnInit {
 	passiveIceResist: number;
 	passiveDragonResist: number;
 
-	attackStats = new Array<CalculationDetailModel>();
-	defenseStats = new Array<CalculationDetailModel>();
+	attackStats = new Array<StatDetailModel>();
+	defenseStats = new Array<StatDetailModel>();
 
 	constructor(
 		private itemsService: ItemsService,
@@ -401,11 +401,11 @@ export class EquippedStatsComponent implements OnInit {
 	buildAttackCalcs() {
 		this.attackStats = [];
 
-		const attack: CalculationDetailModel = {
+		const attack: StatDetailModel = {
 			name: 'Attack',
 			value: this.totalAttack,
-			detailTemplate: `{attack} + {passiveAttack} × {weaponModifier} ≈ ${this.totalAttack}`,
-			detailVariables: [
+			calculationTemplate: `{attack} + {passiveAttack} × {weaponModifier} ≈ ${this.totalAttack}`,
+			calculationVariables: [
 				{
 					displayName: 'Base Weapon Attack',
 					name: 'attack',
@@ -430,11 +430,11 @@ export class EquippedStatsComponent implements OnInit {
 		this.attackStats.push(attack);
 
 		if (this.activeAttack) {
-			const attackPotential: CalculationDetailModel = {
+			const attackPotential: StatDetailModel = {
 				name: 'Attack Potential',
 				value: this.totalAttackPotential,
-				detailTemplate: `({attack} × {sharpnessModifier}) + ({passiveAttack} + {activeAttack}) × {weaponModifier} ≈ ${this.totalAttackPotential}`,
-				detailVariables: [
+				calculationTemplate: `({attack} × {sharpnessModifier}) + ({passiveAttack} + {activeAttack}) × {weaponModifier} ≈ ${this.totalAttackPotential}`,
+				calculationVariables: [
 					{
 						displayName: 'Base Weapon Attack',
 						name: 'attack',
@@ -473,11 +473,11 @@ export class EquippedStatsComponent implements OnInit {
 		}
 
 		const affinityValue = `${this.affinity + this.passiveAffinity}%`;
-		const affinity: CalculationDetailModel = {
+		const affinity: StatDetailModel = {
 			name: 'Affinity',
 			value: affinityValue,
-			detailTemplate: `{affinity} + {passiveAffinity} = ${affinityValue}`,
-			detailVariables: [
+			calculationTemplate: `{affinity} + {passiveAffinity} = ${affinityValue}`,
+			calculationVariables: [
 				{
 					displayName: 'Weapon Base Affinity',
 					name: 'affinity',
@@ -497,11 +497,11 @@ export class EquippedStatsComponent implements OnInit {
 
 		if (this.activeAffinity) {
 			const value = `${this.affinity + this.passiveAffinity + this.weakPointAffinity + this.activeAffinity}%`;
-			const affinityPotential: CalculationDetailModel = {
+			const affinityPotential: StatDetailModel = {
 				name: 'Affinity Potential',
 				value: value,
-				detailTemplate: `{base} + {passive} + {weakPoint} + {active} = ${value}`,
-				detailVariables: [
+				calculationTemplate: `{base} + {passive} + {weakPoint} + {active} = ${value}`,
+				calculationVariables: [
 					{
 						displayName: 'Weapon Base Affinity',
 						name: 'base',
@@ -533,7 +533,7 @@ export class EquippedStatsComponent implements OnInit {
 		}
 
 		if (this.effectiveSharpnessLevel) {
-			const sharpness: CalculationDetailModel = {
+			const sharpness: StatDetailModel = {
 				name: 'Sharpness',
 				value: `${this.effectiveSharpnessLevel.value} ${this.effectiveSharpnessLevel.color}`,
 			};
@@ -542,11 +542,11 @@ export class EquippedStatsComponent implements OnInit {
 		}
 
 		const critBoostValue = `${125 + this.passiveCriticalBoostPercent}%`;
-		const critBoost: CalculationDetailModel = {
+		const critBoost: StatDetailModel = {
 			name: 'Critical Boost',
 			value: critBoostValue,
-			detailTemplate: `{base} + {passive} = ${critBoostValue}`,
-			detailVariables: [
+			calculationTemplate: `{base} + {passive} = ${critBoostValue}`,
+			calculationVariables: [
 				{
 					displayName: 'Base Critical Boost',
 					name: 'base',
@@ -565,7 +565,7 @@ export class EquippedStatsComponent implements OnInit {
 		this.attackStats.push(critBoost);
 
 		if (this.ailment) {
-			const ailment: CalculationDetailModel = {
+			const ailment: StatDetailModel = {
 				name: 'Ailment',
 				value: this.ailment,
 				description: ''
@@ -591,13 +591,13 @@ export class EquippedStatsComponent implements OnInit {
 					ailmentAttackTemplate += ` (Capped)`;
 				}
 
-				const ailmentAttack: CalculationDetailModel = {
+				const ailmentAttack: StatDetailModel = {
 					name: 'Ailment Attack',
 					value: this.totalAilmentAttack,
 					iconColorClass: ailment.iconColorClass,
 					description: `${ailment.description} Ailment Attack is rounded to the nearest multiple of 10.`,
-					detailTemplate: ailmentAttackTemplate,
-					detailVariables: [
+					calculationTemplate: ailmentAttackTemplate,
+					calculationVariables: [
 						{
 							displayName: 'Weapon Base Ailment Attack',
 							name: 'base',
@@ -633,11 +633,11 @@ export class EquippedStatsComponent implements OnInit {
 					ailmentAttackTemplate += ` (Capped)`;
 				}
 
-				const ailmentAttack: CalculationDetailModel = {
+				const ailmentAttack: StatDetailModel = {
 					name: 'Ailment Attack',
 					value: this.totalAilmentAttack,
-					detailTemplate: ailmentAttackTemplate,
-					detailVariables: [
+					calculationTemplate: ailmentAttackTemplate,
+					calculationVariables: [
 						{
 							displayName: 'Weapon Base Ailment Attack',
 							name: 'base',
@@ -663,11 +663,11 @@ export class EquippedStatsComponent implements OnInit {
 			}
 
 			const ailmentBuildupRateValue = `${100 + this.effectivePassiveAilmentBuildupPercent}%`;
-			const ailmentBuildupRate: CalculationDetailModel = {
+			const ailmentBuildupRate: StatDetailModel = {
 				name: 'Ailment Buildup Rate',
 				value: ailmentBuildupRateValue,
-				detailTemplate: `{base} + {passive} = ${ailmentBuildupRateValue}`,
-				detailVariables: [
+				calculationTemplate: `{base} + {passive} = ${ailmentBuildupRateValue}`,
+				calculationVariables: [
 					{
 						displayName: 'Base Buildup Rate',
 						name: 'base',
@@ -687,7 +687,7 @@ export class EquippedStatsComponent implements OnInit {
 		}
 
 		if (this.element) {
-			const element: CalculationDetailModel = {
+			const element: StatDetailModel = {
 				name: 'Element',
 				value: this.element,
 				description: ''
@@ -713,13 +713,13 @@ export class EquippedStatsComponent implements OnInit {
 					elementAttackTemplate += ` (Capped)`;
 				}
 
-				const elementAttack: CalculationDetailModel = {
+				const elementAttack: StatDetailModel = {
 					name: 'Element Attack',
 					value: this.totalElementAttack,
 					iconColorClass: element.iconColorClass,
 					description: `${element.description} Element Attack is rounded to the nearest multiple of 10.`,
-					detailTemplate: elementAttackTemplate,
-					detailVariables: [
+					calculationTemplate: elementAttackTemplate,
+					calculationVariables: [
 						{
 							displayName: 'Weapon Base Element Attack',
 							name: 'base',
@@ -755,11 +755,11 @@ export class EquippedStatsComponent implements OnInit {
 					elementAttackTemplate += ` (Capped)`;
 				}
 
-				const elementAttack: CalculationDetailModel = {
+				const elementAttack: StatDetailModel = {
 					name: 'Element Attack',
 					value: this.totalElementAttack,
-					detailTemplate: elementAttackTemplate,
-					detailVariables: [
+					calculationTemplate: elementAttackTemplate,
+					calculationVariables: [
 						{
 							displayName: 'Weapon Base Element Attack',
 							name: 'base',
@@ -786,7 +786,7 @@ export class EquippedStatsComponent implements OnInit {
 		}
 
 		if (this.elderseal) {
-			const elderseal: CalculationDetailModel = {
+			const elderseal: StatDetailModel = {
 				name: 'Elderseal',
 				value: this.elderseal
 			};
@@ -798,42 +798,42 @@ export class EquippedStatsComponent implements OnInit {
 	buildDefenseCalcs() {
 		this.defenseStats = [];
 
-		const defense: CalculationDetailModel = {
+		const defense: StatDetailModel = {
 			name: 'Defense',
 			value: this.defense + this.passiveDefense
 		};
 
 		this.defenseStats.push(defense);
 
-		const fireResist: CalculationDetailModel = {
+		const fireResist: StatDetailModel = {
 			name: 'Fire Resist',
 			value: this.fireResist + this.passiveFireResist
 		};
 
 		this.defenseStats.push(fireResist);
 
-		const waterResist: CalculationDetailModel = {
+		const waterResist: StatDetailModel = {
 			name: 'Water Resist',
 			value: this.waterResist + this.passiveWaterResist
 		};
 
 		this.defenseStats.push(waterResist);
 
-		const thunderResist: CalculationDetailModel = {
+		const thunderResist: StatDetailModel = {
 			name: 'Thunder Resist',
 			value: this.thunderResist + this.passiveThunderResist
 		};
 
 		this.defenseStats.push(thunderResist);
 
-		const iceResist: CalculationDetailModel = {
+		const iceResist: StatDetailModel = {
 			name: 'Ice Resist',
 			value: this.iceResist + this.passiveIceResist
 		};
 
 		this.defenseStats.push(iceResist);
 
-		const dragonResist: CalculationDetailModel = {
+		const dragonResist: StatDetailModel = {
 			name: 'Dragon Resist',
 			value: this.dragonResist + this.passiveDragonResist
 		};
@@ -841,8 +841,8 @@ export class EquippedStatsComponent implements OnInit {
 		this.defenseStats.push(dragonResist);
 	}
 
-	showCalcDetails(calc: CalculationDetailModel) {
-		if (calc.detailTemplate || calc.description) {
+	showCalcDetails(calc: StatDetailModel) {
+		if (calc.calculationTemplate || calc.description) {
 			this.tooltipService.anchorPoint = AnchorType.TopRight;
 			this.tooltipService.setCalc(calc);
 		}

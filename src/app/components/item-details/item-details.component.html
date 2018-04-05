@@ -1,7 +1,7 @@
 <div class="container">
 	<h3>{{item?.name}}</h3>
 	<hr>
-	<ul>
+	<ul class="striped">
 		<div *ngIf="item?.equipmentCategory == 'Weapon'">
 			<li>Weapon Type: {{getWeaponTypeName(item?.weaponType)}}</li>
 			<li *ngIf="item?.sharpnessLevels">Sharpness: {{item?.sharpnessLevels[0].color}}</li>
@@ -24,7 +24,7 @@
 		</div>		
 
 		<div *ngIf="item?.equipmentCategory">
-			<li *ngIf="item?.baseDefense">Defense: {{item?.baseDefense}}</li>
+			<li *ngIf="item.baseDefense">Defense: {{item?.baseDefense}}</li>
 			
 			<div *ngIf="item.equipmentCategory == 'Armor'">
 				<li>Fire Resist: {{item?.fireResist || 0}}</li>

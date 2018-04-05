@@ -5,7 +5,7 @@ import { DecorationModel } from '../../models/decoration.model';
 import { SkillModel } from '../../models/skill.model';
 import { AnchorType } from '../../types/anchor.type';
 import { EquippedSkillModel } from '../../models/equipped-skill.model';
-import { CalculationDetailModel } from '../../models/calculation.model';
+import { StatDetailModel } from '../../models/stat-detail.model';
 
 @Component({
 	selector: 'mhw-builder-tooltip',
@@ -20,7 +20,7 @@ export class TooltipComponent implements OnInit {
 	decoration: DecorationModel;
 	equippedSkill: EquippedSkillModel;
 	skill: SkillModel;
-	calc: CalculationDetailModel;
+	calc: StatDetailModel;
 	visible: boolean;
 
 	constructor(
