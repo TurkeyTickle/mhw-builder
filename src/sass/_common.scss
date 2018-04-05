@@ -2,11 +2,22 @@
 
 ul.striped {
 	li {
-		padding: 2px;
+		padding: 2px 4px;
 	}
 
 	li:not([hidden]):nth-child(even) {
-		background: #4c4c4c;
+		background: #333333;
+		border-radius: 2px;
+	}
+}
+
+ul.striped-light {
+	li {
+		padding: 2px 4px;
+	}
+
+	li:not([hidden]):nth-child(even) {
+		background: #444444;
 		border-radius: 2px;
 	}
 }

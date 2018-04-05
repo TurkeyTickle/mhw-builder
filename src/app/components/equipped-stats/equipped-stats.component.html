@@ -2,11 +2,11 @@
 
 	<h4>Attack</h4>
 	<hr>
-	<ul>
+	<ul class="striped">
 		<li *ngFor="let stat of attackStats" (mouseenter)="showCalcDetails(stat)" (mouseleave)="clearCalcDetails()">
 			<span class="name">{{stat.name}}</span>
 			<span class="value">{{stat.value}}</span>
-			<span *ngIf="stat.calculationTemplate || stat.description" class="detail-icon" [ngClass]="stat.iconColorClass"><i class="far fa-question-circle"></i></span>
+			<span *ngIf="stat.calculationTemplate || stat.description" class="detail-icon" [ngClass]="stat.color"><i class="far fa-question-circle"></i></span>
 		</li>
 	</ul>
 
@@ -14,11 +14,11 @@
 
 	<h4>Defense</h4>
 	<hr>
-	<ul>
+	<ul class="striped">
 		<li *ngFor="let stat of defenseStats" (mouseenter)="showCalcDetails(stat)" (mouseleave)="clearCalcDetails()">
 			<span class="name">{{stat.name}}</span>
 			<span class="value">{{stat.value}}</span>
-			<span *ngIf="stat.calculationTemplate || stat.description" class="detail-icon" [ngClass]="stat.iconColorClass"><i class="far fa-question-circle"></i></span>
+			<span *ngIf="stat.calculationTemplate || stat.description" class="detail-icon" [ngClass]="stat.color"><i class="far fa-question-circle"></i></span>
 		</li>
 	</ul>
 </div>

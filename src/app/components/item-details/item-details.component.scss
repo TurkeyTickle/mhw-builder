@@ -13,6 +13,14 @@ h3, h4, h5 {
 	margin: 0px;
 }
 
+ul.striped-light {
+	li {
+		.value {
+			float: right;
+		}
+	}
+}
+
 .skills-container {
 	li {
 		margin-top: 24px;
@@ -29,10 +37,6 @@ h3, h4, h5 {
 			border: 1px solid rgb(97, 97, 97);
 		}
 	}
-
-	// li:nth-child(odd) {
-	// 	background: #333333;
-	// }
 }
 
 .slots-container {

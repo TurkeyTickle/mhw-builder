@@ -6,6 +6,6 @@ export class StatDetailModel {
 	description?: string;
 	calculationTemplate?: string;
 	calculationVariables?: CalculationVariableModel[];
-	iconColorClass?: string;
+	color?: string;
 }
 

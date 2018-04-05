@@ -576,7 +576,7 @@ export class EquippedStatsComponent implements OnInit {
 			if (this.ailmentHidden) {
 				if (this.elementAttackMultiplier < 1) {
 					ailment.description = 'Effectiveness reduced due to hidden ailment.';
-					ailment.iconColorClass = !this.elementAttackMultiplier ? 'red' : 'yellow';
+					ailment.color = !this.elementAttackMultiplier ? 'red' : 'yellow';
 				}
 
 				let ailmentAttackTemplate: string;
@@ -594,7 +594,7 @@ export class EquippedStatsComponent implements OnInit {
 				const ailmentAttack: StatDetailModel = {
 					name: 'Ailment Attack',
 					value: this.totalAilmentAttack,
-					iconColorClass: ailment.iconColorClass,
+					color: ailment.color,
 					description: `${ailment.description} Ailment Attack is rounded to the nearest multiple of 10.`,
 					calculationTemplate: ailmentAttackTemplate,
 					calculationVariables: [
@@ -698,7 +698,7 @@ export class EquippedStatsComponent implements OnInit {
 			if (this.elementHidden) {
 				if (this.elementAttackMultiplier < 1) {
 					element.description = 'Effectiveness reduced due to hidden element.';
-					element.iconColorClass = !this.elementAttackMultiplier ? 'red' : 'yellow';
+					element.color = !this.elementAttackMultiplier ? 'red' : 'yellow';
 				}
 
 				let elementAttackTemplate: string;
@@ -716,7 +716,7 @@ export class EquippedStatsComponent implements OnInit {
 				const elementAttack: StatDetailModel = {
 					name: 'Element Attack',
 					value: this.totalElementAttack,
-					iconColorClass: element.iconColorClass,
+					color: element.color,
 					description: `${element.description} Element Attack is rounded to the nearest multiple of 10.`,
 					calculationTemplate: elementAttackTemplate,
 					calculationVariables: [
