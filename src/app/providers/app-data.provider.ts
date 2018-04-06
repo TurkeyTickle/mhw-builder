@@ -1,15 +1,14 @@
 import { HttpClient } from '@angular/common/http';
 import { Injectable } from '@angular/core';
 import * as _ from 'lodash';
-
 import { DecorationModel } from '../models/decoration.model';
 import { ItemModel } from '../models/item.model';
 import { SeedModel } from '../models/seed.model';
 import { SetBonusModel } from '../models/set-bonus.model';
+import { SharpnessModifierModel } from '../models/sharpness-modifier.model';
 import { SkillModel } from '../models/skill.model';
 import { WeaponModifierModel } from '../models/weapon-modifier.model';
 import { EquipmentCategoryType } from '../types/equipment-category.type';
-import { SharpnessModifierModel } from '../models/sharpness-modifier.model';
 
 @Injectable()
 export class AppDataProvider {

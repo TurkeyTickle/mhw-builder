@@ -1,5 +1,5 @@
 import { Component, ElementRef, EventEmitter, Input, OnInit, Output, ViewChild } from '@angular/core';
-
+import * as _ from 'lodash';
 import { DecorationModel } from '../../models/decoration.model';
 import { ItemModel } from '../../models/item.model';
 import { SearchDecorationModel } from '../../models/search-decoration.model';
@@ -8,8 +8,6 @@ import { ItemsService } from '../../services/items.service';
 import { TooltipService } from '../../services/tooltip.service';
 import { ItemType } from '../../types/item.type';
 import { WeaponType } from '../../types/weapon.type';
-
-import * as _ from 'lodash';
 
 @Component({
 	selector: 'mhw-builder-item-list',

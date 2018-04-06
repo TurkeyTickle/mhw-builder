@@ -1,18 +1,17 @@
 import { Injectable } from '@angular/core';
 import * as _ from 'lodash';
-
 import { DecorationModel } from '../models/decoration.model';
 import { ItemSkillModel } from '../models/item-skill.model';
 import { ItemModel } from '../models/item.model';
 import { SetBonusModel } from '../models/set-bonus.model';
+import { SharpnessModifierModel } from '../models/sharpness-modifier.model';
 import { SkillModel } from '../models/skill.model';
 import { WeaponModifierModel } from '../models/weapon-modifier.model';
 import { AppDataProvider } from '../providers/app-data.provider';
-import { ItemType } from '../types/item.type';
-import { WeaponType } from '../types/weapon.type';
-import { SharpnessModifierModel } from '../models/sharpness-modifier.model';
-import { SharpnessType } from '../types/sharpness.type';
 import { DamageType } from '../types/damage.type';
+import { ItemType } from '../types/item.type';
+import { SharpnessType } from '../types/sharpness.type';
+import { WeaponType } from '../types/weapon.type';
 
 @Injectable()
 export class ItemsService {

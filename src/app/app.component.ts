@@ -1,19 +1,18 @@
 import { Location } from '@angular/common';
 import { AfterViewInit, ChangeDetectorRef, Component, ViewChild } from '@angular/core';
 import * as _ from 'lodash';
-
 import { DecorationSlotComponent } from './components/decoration-slot/decoration-slot.component';
 import { EquippedSkillsComponent } from './components/equipped-skills/equipped-skills.component';
 import { EquippedStatsComponent } from './components/equipped-stats/equipped-stats.component';
 import { ItemListComponent } from './components/item-list/item-list.component';
 import { ItemSlotClearModel, ItemSlotComponent } from './components/item-slot/item-slot.component';
+import { TooltipComponent } from './components/tooltip/tooltip.component';
 import { DecorationModel } from './models/decoration.model';
 import { ItemModel } from './models/item.model';
 import { ItemsService } from './services/items.service';
 import { SkillService } from './services/skill.service';
 import { EquipmentCategoryType } from './types/equipment-category.type';
 import { ItemType } from './types/item.type';
-import { TooltipComponent } from './components/tooltip/tooltip.component';
 
 @Component({
 	selector: 'mhw-builder-root',

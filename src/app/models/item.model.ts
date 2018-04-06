@@ -6,8 +6,8 @@ import { ItemType } from '../types/item.type';
 import { SharpnessType } from '../types/sharpness.type';
 import { WeaponType } from '../types/weapon.type';
 import { ItemSkillModel } from './item-skill.model';
-import { SlotModel } from './slot.model';
 import { SharpnessLevelModel } from './sharpness-level.model';
+import { SlotModel } from './slot.model';
 
 export class ItemModel {
 	id: number;

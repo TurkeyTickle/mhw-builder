@@ -1,4 +1,4 @@
-export class SkillLevel {
+export class SkillLevelModel {
 	description: string;
 
 	passiveAttack: number;

@@ -1,11 +1,11 @@
-import { Component, OnInit, Renderer2, ViewChild, ElementRef } from '@angular/core';
-import { TooltipService } from '../../services/tooltip.service';
-import { ItemModel } from '../../models/item.model';
+import { Component, ElementRef, OnInit, Renderer2, ViewChild } from '@angular/core';
 import { DecorationModel } from '../../models/decoration.model';
-import { SkillModel } from '../../models/skill.model';
-import { AnchorType } from '../../types/anchor.type';
 import { EquippedSkillModel } from '../../models/equipped-skill.model';
+import { ItemModel } from '../../models/item.model';
+import { SkillModel } from '../../models/skill.model';
 import { StatDetailModel } from '../../models/stat-detail.model';
+import { TooltipService } from '../../services/tooltip.service';
+import { AnchorType } from '../../types/anchor.type';
 
 @Component({
 	selector: 'mhw-builder-tooltip',

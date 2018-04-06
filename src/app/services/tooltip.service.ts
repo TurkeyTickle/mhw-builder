@@ -1,12 +1,11 @@
 import { Injectable } from '@angular/core';
 import { Subject } from 'rxjs/Subject';
-
 import { DecorationModel } from '../models/decoration.model';
+import { EquippedSkillModel } from '../models/equipped-skill.model';
 import { ItemModel } from '../models/item.model';
 import { SkillModel } from '../models/skill.model';
-import { AnchorType } from '../types/anchor.type';
-import { EquippedSkillModel } from '../models/equipped-skill.model';
 import { StatDetailModel } from '../models/stat-detail.model';
+import { AnchorType } from '../types/anchor.type';
 
 @Injectable()
 export class TooltipService {

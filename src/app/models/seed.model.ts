@@ -1,9 +1,9 @@
 import { DecorationModel } from './decoration.model';
 import { ItemModel } from './item.model';
 import { SetBonusModel } from './set-bonus.model';
+import { SharpnessModifierModel } from './sharpness-modifier.model';
 import { SkillModel } from './skill.model';
 import { WeaponModifierModel } from './weapon-modifier.model';
-import { SharpnessModifierModel } from './sharpness-modifier.model';
 
 export class SeedModel {
 	weaponModifiers: WeaponModifierModel[];

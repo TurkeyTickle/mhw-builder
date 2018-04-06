@@ -1,19 +1,18 @@
 import { Component, OnInit } from '@angular/core';
 import * as _ from 'lodash';
-
 import { EquippedSkillModel } from '../../models/equipped-skill.model';
 import { ItemModel } from '../../models/item.model';
-import { SkillLevel } from '../../models/skill-level.model';
+import { SharpnessLevelModel } from '../../models/sharpness-level.model';
+import { SkillLevelModel } from '../../models/skill-level.model';
+import { StatDetailModel } from '../../models/stat-detail.model';
 import { ItemsService } from '../../services/items.service';
 import { SkillService } from '../../services/skill.service';
+import { TooltipService } from '../../services/tooltip.service';
 import { AilmentType } from '../../types/ailment.type';
+import { AnchorType } from '../../types/anchor.type';
+import { DamageType } from '../../types/damage.type';
 import { ElementType } from '../../types/element.type';
 import { SharpnessType } from '../../types/sharpness.type';
-import { SharpnessLevelModel } from '../../models/sharpness-level.model';
-import { DamageType } from '../../types/damage.type';
-import { StatDetailModel } from '../../models/stat-detail.model';
-import { TooltipService } from '../../services/tooltip.service';
-import { AnchorType } from '../../types/anchor.type';
 
 @Component({
 	selector: 'mhw-builder-equipped-stats',
@@ -231,7 +230,7 @@ export class EquippedStatsComponent implements OnInit {
 		}
 
 		for (const equippedSkill of equippedSkills) {
-			let level: SkillLevel;
+			let level: SkillLevelModel;
 
 			if (equippedSkill.equippedCount) {
 				const levelIndex = equippedSkill.equippedCount <= equippedSkill.skill.levels.length

@@ -1,9 +1,8 @@
-import { Component, OnInit, Input } from '@angular/core';
-import { SkillModel } from '../../models/skill.model';
-import { DecorationModel } from '../../models/decoration.model';
-import { ItemsService } from '../../services/items.service';
-
+import { Component, Input, OnInit } from '@angular/core';
 import * as _ from 'lodash';
+import { DecorationModel } from '../../models/decoration.model';
+import { SkillModel } from '../../models/skill.model';
+import { ItemsService } from '../../services/items.service';
 
 @Component({
 	selector: 'mhw-builder-decoration-details',

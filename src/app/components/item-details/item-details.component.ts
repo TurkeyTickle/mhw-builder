@@ -1,13 +1,12 @@
-import { Component, OnInit, Input } from '@angular/core';
+import { Component, Input, OnInit } from '@angular/core';
 import * as _ from 'lodash';
-
 import { ItemModel } from '../../models/item.model';
 import { SkillModel } from '../../models/skill.model';
-import { ItemsService } from '../../services/items.service';
-import { WeaponType } from '../../types/weapon.type';
 import { StatDetailModel } from '../../models/stat-detail.model';
-import { ItemType } from '../../types/item.type';
+import { ItemsService } from '../../services/items.service';
 import { EquipmentCategoryType } from '../../types/equipment-category.type';
+import { ItemType } from '../../types/item.type';
+import { WeaponType } from '../../types/weapon.type';
 
 @Component({
 	selector: 'mhw-builder-item-details',

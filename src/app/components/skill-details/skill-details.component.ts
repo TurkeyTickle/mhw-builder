@@ -1,6 +1,6 @@
-import { Component, OnInit, Input } from '@angular/core';
-import { SkillModel } from '../../models/skill.model';
+import { Component, Input, OnInit } from '@angular/core';
 import { EquippedSkillModel } from '../../models/equipped-skill.model';
+import { SkillModel } from '../../models/skill.model';
 
 @Component({
 	selector: 'mhw-builder-skill-details',
