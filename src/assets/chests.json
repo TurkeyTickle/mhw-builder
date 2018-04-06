@@ -1228,5 +1228,30 @@
       }
     ],
     "id": 332
+  },
+  {
+    "name": "Blossom Vest Alpha",
+    "itemType": "Chest",
+    "baseDefense": 40,
+    "fireResist": 1,
+    "waterResist": 1,
+    "thunderResist": 4,
+    "iceResist": 1,
+    "dragonResist": 1,
+    "skills": [
+      {
+        "id": "quickSheath",
+        "level": 1
+      }
+    ],
+    "slots": [
+      {
+        "level": 1
+      },
+      {
+        "level": 1
+      }
+    ],
+    "id": 337
   }
 ]
