@@ -19,7 +19,15 @@ export class EquippedSkillsComponent implements OnInit {
 		private tooltipService: TooltipService
 	) { }
 
-	ngOnInit() { }
+	ngOnInit() {
+		this.skillService.skillsUpdated$.subscribe(skills => {
+			this.skills = skills;
+		});
+
+		this.skillService.setBonusesUpdated$.subscribe(setBonuses => {
+			this.setBonuses = setBonuses;
+		});
+	}
 
 	getSkillCountColor(skill: EquippedSkillModel): string {
 		if (skill.equippedCount > skill.totalLevelCount) {
@@ -39,11 +47,6 @@ export class EquippedSkillsComponent implements OnInit {
 		}
 
 		return 'white';
-	}
-
-	update() {
-		this.skills = this.skillService.skills;
-		this.setBonuses = this.skillService.setBonuses;
 	}
 
 	skillMouseEnter(equippedSkill: EquippedSkillModel) {

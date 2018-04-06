@@ -1,11 +1,12 @@
 import { Component, EventEmitter, Input, OnInit, Output, QueryList, ViewChildren } from '@angular/core';
-import * as _ from 'lodash';
-import { ChangeModel } from '../../models/change.model';
 import { DecorationModel } from '../../models/decoration.model';
 import { ItemModel } from '../../models/item.model';
 import { TooltipService } from '../../services/tooltip.service';
 import { ItemType } from '../../types/item.type';
 import { DecorationSlotComponent } from '../decoration-slot/decoration-slot.component';
+import { AugmentationSlotComponent } from '../augmentation-slot/augmentation-slot.component';
+import { AugmentationModel } from '../../models/augmentation.model';
+import { SlotService } from '../../services/slot.service';
 
 @Component({
 	selector: 'mhw-builder-item-slot',
@@ -15,54 +16,26 @@ import { DecorationSlotComponent } from '../decoration-slot/decoration-slot.comp
 export class ItemSlotComponent implements OnInit {
 	@Input() slotName: ItemType;
 
-	@Output() equipmentSlotSelected = new EventEmitter<ItemSlotComponent>();
-	@Output() decorationSlotSelected = new EventEmitter<DecorationSlotComponent>();
 	@Output() levelChanged = new EventEmitter<ItemModel>();
-	@Output() itemCleared = new EventEmitter<ItemSlotClearModel>();
-	@Output() decorationCleared = new EventEmitter<DecorationModel>();
 
 	@ViewChildren(DecorationSlotComponent) decorationSlots: QueryList<DecorationSlotComponent>;
+	@ViewChildren(AugmentationSlotComponent) augmentationSlots: QueryList<AugmentationSlotComponent>;
 
-	private _item: ItemModel;
-	set item(item: ItemModel) {
-		if (item && !item.equippedLevel) {
-			item.equippedLevel = 1;
-		}
-		this._item = item;
-	}
-	get item() {
-		return this._item;
-	}
+	item: ItemModel;
 
 	public decorations = new Array<DecorationModel>();
+	public augmentations = new Array<AugmentationModel>();
 	public selected: boolean;
 
 	constructor(
+		private slotService: SlotService,
 		private tooltipService: TooltipService
 	) { }
 
-	ngOnInit() {
-
-	}
+	ngOnInit() { }
 
 	equipmentSlotClicked() {
-		this.equipmentSlotSelected.emit(this);
-	}
-
-	decorationSlotClicked(decorationSlot: DecorationSlotComponent) {
-		this.decorationSlotSelected.emit(decorationSlot);
-	}
-
-	decorationSet(decorationChange: ChangeModel<DecorationModel>) {
-		if (decorationChange.old) {
-			this.decorations = _.reject(this.decorations, decoration => decoration === decorationChange.old);
-			this.tooltipService.setItem(null);
-			this.decorationCleared.emit(decorationChange.old);
-		}
-
-		if (decorationChange.new) {
-			this.decorations.push(decorationChange.new);
-		}
+		this.slotService.setItemSlot(this);
 	}
 
 	levelDownClicked() {
@@ -81,23 +54,9 @@ export class ItemSlotComponent implements OnInit {
 
 	equipmentClearClicked(event: Event) {
 		event.stopPropagation();
-
-		const model: ItemSlotClearModel = {
-			item: this.item,
-			decorations: this.decorations
-		};
-
-		this.itemCleared.emit(model);
-		this.tooltipService.setItem(null);
-		this.item = null;
-		this.decorations = new Array<DecorationModel>();
+		this.slotService.clearItemSlot(this);
+		this.clearTooltipItem();
 	}
-
-	// decorationClearClicked(decoration: DecorationClearModel) {
-	// 	this.decorationCleared.emit(decoration);
-	// 	this.tooltipService.setItem(null);
-	// 	this.decorations = _.reject(this.decorations, d => d === decoration);
-	// }
 
 	setTooltipItem() {
 		this.tooltipService.setItem(this.item);
@@ -106,9 +65,4 @@ export class ItemSlotComponent implements OnInit {
 	clearTooltipItem() {
 		this.tooltipService.setItem(null);
 	}
-}
-
-export class ItemSlotClearModel {
-	item: ItemModel;
-	decorations: DecorationModel[];
 }

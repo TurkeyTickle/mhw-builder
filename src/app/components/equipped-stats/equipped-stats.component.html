@@ -2,10 +2,10 @@
 	<h4>Attack</h4>
 	<hr>
 	<ul class="striped">
-		<li *ngFor="let stat of attackStats" (mouseenter)="showCalcDetails(stat)" (mouseleave)="clearCalcDetails()">
-			<span class="name">{{stat.name}}</span>
-			<span class="value">{{stat.value}}</span>
-			<span *ngIf="stat.calculationTemplate || stat.info?.length" class="detail-icon" [ngClass]="stat.color"><i class="far fa-question-circle"></i></span>
+		<li *ngFor="let calc of attackCalcs" (mouseenter)="showCalcDetails(calc)" (mouseleave)="clearCalcDetails()">
+			<span class="name">{{calc.name}}</span>
+			<span class="value">{{calc.value}}</span>
+			<span *ngIf="calc.calculationTemplate || calc.info?.length" class="detail-icon" [ngClass]="calc.color"><i class="far fa-question-circle"></i></span>
 		</li>
 	</ul>
 
@@ -14,10 +14,10 @@
 	<h4>Defense</h4>
 	<hr>
 	<ul class="striped">
-		<li *ngFor="let stat of defenseStats" (mouseenter)="showCalcDetails(stat)" (mouseleave)="clearCalcDetails()">
-			<span class="name">{{stat.name}}</span>
-			<span class="value">{{stat.value}}</span>
-			<span *ngIf="stat.calculationTemplate || stat.info?.length" class="detail-icon" [ngClass]="stat.color"><i class="far fa-question-circle"></i></span>
+		<li *ngFor="let calc of defenseCalcs" (mouseenter)="showCalcDetails(calc)" (mouseleave)="clearCalcDetails()">
+			<span class="name">{{calc.name}}</span>
+			<span class="value">{{calc.value}}</span>
+			<span *ngIf="calc.calculationTemplate || calc.info?.length" class="detail-icon" [ngClass]="calc.color"><i class="far fa-question-circle"></i></span>
 		</li>
 	</ul>
 </div>

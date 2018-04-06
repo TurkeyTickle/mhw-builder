@@ -2,7 +2,7 @@ import { Component, Input, OnInit } from '@angular/core';
 import * as _ from 'lodash';
 import { DecorationModel } from '../../models/decoration.model';
 import { SkillModel } from '../../models/skill.model';
-import { ItemsService } from '../../services/items.service';
+import { DataService } from '../../services/data.service';
 
 @Component({
 	selector: 'mhw-builder-decoration-details',
@@ -28,7 +28,7 @@ export class DecorationDetailsComponent implements OnInit {
 	skills: SkillModel[];
 
 	constructor(
-		private itemsService: ItemsService
+		private itemsService: DataService
 	) { }
 
 	ngOnInit() { }

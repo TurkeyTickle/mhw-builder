@@ -4,10 +4,11 @@ import { DecorationModel } from '../../models/decoration.model';
 import { ItemModel } from '../../models/item.model';
 import { SearchDecorationModel } from '../../models/search-decoration.model';
 import { SearchItemModel } from '../../models/search-item.model';
-import { ItemsService } from '../../services/items.service';
+import { DataService } from '../../services/data.service';
 import { TooltipService } from '../../services/tooltip.service';
 import { ItemType } from '../../types/item.type';
 import { WeaponType } from '../../types/weapon.type';
+import { SlotService } from '../../services/slot.service';
 
 @Component({
 	selector: 'mhw-builder-item-list',
@@ -43,7 +44,8 @@ export class ItemListComponent implements OnInit {
 	weaponTypeFilter?: WeaponType;
 
 	constructor(
-		private itemsService: ItemsService,
+		private slotService: SlotService,
+		private itemsService: DataService,
 		private tooltipService: TooltipService
 	) { }
 
@@ -135,12 +137,12 @@ export class ItemListComponent implements OnInit {
 
 	selectItem(item: ItemModel) {
 		const newItem = Object.assign({}, item);
-		this.itemSelected.emit(newItem);
+		this.slotService.selectItem(newItem);
 	}
 
 	selectDecoration(decoration: DecorationModel) {
 		const newDecoration = Object.assign({}, decoration);
-		this.decorationSelected.emit(newDecoration);
+		this.slotService.selectDecoration(newDecoration);
 	}
 
 	setTooltipItem(item: ItemModel) {

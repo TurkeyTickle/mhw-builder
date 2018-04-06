@@ -5,14 +5,16 @@ import { DecorationSlotComponent } from './components/decoration-slot/decoration
 import { EquippedSkillsComponent } from './components/equipped-skills/equipped-skills.component';
 import { EquippedStatsComponent } from './components/equipped-stats/equipped-stats.component';
 import { ItemListComponent } from './components/item-list/item-list.component';
-import { ItemSlotClearModel, ItemSlotComponent } from './components/item-slot/item-slot.component';
+import { ItemSlotComponent } from './components/item-slot/item-slot.component';
 import { TooltipComponent } from './components/tooltip/tooltip.component';
 import { DecorationModel } from './models/decoration.model';
 import { ItemModel } from './models/item.model';
-import { ItemsService } from './services/items.service';
+import { DataService } from './services/data.service';
 import { SkillService } from './services/skill.service';
 import { EquipmentCategoryType } from './types/equipment-category.type';
 import { ItemType } from './types/item.type';
+import { AugmentationSlotComponent } from './components/augmentation-slot/augmentation-slot.component';
+import { SlotService } from './services/slot.service';
 
 @Component({
 	selector: 'mhw-builder-root',
@@ -22,7 +24,6 @@ import { ItemType } from './types/item.type';
 
 export class AppComponent implements AfterViewInit {
 	public itemTypes = ItemType;
-	title = 'MHW Builder';
 	buildId = '';
 
 	@ViewChild(EquippedStatsComponent) equippedStatsComponent: EquippedStatsComponent;
@@ -40,127 +41,104 @@ export class AppComponent implements AfterViewInit {
 
 	selectedEquipmentSlot: ItemSlotComponent;
 	selectedDecorationSlot: DecorationSlotComponent;
+	selectedAugmentationSlot: AugmentationSlotComponent;
 	equippedItems = new Array<ItemModel>();
 	equippedDecorations = new Array<DecorationModel>();
 
 	constructor(
+		public slotService: SlotService,
 		private skillService: SkillService,
-		private itemsService: ItemsService,
+		private itemsService: DataService,
 		private location: Location,
 		private changeDetector: ChangeDetectorRef
 	) { }
-
 
 	ngAfterViewInit() {
 		setTimeout(() => this.loadBuild(), 100);
 	}
 
-	selectItem(selectedItem: ItemModel) {
-		if (this.selectedEquipmentSlot) {
-			this.selectedEquipmentSlot.item = selectedItem;
+	// selectItem(selectedItem: ItemModel) {
+	// 	if (this.selectedEquipmentSlot) {
+	// 		this.selectedEquipmentSlot.item = selectedItem;
 
-			this.equippedItems = _.reject(this.equippedItems, item => {
-				if (item.itemType == selectedItem.itemType) {
-					this.equippedDecorations = _.reject(this.equippedDecorations, decoration => decoration.equipmentId == item.id);
-					return true;
-				} else {
-					return false;
-				}
-			});
+	// 		this.equippedItems = _.reject(this.equippedItems, item => {
+	// 			if (item.itemType == selectedItem.itemType) {
+	// 				this.equippedDecorations = _.reject(this.equippedDecorations, decoration => decoration.equipmentId == item.id);
+	// 				return true;
+	// 			} else {
+	// 				return false;
+	// 			}
+	// 		});
 
-			this.equippedItems.push(selectedItem);
-			this.updateStatsAndSkills();
-		}
+	// 		this.equippedItems.push(selectedItem);
+	// 		this.updateStatsAndSkills();
+	// 	}
 
-		this.updateBuildId();
-	}
+	// 	this.updateBuildId();
+	// }
 
-	selectDecoration(selectedDecoration: DecorationModel) {
-		if (this.selectedDecorationSlot) {
-			this.selectedDecorationSlot.decoration = selectedDecoration;
+	// selectDecoration(selectedDecoration: DecorationModel) {
+	// 	if (this.selectedDecorationSlot) {
+	// 		this.selectedDecorationSlot.decoration = selectedDecoration;
 
-			this.equippedDecorations = _.reject(this.equippedDecorations, (decoration: DecorationModel) => {
-				return decoration === selectedDecoration;
-			});
+	// 		this.equippedDecorations = _.reject(this.equippedDecorations, (decoration: DecorationModel) => {
+	// 			return decoration === selectedDecoration;
+	// 		});
 
-			selectedDecoration.equipmentId = this.selectedDecorationSlot.item.id;
-			this.equippedDecorations.push(selectedDecoration);
-			this.updateStatsAndSkills();
-		}
+	// 		selectedDecoration.equipmentId = this.selectedDecorationSlot.item.id;
+	// 		this.equippedDecorations.push(selectedDecoration);
+	// 		this.updateStatsAndSkills();
+	// 	}
 
-		this.updateBuildId();
-	}
+	// 	this.updateBuildId();
+	// }
+
+	// selectAugmentation(selectedAugmentation: AugmentationModel) {
+	// 	if (this.selectedAugmentationSlot) {
+	// 		this.selectedAugmentationSlot.augmentation = selectedAugmentation;
+	// 	}
+
+	// 	this.updateBuildId();
+	// }
 
 	itemLevelChanged() {
 		this.updateStatsAndSkills();
 		this.updateBuildId();
 	}
 
-	itemCleared(clear: ItemSlotClearModel) {
-		this.equippedItems = _.reject(this.equippedItems, (item: ItemModel) => {
-			return item === clear.item;
-		});
+	// itemCleared(clear: ItemSlotClearModel) {
+	// 	this.equippedItems = _.reject(this.equippedItems, (item: ItemModel) => {
+	// 		return item === clear.item;
+	// 	});
 
-		if (clear.decorations) {
-			// TODO: this causes the equipped skills component to update more than it needs to - fix it.
-			for (const decoration of clear.decorations) {
-				this.decorationCleared(decoration);
-			}
-		}
+	// 	if (clear.decorations) {
+	// 		// TODO: this causes the equipped skills component to update more than it needs to - fix it.
+	// 		for (const decoration of clear.decorations) {
+	// 			this.decorationCleared(decoration);
+	// 		}
+	// 	}
 
-		if (this.selectedDecorationSlot && this.selectedDecorationSlot.item === clear.item) {
-			this.selectedDecorationSlot = null;
-		}
+	// 	if (this.selectedDecorationSlot && this.selectedDecorationSlot.item === clear.item) {
+	// 		this.selectedDecorationSlot = null;
+	// 	}
 
-		this.updateStatsAndSkills();
-		this.updateBuildId();
-	}
+	// 	this.updateStatsAndSkills();
+	// 	this.updateBuildId();
+	// }
 
-	decorationCleared(clearedDecoration: DecorationModel) {
-		this.equippedDecorations = _.reject(this.equippedDecorations, (decoration: DecorationModel) => {
-			return decoration === clearedDecoration;
-		});
+	// decorationCleared(clearedDecoration: DecorationModel) {
+	// 	this.equippedDecorations = _.reject(this.equippedDecorations, (decoration: DecorationModel) => {
+	// 		return decoration === clearedDecoration;
+	// 	});
 
-		this.updateStatsAndSkills();
-		this.updateBuildId();
-	}
+	// 	this.updateStatsAndSkills();
+	// 	this.updateBuildId();
+	// }
 
 	private updateStatsAndSkills() {
 		this.skillService.updateSkills(this.equippedItems, this.equippedDecorations);
-		this.equippedStatsComponent.update(this.equippedItems);
-		this.equippedSkillsComponent.update();
-	}
-
-	itemSlotSelected(equipmentSlot: ItemSlotComponent) {
-		if (this.selectedEquipmentSlot) {
-			this.selectedEquipmentSlot.selected = false;
-		}
-
-		if (this.selectedDecorationSlot) {
-			this.selectedDecorationSlot.selected = false;
-		}
-
-		this.selectedDecorationSlot = null;
-
-		this.selectedEquipmentSlot = equipmentSlot;
-		this.selectedEquipmentSlot.selected = true;
-		setTimeout(() => this.equipmentItemListComponent.searchBox.nativeElement.focus(), 100);
-	}
-
-	decorationSlotSelected(decorationSlot: DecorationSlotComponent) {
-		if (this.selectedEquipmentSlot) {
-			this.selectedEquipmentSlot.selected = false;
-		}
-
-		if (this.selectedDecorationSlot) {
-			this.selectedDecorationSlot.selected = false;
-		}
-
-		this.selectedEquipmentSlot = null;
-
-		this.selectedDecorationSlot = decorationSlot;
-		this.selectedDecorationSlot.selected = true;
-		setTimeout(() => this.decorationItemListComponent.searchBox.nativeElement.focus(), 100);
+		// this.equippedStatsComponent.update(this.equippedItems);
+		// this.equippedSkillsComponent.update();
 	}
 
 	moveTooltip(event: MouseEvent) {

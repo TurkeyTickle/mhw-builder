@@ -1,0 +1,110 @@
+[
+	{
+		"name": "Attack Increase",
+		"description": "Increases attack power. Stacks with other upgrades.",
+		"levels": [
+			{
+				"description": "Attack +5",
+				"passiveAttack": 5
+			},
+			{
+				"description": "Attack +10",
+				"passiveAttack": 10
+			},
+			{
+				"description": "Attack +15",
+				"passiveAttack": 15
+			}
+		]
+	},
+	{
+		"name": "Affinity Increase",
+		"description": "Increases affinity. Stacks with other upgrades.",
+		"levels": [
+			{
+				"description": "Affinity +10%",
+				"passiveAffinity": 10
+			},
+			{
+				"description": "Affinity +15%",
+				"passiveAffinity": 15
+			},
+			{
+				"description": "Affinity +20%",
+				"passiveAffinity": 20
+			}
+		]
+	},
+	{
+		"name": "Defense Increase",
+		"description": "Increases defense and adds a chance to reduce damage taken each time you receive damage. Stacks with other upgrades.",
+		"levels": [
+			{
+				"description": "Defense +10",
+				"passiveDefense": 10,
+				"skills": [
+					{
+						"id": "divineBlessing",
+						"level": 1
+					}
+				]
+			},
+			{
+				"description": "Defense +20",
+				"passiveDefense": 20,
+				"skills": [
+					{
+						"id": "divineBlessing",
+						"level": 2
+					}
+				]
+			},
+			{
+				"description": "Defense +30",
+				"passiveDefense": 30,
+				"skills": [
+					{
+						"id": "divineBlessing",
+						"level": 3
+					}
+				]
+			}
+		]
+	},
+	{
+		"name": "Slot Upgrade",
+		"description": "Adds an extra slot. Stack with other upgrades to increase the slot's level.",
+		"levels": [
+			{
+				"description": "Adds a Lv 1 slot",
+				"slotLevel": 1
+			},
+			{
+				"description": "Adds a Lv 2 slot",
+				"slotLevel": 2
+			},
+			{
+				"description": "Adds a Lv 3 slot",
+				"slotLevel": 3
+			}
+		]
+	},
+	{
+		"name": "Health Regen",
+		"description": "Regain health as you land attacks. Stack with other upgrades to increase the amount of health regained.",
+		"levels": [
+			{
+				"description": "Heal on hit +10%",
+				"healOnHitPercent": 10
+			},
+			{
+				"description": "Heal on hit +15%",
+				"healOnHitPercent": 20
+			},
+			{
+				"description": "Heal on hit +20%",
+				"healOnHitPercent": 30
+			}
+		]
+	}
+]

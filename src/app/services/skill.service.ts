@@ -4,16 +4,21 @@ import { DecorationModel } from '../models/decoration.model';
 import { EquippedSetBonusModel } from '../models/equipped-set-bonus.model';
 import { EquippedSkillModel } from '../models/equipped-skill.model';
 import { ItemModel } from '../models/item.model';
-import { ItemsService } from './items.service';
+import { DataService } from './data.service';
+import { Subject } from 'rxjs/Subject';
 
 @Injectable()
 export class SkillService {
+	public skillsUpdated$ = new Subject<EquippedSkillModel[]>();
+	public setBonusesUpdated$ = new Subject<EquippedSetBonusModel[]>();
+
 	public skills: EquippedSkillModel[];
 	public setBonuses: EquippedSetBonusModel[];
 
 	constructor(
-		private itemsService: ItemsService
-	) { }
+		private itemsService: DataService
+	) {
+	}
 
 	updateSkills(items: ItemModel[], decorations: DecorationModel[]) {
 		const equippedSkills = new Array<EquippedSkillModel>();
@@ -26,6 +31,9 @@ export class SkillService {
 
 		this.skills = equippedSkills;
 		this.setBonuses = equippedSetBonuses;
+
+		this.skillsUpdated$.next(this.skills);
+		this.setBonusesUpdated$.next(this.setBonuses);
 	}
 
 	private addItemSkills(items: ItemModel[], equippedSkills: EquippedSkillModel[]) {
