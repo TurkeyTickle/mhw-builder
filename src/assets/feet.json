@@ -1188,5 +1188,33 @@
       }
     ],
     "id": 330
+  },
+  {
+    "name": "Aloy's Leggings Alpha",
+    "tags": [
+      "deviljho"
+    ],
+    "itemType": "Feet",
+    "baseDefense": 46,
+    "fireResist": 1,
+    "waterResist": 1,
+    "thunderResist": 1,
+    "iceResist": 1,
+    "dragonResist": 1,
+    "skills": [
+      {
+        "id": "slingerCapacity",
+        "level": 2
+      },
+      {
+        "id": "anjanathWill"
+      }
+    ],
+    "slots": [
+      {
+        "level": 2
+      }
+    ],
+    "id": 335
   }
 ]

@@ -2075,5 +2075,25 @@
 				"eldersealLevelBoost": 1
 			}
 		]
+	},
+	{
+		"id": "adrenaline",
+		"name": "Adrenaline",
+		"description": "Temporarily reduces stamina depletion when health is at 40% or lower.",
+		"levels": [
+			{
+				"description": "Temporarily reduces stamina depletion when health is at 40% or lower."
+			}
+		]
+	},
+	{
+		"id": "staminaCapUp",
+		"name": "Stamina Cap Up",
+		"description": "Increases stamina cap.",
+		"levels": [
+			{
+				"description": "Increases stamina cap."
+			}
+		]
 	}
 ]

@@ -1209,5 +1209,30 @@
       }
     ],
     "id": 328
+  },
+  {
+    "name": "Aloy's Torso Alpha",
+    "itemType": "Legs",
+    "baseDefense": 46,
+    "fireResist": 1,
+    "waterResist": 1,
+    "thunderResist": 1,
+    "iceResist": 1,
+    "dragonResist": 1,
+    "skills": [
+      {
+        "id": "stealth",
+        "level": 2
+      },
+      {
+        "id": "anjanathWill"
+      }
+    ],
+    "slots": [
+      {
+        "level": 3
+      }
+    ],
+    "id": 334
   }
 ]

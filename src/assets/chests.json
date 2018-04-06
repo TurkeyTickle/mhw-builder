@@ -1200,5 +1200,33 @@
       }
     ],
     "id": 324
+  },
+  {
+    "name": "Aloy's Body Alpha",
+    "itemType": "Chest",
+    "baseDefense": 46,
+    "fireResist": 1,
+    "waterResist": 1,
+    "thunderResist": 1,
+    "iceResist": 1,
+    "dragonResist": 1,
+    "skills": [
+      {
+        "id": "marathonRunner",
+        "level": 2
+      },
+      {
+        "id": "anjanathWill"
+      }
+    ],
+    "slots": [
+      {
+        "level": 1
+      },
+      {
+        "level": 1
+      }
+    ],
+    "id": 332
   }
 ]

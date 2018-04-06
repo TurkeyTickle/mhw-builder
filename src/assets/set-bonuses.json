@@ -134,5 +134,19 @@
 				"pieces": 4
 			}
 		]
+	},
+	{
+		"id": "anjanathWill",
+		"name": "Anjanath Will",
+		"setLevels": [
+			{
+				"id": "adrenaline",
+				"pieces": 2
+			},
+			{
+				"id": "staminaCapUp",
+				"pieces": 4
+			}
+		]
 	}
 ]

@@ -1192,5 +1192,34 @@
       }
     ],
     "id": 326
+  },
+  {
+    "name": "Aloy's Arms Alpha",
+    "itemType": "Hands",
+    "baseDefense": 46,
+    "fireResist": 1,
+    "waterResist": 1,
+    "thunderResist": 1,
+    "iceResist": 1,
+    "dragonResist": 1,
+    "skills": [
+      {
+        "id": "weaknessExploit",
+        "level": 1
+      },
+      {
+        "id": "scenthound",
+        "level": 1
+      },
+      {
+        "id": "anjanathWill"
+      }
+    ],
+    "slots": [
+      {
+        "level": 1
+      }
+    ],
+    "id": 333
   }
 ]
