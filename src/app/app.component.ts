@@ -59,8 +59,13 @@ export class AppComponent implements AfterViewInit {
 		if (this.selectedEquipmentSlot) {
 			this.selectedEquipmentSlot.item = selectedItem;
 
-			this.equippedItems = _.reject(this.equippedItems, (item: ItemModel) => {
-				return item.itemType == selectedItem.itemType;
+			this.equippedItems = _.reject(this.equippedItems, item => {
+				if (item.itemType == selectedItem.itemType) {
+					this.equippedDecorations = _.reject(this.equippedDecorations, decoration => decoration.equipmentId == item.id);
+					return true;
+				} else {
+					return false;
+				}
 			});
 
 			this.equippedItems.push(selectedItem);
