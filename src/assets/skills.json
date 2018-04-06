@@ -2064,5 +2064,16 @@
 				"description": "Increases the power of spread ammo and power shot arrows."
 			}
 		]
+	},
+	{
+		"id": "eldersealBoost",
+		"name": "Elderseal Boost",
+		"description": "Increases the Elderseal of weapons and dragon ammo.",
+		"levels": [
+			{
+				"description": "Boosts Elderseal one level.",
+				"eldersealLevelBoost": 1
+			}
+		]
 	}
 ]
