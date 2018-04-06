@@ -1282,5 +1282,99 @@
     ],
     "id": 320,
     "slots": []
+  },
+  {
+    "name": "Bulwark Charm",
+    "itemType": "Charm",
+    "levels": 1,
+    "skills": [
+      {
+        "id": "guardUp",
+        "level": 1
+      },
+      {
+        "id": "resuscitate",
+        "level": 1
+      }
+    ],
+    "id": 341,
+    "slots": []
+  },
+  {
+    "name": "Dispersal Charm",
+    "itemType": "Charm",
+    "levels": 1,
+    "skills": [
+      {
+        "id": "spreadPowerShots",
+        "level": 1
+      }
+    ],
+    "id": 342,
+    "slots": []
+  },
+  {
+    "name": "Fair Wind Charm",
+    "itemType": "Charm",
+    "levels": 1,
+    "skills": [
+      {
+        "id": "attackBoost",
+        "level": 1
+      },
+      {
+        "id": "divineBlessing",
+        "level": 1
+      }
+    ],
+    "id": 343,
+    "slots": []
+  },
+  {
+    "name": "Gale Charm",
+    "itemType": "Charm",
+    "levels": 1,
+    "skills": [
+      {
+        "id": "affinitySliding",
+        "level": 1
+      },
+      {
+        "id": "airborne",
+        "level": 1
+      }
+    ],
+    "id": 344,
+    "slots": []
+  },
+  {
+    "name": "Penetration Charm",
+    "itemType": "Charm",
+    "levels": 1,
+    "skills": [
+      {
+        "id": "piercingShots",
+        "level": 1
+      }
+    ],
+    "id": 345,
+    "slots": []
+  },
+  {
+    "name": "Wyrmslayer Charm",
+    "itemType": "Charm",
+    "levels": 1,
+    "skills": [
+      {
+        "id": "eldersealBoost",
+        "level": 1
+      },
+      {
+        "id": "dragonAttack",
+        "level": 1
+      }
+    ],
+    "id": 346,
+    "slots": []
   }
 ]
