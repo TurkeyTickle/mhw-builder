@@ -35,7 +35,8 @@
 
 	<div class="decoration-container">
 		<mhw-builder-decoration-slot 
-			*ngFor="let slot of item?.slots">
+			*ngFor="let slot of item?.slots"
+			[level]="slot.level">
 		</mhw-builder-decoration-slot>
 	</div>
 </div>

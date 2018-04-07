@@ -6,9 +6,15 @@ import { ItemModel } from '../models/item.model';
 import { DecorationModel } from '../models/decoration.model';
 import { AugmentationModel } from '../models/augmentation.model';
 import { EquipmentService } from './equipment.service';
+import { Subject } from 'rxjs/Subject';
+import { SlotEventModel } from '../models/slot-event.model';
 
 @Injectable()
 export class SlotService {
+	public itemSelected$ = new Subject<SlotEventModel<ItemSlotComponent, ItemModel>>();
+	public decorationSelected$ = new Subject<SlotEventModel<DecorationSlotComponent, DecorationModel>>();
+	public augmentationSelected$ = new Subject<SlotEventModel<AugmentationSlotComponent, AugmentationModel>>();
+
 	itemSlot: ItemSlotComponent;
 	decorationSlot: DecorationSlotComponent;
 	augmentationSlot: AugmentationSlotComponent;
@@ -17,7 +23,7 @@ export class SlotService {
 		private equipmentService: EquipmentService
 	) { }
 
-	setItemSlot(slot: ItemSlotComponent) {
+	selectItemSlot(slot: ItemSlotComponent) {
 		this.clearSlots();
 		if (slot) {
 			this.itemSlot = slot;
@@ -25,7 +31,7 @@ export class SlotService {
 		}
 	}
 
-	setDecorationSlot(slot: DecorationSlotComponent) {
+	selectDecorationSlot(slot: DecorationSlotComponent) {
 		this.clearSlots();
 		if (slot) {
 			this.decorationSlot = slot;
@@ -33,7 +39,7 @@ export class SlotService {
 		}
 	}
 
-	setAugmentationSlot(slot: AugmentationSlotComponent) {
+	selectAugmentationSlot(slot: AugmentationSlotComponent) {
 		this.clearSlots();
 		if (slot) {
 			this.augmentationSlot = slot;
@@ -64,6 +70,7 @@ export class SlotService {
 
 			this.equipmentService.addItem(item);
 			this.itemSlot.item = item;
+			this.itemSelected$.next({ slot: this.itemSlot, equipment: item });
 
 			if (item.rarity == 6) {
 				this.itemSlot.augmentations = [
@@ -94,6 +101,7 @@ export class SlotService {
 
 			this.equipmentService.addDecoration(decoration);
 			this.decorationSlot.decoration = decoration;
+			this.decorationSelected$.next({ slot: this.decorationSlot, equipment: decoration });
 		}
 	}
 
@@ -105,6 +113,7 @@ export class SlotService {
 
 			this.equipmentService.addAugmentation(augmentation);
 			this.augmentationSlot.augmentation = augmentation;
+			this.augmentationSelected$.next({ slot: this.augmentationSlot, equipment: augmentation });
 		}
 	}
 

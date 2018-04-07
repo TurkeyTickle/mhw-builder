@@ -20,7 +20,7 @@ export class AugmentationSlotComponent implements OnInit {
 	ngOnInit(): void { }
 
 	clicked() {
-		this.slotService.setAugmentationSlot(this);
+		this.slotService.selectAugmentationSlot(this);
 	}
 
 	clearClicked(event: Event) {

@@ -30,7 +30,7 @@ export class DecorationSlotComponent implements OnInit {
 	}
 
 	clicked() {
-		this.slotService.setDecorationSlot(this);
+		this.slotService.selectDecorationSlot(this);
 	}
 
 	setTooltipItem() {

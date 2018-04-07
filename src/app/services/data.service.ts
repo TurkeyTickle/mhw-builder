@@ -34,7 +34,7 @@ export class DataService {
 		return _.find(this.appData.getWeapons(), weapon => weapon.id === id);
 	}
 
-	getArmorById(id: number): ItemModel {
+	getArmor(id: number): ItemModel {
 		return _.find(this.appData.getArmor(), armor => armor.id === id);
 	}
 

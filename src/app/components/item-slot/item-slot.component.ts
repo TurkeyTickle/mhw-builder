@@ -35,7 +35,7 @@ export class ItemSlotComponent implements OnInit {
 	ngOnInit() { }
 
 	equipmentSlotClicked() {
-		this.slotService.setItemSlot(this);
+		this.slotService.selectItemSlot(this);
 	}
 
 	levelDownClicked() {

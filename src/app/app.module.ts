@@ -23,6 +23,7 @@ import { EquipmentService } from './services/equipment.service';
 import { SlotService } from './services/slot.service';
 import { StatService } from './services/stat.service';
 import { CalculationService } from './services/calculation.service';
+import { BuildService } from './services/build.service';
 
 @NgModule({
 	declarations: [
@@ -55,6 +56,7 @@ import { CalculationService } from './services/calculation.service';
 		SlotService,
 		StatService,
 		CalculationService,
+		BuildService,
 		AppDataProvider,
 		{ provide: APP_INITIALIZER, useFactory: appDataProviderFactory, deps: [AppDataProvider], multi: true}
 	],

@@ -28,7 +28,6 @@ export class EquipmentService {
 	addItem(item: ItemModel) {
 		this.items.push(item);
 		this.skillService.updateSkills(this.items, this.decorations);
-
 	}
 
 	removeItem(item: ItemModel) {
