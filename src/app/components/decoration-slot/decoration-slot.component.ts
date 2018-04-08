@@ -11,6 +11,7 @@ import { SlotService } from '../../services/slot.service';
 export class DecorationSlotComponent implements OnInit {
 
 	@Input() level: number;
+	@Input() itemId: number;
 
 	decoration: DecorationModel;
 

@@ -1,5 +1,4 @@
-import { Component, EventEmitter, Input, OnInit, Output, QueryList, ViewChildren } from '@angular/core';
-import { DecorationModel } from '../../models/decoration.model';
+import { Component, Input, OnInit, QueryList, ViewChildren } from '@angular/core';
 import { ItemModel } from '../../models/item.model';
 import { TooltipService } from '../../services/tooltip.service';
 import { ItemType } from '../../types/item.type';
@@ -16,14 +15,11 @@ import { SlotService } from '../../services/slot.service';
 export class ItemSlotComponent implements OnInit {
 	@Input() slotName: ItemType;
 
-	@Output() levelChanged = new EventEmitter<ItemModel>();
-
 	@ViewChildren(DecorationSlotComponent) decorationSlots: QueryList<DecorationSlotComponent>;
 	@ViewChildren(AugmentationSlotComponent) augmentationSlots: QueryList<AugmentationSlotComponent>;
 
 	item: ItemModel;
 
-	public decorations = new Array<DecorationModel>();
 	public augmentations = new Array<AugmentationModel>();
 	public selected: boolean;
 
@@ -38,17 +34,19 @@ export class ItemSlotComponent implements OnInit {
 		this.slotService.selectItemSlot(this);
 	}
 
-	levelDownClicked() {
+	levelDownClicked(event: Event) {
+		event.stopPropagation();
 		if (this.item.equippedLevel > 1) {
 			this.item.equippedLevel--;
-			this.levelChanged.emit(this.item);
+			this.slotService.updateItemLevel();
 		}
 	}
 
-	levelUpClicked() {
+	levelUpClicked(event: Event) {
+		event.stopPropagation();
 		if (this.item.equippedLevel < this.item.levels) {
 			this.item.equippedLevel++;
-			this.levelChanged.emit(this.item);
+			this.slotService.updateItemLevel();
 		}
 	}
 

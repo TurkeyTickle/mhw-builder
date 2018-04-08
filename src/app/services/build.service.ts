@@ -1,4 +1,4 @@
-import { Injectable, OnInit, ChangeDetectorRef } from '@angular/core';
+import { Injectable, ChangeDetectorRef } from '@angular/core';
 import { ItemSlotComponent } from '../components/item-slot/item-slot.component';
 import { DataService } from './data.service';
 import { ItemModel } from '../models/item.model';
@@ -8,8 +8,10 @@ import { EquipmentService } from './equipment.service';
 import { Subject } from 'rxjs/Subject';
 import { EquipmentCategoryType } from '../types/equipment-category.type';
 
+import * as _ from 'lodash';
+
 @Injectable()
-export class BuildService implements OnInit {
+export class BuildService {
 	public buildIdUpdated$ = new Subject<string>();
 
 	weaponSlot: ItemSlotComponent;
@@ -20,26 +22,14 @@ export class BuildService implements OnInit {
 	feetSlot: ItemSlotComponent;
 	charmSlot: ItemSlotComponent;
 
+	private changeDetector: ChangeDetectorRef;
+	private loadingBuild = false;
+
 	constructor(
 		private dataService: DataService,
 		private slotService: SlotService,
-		private equipmentService: EquipmentService,
-		private changeDetector: ChangeDetectorRef
+		private equipmentService: EquipmentService
 	) { }
-
-	ngOnInit(): void {
-		// this.slotService.itemSelected$.subscribe(event => {
-		// 	this.updateBuildId();
-		// });
-
-		// this.slotService.decorationSelected$.subscribe(event => {
-		// 	this.updateBuildId();
-		// });
-
-		// this.slotService.augmentationSelected$.subscribe(event => {
-		// 	this.updateBuildId();
-		// });
-	}
 
 	initialize(
 		weaponSlot: ItemSlotComponent,
@@ -48,7 +38,8 @@ export class BuildService implements OnInit {
 		handsSlot: ItemSlotComponent,
 		legsSlot: ItemSlotComponent,
 		feetSlot: ItemSlotComponent,
-		charmSlot: ItemSlotComponent
+		charmSlot: ItemSlotComponent,
+		changeDetector: ChangeDetectorRef
 	) {
 		this.weaponSlot = weaponSlot;
 		this.headSlot = headSlot;
@@ -57,12 +48,37 @@ export class BuildService implements OnInit {
 		this.legsSlot = legsSlot;
 		this.feetSlot = feetSlot;
 		this.charmSlot = charmSlot;
+
+		// TODO: Passing in change detector feels gross, but at the moment it's needed to set up decoration slots when an item is loaded by build id.
+		this.changeDetector = changeDetector;
+
+		this.subscribeSlotEvents();
+	}
+
+	private subscribeSlotEvents() {
+		this.slotService.itemSelected$.subscribe(() => {
+			if (!this.loadingBuild) { this.updateBuildId(); }
+		});
+
+		this.slotService.decorationSelected$.subscribe(() => {
+			if (!this.loadingBuild) { this.updateBuildId(); }
+		});
+
+		this.slotService.augmentationSelected$.subscribe(() => {
+			if (!this.loadingBuild) { this.updateBuildId(); }
+		});
+
+		this.slotService.itemLevelChanged$.subscribe(() => {
+			if (!this.loadingBuild) { this.updateBuildId(); }
+		});
 	}
 
 	loadBuild(buildId: string) {
+		this.loadingBuild = true;
+
 		const itemHashes = buildId.split('i');
 
-		// version number is hash sub 0
+		// build string format version number is hash[0]
 
 		this.loadBuildSlot(itemHashes[1], this.weaponSlot);
 		this.loadBuildSlot(itemHashes[2], this.headSlot);
@@ -71,6 +87,10 @@ export class BuildService implements OnInit {
 		this.loadBuildSlot(itemHashes[5], this.legsSlot);
 		this.loadBuildSlot(itemHashes[6], this.feetSlot);
 		this.loadBuildSlot(itemHashes[7], this.charmSlot);
+
+		this.slotService.selectItemSlot(null);
+
+		this.loadingBuild = false;
 	}
 
 	private loadBuildSlot(itemHash: string, slot: ItemSlotComponent) {
@@ -114,107 +134,52 @@ export class BuildService implements OnInit {
 		}
 	}
 
-	// loadBuild(buildId: string) {
-	// 	const slotHashes = buildId.split('i');
+	private updateBuildId() {
+		const weapon = this.equipmentService.items.find(item => item.equipmentCategory == EquipmentCategoryType.Weapon);
+		const head = this.equipmentService.items.find(item => item.itemType == ItemType.Head);
+		const chest = this.equipmentService.items.find(item => item.itemType == ItemType.Chest);
+		const hands = this.equipmentService.items.find(item => item.itemType == ItemType.Hands);
+		const legs = this.equipmentService.items.find(item => item.itemType == ItemType.Legs);
+		const feet = this.equipmentService.items.find(item => item.itemType == ItemType.Feet);
+		const charm = this.equipmentService.items.find(item => item.itemType == ItemType.Charm);
 
-	// 	this.loadBuildSlot(slotHashes[1], this.weaponSlot);
-	// 	this.loadBuildSlot(slotHashes[2], this.headSlot);
-	// 	this.loadBuildSlot(slotHashes[3], this.chestSlot);
-	// 	this.loadBuildSlot(slotHashes[4], this.handsSlot);
-	// 	this.loadBuildSlot(slotHashes[5], this.legsSlot);
-	// 	this.loadBuildSlot(slotHashes[6], this.feetSlot);
-	// 	this.loadBuildSlot(slotHashes[7], this.charmSlot);
-	// }
+		let buildId = 'v1';
 
-	// private loadBuildSlot(slotHash: string, slot: ItemSlotComponent) {
-	// 	if (slotHash) {
-	// 		const slotParts = slotHash.split('d');
-	// 		const itemParts = slotParts[0].split('l');
-	// 		const equipmentId = parseInt(itemParts[0], 10);
-	// 		if (equipmentId != null) {
-	// 			let equipment: ItemModel;
-	// 			if (slot.slotName == ItemType.Weapon) {
-	// 				equipment = this.dataService.getWeapon(equipmentId);
-	// 			} else {
-	// 				equipment = this.dataService.getArmorById(equipmentId);
-	// 			}
+		buildId += this.getItemBuildString(weapon);
+		buildId += this.getItemBuildString(head);
+		buildId += this.getItemBuildString(chest);
+		buildId += this.getItemBuildString(hands);
+		buildId += this.getItemBuildString(legs);
+		buildId += this.getItemBuildString(feet);
+		buildId += this.getItemBuildString(charm);
 
-	// 			if (itemParts.length > 1) {
-	// 				const level = parseInt(itemParts[1], 10);
-	// 				equipment.equippedLevel = level;
-	// 			}
+		this.buildIdUpdated$.next(buildId);
+	}
 
-	// 			if (equipment) {
-	// 				this.equippedItems.push(equipment);
-	// 				slot.item = equipment;
+	private getItemBuildString(item: ItemModel): string {
+		let result = 'i';
 
-	// 				this.changeDetector.detectChanges();
+		if (item) {
+			result += item.id.toString();
 
-	// 				for (let i = 1; i < slotParts.length; i++) {
-	// 					const decorationId = parseInt(slotParts[i], 10);
-	// 					if (decorationId) {
-	// 						const decoration = this.dataService.getDecoration(decorationId);
-	// 						if (decoration) {
-	// 							const newDecoration = Object.assign({}, decoration);
-	// 							slot.decorationSlots.toArray()[i - 1].decoration = newDecoration;
-	// 							newDecoration.equipmentId = equipment.id;
-	// 							this.equippedDecorations.push(newDecoration);
-	// 						}
-	// 					}
-	// 				}
-	// 			}
-	// 		}
-	// 	}
-	// }
+			if (item.equippedLevel) {
+				result += `l${item.equippedLevel}`;
+			}
 
-	// private updateBuildId() {
-	// 	const weapon = this.equipmentService.items.find(item => item.equipmentCategory == EquipmentCategoryType.Weapon);
-	// 	const head = this.equipmentService.items.find(item => item.itemType == ItemType.Head);
-	// 	const chest = this.equipmentService.items.find(item => item.itemType == ItemType.Chest);
-	// 	const hands = this.equipmentService.items.find(item => item.itemType == ItemType.Hands);
-	// 	const legs = this.equipmentService.items.find(item => item.itemType == ItemType.Legs);
-	// 	const feet = this.equipmentService.items.find(item => item.itemType == ItemType.Feet);
-	// 	const charm = this.equipmentService.items.find(item => item.itemType == ItemType.Charm);
+			if (item.slots) {
+				let decorations = _.filter(this.equipmentService.decorations, d => d.itemId === item.id);
+				for (let i = 0; i < item.slots.length; i++) {
+					result += 'd';
+					const slot = item.slots[i];
+					const decoration = _.find(decorations, d => d.itemId == item.id && d.level <= slot.level);
+					decorations = _.without(decorations, decoration);
+					if (decoration) {
+						result += `${decoration.id.toString()}`;
+					}
+				}
+			}
+		}
 
-	// 	let buildId = 'v1';
-
-	// 	buildId += this.getItemBuildString(weapon);
-	// 	buildId += this.getItemBuildString(head);
-	// 	buildId += this.getItemBuildString(chest);
-	// 	buildId += this.getItemBuildString(hands);
-	// 	buildId += this.getItemBuildString(legs);
-	// 	buildId += this.getItemBuildString(feet);
-	// 	buildId += this.getItemBuildString(charm);
-
-	// 	this.buildIdUpdated$.next(buildId);
-
-	// 	// this.location.replaceState(this.location.path(false), '#' + this.buildId);
-	// }
-
-	// private getItemBuildString(item: ItemModel): string {
-	// 	let result = 'i';
-
-	// 	if (item) {
-	// 		result += item.id.toString();
-
-	// 		if (item.equippedLevel) {
-	// 			result += `l${item.equippedLevel}`;
-	// 		}
-
-	// 		if (item.slots) {
-	// 			let decorations = _.filter(this.equippedDecorations, d => d.equipmentId === item.id);
-	// 			for (let i = 0; i < item.slots.length; i++) {
-	// 				result += 'd';
-	// 				const slot = item.slots[i];
-	// 				const decoration = _.find(decorations, d => d.equipmentId == item.id && d.level <= slot.level);
-	// 				decorations = _.without(decorations, decoration);
-	// 				if (decoration) {
-	// 					result += `${decoration.id.toString()}`;
-	// 				}
-	// 			}
-	// 		}
-	// 	}
-
-	// 	return result;
-	// }
+		return result;
+	}
 }

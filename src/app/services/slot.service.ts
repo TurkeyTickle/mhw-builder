@@ -8,12 +8,14 @@ import { AugmentationModel } from '../models/augmentation.model';
 import { EquipmentService } from './equipment.service';
 import { Subject } from 'rxjs/Subject';
 import { SlotEventModel } from '../models/slot-event.model';
+import { ItemType } from '../types/item.type';
 
 @Injectable()
 export class SlotService {
 	public itemSelected$ = new Subject<SlotEventModel<ItemSlotComponent, ItemModel>>();
 	public decorationSelected$ = new Subject<SlotEventModel<DecorationSlotComponent, DecorationModel>>();
 	public augmentationSelected$ = new Subject<SlotEventModel<AugmentationSlotComponent, AugmentationModel>>();
+	public itemLevelChanged$ = new Subject();
 
 	itemSlot: ItemSlotComponent;
 	decorationSlot: DecorationSlotComponent;
@@ -25,24 +27,24 @@ export class SlotService {
 
 	selectItemSlot(slot: ItemSlotComponent) {
 		this.clearSlots();
-		if (slot) {
-			this.itemSlot = slot;
+		this.itemSlot = slot;
+		if (this.itemSlot) {
 			this.itemSlot.selected = true;
 		}
 	}
 
 	selectDecorationSlot(slot: DecorationSlotComponent) {
 		this.clearSlots();
-		if (slot) {
-			this.decorationSlot = slot;
+		this.decorationSlot = slot;
+		if (this.decorationSlot) {
 			this.decorationSlot.selected = true;
 		}
 	}
 
 	selectAugmentationSlot(slot: AugmentationSlotComponent) {
 		this.clearSlots();
-		if (slot) {
-			this.augmentationSlot = slot;
+		this.augmentationSlot = slot;
+		if (this.augmentationSlot) {
 			this.augmentationSlot.selected = true;
 		}
 	}
@@ -52,21 +54,28 @@ export class SlotService {
 
 		slot.item = null;
 		slot.augmentations = [];
+		this.itemSelected$.next({ slot: slot, equipment: null });
 	}
 
 	clearDecorationSlot(slot: DecorationSlotComponent) {
 		this.equipmentService.removeDecoration(slot.decoration);
 		slot.decoration = null;
+		this.decorationSelected$.next({ slot: slot, equipment: null });
 	}
 
 	clearAugmentationSlot(slot: AugmentationSlotComponent) {
 		this.equipmentService.removeAugmentation(slot.augmentation);
 		slot.augmentation = null;
+		this.augmentationSelected$.next({ slot: slot, equipment: null });
 	}
 
 	selectItem(item: ItemModel) {
 		if (this.itemSlot) {
 			this.clearSlotItems(this.itemSlot);
+
+			if (!item.equippedLevel && item.itemType == ItemType.Charm) {
+				item.equippedLevel = 1;
+			}
 
 			this.equipmentService.addItem(item);
 			this.itemSlot.item = item;
@@ -99,6 +108,7 @@ export class SlotService {
 				this.equipmentService.removeDecoration(this.decorationSlot.decoration);
 			}
 
+			decoration.itemId = this.decorationSlot.itemId;
 			this.equipmentService.addDecoration(decoration);
 			this.decorationSlot.decoration = decoration;
 			this.decorationSelected$.next({ slot: this.decorationSlot, equipment: decoration });
@@ -115,6 +125,11 @@ export class SlotService {
 			this.augmentationSlot.augmentation = augmentation;
 			this.augmentationSelected$.next({ slot: this.augmentationSlot, equipment: augmentation });
 		}
+	}
+
+	updateItemLevel() {
+		this.itemLevelChanged$.next();
+		this.equipmentService.updateItemLevel();
 	}
 
 	private clearSlotItems(slot: ItemSlotComponent) {

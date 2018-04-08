@@ -6,5 +6,5 @@ export class DecorationModel {
 	level: number;
 	skills: SkillReferenceModel[];
 
-	equipmentId: number;
+	itemId: number;
 }

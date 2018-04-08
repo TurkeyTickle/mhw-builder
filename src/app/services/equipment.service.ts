@@ -52,4 +52,8 @@ export class EquipmentService {
 	removeAugmentation(augmentation: AugmentationModel) {
 		this.augmentations = _.reject(this.augmentations, a => a === augmentation);
 	}
+
+	updateItemLevel() {
+		this.skillService.updateSkills(this.items, this.decorations);
+	}
 }
