@@ -935,17 +935,6 @@
     "id": 92
   },
   {
-    "name": "Critical Boost Jewel 2",
-    "level": 2,
-    "skills": [
-      {
-        "id": "criticalBoost",
-        "level": 1
-      }
-    ],
-    "id": 93
-  },
-  {
     "name": "Challenger Jewel 2",
     "level": 2,
     "skills": [
