@@ -15,7 +15,7 @@ export class AugmentationsListComponent implements OnInit {
 	augmentations: AugmentationModel[];
 
 	constructor(
-		private itemsService: DataService,
+		private dataService: DataService,
 		private slotService: SlotService
 		// private tooltipService: TooltipService
 	) { }
@@ -25,7 +25,7 @@ export class AugmentationsListComponent implements OnInit {
 	}
 
 	loadItems() {
-		this.augmentations = this.itemsService.getAugmentations();
+		this.augmentations = this.dataService.getAugmentations();
 	}
 
 	selectAugmentation(augmentation: AugmentationModel) {

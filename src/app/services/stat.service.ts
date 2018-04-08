@@ -28,49 +28,37 @@ export class StatService {
 	update(skills: EquippedSkillModel[], items: ItemModel[], augmentations: AugmentationModel[]) {
 		this.stats = new StatsModel();
 
-		for (const item of items) {
-			this.updateItemStats(item);
-		}
-
-		// TODO: add augmentation
-		console.log(augmentations);
+		this.updateItemStats(items);
+		this.updateSkillStats(skills);
+		this.updateAugmentations(augmentations);
 
 		const weapon = _.find(items, item => item.weaponType);
-		this.updateSkillStats(weapon, skills);
+		this.calculateAttack(weapon);
 
 		this.statsUpdated$.next(this.stats);
 
 		this.calcService.updateCalcs(this.stats);
 	}
 
-	private updateItemStats(item: ItemModel) {
-		if (item.baseAttack) { this.stats.attack += item.baseAttack; }
-		if (item.baseAffinityPercent) { this.stats.affinity += item.baseAffinityPercent; }
-		if (item.baseDefense) { this.stats.defense += item.baseDefense; }
-		if (item.fireResist) { this.stats.fireResist += item.fireResist; }
-		if (item.waterResist) { this.stats.waterResist += item.waterResist; }
-		if (item.thunderResist) { this.stats.thunderResist += item.thunderResist; }
-		if (item.iceResist) { this.stats.iceResist += item.iceResist; }
-		if (item.dragonResist) { this.stats.dragonResist += item.dragonResist; }
-		if (item.element) { this.stats.element = item.element; }
-		if (item.elementBaseAttack) { this.stats.baseElementAttack += item.elementBaseAttack; }
-		if (item.ailment) { this.stats.ailment = item.ailment; }
-		if (item.ailmentBaseAttack) { this.stats.baseAilmentAttack += item.ailmentBaseAttack; }
-		if (item.elderseal) { this.stats.elderseal = item.elderseal; }
+	private updateItemStats(items: ItemModel[]) {
+		for (const item of items) {
+			if (item.baseAttack) { this.stats.attack += item.baseAttack; }
+			if (item.baseAffinityPercent) { this.stats.affinity += item.baseAffinityPercent; }
+			if (item.baseDefense) { this.stats.defense += item.baseDefense; }
+			if (item.fireResist) { this.stats.fireResist += item.fireResist; }
+			if (item.waterResist) { this.stats.waterResist += item.waterResist; }
+			if (item.thunderResist) { this.stats.thunderResist += item.thunderResist; }
+			if (item.iceResist) { this.stats.iceResist += item.iceResist; }
+			if (item.dragonResist) { this.stats.dragonResist += item.dragonResist; }
+			if (item.element) { this.stats.element = item.element; }
+			if (item.elementBaseAttack) { this.stats.baseElementAttack += item.elementBaseAttack; }
+			if (item.ailment) { this.stats.ailment = item.ailment; }
+			if (item.ailmentBaseAttack) { this.stats.baseAilmentAttack += item.ailmentBaseAttack; }
+			if (item.elderseal) { this.stats.elderseal = item.elderseal; }
+		}
 	}
 
-	private updateSkillStats(weapon: ItemModel, equippedSkills: EquippedSkillModel[]) {
-		if (weapon) {
-			this.stats.maxSharpness = weapon.maxSharpness;
-			this.stats.elementHidden = weapon.elementHidden;
-			this.stats.ailmentHidden = weapon.ailmentHidden;
-
-			const weaponModifier = this.dataService.getWeaponModifier(weapon.weaponType);
-			if (weaponModifier) {
-				this.stats.weaponAttackModifier = weaponModifier.attackModifier;
-			}
-		}
-
+	private updateSkillStats(equippedSkills: EquippedSkillModel[]) {
 		for (const equippedSkill of equippedSkills) {
 			let level: SkillLevelModel;
 
@@ -125,7 +113,24 @@ export class StatService {
 				if (level.hiddenElementUp) { this.stats.elementAttackMultiplier = level.hiddenElementUp; }
 			}
 		}
+	}
 
+	private updateAugmentations(augmentations: AugmentationModel[]) {
+		const augGroups = _.groupBy(augmentations, 'name');
+
+		for (const key in augGroups) {
+			const value = augGroups[key];
+
+			const level = value[0].levels[value.length - 1];
+			if (level) {
+				if (level.passiveAttack) { this.stats.passiveAttack += level.passiveAttack; }
+				if (level.passiveAffinity) { this.stats.passiveAffinity += level.passiveAffinity; }
+				if (level.passiveDefense) { this.stats.passiveDefense += level.passiveDefense; }
+			}
+		}
+	}
+
+	private calculateAttack(weapon: ItemModel) {
 		switch (this.stats.element) {
 			case ElementType.Fire:
 				this.stats.effectivePassiveElementAttack = this.stats.passiveFireAttack;
@@ -176,6 +181,16 @@ export class StatService {
 				break;
 		}
 
+		if (weapon) {
+			this.stats.maxSharpness = weapon.maxSharpness;
+			this.stats.elementHidden = weapon.elementHidden;
+			this.stats.ailmentHidden = weapon.ailmentHidden;
+
+			const weaponModifier = this.dataService.getWeaponModifier(weapon.weaponType);
+			if (weaponModifier) {
+				this.stats.weaponAttackModifier = weaponModifier.attackModifier;
+			}
+		}
 		if (weapon && weapon.sharpnessLevels) {
 			this.stats.effectiveSharpnessLevel = weapon.sharpnessLevels[Math.min(this.stats.passiveSharpness / 10, weapon.sharpnessLevels.length - 1)];
 			const sharpnessModifier = this.dataService.getSharpnessModifier(DamageType.Physical, this.stats.effectiveSharpnessLevel.color);

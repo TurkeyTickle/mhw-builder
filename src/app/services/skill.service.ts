@@ -6,6 +6,7 @@ import { EquippedSkillModel } from '../models/equipped-skill.model';
 import { ItemModel } from '../models/item.model';
 import { DataService } from './data.service';
 import { Subject } from 'rxjs/Subject';
+import { AugmentationModel } from '../models/augmentation.model';
 
 @Injectable()
 export class SkillService {
@@ -20,7 +21,7 @@ export class SkillService {
 	) {
 	}
 
-	updateSkills(items: ItemModel[], decorations: DecorationModel[]) {
+	updateSkills(items: ItemModel[], decorations: DecorationModel[], augmentations: AugmentationModel[]) {
 		const equippedSkills = new Array<EquippedSkillModel>();
 		const equippedSetBonuses = new Array<EquippedSetBonusModel>();
 
@@ -28,6 +29,7 @@ export class SkillService {
 		this.addItemSkills(items, equippedSkills);
 		this.addDecorationSkills(decorations, equippedSkills);
 		this.addSetSkills(items, equippedSkills, equippedSetBonuses);
+		this.addAugmentationSkills(augmentations, equippedSkills);
 
 		this.skills = equippedSkills;
 		this.setBonuses = equippedSetBonuses;
@@ -143,6 +145,37 @@ export class SkillService {
 				equippedSetBonus.equippedCount = setCounts[setBonusName];
 				equippedSetBonus.requiredCount = bonusLevel.pieces;
 				equippedSetBonuses.push(equippedSetBonus);
+			}
+		}
+	}
+
+	private addAugmentationSkills(augmentations: AugmentationModel[], equippedSkills: EquippedSkillModel[]) {
+		const augGroups = _.groupBy(augmentations, 'name');
+
+		for (const key in augGroups) {
+			const value = augGroups[key];
+
+			const level = value[0].levels[value.length - 1];
+			if (level && level.skills) {
+				for (const skillRef of level.skills) {
+
+					let equippedSkill = _.find(equippedSkills, es => es.id == skillRef.id);
+
+					// Augmentation skills (as of this writing) do not build on skills from other sources. If the augmentation skill level is higher, it overwrites.
+					if (!equippedSkill) {
+						const skill = this.itemsService.getSkill(skillRef.id);
+						equippedSkill = new EquippedSkillModel();
+						equippedSkill.skill = skill;
+						equippedSkill.id = skill.id;
+						equippedSkill.name = skill.name;
+						equippedSkill.description = skill.description;
+						equippedSkill.equippedCount = skillRef.level;
+						equippedSkill.totalLevelCount = skill.levels.length;
+						equippedSkills.push(equippedSkill);
+					} else if (equippedSkill.equippedCount < skillRef.level) {
+						equippedSkill.equippedCount = skillRef.level;
+					}
+				}
 			}
 		}
 	}

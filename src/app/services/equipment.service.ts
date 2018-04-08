@@ -27,33 +27,39 @@ export class EquipmentService {
 
 	addItem(item: ItemModel) {
 		this.items.push(item);
-		this.skillService.updateSkills(this.items, this.decorations);
-	}
-
-	removeItem(item: ItemModel) {
-		this.items = _.reject(this.items, i => i === item);
-		this.skillService.updateSkills(this.items, this.decorations);
+		this.updateSkills();
 	}
 
 	addDecoration(decoration: DecorationModel) {
 		this.decorations.push(decoration);
-		this.skillService.updateSkills(this.items, this.decorations);
-	}
-
-	removeDecoration(decoration: DecorationModel) {
-		this.decorations = _.reject(this.decorations, d => d === decoration);
-		this.skillService.updateSkills(this.items, this.decorations);
+		this.updateSkills();
 	}
 
 	addAugmentation(augmentation: AugmentationModel) {
 		this.augmentations.push(augmentation);
+		this.updateSkills();
+	}
+
+	removeItem(item: ItemModel) {
+		this.items = _.reject(this.items, i => i === item);
+		this.updateSkills();
+	}
+
+	removeDecoration(decoration: DecorationModel) {
+		this.decorations = _.reject(this.decorations, d => d === decoration);
+		this.updateSkills();
 	}
 
 	removeAugmentation(augmentation: AugmentationModel) {
 		this.augmentations = _.reject(this.augmentations, a => a === augmentation);
+		this.updateSkills();
 	}
 
 	updateItemLevel() {
-		this.skillService.updateSkills(this.items, this.decorations);
+		this.updateSkills();
+	}
+
+	private updateSkills() {
+		this.skillService.updateSkills(this.items, this.decorations, this.augmentations);
 	}
 }
