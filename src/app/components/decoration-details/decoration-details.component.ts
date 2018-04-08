@@ -2,7 +2,7 @@ import { Component, Input, OnInit } from '@angular/core';
 import * as _ from 'lodash';
 import { DecorationModel } from '../../models/decoration.model';
 import { SkillModel } from '../../models/skill.model';
-import { ItemsService } from '../../services/items.service';
+import { DataService } from '../../services/data.service';
 
 @Component({
 	selector: 'mhw-builder-decoration-details',
@@ -28,13 +28,13 @@ export class DecorationDetailsComponent implements OnInit {
 	skills: SkillModel[];
 
 	constructor(
-		private itemsService: ItemsService
+		private dataService: DataService
 	) { }
 
 	ngOnInit() { }
 
 	loadSkills() {
-		this.skills = this.itemsService.getSkills(this.decoration.skills);
+		this.skills = this.dataService.getSkills(this.decoration.skills);
 	}
 
 	getSkillCount(skill: SkillModel): string {

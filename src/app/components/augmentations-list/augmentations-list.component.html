@@ -1,0 +1,15 @@
+<div class="container">
+	<div class="items-container">
+		<ul>
+			<div *ngFor="let aug of augmentations">
+				<li (click)="selectAugmentation(aug)" (mouseenter)="setTooltipAugmentation(aug)" (mouseleave)="clearTooltipAugmentation()">
+					<div class="info-container">
+						<div class="name-container">
+							{{aug.name}}
+						</div>
+					</div>
+				</li>
+			</div>
+		</ul>
+	</div>
+</div>

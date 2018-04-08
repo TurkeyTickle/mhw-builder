@@ -1,10 +1,10 @@
-import { ItemSkillModel } from './item-skill.model';
+import { SkillReferenceModel } from './skill-reference.model';
 
 export class DecorationModel {
 	id: number;
 	name: string;
 	level: number;
-	skills: ItemSkillModel[];
+	skills: SkillReferenceModel[];
 
-	equipmentId: number;
+	itemId: number;
 }

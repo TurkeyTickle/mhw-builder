@@ -1,7 +1,7 @@
 import { Injectable } from '@angular/core';
 import * as _ from 'lodash';
 import { DecorationModel } from '../models/decoration.model';
-import { ItemSkillModel } from '../models/item-skill.model';
+import { SkillReferenceModel } from '../models/skill-reference.model';
 import { ItemModel } from '../models/item.model';
 import { SetBonusModel } from '../models/set-bonus.model';
 import { SharpnessModifierModel } from '../models/sharpness-modifier.model';
@@ -12,9 +12,10 @@ import { DamageType } from '../types/damage.type';
 import { ItemType } from '../types/item.type';
 import { SharpnessType } from '../types/sharpness.type';
 import { WeaponType } from '../types/weapon.type';
+import { AugmentationModel } from '../models/augmentation.model';
 
 @Injectable()
-export class ItemsService {
+export class DataService {
 	constructor(
 		private appData: AppDataProvider
 	) { }
@@ -33,7 +34,7 @@ export class ItemsService {
 		return _.find(this.appData.getWeapons(), weapon => weapon.id === id);
 	}
 
-	getArmorById(id: number): ItemModel {
+	getArmor(id: number): ItemModel {
 		return _.find(this.appData.getArmor(), armor => armor.id === id);
 	}
 
@@ -59,7 +60,7 @@ export class ItemsService {
 		return _.find(this.appData.getSkills(), skill => skill.id === id);
 	}
 
-	getSkills(itemSkills: ItemSkillModel[]) {
+	getSkills(itemSkills: SkillReferenceModel[]) {
 		return _.filter(this.appData.getSkills(), skill => {
 			return _.some(itemSkills, itemSkill => skill.id == itemSkill.id);
 		});
@@ -78,7 +79,15 @@ export class ItemsService {
 	}
 
 	getDecoration(id: number): DecorationModel {
-		return _.find(this.appData.getDecorations(), (decoration: DecorationModel) => decoration.id == id);
+		return _.find(this.appData.getDecorations(), decoration => decoration.id == id);
+	}
+
+	getAugmentations(): AugmentationModel[] {
+		return this.appData.getAugmentations();
+	}
+
+	getAugmentation(id: number): AugmentationModel {
+		return _.find(this.appData.getAugmentations(), augmentation => augmentation.id == id);
 	}
 
 	getWeaponTypeName(weaponType: WeaponType): string {
@@ -107,12 +116,4 @@ export class ItemsService {
 				return weaponType;
 		}
 	}
-
-	// getAllSkills(): SkillModel[] {
-	// 	return this.appData.getSkills();
-	// }
-
-	// getSkill(id: string): SkillModel {
-	// 	return _.find(this.appData.getSkills(), skill => skill.id === id);
-	// }
 }

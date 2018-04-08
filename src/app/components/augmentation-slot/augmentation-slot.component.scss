@@ -1,0 +1,45 @@
+$slotHeight: 30px;
+
+.container {
+	background-color: rgb(50,50,50);
+	height: $slotHeight;
+	padding: 4px;
+	cursor: pointer;
+	display: flex;
+	font-size: 14px;
+	border-radius: 3px;
+	margin-bottom: 4px;
+
+	.slot-icon {
+		line-height: $slotHeight;
+		width: 40px;
+		flex-grow: 0;
+		flex-shrink: 0;
+		margin-left: 6px;
+		margin-top: 3px;
+	}
+
+	.selected-augmentation {
+		flex-grow: 1;
+		line-height: $slotHeight;
+		text-overflow: ellipsis;
+		overflow: hidden;
+	}
+	
+	.clear-button {
+		flex-grow: 0;
+		flex-shrink: 0;
+		height: $slotHeight;
+		width: 34px;
+	}
+}
+
+:host {
+	flex-grow: 1;
+	flex-basis: 0;
+	padding: 0px 2px 0px 2px;
+}
+
+.selected {
+	background-color: #525252;
+}

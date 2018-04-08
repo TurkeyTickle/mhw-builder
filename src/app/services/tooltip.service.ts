@@ -6,17 +6,20 @@ import { ItemModel } from '../models/item.model';
 import { SkillModel } from '../models/skill.model';
 import { StatDetailModel } from '../models/stat-detail.model';
 import { AnchorType } from '../types/anchor.type';
+import { AugmentationModel } from '../models/augmentation.model';
 
 @Injectable()
 export class TooltipService {
-	public itemSubject = new Subject<ItemModel>();
-	public decorationSubject = new Subject<DecorationModel>();
-	public equippedSkillSubject = new Subject<EquippedSkillModel>();
-	public skillSubject = new Subject<SkillModel>();
-	public calcSubject = new Subject<StatDetailModel>();
+	public itemChanged$ = new Subject<ItemModel>();
+	public decorationChanged$ = new Subject<DecorationModel>();
+	public augmentationChanged$ = new Subject<AugmentationModel>();
+	public equippedSkillChanged$ = new Subject<EquippedSkillModel>();
+	public skillChanged$ = new Subject<SkillModel>();
+	public calcChanged$ = new Subject<StatDetailModel>();
 
 	public item: ItemModel;
 	public decoration: DecorationModel;
+	public augmentation: AugmentationModel;
 	public equippedSkill: EquippedSkillModel;
 	public skill: SkillModel;
 	public calc: StatDetailModel;
@@ -31,7 +34,7 @@ export class TooltipService {
 		if (item != this.item) {
 			this.reset();
 			this.item = item;
-			this.itemSubject.next(item);
+			this.itemChanged$.next(item);
 		}
 	}
 
@@ -39,7 +42,15 @@ export class TooltipService {
 		if (decoration != this.decoration) {
 			this.reset();
 			this.decoration = decoration;
-			this.decorationSubject.next(decoration);
+			this.decorationChanged$.next(decoration);
+		}
+	}
+
+	setAugmentation(augmentation: AugmentationModel) {
+		if (augmentation != this.augmentation) {
+			this.reset();
+			this.augmentation = augmentation;
+			this.augmentationChanged$.next(augmentation);
 		}
 	}
 
@@ -47,7 +58,7 @@ export class TooltipService {
 		if (equippedSkill != this.equippedSkill) {
 			this.reset();
 			this.equippedSkill = equippedSkill;
-			this.equippedSkillSubject.next(equippedSkill);
+			this.equippedSkillChanged$.next(equippedSkill);
 		}
 	}
 
@@ -55,7 +66,7 @@ export class TooltipService {
 		if (skill != this.skill) {
 			this.reset();
 			this.skill = skill;
-			this.skillSubject.next(skill);
+			this.skillChanged$.next(skill);
 		}
 	}
 
@@ -63,13 +74,14 @@ export class TooltipService {
 		if (calc != this.calc) {
 			this.reset();
 			this.calc = calc;
-			this.calcSubject.next(calc);
+			this.calcChanged$.next(calc);
 		}
 	}
 
 	private reset() {
 		this.item = null;
 		this.decoration = null;
+		this.augmentation = null;
 		this.equippedSkill = null;
 		this.skill = null;
 		this.calc = null;

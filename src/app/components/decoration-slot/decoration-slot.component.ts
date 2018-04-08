@@ -1,8 +1,7 @@
-import { Component, EventEmitter, Input, OnInit, Output } from '@angular/core';
-import { ChangeModel } from '../../models/change.model';
+import { Component, Input, OnInit, } from '@angular/core';
 import { DecorationModel } from '../../models/decoration.model';
-import { ItemModel } from '../../models/item.model';
 import { TooltipService } from '../../services/tooltip.service';
+import { SlotService } from '../../services/slot.service';
 
 @Component({
 	selector: 'mhw-builder-decoration-slot',
@@ -10,24 +9,16 @@ import { TooltipService } from '../../services/tooltip.service';
 	styleUrls: ['./decoration-slot.component.scss'],
 })
 export class DecorationSlotComponent implements OnInit {
-	@Output() decorationSlotSelected = new EventEmitter<DecorationSlotComponent>();
-	@Output() decorationSet = new EventEmitter<ChangeModel<DecorationModel>>();
-	// @Output() cleared = new EventEmitter();
 
-	@Input() item: ItemModel;
 	@Input() level: number;
+	@Input() itemId: number;
 
-	private _decoration: DecorationModel;
-	@Input()
-	public set decoration(decoration: DecorationModel) {
-		this.decorationSet.emit({ old: this._decoration, new: decoration});
-		this._decoration = decoration;
-	}
-	public get decoration() { return this._decoration; }
+	decoration: DecorationModel;
 
 	public selected: boolean;
 
 	constructor(
+		private slotService: SlotService,
 		private tooltipService: TooltipService
 	) { }
 
@@ -36,11 +27,11 @@ export class DecorationSlotComponent implements OnInit {
 	clearClicked(event: Event) {
 		event.stopPropagation();
 		this.clearTooltipItem();
-		this.decoration = null;
+		this.slotService.clearDecorationSlot(this);
 	}
 
 	clicked() {
-		this.decorationSlotSelected.emit(this);
+		this.slotService.selectDecorationSlot(this);
 	}
 
 	setTooltipItem() {

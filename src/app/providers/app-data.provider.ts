@@ -9,6 +9,7 @@ import { SharpnessModifierModel } from '../models/sharpness-modifier.model';
 import { SkillModel } from '../models/skill.model';
 import { WeaponModifierModel } from '../models/weapon-modifier.model';
 import { EquipmentCategoryType } from '../types/equipment-category.type';
+import { AugmentationModel } from '../models/augmentation.model';
 
 @Injectable()
 export class AppDataProvider {
@@ -46,6 +47,10 @@ export class AppDataProvider {
 		return this.seedData.decorations;
 	}
 
+	getAugmentations(): AugmentationModel[] {
+		return this.seedData.augmentations;
+	}
+
 	load(): Promise<boolean> {
 		const items = [
 			this.loadWeaponModifiers(),
@@ -72,7 +77,8 @@ export class AppDataProvider {
 			this.loadCharms(),
 			this.loadDecorations(),
 			this.loadSetBonuses(),
-			this.loadSkills()
+			this.loadSkills(),
+			this.loadAugmentations()
 		];
 
 		return Promise.all(items).then<boolean>(() => {
@@ -398,6 +404,15 @@ export class AppDataProvider {
 		return new Promise(resolve => {
 			this.http.get<SkillModel[]>('../assets/skills.json').subscribe(items => {
 				this.seedData.skills = this.seedData.skills.concat(items);
+				resolve(true);
+			});
+		});
+	}
+
+	loadAugmentations(): Promise<boolean> {
+		return new Promise(resolve => {
+			this.http.get<AugmentationModel[]>('../assets/augmentations.json').subscribe(items => {
+				this.seedData.augmentations = this.seedData.augmentations.concat(items);
 				resolve(true);
 			});
 		});

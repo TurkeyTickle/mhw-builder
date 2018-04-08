@@ -3,7 +3,7 @@ import * as _ from 'lodash';
 import { ItemModel } from '../../models/item.model';
 import { SkillModel } from '../../models/skill.model';
 import { StatDetailModel } from '../../models/stat-detail.model';
-import { ItemsService } from '../../services/items.service';
+import { DataService } from '../../services/data.service';
 import { EquipmentCategoryType } from '../../types/equipment-category.type';
 import { ItemType } from '../../types/item.type';
 import { WeaponType } from '../../types/weapon.type';
@@ -34,13 +34,20 @@ export class ItemDetailsComponent implements OnInit {
 	stats: StatDetailModel[] = [];
 
 	constructor(
-		private itemsService: ItemsService
+		private dataService: DataService
 	) { }
 
 	ngOnInit() { }
 
 	setupStats() {
 		this.stats = [];
+
+		if (this.item.rarity) {
+			this.stats.push({
+				name: 'Rarity',
+				value: this.item.rarity
+			});
+		}
 
 		if (this.item.itemType == ItemType.Weapon) {
 			this.stats.push({
@@ -137,7 +144,7 @@ export class ItemDetailsComponent implements OnInit {
 	}
 
 	loadSkills() {
-		this.skills = this.itemsService.getSkills(this.item.skills);
+		this.skills = this.dataService.getSkills(this.item.skills);
 	}
 
 	getSkillCount(skill: SkillModel): string {
@@ -147,6 +154,6 @@ export class ItemDetailsComponent implements OnInit {
 	}
 
 	getWeaponTypeName(weaponType: WeaponType): string {
-		return this.itemsService.getWeaponTypeName(weaponType);
+		return this.dataService.getWeaponTypeName(weaponType);
 	}
 }

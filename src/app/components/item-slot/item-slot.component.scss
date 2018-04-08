@@ -49,6 +49,13 @@ $equipmentHeight: 40px;
 	}
 }
 
+.augmentation-container {
+	display: flex;
+	flex-direction: row;
+	flex-wrap: nowrap;
+	margin: 0px -2px;
+}
+
 .decoration-container {
 	display: flex;
 	flex-direction: row;
