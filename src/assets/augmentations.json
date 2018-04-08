@@ -1,5 +1,6 @@
 [
 	{
+		"id": 1,
 		"name": "Attack Increase",
 		"description": "Increases attack power. Stacks with other upgrades.",
 		"levels": [
@@ -18,6 +19,7 @@
 		]
 	},
 	{
+		"id": 2,
 		"name": "Affinity Increase",
 		"description": "Increases affinity. Stacks with other upgrades.",
 		"levels": [
@@ -36,6 +38,7 @@
 		]
 	},
 	{
+		"id": 3,
 		"name": "Defense Increase",
 		"description": "Increases defense and adds a chance to reduce damage taken each time you receive damage. Stacks with other upgrades.",
 		"levels": [
@@ -72,6 +75,7 @@
 		]
 	},
 	{
+		"id": 4,
 		"name": "Slot Upgrade",
 		"description": "Adds an extra slot. Stack with other upgrades to increase the slot's level.",
 		"levels": [
@@ -90,6 +94,7 @@
 		]
 	},
 	{
+		"id": 5,
 		"name": "Health Regen",
 		"description": "Regain health as you land attacks. Stack with other upgrades to increase the amount of health regained.",
 		"levels": [

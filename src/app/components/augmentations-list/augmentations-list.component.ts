@@ -1,4 +1,4 @@
-import { Component, OnInit, Output, EventEmitter } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 import { AugmentationModel } from '../../models/augmentation.model';
 import { DataService } from '../../services/data.service';
 import { SlotService } from '../../services/slot.service';
@@ -10,8 +10,6 @@ import { SlotService } from '../../services/slot.service';
 	styleUrls: ['./augmentations-list.component.scss']
 })
 export class AugmentationsListComponent implements OnInit {
-	@Output() augmentationSelected = new EventEmitter<AugmentationModel>();
-
 	augmentations: AugmentationModel[];
 
 	constructor(
@@ -31,7 +29,6 @@ export class AugmentationsListComponent implements OnInit {
 	selectAugmentation(augmentation: AugmentationModel) {
 		const newAugmentation = Object.assign({}, augmentation);
 		this.slotService.selectAugmentation(newAugmentation);
-		// this.augmentationSelected.emit(newAugmentation);
 	}
 
 	setTooltipAugmentation(augmentation: AugmentationModel) {

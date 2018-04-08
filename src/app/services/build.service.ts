@@ -14,14 +14,6 @@ import * as _ from 'lodash';
 export class BuildService {
 	public buildIdUpdated$ = new Subject<string>();
 
-	weaponSlot: ItemSlotComponent;
-	headSlot: ItemSlotComponent;
-	chestSlot: ItemSlotComponent;
-	handsSlot: ItemSlotComponent;
-	legsSlot: ItemSlotComponent;
-	feetSlot: ItemSlotComponent;
-	charmSlot: ItemSlotComponent;
-
 	private changeDetector: ChangeDetectorRef;
 	private loadingBuild = false;
 
@@ -32,26 +24,10 @@ export class BuildService {
 	) { }
 
 	initialize(
-		weaponSlot: ItemSlotComponent,
-		headSlot: ItemSlotComponent,
-		chestSlot: ItemSlotComponent,
-		handsSlot: ItemSlotComponent,
-		legsSlot: ItemSlotComponent,
-		feetSlot: ItemSlotComponent,
-		charmSlot: ItemSlotComponent,
 		changeDetector: ChangeDetectorRef
 	) {
-		this.weaponSlot = weaponSlot;
-		this.headSlot = headSlot;
-		this.chestSlot = chestSlot;
-		this.handsSlot = handsSlot;
-		this.legsSlot = legsSlot;
-		this.feetSlot = feetSlot;
-		this.charmSlot = charmSlot;
-
 		// TODO: Passing in change detector feels gross, but at the moment it's needed to set up decoration slots when an item is loaded by build id.
 		this.changeDetector = changeDetector;
-
 		this.subscribeSlotEvents();
 	}
 
@@ -80,13 +56,13 @@ export class BuildService {
 
 		// build string format version number is hash[0]
 
-		this.loadBuildSlot(itemHashes[1], this.weaponSlot);
-		this.loadBuildSlot(itemHashes[2], this.headSlot);
-		this.loadBuildSlot(itemHashes[3], this.chestSlot);
-		this.loadBuildSlot(itemHashes[4], this.handsSlot);
-		this.loadBuildSlot(itemHashes[5], this.legsSlot);
-		this.loadBuildSlot(itemHashes[6], this.feetSlot);
-		this.loadBuildSlot(itemHashes[7], this.charmSlot);
+		this.loadBuildSlot(itemHashes[1], this.slotService.weaponSlot);
+		this.loadBuildSlot(itemHashes[2], this.slotService.headSlot);
+		this.loadBuildSlot(itemHashes[3], this.slotService.chestSlot);
+		this.loadBuildSlot(itemHashes[4], this.slotService.handsSlot);
+		this.loadBuildSlot(itemHashes[5], this.slotService.legsSlot);
+		this.loadBuildSlot(itemHashes[6], this.slotService.feetSlot);
+		this.loadBuildSlot(itemHashes[7], this.slotService.charmSlot);
 
 		this.slotService.selectItemSlot(null);
 

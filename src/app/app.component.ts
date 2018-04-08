@@ -42,15 +42,17 @@ export class AppComponent implements OnInit, AfterViewInit {
 	) { }
 
 	ngOnInit(): void {
-		this.buildService.initialize(
+		this.slotService.initialize(
 			this.weaponSlot,
 			this.headSlot,
 			this.chestSlot,
 			this.handsSlot,
 			this.legsSlot,
 			this.feetSlot,
-			this.charmSlot,
-			this.changeDetector);
+			this.charmSlot
+		);
+
+		this.buildService.initialize(this.changeDetector);
 
 		this.buildService.buildIdUpdated$.subscribe(buildId => {
 			this.location.replaceState(this.location.path(false), '#' + buildId);

@@ -116,7 +116,7 @@ export class StatService {
 	}
 
 	private updateAugmentations(augmentations: AugmentationModel[]) {
-		const augGroups = _.groupBy(augmentations, 'name');
+		const augGroups = _.groupBy(augmentations, 'id');
 
 		for (const key in augGroups) {
 			const value = augGroups[key];

@@ -150,7 +150,7 @@ export class SkillService {
 	}
 
 	private addAugmentationSkills(augmentations: AugmentationModel[], equippedSkills: EquippedSkillModel[]) {
-		const augGroups = _.groupBy(augmentations, 'name');
+		const augGroups = _.groupBy(augmentations, 'id');
 
 		for (const key in augGroups) {
 			const value = augGroups[key];

@@ -39,9 +39,9 @@
 	</div>
 
 	<div class="item-list-container">
-		<mhw-builder-item-list [hidden]="!slotService.itemSlot" [itemType]="slotService.itemSlot?.slotName"></mhw-builder-item-list>
-		<mhw-builder-item-list [hidden]="!slotService.decorationSlot" itemType="Decoration" [decorationLevel]="slotService.decorationSlot?.level"></mhw-builder-item-list>
-		<mhw-builder-augmentations-list [hidden]="!slotService.augmentationSlot"></mhw-builder-augmentations-list>
+		<mhw-builder-item-list [hidden]="!slotService.selectedItemSlot" [itemType]="slotService.selectedItemSlot?.slotName"></mhw-builder-item-list>
+		<mhw-builder-item-list [hidden]="!slotService.selectedDecorationSlot" itemType="Decoration" [decorationLevel]="slotService.selectedDecorationSlot?.level"></mhw-builder-item-list>
+		<mhw-builder-augmentations-list [hidden]="!slotService.selectedAugmentationSlot"></mhw-builder-augmentations-list>
 	</div>
 
 	<div class="stats-container">
