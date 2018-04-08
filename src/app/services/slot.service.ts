@@ -107,7 +107,6 @@ export class SlotService {
 
 			this.equipmentService.addItem(item);
 			this.selectedItemSlot.item = item;
-			this.itemSelected$.next({ slot: this.selectedItemSlot, equipment: item });
 
 			if (item.rarity == 6) {
 				this.selectedItemSlot.augmentations = [
@@ -127,6 +126,8 @@ export class SlotService {
 			} else {
 				this.selectedItemSlot.augmentations = [];
 			}
+
+			this.itemSelected$.next({ slot: this.selectedItemSlot, equipment: item });
 		}
 	}
 
@@ -163,16 +164,17 @@ export class SlotService {
 
 	private applySlotAugmentation() {
 		const slotAugs = _.filter(this.equipmentService.augmentations, aug => aug.id == 4);
+		const augDecorationSlot = _.find(this.weaponSlot.item.slots, slot => slot.augmentation);
 
 		if (slotAugs && slotAugs.length) {
-			const augDecorationSlot = _.find(this.weaponSlot.item.slots, slot => slot.augmentation);
 			if (augDecorationSlot) {
 				augDecorationSlot.level = slotAugs[0].levels[slotAugs.length - 1].slotLevel;
 			} else {
 				this.weaponSlot.item.slots.push({ level: slotAugs[0].levels[slotAugs.length - 1].slotLevel, augmentation: true });
 			}
 		} else {
-			this.weaponSlot.item.slots = _.reject(this.weaponSlot.item.slots, aug => aug.augmentation);
+			this.weaponSlot.item.slots = _.reject(this.weaponSlot.item.slots, aug => aug === augDecorationSlot);
+			this.equipmentService.removeDecoration(this.weaponSlot.decorationSlots.last.decoration);
 		}
 	}
 

@@ -79,11 +79,15 @@ export class DataService {
 	}
 
 	getDecoration(id: number): DecorationModel {
-		return _.find(this.appData.getDecorations(), (decoration: DecorationModel) => decoration.id == id);
+		return _.find(this.appData.getDecorations(), decoration => decoration.id == id);
 	}
 
 	getAugmentations(): AugmentationModel[] {
 		return this.appData.getAugmentations();
+	}
+
+	getAugmentation(id: number): AugmentationModel {
+		return _.find(this.appData.getAugmentations(), augmentation => augmentation.id == id);
 	}
 
 	getWeaponTypeName(weaponType: WeaponType): string {

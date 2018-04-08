@@ -73,6 +73,7 @@ export class BuildService {
 		if (itemHash) {
 			const decorationParts = itemHash.split('d');
 			const itemParts = itemHash.split('l');
+			const augmentParts = itemHash.split('a');
 			const itemId = parseInt(itemParts[0], 10);
 
 			if (itemId) {
@@ -83,14 +84,29 @@ export class BuildService {
 					item = this.dataService.getArmor(itemId);
 				}
 
-				if (itemParts.length > 1) {
-					const level = parseInt(itemParts[1], 10);
-					item.equippedLevel = level;
-				}
-
 				if (item) {
+					if (itemParts.length > 1) {
+						const level = parseInt(itemParts[1], 10);
+						item.equippedLevel = level;
+					}
+
 					this.slotService.selectItemSlot(slot);
 					this.slotService.selectItem(item);
+
+					this.changeDetector.detectChanges();
+
+					if (augmentParts.length > 1 && item.equipmentCategory == EquipmentCategoryType.Weapon) {
+						for (let i = 0; i < 9 - item.rarity; i++) {
+							const augId = parseInt(augmentParts[i + 1], 10);
+							if (augId) {
+								const aug = this.dataService.getAugmentation(augId);
+								if (aug) {
+									this.slotService.selectAugmentationSlot(slot.augmentationSlots.toArray()[i]);
+									this.slotService.selectAugmentation(aug);
+								}
+							}
+						}
+					}
 
 					this.changeDetector.detectChanges();
 
@@ -121,6 +137,8 @@ export class BuildService {
 
 		let buildId = 'v1';
 
+		this.changeDetector.detectChanges();
+
 		buildId += this.getItemBuildString(weapon);
 		buildId += this.getItemBuildString(head);
 		buildId += this.getItemBuildString(chest);
@@ -142,15 +160,22 @@ export class BuildService {
 				result += `l${item.equippedLevel}`;
 			}
 
+			if (item.equipmentCategory == EquipmentCategoryType.Weapon && item.rarity >= 6) {
+				for (const aug of this.equipmentService.augmentations) {
+					if (aug.id) {
+						result += `a${aug.id}`;
+					}
+				}
+			}
+
 			if (item.slots) {
 				let decorations = _.filter(this.equipmentService.decorations, d => d.itemId === item.id);
 				for (let i = 0; i < item.slots.length; i++) {
-					result += 'd';
 					const slot = item.slots[i];
 					const decoration = _.find(decorations, d => d.itemId == item.id && d.level <= slot.level);
 					decorations = _.without(decorations, decoration);
 					if (decoration) {
-						result += `${decoration.id.toString()}`;
+						result += `d${decoration.id.toString()}`;
 					}
 				}
 			}
