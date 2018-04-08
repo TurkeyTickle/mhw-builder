@@ -49,7 +49,8 @@ export class AppComponent implements OnInit, AfterViewInit {
 			this.handsSlot,
 			this.legsSlot,
 			this.feetSlot,
-			this.charmSlot
+			this.charmSlot,
+			this.changeDetector
 		);
 
 		this.buildService.initialize(this.changeDetector);

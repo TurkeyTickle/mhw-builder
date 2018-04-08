@@ -1,4 +1,4 @@
-import { Injectable } from '@angular/core';
+import { Injectable, ChangeDetectorRef } from '@angular/core';
 import { ItemSlotComponent } from '../components/item-slot/item-slot.component';
 import { DecorationSlotComponent } from '../components/decoration-slot/decoration-slot.component';
 import { AugmentationSlotComponent } from '../components/augmentation-slot/augmentation-slot.component';
@@ -26,6 +26,8 @@ export class SlotService {
 	feetSlot: ItemSlotComponent;
 	charmSlot: ItemSlotComponent;
 
+	changeDetector: ChangeDetectorRef;
+
 	selectedItemSlot: ItemSlotComponent;
 	selectedDecorationSlot: DecorationSlotComponent;
 	selectedAugmentationSlot: AugmentationSlotComponent;
@@ -41,7 +43,8 @@ export class SlotService {
 		handsSlot: ItemSlotComponent,
 		legsSlot: ItemSlotComponent,
 		feetSlot: ItemSlotComponent,
-		charmSlot: ItemSlotComponent
+		charmSlot: ItemSlotComponent,
+		changeDetector: ChangeDetectorRef
 	) {
 		this.weaponSlot = weaponSlot;
 		this.headSlot = headSlot;
@@ -50,6 +53,7 @@ export class SlotService {
 		this.legsSlot = legsSlot;
 		this.feetSlot = feetSlot;
 		this.charmSlot = charmSlot;
+		this.changeDetector = changeDetector;
 	}
 
 	selectItemSlot(slot: ItemSlotComponent) {
@@ -167,14 +171,22 @@ export class SlotService {
 		const augDecorationSlot = _.find(this.weaponSlot.item.slots, slot => slot.augmentation);
 
 		if (slotAugs && slotAugs.length) {
+			this.changeDetector.detectChanges();
+
 			if (augDecorationSlot) {
 				augDecorationSlot.level = slotAugs[0].levels[slotAugs.length - 1].slotLevel;
+				const decoSlot = this.weaponSlot.decorationSlots.last;
+				if (decoSlot && decoSlot.decoration && augDecorationSlot.level < decoSlot.decoration.level) {
+					this.clearDecorationSlot(decoSlot);
+				}
 			} else {
 				this.weaponSlot.item.slots.push({ level: slotAugs[0].levels[slotAugs.length - 1].slotLevel, augmentation: true });
 			}
 		} else {
-			this.weaponSlot.item.slots = _.reject(this.weaponSlot.item.slots, aug => aug === augDecorationSlot);
-			this.equipmentService.removeDecoration(this.weaponSlot.decorationSlots.last.decoration);
+			if (_.some(this.weaponSlot.item.slots, decorationSlot => decorationSlot.augmentation)) {
+				this.weaponSlot.item.slots = _.reject(this.weaponSlot.item.slots, decorationSlot => decorationSlot === augDecorationSlot);
+				this.equipmentService.removeDecoration(this.weaponSlot.decorationSlots.last.decoration);
+			}
 		}
 	}
 
