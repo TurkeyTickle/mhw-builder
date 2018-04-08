@@ -40,10 +40,10 @@
 	{
 		"id": 3,
 		"name": "Defense Increase",
-		"description": "Increases defense and adds a chance to reduce damage taken each time you receive damage. Stacks with other upgrades.",
+		"description": "Increases defense and adds a chance to reduce damage taken each time you receive damage. Defense stacks with other upgrades, Divine Blessing does not.",
 		"levels": [
 			{
-				"description": "Defense +10",
+				"description": "Defense +10. Grants Divine Blessing Lv 1.",
 				"passiveDefense": 10,
 				"skills": [
 					{
@@ -53,7 +53,7 @@
 				]
 			},
 			{
-				"description": "Defense +20",
+				"description": "Defense +20. Grants Divine Blessing Lv 2.",
 				"passiveDefense": 20,
 				"skills": [
 					{
@@ -63,7 +63,7 @@
 				]
 			},
 			{
-				"description": "Defense +30",
+				"description": "Defense +30. Grants Divine Blessing Lv 3.",
 				"passiveDefense": 30,
 				"skills": [
 					{
@@ -104,11 +104,11 @@
 			},
 			{
 				"description": "Heal on hit +15%",
-				"healOnHitPercent": 20
+				"healOnHitPercent": 15
 			},
 			{
 				"description": "Heal on hit +20%",
-				"healOnHitPercent": 30
+				"healOnHitPercent": 20
 			}
 		]
 	}

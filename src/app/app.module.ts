@@ -24,6 +24,7 @@ import { SlotService } from './services/slot.service';
 import { StatService } from './services/stat.service';
 import { CalculationService } from './services/calculation.service';
 import { BuildService } from './services/build.service';
+import { AugmentationDetailsComponent } from './components/augmentation-details/augmentation-details.component';
 
 @NgModule({
 	declarations: [
@@ -40,7 +41,8 @@ import { BuildService } from './services/build.service';
 		SkillDetailsComponent,
 		CalcDetailsComponent,
 		AugmentationSlotComponent,
-		AugmentationsListComponent
+		AugmentationsListComponent,
+		AugmentationDetailsComponent
 	],
 	imports: [
 		BrowserModule,

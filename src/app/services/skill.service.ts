@@ -17,7 +17,7 @@ export class SkillService {
 	public setBonuses: EquippedSetBonusModel[];
 
 	constructor(
-		private itemsService: DataService
+		private dataService: DataService
 	) {
 	}
 
@@ -52,7 +52,7 @@ export class SkillService {
 				let equippedSkill = _.find(equippedSkills, es => es.id == itemSkill.id);
 
 				if (!equippedSkill) {
-					const skill = this.itemsService.getSkill(itemSkill.id);
+					const skill = this.dataService.getSkill(itemSkill.id);
 					equippedSkill = new EquippedSkillModel();
 					equippedSkill.skill = skill;
 					equippedSkill.id = skill.id;
@@ -82,7 +82,7 @@ export class SkillService {
 				let equippedSkill = _.find(equippedSkills, es => es.id == itemSkill.id);
 
 				if (!equippedSkill) {
-					const skill = this.itemsService.getSkill(itemSkill.id);
+					const skill = this.dataService.getSkill(itemSkill.id);
 					equippedSkill = new EquippedSkillModel();
 					equippedSkill.skill = skill;
 					equippedSkill.id = skill.id;
@@ -117,7 +117,7 @@ export class SkillService {
 		setBonusNames = _.uniq(setBonusNames);
 
 		for (const setBonusName of setBonusNames) {
-			const setBonus = this.itemsService.getSetBonus(setBonusName);
+			const setBonus = this.dataService.getSetBonus(setBonusName);
 			const setLevels = _.filter(setBonus.setLevels, sl => sl.pieces <= setCounts[setBonusName]);
 
 			if (setLevels) {
@@ -125,7 +125,7 @@ export class SkillService {
 					let equippedSkill = _.find(equippedSkills, es => es.id == setLevel.id);
 
 					if (!equippedSkill) {
-						const skill = this.itemsService.getSkill(setLevel.id);
+						const skill = this.dataService.getSkill(setLevel.id);
 						equippedSkill = new EquippedSkillModel();
 						equippedSkill.skill = skill;
 						equippedSkill.id = skill.id;
@@ -163,7 +163,7 @@ export class SkillService {
 
 					// Augmentation skills (as of this writing) do not build on skills from other sources. If the augmentation skill level is higher, it overwrites.
 					if (!equippedSkill) {
-						const skill = this.itemsService.getSkill(skillRef.id);
+						const skill = this.dataService.getSkill(skillRef.id);
 						equippedSkill = new EquippedSkillModel();
 						equippedSkill.skill = skill;
 						equippedSkill.id = skill.id;

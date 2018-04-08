@@ -2,7 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import { AugmentationModel } from '../../models/augmentation.model';
 import { DataService } from '../../services/data.service';
 import { SlotService } from '../../services/slot.service';
-// import { TooltipService } from '../../services/tooltip.service';
+import { TooltipService } from '../../services/tooltip.service';
 
 @Component({
 	selector: 'mhw-builder-augmentations-list',
@@ -14,8 +14,8 @@ export class AugmentationsListComponent implements OnInit {
 
 	constructor(
 		private dataService: DataService,
-		private slotService: SlotService
-		// private tooltipService: TooltipService
+		private slotService: SlotService,
+		private tooltipService: TooltipService
 	) { }
 
 	ngOnInit(): void {
@@ -32,10 +32,10 @@ export class AugmentationsListComponent implements OnInit {
 	}
 
 	setTooltipAugmentation(augmentation: AugmentationModel) {
-		console.log(augmentation);
+		this.tooltipService.setAugmentation(augmentation);
 	}
 
 	clearTooltipAugmentation() {
-
+		this.tooltipService.setAugmentation(null);
 	}
 }

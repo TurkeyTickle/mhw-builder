@@ -6,6 +6,7 @@ import { SkillModel } from '../../models/skill.model';
 import { StatDetailModel } from '../../models/stat-detail.model';
 import { TooltipService } from '../../services/tooltip.service';
 import { AnchorType } from '../../types/anchor.type';
+import { AugmentationModel } from '../../models/augmentation.model';
 
 @Component({
 	selector: 'mhw-builder-tooltip',
@@ -18,6 +19,7 @@ export class TooltipComponent implements OnInit {
 
 	item: ItemModel;
 	decoration: DecorationModel;
+	augmentation: AugmentationModel;
 	equippedSkill: EquippedSkillModel;
 	skill: SkillModel;
 	calc: StatDetailModel;
@@ -29,7 +31,7 @@ export class TooltipComponent implements OnInit {
 	) { }
 
 	ngOnInit() {
-		this.tooltipService.itemSubject.subscribe(item => {
+		this.tooltipService.itemChanged$.subscribe(item => {
 			if (!item) {
 				this.hide();
 			} else {
@@ -39,7 +41,7 @@ export class TooltipComponent implements OnInit {
 			}
 		});
 
-		this.tooltipService.decorationSubject.subscribe(decoration => {
+		this.tooltipService.decorationChanged$.subscribe(decoration => {
 			if (!decoration) {
 				this.hide();
 			} else {
@@ -49,7 +51,17 @@ export class TooltipComponent implements OnInit {
 			}
 		});
 
-		this.tooltipService.equippedSkillSubject.subscribe(equippedSkill => {
+		this.tooltipService.augmentationChanged$.subscribe(augmentation => {
+			if (!augmentation) {
+				this.hide();
+			} else {
+				this.reset();
+				this.augmentation = augmentation;
+				this.show();
+			}
+		});
+
+		this.tooltipService.equippedSkillChanged$.subscribe(equippedSkill => {
 			if (!equippedSkill) {
 				this.hide();
 			} else {
@@ -60,7 +72,7 @@ export class TooltipComponent implements OnInit {
 			}
 		});
 
-		this.tooltipService.skillSubject.subscribe(skill => {
+		this.tooltipService.skillChanged$.subscribe(skill => {
 			if (!skill) {
 				this.hide();
 			} else {
@@ -70,7 +82,7 @@ export class TooltipComponent implements OnInit {
 			}
 		});
 
-		this.tooltipService.calcSubject.subscribe(calc => {
+		this.tooltipService.calcChanged$.subscribe(calc => {
 			if (!calc) {
 				this.hide();
 			} else {
@@ -84,6 +96,7 @@ export class TooltipComponent implements OnInit {
 	reset() {
 		this.item = null;
 		this.decoration = null;
+		this.augmentation = null;
 		this.equippedSkill = null;
 		this.skill = null;
 		this.calc = null;

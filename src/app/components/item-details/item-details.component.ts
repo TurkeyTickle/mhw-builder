@@ -34,7 +34,7 @@ export class ItemDetailsComponent implements OnInit {
 	stats: StatDetailModel[] = [];
 
 	constructor(
-		private itemsService: DataService
+		private dataService: DataService
 	) { }
 
 	ngOnInit() { }
@@ -144,7 +144,7 @@ export class ItemDetailsComponent implements OnInit {
 	}
 
 	loadSkills() {
-		this.skills = this.itemsService.getSkills(this.item.skills);
+		this.skills = this.dataService.getSkills(this.item.skills);
 	}
 
 	getSkillCount(skill: SkillModel): string {
@@ -154,6 +154,6 @@ export class ItemDetailsComponent implements OnInit {
 	}
 
 	getWeaponTypeName(weaponType: WeaponType): string {
-		return this.itemsService.getWeaponTypeName(weaponType);
+		return this.dataService.getWeaponTypeName(weaponType);
 	}
 }

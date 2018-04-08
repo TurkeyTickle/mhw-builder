@@ -45,7 +45,7 @@ export class ItemListComponent implements OnInit {
 
 	constructor(
 		private slotService: SlotService,
-		private itemsService: DataService,
+		private dataService: DataService,
 		private tooltipService: TooltipService
 	) { }
 
@@ -54,11 +54,11 @@ export class ItemListComponent implements OnInit {
 
 	loadItems() {
 		if (this.itemType == ItemType.Decoration) {
-			this.decorations = this.itemsService.getDecorations(this.decorationLevel) as SearchDecorationModel[];
+			this.decorations = this.dataService.getDecorations(this.decorationLevel) as SearchDecorationModel[];
 		} else if (this.itemType == ItemType.Weapon) {
-			this.items = this.itemsService.getWeapons() as SearchItemModel[];
+			this.items = this.dataService.getWeapons() as SearchItemModel[];
 		} else {
-			this.items = this.itemsService.getArmorByType(this.itemType) as SearchItemModel[];
+			this.items = this.dataService.getArmorByType(this.itemType) as SearchItemModel[];
 		}
 
 		this.resetSearchResults();
@@ -72,19 +72,13 @@ export class ItemListComponent implements OnInit {
 					item.visible = item.name.toLowerCase().includes(query);
 					if (item.visible) { continue; }
 
-					const skills = this.itemsService.getSkills(item.skills);
+					const skills = this.dataService.getSkills(item.skills);
 					for (const skill of skills) {
 						item.visible = skill.name.toLowerCase().includes(query);
 						if (item.visible) { break; }
 					}
 
 					if (item.visible) { continue; }
-
-					// if (item.weaponType) {
-					// 	item.visible = this.itemsService.getWeaponTypeName(item.weaponType).toLowerCase().includes(query);
-					// }
-
-					// if (item.visible) { continue; }
 
 					if (item.tags) {
 						item.visible = item.tags.some(tag => tag.includes(query));
@@ -102,7 +96,7 @@ export class ItemListComponent implements OnInit {
 					decoration.visible = decoration.name.toLowerCase().includes(query);
 					if (decoration.visible) { continue; }
 
-					const skills = this.itemsService.getSkills(decoration.skills);
+					const skills = this.dataService.getSkills(decoration.skills);
 					for (const skill of skills) {
 						decoration.visible = skill.name.toLowerCase().includes(query);
 						if (decoration.visible) { break; }

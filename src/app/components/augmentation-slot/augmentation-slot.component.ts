@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { AugmentationModel } from '../../models/augmentation.model';
 import { SlotService } from '../../services/slot.service';
+import { TooltipService } from '../../services/tooltip.service';
 
 @Component({
 	selector: 'mhw-builder-augmentation-slot',
@@ -14,7 +15,8 @@ export class AugmentationSlotComponent implements OnInit {
 	public selected: boolean;
 
 	constructor(
-		private slotService: SlotService
+		private slotService: SlotService,
+		private tooltipService: TooltipService
 	) { }
 
 	ngOnInit(): void { }
@@ -26,6 +28,14 @@ export class AugmentationSlotComponent implements OnInit {
 	clearClicked(event: Event) {
 		event.stopPropagation();
 		this.slotService.clearAugmentationSlot(this);
-		// this.clearTooltipItem();
+		this.clearTooltipAugmentation();
+	}
+
+	setTooltipAugmentation(augmentation: AugmentationModel) {
+		this.tooltipService.setAugmentation(augmentation);
+	}
+
+	clearTooltipAugmentation() {
+		this.tooltipService.setAugmentation(null);
 	}
 }

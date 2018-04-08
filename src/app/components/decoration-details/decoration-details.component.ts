@@ -28,13 +28,13 @@ export class DecorationDetailsComponent implements OnInit {
 	skills: SkillModel[];
 
 	constructor(
-		private itemsService: DataService
+		private dataService: DataService
 	) { }
 
 	ngOnInit() { }
 
 	loadSkills() {
-		this.skills = this.itemsService.getSkills(this.decoration.skills);
+		this.skills = this.dataService.getSkills(this.decoration.skills);
 	}
 
 	getSkillCount(skill: SkillModel): string {
