@@ -102,7 +102,8 @@ export class BuildService {
 								const aug = this.dataService.getAugmentation(augId);
 								if (aug) {
 									this.slotService.selectAugmentationSlot(slot.augmentationSlots.toArray()[i]);
-									this.slotService.selectAugmentation(aug);
+									const newAug = Object.assign({}, aug);
+									this.slotService.selectAugmentation(newAug);
 								}
 							}
 						}
