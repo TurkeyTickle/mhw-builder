@@ -1,37 +1,41 @@
 [
   {
     "name": "Chrome Razor II",
-	"tags": ["ore", "poison", "hidden"],
+    "tags": [
+      "ore",
+      "poison",
+      "hidden"
+    ],
     "rarity": 6,
     "itemType": "Weapon",
     "weaponType": "GreatSword",
-	"baseAttack": 864,
-	"sharpnessLevels": [
-		{
-			"color": "Blue",
-			"value": 60
-		},
-		{
-			"color": "Blue",
-			"value": 70
-		},
-		{
-			"color": "Blue",
-			"value": 80
-		},
-		{
-			"color": "Blue",
-			"value": 90
-		},
-		{
-			"color": "White",
-			"value": 10
-		},
-		{
-			"color": "White",
-			"value": 20
-		}
-	],
+    "baseAttack": 864,
+    "sharpnessLevels": [
+      {
+        "color": "Blue",
+        "value": 60
+      },
+      {
+        "color": "Blue",
+        "value": 70
+      },
+      {
+        "color": "Blue",
+        "value": 80
+      },
+      {
+        "color": "Blue",
+        "value": 90
+      },
+      {
+        "color": "White",
+        "value": 10
+      },
+      {
+        "color": "White",
+        "value": 20
+      }
+    ],
     "baseAffinityPercent": 0,
     "ailment": "Poison",
     "ailmentBaseAttack": 420,
@@ -47,18 +51,21 @@
     "id": 1
   },
   {
-	"name": "Purgation's Atrocity",
-	"tags": ["nergigante", "dragon"],
+    "name": "Purgation's Atrocity",
+    "tags": [
+      "nergigante",
+      "dragon"
+    ],
     "rarity": 8,
     "itemType": "Weapon",
     "weaponType": "GreatSword",
     "baseAttack": 1008,
-	"sharpnessLevels": [
-		{
-			"color": "Blue",
-			"value": 80
-		}
-	],
+    "sharpnessLevels": [
+      {
+        "color": "Blue",
+        "value": 80
+      }
+    ],
     "baseAffinityPercent": 0,
     "element": "Dragon",
     "elementBaseAttack": 150,
@@ -73,37 +80,40 @@
   },
   {
     "name": "Lightning Punisher III",
-	"tags": ["tzitzi-ya-ku", "thunder"],
+    "tags": [
+      "tzitzi-ya-ku",
+      "thunder"
+    ],
     "rarity": 6,
     "itemType": "Weapon",
     "weaponType": "GreatSword",
     "baseAttack": 912,
-	"sharpnessLevels": [
-		{
-			"color": "Blue",
-			"value": 40
-		},
-		{
-			"color": "Blue",
-			"value": 50
-		},
-		{
-			"color": "Blue",
-			"value": 60
-		},
-		{
-			"color": "Blue",
-			"value": 70
-		},
-		{
-			"color": "Blue",
-			"value": 80
-		},
-		{
-			"color": "Blue",
-			"value": 90
-		}
-	],
+    "sharpnessLevels": [
+      {
+        "color": "Blue",
+        "value": 40
+      },
+      {
+        "color": "Blue",
+        "value": 50
+      },
+      {
+        "color": "Blue",
+        "value": 60
+      },
+      {
+        "color": "Blue",
+        "value": 70
+      },
+      {
+        "color": "Blue",
+        "value": 80
+      },
+      {
+        "color": "Blue",
+        "value": 90
+      }
+    ],
     "baseAffinityPercent": 0,
     "element": "Thunder",
     "elementBaseAttack": 240,
@@ -116,37 +126,40 @@
   },
   {
     "name": "Frost Blaze II",
-	"tags": ["legiana", "ice"],
+    "tags": [
+      "legiana",
+      "ice"
+    ],
     "rarity": 6,
     "itemType": "Weapon",
     "weaponType": "GreatSword",
     "baseAttack": 768,
-	"sharpnessLevels": [
-		{
-			"color": "Blue",
-			"value": 50
-		},
-		{
-			"color": "Blue",
-			"value": 60
-		},
-		{
-			"color": "Blue",
-			"value": 70
-		},
-		{
-			"color": "Blue",
-			"value": 80
-		},
-		{
-			"color": "White",
-			"value": 10
-		},
-		{
-			"color": "White",
-			"value": 20
-		}
-	],
+    "sharpnessLevels": [
+      {
+        "color": "Blue",
+        "value": 50
+      },
+      {
+        "color": "Blue",
+        "value": 60
+      },
+      {
+        "color": "Blue",
+        "value": 70
+      },
+      {
+        "color": "Blue",
+        "value": 80
+      },
+      {
+        "color": "White",
+        "value": 10
+      },
+      {
+        "color": "White",
+        "value": 20
+      }
+    ],
     "baseAffinityPercent": 0,
     "element": "Ice",
     "elementBaseAttack": 390,
@@ -159,37 +172,42 @@
   },
   {
     "name": "Jagras Hacker III",
-	"tags": ["great", "jagras", "water", "hidden"],
+    "tags": [
+      "great",
+      "jagras",
+      "water",
+      "hidden"
+    ],
     "rarity": 6,
     "itemType": "Weapon",
     "weaponType": "GreatSword",
     "baseAttack": 912,
-	"sharpnessLevels": [
-		{
-			"color": "Blue",
-			"value": 30
-		},
-		{
-			"color": "Blue",
-			"value": 40
-		},
-		{
-			"color": "Blue",
-			"value": 50
-		},
-		{
-			"color": "Blue",
-			"value": 60
-		},
-		{
-			"color": "Blue",
-			"value": 70
-		},
-		{
-			"color": "Blue",
-			"value": 80
-		}
-	],
+    "sharpnessLevels": [
+      {
+        "color": "Blue",
+        "value": 30
+      },
+      {
+        "color": "Blue",
+        "value": 40
+      },
+      {
+        "color": "Blue",
+        "value": 50
+      },
+      {
+        "color": "Blue",
+        "value": 60
+      },
+      {
+        "color": "Blue",
+        "value": 70
+      },
+      {
+        "color": "Blue",
+        "value": 80
+      }
+    ],
     "baseAffinityPercent": 0,
     "element": "Water",
     "elementBaseAttack": 300,
@@ -206,37 +224,41 @@
   },
   {
     "name": "Malady's Kiss III",
-	"tags": ["great", "girros", "paralysis"],
+    "tags": [
+      "great",
+      "girros",
+      "paralysis"
+    ],
     "rarity": 6,
     "itemType": "Weapon",
     "weaponType": "GreatSword",
     "baseAttack": 768,
-	"sharpnessLevels": [
-		{
-			"color": "Blue",
-			"value": 50
-		},
-		{
-			"color": "Blue",
-			"value": 60
-		},
-		{
-			"color": "Blue",
-			"value": 70
-		},
-		{
-			"color": "White",
-			"value": 10
-		},
-		{
-			"color": "White",
-			"value": 20
-		},
-		{
-			"color": "White",
-			"value": 30
-		}
-	],
+    "sharpnessLevels": [
+      {
+        "color": "Blue",
+        "value": 50
+      },
+      {
+        "color": "Blue",
+        "value": 60
+      },
+      {
+        "color": "Blue",
+        "value": 70
+      },
+      {
+        "color": "White",
+        "value": 10
+      },
+      {
+        "color": "White",
+        "value": 20
+      },
+      {
+        "color": "White",
+        "value": 30
+      }
+    ],
     "baseAffinityPercent": 20,
     "ailment": "Paralysis",
     "ailmentBaseAttack": 450,
@@ -245,37 +267,40 @@
   },
   {
     "name": "Lava Blaze II",
-	"tags": ["lavasioth", "fire"],
+    "tags": [
+      "lavasioth",
+      "fire"
+    ],
     "rarity": 7,
     "itemType": "Weapon",
     "weaponType": "GreatSword",
     "baseAttack": 864,
-	"sharpnessLevels": [
-		{
-			"color": "Blue",
-			"value": 40
-		},
-		{
-			"color": "Blue",
-			"value": 50
-		},
-		{
-			"color": "Blue",
-			"value": 60
-		},
-		{
-			"color": "White",
-			"value": 10
-		},
-		{
-			"color": "White",
-			"value": 20
-		},
-		{
-			"color": "White",
-			"value": 30
-		}
-	],
+    "sharpnessLevels": [
+      {
+        "color": "Blue",
+        "value": 40
+      },
+      {
+        "color": "Blue",
+        "value": 50
+      },
+      {
+        "color": "Blue",
+        "value": 60
+      },
+      {
+        "color": "White",
+        "value": 10
+      },
+      {
+        "color": "White",
+        "value": 20
+      },
+      {
+        "color": "White",
+        "value": 30
+      }
+    ],
     "baseAffinityPercent": 0,
     "element": "Fire",
     "elementBaseAttack": 330,
@@ -291,37 +316,40 @@
   },
   {
     "name": "Datura Blaze II",
-	"tags": ["pukei-pukei", "poison"],
+    "tags": [
+      "pukei-pukei",
+      "poison"
+    ],
     "rarity": 7,
     "itemType": "Weapon",
     "weaponType": "GreatSword",
     "baseAttack": 816,
-	"sharpnessLevels": [
-		{
-			"color": "Blue",
-			"value": 30
-		},
-		{
-			"color": "Blue",
-			"value": 40
-		},
-		{
-			"color": "Blue",
-			"value": 50
-		},
-		{
-			"color": "Blue",
-			"value": 60
-		},
-		{
-			"color": "Blue",
-			"value": 70
-		},
-		{
-			"color": "Blue",
-			"value": 80
-		}
-	],
+    "sharpnessLevels": [
+      {
+        "color": "Blue",
+        "value": 30
+      },
+      {
+        "color": "Blue",
+        "value": 40
+      },
+      {
+        "color": "Blue",
+        "value": 50
+      },
+      {
+        "color": "Blue",
+        "value": 60
+      },
+      {
+        "color": "Blue",
+        "value": 70
+      },
+      {
+        "color": "Blue",
+        "value": 80
+      }
+    ],
     "baseAffinityPercent": 0,
     "ailment": "Poison",
     "ailmentBaseAttack": 540,
@@ -337,37 +365,39 @@
   },
   {
     "name": "Rathalos Glinsword",
-	"tags": ["fire"],
+    "tags": [
+      "fire"
+    ],
     "rarity": 8,
     "itemType": "Weapon",
     "weaponType": "GreatSword",
     "baseAttack": 912,
-	"sharpnessLevels": [
-		{
-			"color": "Blue",
-			"value": 40
-		},
-		{
-			"color": "Blue",
-			"value": 50
-		},
-		{
-			"color": "Blue",
-			"value": 60
-		},
-		{
-			"color": "White",
-			"value": 10
-		},
-		{
-			"color": "White",
-			"value": 20
-		},
-		{
-			"color": "White",
-			"value": 30
-		}
-	],
+    "sharpnessLevels": [
+      {
+        "color": "Blue",
+        "value": 40
+      },
+      {
+        "color": "Blue",
+        "value": 50
+      },
+      {
+        "color": "Blue",
+        "value": 60
+      },
+      {
+        "color": "White",
+        "value": 10
+      },
+      {
+        "color": "White",
+        "value": 20
+      },
+      {
+        "color": "White",
+        "value": 30
+      }
+    ],
     "baseAffinityPercent": 15,
     "element": "Fire",
     "elementBaseAttack": 240,
@@ -380,37 +410,41 @@
   },
   {
     "name": "Giant Jawblade II",
-	"tags": ["bone", "ice", "hidden"],
+    "tags": [
+      "bone",
+      "ice",
+      "hidden"
+    ],
     "rarity": 6,
     "itemType": "Weapon",
     "weaponType": "GreatSword",
     "baseAttack": 912,
-	"sharpnessLevels": [
-		{
-			"color": "Blue",
-			"value": 30
-		},
-		{
-			"color": "Blue",
-			"value": 40
-		},
-		{
-			"color": "Blue",
-			"value": 50
-		},
-		{
-			"color": "Blue",
-			"value": 60
-		},
-		{
-			"color": "Blue",
-			"value": 70
-		},
-		{
-			"color": "Blue",
-			"value": 80
-		}
-	],
+    "sharpnessLevels": [
+      {
+        "color": "Blue",
+        "value": 30
+      },
+      {
+        "color": "Blue",
+        "value": 40
+      },
+      {
+        "color": "Blue",
+        "value": 50
+      },
+      {
+        "color": "Blue",
+        "value": 60
+      },
+      {
+        "color": "Blue",
+        "value": 70
+      },
+      {
+        "color": "Blue",
+        "value": 80
+      }
+    ],
     "baseAffinityPercent": 15,
     "element": "Ice",
     "elementBaseAttack": 300,
@@ -425,37 +459,41 @@
   },
   {
     "name": "Leviathan's Fury",
-	"tags": ["vaal", "hazak", "dragon"],
+    "tags": [
+      "vaal",
+      "hazak",
+      "dragon"
+    ],
     "rarity": 8,
     "itemType": "Weapon",
     "weaponType": "GreatSword",
     "baseAttack": 960,
-	"sharpnessLevels": [
-		{
-			"color": "Blue",
-			"value": 40
-		},
-		{
-			"color": "Blue",
-			"value": 50
-		},
-		{
-			"color": "White",
-			"value": 10
-		},
-		{
-			"color": "White",
-			"value": 20
-		},
-		{
-			"color": "White",
-			"value": 30
-		},
-		{
-			"color": "White",
-			"value": 40
-		}
-	],
+    "sharpnessLevels": [
+      {
+        "color": "Blue",
+        "value": 40
+      },
+      {
+        "color": "Blue",
+        "value": 50
+      },
+      {
+        "color": "White",
+        "value": 10
+      },
+      {
+        "color": "White",
+        "value": 20
+      },
+      {
+        "color": "White",
+        "value": 30
+      },
+      {
+        "color": "White",
+        "value": 40
+      }
+    ],
     "baseAffinityPercent": 0,
     "element": "Dragon",
     "elementBaseAttack": 300,
@@ -470,37 +508,40 @@
   },
   {
     "name": "Gnashing Flammenzahn",
-	"tags": ["anjanath", "fire"],
+    "tags": [
+      "anjanath",
+      "fire"
+    ],
     "rarity": 7,
     "itemType": "Weapon",
     "weaponType": "GreatSword",
     "baseAttack": 1008,
-	"sharpnessLevels": [
-		{
-			"color": "Blue",
-			"value": 20
-		},
-		{
-			"color": "Blue",
-			"value": 30
-		},
-		{
-			"color": "Blue",
-			"value": 40
-		},
-		{
-			"color": "Blue",
-			"value": 50
-		},
-		{
-			"color": "Blue",
-			"value": 60
-		},
-		{
-			"color": "Blue",
-			"value": 70
-		}
-	],
+    "sharpnessLevels": [
+      {
+        "color": "Blue",
+        "value": 20
+      },
+      {
+        "color": "Blue",
+        "value": 30
+      },
+      {
+        "color": "Blue",
+        "value": 40
+      },
+      {
+        "color": "Blue",
+        "value": 50
+      },
+      {
+        "color": "Blue",
+        "value": 60
+      },
+      {
+        "color": "Blue",
+        "value": 70
+      }
+    ],
     "baseAffinityPercent": -30,
     "element": "Fire",
     "elementBaseAttack": 480,
@@ -509,37 +550,39 @@
   },
   {
     "name": "Water Golum III",
-	"tags": ["water"],
+    "tags": [
+      "water"
+    ],
     "rarity": 6,
     "itemType": "Weapon",
     "weaponType": "GreatSword",
     "baseAttack": 912,
-	"sharpnessLevels": [
-		{
-			"color": "Blue",
-			"value": 20
-		},
-		{
-			"color": "Blue",
-			"value": 30
-		},
-		{
-			"color": "White",
-			"value": 10
-		},
-		{
-			"color": "White",
-			"value": 20
-		},
-		{
-			"color": "White",
-			"value": 30
-		},
-		{
-			"color": "White",
-			"value": 40
-		}
-	],
+    "sharpnessLevels": [
+      {
+        "color": "Blue",
+        "value": 20
+      },
+      {
+        "color": "Blue",
+        "value": 30
+      },
+      {
+        "color": "White",
+        "value": 10
+      },
+      {
+        "color": "White",
+        "value": 20
+      },
+      {
+        "color": "White",
+        "value": 30
+      },
+      {
+        "color": "White",
+        "value": 40
+      }
+    ],
     "baseAffinityPercent": 0,
     "element": "Water",
     "elementBaseAttack": 300,
@@ -552,37 +595,41 @@
   },
   {
     "name": "Barroth Shredder III",
-	"tags": ["barroth", "paralysis", "hidden"],
+    "tags": [
+      "barroth",
+      "paralysis",
+      "hidden"
+    ],
     "rarity": 6,
     "itemType": "Weapon",
     "weaponType": "GreatSword",
     "baseAttack": 960,
-	"sharpnessLevels": [
-		{
-			"color": "Blue",
-			"value": 30
-		},
-		{
-			"color": "Blue",
-			"value": 40
-		},
-		{
-			"color": "Blue",
-			"value": 50
-		},
-		{
-			"color": "Blue",
-			"value": 60
-		},
-		{
-			"color": "Blue",
-			"value": 70
-		},
-		{
-			"color": "Blue",
-			"value": 80
-		}
-	],
+    "sharpnessLevels": [
+      {
+        "color": "Blue",
+        "value": 30
+      },
+      {
+        "color": "Blue",
+        "value": 40
+      },
+      {
+        "color": "Blue",
+        "value": 50
+      },
+      {
+        "color": "Blue",
+        "value": 60
+      },
+      {
+        "color": "Blue",
+        "value": 70
+      },
+      {
+        "color": "Blue",
+        "value": 80
+      }
+    ],
     "baseAffinityPercent": -20,
     "ailment": "Paralysis",
     "ailmentBaseAttack": 390,
@@ -600,37 +647,40 @@
   },
   {
     "name": "Radobaan Slab III",
-	"tags": ["radobaan", "sleep"],
+    "tags": [
+      "radobaan",
+      "sleep"
+    ],
     "rarity": 6,
     "itemType": "Weapon",
     "weaponType": "GreatSword",
     "baseAttack": 912,
-	"sharpnessLevels": [
-		{
-			"color": "Blue",
-			"value": 30
-		},
-		{
-			"color": "Blue",
-			"value": 40
-		},
-		{
-			"color": "Blue",
-			"value": 50
-		},
-		{
-			"color": "Blue",
-			"value": 60
-		},
-		{
-			"color": "Blue",
-			"value": 70
-		},
-		{
-			"color": "Blue",
-			"value": 80
-		}
-	],
+    "sharpnessLevels": [
+      {
+        "color": "Blue",
+        "value": 30
+      },
+      {
+        "color": "Blue",
+        "value": 40
+      },
+      {
+        "color": "Blue",
+        "value": 50
+      },
+      {
+        "color": "Blue",
+        "value": 60
+      },
+      {
+        "color": "Blue",
+        "value": 70
+      },
+      {
+        "color": "Blue",
+        "value": 80
+      }
+    ],
     "baseAffinityPercent": 0,
     "ailment": "Sleep",
     "ailmentBaseAttack": 270,
@@ -640,37 +690,39 @@
   },
   {
     "name": "Dragonbone Cleaver III",
-	"tags": ["dragon"],
+    "tags": [
+      "dragon"
+    ],
     "rarity": 6,
     "itemType": "Weapon",
     "weaponType": "GreatSword",
     "baseAttack": 768,
-	"sharpnessLevels": [
-		{
-			"color": "Blue",
-			"value": 40
-		},
-		{
-			"color": "Blue",
-			"value": 50
-		},
-		{
-			"color": "Blue",
-			"value": 60
-		},
-		{
-			"color": "Blue",
-			"value": 70
-		},
-		{
-			"color": "White",
-			"value": 10
-		},
-		{
-			"color": "White",
-			"value": 20
-		}
-	],
+    "sharpnessLevels": [
+      {
+        "color": "Blue",
+        "value": 40
+      },
+      {
+        "color": "Blue",
+        "value": 50
+      },
+      {
+        "color": "Blue",
+        "value": 60
+      },
+      {
+        "color": "Blue",
+        "value": 70
+      },
+      {
+        "color": "White",
+        "value": 10
+      },
+      {
+        "color": "White",
+        "value": 20
+      }
+    ],
     "baseAffinityPercent": 0,
     "element": "Dragon",
     "elementBaseAttack": 420,
@@ -687,37 +739,40 @@
   },
   {
     "name": "King Thundersword",
-	"tags": ["kirin", "thunder"],
+    "tags": [
+      "kirin",
+      "thunder"
+    ],
     "rarity": 8,
     "itemType": "Weapon",
     "weaponType": "GreatSword",
     "baseAttack": 768,
-	"sharpnessLevels": [
-		{
-			"color": "Blue",
-			"value": 50
-		},
-		{
-			"color": "Blue",
-			"value": 60
-		},
-		{
-			"color": "Blue",
-			"value": 70
-		},
-		{
-			"color": "Blue",
-			"value": 80
-		},
-		{
-			"color": "Blue",
-			"value": 90
-		},
-		{
-			"color": "Blue",
-			"value": 100
-		}
-	],
+    "sharpnessLevels": [
+      {
+        "color": "Blue",
+        "value": 50
+      },
+      {
+        "color": "Blue",
+        "value": 60
+      },
+      {
+        "color": "Blue",
+        "value": 70
+      },
+      {
+        "color": "Blue",
+        "value": 80
+      },
+      {
+        "color": "Blue",
+        "value": 90
+      },
+      {
+        "color": "Blue",
+        "value": 100
+      }
+    ],
     "baseAffinityPercent": 0,
     "element": "Thunder",
     "elementBaseAttack": 540,
@@ -726,37 +781,41 @@
   },
   {
     "name": "Magda Potestas II",
-	"tags": ["zorah", "magdaros", "blast"],
+    "tags": [
+      "zorah",
+      "magdaros",
+      "blast"
+    ],
     "rarity": 7,
     "itemType": "Weapon",
     "weaponType": "GreatSword",
     "baseAttack": 1056,
-	"sharpnessLevels": [
-		{
-			"color": "Green",
-			"value": 70
-		},
-		{
-			"color": "Green",
-			"value": 80
-		},
-		{
-			"color": "Green",
-			"value": 90
-		},
-		{
-			"color": "Blue",
-			"value": 10
-		},
-		{
-			"color": "Blue",
-			"value": 20
-		},
-		{
-			"color": "Blue",
-			"value": 30
-		}
-	],
+    "sharpnessLevels": [
+      {
+        "color": "Green",
+        "value": 70
+      },
+      {
+        "color": "Green",
+        "value": 80
+      },
+      {
+        "color": "Green",
+        "value": 90
+      },
+      {
+        "color": "Blue",
+        "value": 10
+      },
+      {
+        "color": "Blue",
+        "value": 20
+      },
+      {
+        "color": "Blue",
+        "value": 30
+      }
+    ],
     "baseAffinityPercent": -20,
     "ailment": "Blast",
     "ailmentBaseAttack": 420,
@@ -770,37 +829,42 @@
   },
   {
     "name": "Daora's Decimator",
-	"tags": ["blacksteel", "kushala", "daora", "ice"],
+    "tags": [
+      "blacksteel",
+      "kushala",
+      "daora",
+      "ice"
+    ],
     "rarity": 8,
     "itemType": "Weapon",
     "weaponType": "GreatSword",
     "baseAttack": 864,
-	"sharpnessLevels": [
-		{
-			"color": "Blue",
-			"value": 40
-		},
-		{
-			"color": "Blue",
-			"value": 50
-		},
-		{
-			"color": "Blue",
-			"value": 60
-		},
-		{
-			"color": "Blue",
-			"value": 70
-		},
-		{
-			"color": "White",
-			"value": 10
-		},
-		{
-			"color": "White",
-			"value": 20
-		}
-	],
+    "sharpnessLevels": [
+      {
+        "color": "Blue",
+        "value": 40
+      },
+      {
+        "color": "Blue",
+        "value": 50
+      },
+      {
+        "color": "Blue",
+        "value": 60
+      },
+      {
+        "color": "Blue",
+        "value": 70
+      },
+      {
+        "color": "White",
+        "value": 10
+      },
+      {
+        "color": "White",
+        "value": 20
+      }
+    ],
     "baseAffinityPercent": 10,
     "element": "Ice",
     "elementBaseAttack": 270,
@@ -814,37 +878,40 @@
   },
   {
     "name": "Xeno Maliq",
-	"tags": ["xeno'jiva", "dragon"],
+    "tags": [
+      "xeno'jiva",
+      "dragon"
+    ],
     "rarity": 8,
     "itemType": "Weapon",
     "weaponType": "GreatSword",
     "baseAttack": 816,
-	"sharpnessLevels": [
-		{
-			"color": "White",
-			"value": 10
-		},
-		{
-			"color": "White",
-			"value": 20
-		},
-		{
-			"color": "White",
-			"value": 30
-		},
-		{
-			"color": "White",
-			"value": 40
-		},
-		{
-			"color": "White",
-			"value": 50
-		},
-		{
-			"color": "White",
-			"value": 60
-		}
-	],
+    "sharpnessLevels": [
+      {
+        "color": "White",
+        "value": 10
+      },
+      {
+        "color": "White",
+        "value": 20
+      },
+      {
+        "color": "White",
+        "value": 30
+      },
+      {
+        "color": "White",
+        "value": 40
+      },
+      {
+        "color": "White",
+        "value": 50
+      },
+      {
+        "color": "White",
+        "value": 60
+      }
+    ],
     "baseAffinityPercent": 15,
     "element": "Dragon",
     "elementBaseAttack": 210,
@@ -862,37 +929,41 @@
   },
   {
     "name": "Great Wyvern Jawblade",
-	"tags": ["workshop", "blast", "hidden"],
+    "tags": [
+      "workshop",
+      "blast",
+      "hidden"
+    ],
     "rarity": 8,
     "itemType": "Weapon",
     "weaponType": "GreatSword",
     "baseAttack": 960,
-	"sharpnessLevels": [
-		{
-			"color": "Blue",
-			"value": 30
-		},
-		{
-			"color": "Blue",
-			"value": 40
-		},
-		{
-			"color": "Blue",
-			"value": 50
-		},
-		{
-			"color": "Blue",
-			"value": 60
-		},
-		{
-			"color": "Blue",
-			"value": 70
-		},
-		{
-			"color": "Blue",
-			"value": 80
-		}
-	],
+    "sharpnessLevels": [
+      {
+        "color": "Blue",
+        "value": 30
+      },
+      {
+        "color": "Blue",
+        "value": 40
+      },
+      {
+        "color": "Blue",
+        "value": 50
+      },
+      {
+        "color": "Blue",
+        "value": 60
+      },
+      {
+        "color": "Blue",
+        "value": 70
+      },
+      {
+        "color": "Blue",
+        "value": 80
+      }
+    ],
     "baseAffinityPercent": 0,
     "ailment": "Blast",
     "ailmentBaseAttack": 330,
@@ -907,42 +978,71 @@
   },
   {
     "name": "Anguish",
-	"tags": ["deviljho", "dragon"],
+    "tags": [
+      "deviljho",
+      "dragon"
+    ],
     "rarity": 7,
     "itemType": "Weapon",
     "weaponType": "GreatSword",
     "baseAttack": 1104,
-	"sharpnessLevels": [
-		{
-			"color": "Blue",
-			"value": 30
-		},
-		{
-			"color": "White",
-			"value": 10
-		},
-		{
-			"color": "White",
-			"value": 20
-		},
-		{
-			"color": "White",
-			"value": 30
-		},
-		{
-			"color": "White",
-			"value": 40
-		},
-		{
-			"color": "White",
-			"value": 50
-		}
-	],
+    "sharpnessLevels": [
+      {
+        "color": "Blue",
+        "value": 30
+      },
+      {
+        "color": "White",
+        "value": 10
+      },
+      {
+        "color": "White",
+        "value": 20
+      },
+      {
+        "color": "White",
+        "value": 30
+      },
+      {
+        "color": "White",
+        "value": 40
+      },
+      {
+        "color": "White",
+        "value": 50
+      }
+    ],
     "baseAffinityPercent": -30,
     "element": "Dragon",
     "elementBaseAttack": 240,
     "elderseal": "High",
     "id": 274,
     "slots": []
+  },
+  {
+    "name": "Wyvern Ignition \"Impact\"",
+    "rarity": 7,
+    "itemType": "Weapon",
+    "weaponType": "GreatSword",
+    "baseAttack": 1008,
+    "sharpnessLevels": [
+      {
+        "color": "White",
+        "value": 20
+      }
+    ],
+    "baseAffinityPercent": -15,
+    "element": "Fire",
+    "elementBaseAttack": 510,
+    "elementHidden": true,
+    "slots": [
+      {
+        "level": 1
+      },
+      {
+        "level": 1
+      }
+    ],
+    "id": 289
   }
 ]
