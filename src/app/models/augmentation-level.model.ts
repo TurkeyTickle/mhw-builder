@@ -5,6 +5,7 @@ export class AugmentationLevelModel {
 	passiveAttack: number;
 	passiveAffinity: number;
 	passiveDefense: number;
+	healOnHitPercent: number;
 	slotLevel: number;
 	skills: SkillReferenceModel[];
 }

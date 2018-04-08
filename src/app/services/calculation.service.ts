@@ -394,6 +394,13 @@ export class CalculationService {
 				value: stats.elderseal
 			});
 		}
+
+		if (stats.healOnHitPercent) {
+			this.attackCalcs.push({
+				name: 'Heal on Hit',
+				value: stats.healOnHitPercent
+			});
+		}
 	}
 
 	private buildDefenseCalcs(stats: StatsModel) {

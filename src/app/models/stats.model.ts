@@ -81,6 +81,8 @@ export class StatsModel {
 	passiveIceResist: number;
 	passiveDragonResist: number;
 
+	healOnHitPercent: number;
+
 	constructor() {
 		this.totalAttack = 0;
 		this.attack = 0;
@@ -156,5 +158,7 @@ export class StatsModel {
 		this.passiveThunderResist = 0;
 		this.passiveIceResist = 0;
 		this.passiveDragonResist = 0;
+
+		this.healOnHitPercent = 0;
 	}
 }

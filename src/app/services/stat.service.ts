@@ -126,6 +126,7 @@ export class StatService {
 				if (level.passiveAttack) { this.stats.passiveAttack += level.passiveAttack; }
 				if (level.passiveAffinity) { this.stats.passiveAffinity += level.passiveAffinity; }
 				if (level.passiveDefense) { this.stats.passiveDefense += level.passiveDefense; }
+				if (level.healOnHitPercent) { this.stats.healOnHitPercent += level.healOnHitPercent; }
 			}
 		}
 	}
