@@ -1246,5 +1246,23 @@
       }
     ],
     "id": 338
+  },
+  {
+    "name": "Brigade Vambraces",
+    "itemType": "Hands",
+    "baseDefense": 28,
+    "fireResist": 1,
+    "waterResist": 0,
+    "thunderResist": 2,
+    "iceResist": 0,
+    "dragonResist": 2,
+    "skills": [
+      {
+        "id": "heavyArtillery",
+        "level": 1
+      }
+    ],
+    "slots": [],
+    "id": 349
   }
 ]

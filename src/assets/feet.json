@@ -1241,5 +1241,23 @@
       }
     ],
     "id": 340
+  },
+  {
+    "name": "Brigade Boots",
+    "itemType": "Feet",
+    "baseDefense": 28,
+    "fireResist": 1,
+    "waterResist": 0,
+    "thunderResist": 2,
+    "iceResist": 0,
+    "dragonResist": 2,
+    "skills": [
+      {
+        "id": "scholar",
+        "level": 1
+      }
+    ],
+    "slots": [],
+    "id": 351
   }
 ]

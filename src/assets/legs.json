@@ -1259,5 +1259,23 @@
       }
     ],
     "id": 339
+  },
+  {
+    "name": "Brigade Coil",
+    "itemType": "Legs",
+    "baseDefense": 28,
+    "fireResist": 1,
+    "waterResist": 0,
+    "thunderResist": 2,
+    "iceResist": 0,
+    "dragonResist": 2,
+    "skills": [
+      {
+        "id": "geologist",
+        "level": 1
+      }
+    ],
+    "slots": [],
+    "id": 350
   }
 ]

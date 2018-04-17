@@ -1330,5 +1330,23 @@
       }
     ],
     "id": 336
+  },
+  {
+    "name": "Brigade Lobos",
+    "itemType": "Head",
+    "baseDefense": 28,
+    "fireResist": 1,
+    "waterResist": 0,
+    "thunderResist": 2,
+    "iceResist": 0,
+    "dragonResist": 2,
+    "skills": [
+      {
+        "id": "recoverySpeed",
+        "level": 1
+      }
+    ],
+    "slots": [],
+    "id": 347
   }
 ]
