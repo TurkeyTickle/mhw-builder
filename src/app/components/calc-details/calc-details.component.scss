@@ -3,7 +3,7 @@
 @import "~sass/common";
 
 h3, h4, h5 {
-	margin: 0px;
+	margin: 0;
 }
 
 .template {
@@ -13,8 +13,8 @@ h3, h4, h5 {
 
 ul {
 	list-style: none;
-	padding: 0px;
-	margin: 0px;
+	padding: 0;
+	margin: 0;
 
 	li {
 		.value {
