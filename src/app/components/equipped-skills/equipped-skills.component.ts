@@ -4,6 +4,7 @@ import { EquippedSkillModel } from '../../models/equipped-skill.model';
 import { SkillService } from '../../services/skill.service';
 import { TooltipService } from '../../services/tooltip.service';
 import { AnchorType } from '../../types/anchor.type';
+import { PointerType } from '../../types/pointer.type';
 
 @Component({
 	selector: 'mhw-builder-equipped-skills',
@@ -49,12 +50,14 @@ export class EquippedSkillsComponent implements OnInit {
 		return 'white';
 	}
 
-	skillMouseEnter(equippedSkill: EquippedSkillModel) {
-		this.tooltipService.anchorPoint = AnchorType.TopRight;
-		this.tooltipService.setEquippedSkill(equippedSkill);
+	showSkillDetails(event: PointerEvent, equippedSkill: EquippedSkillModel) {
+		if (event.pointerType == PointerType.Mouse) {
+			this.tooltipService.anchorPoint = AnchorType.TopRight;
+			this.tooltipService.setEquippedSkill(equippedSkill);
+		}
 	}
 
-	skillMouseLeave() {
+	clearSkillDetails() {
 		this.tooltipService.anchorPoint = AnchorType.TopLeft;
 		this.tooltipService.setEquippedSkill(null);
 	}

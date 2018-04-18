@@ -2,6 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import { AugmentationModel } from '../../models/augmentation.model';
 import { SlotService } from '../../services/slot.service';
 import { TooltipService } from '../../services/tooltip.service';
+import { PointerType } from '../../types/pointer.type';
 
 @Component({
 	selector: 'mhw-builder-augmentation-slot',
@@ -31,8 +32,10 @@ export class AugmentationSlotComponent implements OnInit {
 		this.clearTooltipAugmentation();
 	}
 
-	setTooltipAugmentation(augmentation: AugmentationModel) {
-		this.tooltipService.setAugmentation(augmentation);
+	setTooltipAugmentation(event: PointerEvent, augmentation: AugmentationModel) {
+		if (event.pointerType == PointerType.Mouse) {
+			this.tooltipService.setAugmentation(augmentation);
+		}
 	}
 
 	clearTooltipAugmentation() {

@@ -2,7 +2,7 @@
 	<h4>Attack</h4>
 	<hr>
 	<ul class="striped">
-		<li *ngFor="let calc of attackCalcs" (mouseenter)="showCalcDetails(calc)" (mouseleave)="clearCalcDetails()">
+		<li *ngFor="let calc of attackCalcs" (pointerenter)="showCalcDetails($event, calc)" (pointerleave)="clearCalcDetails()">
 			<span class="name">{{calc.name}}</span>
 			<span class="value">{{calc.value}}</span>
 			<span *ngIf="calc.calculationTemplate || calc.info?.length" class="detail-icon" [ngClass]="calc.color"><i class="far fa-question-circle"></i></span>
@@ -14,7 +14,7 @@
 	<h4>Defense</h4>
 	<hr>
 	<ul class="striped">
-		<li *ngFor="let calc of defenseCalcs" (mouseenter)="showCalcDetails(calc)" (mouseleave)="clearCalcDetails()">
+		<li *ngFor="let calc of defenseCalcs" (pointerenter)="showCalcDetails($event, calc)" (pointerleave)="clearCalcDetails()">
 			<span class="name">{{calc.name}}</span>
 			<span class="value">{{calc.value}}</span>
 			<span *ngIf="calc.calculationTemplate || calc.info?.length" class="detail-icon" [ngClass]="calc.color"><i class="far fa-question-circle"></i></span>

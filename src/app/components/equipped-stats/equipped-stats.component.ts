@@ -3,6 +3,7 @@ import { StatDetailModel } from '../../models/stat-detail.model';
 import { CalculationService } from '../../services/calculation.service';
 import { TooltipService } from '../../services/tooltip.service';
 import { AnchorType } from '../../types/anchor.type';
+import { PointerType } from '../../types/pointer.type';
 
 @Component({
 	selector: 'mhw-builder-equipped-stats',
@@ -30,10 +31,12 @@ export class EquippedStatsComponent implements OnInit {
 		});
 	}
 
-	showCalcDetails(calc: StatDetailModel) {
-		if (calc.calculationTemplate || (calc.info && calc.info.length)) {
-			this.tooltipService.anchorPoint = AnchorType.TopRight;
-			this.tooltipService.setCalc(calc);
+	showCalcDetails(event: PointerEvent, calc: StatDetailModel) {
+		if (event.pointerType == PointerType.Mouse) {
+			if (calc.calculationTemplate || (calc.info && calc.info.length)) {
+				this.tooltipService.anchorPoint = AnchorType.TopRight;
+				this.tooltipService.setCalc(calc);
+			}
 		}
 	}
 

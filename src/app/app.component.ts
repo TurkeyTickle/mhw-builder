@@ -10,6 +10,7 @@ import { AugmentationSlotComponent } from './components/augmentation-slot/augmen
 import { SlotService } from './services/slot.service';
 import { BuildService } from './services/build.service';
 import { ModalComponent } from './components/modal/modal.component';
+import { PointerType } from './types/pointer.type';
 
 @Component({
 	selector: 'mhw-builder-root',
@@ -86,9 +87,10 @@ export class AppComponent implements OnInit, AfterViewInit {
 		setTimeout(() => this.buildService.loadBuild(location.hash), 100);
 	}
 
-	moveTooltip(event: MouseEvent) {
-		event.preventDefault();
-		this.tooltipComponent.move(event.clientX, event.clientY);
+	moveTooltip(event: PointerEvent) {
+		if (event.pointerType == PointerType.Mouse) {
+			this.tooltipComponent.move(event.clientX, event.clientY);
+		}
 	}
 
 	openModal() {

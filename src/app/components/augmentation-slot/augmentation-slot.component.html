@@ -1,4 +1,4 @@
-<div class="container" (click)="clicked()" [class.selected]="selected" (mouseenter)="setTooltipAugmentation(augmentation)" (mouseleave)="clearTooltipAugmentation()">
+<div class="container" (click)="clicked()" [class.selected]="selected" (pointerenter)="setTooltipAugmentation($event, augmentation)" (pointerleave)="clearTooltipAugmentation($event)">
 	<div class="slot-icon"><img [src]="'assets/images/augment-icon.png'"></div>
 	<div class="selected-augmentation">{{augmentation?.name}}</div>
 

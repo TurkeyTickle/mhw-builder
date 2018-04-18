@@ -59,7 +59,7 @@
 	<div class="items-container">
 		<ul>
 			<div *ngFor="let item of items">
-				<li [hidden]="!item.visible" (click)="selectItem(item)" (mouseenter)="setTooltipItem($event, item)" (mouseleave)="clearTooltipItem($event)">
+				<li [hidden]="!item.visible" (click)="selectItem(item)" (pointerenter)="setTooltipItem($event, item)" (pointerleave)="clearTooltipItem()">
 					<div class="info-container">
 						<div class="name-container">
 							{{item.name}}
@@ -85,8 +85,8 @@
 			<div *ngFor="let decoration of decorations">
 				<li [hidden]="!decoration.visible"
 					(click)="selectDecoration(decoration)"
-					(mouseenter)="setTooltipDecoration($event, decoration)"
-					(mouseleave)="clearTooltipDecoration($event)">{{decoration.name}}</li>
+					(pointerenter)="setTooltipDecoration($event, decoration)"
+					(pointerleave)="clearTooltipDecoration()">{{decoration.name}}</li>
 			</div>
 		</ul>
 	</div>

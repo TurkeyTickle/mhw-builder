@@ -3,6 +3,7 @@ import { AugmentationModel } from '../../models/augmentation.model';
 import { DataService } from '../../services/data.service';
 import { SlotService } from '../../services/slot.service';
 import { TooltipService } from '../../services/tooltip.service';
+import { PointerType } from '../../types/pointer.type';
 
 @Component({
 	selector: 'mhw-builder-augmentations-list',
@@ -31,8 +32,10 @@ export class AugmentationsListComponent implements OnInit {
 		this.slotService.selectAugmentation(newAugmentation);
 	}
 
-	setTooltipAugmentation(augmentation: AugmentationModel) {
-		this.tooltipService.setAugmentation(augmentation);
+	setTooltipAugmentation(event: PointerEvent, augmentation: AugmentationModel) {
+		if (event.pointerType == PointerType.Mouse) {
+			this.tooltipService.setAugmentation(augmentation);
+		}
 	}
 
 	clearTooltipAugmentation() {

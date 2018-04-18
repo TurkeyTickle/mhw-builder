@@ -2,7 +2,7 @@
 	<div class="items-container">
 		<ul>
 			<div *ngFor="let aug of augmentations">
-				<li (click)="selectAugmentation(aug)" (mouseenter)="setTooltipAugmentation(aug)" (mouseleave)="clearTooltipAugmentation()">
+				<li (click)="selectAugmentation(aug)" (pointerenter)="setTooltipAugmentation($event, aug)" (pointerleave)="clearTooltipAugmentation()">
 					<div class="info-container">
 						<div class="name-container">
 							{{aug.name}}

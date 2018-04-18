@@ -9,6 +9,7 @@ import { TooltipService } from '../../services/tooltip.service';
 import { ItemType } from '../../types/item.type';
 import { WeaponType } from '../../types/weapon.type';
 import { SlotService } from '../../services/slot.service';
+import { PointerType } from '../../types/pointer.type';
 
 @Component({
 	selector: 'mhw-builder-item-list',
@@ -139,23 +140,23 @@ export class ItemListComponent implements OnInit {
 		this.slotService.selectDecoration(newDecoration);
 	}
 
-	setTooltipItem(event: MouseEvent, item: ItemModel) {
-		event.preventDefault();
-		this.tooltipService.setItem(item);
+	setTooltipItem(event: PointerEvent, item: ItemModel) {
+		if (event.pointerType == PointerType.Mouse) {
+			this.tooltipService.setItem(item);
+		}
 	}
 
-	clearTooltipItem(event: MouseEvent) {
-		event.preventDefault();
+	clearTooltipItem() {
 		this.tooltipService.setItem(null);
 	}
 
-	setTooltipDecoration(event: MouseEvent, decoration: DecorationModel) {
-		event.preventDefault();
-		this.tooltipService.setDecoration(decoration);
+	setTooltipDecoration(event: PointerEvent, decoration: DecorationModel) {
+		if (event.pointerType == PointerType.Mouse) {
+			this.tooltipService.setDecoration(decoration);
+		}
 	}
 
-	clearTooltipDecoration(event: MouseEvent) {
-		event.preventDefault();
+	clearTooltipDecoration() {
 		this.tooltipService.setDecoration(null);
 	}
 

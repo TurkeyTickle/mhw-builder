@@ -2,6 +2,7 @@ import { Component, Input, OnInit, } from '@angular/core';
 import { DecorationModel } from '../../models/decoration.model';
 import { TooltipService } from '../../services/tooltip.service';
 import { SlotService } from '../../services/slot.service';
+import { PointerType } from '../../types/pointer.type';
 
 @Component({
 	selector: 'mhw-builder-decoration-slot',
@@ -26,7 +27,7 @@ export class DecorationSlotComponent implements OnInit {
 
 	clearClicked(event: Event) {
 		event.stopPropagation();
-		this.clearTooltipItem(null);
+		this.clearTooltipItem();
 		this.slotService.clearDecorationSlot(this);
 	}
 
@@ -34,13 +35,13 @@ export class DecorationSlotComponent implements OnInit {
 		this.slotService.selectDecorationSlot(this);
 	}
 
-	setTooltipItem(event?: MouseEvent) {
-		if (event) { event.preventDefault(); }
-		this.tooltipService.setDecoration(this.decoration);
+	setTooltipItem(event: PointerEvent) {
+		if (event.pointerType == PointerType.Mouse) {
+			this.tooltipService.setDecoration(this.decoration);
+		}
 	}
 
-	clearTooltipItem(event: MouseEvent) {
-		event.preventDefault();
+	clearTooltipItem() {
 		this.tooltipService.setDecoration(null);
 	}
 }
