@@ -3,6 +3,7 @@ import { DecorationModel } from '../../models/decoration.model';
 import { TooltipService } from '../../services/tooltip.service';
 import { SlotService } from '../../services/slot.service';
 import { PointerType } from '../../types/pointer.type';
+import { ItemType } from '../../types/item.type';
 
 @Component({
 	selector: 'mhw-builder-decoration-slot',
@@ -10,6 +11,7 @@ import { PointerType } from '../../types/pointer.type';
 	styleUrls: ['./decoration-slot.component.scss'],
 })
 export class DecorationSlotComponent implements OnInit {
+	slotName = ItemType.Decoration;
 
 	@Input() level: number;
 	@Input() itemId: number;

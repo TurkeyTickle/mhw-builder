@@ -1,4 +1,4 @@
-import { Component, OnInit, HostBinding, HostListener } from '@angular/core';
+import { Component, OnInit, HostBinding, HostListener, Input } from '@angular/core';
 
 @Component({
 	selector: 'mhw-builder-modal',
@@ -7,7 +7,7 @@ import { Component, OnInit, HostBinding, HostListener } from '@angular/core';
 })
 export class ModalComponent implements OnInit {
 
-	public title: string;
+	@Input() title: string;
 
 	@HostBinding('class.open') isOpen: boolean;
 

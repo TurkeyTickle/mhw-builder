@@ -33,6 +33,7 @@ export class AppComponent implements OnInit, AfterViewInit {
 	@ViewChild('charmSlot') charmSlot: ItemSlotComponent;
 
 	@ViewChild('modal') modal: ModalComponent;
+	modalTitle: string;
 
 	selectedEquipmentSlot: ItemSlotComponent;
 	selectedDecorationSlot: DecorationSlotComponent;
@@ -65,21 +66,27 @@ export class AppComponent implements OnInit, AfterViewInit {
 
 		this.slotService.anySlotSelected$.subscribe(slot => {
 			if (this.modal) {
-				this.modal.title = 'Items';
+				this.modal.title = `Select ${slot.slotName}`;
 				this.modal.isOpen = slot != null;
 			}
 		});
 
 		this.slotService.itemSelected$.subscribe(item => {
-			if (this.modal) { this.modal.isOpen = !item; }
+			if (this.modal) {
+				this.modal.isOpen = !item;
+			}
 		});
 
 		this.slotService.decorationSelected$.subscribe(decoration => {
-			if (this.modal) { this.modal.isOpen = !decoration; }
+			if (this.modal) {
+				this.modal.isOpen = !decoration;
+			}
 		});
 
 		this.slotService.augmentationSelected$.subscribe(augmentation => {
-			if (this.modal) { this.modal.isOpen = !augmentation; }
+			if (this.modal) {
+				this.modal.isOpen = !augmentation;
+			}
 		});
 	}
 
