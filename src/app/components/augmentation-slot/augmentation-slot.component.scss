@@ -1,45 +1,77 @@
 $slotHeight: 30px;
 
 .container {
-	background-color: rgb(50,50,50);
+	display: grid;
+	grid-template-columns: 40px auto 36px;
 	height: $slotHeight;
-	padding: 4px;
-	cursor: pointer;
-	display: flex;
 	font-size: 14px;
+	cursor: pointer;
 	border-radius: 3px;
-	margin-bottom: 4px;
+	background-color: rgb(50,50,50);
+	padding: 4px;
 
 	.slot-icon {
 		line-height: $slotHeight;
 		width: 40px;
-		flex-grow: 0;
-		flex-shrink: 0;
-		margin-left: 6px;
-		margin-top: 3px;
+		margin-top: 4px;
 	}
 
 	.selected-augmentation {
-		flex-grow: 1;
 		line-height: $slotHeight;
-		text-overflow: ellipsis;
 		overflow: hidden;
+		white-space: nowrap;
+		text-overflow: ellipsis;
 	}
-	
-	.clear-button {
-		flex-grow: 0;
-		flex-shrink: 0;
-		height: $slotHeight;
-		width: 34px;
-	}
-}
 
-:host {
-	flex-grow: 1;
-	flex-basis: 0;
-	padding: 0 2px 0 2px;
+	.clear-button {
+		height: $slotHeight;
+	}
 }
 
 .selected {
 	background-color: #525252;
 }
+
+// .container {
+// 	background-color: rgb(50,50,50);
+// 	height: $slotHeight;
+// 	padding: 4px;
+// 	cursor: pointer;
+// 	display: flex;
+// 	font-size: 14px;
+// 	border-radius: 3px;
+// 	margin-bottom: 4px;
+
+// 	.slot-icon {
+// 		line-height: $slotHeight;
+// 		width: 40px;
+// 		flex-grow: 0;
+// 		flex-shrink: 0;
+// 		margin-left: 6px;
+// 		margin-top: 3px;
+// 	}
+
+// 	.selected-augmentation {
+// 		flex-grow: 1;
+// 		line-height: $slotHeight;
+// 		text-overflow: ellipsis;
+// 		overflow: hidden;
+// 	}
+	
+// 	.clear-button {
+// 		flex-grow: 0;
+// 		flex-shrink: 0;
+// 		height: $slotHeight;
+// 		width: 34px;
+// 	}
+// }
+
+// :host {
+// 	flex-grow: 1;
+// 	flex-basis: 0;
+// 	padding: 0 2px 0 2px;
+// }
+
+// .selected {
+// 	background-color: #525252;
+// }

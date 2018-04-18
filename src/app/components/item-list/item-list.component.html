@@ -8,7 +8,6 @@
 	</div>
 
 	<div class="filter-container" *ngIf="itemType == 'Weapon'">
-		<div class="button-row">
 			<button class="weapon-filter" [class.selected]="weaponTypeFilter == 'GreatSword'" (click)="weaponFilterClicked('GreatSword')">
 				<img src="assets/images/weapons/greatsword-icon.png">
 			</button>
@@ -30,8 +29,6 @@
 			<button class="weapon-filter" [class.selected]="weaponTypeFilter == 'Lance'" (click)="weaponFilterClicked('Lance')">
 				<img src="assets/images/weapons/lance-icon.png">
 			</button>
-		</div>
-		<div class="button-row">
 			<button class="weapon-filter" [class.selected]="weaponTypeFilter == 'Gunlance'" (click)="weaponFilterClicked('Gunlance')">
 				<img src="assets/images/weapons/gunlance-icon.png">
 			</button>
@@ -53,7 +50,6 @@
 			<button class="weapon-filter" [class.selected]="weaponTypeFilter == 'HeavyBowgun'" (click)="weaponFilterClicked('HeavyBowgun')">
 				<img src="assets/images/weapons/heavy-bowgun-icon.png">
 			</button>
-		</div>
 	</div>
 
 	<div class="items-container">

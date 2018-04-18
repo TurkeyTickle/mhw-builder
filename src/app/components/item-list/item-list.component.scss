@@ -43,28 +43,21 @@ $listItemHeight: 32px;
 
 .filter-container {
 	grid-row: 2;
-	flex-grow: 0;
 
-	.button-row {
-		width: 100%;
-		display: flex;
-		flex-wrap: nowrap;
-		justify-content: space-evenly;
-		height: $filterHeight + 6;
-		
-		.selected {
-			background: #389b38;
-			border-radius: 3px;
-		}
+	display: grid;
+	grid-template-columns: repeat(14, 1fr);
 
-		.weapon-filter {
-			padding: 4px;
-			height: 48px;
-			flex-grow: 0;
-		
-			img {
-				height: $filterHeight;
-			}
+	.selected > img {
+		background: #389b38;
+		border-radius: 3px;
+	}
+
+	.weapon-filter {
+		padding: 4px;
+		height: 48px;
+	
+		img {
+			height: $filterHeight;
 		}
 	}
 }
@@ -125,3 +118,8 @@ $listItemHeight: 32px;
 	}
 }
 
+@media only screen and (max-width: 716px) {
+	.filter-container {
+		grid-template-columns: repeat(7, 1fr);
+	}
+}

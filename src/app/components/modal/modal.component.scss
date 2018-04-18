@@ -70,4 +70,8 @@ $containerVerticalMargin: 40px;
 		margin: auto;
 		height: calc(100% - #{$appMargin} * 2.5);
 	}
+
+	.background {
+		background-color: #1e1e1e;
+	}
 }
