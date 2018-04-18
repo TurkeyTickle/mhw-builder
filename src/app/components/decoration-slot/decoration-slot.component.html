@@ -1,4 +1,4 @@
-<div class="container" (click)="clicked()" (mouseenter)="setTooltipItem()" (mouseleave)="clearTooltipItem()" [class.selected]="selected">
+<div class="container" (click)="clicked()" (mouseenter)="setTooltipItem($event)" (mouseleave)="clearTooltipItem($event)" [class.selected]="selected">
 	<div class="slot-icon"><img [src]="'assets/images/slot-' + level + '-icon.png'"></div>
 	<div class="selected-decoration">{{decoration?.name}}</div>
 

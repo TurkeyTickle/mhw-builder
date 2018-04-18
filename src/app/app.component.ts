@@ -9,6 +9,7 @@ import { ItemType } from './types/item.type';
 import { AugmentationSlotComponent } from './components/augmentation-slot/augmentation-slot.component';
 import { SlotService } from './services/slot.service';
 import { BuildService } from './services/build.service';
+import { ModalComponent } from './components/modal/modal.component';
 
 @Component({
 	selector: 'mhw-builder-root',
@@ -29,6 +30,8 @@ export class AppComponent implements OnInit, AfterViewInit {
 	@ViewChild('legsSlot') legsSlot: ItemSlotComponent;
 	@ViewChild('feetSlot') feetSlot: ItemSlotComponent;
 	@ViewChild('charmSlot') charmSlot: ItemSlotComponent;
+
+	@ViewChild('modal') modal: ModalComponent;
 
 	selectedEquipmentSlot: ItemSlotComponent;
 	selectedDecorationSlot: DecorationSlotComponent;
@@ -58,6 +61,25 @@ export class AppComponent implements OnInit, AfterViewInit {
 		this.buildService.buildIdUpdated$.subscribe(buildId => {
 			this.location.replaceState(this.location.path(false), '#' + buildId);
 		});
+
+		this.slotService.anySlotSelected$.subscribe(slot => {
+			if (this.modal) {
+				this.modal.title = 'Items';
+				this.modal.isOpen = slot != null;
+			}
+		});
+
+		this.slotService.itemSelected$.subscribe(item => {
+			if (this.modal) { this.modal.isOpen = !item; }
+		});
+
+		this.slotService.decorationSelected$.subscribe(decoration => {
+			if (this.modal) { this.modal.isOpen = !decoration; }
+		});
+
+		this.slotService.augmentationSelected$.subscribe(augmentation => {
+			if (this.modal) { this.modal.isOpen = !augmentation; }
+		});
 	}
 
 	ngAfterViewInit() {
@@ -65,6 +87,15 @@ export class AppComponent implements OnInit, AfterViewInit {
 	}
 
 	moveTooltip(event: MouseEvent) {
+		event.preventDefault();
 		this.tooltipComponent.move(event.clientX, event.clientY);
+	}
+
+	openModal() {
+		if (this.modal.isOpen) {
+			this.modal.close();
+		} else {
+			this.modal.open();
+		}
 	}
 }

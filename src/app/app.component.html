@@ -38,12 +38,6 @@
 		</div>
 	</div>
 
-	<div class="item-list-container">
-		<mhw-builder-item-list [hidden]="!slotService.selectedItemSlot" [itemType]="slotService.selectedItemSlot?.slotName"></mhw-builder-item-list>
-		<mhw-builder-item-list [hidden]="!slotService.selectedDecorationSlot" itemType="Decoration" [decorationLevel]="slotService.selectedDecorationSlot?.level"></mhw-builder-item-list>
-		<mhw-builder-augmentations-list [hidden]="!slotService.selectedAugmentationSlot"></mhw-builder-augmentations-list>
-	</div>
-
 	<div class="stats-container">
 		<div class="equip-info-container">
 			<mhw-builder-equipped-stats></mhw-builder-equipped-stats>
@@ -53,6 +47,12 @@
 	</div>
 
 	<mhw-builder-tooltip></mhw-builder-tooltip>
+
+	<mhw-builder-modal #modal>
+		<mhw-builder-item-list [hidden]="!slotService.selectedItemSlot" [itemType]="slotService.selectedItemSlot?.slotName"></mhw-builder-item-list>
+		<mhw-builder-item-list [hidden]="!slotService.selectedDecorationSlot" itemType="Decoration" [decorationLevel]="slotService.selectedDecorationSlot?.level"></mhw-builder-item-list>
+		<mhw-builder-augmentations-list [hidden]="!slotService.selectedAugmentationSlot"></mhw-builder-augmentations-list>
+	</mhw-builder-modal>
 
 	<div class="signature">
 		Made with 💋 by <a href="https://twitter.com/turkeytickle" target="_blank">TurkeyTickle</a>

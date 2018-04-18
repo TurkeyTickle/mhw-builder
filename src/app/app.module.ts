@@ -25,6 +25,7 @@ import { StatService } from './services/stat.service';
 import { CalculationService } from './services/calculation.service';
 import { BuildService } from './services/build.service';
 import { AugmentationDetailsComponent } from './components/augmentation-details/augmentation-details.component';
+import { ModalComponent } from './components/modal/modal.component';
 
 @NgModule({
 	declarations: [
@@ -42,7 +43,8 @@ import { AugmentationDetailsComponent } from './components/augmentation-details/
 		CalcDetailsComponent,
 		AugmentationSlotComponent,
 		AugmentationsListComponent,
-		AugmentationDetailsComponent
+		AugmentationDetailsComponent,
+		ModalComponent
 	],
 	imports: [
 		BrowserModule,

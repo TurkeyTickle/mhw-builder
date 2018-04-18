@@ -26,7 +26,7 @@ export class DecorationSlotComponent implements OnInit {
 
 	clearClicked(event: Event) {
 		event.stopPropagation();
-		this.clearTooltipItem();
+		this.clearTooltipItem(null);
 		this.slotService.clearDecorationSlot(this);
 	}
 
@@ -34,11 +34,13 @@ export class DecorationSlotComponent implements OnInit {
 		this.slotService.selectDecorationSlot(this);
 	}
 
-	setTooltipItem() {
+	setTooltipItem(event?: MouseEvent) {
+		if (event) { event.preventDefault(); }
 		this.tooltipService.setDecoration(this.decoration);
 	}
 
-	clearTooltipItem() {
+	clearTooltipItem(event: MouseEvent) {
+		event.preventDefault();
 		this.tooltipService.setDecoration(null);
 	}
 }

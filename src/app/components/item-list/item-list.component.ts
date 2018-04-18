@@ -139,19 +139,23 @@ export class ItemListComponent implements OnInit {
 		this.slotService.selectDecoration(newDecoration);
 	}
 
-	setTooltipItem(item: ItemModel) {
+	setTooltipItem(event: MouseEvent, item: ItemModel) {
+		event.preventDefault();
 		this.tooltipService.setItem(item);
 	}
 
-	clearTooltipItem() {
+	clearTooltipItem(event: MouseEvent) {
+		event.preventDefault();
 		this.tooltipService.setItem(null);
 	}
 
-	setTooltipDecoration(decoration: DecorationModel) {
+	setTooltipDecoration(event: MouseEvent, decoration: DecorationModel) {
+		event.preventDefault();
 		this.tooltipService.setDecoration(decoration);
 	}
 
-	clearTooltipDecoration() {
+	clearTooltipDecoration(event: MouseEvent) {
+		event.preventDefault();
 		this.tooltipService.setDecoration(null);
 	}
 

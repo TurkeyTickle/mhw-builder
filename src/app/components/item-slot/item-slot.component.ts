@@ -53,14 +53,16 @@ export class ItemSlotComponent implements OnInit {
 	equipmentClearClicked(event: Event) {
 		event.stopPropagation();
 		this.slotService.clearItemSlot(this);
-		this.clearTooltipItem();
+		this.clearTooltipItem(null);
 	}
 
-	setTooltipItem() {
+	setTooltipItem(event?: MouseEvent) {
+		if (event) { event.preventDefault(); }
 		this.tooltipService.setItem(this.item);
 	}
 
-	clearTooltipItem() {
+	clearTooltipItem(event: MouseEvent) {
+		event.preventDefault();
 		this.tooltipService.setItem(null);
 	}
 }
