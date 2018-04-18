@@ -12,23 +12,43 @@
 	grid-gap: 16px;
 
 	margin: $appMargin;
+
+	overflow: hidden;
 }
 
 .equipment-container {
 	grid-column: 1 / 3;
 	grid-row: 1;
+
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	right: 0;
+	left: 0;
+
+	overflow-y: scroll;
+	overflow-x: hidden;
 }
 
 .stats-container {
 	grid-column: 3;
 	grid-row: 1;
+
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	right: 0;
+	left: 0;
+
+	overflow-y: scroll;
+	overflow-x: hidden;
 }
 
 .signature {
 	font-size: 12px;
 	position: fixed;
 	bottom: 2px;
-	left: 4px;
+	left: 8px;
 	color:#969696;
 
 	a, a:visited {
