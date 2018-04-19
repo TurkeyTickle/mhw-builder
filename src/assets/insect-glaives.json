@@ -908,13 +908,16 @@
     "name": "Taroth Glaive \"Water\"",
     "tags": [
       "kulve",
-      "taroth"
+      "taroth",
+      "water",
+      "hidden"
     ],
     "rarity": 8,
     "itemType": "Weapon",
     "weaponType": "InsectGlaive",
     "baseAttack": 620,
     "baseDefense": 20,
+    "sharpnessDataNeeded": true,
     "sharpnessLevels": [
       {
         "color": "Blue",
@@ -931,5 +934,36 @@
       }
     ],
     "id": 298
+  },
+  {
+    "name": "Taroth Glaive \"Paralysis\"",
+    "tags": [
+      "kulve",
+      "taroth",
+      "paralysis",
+      "hidden"
+    ],
+    "rarity": 8,
+    "itemType": "Weapon",
+    "weaponType": "InsectGlaive",
+    "baseAttack": 620,
+    "baseDefense": 30,
+    "sharpnessDataNeeded": true,
+    "sharpnessLevels": [
+      {
+        "color": "Blue",
+        "value": 60
+      }
+    ],
+    "baseAffinityPercent": 0,
+    "ailment": "Paralysis",
+    "ailmentBaseAttack": 300,
+    "ailmentHidden": true,
+    "slots": [
+      {
+        "level": 3
+      }
+    ],
+    "id": 306
   }
 ]

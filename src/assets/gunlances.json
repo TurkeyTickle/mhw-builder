@@ -1,37 +1,41 @@
 [
   {
     "name": "Chrome Gunlance II",
-	"tags": ["ore", "blast", "hidden"],
-	"rarity": 6,
+    "tags": [
+      "ore",
+      "blast",
+      "hidden"
+    ],
+    "rarity": 6,
     "itemType": "Weapon",
     "weaponType": "Gunlance",
     "baseAttack": 414,
-	"sharpnessLevels": [
-		{
-			"color": "Blue",
-			"value": 60
-		},
-		{
-			"color": "Blue",
-			"value": 70
-		},
-		{
-			"color": "Blue",
-			"value": 80
-		},
-		{
-			"color": "Blue",
-			"value": 90
-		},
-		{
-			"color": "White",
-			"value": 10
-		},
-		{
-			"color": "White",
-			"value": 20
-		}
-	],
+    "sharpnessLevels": [
+      {
+        "color": "Blue",
+        "value": 60
+      },
+      {
+        "color": "Blue",
+        "value": 70
+      },
+      {
+        "color": "Blue",
+        "value": 80
+      },
+      {
+        "color": "Blue",
+        "value": 90
+      },
+      {
+        "color": "White",
+        "value": 10
+      },
+      {
+        "color": "White",
+        "value": 20
+      }
+    ],
     "baseAffinityPercent": 0,
     "ailment": "Blast",
     "ailmentBaseAttack": 270,
@@ -48,17 +52,20 @@
   },
   {
     "name": "Eradication Flame",
-	"tags": ["nergigante", "dragon"],
-	"rarity": 8,
+    "tags": [
+      "nergigante",
+      "dragon"
+    ],
+    "rarity": 8,
     "itemType": "Weapon",
     "weaponType": "Gunlance",
     "baseAttack": 483,
-	"sharpnessLevels": [
-		{
-			"color": "Blue",
-			"value": 80
-		}
-	],
+    "sharpnessLevels": [
+      {
+        "color": "Blue",
+        "value": 80
+      }
+    ],
     "baseAffinityPercent": 0,
     "element": "Dragon",
     "elementBaseAttack": 150,
@@ -73,37 +80,40 @@
   },
   {
     "name": "Mythic Kadachi Striker",
-	"tags": ["tobi-kadachi", "thunder"],
-	"rarity": 7,
+    "tags": [
+      "tobi-kadachi",
+      "thunder"
+    ],
+    "rarity": 7,
     "itemType": "Weapon",
     "weaponType": "Gunlance",
     "baseAttack": 414,
-	"sharpnessLevels": [
-		{
-			"color": "Blue",
-			"value": 30
-		},
-		{
-			"color": "Blue",
-			"value": 40
-		},
-		{
-			"color": "Blue",
-			"value": 50
-		},
-		{
-			"color": "White",
-			"value": 10
-		},
-		{
-			"color": "White",
-			"value": 20
-		},
-		{
-			"color": "White",
-			"value": 30
-		}
-	],
+    "sharpnessLevels": [
+      {
+        "color": "Blue",
+        "value": 30
+      },
+      {
+        "color": "Blue",
+        "value": 40
+      },
+      {
+        "color": "Blue",
+        "value": 50
+      },
+      {
+        "color": "White",
+        "value": 10
+      },
+      {
+        "color": "White",
+        "value": 20
+      },
+      {
+        "color": "White",
+        "value": 30
+      }
+    ],
     "baseAffinityPercent": 20,
     "element": "Thunder",
     "elementBaseAttack": 270,
@@ -116,37 +126,40 @@
   },
   {
     "name": "Blue Chariot",
-	"tags": ["rathalos", "fire"],
-	"rarity": 8,
+    "tags": [
+      "rathalos",
+      "fire"
+    ],
+    "rarity": 8,
     "itemType": "Weapon",
     "weaponType": "Gunlance",
     "baseAttack": 437,
-	"sharpnessLevels": [
-		{
-			"color": "Blue",
-			"value": 40
-		},
-		{
-			"color": "Blue",
-			"value": 50
-		},
-		{
-			"color": "White",
-			"value": 10
-		},
-		{
-			"color": "White",
-			"value": 20
-		},
-		{
-			"color": "White",
-			"value": 30
-		},
-		{
-			"color": "White",
-			"value": 40
-		}
-	],
+    "sharpnessLevels": [
+      {
+        "color": "Blue",
+        "value": 40
+      },
+      {
+        "color": "Blue",
+        "value": 50
+      },
+      {
+        "color": "White",
+        "value": 10
+      },
+      {
+        "color": "White",
+        "value": 20
+      },
+      {
+        "color": "White",
+        "value": 30
+      },
+      {
+        "color": "White",
+        "value": 40
+      }
+    ],
     "baseAffinityPercent": 20,
     "element": "Fire",
     "elementBaseAttack": 240,
@@ -159,37 +172,40 @@
   },
   {
     "name": "Royal Burst",
-	"tags": ["rathian", "poison"],
-	"rarity": 6,
+    "tags": [
+      "rathian",
+      "poison"
+    ],
+    "rarity": 6,
     "itemType": "Weapon",
     "weaponType": "Gunlance",
     "baseAttack": 437,
-	"sharpnessLevels": [
-		{
-			"color": "Blue",
-			"value": 50
-		},
-		{
-			"color": "Blue",
-			"value": 60
-		},
-		{
-			"color": "Blue",
-			"value": 70
-		},
-		{
-			"color": "White",
-			"value": 10
-		},
-		{
-			"color": "White",
-			"value": 20
-		},
-		{
-			"color": "White",
-			"value": 30
-		}
-	],
+    "sharpnessLevels": [
+      {
+        "color": "Blue",
+        "value": 50
+      },
+      {
+        "color": "Blue",
+        "value": 60
+      },
+      {
+        "color": "Blue",
+        "value": 70
+      },
+      {
+        "color": "White",
+        "value": 10
+      },
+      {
+        "color": "White",
+        "value": 20
+      },
+      {
+        "color": "White",
+        "value": 30
+      }
+    ],
     "baseAffinityPercent": 15,
     "ailment": "Poison",
     "ailmentBaseAttack": 330,
@@ -202,37 +218,40 @@
   },
   {
     "name": "Jyura Buster III",
-	"tags": ["jyuratodus", "water"],
-	"rarity": 6,
+    "tags": [
+      "jyuratodus",
+      "water"
+    ],
+    "rarity": 6,
     "itemType": "Weapon",
     "weaponType": "Gunlance",
     "baseAttack": 437,
-	"sharpnessLevels": [
-		{
-			"color": "Blue",
-			"value": 20
-		},
-		{
-			"color": "Blue",
-			"value": 30
-		},
-		{
-			"color": "Blue",
-			"value": 40
-		},
-		{
-			"color": "Blue",
-			"value": 50
-		},
-		{
-			"color": "White",
-			"value": 10
-		},
-		{
-			"color": "White",
-			"value": 20
-		}
-	],
+    "sharpnessLevels": [
+      {
+        "color": "Blue",
+        "value": 20
+      },
+      {
+        "color": "Blue",
+        "value": 30
+      },
+      {
+        "color": "Blue",
+        "value": 40
+      },
+      {
+        "color": "Blue",
+        "value": 50
+      },
+      {
+        "color": "White",
+        "value": 10
+      },
+      {
+        "color": "White",
+        "value": 20
+      }
+    ],
     "baseAffinityPercent": 0,
     "element": "Water",
     "elementBaseAttack": 360,
@@ -245,37 +264,40 @@
   },
   {
     "name": "Legiana Cannon II",
-	"tags": ["legiana", "ice"],
-	"rarity": 7,
+    "tags": [
+      "legiana",
+      "ice"
+    ],
+    "rarity": 7,
     "itemType": "Weapon",
     "weaponType": "Gunlance",
     "baseAttack": 368,
-	"sharpnessLevels": [
-		{
-			"color": "White",
-			"value": 10
-		},
-		{
-			"color": "White",
-			"value": 20
-		},
-		{
-			"color": "White",
-			"value": 30
-		},
-		{
-			"color": "White",
-			"value": 40
-		},
-		{
-			"color": "White",
-			"value": 50
-		},
-		{
-			"color": "White",
-			"value": 60
-		}
-	],
+    "sharpnessLevels": [
+      {
+        "color": "White",
+        "value": 10
+      },
+      {
+        "color": "White",
+        "value": 20
+      },
+      {
+        "color": "White",
+        "value": 30
+      },
+      {
+        "color": "White",
+        "value": 40
+      },
+      {
+        "color": "White",
+        "value": 50
+      },
+      {
+        "color": "White",
+        "value": 60
+      }
+    ],
     "baseAffinityPercent": 0,
     "element": "Ice",
     "elementBaseAttack": 360,
@@ -284,37 +306,41 @@
   },
   {
     "name": "Great Bone Gunlance II",
-	"tags": ["bone", "thunder", "hidden"],
-	"rarity": 6,
+    "tags": [
+      "bone",
+      "thunder",
+      "hidden"
+    ],
+    "rarity": 6,
     "itemType": "Weapon",
     "weaponType": "Gunlance",
     "baseAttack": 437,
-	"sharpnessLevels": [
-		{
-			"color": "Blue",
-			"value": 40
-		},
-		{
-			"color": "Blue",
-			"value": 50
-		},
-		{
-			"color": "Blue",
-			"value": 60
-		},
-		{
-			"color": "Blue",
-			"value": 70
-		},
-		{
-			"color": "Blue",
-			"value": 80
-		},
-		{
-			"color": "Blue",
-			"value": 90
-		}
-	],
+    "sharpnessLevels": [
+      {
+        "color": "Blue",
+        "value": 40
+      },
+      {
+        "color": "Blue",
+        "value": 50
+      },
+      {
+        "color": "Blue",
+        "value": 60
+      },
+      {
+        "color": "Blue",
+        "value": 70
+      },
+      {
+        "color": "Blue",
+        "value": 80
+      },
+      {
+        "color": "Blue",
+        "value": 90
+      }
+    ],
     "baseAffinityPercent": 0,
     "element": "Thunder",
     "elementBaseAttack": 270,
@@ -329,37 +355,40 @@
   },
   {
     "name": "Bazel Buster II",
-	"tags": ["bazelgeuse", "blast"],
-	"rarity": 7,
+    "tags": [
+      "bazelgeuse",
+      "blast"
+    ],
+    "rarity": 7,
     "itemType": "Weapon",
     "weaponType": "Gunlance",
     "baseAttack": 460,
-	"sharpnessLevels": [
-		{
-			"color": "Blue",
-			"value": 30
-		},
-		{
-			"color": "White",
-			"value": 10
-		},
-		{
-			"color": "White",
-			"value": 20
-		},
-		{
-			"color": "White",
-			"value": 30
-		},
-		{
-			"color": "White",
-			"value": 40
-		},
-		{
-			"color": "White",
-			"value": 50
-		}
-	],
+    "sharpnessLevels": [
+      {
+        "color": "Blue",
+        "value": 30
+      },
+      {
+        "color": "White",
+        "value": 10
+      },
+      {
+        "color": "White",
+        "value": 20
+      },
+      {
+        "color": "White",
+        "value": 30
+      },
+      {
+        "color": "White",
+        "value": 40
+      },
+      {
+        "color": "White",
+        "value": 50
+      }
+    ],
     "baseAffinityPercent": -10,
     "ailment": "Blast",
     "ailmentBaseAttack": 210,
@@ -372,37 +401,42 @@
   },
   {
     "name": "Glutton Gunlance III",
-	"tags": ["great", "jagras", "sleep", "hidden"],
-	"rarity": 6,
+    "tags": [
+      "great",
+      "jagras",
+      "sleep",
+      "hidden"
+    ],
+    "rarity": 6,
     "itemType": "Weapon",
     "weaponType": "Gunlance",
     "baseAttack": 437,
-	"sharpnessLevels": [
-		{
-			"color": "Blue",
-			"value": 50
-		},
-		{
-			"color": "Blue",
-			"value": 60
-		},
-		{
-			"color": "Blue",
-			"value": 70
-		},
-		{
-			"color": "Blue",
-			"value": 80
-		},
-		{
-			"color": "Blue",
-			"value": 90
-		},
-		{
-			"color": "Blue",
-			"value": 100
-		}
-	],
+    "sharpnessLevels": [
+      {
+        "color": "Blue",
+        "value": 50
+      },
+      {
+        "color": "Blue",
+        "value": 60
+      },
+      {
+        "color": "Blue",
+        "value": 70
+      },
+      {
+        "color": "Blue",
+        "value": 80
+      },
+      {
+        "color": "Blue",
+        "value": 90
+      },
+      {
+        "color": "Blue",
+        "value": 100
+      }
+    ],
     "baseAffinityPercent": 0,
     "ailment": "Sleep",
     "ailmentBaseAttack": 300,
@@ -419,37 +453,41 @@
   },
   {
     "name": "Deathfang Gunlance III",
-	"tags": ["great", "girros", "paralysis"],
-	"rarity": 6,
+    "tags": [
+      "great",
+      "girros",
+      "paralysis"
+    ],
+    "rarity": 6,
     "itemType": "Weapon",
     "weaponType": "Gunlance",
     "baseAttack": 368,
-	"sharpnessLevels": [
-		{
-			"color": "Blue",
-			"value": 40
-		},
-		{
-			"color": "Blue",
-			"value": 50
-		},
-		{
-			"color": "Blue",
-			"value": 60
-		},
-		{
-			"color": "White",
-			"value": 10
-		},
-		{
-			"color": "White",
-			"value": 20
-		},
-		{
-			"color": "White",
-			"value": 30
-		}
-	],
+    "sharpnessLevels": [
+      {
+        "color": "Blue",
+        "value": 40
+      },
+      {
+        "color": "Blue",
+        "value": 50
+      },
+      {
+        "color": "Blue",
+        "value": 60
+      },
+      {
+        "color": "White",
+        "value": 10
+      },
+      {
+        "color": "White",
+        "value": 20
+      },
+      {
+        "color": "White",
+        "value": 30
+      }
+    ],
     "baseAffinityPercent": 10,
     "ailment": "Paralysis",
     "ailmentBaseAttack": 450,
@@ -458,37 +496,41 @@
   },
   {
     "name": "Hazak Spysa II",
-	"tags": ["vaal", "hazak", "dragon"],
-	"rarity": 7,
+    "tags": [
+      "vaal",
+      "hazak",
+      "dragon"
+    ],
+    "rarity": 7,
     "itemType": "Weapon",
     "weaponType": "Gunlance",
     "baseAttack": 460,
-	"sharpnessLevels": [
-		{
-			"color": "Blue",
-			"value": 40
-		},
-		{
-			"color": "Blue",
-			"value": 50
-		},
-		{
-			"color": "White",
-			"value": 10
-		},
-		{
-			"color": "White",
-			"value": 20
-		},
-		{
-			"color": "White",
-			"value": 30
-		},
-		{
-			"color": "White",
-			"value": 40
-		}
-	],
+    "sharpnessLevels": [
+      {
+        "color": "Blue",
+        "value": 40
+      },
+      {
+        "color": "Blue",
+        "value": 50
+      },
+      {
+        "color": "White",
+        "value": 10
+      },
+      {
+        "color": "White",
+        "value": 20
+      },
+      {
+        "color": "White",
+        "value": 30
+      },
+      {
+        "color": "White",
+        "value": 40
+      }
+    ],
     "baseAffinityPercent": 0,
     "element": "Dragon",
     "elementBaseAttack": 270,
@@ -502,37 +544,41 @@
   },
   {
     "name": "Barroth Blaster III",
-	"tags": ["barroth", "paralysis", "hidden"],
-	"rarity": 6,
+    "tags": [
+      "barroth",
+      "paralysis",
+      "hidden"
+    ],
+    "rarity": 6,
     "itemType": "Weapon",
     "weaponType": "Gunlance",
     "baseAttack": 460,
-	"sharpnessLevels": [
-		{
-			"color": "Blue",
-			"value": 30
-		},
-		{
-			"color": "Blue",
-			"value": 40
-		},
-		{
-			"color": "Blue",
-			"value": 50
-		},
-		{
-			"color": "Blue",
-			"value": 60
-		},
-		{
-			"color": "Blue",
-			"value": 70
-		},
-		{
-			"color": "Blue",
-			"value": 80
-		}
-	],
+    "sharpnessLevels": [
+      {
+        "color": "Blue",
+        "value": 30
+      },
+      {
+        "color": "Blue",
+        "value": 40
+      },
+      {
+        "color": "Blue",
+        "value": 50
+      },
+      {
+        "color": "Blue",
+        "value": 60
+      },
+      {
+        "color": "Blue",
+        "value": 70
+      },
+      {
+        "color": "Blue",
+        "value": 80
+      }
+    ],
     "baseAffinityPercent": -10,
     "ailment": "Paralysis",
     "ailmentBaseAttack": 390,
@@ -543,37 +589,40 @@
   },
   {
     "name": "Anja Cannon III",
-	"tags": ["anjanath", "fire"],
-	"rarity": 6,
+    "tags": [
+      "anjanath",
+      "fire"
+    ],
+    "rarity": 6,
     "itemType": "Weapon",
     "weaponType": "Gunlance",
     "baseAttack": 483,
-	"sharpnessLevels": [
-		{
-			"color": "Blue",
-			"value": 20
-		},
-		{
-			"color": "Blue",
-			"value": 30
-		},
-		{
-			"color": "Blue",
-			"value": 40
-		},
-		{
-			"color": "Blue",
-			"value": 50
-		},
-		{
-			"color": "Blue",
-			"value": 60
-		},
-		{
-			"color": "Blue",
-			"value": 70
-		}
-	],
+    "sharpnessLevels": [
+      {
+        "color": "Blue",
+        "value": 20
+      },
+      {
+        "color": "Blue",
+        "value": 30
+      },
+      {
+        "color": "Blue",
+        "value": 40
+      },
+      {
+        "color": "Blue",
+        "value": 50
+      },
+      {
+        "color": "Blue",
+        "value": 60
+      },
+      {
+        "color": "Blue",
+        "value": 70
+      }
+    ],
     "baseAffinityPercent": -20,
     "element": "Fire",
     "elementBaseAttack": 450,
@@ -582,37 +631,40 @@
   },
   {
     "name": "Dragonbone Gunlance III",
-	"tags": ["dragonbone", "dragon"],
-	"rarity": 6,
+    "tags": [
+      "dragonbone",
+      "dragon"
+    ],
+    "rarity": 6,
     "itemType": "Weapon",
     "weaponType": "Gunlance",
     "baseAttack": 368,
-	"sharpnessLevels": [
-		{
-			"color": "Blue",
-			"value": 40
-		},
-		{
-			"color": "Blue",
-			"value": 50
-		},
-		{
-			"color": "Blue",
-			"value": 60
-		},
-		{
-			"color": "Blue",
-			"value": 70
-		},
-		{
-			"color": "White",
-			"value": 10
-		},
-		{
-			"color": "White",
-			"value": 20
-		}
-	],
+    "sharpnessLevels": [
+      {
+        "color": "Blue",
+        "value": 40
+      },
+      {
+        "color": "Blue",
+        "value": 50
+      },
+      {
+        "color": "Blue",
+        "value": 60
+      },
+      {
+        "color": "Blue",
+        "value": 70
+      },
+      {
+        "color": "White",
+        "value": 10
+      },
+      {
+        "color": "White",
+        "value": 20
+      }
+    ],
     "baseAffinityPercent": 0,
     "element": "Dragon",
     "elementBaseAttack": 420,
@@ -629,37 +681,41 @@
   },
   {
     "name": "Earthshaker Magda Lahat",
-	"tags": ["zorah", "magdaros", "blast"],
-	"rarity": 8,
+    "tags": [
+      "zorah",
+      "magdaros",
+      "blast"
+    ],
+    "rarity": 8,
     "itemType": "Weapon",
     "weaponType": "Gunlance",
     "baseAttack": 460,
-	"sharpnessLevels": [
-		{
-			"color": "Green",
-			"value": 70
-		},
-		{
-			"color": "Green",
-			"value": 80
-		},
-		{
-			"color": "Green",
-			"value": 90
-		},
-		{
-			"color": "Blue",
-			"value": 10
-		},
-		{
-			"color": "Blue",
-			"value": 20
-		},
-		{
-			"color": "Blue",
-			"value": 30
-		}
-	],
+    "sharpnessLevels": [
+      {
+        "color": "Green",
+        "value": 70
+      },
+      {
+        "color": "Green",
+        "value": 80
+      },
+      {
+        "color": "Green",
+        "value": 90
+      },
+      {
+        "color": "Blue",
+        "value": 10
+      },
+      {
+        "color": "Blue",
+        "value": 20
+      },
+      {
+        "color": "Blue",
+        "value": 30
+      }
+    ],
     "baseAffinityPercent": -10,
     "ailment": "Blast",
     "ailmentBaseAttack": 420,
@@ -669,37 +725,41 @@
   },
   {
     "name": "Daora's Brigia",
-	"tags": ["kushala", "daora", "ice"],
-	"rarity": 8,
+    "tags": [
+      "kushala",
+      "daora",
+      "ice"
+    ],
+    "rarity": 8,
     "itemType": "Weapon",
     "weaponType": "Gunlance",
     "baseAttack": 414,
-	"sharpnessLevels": [
-		{
-			"color": "Blue",
-			"value": 40
-		},
-		{
-			"color": "Blue",
-			"value": 50
-		},
-		{
-			"color": "Blue",
-			"value": 60
-		},
-		{
-			"color": "Blue",
-			"value": 70
-		},
-		{
-			"color": "White",
-			"value": 10
-		},
-		{
-			"color": "White",
-			"value": 20
-		}
-	],
+    "sharpnessLevels": [
+      {
+        "color": "Blue",
+        "value": 40
+      },
+      {
+        "color": "Blue",
+        "value": 50
+      },
+      {
+        "color": "Blue",
+        "value": 60
+      },
+      {
+        "color": "Blue",
+        "value": 70
+      },
+      {
+        "color": "White",
+        "value": 10
+      },
+      {
+        "color": "White",
+        "value": 20
+      }
+    ],
     "baseAffinityPercent": 10,
     "element": "Ice",
     "elementBaseAttack": 240,
@@ -712,37 +772,40 @@
   },
   {
     "name": "Xeno Hemta",
-	"tags": ["xeno'jiva", "dragon"],
-	"rarity": 8,
+    "tags": [
+      "xeno'jiva",
+      "dragon"
+    ],
+    "rarity": 8,
     "itemType": "Weapon",
     "weaponType": "Gunlance",
     "baseAttack": 391,
-	"sharpnessLevels": [
-		{
-			"color": "White",
-			"value": 10
-		},
-		{
-			"color": "White",
-			"value": 20
-		},
-		{
-			"color": "White",
-			"value": 30
-		},
-		{
-			"color": "White",
-			"value": 40
-		},
-		{
-			"color": "White",
-			"value": 50
-		},
-		{
-			"color": "White",
-			"value": 60
-		}
-	],
+    "sharpnessLevels": [
+      {
+        "color": "White",
+        "value": 10
+      },
+      {
+        "color": "White",
+        "value": 20
+      },
+      {
+        "color": "White",
+        "value": 30
+      },
+      {
+        "color": "White",
+        "value": 40
+      },
+      {
+        "color": "White",
+        "value": 50
+      },
+      {
+        "color": "White",
+        "value": 60
+      }
+    ],
     "baseAffinityPercent": 15,
     "element": "Dragon",
     "elementBaseAttack": 180,
@@ -759,42 +822,72 @@
   },
   {
     "name": "Insatiable Gunlance",
-	"tags": ["deviljho", "dragon"],
-	"rarity": 7,
+    "tags": [
+      "deviljho",
+      "dragon"
+    ],
+    "rarity": 7,
     "itemType": "Weapon",
     "weaponType": "Gunlance",
     "baseAttack": 529,
-	"sharpnessLevels": [
-		{
-			"color": "Blue",
-			"value": 50
-		},
-		{
-			"color": "White",
-			"value": 10
-		},
-		{
-			"color": "White",
-			"value": 20
-		},
-		{
-			"color": "White",
-			"value": 30
-		},
-		{
-			"color": "White",
-			"value": 40
-		},
-		{
-			"color": "White",
-			"value": 50
-		}
-	],
+    "sharpnessLevels": [
+      {
+        "color": "Blue",
+        "value": 50
+      },
+      {
+        "color": "White",
+        "value": 10
+      },
+      {
+        "color": "White",
+        "value": 20
+      },
+      {
+        "color": "White",
+        "value": 30
+      },
+      {
+        "color": "White",
+        "value": 40
+      },
+      {
+        "color": "White",
+        "value": 50
+      }
+    ],
     "baseAffinityPercent": -30,
     "element": "Dragon",
     "elementBaseAttack": 240,
     "elderseal": "High",
     "id": 281,
     "slots": []
+  },
+  {
+    "name": "Gold Poison Exploder",
+    "tags": [
+      "kulve",
+      "taroth",
+      "hidden",
+      "poison"
+    ],
+    "rarity": 6,
+    "itemType": "Weapon",
+    "weaponType": "Gunlance",
+    "baseAttack": 299,
+    "baseDefense": 20,
+    "sharpnessDataNeeded": true,
+    "sharpnessLevels": [
+      {
+        "color": "Blue",
+        "value": 20
+      }
+    ],
+    "baseAffinityPercent": 15,
+    "ailment": "Poison",
+    "ailmentBaseAttack": 210,
+    "ailmentHidden": true,
+    "slots": [],
+    "id": 305
   }
 ]

@@ -1021,10 +1021,15 @@
   },
   {
     "name": "Wyvern Ignition \"Impact\"",
+    "tags": [
+      "fire",
+      "hidden"
+    ],
     "rarity": 7,
     "itemType": "Weapon",
     "weaponType": "GreatSword",
     "baseAttack": 1008,
+    "sharpnessDataNeeded": true,
     "sharpnessLevels": [
       {
         "color": "White",
@@ -1049,13 +1054,16 @@
     "name": "Glutton Gold Fellsword",
     "tags": [
       "kulve",
-      "taroth"
+      "taroth",
+      "water",
+      "hidden"
     ],
     "rarity": 6,
     "itemType": "Weapon",
     "weaponType": "GreatSword",
     "baseAttack": 768,
     "baseDefense": 20,
+    "sharpnessDataNeeded": true,
     "sharpnessLevels": [
       {
         "color": "Blue",
@@ -1072,5 +1080,36 @@
       }
     ],
     "id": 290
+  },
+  {
+    "name": "Taroth Blaue \"Ice\"",
+    "tags": [
+      "kulve",
+      "taroth",
+      "ice",
+      "hidden"
+    ],
+    "rarity": 8,
+    "itemType": "Weapon",
+    "weaponType": "GreatSword",
+    "baseAttack": 912,
+    "baseDefense": 20,
+    "sharpnessDataNeeded": true,
+    "sharpnessLevels": [
+      {
+        "color": "Blue",
+        "value": 20
+      }
+    ],
+    "baseAffinityPercent": 0,
+    "element": "Ice",
+    "elementBaseAttack": 510,
+    "elementHidden": true,
+    "slots": [
+      {
+        "level": 3
+      }
+    ],
+    "id": 299
   }
 ]

@@ -861,14 +861,17 @@
     "name": "Gold Sleep Cutter",
     "tags": [
       "kulve",
-      "taroth"
+	  "taroth",
+	  "sleep",
+	  "hidden"
     ],
     "rarity": 6,
     "itemType": "Weapon",
     "weaponType": "ChargeBlade",
     "baseAttack": 504,
     "baseDefense": 20,
-    "sharpnessLevels": [
+	"sharpnessDataNeeded": true,
+	"sharpnessLevels": [
       {
         "color": "Blue",
         "value": 50
@@ -885,14 +888,16 @@
     "name": "Taroth Strongarm \"Mire\"",
     "tags": [
       "kulve",
-      "taroth"
+	  "taroth",
+	  "water"
     ],
     "rarity": 7,
     "itemType": "Weapon",
     "weaponType": "ChargeBlade",
     "baseAttack": 684,
     "baseDefense": 20,
-    "sharpnessLevels": [
+	"sharpnessDataNeeded": true,
+	"sharpnessLevels": [
       {
         "color": "Blue",
         "value": 20

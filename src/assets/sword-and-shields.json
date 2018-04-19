@@ -971,7 +971,8 @@
     "itemType": "Weapon",
     "weaponType": "SwordAndShield",
     "baseAttack": 224,
-    "baseDefense": 20,
+	"baseDefense": 20,
+	"sharpnessDataNeeded": true,
     "sharpnessLevels": [
       {
         "color": "Blue",
@@ -992,14 +993,17 @@
     "name": "Gold Blast Scimitar",
     "tags": [
       "kulve",
-      "taroth"
+	  "taroth",
+	  "blast",
+	  "hidden"
     ],
     "rarity": 6,
     "itemType": "Weapon",
     "weaponType": "SwordAndShield",
     "baseAttack": 224,
     "baseDefense": 20,
-    "sharpnessLevels": [
+	"sharpnessDataNeeded": true,
+	"sharpnessLevels": [
       {
         "color": "Blue",
         "value": 30
@@ -1016,14 +1020,17 @@
     "name": "Taroth Slicer \"Blast\"",
     "tags": [
       "kulve",
-      "taroth"
+	  "taroth",
+	  "blast",
+	  "hidden"
     ],
     "rarity": 8,
     "itemType": "Weapon",
     "weaponType": "SwordAndShield",
     "baseAttack": 238,
     "baseDefense": 20,
-    "sharpnessLevels": [
+	"sharpnessDataNeeded": true,
+	"sharpnessLevels": [
       {
         "color": "White",
         "value": 20

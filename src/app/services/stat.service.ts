@@ -183,6 +183,7 @@ export class StatService {
 		}
 
 		if (weapon) {
+			this.stats.sharpnessDataNeeded = weapon.sharpnessDataNeeded;
 			this.stats.maxSharpness = weapon.maxSharpness;
 			this.stats.elementHidden = weapon.elementHidden;
 			this.stats.ailmentHidden = weapon.ailmentHidden;

@@ -968,14 +968,17 @@
     "name": "Gold Paralysis Katana",
     "tags": [
       "kulve",
-      "taroth"
+	  "taroth",
+	  "paralysis",
+	  "hidden"
     ],
     "rarity": 7,
     "itemType": "Weapon",
     "weaponType": "LongSword",
     "baseAttack": 495,
     "baseDefense": 20,
-    "sharpnessLevels": [
+	"sharpnessDataNeeded": true,
+	"sharpnessLevels": [
       {
         "color": "White",
         "value": 20

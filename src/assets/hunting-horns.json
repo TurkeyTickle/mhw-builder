@@ -914,13 +914,16 @@
     "name": "Gold Dragon Flute",
     "tags": [
       "kulve",
-      "taroth"
+      "taroth",
+      "dragon",
+      "hidden"
     ],
     "rarity": 6,
     "itemType": "Weapon",
     "weaponType": "HuntingHorn",
     "baseAttack": 672,
     "baseDefense": 20,
+    "sharpnessDataNeeded": true,
     "sharpnessLevels": [
       {
         "color": "Blue",
@@ -934,5 +937,30 @@
     "elderseal": "Low",
     "slots": [],
     "id": 295
+  },
+  {
+    "name": "Taroth Pipe \"Rage\"",
+    "tags": [
+      "kulve",
+      "taroth",
+      "fire"
+    ],
+    "rarity": 7,
+    "itemType": "Weapon",
+    "weaponType": "HuntingHorn",
+    "baseAttack": 840,
+    "baseDefense": 20,
+    "sharpnessDataNeeded": true,
+    "sharpnessLevels": [
+      {
+        "color": "Blue",
+        "value": 30
+      }
+    ],
+    "baseAffinityPercent": -20,
+    "element": "Fire",
+    "elementBaseAttack": 450,
+    "slots": [],
+    "id": 303
   }
 ]

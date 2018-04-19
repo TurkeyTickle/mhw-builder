@@ -426,5 +426,49 @@
       }
     ],
     "id": 288
+  },
+  {
+    "name": "Gold Thunder Piercer",
+    "tags": [
+      "kulve",
+      "taroth",
+      "hidden",
+      "thunder"
+    ],
+    "rarity": 6,
+    "itemType": "Weapon",
+    "weaponType": "Bow",
+    "baseAttack": 168,
+    "baseDefense": 20,
+    "baseAffinityPercent": 10,
+    "element": "Thunder",
+    "elementBaseAttack": 210,
+    "elementHidden": true,
+    "slots": [],
+    "id": 307
+  },
+  {
+    "name": "Taroth Arrow \"Blast\"",
+    "tags": [
+      "kulve",
+      "taroth",
+      "hidden",
+      "blast"
+    ],
+    "rarity": 8,
+    "itemType": "Weapon",
+    "weaponType": "Bow",
+    "baseAttack": 240,
+    "baseDefense": 30,
+    "baseAffinityPercent": 0,
+    "element": "Blast",
+    "elementBaseAttack": 360,
+    "elementHidden": true,
+    "slots": [
+      {
+        "level": 3
+      }
+    ],
+    "id": 308
   }
 ]
