@@ -6,6 +6,7 @@ import { DecorationSlotComponent } from '../decoration-slot/decoration-slot.comp
 import { AugmentationSlotComponent } from '../augmentation-slot/augmentation-slot.component';
 import { AugmentationModel } from '../../models/augmentation.model';
 import { SlotService } from '../../services/slot.service';
+import { PointerType } from '../../types/pointer.type';
 
 @Component({
 	selector: 'mhw-builder-item-slot',
@@ -56,8 +57,10 @@ export class ItemSlotComponent implements OnInit {
 		this.clearTooltipItem();
 	}
 
-	setTooltipItem() {
-		this.tooltipService.setItem(this.item);
+	setTooltipItem(event: PointerEvent) {
+		if (event.pointerType == PointerType.Mouse) {
+			this.tooltipService.setItem(this.item);
+		}
 	}
 
 	clearTooltipItem() {

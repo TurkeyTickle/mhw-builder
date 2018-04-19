@@ -8,17 +8,35 @@ ul {
 	padding: 0;
 }
 
+.defense-stats > li {
+	grid-template-columns: min-content auto min-content;
+}
+
+.attack-stats > li {
+	grid-template-columns: 20px auto min-content;
+}
+
 li {
 	list-style: none;
 	padding:4px 4px;
 	cursor: default;
-
-	.value {
-		float: right;
-	}
+	display: grid;
+	grid-gap: 4px;
 
 	.detail-icon {
-		float: left;
+		grid-column: 1;
 		margin-right: 4px;	
+	}
+
+	.name {
+		grid-column: 2;
+		text-overflow: ellipsis;
+		white-space: nowrap;
+		overflow: hidden;
+	}
+	
+	.value {
+		grid-column: 3;
+		white-space: nowrap;
 	}
 }

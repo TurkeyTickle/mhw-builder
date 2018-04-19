@@ -2,65 +2,74 @@ $equipmentHeight: 40px;
 
 .container {
     width: 100%;
-    margin-bottom: 16px;
+	margin-bottom: 16px;
+	display: grid;
+	grid-template-rows: $equipmentHeight + 16 auto auto;
+	grid-gap: 4px;
 }
 
 .item-container {
-    height: $equipmentHeight;
+	height: $equipmentHeight;
     background-color: rgb(50,50,50);
-    padding: 8px;
-	margin-bottom: 4px;
 	cursor: pointer;
-	display: flex;
+	padding: 8px;
 	border-radius: 3px;
+	display: grid;
+	grid-template-columns: 80px auto min-content 28px;
 
 	.slot-name {
+		grid-column: 1;
 		color: #b7b7b7;
 		line-height: $equipmentHeight;
-		width: 80px;
-		flex-grow: 0;
-		flex-shrink: 0;
 	}
 
 	.selected-item {
-		flex-grow: 1;
+		grid-column: 2;
 		line-height: $equipmentHeight;
-		font-size: 20px;
-		text-overflow: ellipsis;
 		overflow: hidden;
 		white-space: nowrap;
-	}
-	
-	.clear-button {
-		float: right;
-		height: $equipmentHeight;
+		text-overflow: ellipsis;
+		font-size: 20px;
 	}
 
 	.levels-container {
-		display: inherit;
+		grid-column: 3;
+		display: grid;
+		grid-template-columns: $equipmentHeight min-content $equipmentHeight;
 
-		.level-down-button, .level-up-button {
+		.level-down-button {
+			grid-column: 1;
 			height: $equipmentHeight;
 		}
 	
 		.level {
+			grid-column: 2;
 			line-height: $equipmentHeight;
 		}
+
+		.level-up-button {
+			grid-column: 3;
+			height: $equipmentHeight;
+		}
+	}
+
+	.clear-button {
+		grid-column: 4;
+		height: $equipmentHeight;
 	}
 }
 
 .augmentation-container {
-	display: flex;
-	flex-direction: row;
-	flex-wrap: nowrap;
-	margin: 0 -2px;
+	display: grid;
+	grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+	// grid-template-columns: repeat(3, 1fr);
+	grid-gap: 4px;
 }
 
 .decoration-container {
-	display: flex;
-	flex-direction: row;
-	flex-wrap: nowrap;
-	margin: 0 -2px;
+	display: grid;
+	grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+	grid-gap: 4px;
 }
 
 .selected {

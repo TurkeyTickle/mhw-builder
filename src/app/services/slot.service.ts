@@ -13,6 +13,8 @@ import * as _ from 'lodash';
 
 @Injectable()
 export class SlotService {
+	public anySlotSelected$ = new Subject<ItemSlotComponent | DecorationSlotComponent | AugmentationSlotComponent>();
+
 	public itemSelected$ = new Subject<SlotEventModel<ItemSlotComponent, ItemModel>>();
 	public decorationSelected$ = new Subject<SlotEventModel<DecorationSlotComponent, DecorationModel>>();
 	public augmentationSelected$ = new Subject<SlotEventModel<AugmentationSlotComponent, AugmentationModel>>();
@@ -59,24 +61,30 @@ export class SlotService {
 	selectItemSlot(slot: ItemSlotComponent) {
 		this.clearSlots();
 		this.selectedItemSlot = slot;
+
 		if (this.selectedItemSlot) {
 			this.selectedItemSlot.selected = true;
+			this.anySlotSelected$.next(this.selectedItemSlot);
 		}
 	}
 
 	selectDecorationSlot(slot: DecorationSlotComponent) {
 		this.clearSlots();
 		this.selectedDecorationSlot = slot;
+
 		if (this.selectedDecorationSlot) {
 			this.selectedDecorationSlot.selected = true;
+			this.anySlotSelected$.next(this.selectedDecorationSlot);
 		}
 	}
 
 	selectAugmentationSlot(slot: AugmentationSlotComponent) {
 		this.clearSlots();
 		this.selectedAugmentationSlot = slot;
+
 		if (this.selectedAugmentationSlot) {
 			this.selectedAugmentationSlot.selected = true;
+			this.anySlotSelected$.next(this.selectedAugmentationSlot);
 		}
 	}
 

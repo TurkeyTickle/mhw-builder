@@ -1,32 +1,31 @@
-$itemHeight: 32px;
+
+$searchHeight: 38px;
+$filterHeight: 42px;
+$listItemHeight: 32px;
 
 .container {
-	display: flex;
-	flex-direction: column;
-	position: absolute;
-	top: 0;
-	right: 0;
-	bottom: 0;
-	left: 0;
+	display: grid;
+	grid-template-rows: $searchHeight max-content auto;
+	grid-row-gap: 4px;
+	height: 100%;
 }
 
 .search-container {
-	$height: 36px;
-
+	grid-row: 1;
 	background-color: rgb(50,50,50);
 	padding: 0 0 0 12px;	
-	margin-bottom: 4px;
 	border-radius: 3px;
 	flex-grow: 0;
 	flex-shrink: 0;
 	display: flex;
+	height: $searchHeight;
 
 	input {
 		background-color: rgb(50,50,50);
 		border: none;
 		color: white;
 		font-size: 16px;
-		height: $height;
+		height: $searchHeight - 2;
 		flex-grow: 1;
 	}
 
@@ -36,42 +35,35 @@ $itemHeight: 32px;
 
 	.clear-button {
 		padding-top: 4px;
-		height: $height;
+		height: $searchHeight;
 		width: 36px;
 		flex-grow: 0;
 	}
 }
 
 .filter-container {
-	$height: 42px;
-	margin-bottom: 4px;
-	flex-grow: 0;
+	grid-row: 2;
 
-	.button-row {
-		width: 100%;
-		display: flex;
-		flex-wrap: nowrap;
-		justify-content: space-evenly;
-		height: $height + 6;
-		
-		.selected {
-			background: #389b38;
-			border-radius: 3px;
-		}
+	display: grid;
+	grid-template-columns: repeat(14, 1fr);
 
-		.weapon-filter {
-			padding: 4px;
-			height: 48px;
-			flex-grow: 0;
-		
-			img {
-				height: $height;
-			}
+	.selected > img {
+		background: #389b38;
+		border-radius: 3px;
+	}
+
+	.weapon-filter {
+		padding: 4px;
+		height: 48px;
+	
+		img {
+			height: $filterHeight;
 		}
 	}
 }
 
 .items-container {
+	grid-row: 3;
 	overflow-y: auto;
 	border-radius: 3px;
 	flex-grow: 1;
@@ -84,8 +76,8 @@ $itemHeight: 32px;
 	
 		li {
 			cursor: pointer;
-			height: $itemHeight;
-			line-height: $itemHeight - 2;
+			height: $listItemHeight;
+			line-height: $listItemHeight - 2;
 			list-style: none;
 			padding: 8px;
 			border-bottom: 1px black solid;
@@ -111,8 +103,8 @@ $itemHeight: 32px;
 							white-space: nowrap;
 							overflow: hidden;
 							text-overflow: ellipsis;
-							line-height: $itemHeight;
-							max-height: $itemHeight;
+							line-height: $listItemHeight;
+							max-height: $listItemHeight;
 						}
 					}
 				}
@@ -126,3 +118,8 @@ $itemHeight: 32px;
 	}
 }
 
+@media only screen and (max-width: 716px) {
+	.filter-container {
+		grid-template-columns: repeat(7, 1fr);
+	}
+}

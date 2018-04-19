@@ -9,6 +9,8 @@ import { ItemType } from './types/item.type';
 import { AugmentationSlotComponent } from './components/augmentation-slot/augmentation-slot.component';
 import { SlotService } from './services/slot.service';
 import { BuildService } from './services/build.service';
+import { ModalComponent } from './components/modal/modal.component';
+import { PointerType } from './types/pointer.type';
 
 @Component({
 	selector: 'mhw-builder-root',
@@ -29,6 +31,11 @@ export class AppComponent implements OnInit, AfterViewInit {
 	@ViewChild('legsSlot') legsSlot: ItemSlotComponent;
 	@ViewChild('feetSlot') feetSlot: ItemSlotComponent;
 	@ViewChild('charmSlot') charmSlot: ItemSlotComponent;
+
+	@ViewChild('itemListModal') itemListModal: ModalComponent;
+	@ViewChild('changeLogModal') changeLogModal: ModalComponent;
+
+	modalTitle: string;
 
 	selectedEquipmentSlot: ItemSlotComponent;
 	selectedDecorationSlot: DecorationSlotComponent;
@@ -58,13 +65,52 @@ export class AppComponent implements OnInit, AfterViewInit {
 		this.buildService.buildIdUpdated$.subscribe(buildId => {
 			this.location.replaceState(this.location.path(false), '#' + buildId);
 		});
+
+		this.slotService.anySlotSelected$.subscribe(slot => {
+			if (this.itemListModal) {
+				this.itemListModal.title = `Select ${slot.slotName}`;
+				this.itemListModal.isOpen = slot != null;
+			}
+		});
+
+		this.slotService.itemSelected$.subscribe(item => {
+			if (this.itemListModal) {
+				this.itemListModal.isOpen = !item;
+			}
+		});
+
+		this.slotService.decorationSelected$.subscribe(decoration => {
+			if (this.itemListModal) {
+				this.itemListModal.isOpen = !decoration;
+			}
+		});
+
+		this.slotService.augmentationSelected$.subscribe(augmentation => {
+			if (this.itemListModal) {
+				this.itemListModal.isOpen = !augmentation;
+			}
+		});
 	}
 
 	ngAfterViewInit() {
 		setTimeout(() => this.buildService.loadBuild(location.hash), 100);
 	}
 
-	moveTooltip(event: MouseEvent) {
-		this.tooltipComponent.move(event.clientX, event.clientY);
+	moveTooltip(event: PointerEvent) {
+		if (event.pointerType == PointerType.Mouse) {
+			this.tooltipComponent.move(event.clientX, event.clientY);
+		}
+	}
+
+	openItemListModal() {
+		if (this.itemListModal.isOpen) {
+			this.itemListModal.close();
+		} else {
+			this.itemListModal.open();
+		}
+	}
+
+	openChangeLog() {
+		this.changeLogModal.open();
 	}
 }

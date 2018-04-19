@@ -1,8 +1,8 @@
 <div class="container">
 	<div class="item-container" 
 		(click)="equipmentSlotClicked()" 
-		(mouseenter)="setTooltipItem()" 
-		(mouseleave)="clearTooltipItem()" 
+		(pointerenter)="setTooltipItem($event)" 
+		(pointerleave)="clearTooltipItem()" 
 		[class.selected]="selected"> 
 		
 		<div class="slot-name">{{slotName}}</div>
@@ -27,13 +27,13 @@
 		</button>
 	</div>
 
-	<div class="augmentation-container">
+	<div class="augmentation-container" *ngIf="augmentations && augmentations.length">
 		<mhw-builder-augmentation-slot
 			*ngFor="let aug of augmentations">
 		</mhw-builder-augmentation-slot>
 	</div>
 
-	<div class="decoration-container">
+	<div class="decoration-container" *ngIf="item?.slots && item?.slots.length">
 		<mhw-builder-decoration-slot 
 			*ngFor="let slot of item?.slots"
 			[level]="slot.level"

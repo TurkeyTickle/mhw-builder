@@ -1,11 +1,11 @@
 <div class="container">
 	<h4>Attack</h4>
 	<hr>
-	<ul class="striped">
-		<li *ngFor="let calc of attackCalcs" (mouseenter)="showCalcDetails(calc)" (mouseleave)="clearCalcDetails()">
+	<ul class="attack-stats striped">
+		<li *ngFor="let calc of attackCalcs" (pointerenter)="showCalcDetails($event, calc)" (pointerleave)="clearCalcDetails()">
+			<span *ngIf="calc.calculationTemplate || calc.info?.length" class="detail-icon" [ngClass]="calc.color"><i class="far fa-question-circle"></i></span>
 			<span class="name">{{calc.name}}</span>
 			<span class="value">{{calc.value}}</span>
-			<span *ngIf="calc.calculationTemplate || calc.info?.length" class="detail-icon" [ngClass]="calc.color"><i class="far fa-question-circle"></i></span>
 		</li>
 	</ul>
 
@@ -13,11 +13,11 @@
 
 	<h4>Defense</h4>
 	<hr>
-	<ul class="striped">
-		<li *ngFor="let calc of defenseCalcs" (mouseenter)="showCalcDetails(calc)" (mouseleave)="clearCalcDetails()">
+	<ul class="defense-stats striped">
+		<li *ngFor="let calc of defenseCalcs" (pointerenter)="showCalcDetails($event, calc)" (pointerleave)="clearCalcDetails()">
+			<span *ngIf="calc.calculationTemplate || calc.info?.length" class="detail-icon" [ngClass]="calc.color"><i class="far fa-question-circle"></i></span>
 			<span class="name">{{calc.name}}</span>
 			<span class="value">{{calc.value}}</span>
-			<span *ngIf="calc.calculationTemplate || calc.info?.length" class="detail-icon" [ngClass]="calc.color"><i class="far fa-question-circle"></i></span>
 		</li>
 	</ul>
 </div>
