@@ -933,5 +933,114 @@
     "ailmentBaseAttack": 90,
     "slots": [],
     "id": 317
+  },
+  {
+    "name": "Decay Gold Cutter",
+    "tags": [
+      "kulve",
+      "taroth",
+      "dragon"
+    ],
+    "rarity": 6,
+    "itemType": "Weapon",
+    "weaponType": "ChargeBlade",
+    "baseAttack": 576,
+    "baseDefense": 20,
+    "sharpnessDataNeeded": true,
+    "sharpnessLevels": [
+      {
+        "color": "Blue",
+        "value": 40
+      }
+    ],
+    "baseAffinityPercent": 10,
+    "element": "Dragon",
+    "elementBaseAttack": 120,
+    "elderseal": "Average",
+    "slots": [],
+    "id": 344
+  },
+  {
+    "name": "Taroth Strongarm \"Horn\"",
+    "tags": [
+      "kulve",
+      "taroth",
+      "ice",
+      "hidden"
+    ],
+    "rarity": 7,
+    "itemType": "Weapon",
+    "weaponType": "ChargeBlade",
+    "baseAttack": 828,
+    "baseDefense": 25,
+    "sharpnessDataNeeded": true,
+    "sharpnessLevels": [
+      {
+        "color": "Blue",
+        "value": 40
+      }
+    ],
+    "baseAffinityPercent": -30,
+    "element": "Ice",
+    "elementBaseAttack": 210,
+    "elementHidden": true,
+    "slots": [],
+    "id": 345
+  },
+  {
+    "name": "Taroth Strongarm \"Ice\"",
+    "tags": [
+      "kulve",
+      "taroth",
+      "ice",
+      "hidden"
+    ],
+    "rarity": 8,
+    "itemType": "Weapon",
+    "weaponType": "ChargeBlade",
+    "baseAttack": 648,
+    "baseDefense": 20,
+    "sharpnessDataNeeded": true,
+    "sharpnessLevels": [
+      {
+        "color": "Blue",
+        "value": 40
+      }
+    ],
+    "baseAffinityPercent": 0,
+    "element": "Ice",
+    "elementBaseAttack": 390,
+    "elementHidden": true,
+    "slots": [
+      {
+        "level": 3
+      }
+    ],
+    "id": 346
+  },
+  {
+    "name": "Taroth Strongarm \"King\"",
+    "tags": [
+      "kulve",
+      "taroth",
+      "fire"
+    ],
+    "rarity": 7,
+    "itemType": "Weapon",
+    "weaponType": "ChargeBlade",
+    "baseAttack": 684,
+    "baseDefense": 20,
+    "sharpnessDataNeeded": true,
+    "sharpnessLevels": [
+      {
+        "color": "Blue",
+        "value": 40
+      }
+    ],
+    "baseAffinityPercent": 20,
+    "element": "Fire",
+    "elementBaseAttack": 120,
+    "slots": [],
+    "id": 347
   }
 ]

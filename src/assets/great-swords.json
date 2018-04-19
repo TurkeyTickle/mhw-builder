@@ -1082,7 +1082,135 @@
     "id": 290
   },
   {
-    "name": "Taroth Blaue \"Ice\"",
+    "name": "Spew Gold Fellsword",
+    "tags": [
+      "kulve",
+      "taroth",
+      "poison"
+    ],
+    "rarity": 6,
+    "itemType": "Weapon",
+    "weaponType": "GreatSword",
+    "baseAttack": 768,
+    "baseDefense": 20,
+    "sharpnessDataNeeded": true,
+    "sharpnessLevels": [
+      {
+        "color": "Blue",
+        "value": 20
+      }
+    ],
+    "baseAffinityPercent": 0,
+    "ailment": "Poison",
+    "ailmentBaseAttack": 270,
+    "slots": [],
+    "id": 319
+  },
+  {
+    "name": "Tar Gold Fellsword",
+    "tags": [
+      "kulve",
+      "taroth",
+      "sleep"
+    ],
+    "rarity": 6,
+    "itemType": "Weapon",
+    "weaponType": "GreatSword",
+    "baseAttack": 816,
+    "baseDefense": 20,
+    "sharpnessDataNeeded": true,
+    "sharpnessLevels": [
+      {
+        "color": "Blue",
+        "value": 20
+      }
+    ],
+    "baseAffinityPercent": 10,
+    "ailment": "Sleep",
+    "ailmentBaseAttack": 120,
+    "slots": [],
+    "id": 320
+  },
+  {
+    "name": "Magma Gold Fellsword",
+    "tags": [
+      "kulve",
+      "taroth",
+      "blast"
+    ],
+    "rarity": 6,
+    "itemType": "Weapon",
+    "weaponType": "GreatSword",
+    "baseAttack": 768,
+    "baseDefense": 20,
+    "sharpnessDataNeeded": true,
+    "sharpnessLevels": [
+      {
+        "color": "Blue",
+        "value": 20
+      }
+    ],
+    "baseAffinityPercent": -20,
+    "ailment": "Blast",
+    "ailmentBaseAttack": 210,
+    "slots": [],
+    "id": 321
+  },
+  {
+    "name": "Decay Gold Fellsword",
+    "tags": [
+      "kulve",
+      "taroth",
+      "dragon"
+    ],
+    "rarity": 6,
+    "itemType": "Weapon",
+    "weaponType": "GreatSword",
+    "baseAttack": 816,
+    "baseDefense": 20,
+    "sharpnessDataNeeded": true,
+    "sharpnessLevels": [
+      {
+        "color": "Blue",
+        "value": 20
+      }
+    ],
+    "baseAffinityPercent": 10,
+    "element": "Dragon",
+    "elementBaseAttack": 150,
+    "elderseal": "Average",
+    "slots": [],
+    "id": 322
+  },
+  {
+    "name": "Gold Ice Fellsword",
+    "tags": [
+      "kulve",
+      "taroth",
+      "ice",
+      "hidden"
+    ],
+    "rarity": 6,
+    "itemType": "Weapon",
+    "weaponType": "GreatSword",
+    "baseAttack": 768,
+    "baseDefense": 20,
+    "sharpnessDataNeeded": true,
+    "sharpnessLevels": [
+      {
+        "color": "Blue",
+        "value": 20
+      }
+    ],
+    "baseAffinityPercent": 10,
+    "element": "Ice",
+    "elementBaseAttack": 240,
+    "elementHidden": true,
+    "slots": [],
+    "id": 323
+  },
+  {
+    "name": "Taroth Blaze \"Ice\"",
     "tags": [
       "kulve",
       "taroth",
@@ -1111,5 +1239,173 @@
       }
     ],
     "id": 299
+  },
+  {
+    "name": "Taroth Blaze \"Glutton\"",
+    "tags": [
+      "kulve",
+      "taroth",
+      "water",
+      "hidden"
+    ],
+    "rarity": 7,
+    "itemType": "Weapon",
+    "weaponType": "GreatSword",
+    "baseAttack": 960,
+    "baseDefense": 20,
+    "sharpnessDataNeeded": true,
+    "sharpnessLevels": [
+      {
+        "color": "Blue",
+        "value": 20
+      }
+    ],
+    "baseAffinityPercent": 0,
+    "element": "Water",
+    "elementBaseAttack": 300,
+    "elementHidden": true,
+    "slots": [
+      {
+        "level": 3
+      }
+    ],
+    "id": 324
+  },
+  {
+    "name": "Taroth Blaze \"Numb\"",
+    "tags": [
+      "kulve",
+      "taroth",
+      "paralysis"
+    ],
+    "rarity": 7,
+    "itemType": "Weapon",
+    "weaponType": "GreatSword",
+    "baseAttack": 768,
+    "baseDefense": 20,
+    "sharpnessDataNeeded": true,
+    "sharpnessLevels": [
+      {
+        "color": "Blue",
+        "value": 20
+      }
+    ],
+    "baseAffinityPercent": 30,
+    "element": "Paralysis",
+    "elementBaseAttack": 450,
+    "slots": [],
+    "id": 325
+  },
+  {
+    "name": "Taroth Blaze \"Erupter\"",
+    "tags": [
+      "kulve",
+      "taroth",
+      "fire"
+    ],
+    "rarity": 7,
+    "itemType": "Weapon",
+    "weaponType": "GreatSword",
+    "baseAttack": 912,
+    "baseDefense": 20,
+    "sharpnessDataNeeded": true,
+    "sharpnessLevels": [
+      {
+        "color": "Blue",
+        "value": 20
+      }
+    ],
+    "baseAffinityPercent": 0,
+    "element": "Fire",
+    "elementBaseAttack": 330,
+    "slots": [],
+    "id": 326
+  },
+  {
+    "name": "Taroth Blaze \"Magma\"",
+    "tags": [
+      "kulve",
+      "taroth",
+      "blast"
+    ],
+    "rarity": 7,
+    "itemType": "Weapon",
+    "weaponType": "GreatSword",
+    "baseAttack": 1008,
+    "baseDefense": 30,
+    "sharpnessDataNeeded": true,
+    "sharpnessLevels": [
+      {
+        "color": "Blue",
+        "value": 20
+      }
+    ],
+    "baseAffinityPercent": -20,
+    "element": "Blast",
+    "elementBaseAttack": 420,
+    "slots": [],
+    "id": 327
+  },
+  {
+    "name": "Taroth Blaze \"Water\"",
+    "tags": [
+      "kulve",
+      "taroth",
+      "water",
+      "hidden"
+    ],
+    "rarity": 8,
+    "itemType": "Weapon",
+    "weaponType": "GreatSword",
+    "baseAttack": 912,
+    "baseDefense": 20,
+    "sharpnessDataNeeded": true,
+    "sharpnessLevels": [
+      {
+        "color": "White",
+        "value": 20
+      }
+    ],
+    "baseAffinityPercent": 0,
+    "element": "Water",
+    "elementBaseAttack": 540,
+    "elementHidden": true,
+    "slots": [
+      {
+        "level": 3
+      }
+    ],
+    "id": 328
+  },
+  {
+    "name": "Taroth Blaze \"Sleep\"",
+    "tags": [
+      "kulve",
+      "taroth",
+      "sleep",
+      "hidden"
+    ],
+    "rarity": 8,
+    "itemType": "Weapon",
+    "weaponType": "GreatSword",
+    "baseAttack": 912,
+    "baseDefense": 20,
+    "sharpnessDataNeeded": true,
+    "sharpnessLevels": [
+      {
+        "color": "Blue",
+        "value": 20
+      }
+    ],
+    "baseAffinityPercent": 0,
+    "ailment": "Sleep",
+    "ailmentBaseAttack": 450,
+    "ailmentHidden": true,
+    "slots": [
+      {
+        "level": 3
+      }
+    ],
+    "id": 329
   }
 ]

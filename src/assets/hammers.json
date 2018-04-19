@@ -966,6 +966,141 @@
     "slots": []
   },
   {
+    "name": "Gold Thunder Bludgeon",
+    "tags": [
+      "kulve",
+      "taroth",
+      "thunder",
+      "hidden"
+    ],
+    "rarity": 6,
+    "itemType": "Weapon",
+    "weaponType": "Hammer",
+    "baseAttack": 832,
+    "baseDefense": 30,
+    "baseAffinityPercent": 0,
+    "sharpnessDataNeeded": true,
+    "sharpnessLevels": [
+      {
+        "color": "Blue",
+        "value": 20
+      }
+    ],
+    "ailment": "Thunder",
+    "ailmentBaseAttack": 240,
+    "ailmentHidden": true,
+    "slots": [],
+    "id": 301
+  },
+  {
+    "name": "Gold Water Bludgeon",
+    "tags": [
+      "kulve",
+      "taroth",
+      "water",
+      "hidden"
+    ],
+    "rarity": 6,
+    "itemType": "Weapon",
+    "weaponType": "Hammer",
+    "baseAttack": 832,
+    "baseDefense": 30,
+    "baseAffinityPercent": 0,
+    "sharpnessDataNeeded": true,
+    "sharpnessLevels": [
+      {
+        "color": "Blue",
+        "value": 20
+      }
+    ],
+    "element": "Water",
+    "elementBaseAttack": 180,
+    "elementHidden": true,
+    "slots": [],
+    "id": 336
+  },
+  {
+    "name": "Decay Gold Bludgeon",
+    "tags": [
+      "kulve",
+      "taroth",
+      "dragon"
+    ],
+    "rarity": 6,
+    "itemType": "Weapon",
+    "weaponType": "Hammer",
+    "baseAttack": 936,
+    "baseDefense": 20,
+    "baseAffinityPercent": 0,
+    "sharpnessDataNeeded": true,
+    "sharpnessLevels": [
+      {
+        "color": "Blue",
+        "value": 20
+      }
+    ],
+    "element": "Dragon",
+    "elementBaseAttack": 120,
+    "slots": [],
+    "id": 302
+  },
+  {
+    "name": "Numb Gold Bludgeon",
+    "tags": [
+      "kulve",
+      "taroth",
+      "paralysis"
+    ],
+    "rarity": 6,
+    "itemType": "Weapon",
+    "weaponType": "Hammer",
+    "baseAttack": 728,
+    "baseDefense": 20,
+    "baseAffinityPercent": 30,
+    "sharpnessDataNeeded": true,
+    "sharpnessLevels": [
+      {
+        "color": "Blue",
+        "value": 20
+      }
+    ],
+    "ailment": "Paralysis",
+    "ailmentBaseAttack": 180,
+    "slots": [],
+    "id": 337
+  },
+  {
+    "name": "Mud Gold Bludgeon",
+    "tags": [
+      "kulve",
+      "taroth",
+      "paralysis",
+      "hidden"
+    ],
+    "rarity": 6,
+    "itemType": "Weapon",
+    "weaponType": "Hammer",
+    "baseAttack": 936,
+    "baseDefense": 25,
+    "baseAffinityPercent": -10,
+    "sharpnessDataNeeded": true,
+    "sharpnessLevels": [
+      {
+        "color": "Blue",
+        "value": 20
+      }
+    ],
+    "ailment": "Paralysis",
+    "ailmentBaseAttack": 180,
+    "ailmentHidden": true,
+    "slots": [
+      {
+        "level": 1
+      }
+    ],
+    "id": 338
+  },
+  {
     "name": "Taroth Hammer \"Thief\"",
     "tags": [
       "kulve",
@@ -1018,43 +1153,17 @@
     "id": 311
   },
   {
-    "name": "Gold Thunder Bludgeon",
+    "name": "Taroth Hammer \"Water\"",
     "tags": [
       "kulve",
       "taroth",
-      "thunder",
+      "water",
       "hidden"
     ],
-    "rarity": 6,
+    "rarity": 8,
     "itemType": "Weapon",
     "weaponType": "Hammer",
-    "baseAttack": 832,
-    "baseDefense": 30,
-    "baseAffinityPercent": 0,
-    "sharpnessDataNeeded": true,
-    "sharpnessLevels": [
-      {
-        "color": "Blue",
-        "value": 20
-      }
-    ],
-    "ailment": "Thunder",
-    "ailmentBaseAttack": 240,
-    "ailmentHidden": true,
-    "slots": [],
-    "id": 301
-  },
-  {
-    "name": "Decay Gold Bludgeon",
-    "tags": [
-      "kulve",
-      "taroth",
-      "dragon"
-    ],
-    "rarity": 6,
-    "itemType": "Weapon",
-    "weaponType": "Hammer",
-    "baseAttack": 936,
+    "baseAttack": 988,
     "baseDefense": 20,
     "baseAffinityPercent": 0,
     "sharpnessDataNeeded": true,
@@ -1064,9 +1173,60 @@
         "value": 20
       }
     ],
-    "element": "Dragon",
-    "elementBaseAttack": 120,
+    "element": "Water",
+    "elementBaseAttack": 360,
+    "elementHidden": true,
     "slots": [],
-    "id": 302
+    "id": 339
+  },
+  {
+    "name": "Taroth Hammer \"Horn\"",
+    "tags": [
+      "kulve",
+      "taroth",
+      "ice"
+    ],
+    "rarity": 7,
+    "itemType": "Weapon",
+    "weaponType": "Hammer",
+    "baseAttack": 1144,
+    "baseDefense": 20,
+    "baseAffinityPercent": -25,
+    "sharpnessDataNeeded": true,
+    "sharpnessLevels": [
+      {
+        "color": "Blue",
+        "value": 20
+      }
+    ],
+    "element": "Ice",
+    "elementBaseAttack": 90,
+    "slots": [],
+    "id": 340
+  },
+  {
+    "name": "Taroth Hammer \"Rage\"",
+    "tags": [
+      "kulve",
+      "taroth",
+      "fire"
+    ],
+    "rarity": 7,
+    "itemType": "Weapon",
+    "weaponType": "Hammer",
+    "baseAttack": 1040,
+    "baseDefense": 20,
+    "baseAffinityPercent": -20,
+    "sharpnessDataNeeded": true,
+    "sharpnessLevels": [
+      {
+        "color": "Blue",
+        "value": 20
+      }
+    ],
+    "element": "Fire",
+    "elementBaseAttack": 450,
+    "slots": [],
+    "id": 341
   }
 ]

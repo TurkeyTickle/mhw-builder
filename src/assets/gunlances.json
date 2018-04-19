@@ -965,5 +965,57 @@
     "elementBaseAttack": 120,
     "slots": [],
     "id": 316
+  },
+  {
+    "name": "Taroth Buster \"Mud\"",
+    "tags": [
+      "kulve",
+      "taroth",
+      "paralysis",
+      "hidden"
+    ],
+    "rarity": 7,
+    "itemType": "Weapon",
+    "weaponType": "Gunlance",
+    "baseAttack": 391,
+    "baseDefense": 20,
+    "sharpnessDataNeeded": true,
+    "sharpnessLevels": [
+      {
+        "color": "White",
+        "value": 20
+      }
+    ],
+    "baseAffinityPercent": -10,
+    "ailment": "Paralysis",
+    "ailmentBaseAttack": 390,
+    "ailmentHidden": true,
+    "slots": [],
+    "id": 342
+  },
+  {
+    "name": "Taroth Buster \"Rage\"",
+    "tags": [
+      "kulve",
+      "taroth",
+      "fire"
+    ],
+    "rarity": 7,
+    "itemType": "Weapon",
+    "weaponType": "Gunlance",
+    "baseAttack": 460,
+    "baseDefense": 20,
+    "sharpnessDataNeeded": true,
+    "sharpnessLevels": [
+      {
+        "color": "Blue",
+        "value": 20
+      }
+    ],
+    "baseAffinityPercent": -20,
+    "element": "Fire",
+    "elementBaseAttack": 450,
+    "slots": [],
+    "id": 343
   }
 ]

@@ -989,5 +989,170 @@
     "elementHidden": true,
     "slots": [],
     "id": 310
+  },
+  {
+    "name": "Gold Ice Twinblades",
+    "tags": [
+      "kulve",
+      "taroth",
+      "ice",
+      "hidden"
+    ],
+    "rarity": 6,
+    "itemType": "Weapon",
+    "weaponType": "DualBlades",
+    "baseAttack": 224,
+    "baseDefense": 20,
+    "sharpnessDataNeeded": true,
+    "sharpnessLevels": [
+      {
+        "color": "Blue",
+        "value": 30
+      }
+    ],
+    "baseAffinityPercent": 0,
+    "element": "Ice",
+    "elementBaseAttack": 120,
+    "elementHidden": true,
+    "slots": [],
+    "id": 330
+  },
+  {
+    "name": "Flash Gold Twinblades",
+    "tags": [
+      "kulve",
+      "taroth",
+      "thunder",
+      "hidden"
+    ],
+    "rarity": 6,
+    "itemType": "Weapon",
+    "weaponType": "DualBlades",
+    "baseAttack": 224,
+    "baseDefense": 20,
+    "sharpnessDataNeeded": true,
+    "sharpnessLevels": [
+      {
+        "color": "Blue",
+        "value": 30
+      }
+    ],
+    "baseAffinityPercent": 0,
+    "element": "Thunder",
+    "elementBaseAttack": 90,
+    "elementHidden": true,
+    "slots": [],
+    "id": 331
+  },
+  {
+    "name": "Taroth Daggers \"Claw\"",
+    "tags": [
+      "kulve",
+      "taroth",
+      "fire",
+      "hidden"
+    ],
+    "rarity": 7,
+    "itemType": "Weapon",
+    "weaponType": "DualBlades",
+    "baseAttack": 252,
+    "baseDefense": 20,
+    "sharpnessDataNeeded": true,
+    "sharpnessLevels": [
+      {
+        "color": "Blue",
+        "value": 20
+      }
+    ],
+    "baseAffinityPercent": 20,
+    "element": "Fire",
+    "elementBaseAttack": 90,
+    "elementHidden": true,
+    "slots": [],
+    "id": 332
+  },
+  {
+    "name": "Taroth Daggers \"Ice\"",
+    "tags": [
+      "kulve",
+      "taroth",
+      "ice",
+      "hidden"
+    ],
+    "rarity": 8,
+    "itemType": "Weapon",
+    "weaponType": "DualBlades",
+    "baseAttack": 266,
+    "baseDefense": 20,
+    "sharpnessDataNeeded": true,
+    "sharpnessLevels": [
+      {
+        "color": "Blue",
+        "value": 20
+      }
+    ],
+    "baseAffinityPercent": 0,
+    "element": "Ice",
+    "elementBaseAttack": 270,
+    "elementHidden": true,
+    "slots": [
+      {
+        "level": 3
+      }
+    ],
+    "id": 333
+  },
+  {
+    "name": "Taroth Daggers \"Lurk\"",
+    "tags": [
+      "kulve",
+      "taroth",
+      "paralysis",
+      "hidden"
+    ],
+    "rarity": 7,
+    "itemType": "Weapon",
+    "weaponType": "DualBlades",
+    "baseAttack": 238,
+    "baseDefense": 20,
+    "sharpnessDataNeeded": true,
+    "sharpnessLevels": [
+      {
+        "color": "White",
+        "value": 20
+      }
+    ],
+    "baseAffinityPercent": 0,
+    "ailment": "Paralysis",
+    "ailmentBaseAttack": 90,
+    "ailmentHidden": true,
+    "slots": [],
+    "id": 334
+  },
+  {
+    "name": "Taroth Daggers \"Thief\"",
+    "tags": [
+      "kulve",
+      "taroth",
+      "sleep",
+      "hidden"
+    ],
+    "rarity": 7,
+    "itemType": "Weapon",
+    "weaponType": "DualBlades",
+    "baseAttack": 238,
+    "baseDefense": 20,
+    "sharpnessDataNeeded": true,
+    "sharpnessLevels": [
+      {
+        "color": "Blue",
+        "value": 20
+      }
+    ],
+    "baseAffinityPercent": 0,
+    "ailment": "Sleep",
+    "ailmentBaseAttack": 90,
+    "slots": [],
+    "id": 335
   }
 ]
