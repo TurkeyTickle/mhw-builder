@@ -861,17 +861,17 @@
     "name": "Gold Sleep Cutter",
     "tags": [
       "kulve",
-	  "taroth",
-	  "sleep",
-	  "hidden"
+      "taroth",
+      "sleep",
+      "hidden"
     ],
     "rarity": 6,
     "itemType": "Weapon",
     "weaponType": "ChargeBlade",
     "baseAttack": 504,
     "baseDefense": 20,
-	"sharpnessDataNeeded": true,
-	"sharpnessLevels": [
+    "sharpnessDataNeeded": true,
+    "sharpnessLevels": [
       {
         "color": "Blue",
         "value": 50
@@ -888,16 +888,16 @@
     "name": "Taroth Strongarm \"Mire\"",
     "tags": [
       "kulve",
-	  "taroth",
-	  "water"
+      "taroth",
+      "water"
     ],
     "rarity": 7,
     "itemType": "Weapon",
     "weaponType": "ChargeBlade",
     "baseAttack": 684,
     "baseDefense": 20,
-	"sharpnessDataNeeded": true,
-	"sharpnessLevels": [
+    "sharpnessDataNeeded": true,
+    "sharpnessLevels": [
       {
         "color": "Blue",
         "value": 20
@@ -908,5 +908,30 @@
     "elementBaseAttack": 120,
     "slots": [],
     "id": 297
+  },
+  {
+    "name": "Glutton Gold Cutter",
+    "tags": [
+      "kulve",
+      "taroth",
+      "sleep"
+    ],
+    "rarity": 6,
+    "itemType": "Weapon",
+    "weaponType": "ChargeBlade",
+    "baseAttack": 540,
+    "baseDefense": 20,
+    "sharpnessDataNeeded": true,
+    "sharpnessLevels": [
+      {
+        "color": "Blue",
+        "value": 40
+      }
+    ],
+    "baseAffinityPercent": 0,
+    "ailment": "Sleep",
+    "ailmentBaseAttack": 90,
+    "slots": [],
+    "id": 317
   }
 ]

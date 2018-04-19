@@ -969,5 +969,32 @@
     "elementBaseAttack": 210,
     "slots": [],
     "id": 304
+  },
+  {
+    "name": "Claw Gold Defender",
+    "tags": [
+      "kulve",
+      "taroth",
+      "fire",
+      "hidden"
+    ],
+    "rarity": 6,
+    "itemType": "Weapon",
+    "weaponType": "Lance",
+    "baseAttack": 299,
+    "baseDefense": 20,
+    "sharpnessDataNeeded": true,
+    "sharpnessLevels": [
+      {
+        "color": "Blue",
+        "value": 40
+      }
+    ],
+    "baseAffinityPercent": 30,
+    "element": "Fire",
+    "elementBaseAttack": 60,
+    "elementHidden": true,
+    "slots": [],
+    "id": 313
   }
 ]

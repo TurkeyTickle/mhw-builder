@@ -962,5 +962,30 @@
     "elementBaseAttack": 450,
     "slots": [],
     "id": 303
+  },
+  {
+    "name": "Stream Gold Flute",
+    "tags": [
+      "kulve",
+      "taroth",
+      "ice"
+    ],
+    "rarity": 6,
+    "itemType": "Weapon",
+    "weaponType": "HuntingHorn",
+    "baseAttack": 588,
+    "baseDefense": 20,
+    "sharpnessDataNeeded": true,
+    "sharpnessLevels": [
+      {
+        "color": "Blue",
+        "value": 60
+      }
+    ],
+    "baseAffinityPercent": 0,
+    "element": "Ice",
+    "elementBaseAttack": 180,
+    "slots": [],
+    "id": 312
   }
 ]

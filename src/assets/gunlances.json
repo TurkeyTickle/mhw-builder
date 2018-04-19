@@ -889,5 +889,81 @@
     "ailmentHidden": true,
     "slots": [],
     "id": 305
+  },
+  {
+    "name": "Decay Gold Exploder",
+    "tags": [
+      "kulve",
+      "taroth",
+      "dragon"
+    ],
+    "rarity": 6,
+    "itemType": "Weapon",
+    "weaponType": "Gunlance",
+    "baseAttack": 368,
+    "baseDefense": 20,
+    "sharpnessDataNeeded": true,
+    "sharpnessLevels": [
+      {
+        "color": "Blue",
+        "value": 30
+      }
+    ],
+    "baseAffinityPercent": 10,
+    "element": "Dragon",
+    "elementBaseAttack": 120,
+    "elderseal": "Average",
+    "slots": [],
+    "id": 314
+  },
+  {
+    "name": "Spark Gold Exploder",
+    "tags": [
+      "kulve",
+      "taroth",
+      "thunder"
+    ],
+    "rarity": 6,
+    "itemType": "Weapon",
+    "weaponType": "Gunlance",
+    "baseAttack": 322,
+    "baseDefense": 20,
+    "sharpnessDataNeeded": true,
+    "sharpnessLevels": [
+      {
+        "color": "Blue",
+        "value": 60
+      }
+    ],
+    "baseAffinityPercent": 20,
+    "element": "Thunder",
+    "elementBaseAttack": 120,
+    "slots": [],
+    "id": 315
+  },
+  {
+    "name": "King Gold Exploder",
+    "tags": [
+      "kulve",
+      "taroth",
+      "fire"
+    ],
+    "rarity": 6,
+    "itemType": "Weapon",
+    "weaponType": "Gunlance",
+    "baseAttack": 322,
+    "baseDefense": 20,
+    "sharpnessDataNeeded": true,
+    "sharpnessLevels": [
+      {
+        "color": "Blue",
+        "value": 60
+      }
+    ],
+    "baseAffinityPercent": 20,
+    "element": "Fire",
+    "elementBaseAttack": 120,
+    "slots": [],
+    "id": 316
   }
 ]

@@ -1,37 +1,41 @@
 [
   {
     "name": "Chrome Slicers II",
-	"tags": ["ore", "poison", "hidden"],
-	"rarity": 6,
+    "tags": [
+      "ore",
+      "poison",
+      "hidden"
+    ],
+    "rarity": 6,
     "itemType": "Weapon",
     "weaponType": "DualBlades",
     "baseAttack": 252,
-	"sharpnessLevels": [
-		{
-			"color": "Blue",
-			"value": 60
-		},
-		{
-			"color": "Blue",
-			"value": 70
-		},
-		{
-			"color": "Blue",
-			"value": 80
-		},
-		{
-			"color": "Blue",
-			"value": 90
-		},
-		{
-			"color": "White",
-			"value": 10
-		},
-		{
-			"color": "White",
-			"value": 20
-		}
-	],
+    "sharpnessLevels": [
+      {
+        "color": "Blue",
+        "value": 60
+      },
+      {
+        "color": "Blue",
+        "value": 70
+      },
+      {
+        "color": "Blue",
+        "value": 80
+      },
+      {
+        "color": "Blue",
+        "value": 90
+      },
+      {
+        "color": "White",
+        "value": 10
+      },
+      {
+        "color": "White",
+        "value": 20
+      }
+    ],
     "baseAffinityPercent": 0,
     "ailment": "Poison",
     "ailmentBaseAttack": 270,
@@ -48,17 +52,20 @@
   },
   {
     "name": "Decimation Claws",
-	"tags": ["nergigante", "dragon"],
-	"rarity": 8,
+    "tags": [
+      "nergigante",
+      "dragon"
+    ],
+    "rarity": 8,
     "itemType": "Weapon",
     "weaponType": "DualBlades",
     "baseAttack": 294,
-	"sharpnessLevels": [
-		{
-			"color": "Blue",
-			"value": 100
-		}
-	],
+    "sharpnessLevels": [
+      {
+        "color": "Blue",
+        "value": 100
+      }
+    ],
     "baseAffinityPercent": 0,
     "element": "Dragon",
     "elementBaseAttack": 120,
@@ -73,37 +80,41 @@
   },
   {
     "name": "Dual Destroyers III",
-	"tags": ["tzitzi-ya-ku", "thunder", "hidden"],
-	"rarity": 6,
+    "tags": [
+      "tzitzi-ya-ku",
+      "thunder",
+      "hidden"
+    ],
+    "rarity": 6,
     "itemType": "Weapon",
     "weaponType": "DualBlades",
     "baseAttack": 252,
-	"sharpnessLevels": [
-		{
-			"color": "Blue",
-			"value": 40
-		},
-		{
-			"color": "Blue",
-			"value": 50
-		},
-		{
-			"color": "White",
-			"value": 10
-		},
-		{
-			"color": "White",
-			"value": 20
-		},
-		{
-			"color": "White",
-			"value": 30
-		},
-		{
-			"color": "White",
-			"value": 40
-		}
-	],
+    "sharpnessLevels": [
+      {
+        "color": "Blue",
+        "value": 40
+      },
+      {
+        "color": "Blue",
+        "value": 50
+      },
+      {
+        "color": "White",
+        "value": 10
+      },
+      {
+        "color": "White",
+        "value": 20
+      },
+      {
+        "color": "White",
+        "value": 30
+      },
+      {
+        "color": "White",
+        "value": 40
+      }
+    ],
     "baseAffinityPercent": 0,
     "element": "Thunder",
     "elementBaseAttack": 210,
@@ -117,37 +128,40 @@
   },
   {
     "name": "Bazelhawk Rookslayer",
-	"tags": ["bazelgeuse", "blast"],
-	"rarity": 8,
+    "tags": [
+      "bazelgeuse",
+      "blast"
+    ],
+    "rarity": 8,
     "itemType": "Weapon",
     "weaponType": "DualBlades",
     "baseAttack": 280,
-	"sharpnessLevels": [
-		{
-			"color": "Blue",
-			"value": 30
-		},
-		{
-			"color": "White",
-			"value": 10
-		},
-		{
-			"color": "White",
-			"value": 20
-		},
-		{
-			"color": "White",
-			"value": 30
-		},
-		{
-			"color": "White",
-			"value": 40
-		},
-		{
-			"color": "White",
-			"value": 50
-		}
-	],
+    "sharpnessLevels": [
+      {
+        "color": "Blue",
+        "value": 30
+      },
+      {
+        "color": "White",
+        "value": 10
+      },
+      {
+        "color": "White",
+        "value": 20
+      },
+      {
+        "color": "White",
+        "value": 30
+      },
+      {
+        "color": "White",
+        "value": 40
+      },
+      {
+        "color": "White",
+        "value": 50
+      }
+    ],
     "baseAffinityPercent": -10,
     "ailment": "Blast",
     "ailmentBaseAttack": 150,
@@ -160,37 +174,40 @@
   },
   {
     "name": "Freeze Chain II",
-	"tags": ["legiana", "ice"],
-	"rarity": 6,
+    "tags": [
+      "legiana",
+      "ice"
+    ],
+    "rarity": 6,
     "itemType": "Weapon",
     "weaponType": "DualBlades",
     "baseAttack": 252,
-	"sharpnessLevels": [
-		{
-			"color": "Blue",
-			"value": 40
-		},
-		{
-			"color": "Blue",
-			"value": 50
-		},
-		{
-			"color": "White",
-			"value": 10
-		},
-		{
-			"color": "White",
-			"value": 20
-		},
-		{
-			"color": "White",
-			"value": 30
-		},
-		{
-			"color": "White",
-			"value": 40
-		}
-	],
+    "sharpnessLevels": [
+      {
+        "color": "Blue",
+        "value": 40
+      },
+      {
+        "color": "Blue",
+        "value": 50
+      },
+      {
+        "color": "White",
+        "value": 10
+      },
+      {
+        "color": "White",
+        "value": 20
+      },
+      {
+        "color": "White",
+        "value": 30
+      },
+      {
+        "color": "White",
+        "value": 40
+      }
+    ],
     "baseAffinityPercent": 0,
     "element": "Ice",
     "elementBaseAttack": 150,
@@ -203,37 +220,40 @@
   },
   {
     "name": "Arcanaria III",
-	"tags": ["kulu-ya-ku", "sleep"],
-	"rarity": 6,
+    "tags": [
+      "kulu-ya-ku",
+      "sleep"
+    ],
+    "rarity": 6,
     "itemType": "Weapon",
     "weaponType": "DualBlades",
     "baseAttack": 238,
-	"sharpnessLevels": [
-		{
-			"color": "Blue",
-			"value": 50
-		},
-		{
-			"color": "Blue",
-			"value": 60
-		},
-		{
-			"color": "Blue",
-			"value": 70
-		},
-		{
-			"color": "White",
-			"value": 10
-		},
-		{
-			"color": "White",
-			"value": 20
-		},
-		{
-			"color": "White",
-			"value": 30
-		}
-	],
+    "sharpnessLevels": [
+      {
+        "color": "Blue",
+        "value": 50
+      },
+      {
+        "color": "Blue",
+        "value": 60
+      },
+      {
+        "color": "Blue",
+        "value": 70
+      },
+      {
+        "color": "White",
+        "value": 10
+      },
+      {
+        "color": "White",
+        "value": 20
+      },
+      {
+        "color": "White",
+        "value": 30
+      }
+    ],
     "baseAffinityPercent": 20,
     "ailment": "Sleep",
     "ailmentBaseAttack": 120,
@@ -242,37 +262,40 @@
   },
   {
     "name": "Holy Sabers",
-	"tags": ["workshop", "water"],
-	"rarity": 7,
+    "tags": [
+      "workshop",
+      "water"
+    ],
+    "rarity": 7,
     "itemType": "Weapon",
     "weaponType": "DualBlades",
     "baseAttack": 252,
-	"sharpnessLevels": [
-		{
-			"color": "Blue",
-			"value": 110
-		},
-		{
-			"color": "Blue",
-			"value": 120
-		},
-		{
-			"color": "White",
-			"value": 10
-		},
-		{
-			"color": "White",
-			"value": 20
-		},
-		{
-			"color": "White",
-			"value": 30
-		},
-		{
-			"color": "White",
-			"value": 40
-		}
-	],
+    "sharpnessLevels": [
+      {
+        "color": "Blue",
+        "value": 110
+      },
+      {
+        "color": "Blue",
+        "value": 120
+      },
+      {
+        "color": "White",
+        "value": 10
+      },
+      {
+        "color": "White",
+        "value": 20
+      },
+      {
+        "color": "White",
+        "value": 30
+      },
+      {
+        "color": "White",
+        "value": 40
+      }
+    ],
     "baseAffinityPercent": 0,
     "element": "Water",
     "elementBaseAttack": 120,
@@ -285,37 +308,40 @@
   },
   {
     "name": "Strong Hatchets II",
-	"tags": ["bone", "blast"],
-	"rarity": 6,
+    "tags": [
+      "bone",
+      "blast"
+    ],
+    "rarity": 6,
     "itemType": "Weapon",
     "weaponType": "DualBlades",
     "baseAttack": 266,
-	"sharpnessLevels": [
-		{
-			"color": "Blue",
-			"value": 60
-		},
-		{
-			"color": "Blue",
-			"value": 70
-		},
-		{
-			"color": "Blue",
-			"value": 80
-		},
-		{
-			"color": "Blue",
-			"value": 90
-		},
-		{
-			"color": "Blue",
-			"value": 100
-		},
-		{
-			"color": "Blue",
-			"value": 110
-		}
-	],
+    "sharpnessLevels": [
+      {
+        "color": "Blue",
+        "value": 60
+      },
+      {
+        "color": "Blue",
+        "value": 70
+      },
+      {
+        "color": "Blue",
+        "value": 80
+      },
+      {
+        "color": "Blue",
+        "value": 90
+      },
+      {
+        "color": "Blue",
+        "value": 100
+      },
+      {
+        "color": "Blue",
+        "value": 110
+      }
+    ],
     "baseAffinityPercent": 0,
     "ailment": "Blast",
     "ailmentBaseAttack": 180,
@@ -329,37 +355,40 @@
   },
   {
     "name": "Anja Cyclone III",
-	"tags": ["anjanath", "fire"],
-	"rarity": 7,
+    "tags": [
+      "anjanath",
+      "fire"
+    ],
+    "rarity": 7,
     "itemType": "Weapon",
     "weaponType": "DualBlades",
     "baseAttack": 252,
-	"sharpnessLevels": [
-		{
-			"color": "Blue",
-			"value": 40
-		},
-		{
-			"color": "Blue",
-			"value": 50
-		},
-		{
-			"color": "Blue",
-			"value": 60
-		},
-		{
-			"color": "Blue",
-			"value": 70
-		},
-		{
-			"color": "Blue",
-			"value": 80
-		},
-		{
-			"color": "Blue",
-			"value": 90
-		}
-	],
+    "sharpnessLevels": [
+      {
+        "color": "Blue",
+        "value": 40
+      },
+      {
+        "color": "Blue",
+        "value": 50
+      },
+      {
+        "color": "Blue",
+        "value": 60
+      },
+      {
+        "color": "Blue",
+        "value": 70
+      },
+      {
+        "color": "Blue",
+        "value": 80
+      },
+      {
+        "color": "Blue",
+        "value": 90
+      }
+    ],
     "baseAffinityPercent": -20,
     "element": "Fire",
     "elementBaseAttack": 210,
@@ -368,37 +397,40 @@
   },
   {
     "name": "Diablos Clubs II",
-	"tags": ["ice", "hidden"],
-	"rarity": 7,
+    "tags": [
+      "ice",
+      "hidden"
+    ],
+    "rarity": 7,
     "itemType": "Weapon",
     "weaponType": "DualBlades",
     "baseAttack": 322,
-	"sharpnessLevels": [
-		{
-			"color": "Blue",
-			"value": 30
-		},
-		{
-			"color": "Blue",
-			"value": 40
-		},
-		{
-			"color": "Blue",
-			"value": 50
-		},
-		{
-			"color": "Blue",
-			"value": 60
-		},
-		{
-			"color": "White",
-			"value": 10
-		},
-		{
-			"color": "White",
-			"value": 20
-		}
-	],
+    "sharpnessLevels": [
+      {
+        "color": "Blue",
+        "value": 30
+      },
+      {
+        "color": "Blue",
+        "value": 40
+      },
+      {
+        "color": "Blue",
+        "value": 50
+      },
+      {
+        "color": "Blue",
+        "value": 60
+      },
+      {
+        "color": "White",
+        "value": 10
+      },
+      {
+        "color": "White",
+        "value": 20
+      }
+    ],
     "baseAffinityPercent": -10,
     "element": "Ice",
     "elementBaseAttack": 90,
@@ -413,37 +445,40 @@
   },
   {
     "name": "Jyura Hatchets III",
-	"tags": ["jyuratodus", "water"],
-	"rarity": 6,
+    "tags": [
+      "jyuratodus",
+      "water"
+    ],
+    "rarity": 6,
     "itemType": "Weapon",
     "weaponType": "DualBlades",
     "baseAttack": 266,
-	"sharpnessLevels": [
-		{
-			"color": "Blue",
-			"value": 30
-		},
-		{
-			"color": "Blue",
-			"value": 40
-		},
-		{
-			"color": "Blue",
-			"value": 50
-		},
-		{
-			"color": "White",
-			"value": 10
-		},
-		{
-			"color": "White",
-			"value": 20
-		},
-		{
-			"color": "White",
-			"value": 30
-		}
-	],
+    "sharpnessLevels": [
+      {
+        "color": "Blue",
+        "value": 30
+      },
+      {
+        "color": "Blue",
+        "value": 40
+      },
+      {
+        "color": "Blue",
+        "value": 50
+      },
+      {
+        "color": "White",
+        "value": 10
+      },
+      {
+        "color": "White",
+        "value": 20
+      },
+      {
+        "color": "White",
+        "value": 30
+      }
+    ],
     "baseAffinityPercent": 0,
     "element": "Water",
     "elementBaseAttack": 210,
@@ -456,37 +491,40 @@
   },
   {
     "name": "Lava Cyclone II",
-	"tags": ["lavasioth", "fire"],
-	"rarity": 7,
+    "tags": [
+      "lavasioth",
+      "fire"
+    ],
+    "rarity": 7,
     "itemType": "Weapon",
     "weaponType": "DualBlades",
     "baseAttack": 252,
-	"sharpnessLevels": [
-		{
-			"color": "Blue",
-			"value": 40
-		},
-		{
-			"color": "Blue",
-			"value": 50
-		},
-		{
-			"color": "White",
-			"value": 10
-		},
-		{
-			"color": "White",
-			"value": 20
-		},
-		{
-			"color": "White",
-			"value": 30
-		},
-		{
-			"color": "White",
-			"value": 40
-		}
-	],
+    "sharpnessLevels": [
+      {
+        "color": "Blue",
+        "value": 40
+      },
+      {
+        "color": "Blue",
+        "value": 50
+      },
+      {
+        "color": "White",
+        "value": 10
+      },
+      {
+        "color": "White",
+        "value": 20
+      },
+      {
+        "color": "White",
+        "value": 30
+      },
+      {
+        "color": "White",
+        "value": 40
+      }
+    ],
     "baseAffinityPercent": 0,
     "element": "Fire",
     "elementBaseAttack": 150,
@@ -502,37 +540,41 @@
   },
   {
     "name": "Dark Ripper III",
-	"tags": ["hornetaur", "paralysis", "hidden"],
-	"rarity": 6,
+    "tags": [
+      "hornetaur",
+      "paralysis",
+      "hidden"
+    ],
+    "rarity": 6,
     "itemType": "Weapon",
     "weaponType": "DualBlades",
     "baseAttack": 224,
-	"sharpnessLevels": [
-		{
-			"color": "White",
-			"value": 30
-		},
-		{
-			"color": "White",
-			"value": 40
-		},
-		{
-			"color": "White",
-			"value": 50
-		},
-		{
-			"color": "White",
-			"value": 60
-		},
-		{
-			"color": "White",
-			"value": 70
-		},
-		{
-			"color": "White",
-			"value": 80
-		}
-	],
+    "sharpnessLevels": [
+      {
+        "color": "White",
+        "value": 30
+      },
+      {
+        "color": "White",
+        "value": 40
+      },
+      {
+        "color": "White",
+        "value": 50
+      },
+      {
+        "color": "White",
+        "value": 60
+      },
+      {
+        "color": "White",
+        "value": 70
+      },
+      {
+        "color": "White",
+        "value": 80
+      }
+    ],
     "baseAffinityPercent": 0,
     "ailment": "Paralysis",
     "ailmentBaseAttack": 90,
@@ -546,37 +588,40 @@
   },
   {
     "name": "Kadachi Claws III",
-	"tags": ["tobi-kadachi", "thunder"],
-	"rarity": 6,
+    "tags": [
+      "tobi-kadachi",
+      "thunder"
+    ],
+    "rarity": 6,
     "itemType": "Weapon",
     "weaponType": "DualBlades",
     "baseAttack": 252,
-	"sharpnessLevels": [
-		{
-			"color": "Blue",
-			"value": 40
-		},
-		{
-			"color": "Blue",
-			"value": 50
-		},
-		{
-			"color": "White",
-			"value": 10
-		},
-		{
-			"color": "White",
-			"value": 20
-		},
-		{
-			"color": "White",
-			"value": 30
-		},
-		{
-			"color": "White",
-			"value": 40
-		}
-	],
+    "sharpnessLevels": [
+      {
+        "color": "Blue",
+        "value": 40
+      },
+      {
+        "color": "Blue",
+        "value": 50
+      },
+      {
+        "color": "White",
+        "value": 10
+      },
+      {
+        "color": "White",
+        "value": 20
+      },
+      {
+        "color": "White",
+        "value": 30
+      },
+      {
+        "color": "White",
+        "value": 40
+      }
+    ],
     "baseAffinityPercent": 10,
     "element": "Thunder",
     "elementBaseAttack": 150,
@@ -589,17 +634,21 @@
   },
   {
     "name": "Sin",
-	"tags": ["odogaron", "fire", "hidden"],
-	"rarity": 8,
+    "tags": [
+      "odogaron",
+      "fire",
+      "hidden"
+    ],
+    "rarity": 8,
     "itemType": "Weapon",
     "weaponType": "DualBlades",
     "baseAttack": 224,
-	"sharpnessLevels": [
-		{
-			"color": "White",
-			"value": 40
-		}
-	],
+    "sharpnessLevels": [
+      {
+        "color": "White",
+        "value": 40
+      }
+    ],
     "baseAffinityPercent": 20,
     "element": "Fire",
     "elementBaseAttack": 180,
@@ -609,37 +658,40 @@
   },
   {
     "name": "Enduring Schism",
-	"tags": ["dragonbone", "dragon"],
-	"rarity": 7,
+    "tags": [
+      "dragonbone",
+      "dragon"
+    ],
+    "rarity": 7,
     "itemType": "Weapon",
     "weaponType": "DualBlades",
     "baseAttack": 196,
-	"sharpnessLevels": [
-		{
-			"color": "Blue",
-			"value": 50
-		},
-		{
-			"color": "Blue",
-			"value": 60
-		},
-		{
-			"color": "Blue",
-			"value": 70
-		},
-		{
-			"color": "Blue",
-			"value": 80
-		},
-		{
-			"color": "White",
-			"value": 10
-		},
-		{
-			"color": "White",
-			"value": 20
-		}
-	],
+    "sharpnessLevels": [
+      {
+        "color": "Blue",
+        "value": 50
+      },
+      {
+        "color": "Blue",
+        "value": 60
+      },
+      {
+        "color": "Blue",
+        "value": 70
+      },
+      {
+        "color": "Blue",
+        "value": 80
+      },
+      {
+        "color": "White",
+        "value": 10
+      },
+      {
+        "color": "White",
+        "value": 20
+      }
+    ],
     "baseAffinityPercent": 0,
     "element": "Dragon",
     "elementBaseAttack": 270,
@@ -656,37 +708,40 @@
   },
   {
     "name": "Monarch",
-	"tags": ["kirin", "thunder"],
-	"rarity": 8,
+    "tags": [
+      "kirin",
+      "thunder"
+    ],
+    "rarity": 8,
     "itemType": "Weapon",
     "weaponType": "DualBlades",
     "baseAttack": 224,
-	"sharpnessLevels": [
-		{
-			"color": "Blue",
-			"value": 80
-		},
-		{
-			"color": "Blue",
-			"value": 90
-		},
-		{
-			"color": "Blue",
-			"value": 100
-		},
-		{
-			"color": "Blue",
-			"value": 110
-		},
-		{
-			"color": "Blue",
-			"value": 120
-		},
-		{
-			"color": "Blue",
-			"value": 130
-		}
-	],
+    "sharpnessLevels": [
+      {
+        "color": "Blue",
+        "value": 80
+      },
+      {
+        "color": "Blue",
+        "value": 90
+      },
+      {
+        "color": "Blue",
+        "value": 100
+      },
+      {
+        "color": "Blue",
+        "value": 110
+      },
+      {
+        "color": "Blue",
+        "value": 120
+      },
+      {
+        "color": "Blue",
+        "value": 130
+      }
+    ],
     "baseAffinityPercent": 0,
     "element": "Thunder",
     "elementBaseAttack": 270,
@@ -695,37 +750,41 @@
   },
   {
     "name": "Magda Ungulae II",
-	"tags": ["zorah", "magdaros", "blast"],
-	"rarity": 7,
+    "tags": [
+      "zorah",
+      "magdaros",
+      "blast"
+    ],
+    "rarity": 7,
     "itemType": "Weapon",
     "weaponType": "DualBlades",
     "baseAttack": 308,
-	"sharpnessLevels": [
-		{
-			"color": "Green",
-			"value": 80
-		},
-		{
-			"color": "Green",
-			"value": 90
-		},
-		{
-			"color": "Blue",
-			"value": 10
-		},
-		{
-			"color": "Blue",
-			"value": 20
-		},
-		{
-			"color": "Blue",
-			"value": 30
-		},
-		{
-			"color": "Blue",
-			"value": 40
-		}
-	],
+    "sharpnessLevels": [
+      {
+        "color": "Green",
+        "value": 80
+      },
+      {
+        "color": "Green",
+        "value": 90
+      },
+      {
+        "color": "Blue",
+        "value": 10
+      },
+      {
+        "color": "Blue",
+        "value": 20
+      },
+      {
+        "color": "Blue",
+        "value": 30
+      },
+      {
+        "color": "Blue",
+        "value": 40
+      }
+    ],
     "baseAffinityPercent": -20,
     "ailment": "Blast",
     "ailmentBaseAttack": 210,
@@ -739,38 +798,42 @@
   },
   {
     "name": "Fire and Ice",
-	"tags": ["blacksteel", "ice", "blast"],
-	"rarity": 8,
+    "tags": [
+      "blacksteel",
+      "ice",
+      "blast"
+    ],
+    "rarity": 8,
     "itemType": "Weapon",
     "weaponType": "DualBlades",
     "baseAttack": 252,
     "baseAffinityPercent": 10,
-	"sharpnessLevels": [
-		{
-			"color": "Blue",
-			"value": 60
-		},
-		{
-			"color": "Blue",
-			"value": 70
-		},
-		{
-			"color": "White",
-			"value": 10
-		},
-		{
-			"color": "White",
-			"value": 20
-		},
-		{
-			"color": "White",
-			"value": 30
-		},
-		{
-			"color": "White",
-			"value": 40
-		}
-	],
+    "sharpnessLevels": [
+      {
+        "color": "Blue",
+        "value": 60
+      },
+      {
+        "color": "Blue",
+        "value": 70
+      },
+      {
+        "color": "White",
+        "value": 10
+      },
+      {
+        "color": "White",
+        "value": 20
+      },
+      {
+        "color": "White",
+        "value": 30
+      },
+      {
+        "color": "White",
+        "value": 40
+      }
+    ],
     "element": "Ice",
     "elementBaseAttack": 240,
     "ailment": "Blast",
@@ -784,38 +847,41 @@
   },
   {
     "name": "Xeno Raqs",
-	"tags": ["xeno'jiva", "dragon"],
-	"rarity": 8,
+    "tags": [
+      "xeno'jiva",
+      "dragon"
+    ],
+    "rarity": 8,
     "itemType": "Weapon",
     "weaponType": "DualBlades",
     "baseAttack": 238,
     "baseAffinityPercent": 15,
-	"sharpnessLevels": [
-		{
-			"color": "White",
-			"value": 20
-		},
-		{
-			"color": "White",
-			"value": 30
-		},
-		{
-			"color": "White",
-			"value": 40
-		},
-		{
-			"color": "White",
-			"value": 50
-		},
-		{
-			"color": "White",
-			"value": 60
-		},
-		{
-			"color": "White",
-			"value": 70
-		}
-	],
+    "sharpnessLevels": [
+      {
+        "color": "White",
+        "value": 20
+      },
+      {
+        "color": "White",
+        "value": 30
+      },
+      {
+        "color": "White",
+        "value": 40
+      },
+      {
+        "color": "White",
+        "value": 50
+      },
+      {
+        "color": "White",
+        "value": 60
+      },
+      {
+        "color": "White",
+        "value": 70
+      }
+    ],
     "element": "Dragon",
     "elementBaseAttack": 150,
     "elderseal": "Low",
@@ -831,42 +897,97 @@
   },
   {
     "name": "Wrathful Predation",
-	"tags": ["deviljho", "dragon"],
-	"rarity": 7,
+    "tags": [
+      "deviljho",
+      "dragon"
+    ],
+    "rarity": 7,
     "itemType": "Weapon",
     "weaponType": "DualBlades",
     "baseAttack": 308,
-	"sharpnessLevels": [
-		{
-			"color": "Blue",
-			"value": 50
-		},
-		{
-			"color": "White",
-			"value": 10
-		},
-		{
-			"color": "White",
-			"value": 20
-		},
-		{
-			"color": "White",
-			"value": 30
-		},
-		{
-			"color": "White",
-			"value": 40
-		},
-		{
-			"color": "White",
-			"value": 50
-		}
-	],
+    "sharpnessLevels": [
+      {
+        "color": "Blue",
+        "value": 50
+      },
+      {
+        "color": "White",
+        "value": 10
+      },
+      {
+        "color": "White",
+        "value": 20
+      },
+      {
+        "color": "White",
+        "value": 30
+      },
+      {
+        "color": "White",
+        "value": 40
+      },
+      {
+        "color": "White",
+        "value": 50
+      }
+    ],
     "baseAffinityPercent": -20,
     "element": "Dragon",
     "elementBaseAttack": 180,
     "elderseal": "High",
     "id": 277,
     "slots": []
+  },
+  {
+    "name": "Spark Gold Twinblades",
+    "tags": [
+      "kulve",
+      "taroth",
+      "thunder"
+    ],
+    "rarity": 6,
+    "itemType": "Weapon",
+    "weaponType": "DualBlades",
+    "baseAttack": 196,
+    "baseDefense": 20,
+    "sharpnessDataNeeded": true,
+    "sharpnessLevels": [
+      {
+        "color": "White",
+        "value": 20
+      }
+    ],
+    "baseAffinityPercent": 10,
+    "element": "Thunder",
+    "elementBaseAttack": 60,
+    "slots": [],
+    "id": 309
+  },
+  {
+    "name": "Gold Water Twinblades",
+    "tags": [
+      "kulve",
+      "taroth",
+      "water",
+      "hidden"
+    ],
+    "rarity": 6,
+    "itemType": "Weapon",
+    "weaponType": "DualBlades",
+    "baseAttack": 238,
+    "baseDefense": 20,
+    "sharpnessDataNeeded": true,
+    "sharpnessLevels": [
+      {
+        "color": "Blue",
+        "value": 30
+      }
+    ],
+    "baseAffinityPercent": 0,
+    "element": "Water",
+    "elementBaseAttack": 120,
+    "elementHidden": true,
+    "slots": [],
+    "id": 310
   }
 ]

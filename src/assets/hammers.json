@@ -993,6 +993,31 @@
     "id": 300
   },
   {
+    "name": "Taroth Hammer \"Spew\"",
+    "tags": [
+      "kulve",
+      "taroth",
+      "poison"
+    ],
+    "rarity": 7,
+    "itemType": "Weapon",
+    "weaponType": "Hammer",
+    "baseAttack": 988,
+    "baseDefense": 20,
+    "baseAffinityPercent": 0,
+    "sharpnessDataNeeded": true,
+    "sharpnessLevels": [
+      {
+        "color": "Blue",
+        "value": 20
+      }
+    ],
+    "ailment": "Poison",
+    "ailmentBaseAttack": 540,
+    "slots": [],
+    "id": 311
+  },
+  {
     "name": "Gold Thunder Bludgeon",
     "tags": [
       "kulve",
