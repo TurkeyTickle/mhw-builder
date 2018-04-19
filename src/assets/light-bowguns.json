@@ -389,5 +389,33 @@
     "baseAffinityPercent": 10,
     "slots": [],
     "id": 318
+  },
+  {
+    "name": "Gold Spread Razer",
+    "tags": [
+      "kulve",
+      "taroth"
+    ],
+    "rarity": 6,
+    "itemType": "Weapon",
+    "weaponType": "LightBowgun",
+    "baseAttack": 221,
+    "baseAffinityPercent": 0,
+    "slots": [],
+    "id": 387
+  },
+  {
+    "name": "Taroth Blitz \"Drifter\"",
+    "tags": [
+      "kulve",
+      "taroth"
+    ],
+    "rarity": 7,
+    "itemType": "Weapon",
+    "weaponType": "LightBowgun",
+    "baseAttack": 221,
+    "baseAffinityPercent": 20,
+    "slots": [],
+    "id": 388
   }
 ]

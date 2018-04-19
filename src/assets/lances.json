@@ -996,5 +996,162 @@
     "elementHidden": true,
     "slots": [],
     "id": 313
+  },
+  {
+    "name": "Taroth Crest \"Claw\"",
+    "tags": [
+      "kulve",
+      "taroth"
+    ],
+    "rarity": 7,
+    "itemType": "Weapon",
+    "weaponType": "Lance",
+    "baseAttack": 437,
+    "baseDefense": 20,
+    "sharpnessDataNeeded": true,
+    "sharpnessLevels": [
+      {
+        "color": "Blue",
+        "value": 20
+      }
+    ],
+    "baseAffinityPercent": 30,
+    "slots": [],
+    "id": 375
+  },
+  {
+    "name": "Taroth Crest \"Crusher\"",
+    "tags": [
+      "kulve",
+      "taroth",
+      "blast"
+    ],
+    "rarity": 7,
+    "itemType": "Weapon",
+    "weaponType": "Lance",
+    "baseAttack": 391,
+    "baseDefense": 20,
+    "sharpnessDataNeeded": true,
+    "sharpnessLevels": [
+      {
+        "color": "Blue",
+        "value": 20
+      }
+    ],
+    "baseAffinityPercent": 10,
+    "ailment": "Blast",
+    "ailmentBaseAttack": 210,
+    "slots": [],
+    "id": 376
+  },
+  {
+    "name": "Taroth Crest \"Stream\"",
+    "tags": [
+      "kulve",
+      "taroth",
+      "ice",
+      "hidden"
+    ],
+    "rarity": 7,
+    "itemType": "Weapon",
+    "weaponType": "Lance",
+    "baseAttack": 368,
+    "baseDefense": 20,
+    "sharpnessDataNeeded": true,
+    "sharpnessLevels": [
+      {
+        "color": "White",
+        "value": 20
+      }
+    ],
+    "baseAffinityPercent": 0,
+    "element": "Ice",
+    "elementBaseAttack": 300,
+    "elementHidden": true,
+    "slots": [],
+    "id": 377
+  },
+  {
+    "name": "Taroth Crest \"King\"",
+    "tags": [
+      "kulve",
+      "taroth",
+      "fire"
+    ],
+    "rarity": 7,
+    "itemType": "Weapon",
+    "weaponType": "Lance",
+    "baseAttack": 368,
+    "baseDefense": 20,
+    "sharpnessDataNeeded": true,
+    "sharpnessLevels": [
+      {
+        "color": "White",
+        "value": 20
+      }
+    ],
+    "baseAffinityPercent": 0,
+    "element": "Fire",
+    "elementBaseAttack": 300,
+    "slots": [],
+    "id": 378
+  },
+  {
+    "name": "Taroth Crest \"Sleep\"",
+    "tags": [
+      "kulve",
+      "taroth",
+      "sleep",
+      "hidden"
+    ],
+    "rarity": 7,
+    "itemType": "Weapon",
+    "weaponType": "Lance",
+    "baseAttack": 414,
+    "baseDefense": 20,
+    "sharpnessDataNeeded": true,
+    "sharpnessLevels": [
+      {
+        "color": "Blue",
+        "value": 20
+      }
+    ],
+    "baseAffinityPercent": 10,
+    "ailment": "Sleep",
+    "ailmentBaseAttack": 450,
+    "ailmentHidden": true,
+    "slots": [],
+    "id": 379
+  },
+  {
+    "name": "Taroth Crest \"Thunder\"",
+    "tags": [
+      "kulve",
+      "taroth",
+      "thunder",
+      "hidden"
+    ],
+    "rarity": 8,
+    "itemType": "Weapon",
+    "weaponType": "Lance",
+    "baseAttack": 368,
+    "baseDefense": 20,
+    "sharpnessDataNeeded": true,
+    "sharpnessLevels": [
+      {
+        "color": "Blue",
+        "value": 20
+      }
+    ],
+    "baseAffinityPercent": 20,
+    "element": "Thunder",
+    "elementBaseAttack": 600,
+    "elementHidden": true,
+    "slots": [
+      {
+        "level": 3
+      }
+    ],
+    "id": 380
   }
 ]

@@ -1341,8 +1341,8 @@
       }
     ],
     "baseAffinityPercent": -20,
-    "element": "Blast",
-    "elementBaseAttack": 420,
+    "ailment": "Blast",
+    "ailmentBaseAttack": 420,
     "slots": [],
     "id": 327
   },

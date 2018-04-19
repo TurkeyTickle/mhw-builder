@@ -939,6 +939,158 @@
     "id": 295
   },
   {
+    "name": "Stream Gold Flute",
+    "tags": [
+      "kulve",
+      "taroth",
+      "ice"
+    ],
+    "rarity": 6,
+    "itemType": "Weapon",
+    "weaponType": "HuntingHorn",
+    "baseAttack": 588,
+    "baseDefense": 20,
+    "sharpnessDataNeeded": true,
+    "sharpnessLevels": [
+      {
+        "color": "Blue",
+        "value": 60
+      }
+    ],
+    "baseAffinityPercent": 0,
+    "element": "Ice",
+    "elementBaseAttack": 180,
+    "slots": [],
+    "id": 312
+  },
+  {
+    "name": "Buzzer Gold Flute",
+    "tags": [
+      "kulve",
+      "taroth",
+      "paralysis"
+    ],
+    "rarity": 6,
+    "itemType": "Weapon",
+    "weaponType": "HuntingHorn",
+    "baseAttack": 546,
+    "baseDefense": 20,
+    "sharpnessDataNeeded": true,
+    "sharpnessLevels": [
+      {
+        "color": "Blue",
+        "value": 20
+      }
+    ],
+    "baseAffinityPercent": 30,
+    "ailment": "Paralysis",
+    "ailmentBaseAttack": 150,
+    "slots": [],
+    "id": 368
+  },
+  {
+    "name": "Drifter Gold Flute",
+    "tags": [
+      "kulve",
+      "taroth",
+      "water"
+    ],
+    "rarity": 6,
+    "itemType": "Weapon",
+    "weaponType": "HuntingHorn",
+    "baseAttack": 630,
+    "baseDefense": 20,
+    "sharpnessDataNeeded": true,
+    "sharpnessLevels": [
+      {
+        "color": "Blue",
+        "value": 20
+      }
+    ],
+    "baseAffinityPercent": 10,
+    "element": "Water",
+    "elementBaseAttack": 210,
+    "slots": [],
+    "id": 369
+  },
+  {
+    "name": "Gold Water Flute",
+    "tags": [
+      "kulve",
+      "taroth",
+      "water",
+      "hidden"
+    ],
+    "rarity": 6,
+    "itemType": "Weapon",
+    "weaponType": "HuntingHorn",
+    "baseAttack": 630,
+    "baseDefense": 20,
+    "sharpnessDataNeeded": true,
+    "sharpnessLevels": [
+      {
+        "color": "Blue",
+        "value": 20
+      }
+    ],
+    "baseAffinityPercent": 10,
+    "element": "Water",
+    "elementBaseAttack": 300,
+    "elementHidden": true,
+    "slots": [],
+    "id": 370
+  },
+  {
+    "name": "Crusher Gold Flute",
+    "tags": [
+      "kulve",
+      "taroth",
+      "blast"
+    ],
+    "rarity": 6,
+    "itemType": "Weapon",
+    "weaponType": "HuntingHorn",
+    "baseAttack": 714,
+    "baseDefense": 20,
+    "sharpnessDataNeeded": true,
+    "sharpnessLevels": [
+      {
+        "color": "Blue",
+        "value": 20
+      }
+    ],
+    "baseAffinityPercent": 10,
+    "ailment": "Blast",
+    "ailmentBaseAttack": 90,
+    "slots": [],
+    "id": 371
+  },
+  {
+    "name": "Myth Gold Flute",
+    "tags": [
+      "kulve",
+      "taroth",
+      "thunder"
+    ],
+    "rarity": 6,
+    "itemType": "Weapon",
+    "weaponType": "HuntingHorn",
+    "baseAttack": 504,
+    "baseDefense": 20,
+    "sharpnessDataNeeded": true,
+    "sharpnessLevels": [
+      {
+        "color": "White",
+        "value": 20
+      }
+    ],
+    "baseAffinityPercent": 0,
+    "ailment": "Thunder",
+    "ailmentBaseAttack": 270,
+    "slots": [],
+    "id": 372
+  },
+  {
     "name": "Taroth Pipe \"Rage\"",
     "tags": [
       "kulve",
@@ -964,28 +1116,60 @@
     "id": 303
   },
   {
-    "name": "Stream Gold Flute",
+    "name": "Taroth Pipe \"Spew\"",
     "tags": [
       "kulve",
       "taroth",
-      "ice"
+      "poison"
     ],
-    "rarity": 6,
+    "rarity": 7,
     "itemType": "Weapon",
     "weaponType": "HuntingHorn",
-    "baseAttack": 588,
+    "baseAttack": 756,
     "baseDefense": 20,
     "sharpnessDataNeeded": true,
     "sharpnessLevels": [
       {
         "color": "Blue",
-        "value": 60
+        "value": 20
       }
     ],
     "baseAffinityPercent": 0,
-    "element": "Ice",
-    "elementBaseAttack": 180,
+    "ailment": "Poison",
+    "ailmentBaseAttack": 540,
+    "slots": [
+      {
+        "level": 1
+      }
+    ],
+    "id": 373
+  },
+  {
+    "name": "Taroth Pipe \"Dragon\"",
+    "tags": [
+      "kulve",
+      "taroth",
+      "dragon",
+      "hidden"
+    ],
+    "rarity": 8,
+    "itemType": "Weapon",
+    "weaponType": "HuntingHorn",
+    "baseAttack": 756,
+    "baseDefense": 20,
+    "sharpnessDataNeeded": true,
+    "sharpnessLevels": [
+      {
+        "color": "White",
+        "value": 20
+      }
+    ],
+    "baseAffinityPercent": 0,
+    "element": "Dragon",
+    "elementBaseAttack": 540,
+    "elementHidden": true,
+    "elderseal": "Average",
     "slots": [],
-    "id": 312
+    "id": 374
   }
 ]

@@ -968,17 +968,17 @@
     "name": "Gold Paralysis Katana",
     "tags": [
       "kulve",
-	  "taroth",
-	  "paralysis",
-	  "hidden"
+      "taroth",
+      "paralysis",
+      "hidden"
     ],
-    "rarity": 7,
+    "rarity": 6,
     "itemType": "Weapon",
     "weaponType": "LongSword",
     "baseAttack": 495,
     "baseDefense": 20,
-	"sharpnessDataNeeded": true,
-	"sharpnessLevels": [
+    "sharpnessDataNeeded": true,
+    "sharpnessLevels": [
       {
         "color": "White",
         "value": 20
@@ -990,5 +990,169 @@
     "ailmentHidden": true,
     "slots": [],
     "id": 291
+  },
+  {
+    "name": "Taroth Sword \"Mire\"",
+    "tags": [
+      "kulve",
+      "taroth",
+      "water"
+    ],
+    "rarity": 7,
+    "itemType": "Weapon",
+    "weaponType": "LongSword",
+    "baseAttack": 660,
+    "baseDefense": 20,
+    "sharpnessDataNeeded": true,
+    "sharpnessLevels": [
+      {
+        "color": "Blue",
+        "value": 20
+      }
+    ],
+    "baseAffinityPercent": 0,
+    "element": "Water",
+    "elementBaseAttack": 360,
+    "slots": [],
+    "id": 361
+  },
+  {
+    "name": "Taroth Sword \"Gyre\"",
+    "tags": [
+      "kulve",
+      "taroth",
+      "fire"
+    ],
+    "rarity": 7,
+    "itemType": "Weapon",
+    "weaponType": "LongSword",
+    "baseAttack": 660,
+    "baseDefense": 20,
+    "sharpnessDataNeeded": true,
+    "sharpnessLevels": [
+      {
+        "color": "Blue",
+        "value": 20
+      }
+    ],
+    "baseAffinityPercent": 0,
+    "element": "Fire",
+    "elementBaseAttack": 120,
+    "slots": [],
+    "id": 362
+  },
+  {
+    "name": "Taroth Sword \"Lurk\"",
+    "tags": [
+      "kulve",
+      "taroth",
+      "paralysis",
+      "hidden"
+    ],
+    "rarity": 7,
+    "itemType": "Weapon",
+    "weaponType": "LongSword",
+    "baseAttack": 528,
+    "baseDefense": 20,
+    "sharpnessDataNeeded": true,
+    "sharpnessLevels": [
+      {
+        "color": "Blue",
+        "value": 20
+      }
+    ],
+    "baseAffinityPercent": 0,
+    "ailment": "Paralysis",
+    "ailmentBaseAttack": 210,
+    "ailmentHidden": true,
+    "slots": [],
+    "id": 363
+  },
+  {
+    "name": "Taroth Sword \"Poison\"",
+    "tags": [
+      "kulve",
+      "taroth",
+      "poison",
+      "hidden"
+    ],
+    "rarity": 8,
+    "itemType": "Weapon",
+    "weaponType": "LongSword",
+    "baseAttack": 627,
+    "baseDefense": 20,
+    "sharpnessDataNeeded": true,
+    "sharpnessLevels": [
+      {
+        "color": "Blue",
+        "value": 20
+      }
+    ],
+    "baseAffinityPercent": 10,
+    "ailment": "Poison",
+    "ailmentBaseAttack": 420,
+    "ailmentHidden": true,
+    "slots": [
+      {
+        "level": 3
+      }
+    ],
+    "id": 364
+  },
+  {
+    "name": "Taroth Sword \"Water\"",
+    "tags": [
+      "kulve",
+      "taroth",
+      "water",
+      "hidden"
+    ],
+    "rarity": 8,
+    "itemType": "Weapon",
+    "weaponType": "LongSword",
+    "baseAttack": 627,
+    "baseDefense": 20,
+    "sharpnessDataNeeded": true,
+    "sharpnessLevels": [
+      {
+        "color": "Blue",
+        "value": 20
+      }
+    ],
+    "baseAffinityPercent": 0,
+    "element": "Water",
+    "elementBaseAttack": 420,
+    "elementHidden": true,
+    "slots": [
+      {
+        "level": 3
+      }
+    ],
+    "id": 365
+  },
+  {
+    "name": "Taroth Sword \"Decay\"",
+    "tags": [
+      "kulve",
+      "taroth",
+      "dragon"
+    ],
+    "rarity": 8,
+    "itemType": "Weapon",
+    "weaponType": "LongSword",
+    "baseAttack": 660,
+    "baseDefense": 40,
+    "sharpnessDataNeeded": true,
+    "sharpnessLevels": [
+      {
+        "color": "Blue",
+        "value": 20
+      }
+    ],
+    "baseAffinityPercent": 10,
+    "element": "Dragon",
+    "elementBaseAttack": 270,
+    "slots": [],
+    "id": 366
   }
 ]
