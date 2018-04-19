@@ -1,8 +1,10 @@
 [
   {
     "name": "Chrome Assault II",
-	"tags": ["ore"],
-	"rarity": 6,
+    "tags": [
+      "ore"
+    ],
+    "rarity": 6,
     "itemType": "Weapon",
     "weaponType": "HeavyBowgun",
     "baseAttack": 255,
@@ -19,8 +21,10 @@
   },
   {
     "name": "Destruction's Fusillade",
-	"tags": ["nergigante"],
-	"rarity": 8,
+    "tags": [
+      "nergigante"
+    ],
+    "rarity": 8,
     "itemType": "Weapon",
     "weaponType": "HeavyBowgun",
     "baseAttack": 285,
@@ -35,8 +39,10 @@
   },
   {
     "name": "Water Cannon III",
-	"tags": ["jyuratodus"],
-	"rarity": 6,
+    "tags": [
+      "jyuratodus"
+    ],
+    "rarity": 6,
     "itemType": "Weapon",
     "weaponType": "HeavyBowgun",
     "baseAttack": 255,
@@ -50,8 +56,10 @@
   },
   {
     "name": "Arma Destroyer III",
-	"tags": ["tzitzi-ya-ku"],
-	"rarity": 6,
+    "tags": [
+      "tzitzi-ya-ku"
+    ],
+    "rarity": 6,
     "itemType": "Weapon",
     "weaponType": "HeavyBowgun",
     "baseAttack": 255,
@@ -61,8 +69,10 @@
   },
   {
     "name": "Legia Shattercryst",
-	"tags": ["legiana"],
-	"rarity": 8,
+    "tags": [
+      "legiana"
+    ],
+    "rarity": 8,
     "itemType": "Weapon",
     "weaponType": "HeavyBowgun",
     "baseAttack": 255,
@@ -76,8 +86,11 @@
   },
   {
     "name": "Gluttonous Fangcannon",
-	"tags": ["great", "jagras"],
-	"rarity": 7,
+    "tags": [
+      "great",
+      "jagras"
+    ],
+    "rarity": 7,
     "itemType": "Weapon",
     "weaponType": "HeavyBowgun",
     "baseAttack": 270,
@@ -91,8 +104,10 @@
   },
   {
     "name": "Gnashing Flammenkanone",
-	"tags": ["anjanath"],
-	"rarity": 7,
+    "tags": [
+      "anjanath"
+    ],
+    "rarity": 7,
     "itemType": "Weapon",
     "weaponType": "HeavyBowgun",
     "baseAttack": 300,
@@ -106,8 +121,10 @@
   },
   {
     "name": "Power Shooter II",
-	"tags": ["bone"],
-	"rarity": 6,
+    "tags": [
+      "bone"
+    ],
+    "rarity": 6,
     "itemType": "Weapon",
     "weaponType": "HeavyBowgun",
     "baseAttack": 270,
@@ -121,8 +138,10 @@
   },
   {
     "name": "Griffon Blazooka",
-	"tags": ["diablos"],
-	"rarity": 8,
+    "tags": [
+      "diablos"
+    ],
+    "rarity": 8,
     "itemType": "Weapon",
     "weaponType": "HeavyBowgun",
     "baseAttack": 330,
@@ -137,8 +156,10 @@
   },
   {
     "name": "Datura Blaster III",
-	"tags": ["pukei-pukei"],
-	"rarity": 6,
+    "tags": [
+      "pukei-pukei"
+    ],
+    "rarity": 6,
     "itemType": "Weapon",
     "weaponType": "HeavyBowgun",
     "baseAttack": 255,
@@ -155,8 +176,10 @@
   },
   {
     "name": "Baan Roar III",
-	"tags": ["radobaan"],
-	"rarity": 6,
+    "tags": [
+      "radobaan"
+    ],
+    "rarity": 6,
     "itemType": "Weapon",
     "weaponType": "HeavyBowgun",
     "baseAttack": 270,
@@ -167,8 +190,10 @@
   },
   {
     "name": "Gama Cannon II",
-	"tags": ["dodogama"],
-	"rarity": 7,
+    "tags": [
+      "dodogama"
+    ],
+    "rarity": 7,
     "itemType": "Weapon",
     "weaponType": "HeavyBowgun",
     "baseAttack": 255,
@@ -182,8 +207,10 @@
   },
   {
     "name": "Kadachi Lion III",
-	"tags": ["tobi-kadachi"],
-	"rarity": 6,
+    "tags": [
+      "tobi-kadachi"
+    ],
+    "rarity": 6,
     "itemType": "Weapon",
     "weaponType": "HeavyBowgun",
     "baseAttack": 255,
@@ -197,8 +224,10 @@
   },
   {
     "name": "Dragonbone Cannon III",
-	"tags": ["dragonbone"],
-	"rarity": 6,
+    "tags": [
+      "dragonbone"
+    ],
+    "rarity": 6,
     "itemType": "Weapon",
     "weaponType": "HeavyBowgun",
     "baseAttack": 255,
@@ -212,8 +241,10 @@
   },
   {
     "name": "Quickquiver",
-	"tags": ["kirin"],
-	"rarity": 8,
+    "tags": [
+      "kirin"
+    ],
+    "rarity": 8,
     "itemType": "Weapon",
     "weaponType": "HeavyBowgun",
     "baseAttack": 255,
@@ -227,8 +258,11 @@
   },
   {
     "name": "Magda Gemitus II",
-	"tags": ["zorah", "magdaros"],
-	"rarity": 7,
+    "tags": [
+      "zorah",
+      "magdaros"
+    ],
+    "rarity": 7,
     "itemType": "Weapon",
     "weaponType": "HeavyBowgun",
     "baseAttack": 315,
@@ -243,8 +277,11 @@
   },
   {
     "name": "Teostra's Flames",
-	"tags": ["blacksteel", "teostra"],
-	"rarity": 8,
+    "tags": [
+      "blacksteel",
+      "teostra"
+    ],
+    "rarity": 8,
     "itemType": "Weapon",
     "weaponType": "HeavyBowgun",
     "baseAttack": 270,
@@ -254,8 +291,10 @@
   },
   {
     "name": "Xeno Jiiqa",
-	"tags": ["xeno'jiva"],
-	"rarity": 8,
+    "tags": [
+      "xeno'jiva"
+    ],
+    "rarity": 8,
     "itemType": "Weapon",
     "weaponType": "HeavyBowgun",
     "baseAttack": 255,
@@ -272,13 +311,162 @@
   },
   {
     "name": "Dark Devourer",
-	"tags": ["deviljho"],
-	"rarity": 7,
+    "tags": [
+      "deviljho"
+    ],
+    "rarity": 7,
     "itemType": "Weapon",
     "weaponType": "HeavyBowgun",
     "baseAttack": 345,
     "baseAffinityPercent": -25,
     "id": 286,
     "slots": []
+  },
+  {
+    "name": "Spark Gold Cannon",
+    "tags": [
+      "kulve",
+      "taroth"
+    ],
+    "rarity": 6,
+    "itemType": "Weapon",
+    "weaponType": "HeavyBowgun",
+    "baseAttack": 210,
+    "baseDefense": 20,
+    "baseAffinityPercent": 25,
+    "slots": [],
+    "id": 348
+  },
+  {
+    "name": "Glutton Gold Cannon",
+    "tags": [
+      "kulve",
+      "taroth"
+    ],
+    "rarity": 6,
+    "itemType": "Weapon",
+    "weaponType": "HeavyBowgun",
+    "baseAttack": 225,
+    "baseDefense": 20,
+    "baseAffinityPercent": 10,
+    "slots": [],
+    "id": 349
+  },
+  {
+    "name": "Gold Support Cannon",
+    "tags": [
+      "kulve",
+      "taroth"
+    ],
+    "rarity": 6,
+    "itemType": "Weapon",
+    "weaponType": "HeavyBowgun",
+    "baseAttack": 210,
+    "baseDefense": 20,
+    "baseAffinityPercent": 20,
+    "slots": [],
+    "id": 350
+  },
+  {
+    "name": "Rage Gold Cannon",
+    "tags": [
+      "kulve",
+      "taroth"
+    ],
+    "rarity": 6,
+    "itemType": "Weapon",
+    "weaponType": "HeavyBowgun",
+    "baseAttack": 255,
+    "baseDefense": 20,
+    "baseAffinityPercent": -10,
+    "slots": [],
+    "id": 351
+  },
+  {
+    "name": "Tar Gold Cannon",
+    "tags": [
+      "kulve",
+      "taroth"
+    ],
+    "rarity": 6,
+    "itemType": "Weapon",
+    "weaponType": "HeavyBowgun",
+    "baseAttack": 225,
+    "baseDefense": 20,
+    "baseAffinityPercent": 0,
+    "slots": [],
+    "id": 352
+  },
+  {
+    "name": "Taroth Assault \"Horn\"",
+    "tags": [
+      "kulve",
+      "taroth"
+    ],
+    "rarity": 7,
+    "itemType": "Weapon",
+    "weaponType": "HeavyBowgun",
+    "baseAttack": 330,
+    "baseDefense": 20,
+    "baseAffinityPercent": -10,
+    "slots": [
+      {
+        "level": 3
+      }
+    ],
+    "id": 353
+  },
+  {
+    "name": "Taroth Assault \"Spew\"",
+    "tags": [
+      "kulve",
+      "taroth"
+    ],
+    "rarity": 7,
+    "itemType": "Weapon",
+    "weaponType": "HeavyBowgun",
+    "baseAttack": 270,
+    "baseDefense": 20,
+    "baseAffinityPercent": 0,
+    "slots": [],
+    "id": 354
+  },
+  {
+    "name": "Taroth Assault \"Blast\"",
+    "tags": [
+      "kulve",
+      "taroth"
+    ],
+    "rarity": 8,
+    "itemType": "Weapon",
+    "weaponType": "HeavyBowgun",
+    "baseAttack": 285,
+    "baseDefense": 20,
+    "baseAffinityPercent": 10,
+    "slots": [
+      {
+        "level": 3
+      }
+    ],
+    "id": 355
+  },
+  {
+    "name": "Taroth Assault \"Icewater\"",
+    "tags": [
+      "kulve",
+      "taroth"
+    ],
+    "rarity": 8,
+    "itemType": "Weapon",
+    "weaponType": "HeavyBowgun",
+    "baseAttack": 285,
+    "baseDefense": 20,
+    "baseAffinityPercent": 0,
+    "slots": [
+      {
+        "level": 3
+      }
+    ],
+    "id": 356
   }
 ]

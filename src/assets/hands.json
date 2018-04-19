@@ -1264,5 +1264,60 @@
     ],
     "slots": [],
     "id": 349
+  },
+  {
+    "name": "Kulve Taroth's Rage Alpha",
+    "itemType": "Hands",
+    "baseDefense": 72,
+    "fireResist": 4,
+    "waterResist": -2,
+    "thunderResist": 3,
+    "iceResist": -4,
+    "dragonResist": -2,
+    "skills": [
+      {
+        "id": "freeElemAmmoUp",
+        "level": 1
+      },
+      {
+        "id": "powerProlonger",
+        "level": 2
+      }
+    ],
+    "slots": [
+      {
+        "level": 1
+      }
+    ],
+    "id": 356
+  },
+  {
+    "name": "Kulve Taroth's Rage Beta",
+    "itemType": "Hands",
+    "baseDefense": 72,
+    "fireResist": 4,
+    "waterResist": -2,
+    "thunderResist": 3,
+    "iceResist": -4,
+    "dragonResist": -2,
+    "skills": [
+      {
+        "id": "freeElemAmmoUp",
+        "level": 1
+      },
+      {
+        "id": "powerProlonger",
+        "level": 1
+      }
+    ],
+    "slots": [
+      {
+        "level": 3
+      },
+      {
+        "level": 1
+      }
+    ],
+    "id": 357
   }
 ]

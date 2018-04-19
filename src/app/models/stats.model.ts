@@ -9,6 +9,7 @@ export class StatsModel {
 	attack: number;
 	passiveAttack: number;
 	activeAttack: number;
+	sharpnessDataNeeded: boolean;
 	maxSharpness: SharpnessType;
 	passiveSharpness: number;
 	effectiveSharpnessLevel: SharpnessLevelModel;
@@ -88,6 +89,8 @@ export class StatsModel {
 		this.attack = 0;
 		this.passiveAttack = 0;
 		this.activeAttack = 0;
+
+		this.sharpnessDataNeeded = false;
 		this.maxSharpness = null;
 		this.passiveSharpness = 0;
 		this.effectiveSharpnessLevel = null;

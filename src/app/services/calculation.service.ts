@@ -146,10 +146,18 @@ export class CalculationService {
 		}
 
 		if (stats.effectiveSharpnessLevel) {
-			this.attackCalcs.push({
+			const sharpness: StatDetailModel = {
 				name: 'Sharpness',
 				value: `${stats.effectiveSharpnessLevel.value} ${stats.effectiveSharpnessLevel.color}`,
-			});
+				info: []
+			};
+
+			if (stats.sharpnessDataNeeded) {
+				sharpness.color = 'red';
+				sharpness.info.push('Missing data for this weapon! Sharpness values are probably incorrect!');
+			}
+
+			this.attackCalcs.push(sharpness);
 		}
 
 		const critBoostValue = `${125 + stats.passiveCriticalBoostPercent}%`;

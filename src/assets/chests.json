@@ -1271,5 +1271,60 @@
     ],
     "slots": [],
     "id": 348
+  },
+  {
+    "name": "Kulve Taroth's Ire Alpha",
+    "itemType": "Chest",
+    "baseDefense": 72,
+    "fireResist": 4,
+    "waterResist": -2,
+    "thunderResist": 3,
+    "iceResist": -4,
+    "dragonResist": -2,
+    "skills": [
+      {
+        "id": "stunResistance",
+        "level": 2
+      },
+      {
+        "id": "criticalBoost",
+        "level": 2
+      }
+    ],
+    "slots": [
+      {
+        "level": 1
+      }
+    ],
+    "id": 354
+  },
+  {
+    "name": "Kulve Taroth's Ire Beta",
+    "itemType": "Chest",
+    "baseDefense": 72,
+    "fireResist": 4,
+    "waterResist": -2,
+    "thunderResist": 3,
+    "iceResist": -4,
+    "dragonResist": -2,
+    "skills": [
+      {
+        "id": "stunResistance",
+        "level": 2
+      },
+      {
+        "id": "criticalBoost",
+        "level": 1
+      }
+    ],
+    "slots": [
+      {
+        "level": 3
+      },
+      {
+        "level": 1
+      }
+    ],
+    "id": 355
   }
 ]

@@ -1,37 +1,41 @@
 [
   {
     "name": "Chrome Lance",
-	"tags": ["ore", "paralysis", "hidden"],
-	"rarity": 6,
+    "tags": [
+      "ore",
+      "paralysis",
+      "hidden"
+    ],
+    "rarity": 6,
     "itemType": "Weapon",
     "weaponType": "Lance",
     "baseAttack": 414,
-	"sharpnessLevels": [
-		{
-			"color": "Blue",
-			"value": 60
-		},
-		{
-			"color": "Blue",
-			"value": 70
-		},
-		{
-			"color": "Blue",
-			"value": 80
-		},
-		{
-			"color": "Blue",
-			"value": 90
-		},
-		{
-			"color": "White",
-			"value": 10
-		},
-		{
-			"color": "White",
-			"value": 20
-		}
-	],
+    "sharpnessLevels": [
+      {
+        "color": "Blue",
+        "value": 60
+      },
+      {
+        "color": "Blue",
+        "value": 70
+      },
+      {
+        "color": "Blue",
+        "value": 80
+      },
+      {
+        "color": "Blue",
+        "value": 90
+      },
+      {
+        "color": "White",
+        "value": 10
+      },
+      {
+        "color": "White",
+        "value": 20
+      }
+    ],
     "baseAffinityPercent": 0,
     "ailment": "Paralysis",
     "ailmentBaseAttack": 270,
@@ -48,17 +52,20 @@
   },
   {
     "name": "Perdition's Hand",
-	"tags": ["nergigante", "dragon"],
-	"rarity": 8,
+    "tags": [
+      "nergigante",
+      "dragon"
+    ],
+    "rarity": 8,
     "itemType": "Weapon",
     "weaponType": "Lance",
     "baseAttack": 483,
-	"sharpnessLevels": [
-		{
-			"color": "Blue",
-			"value": 80
-		}
-	],
+    "sharpnessLevels": [
+      {
+        "color": "Blue",
+        "value": 80
+      }
+    ],
     "baseAffinityPercent": 0,
     "element": "Dragon",
     "elementBaseAttack": 150,
@@ -73,37 +80,40 @@
   },
   {
     "name": "Legiana Halberd II",
-	"tags": ["legiana", "ice"],
-	"rarity": 7,
+    "tags": [
+      "legiana",
+      "ice"
+    ],
+    "rarity": 7,
     "itemType": "Weapon",
     "weaponType": "Lance",
     "baseAttack": 368,
-	"sharpnessLevels": [
-		{
-			"color": "White",
-			"value": 10
-		},
-		{
-			"color": "White",
-			"value": 20
-		},
-		{
-			"color": "White",
-			"value": 30
-		},
-		{
-			"color": "White",
-			"value": 40
-		},
-		{
-			"color": "White",
-			"value": 50
-		},
-		{
-			"color": "White",
-			"value": 60
-		}
-	],
+    "sharpnessLevels": [
+      {
+        "color": "White",
+        "value": 10
+      },
+      {
+        "color": "White",
+        "value": 20
+      },
+      {
+        "color": "White",
+        "value": 30
+      },
+      {
+        "color": "White",
+        "value": 40
+      },
+      {
+        "color": "White",
+        "value": 50
+      },
+      {
+        "color": "White",
+        "value": 60
+      }
+    ],
     "baseAffinityPercent": 0,
     "element": "Ice",
     "elementBaseAttack": 360,
@@ -112,37 +122,41 @@
   },
   {
     "name": "Kula Hasta III",
-	"tags": ["kulu-ya-ku", "sleep", "hidden"],
-	"rarity": 6,
+    "tags": [
+      "kulu-ya-ku",
+      "sleep",
+      "hidden"
+    ],
+    "rarity": 6,
     "itemType": "Weapon",
     "weaponType": "Lance",
     "baseAttack": 391,
-	"sharpnessLevels": [
-		{
-			"color": "Blue",
-			"value": 40
-		},
-		{
-			"color": "Blue",
-			"value": 50
-		},
-		{
-			"color": "Blue",
-			"value": 60
-		},
-		{
-			"color": "White",
-			"value": 10
-		},
-		{
-			"color": "White",
-			"value": 20
-		},
-		{
-			"color": "White",
-			"value": 30
-		}
-	],
+    "sharpnessLevels": [
+      {
+        "color": "Blue",
+        "value": 40
+      },
+      {
+        "color": "Blue",
+        "value": 50
+      },
+      {
+        "color": "Blue",
+        "value": 60
+      },
+      {
+        "color": "White",
+        "value": 10
+      },
+      {
+        "color": "White",
+        "value": 20
+      },
+      {
+        "color": "White",
+        "value": 30
+      }
+    ],
     "baseAffinityPercent": 25,
     "ailment": "Sleep",
     "ailmentBaseAttack": 360,
@@ -152,37 +166,40 @@
   },
   {
     "name": "Gama Pilebunker II",
-	"tags": ["dodogama", "blast"],
-	"rarity": 7,
+    "tags": [
+      "dodogama",
+      "blast"
+    ],
+    "rarity": 7,
     "itemType": "Weapon",
     "weaponType": "Lance",
     "baseAttack": 391,
-	"sharpnessLevels": [
-		{
-			"color": "Blue",
-			"value": 40
-		},
-		{
-			"color": "Blue",
-			"value": 50
-		},
-		{
-			"color": "Blue",
-			"value": 60
-		},
-		{
-			"color": "Blue",
-			"value": 70
-		},
-		{
-			"color": "White",
-			"value": 10
-		},
-		{
-			"color": "White",
-			"value": 20
-		}
-	],
+    "sharpnessLevels": [
+      {
+        "color": "Blue",
+        "value": 40
+      },
+      {
+        "color": "Blue",
+        "value": 50
+      },
+      {
+        "color": "Blue",
+        "value": 60
+      },
+      {
+        "color": "Blue",
+        "value": 70
+      },
+      {
+        "color": "White",
+        "value": 10
+      },
+      {
+        "color": "White",
+        "value": 20
+      }
+    ],
     "baseAffinityPercent": 0,
     "ailment": "Blast",
     "ailmentBaseAttack": 210,
@@ -198,37 +215,40 @@
   },
   {
     "name": "Lightning Spire III",
-	"tags": ["tobi-kadachi", "thunder"],
-	"rarity": 6,
+    "tags": [
+      "tobi-kadachi",
+      "thunder"
+    ],
+    "rarity": 6,
     "itemType": "Weapon",
     "weaponType": "Lance",
     "baseAttack": 414,
-	"sharpnessLevels": [
-		{
-			"color": "Blue",
-			"value": 40
-		},
-		{
-			"color": "Blue",
-			"value": 50
-		},
-		{
-			"color": "Blue",
-			"value": 60
-		},
-		{
-			"color": "Blue",
-			"value": 70
-		},
-		{
-			"color": "White",
-			"value": 10
-		},
-		{
-			"color": "White",
-			"value": 20
-		}
-	],
+    "sharpnessLevels": [
+      {
+        "color": "Blue",
+        "value": 40
+      },
+      {
+        "color": "Blue",
+        "value": 50
+      },
+      {
+        "color": "Blue",
+        "value": 60
+      },
+      {
+        "color": "Blue",
+        "value": 70
+      },
+      {
+        "color": "White",
+        "value": 10
+      },
+      {
+        "color": "White",
+        "value": 20
+      }
+    ],
     "baseAffinityPercent": 0,
     "element": "Thunder",
     "elementBaseAttack": 240,
@@ -241,37 +261,40 @@
   },
   {
     "name": "Datura Pike III",
-	"tags": ["pukei-pukei", "poison"],
-	"rarity": 6,
+    "tags": [
+      "pukei-pukei",
+      "poison"
+    ],
+    "rarity": 6,
     "itemType": "Weapon",
     "weaponType": "Lance",
     "baseAttack": 391,
-	"sharpnessLevels": [
-		{
-			"color": "Blue",
-			"value": 40
-		},
-		{
-			"color": "Blue",
-			"value": 50
-		},
-		{
-			"color": "Blue",
-			"value": 60
-		},
-		{
-			"color": "Blue",
-			"value": 70
-		},
-		{
-			"color": "Blue",
-			"value": 80
-		},
-		{
-			"color": "Blue",
-			"value": 90
-		}
-	],
+    "sharpnessLevels": [
+      {
+        "color": "Blue",
+        "value": 40
+      },
+      {
+        "color": "Blue",
+        "value": 50
+      },
+      {
+        "color": "Blue",
+        "value": 60
+      },
+      {
+        "color": "Blue",
+        "value": 70
+      },
+      {
+        "color": "Blue",
+        "value": 80
+      },
+      {
+        "color": "Blue",
+        "value": 90
+      }
+    ],
     "baseAffinityPercent": 0,
     "ailment": "Poison",
     "ailmentBaseAttack": 540,
@@ -287,37 +310,40 @@
   },
   {
     "name": "Blue Prominence",
-	"tags": ["rathalos", "fire"],
-	"rarity": 8,
+    "tags": [
+      "rathalos",
+      "fire"
+    ],
+    "rarity": 8,
     "itemType": "Weapon",
     "weaponType": "Lance",
     "baseAttack": 437,
-	"sharpnessLevels": [
-		{
-			"color": "Blue",
-			"value": 40
-		},
-		{
-			"color": "Blue",
-			"value": 50
-		},
-		{
-			"color": "Blue",
-			"value": 60
-		},
-		{
-			"color": "White",
-			"value": 10
-		},
-		{
-			"color": "White",
-			"value": 20
-		},
-		{
-			"color": "White",
-			"value": 30
-		}
-	],
+    "sharpnessLevels": [
+      {
+        "color": "Blue",
+        "value": 40
+      },
+      {
+        "color": "Blue",
+        "value": 50
+      },
+      {
+        "color": "Blue",
+        "value": 60
+      },
+      {
+        "color": "White",
+        "value": 10
+      },
+      {
+        "color": "White",
+        "value": 20
+      },
+      {
+        "color": "White",
+        "value": 30
+      }
+    ],
     "baseAffinityPercent": 20,
     "element": "Fire",
     "elementBaseAttack": 300,
@@ -330,37 +356,41 @@
   },
   {
     "name": "Heavy Bone Lance II",
-	"tags": ["bone", "poison", "hidden"],
-	"rarity": 6,
+    "tags": [
+      "bone",
+      "poison",
+      "hidden"
+    ],
+    "rarity": 6,
     "itemType": "Weapon",
     "weaponType": "Lance",
     "baseAttack": 437,
-	"sharpnessLevels": [
-		{
-			"color": "Blue",
-			"value": 40
-		},
-		{
-			"color": "Blue",
-			"value": 50
-		},
-		{
-			"color": "Blue",
-			"value": 60
-		},
-		{
-			"color": "Blue",
-			"value": 70
-		},
-		{
-			"color": "Blue",
-			"value": 80
-		},
-		{
-			"color": "Blue",
-			"value": 90
-		}
-	],
+    "sharpnessLevels": [
+      {
+        "color": "Blue",
+        "value": 40
+      },
+      {
+        "color": "Blue",
+        "value": 50
+      },
+      {
+        "color": "Blue",
+        "value": 60
+      },
+      {
+        "color": "Blue",
+        "value": 70
+      },
+      {
+        "color": "Blue",
+        "value": 80
+      },
+      {
+        "color": "Blue",
+        "value": 90
+      }
+    ],
     "baseAffinityPercent": 0,
     "ailment": "Poison",
     "ailmentBaseAttack": 240,
@@ -375,37 +405,41 @@
   },
   {
     "name": "Love's Sorrow",
-	"tags": ["vaal", "hazak", "dragon"],
-	"rarity": 8,
+    "tags": [
+      "vaal",
+      "hazak",
+      "dragon"
+    ],
+    "rarity": 8,
     "itemType": "Weapon",
     "weaponType": "Lance",
     "baseAttack": 460,
-	"sharpnessLevels": [
-		{
-			"color": "Blue",
-			"value": 40
-		},
-		{
-			"color": "Blue",
-			"value": 50
-		},
-		{
-			"color": "White",
-			"value": 10
-		},
-		{
-			"color": "White",
-			"value": 20
-		},
-		{
-			"color": "White",
-			"value": 30
-		},
-		{
-			"color": "White",
-			"value": 40
-		}
-	],
+    "sharpnessLevels": [
+      {
+        "color": "Blue",
+        "value": 40
+      },
+      {
+        "color": "Blue",
+        "value": 50
+      },
+      {
+        "color": "White",
+        "value": 10
+      },
+      {
+        "color": "White",
+        "value": 20
+      },
+      {
+        "color": "White",
+        "value": 30
+      },
+      {
+        "color": "White",
+        "value": 40
+      }
+    ],
     "baseAffinityPercent": 0,
     "element": "Dragon",
     "elementBaseAttack": 270,
@@ -419,37 +453,41 @@
   },
   {
     "name": "Dark Stinger III",
-	"tags": ["hornetaur", "blast", "hidden"],
-	"rarity": 6,
+    "tags": [
+      "hornetaur",
+      "blast",
+      "hidden"
+    ],
+    "rarity": 6,
     "itemType": "Weapon",
     "weaponType": "Lance",
     "baseAttack": 368,
-	"sharpnessLevels": [
-		{
-			"color": "White",
-			"value": 30
-		},
-		{
-			"color": "White",
-			"value": 40
-		},
-		{
-			"color": "White",
-			"value": 50
-		},
-		{
-			"color": "White",
-			"value": 60
-		},
-		{
-			"color": "White",
-			"value": 70
-		},
-		{
-			"color": "White",
-			"value": 80
-		}
-	],
+    "sharpnessLevels": [
+      {
+        "color": "White",
+        "value": 30
+      },
+      {
+        "color": "White",
+        "value": 40
+      },
+      {
+        "color": "White",
+        "value": 50
+      },
+      {
+        "color": "White",
+        "value": 60
+      },
+      {
+        "color": "White",
+        "value": 70
+      },
+      {
+        "color": "White",
+        "value": 80
+      }
+    ],
     "baseAffinityPercent": 0,
     "ailment": "Blast",
     "ailmentBaseAttack": 240,
@@ -463,37 +501,41 @@
   },
   {
     "name": "Barroth Stinger III",
-	"tags": ["barroth", "paralysis", "hidden"],
-	"rarity": 6,
+    "tags": [
+      "barroth",
+      "paralysis",
+      "hidden"
+    ],
+    "rarity": 6,
     "itemType": "Weapon",
     "weaponType": "Lance",
     "baseAttack": 460,
-	"sharpnessLevels": [
-		{
-			"color": "Blue",
-			"value": 40
-		},
-		{
-			"color": "Blue",
-			"value": 50
-		},
-		{
-			"color": "Blue",
-			"value": 60
-		},
-		{
-			"color": "Blue",
-			"value": 70
-		},
-		{
-			"color": "Blue",
-			"value": 80
-		},
-		{
-			"color": "Blue",
-			"value": 90
-		}
-	],
+    "sharpnessLevels": [
+      {
+        "color": "Blue",
+        "value": 40
+      },
+      {
+        "color": "Blue",
+        "value": 50
+      },
+      {
+        "color": "Blue",
+        "value": 60
+      },
+      {
+        "color": "Blue",
+        "value": 70
+      },
+      {
+        "color": "Blue",
+        "value": 80
+      },
+      {
+        "color": "Blue",
+        "value": 90
+      }
+    ],
     "baseAffinityPercent": -20,
     "ailment": "Paralysis",
     "ailmentBaseAttack": 390,
@@ -511,17 +553,21 @@
   },
   {
     "name": "Garon Dhara II",
-	"tags": ["odogaron", "fire", "hidden"],
-	"rarity": 7,
+    "tags": [
+      "odogaron",
+      "fire",
+      "hidden"
+    ],
+    "rarity": 7,
     "itemType": "Weapon",
     "weaponType": "Lance",
     "baseAttack": 391,
-	"sharpnessLevels": [
-		{
-			"color": "White",
-			"value": 30
-		}
-	],
+    "sharpnessLevels": [
+      {
+        "color": "White",
+        "value": 30
+      }
+    ],
     "baseAffinityPercent": 30,
     "element": "Fire",
     "elementBaseAttack": 210,
@@ -531,37 +577,40 @@
   },
   {
     "name": "Water Spike III",
-	"tags": ["jyuratodus", "water"],
-	"rarity": 6,
+    "tags": [
+      "jyuratodus",
+      "water"
+    ],
+    "rarity": 6,
     "itemType": "Weapon",
     "weaponType": "Lance",
     "baseAttack": 437,
-	"sharpnessLevels": [
-		{
-			"color": "Blue",
-			"value": 30
-		},
-		{
-			"color": "Blue",
-			"value": 40
-		},
-		{
-			"color": "Blue",
-			"value": 50
-		},
-		{
-			"color": "Blue",
-			"value": 60
-		},
-		{
-			"color": "Blue",
-			"value": 70
-		},
-		{
-			"color": "Blue",
-			"value": 80
-		}
-	],
+    "sharpnessLevels": [
+      {
+        "color": "Blue",
+        "value": 30
+      },
+      {
+        "color": "Blue",
+        "value": 40
+      },
+      {
+        "color": "Blue",
+        "value": 50
+      },
+      {
+        "color": "Blue",
+        "value": 60
+      },
+      {
+        "color": "Blue",
+        "value": 70
+      },
+      {
+        "color": "Blue",
+        "value": 80
+      }
+    ],
     "baseAffinityPercent": 0,
     "element": "Water",
     "elementBaseAttack": 300,
@@ -574,37 +623,40 @@
   },
   {
     "name": "Dragonbone Lance III",
-	"tags": ["dragonbone", "dragon"],
-	"rarity": 6,
+    "tags": [
+      "dragonbone",
+      "dragon"
+    ],
+    "rarity": 6,
     "itemType": "Weapon",
     "weaponType": "Lance",
     "baseAttack": 368,
-	"sharpnessLevels": [
-		{
-			"color": "Blue",
-			"value": 40
-		},
-		{
-			"color": "Blue",
-			"value": 50
-		},
-		{
-			"color": "Blue",
-			"value": 60
-		},
-		{
-			"color": "Blue",
-			"value": 70
-		},
-		{
-			"color": "White",
-			"value": 10
-		},
-		{
-			"color": "White",
-			"value": 20
-		}
-	],
+    "sharpnessLevels": [
+      {
+        "color": "Blue",
+        "value": 40
+      },
+      {
+        "color": "Blue",
+        "value": 50
+      },
+      {
+        "color": "Blue",
+        "value": 60
+      },
+      {
+        "color": "Blue",
+        "value": 70
+      },
+      {
+        "color": "White",
+        "value": 10
+      },
+      {
+        "color": "White",
+        "value": 20
+      }
+    ],
     "baseAffinityPercent": 0,
     "element": "Dragon",
     "elementBaseAttack": 420,
@@ -621,37 +673,40 @@
   },
   {
     "name": "Bazel Myniad Rookslayer",
-	"tags": ["bazelgeuse", "blast"],
-	"rarity": 8,
+    "tags": [
+      "bazelgeuse",
+      "blast"
+    ],
+    "rarity": 8,
     "itemType": "Weapon",
     "weaponType": "Lance",
     "baseAttack": 460,
-	"sharpnessLevels": [
-		{
-			"color": "Blue",
-			"value": 20
-		},
-		{
-			"color": "White",
-			"value": 10
-		},
-		{
-			"color": "White",
-			"value": 20
-		},
-		{
-			"color": "White",
-			"value": 30
-		},
-		{
-			"color": "White",
-			"value": 40
-		},
-		{
-			"color": "White",
-			"value": 50
-		}
-	],
+    "sharpnessLevels": [
+      {
+        "color": "Blue",
+        "value": 20
+      },
+      {
+        "color": "White",
+        "value": 10
+      },
+      {
+        "color": "White",
+        "value": 20
+      },
+      {
+        "color": "White",
+        "value": 30
+      },
+      {
+        "color": "White",
+        "value": 40
+      },
+      {
+        "color": "White",
+        "value": 50
+      }
+    ],
     "baseAffinityPercent": -10,
     "ailment": "Blast",
     "ailmentBaseAttack": 210,
@@ -660,37 +715,40 @@
   },
   {
     "name": "Thunderpiercer",
-	"tags": ["kirin", "thunder"],
-	"rarity": 8,
+    "tags": [
+      "kirin",
+      "thunder"
+    ],
+    "rarity": 8,
     "itemType": "Weapon",
     "weaponType": "Lance",
     "baseAttack": 368,
-	"sharpnessLevels": [
-		{
-			"color": "Blue",
-			"value": 60
-		},
-		{
-			"color": "Blue",
-			"value": 70
-		},
-		{
-			"color": "Blue",
-			"value": 80
-		},
-		{
-			"color": "Blue",
-			"value": 90
-		},
-		{
-			"color": "Blue",
-			"value": 100
-		},
-		{
-			"color": "Blue",
-			"value": 110
-		}
-	],
+    "sharpnessLevels": [
+      {
+        "color": "Blue",
+        "value": 60
+      },
+      {
+        "color": "Blue",
+        "value": 70
+      },
+      {
+        "color": "Blue",
+        "value": 80
+      },
+      {
+        "color": "Blue",
+        "value": 90
+      },
+      {
+        "color": "Blue",
+        "value": 100
+      },
+      {
+        "color": "Blue",
+        "value": 110
+      }
+    ],
     "baseAffinityPercent": 10,
     "element": "Thunder",
     "elementBaseAttack": 540,
@@ -699,37 +757,42 @@
   },
   {
     "name": "Daora's Fang",
-	"tags": ["blacksteel", "kushala", "daora", "ice"],
-	"rarity": 8,
+    "tags": [
+      "blacksteel",
+      "kushala",
+      "daora",
+      "ice"
+    ],
+    "rarity": 8,
     "itemType": "Weapon",
     "weaponType": "Lance",
     "baseAttack": 414,
-	"sharpnessLevels": [
-		{
-			"color": "Blue",
-			"value": 40
-		},
-		{
-			"color": "Blue",
-			"value": 50
-		},
-		{
-			"color": "Blue",
-			"value": 60
-		},
-		{
-			"color": "Blue",
-			"value": 70
-		},
-		{
-			"color": "White",
-			"value": 10
-		},
-		{
-			"color": "White",
-			"value": 20
-		}
-	],
+    "sharpnessLevels": [
+      {
+        "color": "Blue",
+        "value": 40
+      },
+      {
+        "color": "Blue",
+        "value": 50
+      },
+      {
+        "color": "Blue",
+        "value": 60
+      },
+      {
+        "color": "Blue",
+        "value": 70
+      },
+      {
+        "color": "White",
+        "value": 10
+      },
+      {
+        "color": "White",
+        "value": 20
+      }
+    ],
     "baseAffinityPercent": 10,
     "element": "Ice",
     "elementBaseAttack": 240,
@@ -742,37 +805,40 @@
   },
   {
     "name": "Xeno Zauta",
-	"tags": ["xeno'jiva", "dragon"],
-	"rarity": 8,
+    "tags": [
+      "xeno'jiva",
+      "dragon"
+    ],
+    "rarity": 8,
     "itemType": "Weapon",
     "weaponType": "Lance",
     "baseAttack": 391,
-	"sharpnessLevels": [
-		{
-			"color": "White",
-			"value": 10
-		},
-		{
-			"color": "White",
-			"value": 20
-		},
-		{
-			"color": "White",
-			"value": 30
-		},
-		{
-			"color": "White",
-			"value": 40
-		},
-		{
-			"color": "White",
-			"value": 50
-		},
-		{
-			"color": "White",
-			"value": 60
-		}
-	],
+    "sharpnessLevels": [
+      {
+        "color": "White",
+        "value": 10
+      },
+      {
+        "color": "White",
+        "value": 20
+      },
+      {
+        "color": "White",
+        "value": 30
+      },
+      {
+        "color": "White",
+        "value": 40
+      },
+      {
+        "color": "White",
+        "value": 50
+      },
+      {
+        "color": "White",
+        "value": 60
+      }
+    ],
     "baseAffinityPercent": 15,
     "element": "Dragon",
     "elementBaseAttack": 180,
@@ -789,37 +855,41 @@
   },
   {
     "name": "Elder Babel Spear",
-	"tags": ["workshop", "fire", "hidden"],
-	"rarity": 8,
+    "tags": [
+      "workshop",
+      "fire",
+      "hidden"
+    ],
+    "rarity": 8,
     "itemType": "Weapon",
     "weaponType": "Lance",
     "baseAttack": 460,
-	"sharpnessLevels": [
-		{
-			"color": "Blue",
-			"value": 30
-		},
-		{
-			"color": "Blue",
-			"value": 40
-		},
-		{
-			"color": "Blue",
-			"value": 50
-		},
-		{
-			"color": "Blue",
-			"value": 60
-		},
-		{
-			"color": "Blue",
-			"value": 70
-		},
-		{
-			"color": "Blue",
-			"value": 80
-		}
-	],
+    "sharpnessLevels": [
+      {
+        "color": "Blue",
+        "value": 30
+      },
+      {
+        "color": "Blue",
+        "value": 40
+      },
+      {
+        "color": "Blue",
+        "value": 50
+      },
+      {
+        "color": "Blue",
+        "value": 60
+      },
+      {
+        "color": "Blue",
+        "value": 70
+      },
+      {
+        "color": "Blue",
+        "value": 80
+      }
+    ],
     "baseAffinityPercent": 0,
     "element": "Fire",
     "elementBaseAttack": 330,
@@ -834,42 +904,254 @@
   },
   {
     "name": "Fiendish Tower",
-	"tags": ["deviljho", "dragon"],
-	"rarity": 7,
+    "tags": [
+      "deviljho",
+      "dragon"
+    ],
+    "rarity": 7,
     "itemType": "Weapon",
     "weaponType": "Lance",
     "baseAttack": 529,
-	"sharpnessLevels": [
-		{
-			"color": "Blue",
-			"value": 40
-		},
-		{
-			"color": "White",
-			"value": 10
-		},
-		{
-			"color": "White",
-			"value": 20
-		},
-		{
-			"color": "White",
-			"value": 30
-		},
-		{
-			"color": "White",
-			"value": 40
-		},
-		{
-			"color": "White",
-			"value": 50
-		}
-	],
+    "sharpnessLevels": [
+      {
+        "color": "Blue",
+        "value": 40
+      },
+      {
+        "color": "White",
+        "value": 10
+      },
+      {
+        "color": "White",
+        "value": 20
+      },
+      {
+        "color": "White",
+        "value": 30
+      },
+      {
+        "color": "White",
+        "value": 40
+      },
+      {
+        "color": "White",
+        "value": 50
+      }
+    ],
     "baseAffinityPercent": -25,
     "element": "Dragon",
     "elementBaseAttack": 210,
     "elderseal": "High",
     "id": 280,
     "slots": []
+  },
+  {
+    "name": "Decay Gold Defender",
+    "tags": [
+      "kulve",
+      "taroth",
+      "dragon"
+    ],
+    "rarity": 6,
+    "itemType": "Weapon",
+    "weaponType": "Lance",
+    "baseAttack": 322,
+    "baseDefense": 20,
+    "sharpnessDataNeeded": true,
+    "sharpnessLevels": [
+      {
+        "color": "Blue",
+        "value": 40
+      }
+    ],
+    "baseAffinityPercent": 0,
+    "element": "Dragon",
+    "elementBaseAttack": 210,
+    "slots": [],
+    "id": 304
+  },
+  {
+    "name": "Claw Gold Defender",
+    "tags": [
+      "kulve",
+      "taroth",
+      "fire",
+      "hidden"
+    ],
+    "rarity": 6,
+    "itemType": "Weapon",
+    "weaponType": "Lance",
+    "baseAttack": 299,
+    "baseDefense": 20,
+    "sharpnessDataNeeded": true,
+    "sharpnessLevels": [
+      {
+        "color": "Blue",
+        "value": 40
+      }
+    ],
+    "baseAffinityPercent": 30,
+    "element": "Fire",
+    "elementBaseAttack": 60,
+    "elementHidden": true,
+    "slots": [],
+    "id": 313
+  },
+  {
+    "name": "Taroth Crest \"Claw\"",
+    "tags": [
+      "kulve",
+      "taroth"
+    ],
+    "rarity": 7,
+    "itemType": "Weapon",
+    "weaponType": "Lance",
+    "baseAttack": 437,
+    "baseDefense": 20,
+    "sharpnessDataNeeded": true,
+    "sharpnessLevels": [
+      {
+        "color": "Blue",
+        "value": 20
+      }
+    ],
+    "baseAffinityPercent": 30,
+    "slots": [],
+    "id": 375
+  },
+  {
+    "name": "Taroth Crest \"Crusher\"",
+    "tags": [
+      "kulve",
+      "taroth",
+      "blast"
+    ],
+    "rarity": 7,
+    "itemType": "Weapon",
+    "weaponType": "Lance",
+    "baseAttack": 391,
+    "baseDefense": 20,
+    "sharpnessDataNeeded": true,
+    "sharpnessLevels": [
+      {
+        "color": "Blue",
+        "value": 20
+      }
+    ],
+    "baseAffinityPercent": 10,
+    "ailment": "Blast",
+    "ailmentBaseAttack": 210,
+    "slots": [],
+    "id": 376
+  },
+  {
+    "name": "Taroth Crest \"Stream\"",
+    "tags": [
+      "kulve",
+      "taroth",
+      "ice",
+      "hidden"
+    ],
+    "rarity": 7,
+    "itemType": "Weapon",
+    "weaponType": "Lance",
+    "baseAttack": 368,
+    "baseDefense": 20,
+    "sharpnessDataNeeded": true,
+    "sharpnessLevels": [
+      {
+        "color": "White",
+        "value": 20
+      }
+    ],
+    "baseAffinityPercent": 0,
+    "element": "Ice",
+    "elementBaseAttack": 300,
+    "elementHidden": true,
+    "slots": [],
+    "id": 377
+  },
+  {
+    "name": "Taroth Crest \"King\"",
+    "tags": [
+      "kulve",
+      "taroth",
+      "fire"
+    ],
+    "rarity": 7,
+    "itemType": "Weapon",
+    "weaponType": "Lance",
+    "baseAttack": 368,
+    "baseDefense": 20,
+    "sharpnessDataNeeded": true,
+    "sharpnessLevels": [
+      {
+        "color": "White",
+        "value": 20
+      }
+    ],
+    "baseAffinityPercent": 0,
+    "element": "Fire",
+    "elementBaseAttack": 300,
+    "slots": [],
+    "id": 378
+  },
+  {
+    "name": "Taroth Crest \"Sleep\"",
+    "tags": [
+      "kulve",
+      "taroth",
+      "sleep",
+      "hidden"
+    ],
+    "rarity": 7,
+    "itemType": "Weapon",
+    "weaponType": "Lance",
+    "baseAttack": 414,
+    "baseDefense": 20,
+    "sharpnessDataNeeded": true,
+    "sharpnessLevels": [
+      {
+        "color": "Blue",
+        "value": 20
+      }
+    ],
+    "baseAffinityPercent": 10,
+    "ailment": "Sleep",
+    "ailmentBaseAttack": 450,
+    "ailmentHidden": true,
+    "slots": [],
+    "id": 379
+  },
+  {
+    "name": "Taroth Crest \"Thunder\"",
+    "tags": [
+      "kulve",
+      "taroth",
+      "thunder",
+      "hidden"
+    ],
+    "rarity": 8,
+    "itemType": "Weapon",
+    "weaponType": "Lance",
+    "baseAttack": 368,
+    "baseDefense": 20,
+    "sharpnessDataNeeded": true,
+    "sharpnessLevels": [
+      {
+        "color": "Blue",
+        "value": 20
+      }
+    ],
+    "baseAffinityPercent": 20,
+    "element": "Thunder",
+    "elementBaseAttack": 600,
+    "elementHidden": true,
+    "slots": [
+      {
+        "level": 3
+      }
+    ],
+    "id": 380
   }
 ]

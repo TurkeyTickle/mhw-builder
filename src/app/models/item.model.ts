@@ -22,6 +22,7 @@ export class ItemModel {
 	// weapon properties
 	weaponType?: WeaponType;
 	baseAttack?: number;
+	sharpnessDataNeeded: boolean;
 	sharpnessLevels: SharpnessLevelModel[];
 	maxSharpness?: SharpnessType;
 	baseAffinityPercent?: number;

@@ -426,5 +426,135 @@
       }
     ],
     "id": 288
+  },
+  {
+    "name": "Gold Thunder Piercer",
+    "tags": [
+      "kulve",
+      "taroth",
+      "hidden",
+      "thunder"
+    ],
+    "rarity": 6,
+    "itemType": "Weapon",
+    "weaponType": "Bow",
+    "baseAttack": 168,
+    "baseDefense": 20,
+    "baseAffinityPercent": 10,
+    "element": "Thunder",
+    "elementBaseAttack": 210,
+    "elementHidden": true,
+    "slots": [],
+    "id": 307
+  },
+  {
+    "name": "Taroth Arrow \"Blast\"",
+    "tags": [
+      "kulve",
+      "taroth",
+      "hidden",
+      "blast"
+    ],
+    "rarity": 8,
+    "itemType": "Weapon",
+    "weaponType": "Bow",
+    "baseAttack": 240,
+    "baseDefense": 30,
+    "baseAffinityPercent": 0,
+    "element": "Blast",
+    "elementBaseAttack": 360,
+    "elementHidden": true,
+    "slots": [
+      {
+        "level": 3
+      }
+    ],
+    "id": 308
+  },
+  {
+    "name": "Taroth Arrow \"Water\"",
+    "tags": [
+      "kulve",
+      "taroth",
+      "hidden",
+      "water"
+    ],
+    "rarity": 8,
+    "itemType": "Weapon",
+    "weaponType": "Bow",
+    "baseAttack": 228,
+    "baseDefense": 30,
+    "baseAffinityPercent": 0,
+    "element": "water",
+    "elementBaseAttack": 360,
+    "elementHidden": true,
+    "slots": [
+      {
+        "level": 1
+      },
+      {
+        "level": 1
+      },
+      {
+        "level": 1
+      }
+    ],
+    "id": 357
+  },
+  {
+    "name": "Taroth Arrow \"Decay\"",
+    "tags": [
+      "kulve",
+      "taroth",
+      "dragon"
+    ],
+    "rarity": 7,
+    "itemType": "Weapon",
+    "weaponType": "Bow",
+    "baseAttack": 228,
+    "baseDefense": 20,
+    "baseAffinityPercent": 0,
+    "element": "Dragon",
+    "elementBaseAttack": 270,
+    "slots": [],
+    "id": 358
+  },
+  {
+    "name": "Taroth Arrow \"King\"",
+    "tags": [
+      "kulve",
+      "taroth",
+      "fire"
+    ],
+    "rarity": 7,
+    "itemType": "Weapon",
+    "weaponType": "Bow",
+    "baseAttack": 216,
+    "baseDefense": 20,
+    "baseAffinityPercent": 30,
+    "element": "Fire",
+    "elementBaseAttack": 240,
+    "slots": [],
+    "id": 359
+  },
+  {
+    "name": "Taroth Arrow \"Thief\"",
+    "tags": [
+      "kulve",
+      "taroth",
+      "blast",
+      "hidden"
+    ],
+    "rarity": 7,
+    "itemType": "Weapon",
+    "weaponType": "Bow",
+    "baseAttack": 204,
+    "baseDefense": 20,
+    "baseAffinityPercent": 30,
+    "ailment": "Blast",
+    "ailmentBaseAttack": 150,
+    "ailmentHidden": true,
+    "slots": [],
+    "id": 360
   }
 ]

@@ -1,37 +1,41 @@
 [
   {
     "name": "Perfected Alloy Axe II",
-	"tags": ["ore", "poison", "hidden"],
-	"rarity": 6,
+    "tags": [
+      "ore",
+      "poison",
+      "hidden"
+    ],
+    "rarity": 6,
     "itemType": "Weapon",
     "weaponType": "SwitchAxe",
     "baseAttack": 630,
-	"sharpnessLevels": [
-		{
-			"color": "Blue",
-			"value": 60
-		},
-		{
-			"color": "Blue",
-			"value": 70
-		},
-		{
-			"color": "Blue",
-			"value": 80
-		},
-		{
-			"color": "Blue",
-			"value": 90
-		},
-		{
-			"color": "White",
-			"value": 10
-		},
-		{
-			"color": "White",
-			"value": 20
-		}
-	],
+    "sharpnessLevels": [
+      {
+        "color": "Blue",
+        "value": 60
+      },
+      {
+        "color": "Blue",
+        "value": 70
+      },
+      {
+        "color": "Blue",
+        "value": 80
+      },
+      {
+        "color": "Blue",
+        "value": 90
+      },
+      {
+        "color": "White",
+        "value": 10
+      },
+      {
+        "color": "White",
+        "value": 20
+      }
+    ],
     "baseAffinityPercent": 0,
     "ailment": "Poison",
     "ailmentBaseAttack": 420,
@@ -48,17 +52,20 @@
   },
   {
     "name": "Dying Light",
-	"tags": ["nergigante", "dragon"],
-	"rarity": 8,
+    "tags": [
+      "nergigante",
+      "dragon"
+    ],
+    "rarity": 8,
     "itemType": "Weapon",
     "weaponType": "SwitchAxe",
     "baseAttack": 700,
-	"sharpnessLevels": [
-		{
-			"color": "Blue",
-			"value": 80
-		}
-	],
+    "sharpnessLevels": [
+      {
+        "color": "Blue",
+        "value": 80
+      }
+    ],
     "baseAffinityPercent": 0,
     "element": "Dragon",
     "elementBaseAttack": 150,
@@ -73,37 +80,40 @@
   },
   {
     "name": "Legia Frostreaver",
-	"tags": ["legiana", "ice"],
-	"rarity": 7,
+    "tags": [
+      "legiana",
+      "ice"
+    ],
+    "rarity": 7,
     "itemType": "Weapon",
     "weaponType": "SwitchAxe",
     "baseAttack": 560,
-	"sharpnessLevels": [
-		{
-			"color": "White",
-			"value": 10
-		},
-		{
-			"color": "White",
-			"value": 20
-		},
-		{
-			"color": "White",
-			"value": 30
-		},
-		{
-			"color": "White",
-			"value": 40
-		},
-		{
-			"color": "White",
-			"value": 50
-		},
-		{
-			"color": "White",
-			"value": 60
-		}
-	],
+    "sharpnessLevels": [
+      {
+        "color": "White",
+        "value": 10
+      },
+      {
+        "color": "White",
+        "value": 20
+      },
+      {
+        "color": "White",
+        "value": 30
+      },
+      {
+        "color": "White",
+        "value": 40
+      },
+      {
+        "color": "White",
+        "value": 50
+      },
+      {
+        "color": "White",
+        "value": 60
+      }
+    ],
     "baseAffinityPercent": 0,
     "element": "Ice",
     "elementBaseAttack": 300,
@@ -112,37 +122,40 @@
   },
   {
     "name": "Lightning Chopper III",
-	"tags": ["tobi-kadachi", "thunder"],
-	"rarity": 6,
+    "tags": [
+      "tobi-kadachi",
+      "thunder"
+    ],
+    "rarity": 6,
     "itemType": "Weapon",
     "weaponType": "SwitchAxe",
     "baseAttack": 630,
-	"sharpnessLevels": [
-		{
-			"color": "Blue",
-			"value": 40
-		},
-		{
-			"color": "Blue",
-			"value": 50
-		},
-		{
-			"color": "Blue",
-			"value": 60
-		},
-		{
-			"color": "Blue",
-			"value": 70
-		},
-		{
-			"color": "White",
-			"value": 10
-		},
-		{
-			"color": "White",
-			"value": 20
-		}
-	],
+    "sharpnessLevels": [
+      {
+        "color": "Blue",
+        "value": 40
+      },
+      {
+        "color": "Blue",
+        "value": 50
+      },
+      {
+        "color": "Blue",
+        "value": 60
+      },
+      {
+        "color": "Blue",
+        "value": 70
+      },
+      {
+        "color": "White",
+        "value": 10
+      },
+      {
+        "color": "White",
+        "value": 20
+      }
+    ],
     "baseAffinityPercent": 0,
     "element": "Thunder",
     "elementBaseAttack": 180,
@@ -155,37 +168,40 @@
   },
   {
     "name": "Motor Chopper II",
-	"tags": ["uragaan", "fire"],
-	"rarity": 7,
+    "tags": [
+      "uragaan",
+      "fire"
+    ],
+    "rarity": 7,
     "itemType": "Weapon",
     "weaponType": "SwitchAxe",
     "baseAttack": 735,
-	"sharpnessLevels": [
-		{
-			"color": "Blue",
-			"value": 40
-		},
-		{
-			"color": "Blue",
-			"value": 50
-		},
-		{
-			"color": "Blue",
-			"value": 60
-		},
-		{
-			"color": "Blue",
-			"value": 70
-		},
-		{
-			"color": "Blue",
-			"value": 80
-		},
-		{
-			"color": "Blue",
-			"value": 90
-		}
-	],
+    "sharpnessLevels": [
+      {
+        "color": "Blue",
+        "value": 40
+      },
+      {
+        "color": "Blue",
+        "value": 50
+      },
+      {
+        "color": "Blue",
+        "value": 60
+      },
+      {
+        "color": "Blue",
+        "value": 70
+      },
+      {
+        "color": "Blue",
+        "value": 80
+      },
+      {
+        "color": "Blue",
+        "value": 90
+      }
+    ],
     "baseAffinityPercent": 0,
     "element": "Fire",
     "elementBaseAttack": 120,
@@ -199,37 +215,42 @@
   },
   {
     "name": "Jagras Raider III",
-	"tags": ["great", "jagras", "sleep", "hidden"],
-	"rarity": 6,
+    "tags": [
+      "great",
+      "jagras",
+      "sleep",
+      "hidden"
+    ],
+    "rarity": 6,
     "itemType": "Weapon",
     "weaponType": "SwitchAxe",
     "baseAttack": 665,
-	"sharpnessLevels": [
-		{
-			"color": "Blue",
-			"value": 30
-		},
-		{
-			"color": "Blue",
-			"value": 40
-		},
-		{
-			"color": "Blue",
-			"value": 50
-		},
-		{
-			"color": "Blue",
-			"value": 60
-		},
-		{
-			"color": "Blue",
-			"value": 70
-		},
-		{
-			"color": "Blue",
-			"value": 80
-		}
-	],
+    "sharpnessLevels": [
+      {
+        "color": "Blue",
+        "value": 30
+      },
+      {
+        "color": "Blue",
+        "value": 40
+      },
+      {
+        "color": "Blue",
+        "value": 50
+      },
+      {
+        "color": "Blue",
+        "value": 60
+      },
+      {
+        "color": "Blue",
+        "value": 70
+      },
+      {
+        "color": "Blue",
+        "value": 80
+      }
+    ],
     "baseAffinityPercent": 0,
     "ailment": "Sleep",
     "ailmentBaseAttack": 240,
@@ -246,37 +267,40 @@
   },
   {
     "name": "Bazel Raider II",
-	"tags": ["bazelgeuse", "blast"],
-	"rarity": 7,
+    "tags": [
+      "bazelgeuse",
+      "blast"
+    ],
+    "rarity": 7,
     "itemType": "Weapon",
     "weaponType": "SwitchAxe",
     "baseAttack": 700,
-	"sharpnessLevels": [
-		{
-			"color": "Blue",
-			"value": 20
-		},
-		{
-			"color": "White",
-			"value": 10
-		},
-		{
-			"color": "White",
-			"value": 20
-		},
-		{
-			"color": "White",
-			"value": 30
-		},
-		{
-			"color": "White",
-			"value": 40
-		},
-		{
-			"color": "White",
-			"value": 50
-		}
-	],
+    "sharpnessLevels": [
+      {
+        "color": "Blue",
+        "value": 20
+      },
+      {
+        "color": "White",
+        "value": 10
+      },
+      {
+        "color": "White",
+        "value": 20
+      },
+      {
+        "color": "White",
+        "value": 30
+      },
+      {
+        "color": "White",
+        "value": 40
+      },
+      {
+        "color": "White",
+        "value": 50
+      }
+    ],
     "baseAffinityPercent": -15,
     "ailment": "Blast",
     "ailmentBaseAttack": 180,
@@ -289,37 +313,40 @@
   },
   {
     "name": "Rathbringer Axe II",
-	"tags": ["rathalos", "fire"],
-	"rarity": 7,
+    "tags": [
+      "rathalos",
+      "fire"
+    ],
+    "rarity": 7,
     "itemType": "Weapon",
     "weaponType": "SwitchAxe",
     "baseAttack": 665,
-	"sharpnessLevels": [
-		{
-			"color": "Blue",
-			"value": 40
-		},
-		{
-			"color": "Blue",
-			"value": 50
-		},
-		{
-			"color": "Blue",
-			"value": 60
-		},
-		{
-			"color": "Blue",
-			"value": 70
-		},
-		{
-			"color": "White",
-			"value": 10
-		},
-		{
-			"color": "White",
-			"value": 20
-		}
-	],
+    "sharpnessLevels": [
+      {
+        "color": "Blue",
+        "value": 40
+      },
+      {
+        "color": "Blue",
+        "value": 50
+      },
+      {
+        "color": "Blue",
+        "value": 60
+      },
+      {
+        "color": "Blue",
+        "value": 70
+      },
+      {
+        "color": "White",
+        "value": 10
+      },
+      {
+        "color": "White",
+        "value": 20
+      }
+    ],
     "baseAffinityPercent": 15,
     "element": "Fire",
     "elementBaseAttack": 150,
@@ -332,37 +359,39 @@
   },
   {
     "name": "Power Smasher II",
-	"tags": ["bone"],
-	"rarity": 6,
+    "tags": [
+      "bone"
+    ],
+    "rarity": 6,
     "itemType": "Weapon",
     "weaponType": "SwitchAxe",
     "baseAttack": 665,
-	"sharpnessLevels": [
-		{
-			"color": "Blue",
-			"value": 40
-		},
-		{
-			"color": "Blue",
-			"value": 50
-		},
-		{
-			"color": "Blue",
-			"value": 60
-		},
-		{
-			"color": "Blue",
-			"value": 70
-		},
-		{
-			"color": "Blue",
-			"value": 80
-		},
-		{
-			"color": "Blue",
-			"value": 90
-		}
-	],
+    "sharpnessLevels": [
+      {
+        "color": "Blue",
+        "value": 40
+      },
+      {
+        "color": "Blue",
+        "value": 50
+      },
+      {
+        "color": "Blue",
+        "value": 60
+      },
+      {
+        "color": "Blue",
+        "value": 70
+      },
+      {
+        "color": "Blue",
+        "value": 80
+      },
+      {
+        "color": "Blue",
+        "value": 90
+      }
+    ],
     "baseAffinityPercent": 10,
     "elderseal": "Average",
     "baseDefense": 10,
@@ -375,37 +404,41 @@
   },
   {
     "name": "Hazak Demios II",
-	"tags": ["vaal", "hazak", "dragon"],
-	"rarity": 7,
+    "tags": [
+      "vaal",
+      "hazak",
+      "dragon"
+    ],
+    "rarity": 7,
     "itemType": "Weapon",
     "weaponType": "SwitchAxe",
     "baseAttack": 700,
-	"sharpnessLevels": [
-		{
-			"color": "Blue",
-			"value": 40
-		},
-		{
-			"color": "Blue",
-			"value": 50
-		},
-		{
-			"color": "White",
-			"value": 10
-		},
-		{
-			"color": "White",
-			"value": 20
-		},
-		{
-			"color": "White",
-			"value": 30
-		},
-		{
-			"color": "White",
-			"value": 40
-		}
-	],
+    "sharpnessLevels": [
+      {
+        "color": "Blue",
+        "value": 40
+      },
+      {
+        "color": "Blue",
+        "value": 50
+      },
+      {
+        "color": "White",
+        "value": 10
+      },
+      {
+        "color": "White",
+        "value": 20
+      },
+      {
+        "color": "White",
+        "value": 30
+      },
+      {
+        "color": "White",
+        "value": 40
+      }
+    ],
     "baseAffinityPercent": 0,
     "element": "Dragon",
     "elementBaseAttack": 210,
@@ -419,37 +452,40 @@
   },
   {
     "name": "Jyura Drought III",
-	"tags": ["jyuratodus", "water"],
-	"rarity": 7,
+    "tags": [
+      "jyuratodus",
+      "water"
+    ],
+    "rarity": 7,
     "itemType": "Weapon",
     "weaponType": "SwitchAxe",
     "baseAttack": 665,
-	"sharpnessLevels": [
-		{
-			"color": "Blue",
-			"value": 20
-		},
-		{
-			"color": "Blue",
-			"value": 30
-		},
-		{
-			"color": "Blue",
-			"value": 40
-		},
-		{
-			"color": "Blue",
-			"value": 50
-		},
-		{
-			"color": "White",
-			"value": 10
-		},
-		{
-			"color": "White",
-			"value": 20
-		}
-	],
+    "sharpnessLevels": [
+      {
+        "color": "Blue",
+        "value": 20
+      },
+      {
+        "color": "Blue",
+        "value": 30
+      },
+      {
+        "color": "Blue",
+        "value": 40
+      },
+      {
+        "color": "Blue",
+        "value": 50
+      },
+      {
+        "color": "White",
+        "value": 10
+      },
+      {
+        "color": "White",
+        "value": 20
+      }
+    ],
     "baseAffinityPercent": 0,
     "element": "Water",
     "elementBaseAttack": 330,
@@ -462,37 +498,41 @@
   },
   {
     "name": "Lumu Smasher III",
-	"tags": ["paolumu", "blast", "hidden"],
-	"rarity": 7,
+    "tags": [
+      "paolumu",
+      "blast",
+      "hidden"
+    ],
+    "rarity": 7,
     "itemType": "Weapon",
     "weaponType": "SwitchAxe",
     "baseAttack": 595,
-	"sharpnessLevels": [
-		{
-			"color": "Blue",
-			"value": 50
-		},
-		{
-			"color": "Blue",
-			"value": 60
-		},
-		{
-			"color": "Blue",
-			"value": 70
-		},
-		{
-			"color": "White",
-			"value": 10
-		},
-		{
-			"color": "White",
-			"value": 20
-		},
-		{
-			"color": "White",
-			"value": 30
-		}
-	],
+    "sharpnessLevels": [
+      {
+        "color": "Blue",
+        "value": 50
+      },
+      {
+        "color": "Blue",
+        "value": 60
+      },
+      {
+        "color": "Blue",
+        "value": 70
+      },
+      {
+        "color": "White",
+        "value": 10
+      },
+      {
+        "color": "White",
+        "value": 20
+      },
+      {
+        "color": "White",
+        "value": 30
+      }
+    ],
     "baseAffinityPercent": 20,
     "ailment": "Blast",
     "ailmentBaseAttack": 420,
@@ -506,37 +546,41 @@
   },
   {
     "name": "Barroth Grinder III",
-	"tags": ["barroth", "paralysis", "hidden"],
-	"rarity": 6,
+    "tags": [
+      "barroth",
+      "paralysis",
+      "hidden"
+    ],
+    "rarity": 6,
     "itemType": "Weapon",
     "weaponType": "SwitchAxe",
     "baseAttack": 735,
-	"sharpnessLevels": [
-		{
-			"color": "Blue",
-			"value": 30
-		},
-		{
-			"color": "Blue",
-			"value": 40
-		},
-		{
-			"color": "Blue",
-			"value": 50
-		},
-		{
-			"color": "Blue",
-			"value": 60
-		},
-		{
-			"color": "Blue",
-			"value": 70
-		},
-		{
-			"color": "Blue",
-			"value": 80
-		}
-	],
+    "sharpnessLevels": [
+      {
+        "color": "Blue",
+        "value": 30
+      },
+      {
+        "color": "Blue",
+        "value": 40
+      },
+      {
+        "color": "Blue",
+        "value": 50
+      },
+      {
+        "color": "Blue",
+        "value": 60
+      },
+      {
+        "color": "Blue",
+        "value": 70
+      },
+      {
+        "color": "Blue",
+        "value": 80
+      }
+    ],
     "baseAffinityPercent": -20,
     "ailment": "Paralysis",
     "ailmentBaseAttack": 330,
@@ -554,37 +598,41 @@
   },
   {
     "name": "Axe of Demons",
-	"tags": ["diablos", "ice", "hidden"],
-	"rarity": 8,
+    "tags": [
+      "diablos",
+      "ice",
+      "hidden"
+    ],
+    "rarity": 8,
     "itemType": "Weapon",
     "weaponType": "SwitchAxe",
     "baseAttack": 805,
-	"sharpnessLevels": [
-		{
-			"color": "Blue",
-			"value": 30
-		},
-		{
-			"color": "Blue",
-			"value": 40
-		},
-		{
-			"color": "Blue",
-			"value": 50
-		},
-		{
-			"color": "Blue",
-			"value": 60
-		},
-		{
-			"color": "White",
-			"value": 10
-		},
-		{
-			"color": "White",
-			"value": 20
-		}
-	],
+    "sharpnessLevels": [
+      {
+        "color": "Blue",
+        "value": 30
+      },
+      {
+        "color": "Blue",
+        "value": 40
+      },
+      {
+        "color": "Blue",
+        "value": 50
+      },
+      {
+        "color": "Blue",
+        "value": 60
+      },
+      {
+        "color": "White",
+        "value": 10
+      },
+      {
+        "color": "White",
+        "value": 20
+      }
+    ],
     "baseAffinityPercent": -30,
     "element": "Ice",
     "elementBaseAttack": 180,
@@ -599,37 +647,40 @@
   },
   {
     "name": "Gnashing Flammenbeil",
-	"tags": ["anjanath", "fire"],
-	"rarity": 7,
+    "tags": [
+      "anjanath",
+      "fire"
+    ],
+    "rarity": 7,
     "itemType": "Weapon",
     "weaponType": "SwitchAxe",
     "baseAttack": 735,
-	"sharpnessLevels": [
-		{
-			"color": "Blue",
-			"value": 30
-		},
-		{
-			"color": "Blue",
-			"value": 40
-		},
-		{
-			"color": "Blue",
-			"value": 50
-		},
-		{
-			"color": "Blue",
-			"value": 60
-		},
-		{
-			"color": "Blue",
-			"value": 70
-		},
-		{
-			"color": "Blue",
-			"value": 80
-		}
-	],
+    "sharpnessLevels": [
+      {
+        "color": "Blue",
+        "value": 30
+      },
+      {
+        "color": "Blue",
+        "value": 40
+      },
+      {
+        "color": "Blue",
+        "value": 50
+      },
+      {
+        "color": "Blue",
+        "value": 60
+      },
+      {
+        "color": "Blue",
+        "value": 70
+      },
+      {
+        "color": "Blue",
+        "value": 80
+      }
+    ],
     "baseAffinityPercent": -20,
     "element": "Fire",
     "elementBaseAttack": 300,
@@ -638,37 +689,40 @@
   },
   {
     "name": "Dragonbone Slicer III",
-	"tags": ["dragonbone", "dragon"],
-	"rarity": 6,
+    "tags": [
+      "dragonbone",
+      "dragon"
+    ],
+    "rarity": 6,
     "itemType": "Weapon",
     "weaponType": "SwitchAxe",
     "baseAttack": 560,
-	"sharpnessLevels": [
-		{
-			"color": "Blue",
-			"value": 40
-		},
-		{
-			"color": "Blue",
-			"value": 50
-		},
-		{
-			"color": "Blue",
-			"value": 60
-		},
-		{
-			"color": "Blue",
-			"value": 70
-		},
-		{
-			"color": "White",
-			"value": 10
-		},
-		{
-			"color": "White",
-			"value": 20
-		}
-	],
+    "sharpnessLevels": [
+      {
+        "color": "Blue",
+        "value": 40
+      },
+      {
+        "color": "Blue",
+        "value": 50
+      },
+      {
+        "color": "Blue",
+        "value": 60
+      },
+      {
+        "color": "Blue",
+        "value": 70
+      },
+      {
+        "color": "White",
+        "value": 10
+      },
+      {
+        "color": "White",
+        "value": 20
+      }
+    ],
     "baseAffinityPercent": 0,
     "element": "Dragon",
     "elementBaseAttack": 330,
@@ -685,37 +739,40 @@
   },
   {
     "name": "Kirin Thunderpeal",
-	"tags": ["kirin", "thunder"],
-	"rarity": 8,
+    "tags": [
+      "kirin",
+      "thunder"
+    ],
+    "rarity": 8,
     "itemType": "Weapon",
     "weaponType": "SwitchAxe",
     "baseAttack": 560,
-	"sharpnessLevels": [
-		{
-			"color": "Blue",
-			"value": 60
-		},
-		{
-			"color": "Blue",
-			"value": 70
-		},
-		{
-			"color": "Blue",
-			"value": 80
-		},
-		{
-			"color": "Blue",
-			"value": 90
-		},
-		{
-			"color": "Blue",
-			"value": 100
-		},
-		{
-			"color": "Blue",
-			"value": 110
-		}
-	],
+    "sharpnessLevels": [
+      {
+        "color": "Blue",
+        "value": 60
+      },
+      {
+        "color": "Blue",
+        "value": 70
+      },
+      {
+        "color": "Blue",
+        "value": 80
+      },
+      {
+        "color": "Blue",
+        "value": 90
+      },
+      {
+        "color": "Blue",
+        "value": 100
+      },
+      {
+        "color": "Blue",
+        "value": 110
+      }
+    ],
     "baseAffinityPercent": 0,
     "element": "Thunder",
     "elementBaseAttack": 450,
@@ -724,37 +781,41 @@
   },
   {
     "name": "Teostra's Castle",
-	"tags": ["blacksteel", "teostra", "blast"],
-	"rarity": 8,
+    "tags": [
+      "blacksteel",
+      "teostra",
+      "blast"
+    ],
+    "rarity": 8,
     "itemType": "Weapon",
     "weaponType": "SwitchAxe",
     "baseAttack": 665,
-	"sharpnessLevels": [
-		{
-			"color": "Blue",
-			"value": 40
-		},
-		{
-			"color": "Blue",
-			"value": 50
-		},
-		{
-			"color": "Blue",
-			"value": 60
-		},
-		{
-			"color": "White",
-			"value": 10
-		},
-		{
-			"color": "White",
-			"value": 20
-		},
-		{
-			"color": "White",
-			"value": 30
-		}
-	],
+    "sharpnessLevels": [
+      {
+        "color": "Blue",
+        "value": 40
+      },
+      {
+        "color": "Blue",
+        "value": 50
+      },
+      {
+        "color": "Blue",
+        "value": 60
+      },
+      {
+        "color": "White",
+        "value": 10
+      },
+      {
+        "color": "White",
+        "value": 20
+      },
+      {
+        "color": "White",
+        "value": 30
+      }
+    ],
     "baseAffinityPercent": 0,
     "ailment": "Blast",
     "ailmentBaseAttack": 300,
@@ -763,37 +824,40 @@
   },
   {
     "name": "Xeno Martshu",
-	"tags": ["xeno'jiva", "dragon"],
-	"rarity": 8,
+    "tags": [
+      "xeno'jiva",
+      "dragon"
+    ],
+    "rarity": 8,
     "itemType": "Weapon",
     "weaponType": "SwitchAxe",
     "baseAttack": 595,
-	"sharpnessLevels": [
-		{
-			"color": "White",
-			"value": 10
-		},
-		{
-			"color": "White",
-			"value": 20
-		},
-		{
-			"color": "White",
-			"value": 30
-		},
-		{
-			"color": "White",
-			"value": 40
-		},
-		{
-			"color": "White",
-			"value": 50
-		},
-		{
-			"color": "White",
-			"value": 60
-		}
-	],
+    "sharpnessLevels": [
+      {
+        "color": "White",
+        "value": 10
+      },
+      {
+        "color": "White",
+        "value": 20
+      },
+      {
+        "color": "White",
+        "value": 30
+      },
+      {
+        "color": "White",
+        "value": 40
+      },
+      {
+        "color": "White",
+        "value": 50
+      },
+      {
+        "color": "White",
+        "value": 60
+      }
+    ],
     "baseAffinityPercent": 15,
     "element": "Dragon",
     "elementBaseAttack": 150,
@@ -810,42 +874,140 @@
   },
   {
     "name": "Terror Tyrannos",
-	"tags": ["deviljho", "dragon"],
-	"rarity": 7,
+    "tags": [
+      "deviljho",
+      "dragon"
+    ],
+    "rarity": 7,
     "itemType": "Weapon",
     "weaponType": "SwitchAxe",
     "baseAttack": 770,
-	"sharpnessLevels": [
-		{
-			"color": "Blue",
-			"value": 40
-		},
-		{
-			"color": "White",
-			"value": 10
-		},
-		{
-			"color": "White",
-			"value": 20
-		},
-		{
-			"color": "White",
-			"value": 30
-		},
-		{
-			"color": "White",
-			"value": 40
-		},
-		{
-			"color": "White",
-			"value": 50
-		}
-	],
+    "sharpnessLevels": [
+      {
+        "color": "Blue",
+        "value": 40
+      },
+      {
+        "color": "White",
+        "value": 10
+      },
+      {
+        "color": "White",
+        "value": 20
+      },
+      {
+        "color": "White",
+        "value": 30
+      },
+      {
+        "color": "White",
+        "value": 40
+      },
+      {
+        "color": "White",
+        "value": 50
+      }
+    ],
     "baseAffinityPercent": -25,
     "element": "Dragon",
     "elementBaseAttack": 180,
     "elderseal": "High",
     "id": 282,
     "slots": []
+  },
+  {
+    "name": "Taroth Axe \"Bomber\"",
+    "tags": [
+      "kulve",
+      "taroth",
+      "blast"
+    ],
+    "rarity": 7,
+    "itemType": "Weapon",
+    "weaponType": "SwitchAxe",
+    "baseAttack": 630,
+    "sharpnessLevels": [
+      {
+        "color": "Blue",
+        "value": 20
+      }
+    ],
+    "baseAffinityPercent": 0,
+    "baseDefense": 20,
+    "ailment": "Blast",
+    "ailmentBaseAttack": 180,
+    "slots": [],
+    "id": 381
+  },
+  {
+    "name": "Taroth Axe \"Mud\"",
+    "tags": [
+      "kulve",
+      "taroth",
+      "paralysis"
+    ],
+    "rarity": 7,
+    "itemType": "Weapon",
+    "weaponType": "SwitchAxe",
+    "baseAttack": 735,
+    "sharpnessLevels": [
+      {
+        "color": "Blue",
+        "value": 20
+      }
+    ],
+    "baseAffinityPercent": -20,
+    "baseDefense": 25,
+    "ailment": "Paralysis",
+    "ailmentBaseAttack": 180,
+    "slots": [],
+    "id": 382
+  },
+  {
+    "name": "Taroth Axe \"Horn\"",
+    "tags": [
+      "kulve",
+      "taroth",
+      "ice",
+      "hidden"
+    ],
+    "rarity": 7,
+    "itemType": "Weapon",
+    "weaponType": "SwitchAxe",
+    "baseAttack": 805,
+    "sharpnessLevels": [
+      {
+        "color": "Blue",
+        "value": 20
+      }
+    ],
+    "baseAffinityPercent": -30,
+    "baseDefense": 25,
+    "element": "Ice",
+    "elementBaseAttack": 240,
+    "elementHidden": true,
+    "slots": [],
+    "id": 383
+  },
+  {
+    "name": "Taroth Axe \"Drifter\"",
+    "tags": [
+      "kulve",
+      "taroth"
+    ],
+    "rarity": 7,
+    "itemType": "Weapon",
+    "weaponType": "SwitchAxe",
+    "baseAttack": 595,
+    "sharpnessLevels": [
+      {
+        "color": "Blue",
+        "value": 20
+      }
+    ],
+    "baseAffinityPercent": 25,
+    "baseDefense": 20,
+    "slots": [],
+    "id": 384
   }
 ]

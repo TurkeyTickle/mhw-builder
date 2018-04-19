@@ -1348,5 +1348,60 @@
     ],
     "slots": [],
     "id": 347
+  },
+  {
+    "name": "Kulve Taroth's Fury Alpha",
+    "itemType": "Head",
+    "baseDefense": 72,
+    "fireResist": 4,
+    "waterResist": -2,
+    "thunderResist": 3,
+    "iceResist": -4,
+    "dragonResist": -2,
+    "skills": [
+      {
+        "id": "freeElemAmmoUp",
+        "level": 1
+      },
+      {
+        "id": "agitator",
+        "level": 2
+      }
+    ],
+    "slots": [
+      {
+        "level": 1
+      }
+    ],
+    "id": 352
+  },
+  {
+    "name": "Kulve Taroth's Fury Beta",
+    "itemType": "Head",
+    "baseDefense": 72,
+    "fireResist": 4,
+    "waterResist": -2,
+    "thunderResist": 3,
+    "iceResist": -4,
+    "dragonResist": -2,
+    "skills": [
+      {
+        "id": "freeElemAmmoUp",
+        "level": 1
+      },
+      {
+        "id": "agitator",
+        "level": 1
+      }
+    ],
+    "slots": [
+      {
+        "level": 2
+      },
+      {
+        "level": 1
+      }
+    ],
+    "id": 353
   }
 ]
