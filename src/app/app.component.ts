@@ -32,7 +32,9 @@ export class AppComponent implements OnInit, AfterViewInit {
 	@ViewChild('feetSlot') feetSlot: ItemSlotComponent;
 	@ViewChild('charmSlot') charmSlot: ItemSlotComponent;
 
-	@ViewChild('modal') modal: ModalComponent;
+	@ViewChild('itemListModal') itemListModal: ModalComponent;
+	@ViewChild('changeLogModal') changeLogModal: ModalComponent;
+
 	modalTitle: string;
 
 	selectedEquipmentSlot: ItemSlotComponent;
@@ -65,27 +67,27 @@ export class AppComponent implements OnInit, AfterViewInit {
 		});
 
 		this.slotService.anySlotSelected$.subscribe(slot => {
-			if (this.modal) {
-				this.modal.title = `Select ${slot.slotName}`;
-				this.modal.isOpen = slot != null;
+			if (this.itemListModal) {
+				this.itemListModal.title = `Select ${slot.slotName}`;
+				this.itemListModal.isOpen = slot != null;
 			}
 		});
 
 		this.slotService.itemSelected$.subscribe(item => {
-			if (this.modal) {
-				this.modal.isOpen = !item;
+			if (this.itemListModal) {
+				this.itemListModal.isOpen = !item;
 			}
 		});
 
 		this.slotService.decorationSelected$.subscribe(decoration => {
-			if (this.modal) {
-				this.modal.isOpen = !decoration;
+			if (this.itemListModal) {
+				this.itemListModal.isOpen = !decoration;
 			}
 		});
 
 		this.slotService.augmentationSelected$.subscribe(augmentation => {
-			if (this.modal) {
-				this.modal.isOpen = !augmentation;
+			if (this.itemListModal) {
+				this.itemListModal.isOpen = !augmentation;
 			}
 		});
 	}
@@ -100,11 +102,15 @@ export class AppComponent implements OnInit, AfterViewInit {
 		}
 	}
 
-	openModal() {
-		if (this.modal.isOpen) {
-			this.modal.close();
+	openItemListModal() {
+		if (this.itemListModal.isOpen) {
+			this.itemListModal.close();
 		} else {
-			this.modal.open();
+			this.itemListModal.open();
 		}
+	}
+
+	openChangeLog() {
+		this.changeLogModal.open();
 	}
 }

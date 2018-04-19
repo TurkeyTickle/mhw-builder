@@ -48,13 +48,26 @@
 
 	<mhw-builder-tooltip></mhw-builder-tooltip>
 
-	<mhw-builder-modal #modal>
+	<div class="signature">
+		Made with 💋 by <a href="https://twitter.com/turkeytickle" target="_blank">TurkeyTickle</a>
+	</div>
+
+	<div class="version-info">
+		<button (click)="openChangeLog()">Change Log</button>
+	</div>
+
+	<mhw-builder-modal #itemListModal>
 		<mhw-builder-item-list [hidden]="!slotService.selectedItemSlot" [itemType]="slotService.selectedItemSlot?.slotName"></mhw-builder-item-list>
 		<mhw-builder-item-list [hidden]="!slotService.selectedDecorationSlot" itemType="Decoration" [decorationLevel]="slotService.selectedDecorationSlot?.level"></mhw-builder-item-list>
 		<mhw-builder-augmentations-list [hidden]="!slotService.selectedAugmentationSlot"></mhw-builder-augmentations-list>
 	</mhw-builder-modal>
 
-	<div class="signature">
-		Made with 💋 by <a href="https://twitter.com/turkeytickle" target="_blank">TurkeyTickle</a>
-	</div>
+	<mhw-builder-modal #changeLogModal title="Change Log">
+		<h3>2018-04-19 (Version 1.2)</h3>
+		<ul>
+			<li>Lots of visual changes to make the site more mobile friendly and free up space to show more information (more to come)</li>
+			<li>Added Kulve Taroth armor</li>
+			<li>Added a bunch of Kulve Taroth weapons (there are still a ton more to add). Sharpness data is missing/inaccurate at the moment.</li>
+		</ul>
+	</mhw-builder-modal>
 </div>
