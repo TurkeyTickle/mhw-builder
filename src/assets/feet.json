@@ -1259,5 +1259,60 @@
     ],
     "slots": [],
     "id": 351
+  },
+  {
+    "name": "Kulve Taroth's Wrath Alpha",
+    "itemType": "Feet",
+    "baseDefense": 72,
+    "fireResist": 4,
+    "waterResist": -2,
+    "thunderResist": 3,
+    "iceResist": -4,
+    "dragonResist": -2,
+    "skills": [
+      {
+        "id": "wideRange",
+        "level": 2
+      },
+      {
+        "id": "peakPerformance",
+        "level": 2
+      }
+    ],
+    "slots": [
+      {
+        "level": 1
+      }
+    ],
+    "id": 360
+  },
+  {
+    "name": "Kulve Taroth's Wrath Beta",
+    "itemType": "Feet",
+    "baseDefense": 72,
+    "fireResist": 4,
+    "waterResist": -2,
+    "thunderResist": 3,
+    "iceResist": -4,
+    "dragonResist": -2,
+    "skills": [
+      {
+        "id": "wideRange",
+        "level": 2
+      },
+      {
+        "id": "peakPerformance",
+        "level": 1
+      }
+    ],
+    "slots": [
+      {
+        "level": 2
+      },
+      {
+        "level": 1
+      }
+    ],
+    "id": 361
   }
 ]

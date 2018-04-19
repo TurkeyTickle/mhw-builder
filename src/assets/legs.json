@@ -1277,5 +1277,60 @@
     ],
     "slots": [],
     "id": 350
+  },
+  {
+    "name": "Kulve Taroth's Malice Alpha",
+    "itemType": "Legs",
+    "baseDefense": 72,
+    "fireResist": 4,
+    "waterResist": -2,
+    "thunderResist": 3,
+    "iceResist": -4,
+    "dragonResist": -2,
+    "skills": [
+      {
+        "id": "freeElemAmmoUp",
+        "level": 1
+      },
+      {
+        "id": "handicraft",
+        "level": 2
+      }
+    ],
+    "slots": [
+      {
+        "level": 1
+      }
+    ],
+    "id": 358
+  },
+  {
+    "name": "Kulve Taroth's Malice Beta",
+    "itemType": "Legs",
+    "baseDefense": 72,
+    "fireResist": 4,
+    "waterResist": -2,
+    "thunderResist": 3,
+    "iceResist": -4,
+    "dragonResist": -2,
+    "skills": [
+      {
+        "id": "freeElemAmmoUp",
+        "level": 1
+      },
+      {
+        "id": "handicraft",
+        "level": 1
+      }
+    ],
+    "slots": [
+      {
+        "level": 3
+      },
+      {
+        "level": 1
+      }
+    ],
+    "id": 359
   }
 ]
