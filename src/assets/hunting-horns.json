@@ -1,37 +1,41 @@
 [
   {
     "name": "Fortissimo II",
-	"tags": ["ore", "paralysis", "hidden"],
-	"rarity": 6,
+    "tags": [
+      "ore",
+      "paralysis",
+      "hidden"
+    ],
+    "rarity": 6,
     "itemType": "Weapon",
     "weaponType": "HuntingHorn",
     "baseAttack": 756,
-	"sharpnessLevels": [
-		{
-			"color": "Blue",
-			"value": 60
-		},
-		{
-			"color": "Blue",
-			"value": 70
-		},
-		{
-			"color": "Blue",
-			"value": 80
-		},
-		{
-			"color": "Blue",
-			"value": 90
-		},
-		{
-			"color": "White",
-			"value": 10
-		},
-		{
-			"color": "White",
-			"value": 20
-		}
-	],
+    "sharpnessLevels": [
+      {
+        "color": "Blue",
+        "value": 60
+      },
+      {
+        "color": "Blue",
+        "value": 70
+      },
+      {
+        "color": "Blue",
+        "value": 80
+      },
+      {
+        "color": "Blue",
+        "value": 90
+      },
+      {
+        "color": "White",
+        "value": 10
+      },
+      {
+        "color": "White",
+        "value": 20
+      }
+    ],
     "baseAffinityPercent": 0,
     "ailment": "Paralysis",
     "ailmentBaseAttack": 270,
@@ -48,17 +52,20 @@
   },
   {
     "name": "Desolation's Overture",
-	"tags": ["nergigante", "dragon"],
-	"rarity": 8,
+    "tags": [
+      "nergigante",
+      "dragon"
+    ],
+    "rarity": 8,
     "itemType": "Weapon",
     "weaponType": "HuntingHorn",
     "baseAttack": 882,
-	"sharpnessLevels": [
-		{
-			"color": "Blue",
-			"value": 80
-		}
-	],
+    "sharpnessLevels": [
+      {
+        "color": "Blue",
+        "value": 80
+      }
+    ],
     "baseAffinityPercent": 0,
     "element": "Dragon",
     "elementBaseAttack": 150,
@@ -73,37 +80,40 @@
   },
   {
     "name": "Lightning Drum III",
-	"tags": ["tobi-kadachi", "thunder"],
-	"rarity": 6,
+    "tags": [
+      "tobi-kadachi",
+      "thunder"
+    ],
+    "rarity": 6,
     "itemType": "Weapon",
     "weaponType": "HuntingHorn",
     "baseAttack": 756,
-	"sharpnessLevels": [
-		{
-			"color": "Blue",
-			"value": 40
-		},
-		{
-			"color": "Blue",
-			"value": 50
-		},
-		{
-			"color": "Blue",
-			"value": 60
-		},
-		{
-			"color": "Blue",
-			"value": 70
-		},
-		{
-			"color": "White",
-			"value": 10
-		},
-		{
-			"color": "White",
-			"value": 20
-		}
-	],
+    "sharpnessLevels": [
+      {
+        "color": "Blue",
+        "value": 40
+      },
+      {
+        "color": "Blue",
+        "value": 50
+      },
+      {
+        "color": "Blue",
+        "value": 60
+      },
+      {
+        "color": "Blue",
+        "value": 70
+      },
+      {
+        "color": "White",
+        "value": 10
+      },
+      {
+        "color": "White",
+        "value": 20
+      }
+    ],
     "baseAffinityPercent": 0,
     "element": "Thunder",
     "elementBaseAttack": 240,
@@ -116,37 +126,41 @@
   },
   {
     "name": "Dancing Davul III",
-	"tags": ["kulu-ya-ku", "sleep", "hidden"],
-	"rarity": 6,
+    "tags": [
+      "kulu-ya-ku",
+      "sleep",
+      "hidden"
+    ],
+    "rarity": 6,
     "itemType": "Weapon",
     "weaponType": "HuntingHorn",
     "baseAttack": 714,
-	"sharpnessLevels": [
-		{
-			"color": "Blue",
-			"value": 40
-		},
-		{
-			"color": "Blue",
-			"value": 50
-		},
-		{
-			"color": "Blue",
-			"value": 60
-		},
-		{
-			"color": "Blue",
-			"value": 70
-		},
-		{
-			"color": "White",
-			"value": 10
-		},
-		{
-			"color": "White",
-			"value": 20
-		}
-	],
+    "sharpnessLevels": [
+      {
+        "color": "Blue",
+        "value": 40
+      },
+      {
+        "color": "Blue",
+        "value": 50
+      },
+      {
+        "color": "Blue",
+        "value": 60
+      },
+      {
+        "color": "Blue",
+        "value": 70
+      },
+      {
+        "color": "White",
+        "value": 10
+      },
+      {
+        "color": "White",
+        "value": 20
+      }
+    ],
     "baseAffinityPercent": 25,
     "ailment": "Sleep",
     "ailmentBaseAttack": 360,
@@ -156,37 +170,40 @@
   },
   {
     "name": "Royal Chordmaker",
-	"tags": ["rathian", "fire"],
-	"rarity": 7,
+    "tags": [
+      "rathian",
+      "fire"
+    ],
+    "rarity": 7,
     "itemType": "Weapon",
     "weaponType": "HuntingHorn",
     "baseAttack": 798,
-	"sharpnessLevels": [
-		{
-			"color": "Blue",
-			"value": 50
-		},
-		{
-			"color": "Blue",
-			"value": 60
-		},
-		{
-			"color": "White",
-			"value": 10
-		},
-		{
-			"color": "White",
-			"value": 20
-		},
-		{
-			"color": "White",
-			"value": 30
-		},
-		{
-			"color": "White",
-			"value": 40
-		}
-	],
+    "sharpnessLevels": [
+      {
+        "color": "Blue",
+        "value": 50
+      },
+      {
+        "color": "Blue",
+        "value": 60
+      },
+      {
+        "color": "White",
+        "value": 10
+      },
+      {
+        "color": "White",
+        "value": 20
+      },
+      {
+        "color": "White",
+        "value": 30
+      },
+      {
+        "color": "White",
+        "value": 40
+      }
+    ],
     "baseAffinityPercent": 25,
     "element": "Fire",
     "elementBaseAttack": 240,
@@ -199,37 +216,40 @@
   },
   {
     "name": "Water Tamtam III",
-	"tags": ["jyuratodus", "water"],
-	"rarity": 6,
+    "tags": [
+      "jyuratodus",
+      "water"
+    ],
+    "rarity": 6,
     "itemType": "Weapon",
     "weaponType": "HuntingHorn",
     "baseAttack": 756,
-	"sharpnessLevels": [
-		{
-			"color": "Blue",
-			"value": 40
-		},
-		{
-			"color": "Blue",
-			"value": 50
-		},
-		{
-			"color": "Blue",
-			"value": 60
-		},
-		{
-			"color": "Blue",
-			"value": 70
-		},
-		{
-			"color": "White",
-			"value": 10
-		},
-		{
-			"color": "White",
-			"value": 20
-		}
-	],
+    "sharpnessLevels": [
+      {
+        "color": "Blue",
+        "value": 40
+      },
+      {
+        "color": "Blue",
+        "value": 50
+      },
+      {
+        "color": "Blue",
+        "value": 60
+      },
+      {
+        "color": "Blue",
+        "value": 70
+      },
+      {
+        "color": "White",
+        "value": 10
+      },
+      {
+        "color": "White",
+        "value": 20
+      }
+    ],
     "baseAffinityPercent": 0,
     "element": "Water",
     "elementBaseAttack": 270,
@@ -242,37 +262,40 @@
   },
   {
     "name": "Legia Sectored",
-	"tags": ["legiana", "ice"],
-	"rarity": 7,
+    "tags": [
+      "legiana",
+      "ice"
+    ],
+    "rarity": 7,
     "itemType": "Weapon",
     "weaponType": "HuntingHorn",
     "baseAttack": 672,
-	"sharpnessLevels": [
-		{
-			"color": "White",
-			"value": 10
-		},
-		{
-			"color": "White",
-			"value": 20
-		},
-		{
-			"color": "White",
-			"value": 30
-		},
-		{
-			"color": "White",
-			"value": 40
-		},
-		{
-			"color": "White",
-			"value": 50
-		},
-		{
-			"color": "White",
-			"value": 60
-		}
-	],
+    "sharpnessLevels": [
+      {
+        "color": "White",
+        "value": 10
+      },
+      {
+        "color": "White",
+        "value": 20
+      },
+      {
+        "color": "White",
+        "value": 30
+      },
+      {
+        "color": "White",
+        "value": 40
+      },
+      {
+        "color": "White",
+        "value": 50
+      },
+      {
+        "color": "White",
+        "value": 60
+      }
+    ],
     "baseAffinityPercent": 0,
     "element": "Ice",
     "elementBaseAttack": 360,
@@ -281,37 +304,41 @@
   },
   {
     "name": "Heavy Bone Horn II",
-	"tags": ["bone", "ice", "hidden"],
-	"rarity": 6,
+    "tags": [
+      "bone",
+      "ice",
+      "hidden"
+    ],
+    "rarity": 6,
     "itemType": "Weapon",
     "weaponType": "HuntingHorn",
     "baseAttack": 798,
-	"sharpnessLevels": [
-		{
-			"color": "Blue",
-			"value": 30
-		},
-		{
-			"color": "Blue",
-			"value": 40
-		},
-		{
-			"color": "Blue",
-			"value": 50
-		},
-		{
-			"color": "Blue",
-			"value": 60
-		},
-		{
-			"color": "Blue",
-			"value": 70
-		},
-		{
-			"color": "Blue",
-			"value": 80
-		}
-	],
+    "sharpnessLevels": [
+      {
+        "color": "Blue",
+        "value": 30
+      },
+      {
+        "color": "Blue",
+        "value": 40
+      },
+      {
+        "color": "Blue",
+        "value": 50
+      },
+      {
+        "color": "Blue",
+        "value": 60
+      },
+      {
+        "color": "Blue",
+        "value": 70
+      },
+      {
+        "color": "Blue",
+        "value": 80
+      }
+    ],
     "baseAffinityPercent": 0,
     "element": "Ice",
     "elementBaseAttack": 270,
@@ -326,37 +353,40 @@
   },
   {
     "name": "Gama Horn II",
-	"tags": ["dodogama", "blast"],
-	"rarity": 7,
+    "tags": [
+      "dodogama",
+      "blast"
+    ],
+    "rarity": 7,
     "itemType": "Weapon",
     "weaponType": "HuntingHorn",
     "baseAttack": 798,
-	"sharpnessLevels": [
-		{
-			"color": "Blue",
-			"value": 40
-		},
-		{
-			"color": "Blue",
-			"value": 50
-		},
-		{
-			"color": "Blue",
-			"value": 60
-		},
-		{
-			"color": "Blue",
-			"value": 70
-		},
-		{
-			"color": "White",
-			"value": 10
-		},
-		{
-			"color": "White",
-			"value": 20
-		}
-	],
+    "sharpnessLevels": [
+      {
+        "color": "Blue",
+        "value": 40
+      },
+      {
+        "color": "Blue",
+        "value": 50
+      },
+      {
+        "color": "Blue",
+        "value": 60
+      },
+      {
+        "color": "Blue",
+        "value": 70
+      },
+      {
+        "color": "White",
+        "value": 10
+      },
+      {
+        "color": "White",
+        "value": 20
+      }
+    ],
     "baseAffinityPercent": 0,
     "ailment": "Blast",
     "ailmentBaseAttack": 150,
@@ -372,37 +402,40 @@
   },
   {
     "name": "Anja Barone III",
-	"tags": ["anjanath", "fire"],
-	"rarity": 6,
+    "tags": [
+      "anjanath",
+      "fire"
+    ],
+    "rarity": 6,
     "itemType": "Weapon",
     "weaponType": "HuntingHorn",
     "baseAttack": 882,
-	"sharpnessLevels": [
-		{
-			"color": "Blue",
-			"value": 20
-		},
-		{
-			"color": "Blue",
-			"value": 30
-		},
-		{
-			"color": "Blue",
-			"value": 40
-		},
-		{
-			"color": "Blue",
-			"value": 50
-		},
-		{
-			"color": "Blue",
-			"value": 60
-		},
-		{
-			"color": "Blue",
-			"value": 70
-		}
-	],
+    "sharpnessLevels": [
+      {
+        "color": "Blue",
+        "value": 20
+      },
+      {
+        "color": "Blue",
+        "value": 30
+      },
+      {
+        "color": "Blue",
+        "value": 40
+      },
+      {
+        "color": "Blue",
+        "value": 50
+      },
+      {
+        "color": "Blue",
+        "value": 60
+      },
+      {
+        "color": "Blue",
+        "value": 70
+      }
+    ],
     "baseAffinityPercent": -20,
     "element": "Fire",
     "elementBaseAttack": 450,
@@ -411,37 +444,40 @@
   },
   {
     "name": "Datura Horn III",
-	"tags": ["pukei-pukei", "poison"],
-	"rarity": 6,
+    "tags": [
+      "pukei-pukei",
+      "poison"
+    ],
+    "rarity": 6,
     "itemType": "Weapon",
     "weaponType": "HuntingHorn",
     "baseAttack": 714,
-	"sharpnessLevels": [
-		{
-			"color": "Blue",
-			"value": 30
-		},
-		{
-			"color": "Blue",
-			"value": 40
-		},
-		{
-			"color": "Blue",
-			"value": 50
-		},
-		{
-			"color": "Blue",
-			"value": 60
-		},
-		{
-			"color": "Blue",
-			"value": 70
-		},
-		{
-			"color": "Blue",
-			"value": 80
-		}
-	],
+    "sharpnessLevels": [
+      {
+        "color": "Blue",
+        "value": 30
+      },
+      {
+        "color": "Blue",
+        "value": 40
+      },
+      {
+        "color": "Blue",
+        "value": 50
+      },
+      {
+        "color": "Blue",
+        "value": 60
+      },
+      {
+        "color": "Blue",
+        "value": 70
+      },
+      {
+        "color": "Blue",
+        "value": 80
+      }
+    ],
     "baseAffinityPercent": 0,
     "ailment": "Poison",
     "ailmentBaseAttack": 540,
@@ -457,37 +493,41 @@
   },
   {
     "name": "Lumu Barone III",
-	"tags": ["paolumu", "water", "hidden"],
-	"rarity": 6,
+    "tags": [
+      "paolumu",
+      "water",
+      "hidden"
+    ],
+    "rarity": 6,
     "itemType": "Weapon",
     "weaponType": "HuntingHorn",
     "baseAttack": 714,
-	"sharpnessLevels": [
-		{
-			"color": "Blue",
-			"value": 40
-		},
-		{
-			"color": "Blue",
-			"value": 50
-		},
-		{
-			"color": "White",
-			"value": 10
-		},
-		{
-			"color": "White",
-			"value": 20
-		},
-		{
-			"color": "White",
-			"value": 30
-		},
-		{
-			"color": "White",
-			"value": 40
-		}
-	],
+    "sharpnessLevels": [
+      {
+        "color": "Blue",
+        "value": 40
+      },
+      {
+        "color": "Blue",
+        "value": 50
+      },
+      {
+        "color": "White",
+        "value": 10
+      },
+      {
+        "color": "White",
+        "value": 20
+      },
+      {
+        "color": "White",
+        "value": 30
+      },
+      {
+        "color": "White",
+        "value": 40
+      }
+    ],
     "baseAffinityPercent": 10,
     "element": "Water",
     "elementBaseAttack": 570,
@@ -504,37 +544,40 @@
   },
   {
     "name": "Razelreid Rookslayer",
-	"tags": ["bazelgeuse", "blast"],
-	"rarity": 8,
+    "tags": [
+      "bazelgeuse",
+      "blast"
+    ],
+    "rarity": 8,
     "itemType": "Weapon",
     "weaponType": "HuntingHorn",
     "baseAttack": 840,
-	"sharpnessLevels": [
-		{
-			"color": "Blue",
-			"value": 20
-		},
-		{
-			"color": "White",
-			"value": 10
-		},
-		{
-			"color": "White",
-			"value": 20
-		},
-		{
-			"color": "White",
-			"value": 30
-		},
-		{
-			"color": "White",
-			"value": 40
-		},
-		{
-			"color": "White",
-			"value": 50
-		}
-	],
+    "sharpnessLevels": [
+      {
+        "color": "Blue",
+        "value": 20
+      },
+      {
+        "color": "White",
+        "value": 10
+      },
+      {
+        "color": "White",
+        "value": 20
+      },
+      {
+        "color": "White",
+        "value": 30
+      },
+      {
+        "color": "White",
+        "value": 40
+      },
+      {
+        "color": "White",
+        "value": 50
+      }
+    ],
     "baseAffinityPercent": -10,
     "ailment": "Blast",
     "ailmentBaseAttack": 210,
@@ -550,37 +593,40 @@
   },
   {
     "name": "Queen Vespoid Horn",
-	"tags": ["vespoid", "paralysis"],
-	"rarity": 7,
+    "tags": [
+      "vespoid",
+      "paralysis"
+    ],
+    "rarity": 7,
     "itemType": "Weapon",
     "weaponType": "HuntingHorn",
     "baseAttack": 672,
-	"sharpnessLevels": [
-		{
-			"color": "White",
-			"value": 30
-		},
-		{
-			"color": "White",
-			"value": 40
-		},
-		{
-			"color": "White",
-			"value": 50
-		},
-		{
-			"color": "White",
-			"value": 60
-		},
-		{
-			"color": "White",
-			"value": 70
-		},
-		{
-			"color": "White",
-			"value": 80
-		}
-	],
+    "sharpnessLevels": [
+      {
+        "color": "White",
+        "value": 30
+      },
+      {
+        "color": "White",
+        "value": 40
+      },
+      {
+        "color": "White",
+        "value": 50
+      },
+      {
+        "color": "White",
+        "value": 60
+      },
+      {
+        "color": "White",
+        "value": 70
+      },
+      {
+        "color": "White",
+        "value": 80
+      }
+    ],
     "baseAffinityPercent": 0,
     "ailment": "Paralysis",
     "ailmentBaseAttack": 300,
@@ -596,37 +642,40 @@
   },
   {
     "name": "Baan Horn III",
-	"tags": ["radobaan", "sleep"],
-	"rarity": 6,
+    "tags": [
+      "radobaan",
+      "sleep"
+    ],
+    "rarity": 6,
     "itemType": "Weapon",
     "weaponType": "HuntingHorn",
     "baseAttack": 798,
-	"sharpnessLevels": [
-		{
-			"color": "Blue",
-			"value": 30
-		},
-		{
-			"color": "Blue",
-			"value": 40
-		},
-		{
-			"color": "Blue",
-			"value": 50
-		},
-		{
-			"color": "Blue",
-			"value": 60
-		},
-		{
-			"color": "Blue",
-			"value": 70
-		},
-		{
-			"color": "Blue",
-			"value": 80
-		}
-	],
+    "sharpnessLevels": [
+      {
+        "color": "Blue",
+        "value": 30
+      },
+      {
+        "color": "Blue",
+        "value": 40
+      },
+      {
+        "color": "Blue",
+        "value": 50
+      },
+      {
+        "color": "Blue",
+        "value": 60
+      },
+      {
+        "color": "Blue",
+        "value": 70
+      },
+      {
+        "color": "Blue",
+        "value": 80
+      }
+    ],
     "baseAffinityPercent": 0,
     "ailment": "Sleep",
     "ailmentBaseAttack": 270,
@@ -636,37 +685,40 @@
   },
   {
     "name": "Dragonbone Auldhorn III",
-	"tags": ["dragonbone", "dragon"],
-	"rarity": 6,
+    "tags": [
+      "dragonbone",
+      "dragon"
+    ],
+    "rarity": 6,
     "itemType": "Weapon",
     "weaponType": "HuntingHorn",
     "baseAttack": 672,
-	"sharpnessLevels": [
-		{
-			"color": "Blue",
-			"value": 40
-		},
-		{
-			"color": "Blue",
-			"value": 50
-		},
-		{
-			"color": "Blue",
-			"value": 60
-		},
-		{
-			"color": "Blue",
-			"value": 70
-		},
-		{
-			"color": "White",
-			"value": 10
-		},
-		{
-			"color": "White",
-			"value": 20
-		}
-	],
+    "sharpnessLevels": [
+      {
+        "color": "Blue",
+        "value": 40
+      },
+      {
+        "color": "Blue",
+        "value": 50
+      },
+      {
+        "color": "Blue",
+        "value": 60
+      },
+      {
+        "color": "Blue",
+        "value": 70
+      },
+      {
+        "color": "White",
+        "value": 10
+      },
+      {
+        "color": "White",
+        "value": 20
+      }
+    ],
     "baseAffinityPercent": 0,
     "element": "Dragon",
     "elementBaseAttack": 420,
@@ -683,37 +735,40 @@
   },
   {
     "name": "Thunderbolt Horn II",
-	"tags": ["kirin", "thunder"],
-	"rarity": 7,
+    "tags": [
+      "kirin",
+      "thunder"
+    ],
+    "rarity": 7,
     "itemType": "Weapon",
     "weaponType": "HuntingHorn",
     "baseAttack": 672,
-	"sharpnessLevels": [
-		{
-			"color": "Blue",
-			"value": 60
-		},
-		{
-			"color": "Blue",
-			"value": 70
-		},
-		{
-			"color": "Blue",
-			"value": 80
-		},
-		{
-			"color": "Blue",
-			"value": 90
-		},
-		{
-			"color": "Blue",
-			"value": 100
-		},
-		{
-			"color": "Blue",
-			"value": 110
-		}
-	],
+    "sharpnessLevels": [
+      {
+        "color": "Blue",
+        "value": 60
+      },
+      {
+        "color": "Blue",
+        "value": 70
+      },
+      {
+        "color": "Blue",
+        "value": 80
+      },
+      {
+        "color": "Blue",
+        "value": 90
+      },
+      {
+        "color": "Blue",
+        "value": 100
+      },
+      {
+        "color": "Blue",
+        "value": 110
+      }
+    ],
     "baseAffinityPercent": 0,
     "element": "Thunder",
     "elementBaseAttack": 540,
@@ -722,37 +777,40 @@
   },
   {
     "name": "Teostra's Orphée",
-	"tags": ["blacksteel", "teostra"],
-	"rarity": 8,
+    "tags": [
+      "blacksteel",
+      "teostra"
+    ],
+    "rarity": 8,
     "itemType": "Weapon",
     "weaponType": "HuntingHorn",
     "baseAttack": 798,
-	"sharpnessLevels": [
-		{
-			"color": "Blue",
-			"value": 40
-		},
-		{
-			"color": "Blue",
-			"value": 50
-		},
-		{
-			"color": "Blue",
-			"value": 60
-		},
-		{
-			"color": "White",
-			"value": 10
-		},
-		{
-			"color": "White",
-			"value": 20
-		},
-		{
-			"color": "White",
-			"value": 30
-		}
-	],
+    "sharpnessLevels": [
+      {
+        "color": "Blue",
+        "value": 40
+      },
+      {
+        "color": "Blue",
+        "value": 50
+      },
+      {
+        "color": "Blue",
+        "value": 60
+      },
+      {
+        "color": "White",
+        "value": 10
+      },
+      {
+        "color": "White",
+        "value": 20
+      },
+      {
+        "color": "White",
+        "value": 30
+      }
+    ],
     "baseAffinityPercent": 0,
     "ailment": "Blast",
     "ailmentBaseAttack": 390,
@@ -761,37 +819,40 @@
   },
   {
     "name": "Xeno Manasheena",
-	"tags": ["xeno'jiva", "dragon"],
-	"rarity": 8,
+    "tags": [
+      "xeno'jiva",
+      "dragon"
+    ],
+    "rarity": 8,
     "itemType": "Weapon",
     "weaponType": "HuntingHorn",
     "baseAttack": 714,
-	"sharpnessLevels": [
-		{
-			"color": "White",
-			"value": 10
-		},
-		{
-			"color": "White",
-			"value": 20
-		},
-		{
-			"color": "White",
-			"value": 30
-		},
-		{
-			"color": "White",
-			"value": 40
-		},
-		{
-			"color": "White",
-			"value": 50
-		},
-		{
-			"color": "White",
-			"value": 60
-		}
-	],
+    "sharpnessLevels": [
+      {
+        "color": "White",
+        "value": 10
+      },
+      {
+        "color": "White",
+        "value": 20
+      },
+      {
+        "color": "White",
+        "value": 30
+      },
+      {
+        "color": "White",
+        "value": 40
+      },
+      {
+        "color": "White",
+        "value": 50
+      },
+      {
+        "color": "White",
+        "value": 60
+      }
+    ],
     "baseAffinityPercent": 15,
     "element": "Dragon",
     "elementBaseAttack": 180,
@@ -808,42 +869,70 @@
   },
   {
     "name": "Deep Vero",
-	"tags": ["deviljho", "dragon"],
-	"rarity": 7,
+    "tags": [
+      "deviljho",
+      "dragon"
+    ],
+    "rarity": 7,
     "itemType": "Weapon",
     "weaponType": "HuntingHorn",
     "baseAttack": 924,
-	"sharpnessLevels": [
-		{
-			"color": "Blue",
-			"value": 40
-		},
-		{
-			"color": "White",
-			"value": 10
-		},
-		{
-			"color": "White",
-			"value": 20
-		},
-		{
-			"color": "White",
-			"value": 30
-		},
-		{
-			"color": "White",
-			"value": 40
-		},
-		{
-			"color": "White",
-			"value": 50
-		}
-	],
+    "sharpnessLevels": [
+      {
+        "color": "Blue",
+        "value": 40
+      },
+      {
+        "color": "White",
+        "value": 10
+      },
+      {
+        "color": "White",
+        "value": 20
+      },
+      {
+        "color": "White",
+        "value": 30
+      },
+      {
+        "color": "White",
+        "value": 40
+      },
+      {
+        "color": "White",
+        "value": 50
+      }
+    ],
     "baseAffinityPercent": -30,
     "element": "Dragon",
     "elementBaseAttack": 240,
     "elderseal": "High",
     "id": 279,
     "slots": []
+  },
+  {
+    "name": "Gold Dragon Flute",
+    "tags": [
+      "kulve",
+      "taroth"
+    ],
+    "rarity": 6,
+    "itemType": "Weapon",
+    "weaponType": "HuntingHorn",
+    "baseAttack": 672,
+    "baseDefense": 20,
+    "sharpnessLevels": [
+      {
+        "color": "Blue",
+        "value": 30
+      }
+    ],
+    "baseAffinityPercent": 0,
+    "element": "Dragon",
+    "elementBaseAttack": 270,
+    "elementHidden": true,
+    "elderseal": "Low",
+    "slots": [],
+    "id": 295
   }
 ]

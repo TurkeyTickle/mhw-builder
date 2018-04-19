@@ -1,37 +1,41 @@
 [
   {
     "name": "Chrome Slicer II",
-	"tags": ["ore", "sleep", "hidden"],
-	"rarity": 6,
+    "tags": [
+      "ore",
+      "sleep",
+      "hidden"
+    ],
+    "rarity": 6,
     "itemType": "Weapon",
     "weaponType": "SwordAndShield",
     "baseAttack": 252,
-	"sharpnessLevels": [
-		{
-			"color": "Blue",
-			"value": 70
-		},
-		{
-			"color": "Blue",
-			"value": 80
-		},
-		{
-			"color": "Blue",
-			"value": 90
-		},
-		{
-			"color": "White",
-			"value": 10
-		},
-		{
-			"color": "White",
-			"value": 20
-		},
-		{
-			"color": "White",
-			"value": 30
-		}
-	],
+    "sharpnessLevels": [
+      {
+        "color": "Blue",
+        "value": 70
+      },
+      {
+        "color": "Blue",
+        "value": 80
+      },
+      {
+        "color": "Blue",
+        "value": 90
+      },
+      {
+        "color": "White",
+        "value": 10
+      },
+      {
+        "color": "White",
+        "value": 20
+      },
+      {
+        "color": "White",
+        "value": 30
+      }
+    ],
     "baseAffinityPercent": 0,
     "ailment": "Sleep",
     "ailmentBaseAttack": 240,
@@ -48,17 +52,20 @@
   },
   {
     "name": "Eradication Vanguard",
-	"tags": ["nergigante", "dragon"],
-	"rarity": 8,
+    "tags": [
+      "nergigante",
+      "dragon"
+    ],
+    "rarity": 8,
     "itemType": "Weapon",
     "weaponType": "SwordAndShield",
     "baseAttack": 294,
-	"sharpnessLevels": [
-		{
-			"color": "Blue",
-			"value": 100
-		}
-	],
+    "sharpnessLevels": [
+      {
+        "color": "Blue",
+        "value": 100
+      }
+    ],
     "baseAffinityPercent": 0,
     "element": "Dragon",
     "elementBaseAttack": 150,
@@ -73,37 +80,40 @@
   },
   {
     "name": "Corona",
-	"tags": ["rathalos", "fire"],
-	"rarity": 7,
+    "tags": [
+      "rathalos",
+      "fire"
+    ],
+    "rarity": 7,
     "itemType": "Weapon",
     "weaponType": "SwordAndShield",
     "baseAttack": 266,
-	"sharpnessLevels": [
-		{
-			"color": "Blue",
-			"value": 40
-		},
-		{
-			"color": "Blue",
-			"value": 50
-		},
-		{
-			"color": "Blue",
-			"value": 60
-		},
-		{
-			"color": "White",
-			"value": 10
-		},
-		{
-			"color": "White",
-			"value": 20
-		},
-		{
-			"color": "White",
-			"value": 30
-		}
-	],
+    "sharpnessLevels": [
+      {
+        "color": "Blue",
+        "value": 40
+      },
+      {
+        "color": "Blue",
+        "value": 50
+      },
+      {
+        "color": "Blue",
+        "value": 60
+      },
+      {
+        "color": "White",
+        "value": 10
+      },
+      {
+        "color": "White",
+        "value": 20
+      },
+      {
+        "color": "White",
+        "value": 30
+      }
+    ],
     "baseAffinityPercent": 20,
     "element": "Fire",
     "elementBaseAttack": 180,
@@ -116,37 +126,41 @@
   },
   {
     "name": "Master Bang",
-	"tags": ["workshop", "thunder", "hidden"],
-	"rarity": 7,
+    "tags": [
+      "workshop",
+      "thunder",
+      "hidden"
+    ],
+    "rarity": 7,
     "itemType": "Weapon",
     "weaponType": "SwordAndShield",
     "baseAttack": 280,
-	"sharpnessLevels": [
-		{
-			"color": "Blue",
-			"value": 50
-		},
-		{
-			"color": "Blue",
-			"value": 60
-		},
-		{
-			"color": "Blue",
-			"value": 70
-		},
-		{
-			"color": "Blue",
-			"value": 80
-		},
-		{
-			"color": "Blue",
-			"value": 90
-		},
-		{
-			"color": "Blue",
-			"value": 100
-		}
-	],
+    "sharpnessLevels": [
+      {
+        "color": "Blue",
+        "value": 50
+      },
+      {
+        "color": "Blue",
+        "value": 60
+      },
+      {
+        "color": "Blue",
+        "value": 70
+      },
+      {
+        "color": "Blue",
+        "value": 80
+      },
+      {
+        "color": "Blue",
+        "value": 90
+      },
+      {
+        "color": "Blue",
+        "value": 100
+      }
+    ],
     "baseAffinityPercent": 0,
     "element": "Thunder",
     "elementBaseAttack": 330,
@@ -161,37 +175,39 @@
   },
   {
     "name": "Rogue Wave III",
-	"tags": ["water"],
-	"rarity": 6,
+    "tags": [
+      "water"
+    ],
+    "rarity": 6,
     "itemType": "Weapon",
     "weaponType": "SwordAndShield",
     "baseAttack": 252,
-	"sharpnessLevels": [
-		{
-			"color": "Blue",
-			"value": 30
-		},
-		{
-			"color": "Blue",
-			"value": 40
-		},
-		{
-			"color": "Blue",
-			"value": 50
-		},
-		{
-			"color": "White",
-			"value": 10
-		},
-		{
-			"color": "White",
-			"value": 20
-		},
-		{
-			"color": "White",
-			"value": 30
-		}
-	],
+    "sharpnessLevels": [
+      {
+        "color": "Blue",
+        "value": 30
+      },
+      {
+        "color": "Blue",
+        "value": 40
+      },
+      {
+        "color": "Blue",
+        "value": 50
+      },
+      {
+        "color": "White",
+        "value": 10
+      },
+      {
+        "color": "White",
+        "value": 20
+      },
+      {
+        "color": "White",
+        "value": 30
+      }
+    ],
     "baseAffinityPercent": 0,
     "element": "Water",
     "elementBaseAttack": 240,
@@ -204,37 +220,40 @@
   },
   {
     "name": "Legia Rimespire",
-	"tags": ["legiana", "ice"],
-	"rarity": 8,
+    "tags": [
+      "legiana",
+      "ice"
+    ],
+    "rarity": 8,
     "itemType": "Weapon",
     "weaponType": "SwordAndShield",
     "baseAttack": 224,
-	"sharpnessLevels": [
-		{
-			"color": "White",
-			"value": 20
-		},
-		{
-			"color": "White",
-			"value": 30
-		},
-		{
-			"color": "White",
-			"value": 40
-		},
-		{
-			"color": "White",
-			"value": 50
-		},
-		{
-			"color": "White",
-			"value": 60
-		},
-		{
-			"color": "White",
-			"value": 70
-		}
-	],
+    "sharpnessLevels": [
+      {
+        "color": "White",
+        "value": 20
+      },
+      {
+        "color": "White",
+        "value": 30
+      },
+      {
+        "color": "White",
+        "value": 40
+      },
+      {
+        "color": "White",
+        "value": 50
+      },
+      {
+        "color": "White",
+        "value": 60
+      },
+      {
+        "color": "White",
+        "value": 70
+      }
+    ],
     "baseAffinityPercent": 0,
     "element": "Ice",
     "elementBaseAttack": 330,
@@ -247,37 +266,40 @@
   },
   {
     "name": "Royal Rose",
-	"tags": ["rathian", "poison"],
-	"rarity": 7,
+    "tags": [
+      "rathian",
+      "poison"
+    ],
+    "rarity": 7,
     "itemType": "Weapon",
     "weaponType": "SwordAndShield",
     "baseAttack": 266,
-	"sharpnessLevels": [
-		{
-			"color": "Blue",
-			"value": 40
-		},
-		{
-			"color": "Blue",
-			"value": 50
-		},
-		{
-			"color": "Blue",
-			"value": 60
-		},
-		{
-			"color": "White",
-			"value": 10
-		},
-		{
-			"color": "White",
-			"value": 20
-		},
-		{
-			"color": "White",
-			"value": 30
-		}
-	],
+    "sharpnessLevels": [
+      {
+        "color": "Blue",
+        "value": 40
+      },
+      {
+        "color": "Blue",
+        "value": 50
+      },
+      {
+        "color": "Blue",
+        "value": 60
+      },
+      {
+        "color": "White",
+        "value": 10
+      },
+      {
+        "color": "White",
+        "value": 20
+      },
+      {
+        "color": "White",
+        "value": 30
+      }
+    ],
     "baseAffinityPercent": 10,
     "ailment": "Poison",
     "ailmentBaseAttack": 240,
@@ -290,37 +312,41 @@
   },
   {
     "name": "Lumu Tabar III",
-	"tags": ["paolumu", "blast", "hidden"],
-	"rarity": 6,
+    "tags": [
+      "paolumu",
+      "blast",
+      "hidden"
+    ],
+    "rarity": 6,
     "itemType": "Weapon",
     "weaponType": "SwordAndShield",
     "baseAttack": 238,
-	"sharpnessLevels": [
-		{
-			"color": "Blue",
-			"value": 40
-		},
-		{
-			"color": "Blue",
-			"value": 50
-		},
-		{
-			"color": "White",
-			"value": 10
-		},
-		{
-			"color": "White",
-			"value": 20
-		},
-		{
-			"color": "White",
-			"value": 30
-		},
-		{
-			"color": "White",
-			"value": 40
-		}
-	],
+    "sharpnessLevels": [
+      {
+        "color": "Blue",
+        "value": 40
+      },
+      {
+        "color": "Blue",
+        "value": 50
+      },
+      {
+        "color": "White",
+        "value": 10
+      },
+      {
+        "color": "White",
+        "value": 20
+      },
+      {
+        "color": "White",
+        "value": 30
+      },
+      {
+        "color": "White",
+        "value": 40
+      }
+    ],
     "baseAffinityPercent": 0,
     "ailment": "Blast",
     "ailmentBaseAttack": 330,
@@ -337,37 +363,40 @@
   },
   {
     "name": "Datura Blossom III",
-	"tags": ["pukei-pukei", "poison"],
-	"rarity": 6,
+    "tags": [
+      "pukei-pukei",
+      "poison"
+    ],
+    "rarity": 6,
     "itemType": "Weapon",
     "weaponType": "SwordAndShield",
     "baseAttack": 238,
-	"sharpnessLevels": [
-		{
-			"color": "Blue",
-			"value": 50
-		},
-		{
-			"color": "Blue",
-			"value": 60
-		},
-		{
-			"color": "Blue",
-			"value": 70
-		},
-		{
-			"color": "Blue",
-			"value": 80
-		},
-		{
-			"color": "Blue",
-			"value": 90
-		},
-		{
-			"color": "Blue",
-			"value": 100
-		}
-	],
+    "sharpnessLevels": [
+      {
+        "color": "Blue",
+        "value": 50
+      },
+      {
+        "color": "Blue",
+        "value": 60
+      },
+      {
+        "color": "Blue",
+        "value": 70
+      },
+      {
+        "color": "Blue",
+        "value": 80
+      },
+      {
+        "color": "Blue",
+        "value": 90
+      },
+      {
+        "color": "Blue",
+        "value": 100
+      }
+    ],
     "baseAffinityPercent": 0,
     "ailment": "Poison",
     "ailmentBaseAttack": 390,
@@ -383,37 +412,41 @@
   },
   {
     "name": "Malady's Tabar III",
-	"tags": ["great", "girros", "paralysis"],
-	"rarity": 6,
+    "tags": [
+      "great",
+      "girros",
+      "paralysis"
+    ],
+    "rarity": 6,
     "itemType": "Weapon",
     "weaponType": "SwordAndShield",
     "baseAttack": 224,
-	"sharpnessLevels": [
-		{
-			"color": "Blue",
-			"value": 40
-		},
-		{
-			"color": "Blue",
-			"value": 50
-		},
-		{
-			"color": "White",
-			"value": 10
-		},
-		{
-			"color": "White",
-			"value": 20
-		},
-		{
-			"color": "White",
-			"value": 30
-		},
-		{
-			"color": "White",
-			"value": 40
-		}
-	],
+    "sharpnessLevels": [
+      {
+        "color": "Blue",
+        "value": 40
+      },
+      {
+        "color": "Blue",
+        "value": 50
+      },
+      {
+        "color": "White",
+        "value": 10
+      },
+      {
+        "color": "White",
+        "value": 20
+      },
+      {
+        "color": "White",
+        "value": 30
+      },
+      {
+        "color": "White",
+        "value": 40
+      }
+    ],
     "baseAffinityPercent": 20,
     "ailment": "Paralysis",
     "ailmentBaseAttack": 240,
@@ -422,41 +455,45 @@
   },
   {
     "name": "Grand Barong II",
-	"tags": ["bone", "paralysis", "hidden"],
-	"rarity": 6,
+    "tags": [
+      "bone",
+      "paralysis",
+      "hidden"
+    ],
+    "rarity": 6,
     "itemType": "Weapon",
     "weaponType": "SwordAndShield",
     "baseAttack": 266,
-	"sharpnessLevels": [
-		{
-			"color": "Blue",
-			"value": 50
-		},
-		{
-			"color": "Blue",
-			"value": 60
-		},
-		{
-			"color": "Blue",
-			"value": 70
-		},
-		{
-			"color": "Blue",
-			"value": 80
-		},
-		{
-			"color": "Blue",
-			"value": 90
-		},
-		{
-			"color": "Blue",
-			"value": 100
-		}
-	],
+    "sharpnessLevels": [
+      {
+        "color": "Blue",
+        "value": 50
+      },
+      {
+        "color": "Blue",
+        "value": 60
+      },
+      {
+        "color": "Blue",
+        "value": 70
+      },
+      {
+        "color": "Blue",
+        "value": 80
+      },
+      {
+        "color": "Blue",
+        "value": 90
+      },
+      {
+        "color": "Blue",
+        "value": 100
+      }
+    ],
     "baseAffinityPercent": 0,
     "ailment": "Paralysis",
-	"ailmentBaseAttack": 300,
-	"ailmentHidden": true,
+    "ailmentBaseAttack": 300,
+    "ailmentHidden": true,
     "baseDefense": 10,
     "slots": [
       {
@@ -467,37 +504,40 @@
   },
   {
     "name": "Baan Claw III",
-	"tags": ["radobaan", "sleep"],
-	"rarity": 6,
+    "tags": [
+      "radobaan",
+      "sleep"
+    ],
+    "rarity": 6,
     "itemType": "Weapon",
     "weaponType": "SwordAndShield",
     "baseAttack": 266,
-	"sharpnessLevels": [
-		{
-			"color": "Blue",
-			"value": 40
-		},
-		{
-			"color": "Blue",
-			"value": 50
-		},
-		{
-			"color": "Blue",
-			"value": 60
-		},
-		{
-			"color": "Blue",
-			"value": 70
-		},
-		{
-			"color": "Blue",
-			"value": 80
-		},
-		{
-			"color": "Blue",
-			"value": 90
-		}
-	],
+    "sharpnessLevels": [
+      {
+        "color": "Blue",
+        "value": 40
+      },
+      {
+        "color": "Blue",
+        "value": 50
+      },
+      {
+        "color": "Blue",
+        "value": 60
+      },
+      {
+        "color": "Blue",
+        "value": 70
+      },
+      {
+        "color": "Blue",
+        "value": 80
+      },
+      {
+        "color": "Blue",
+        "value": 90
+      }
+    ],
     "baseAffinityPercent": 0,
     "ailment": "Sleep",
     "ailmentBaseAttack": 210,
@@ -507,37 +547,42 @@
   },
   {
     "name": "Jagras Garotte III",
-	"tags": ["great", "jagras", "water", "hidden"],
-	"rarity": 6,
+    "tags": [
+      "great",
+      "jagras",
+      "water",
+      "hidden"
+    ],
+    "rarity": 6,
     "itemType": "Weapon",
     "weaponType": "SwordAndShield",
     "baseAttack": 266,
-	"sharpnessLevels": [
-		{
-			"color": "Blue",
-			"value": 50
-		},
-		{
-			"color": "Blue",
-			"value": 60
-		},
-		{
-			"color": "Blue",
-			"value": 70
-		},
-		{
-			"color": "Blue",
-			"value": 80
-		},
-		{
-			"color": "Blue",
-			"value": 90
-		},
-		{
-			"color": "Blue",
-			"value": 100
-		}
-	],
+    "sharpnessLevels": [
+      {
+        "color": "Blue",
+        "value": 50
+      },
+      {
+        "color": "Blue",
+        "value": 60
+      },
+      {
+        "color": "Blue",
+        "value": 70
+      },
+      {
+        "color": "Blue",
+        "value": 80
+      },
+      {
+        "color": "Blue",
+        "value": 90
+      },
+      {
+        "color": "Blue",
+        "value": 100
+      }
+    ],
     "baseAffinityPercent": 0,
     "element": "Water",
     "elementBaseAttack": 360,
@@ -554,37 +599,39 @@
   },
   {
     "name": "Lightning Nemesis III",
-	"tags": ["thunder"],
-	"rarity": 6,
+    "tags": [
+      "thunder"
+    ],
+    "rarity": 6,
     "itemType": "Weapon",
     "weaponType": "SwordAndShield",
     "baseAttack": 266,
-	"sharpnessLevels": [
-		{
-			"color": "Blue",
-			"value": 40
-		},
-		{
-			"color": "Blue",
-			"value": 50
-		},
-		{
-			"color": "Blue",
-			"value": 60
-		},
-		{
-			"color": "Blue",
-			"value": 70
-		},
-		{
-			"color": "Blue",
-			"value": 80
-		},
-		{
-			"color": "Blue",
-			"value": 90
-		}
-	],
+    "sharpnessLevels": [
+      {
+        "color": "Blue",
+        "value": 40
+      },
+      {
+        "color": "Blue",
+        "value": 50
+      },
+      {
+        "color": "Blue",
+        "value": 60
+      },
+      {
+        "color": "Blue",
+        "value": 70
+      },
+      {
+        "color": "Blue",
+        "value": 80
+      },
+      {
+        "color": "Blue",
+        "value": 90
+      }
+    ],
     "baseAffinityPercent": 0,
     "element": "Thunder",
     "elementBaseAttack": 210,
@@ -597,37 +644,41 @@
   },
   {
     "name": "Barroth Club II",
-	"tags": ["barroth", "paralysis", "hidden"],
-	"rarity": 6,
+    "tags": [
+      "barroth",
+      "paralysis",
+      "hidden"
+    ],
+    "rarity": 6,
     "itemType": "Weapon",
     "weaponType": "SwordAndShield",
     "baseAttack": 294,
-	"sharpnessLevels": [
-		{
-			"color": "Blue",
-			"value": 40
-		},
-		{
-			"color": "Blue",
-			"value": 50
-		},
-		{
-			"color": "Blue",
-			"value": 60
-		},
-		{
-			"color": "Blue",
-			"value": 70
-		},
-		{
-			"color": "Blue",
-			"value": 80
-		},
-		{
-			"color": "Blue",
-			"value": 90
-		}
-	],
+    "sharpnessLevels": [
+      {
+        "color": "Blue",
+        "value": 40
+      },
+      {
+        "color": "Blue",
+        "value": 50
+      },
+      {
+        "color": "Blue",
+        "value": 60
+      },
+      {
+        "color": "Blue",
+        "value": 70
+      },
+      {
+        "color": "Blue",
+        "value": 80
+      },
+      {
+        "color": "Blue",
+        "value": 90
+      }
+    ],
     "baseAffinityPercent": -10,
     "ailment": "Paralysis",
     "ailmentBaseAttack": 180,
@@ -645,37 +696,40 @@
   },
   {
     "name": "Gnashing Flammensucher",
-	"tags": ["anjanath", "fire"],
-	"rarity": 7,
+    "tags": [
+      "anjanath",
+      "fire"
+    ],
+    "rarity": 7,
     "itemType": "Weapon",
     "weaponType": "SwordAndShield",
     "baseAttack": 294,
-	"sharpnessLevels": [
-		{
-			"color": "Blue",
-			"value": 40
-		},
-		{
-			"color": "Blue",
-			"value": 50
-		},
-		{
-			"color": "Blue",
-			"value": 60
-		},
-		{
-			"color": "Blue",
-			"value": 70
-		},
-		{
-			"color": "Blue",
-			"value": 80
-		},
-		{
-			"color": "Blue",
-			"value": 90
-		}
-	],
+    "sharpnessLevels": [
+      {
+        "color": "Blue",
+        "value": 40
+      },
+      {
+        "color": "Blue",
+        "value": 50
+      },
+      {
+        "color": "Blue",
+        "value": 60
+      },
+      {
+        "color": "Blue",
+        "value": 70
+      },
+      {
+        "color": "Blue",
+        "value": 80
+      },
+      {
+        "color": "Blue",
+        "value": 90
+      }
+    ],
     "baseAffinityPercent": -20,
     "element": "Fire",
     "elementBaseAttack": 240,
@@ -684,37 +738,40 @@
   },
   {
     "name": "Dragonbone Sword III",
-	"tags": ["dragonbone", "dragon"],
-	"rarity": 6,
+    "tags": [
+      "dragonbone",
+      "dragon"
+    ],
+    "rarity": 6,
     "itemType": "Weapon",
     "weaponType": "SwordAndShield",
     "baseAttack": 196,
-	"sharpnessLevels": [
-		{
-			"color": "Blue",
-			"value": 40
-		},
-		{
-			"color": "Blue",
-			"value": 50
-		},
-		{
-			"color": "Blue",
-			"value": 60
-		},
-		{
-			"color": "White",
-			"value": 10
-		},
-		{
-			"color": "White",
-			"value": 20
-		},
-		{
-			"color": "White",
-			"value": 30
-		}
-	],
+    "sharpnessLevels": [
+      {
+        "color": "Blue",
+        "value": 40
+      },
+      {
+        "color": "Blue",
+        "value": 50
+      },
+      {
+        "color": "Blue",
+        "value": 60
+      },
+      {
+        "color": "White",
+        "value": 10
+      },
+      {
+        "color": "White",
+        "value": 20
+      },
+      {
+        "color": "White",
+        "value": 30
+      }
+    ],
     "baseAffinityPercent": 0,
     "element": "Dragon",
     "elementBaseAttack": 450,
@@ -728,37 +785,40 @@
   },
   {
     "name": "Thunderbolt Sword",
-	"tags": ["kirin", "thunder"],
-	"rarity": 7,
+    "tags": [
+      "kirin",
+      "thunder"
+    ],
+    "rarity": 7,
     "itemType": "Weapon",
     "weaponType": "SwordAndShield",
     "baseAttack": 224,
-	"sharpnessLevels": [
-		{
-			"color": "Blue",
-			"value": 70
-		},
-		{
-			"color": "Blue",
-			"value": 80
-		},
-		{
-			"color": "Blue",
-			"value": 90
-		},
-		{
-			"color": "Blue",
-			"value": 100
-		},
-		{
-			"color": "Blue",
-			"value": 110
-		},
-		{
-			"color": "Blue",
-			"value": 120
-		}
-	],
+    "sharpnessLevels": [
+      {
+        "color": "Blue",
+        "value": 70
+      },
+      {
+        "color": "Blue",
+        "value": 80
+      },
+      {
+        "color": "Blue",
+        "value": 90
+      },
+      {
+        "color": "Blue",
+        "value": 100
+      },
+      {
+        "color": "Blue",
+        "value": 110
+      },
+      {
+        "color": "Blue",
+        "value": 120
+      }
+    ],
     "baseAffinityPercent": 0,
     "element": "Thunder",
     "elementBaseAttack": 360,
@@ -767,37 +827,41 @@
   },
   {
     "name": "Teostra's Emblem",
-	"tags": ["blacksteel", "teostra", "blast"],
-	"rarity": 8,
+    "tags": [
+      "blacksteel",
+      "teostra",
+      "blast"
+    ],
+    "rarity": 8,
     "itemType": "Weapon",
     "weaponType": "SwordAndShield",
     "baseAttack": 266,
-	"sharpnessLevels": [
-		{
-			"color": "Blue",
-			"value": 50
-		},
-		{
-			"color": "Blue",
-			"value": 60
-		},
-		{
-			"color": "White",
-			"value": 10
-		},
-		{
-			"color": "White",
-			"value": 20
-		},
-		{
-			"color": "White",
-			"value": 30
-		},
-		{
-			"color": "White",
-			"value": 40
-		}
-	],
+    "sharpnessLevels": [
+      {
+        "color": "Blue",
+        "value": 50
+      },
+      {
+        "color": "Blue",
+        "value": 60
+      },
+      {
+        "color": "White",
+        "value": 10
+      },
+      {
+        "color": "White",
+        "value": 20
+      },
+      {
+        "color": "White",
+        "value": 30
+      },
+      {
+        "color": "White",
+        "value": 40
+      }
+    ],
     "baseAffinityPercent": 0,
     "ailment": "Blast",
     "ailmentBaseAttack": 240,
@@ -806,37 +870,40 @@
   },
   {
     "name": "Xeno Mabura",
-	"tags": ["xeno'jiva", "dragon"],
-	"rarity": 8,
+    "tags": [
+      "xeno'jiva",
+      "dragon"
+    ],
+    "rarity": 8,
     "itemType": "Weapon",
     "weaponType": "SwordAndShield",
     "baseAttack": 238,
-	"sharpnessLevels": [
-		{
-			"color": "White",
-			"value": 10
-		},
-		{
-			"color": "White",
-			"value": 20
-		},
-		{
-			"color": "White",
-			"value": 30
-		},
-		{
-			"color": "White",
-			"value": 40
-		},
-		{
-			"color": "White",
-			"value": 50
-		},
-		{
-			"color": "White",
-			"value": 60
-		}
-	],
+    "sharpnessLevels": [
+      {
+        "color": "White",
+        "value": 10
+      },
+      {
+        "color": "White",
+        "value": 20
+      },
+      {
+        "color": "White",
+        "value": 30
+      },
+      {
+        "color": "White",
+        "value": 40
+      },
+      {
+        "color": "White",
+        "value": 50
+      },
+      {
+        "color": "White",
+        "value": 60
+      }
+    ],
     "baseAffinityPercent": 15,
     "element": "Dragon",
     "elementBaseAttack": 270,
@@ -853,42 +920,124 @@
   },
   {
     "name": "Fatal Bite",
-	"tags": ["deviljho", "dragon"],
-	"rarity": 7,
+    "tags": [
+      "deviljho",
+      "dragon"
+    ],
+    "rarity": 7,
     "itemType": "Weapon",
     "weaponType": "SwordAndShield",
     "baseAttack": 308,
-	"sharpnessLevels": [
-		{
-			"color": "Blue",
-			"value": 40
-		},
-		{
-			"color": "White",
-			"value": 10
-		},
-		{
-			"color": "White",
-			"value": 20
-		},
-		{
-			"color": "White",
-			"value": 30
-		},
-		{
-			"color": "White",
-			"value": 40
-		},
-		{
-			"color": "White",
-			"value": 50
-		}
-	],
+    "sharpnessLevels": [
+      {
+        "color": "Blue",
+        "value": 40
+      },
+      {
+        "color": "White",
+        "value": 10
+      },
+      {
+        "color": "White",
+        "value": 20
+      },
+      {
+        "color": "White",
+        "value": 30
+      },
+      {
+        "color": "White",
+        "value": 40
+      },
+      {
+        "color": "White",
+        "value": 50
+      }
+    ],
     "baseAffinityPercent": -20,
     "element": "Dragon",
     "elementBaseAttack": 210,
     "elderseal": "High",
     "id": 276,
     "slots": []
+  },
+  {
+    "name": "Spew Gold Scimitar",
+    "tags": [
+      "kulve",
+      "taroth"
+    ],
+    "rarity": 6,
+    "itemType": "Weapon",
+    "weaponType": "SwordAndShield",
+    "baseAttack": 224,
+    "baseDefense": 20,
+    "sharpnessLevels": [
+      {
+        "color": "Blue",
+        "value": 40
+      }
+    ],
+    "baseAffinityPercent": 0,
+    "ailment": "Poison",
+    "ailmentBaseAttack": 180,
+    "slots": [
+      {
+        "level": 1
+      }
+    ],
+    "id": 292
+  },
+  {
+    "name": "Gold Blast Scimitar",
+    "tags": [
+      "kulve",
+      "taroth"
+    ],
+    "rarity": 6,
+    "itemType": "Weapon",
+    "weaponType": "SwordAndShield",
+    "baseAttack": 224,
+    "baseDefense": 20,
+    "sharpnessLevels": [
+      {
+        "color": "Blue",
+        "value": 30
+      }
+    ],
+    "baseAffinityPercent": 0,
+    "ailment": "Blast",
+    "ailmentBaseAttack": 180,
+    "ailmentHidden": true,
+    "slots": [],
+    "id": 293
+  },
+  {
+    "name": "Taroth Slicer \"Blast\"",
+    "tags": [
+      "kulve",
+      "taroth"
+    ],
+    "rarity": 8,
+    "itemType": "Weapon",
+    "weaponType": "SwordAndShield",
+    "baseAttack": 238,
+    "baseDefense": 20,
+    "sharpnessLevels": [
+      {
+        "color": "White",
+        "value": 20
+      }
+    ],
+    "baseAffinityPercent": 0,
+    "ailment": "Blast",
+    "ailmentBaseAttack": 390,
+    "ailmentHidden": true,
+    "slots": [
+      {
+        "level": 3
+      }
+    ],
+    "id": 294
   }
 ]

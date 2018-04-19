@@ -1044,5 +1044,33 @@
       }
     ],
     "id": 289
+  },
+  {
+    "name": "Glutton Gold Fellsword",
+    "tags": [
+      "kulve",
+      "taroth"
+    ],
+    "rarity": 6,
+    "itemType": "Weapon",
+    "weaponType": "GreatSword",
+    "baseAttack": 768,
+    "baseDefense": 20,
+    "sharpnessLevels": [
+      {
+        "color": "Blue",
+        "value": 20
+      }
+    ],
+    "baseAffinityPercent": 0,
+    "element": "Water",
+    "elementBaseAttack": 150,
+    "elementHidden": true,
+    "slots": [
+      {
+        "level": 3
+      }
+    ],
+    "id": 290
   }
 ]

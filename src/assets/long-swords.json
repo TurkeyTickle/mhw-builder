@@ -1,37 +1,41 @@
 [
   {
     "name": "Iron Gospel II",
-	"tags": ["ore", "water", "hidden"],
+    "tags": [
+      "ore",
+      "water",
+      "hidden"
+    ],
     "rarity": 6,
     "itemType": "Weapon",
     "weaponType": "LongSword",
     "baseAttack": 594,
-	"sharpnessLevels": [
-		{
-			"color": "Blue",
-			"value": 70
-		},
-		{
-			"color": "Blue",
-			"value": 80
-		},
-		{
-			"color": "Blue",
-			"value": 90
-		},
-		{
-			"color": "White",
-			"value": 10
-		},
-		{
-			"color": "White",
-			"value": 20
-		},
-		{
-			"color": "White",
-			"value": 30
-		}
-	],
+    "sharpnessLevels": [
+      {
+        "color": "Blue",
+        "value": 70
+      },
+      {
+        "color": "Blue",
+        "value": 80
+      },
+      {
+        "color": "Blue",
+        "value": 90
+      },
+      {
+        "color": "White",
+        "value": 10
+      },
+      {
+        "color": "White",
+        "value": 20
+      },
+      {
+        "color": "White",
+        "value": 30
+      }
+    ],
     "baseAffinityPercent": 0,
     "element": "Water",
     "elementBaseAttack": 180,
@@ -48,17 +52,20 @@
   },
   {
     "name": "Extermination's Edge",
-	"tags": ["nergigante", "dragon"],
+    "tags": [
+      "nergigante",
+      "dragon"
+    ],
     "rarity": 8,
     "itemType": "Weapon",
     "weaponType": "LongSword",
     "baseAttack": 693,
-	"sharpnessLevels": [
-		{
-			"color": "Blue",
-			"value": 80
-		}
-	],
+    "sharpnessLevels": [
+      {
+        "color": "Blue",
+        "value": 80
+      }
+    ],
     "baseAffinityPercent": 0,
     "element": "Dragon",
     "elementBaseAttack": 120,
@@ -73,37 +80,41 @@
   },
   {
     "name": "Dazzling Flash III",
-	"tags": ["tzitzi-ya-ku", "thunder", "hidden"],
+    "tags": [
+      "tzitzi-ya-ku",
+      "thunder",
+      "hidden"
+    ],
     "rarity": 6,
     "itemType": "Weapon",
     "weaponType": "LongSword",
     "baseAttack": 594,
-	"sharpnessLevels": [
-		{
-			"color": "Blue",
-			"value": 40
-		},
-		{
-			"color": "Blue",
-			"value": 50
-		},
-		{
-			"color": "White",
-			"value": 10
-		},
-		{
-			"color": "White",
-			"value": 20
-		},
-		{
-			"color": "White",
-			"value": 30
-		},
-		{
-			"color": "White",
-			"value": 40
-		}
-	],
+    "sharpnessLevels": [
+      {
+        "color": "Blue",
+        "value": 40
+      },
+      {
+        "color": "Blue",
+        "value": 50
+      },
+      {
+        "color": "White",
+        "value": 10
+      },
+      {
+        "color": "White",
+        "value": 20
+      },
+      {
+        "color": "White",
+        "value": 30
+      },
+      {
+        "color": "White",
+        "value": 40
+      }
+    ],
     "baseAffinityPercent": 0,
     "element": "Thunder",
     "elementBaseAttack": 360,
@@ -117,37 +128,41 @@
   },
   {
     "name": "Last Dance III",
-	"tags": ["kulu-ya-ku", "sleep", "hidden"],
+    "tags": [
+      "kulu-ya-ku",
+      "sleep",
+      "hidden"
+    ],
     "rarity": 6,
     "itemType": "Weapon",
     "weaponType": "LongSword",
     "baseAttack": 561,
-	"sharpnessLevels": [
-		{
-			"color": "Blue",
-			"value": 50
-		},
-		{
-			"color": "Blue",
-			"value": 60
-		},
-		{
-			"color": "Blue",
-			"value": 70
-		},
-		{
-			"color": "Blue",
-			"value": 80
-		},
-		{
-			"color": "White",
-			"value": 10
-		},
-		{
-			"color": "White",
-			"value": 20
-		}
-	],
+    "sharpnessLevels": [
+      {
+        "color": "Blue",
+        "value": 50
+      },
+      {
+        "color": "Blue",
+        "value": 60
+      },
+      {
+        "color": "Blue",
+        "value": 70
+      },
+      {
+        "color": "Blue",
+        "value": 80
+      },
+      {
+        "color": "White",
+        "value": 10
+      },
+      {
+        "color": "White",
+        "value": 20
+      }
+    ],
     "baseAffinityPercent": 20,
     "ailment": "Sleep",
     "ailmentBaseAttack": 270,
@@ -157,37 +172,40 @@
   },
   {
     "name": "Brazenridge II",
-	"tags": ["uragaan", "fire"],
+    "tags": [
+      "uragaan",
+      "fire"
+    ],
     "rarity": 7,
     "itemType": "Weapon",
     "weaponType": "LongSword",
     "baseAttack": 660,
-	"sharpnessLevels": [
-		{
-			"color": "Blue",
-			"value": 80
-		},
-		{
-			"color": "Blue",
-			"value": 90
-		},
-		{
-			"color": "Blue",
-			"value": 100
-		},
-		{
-			"color": "Blue",
-			"value": 110
-		},
-		{
-			"color": "Blue",
-			"value": 120
-		},
-		{
-			"color": "Blue",
-			"value": 130
-		}
-	],
+    "sharpnessLevels": [
+      {
+        "color": "Blue",
+        "value": 80
+      },
+      {
+        "color": "Blue",
+        "value": 90
+      },
+      {
+        "color": "Blue",
+        "value": 100
+      },
+      {
+        "color": "Blue",
+        "value": 110
+      },
+      {
+        "color": "Blue",
+        "value": 120
+      },
+      {
+        "color": "Blue",
+        "value": 130
+      }
+    ],
     "baseAffinityPercent": -10,
     "element": "Fire",
     "elementBaseAttack": 120,
@@ -204,37 +222,40 @@
   },
   {
     "name": "Wyvern Blade \"Holly\"",
-	"tags": ["rathian", "poison"],
+    "tags": [
+      "rathian",
+      "poison"
+    ],
     "rarity": 7,
     "itemType": "Weapon",
     "weaponType": "LongSword",
     "baseAttack": 627,
-	"sharpnessLevels": [
-		{
-			"color": "Blue",
-			"value": 50
-		},
-		{
-			"color": "Blue",
-			"value": 60
-		},
-		{
-			"color": "Blue",
-			"value": 70
-		},
-		{
-			"color": "White",
-			"value": 10
-		},
-		{
-			"color": "White",
-			"value": 20
-		},
-		{
-			"color": "White",
-			"value": 30
-		}
-	],
+    "sharpnessLevels": [
+      {
+        "color": "Blue",
+        "value": 50
+      },
+      {
+        "color": "Blue",
+        "value": 60
+      },
+      {
+        "color": "Blue",
+        "value": 70
+      },
+      {
+        "color": "White",
+        "value": 10
+      },
+      {
+        "color": "White",
+        "value": 20
+      },
+      {
+        "color": "White",
+        "value": 30
+      }
+    ],
     "baseAffinityPercent": 10,
     "ailment": "Poison",
     "ailmentBaseAttack": 330,
@@ -247,37 +268,40 @@
   },
   {
     "name": "Wyvern Blade \"Indigo\"",
-	"tags": ["rathalos", "fire"],
+    "tags": [
+      "rathalos",
+      "fire"
+    ],
     "rarity": 8,
     "itemType": "Weapon",
     "weaponType": "LongSword",
     "baseAttack": 627,
-	"sharpnessLevels": [
-		{
-			"color": "Blue",
-			"value": 50
-		},
-		{
-			"color": "Blue",
-			"value": 60
-		},
-		{
-			"color": "White",
-			"value": 10
-		},
-		{
-			"color": "White",
-			"value": 20
-		},
-		{
-			"color": "White",
-			"value": 30
-		},
-		{
-			"color": "White",
-			"value": 40
-		}
-	],
+    "sharpnessLevels": [
+      {
+        "color": "Blue",
+        "value": 50
+      },
+      {
+        "color": "Blue",
+        "value": 60
+      },
+      {
+        "color": "White",
+        "value": 10
+      },
+      {
+        "color": "White",
+        "value": 20
+      },
+      {
+        "color": "White",
+        "value": 30
+      },
+      {
+        "color": "White",
+        "value": 40
+      }
+    ],
     "baseAffinityPercent": 15,
     "element": "Fire",
     "elementBaseAttack": 240,
@@ -290,37 +314,41 @@
   },
   {
     "name": "Bone Reaper II",
-	"tags": ["bone", "sleep", "hidden"],
+    "tags": [
+      "bone",
+      "sleep",
+      "hidden"
+    ],
     "rarity": 6,
     "itemType": "Weapon",
     "weaponType": "LongSword",
     "baseAttack": 627,
-	"sharpnessLevels": [
-		{
-			"color": "Blue",
-			"value": 40
-		},
-		{
-			"color": "Blue",
-			"value": 50
-		},
-		{
-			"color": "Blue",
-			"value": 60
-		},
-		{
-			"color": "Blue",
-			"value": 70
-		},
-		{
-			"color": "Blue",
-			"value": 80
-		},
-		{
-			"color": "Blue",
-			"value": 90
-		}
-	],
+    "sharpnessLevels": [
+      {
+        "color": "Blue",
+        "value": 40
+      },
+      {
+        "color": "Blue",
+        "value": 50
+      },
+      {
+        "color": "Blue",
+        "value": 60
+      },
+      {
+        "color": "Blue",
+        "value": 70
+      },
+      {
+        "color": "Blue",
+        "value": 80
+      },
+      {
+        "color": "Blue",
+        "value": 90
+      }
+    ],
     "baseAffinityPercent": 0,
     "ailment": "Sleep",
     "ailmentBaseAttack": 270,
@@ -335,37 +363,40 @@
   },
   {
     "name": "Bazel Varga Rookslayer",
-	"tags": ["bazelgeuse", "blast"],
+    "tags": [
+      "bazelgeuse",
+      "blast"
+    ],
     "rarity": 8,
     "itemType": "Weapon",
     "weaponType": "LongSword",
     "baseAttack": 660,
-	"sharpnessLevels": [
-		{
-			"color": "Blue",
-			"value": 30
-		},
-		{
-			"color": "White",
-			"value": 10
-		},
-		{
-			"color": "White",
-			"value": 20
-		},
-		{
-			"color": "White",
-			"value": 30
-		},
-		{
-			"color": "White",
-			"value": 40
-		},
-		{
-			"color": "White",
-			"value": 50
-		}
-	],
+    "sharpnessLevels": [
+      {
+        "color": "Blue",
+        "value": 30
+      },
+      {
+        "color": "White",
+        "value": 10
+      },
+      {
+        "color": "White",
+        "value": 20
+      },
+      {
+        "color": "White",
+        "value": 30
+      },
+      {
+        "color": "White",
+        "value": 40
+      },
+      {
+        "color": "White",
+        "value": 50
+      }
+    ],
     "baseAffinityPercent": -10,
     "ailment": "Blast",
     "ailmentBaseAttack": 210,
@@ -381,37 +412,40 @@
   },
   {
     "name": "Anja Scimitar III",
-	"tags": ["anjanath", "fire"],
+    "tags": [
+      "anjanath",
+      "fire"
+    ],
     "rarity": 6,
     "itemType": "Weapon",
     "weaponType": "LongSword",
     "baseAttack": 693,
-	"sharpnessLevels": [
-		{
-			"color": "Blue",
-			"value": 30
-		},
-		{
-			"color": "Blue",
-			"value": 40
-		},
-		{
-			"color": "Blue",
-			"value": 50
-		},
-		{
-			"color": "Blue",
-			"value": 60
-		},
-		{
-			"color": "Blue",
-			"value": 70
-		},
-		{
-			"color": "Blue",
-			"value": 80
-		}
-	],
+    "sharpnessLevels": [
+      {
+        "color": "Blue",
+        "value": 30
+      },
+      {
+        "color": "Blue",
+        "value": 40
+      },
+      {
+        "color": "Blue",
+        "value": 50
+      },
+      {
+        "color": "Blue",
+        "value": 60
+      },
+      {
+        "color": "Blue",
+        "value": 70
+      },
+      {
+        "color": "Blue",
+        "value": 80
+      }
+    ],
     "baseAffinityPercent": -20,
     "element": "Fire",
     "elementBaseAttack": 390,
@@ -420,37 +454,40 @@
   },
   {
     "name": "Dipterus III",
-	"tags": ["jyuratodus", "water"],
+    "tags": [
+      "jyuratodus",
+      "water"
+    ],
     "rarity": 6,
     "itemType": "Weapon",
     "weaponType": "LongSword",
     "baseAttack": 627,
-	"sharpnessLevels": [
-		{
-			"color": "Blue",
-			"value": 20
-		},
-		{
-			"color": "Blue",
-			"value": 30
-		},
-		{
-			"color": "Blue",
-			"value": 40
-		},
-		{
-			"color": "White",
-			"value": 10
-		},
-		{
-			"color": "White",
-			"value": 20
-		},
-		{
-			"color": "White",
-			"value": 30
-		}
-	],
+    "sharpnessLevels": [
+      {
+        "color": "Blue",
+        "value": 20
+      },
+      {
+        "color": "Blue",
+        "value": 30
+      },
+      {
+        "color": "Blue",
+        "value": 40
+      },
+      {
+        "color": "White",
+        "value": 10
+      },
+      {
+        "color": "White",
+        "value": 20
+      },
+      {
+        "color": "White",
+        "value": 30
+      }
+    ],
     "baseAffinityPercent": 0,
     "element": "Water",
     "elementBaseAttack": 360,
@@ -463,37 +500,41 @@
   },
   {
     "name": "Hazak Grosser II",
-	"tags": ["vaal", "hazak", "dragon"],
+    "tags": [
+      "vaal",
+      "hazak",
+      "dragon"
+    ],
     "rarity": 7,
     "itemType": "Weapon",
     "weaponType": "LongSword",
     "baseAttack": 660,
-	"sharpnessLevels": [
-		{
-			"color": "Blue",
-			"value": 40
-		},
-		{
-			"color": "Blue",
-			"value": 50
-		},
-		{
-			"color": "White",
-			"value": 10
-		},
-		{
-			"color": "White",
-			"value": 20
-		},
-		{
-			"color": "White",
-			"value": 30
-		},
-		{
-			"color": "White",
-			"value": 40
-		}
-	],
+    "sharpnessLevels": [
+      {
+        "color": "Blue",
+        "value": 40
+      },
+      {
+        "color": "Blue",
+        "value": 50
+      },
+      {
+        "color": "White",
+        "value": 10
+      },
+      {
+        "color": "White",
+        "value": 20
+      },
+      {
+        "color": "White",
+        "value": 30
+      },
+      {
+        "color": "White",
+        "value": 40
+      }
+    ],
     "baseAffinityPercent": 0,
     "element": "Dragon",
     "elementBaseAttack": 270,
@@ -507,37 +548,40 @@
   },
   {
     "name": "Kadachi Fang III",
-	"tags": ["tobi-kadachi", "thunder"],
+    "tags": [
+      "tobi-kadachi",
+      "thunder"
+    ],
     "rarity": 6,
     "itemType": "Weapon",
     "weaponType": "LongSword",
     "baseAttack": 594,
-	"sharpnessLevels": [
-		{
-			"color": "Blue",
-			"value": 40
-		},
-		{
-			"color": "Blue",
-			"value": 50
-		},
-		{
-			"color": "Blue",
-			"value": 60
-		},
-		{
-			"color": "White",
-			"value": 10
-		},
-		{
-			"color": "White",
-			"value": 20
-		},
-		{
-			"color": "White",
-			"value": 30
-		}
-	],
+    "sharpnessLevels": [
+      {
+        "color": "Blue",
+        "value": 40
+      },
+      {
+        "color": "Blue",
+        "value": 50
+      },
+      {
+        "color": "Blue",
+        "value": 60
+      },
+      {
+        "color": "White",
+        "value": 10
+      },
+      {
+        "color": "White",
+        "value": 20
+      },
+      {
+        "color": "White",
+        "value": 30
+      }
+    ],
     "baseAffinityPercent": 15,
     "element": "Thunder",
     "elementBaseAttack": 270,
@@ -550,37 +594,40 @@
   },
   {
     "name": "Legia Stealer",
-	"tags": ["legiana", "ice"],
+    "tags": [
+      "legiana",
+      "ice"
+    ],
     "rarity": 8,
     "itemType": "Weapon",
     "weaponType": "LongSword",
     "baseAttack": 528,
-	"sharpnessLevels": [
-		{
-			"color": "White",
-			"value": 20
-		},
-		{
-			"color": "White",
-			"value": 30
-		},
-		{
-			"color": "White",
-			"value": 40
-		},
-		{
-			"color": "White",
-			"value": 50
-		},
-		{
-			"color": "White",
-			"value": 60
-		},
-		{
-			"color": "White",
-			"value": 70
-		}
-	],
+    "sharpnessLevels": [
+      {
+        "color": "White",
+        "value": 20
+      },
+      {
+        "color": "White",
+        "value": 30
+      },
+      {
+        "color": "White",
+        "value": 40
+      },
+      {
+        "color": "White",
+        "value": 50
+      },
+      {
+        "color": "White",
+        "value": 60
+      },
+      {
+        "color": "White",
+        "value": 70
+      }
+    ],
     "baseAffinityPercent": 0,
     "element": "Ice",
     "elementBaseAttack": 360,
@@ -589,37 +636,41 @@
   },
   {
     "name": "Dark Scimitar III",
-	"tags": ["hornetaur", "paralysis", "hidden"],
+    "tags": [
+      "hornetaur",
+      "paralysis",
+      "hidden"
+    ],
     "rarity": 6,
     "itemType": "Weapon",
     "weaponType": "LongSword",
     "baseAttack": 528,
-	"sharpnessLevels": [
-		{
-			"color": "White",
-			"value": 30
-		},
-		{
-			"color": "White",
-			"value": 40
-		},
-		{
-			"color": "White",
-			"value": 50
-		},
-		{
-			"color": "White",
-			"value": 60
-		},
-		{
-			"color": "White",
-			"value": 70
-		},
-		{
-			"color": "White",
-			"value": 80
-		}
-	],
+    "sharpnessLevels": [
+      {
+        "color": "White",
+        "value": 30
+      },
+      {
+        "color": "White",
+        "value": 40
+      },
+      {
+        "color": "White",
+        "value": 50
+      },
+      {
+        "color": "White",
+        "value": 60
+      },
+      {
+        "color": "White",
+        "value": 70
+      },
+      {
+        "color": "White",
+        "value": 80
+      }
+    ],
     "baseAffinityPercent": 0,
     "ailment": "Paralysis",
     "ailmentBaseAttack": 240,
@@ -633,37 +684,40 @@
   },
   {
     "name": "Dragonbone Stabber III",
-	"tags": ["dragonbone", "dragon"],
+    "tags": [
+      "dragonbone",
+      "dragon"
+    ],
     "rarity": 6,
     "itemType": "Weapon",
     "weaponType": "LongSword",
     "baseAttack": 528,
-	"sharpnessLevels": [
-		{
-			"color": "Blue",
-			"value": 40
-		},
-		{
-			"color": "Blue",
-			"value": 50
-		},
-		{
-			"color": "Blue",
-			"value": 60
-		},
-		{
-			"color": "White",
-			"value": 10
-		},
-		{
-			"color": "White",
-			"value": 20
-		},
-		{
-			"color": "White",
-			"value": 30
-		}
-	],
+    "sharpnessLevels": [
+      {
+        "color": "Blue",
+        "value": 40
+      },
+      {
+        "color": "Blue",
+        "value": 50
+      },
+      {
+        "color": "Blue",
+        "value": 60
+      },
+      {
+        "color": "White",
+        "value": 10
+      },
+      {
+        "color": "White",
+        "value": 20
+      },
+      {
+        "color": "White",
+        "value": 30
+      }
+    ],
     "baseAffinityPercent": 0,
     "element": "Dragon",
     "elementBaseAttack": 420,
@@ -677,37 +731,41 @@
   },
   {
     "name": "Magda Facultas II",
-	"tags": ["zorah", "magdaros", "blast"],
+    "tags": [
+      "zorah",
+      "magdaros",
+      "blast"
+    ],
     "rarity": 7,
     "itemType": "Weapon",
     "weaponType": "LongSword",
     "baseAttack": 726,
-	"sharpnessLevels": [
-		{
-			"color": "Green",
-			"value": 70
-		},
-		{
-			"color": "Green",
-			"value": 80
-		},
-		{
-			"color": "Green",
-			"value": 90
-		},
-		{
-			"color": "Blue",
-			"value": 10
-		},
-		{
-			"color": "Blue",
-			"value": 20
-		},
-		{
-			"color": "Blue",
-			"value": 30
-		}
-	],
+    "sharpnessLevels": [
+      {
+        "color": "Green",
+        "value": 70
+      },
+      {
+        "color": "Green",
+        "value": 80
+      },
+      {
+        "color": "Green",
+        "value": 90
+      },
+      {
+        "color": "Blue",
+        "value": 10
+      },
+      {
+        "color": "Blue",
+        "value": 20
+      },
+      {
+        "color": "Blue",
+        "value": 30
+      }
+    ],
     "baseAffinityPercent": -20,
     "ailment": "Blast",
     "ailmentBaseAttack": 360,
@@ -721,37 +779,41 @@
   },
   {
     "name": "Imperial Shimmer",
-	"tags": ["blacksteel", "teostra", "blast"],
+    "tags": [
+      "blacksteel",
+      "teostra",
+      "blast"
+    ],
     "rarity": 8,
     "itemType": "Weapon",
     "weaponType": "LongSword",
     "baseAttack": 627,
-	"sharpnessLevels": [
-		{
-			"color": "Blue",
-			"value": 50
-		},
-		{
-			"color": "Blue",
-			"value": 60
-		},
-		{
-			"color": "White",
-			"value": 10
-		},
-		{
-			"color": "White",
-			"value": 20
-		},
-		{
-			"color": "White",
-			"value": 30
-		},
-		{
-			"color": "White",
-			"value": 40
-		}
-	],
+    "sharpnessLevels": [
+      {
+        "color": "Blue",
+        "value": 50
+      },
+      {
+        "color": "Blue",
+        "value": 60
+      },
+      {
+        "color": "White",
+        "value": 10
+      },
+      {
+        "color": "White",
+        "value": 20
+      },
+      {
+        "color": "White",
+        "value": 30
+      },
+      {
+        "color": "White",
+        "value": 40
+      }
+    ],
     "baseAffinityPercent": 0,
     "ailment": "Blast",
     "ailmentBaseAttack": 300,
@@ -760,37 +822,40 @@
   },
   {
     "name": "Xeno Cypher",
-	"tags": ["xeno'jiva", "dragon"],
+    "tags": [
+      "xeno'jiva",
+      "dragon"
+    ],
     "rarity": 8,
     "itemType": "Weapon",
     "weaponType": "LongSword",
     "baseAttack": 594,
-	"sharpnessLevels": [
-		{
-			"color": "White",
-			"value": 10
-		},
-		{
-			"color": "White",
-			"value": 20
-		},
-		{
-			"color": "White",
-			"value": 30
-		},
-		{
-			"color": "White",
-			"value": 40
-		},
-		{
-			"color": "White",
-			"value": 50
-		},
-		{
-			"color": "White",
-			"value": 60
-		}
-	],
+    "sharpnessLevels": [
+      {
+        "color": "White",
+        "value": 10
+      },
+      {
+        "color": "White",
+        "value": 20
+      },
+      {
+        "color": "White",
+        "value": 30
+      },
+      {
+        "color": "White",
+        "value": 40
+      },
+      {
+        "color": "White",
+        "value": 50
+      },
+      {
+        "color": "White",
+        "value": 60
+      }
+    ],
     "baseAffinityPercent": 15,
     "element": "Dragon",
     "elementBaseAttack": 180,
@@ -808,37 +873,41 @@
   },
   {
     "name": "Divine Slasher",
-	"tags": ["workshop", "dragon", "hidden"],
+    "tags": [
+      "workshop",
+      "dragon",
+      "hidden"
+    ],
     "rarity": 8,
     "itemType": "Weapon",
     "weaponType": "LongSword",
     "baseAttack": 693,
-	"sharpnessLevels": [
-		{
-			"color": "Blue",
-			"value": 30
-		},
-		{
-			"color": "Blue",
-			"value": 40
-		},
-		{
-			"color": "Blue",
-			"value": 50
-		},
-		{
-			"color": "White",
-			"value": 10
-		},
-		{
-			"color": "White",
-			"value": 20
-		},
-		{
-			"color": "White",
-			"value": 30
-		}
-	],
+    "sharpnessLevels": [
+      {
+        "color": "Blue",
+        "value": 30
+      },
+      {
+        "color": "Blue",
+        "value": 40
+      },
+      {
+        "color": "Blue",
+        "value": 50
+      },
+      {
+        "color": "White",
+        "value": 10
+      },
+      {
+        "color": "White",
+        "value": 20
+      },
+      {
+        "color": "White",
+        "value": 30
+      }
+    ],
     "baseAffinityPercent": 0,
     "element": "Dragon",
     "elementBaseAttack": 150,
@@ -854,42 +923,69 @@
   },
   {
     "name": "Reaver \"Calamity\"",
-	"tags": ["deviljho", "dragon"],
+    "tags": [
+      "deviljho",
+      "dragon"
+    ],
     "rarity": 7,
     "itemType": "Weapon",
     "weaponType": "LongSword",
     "baseAttack": 759,
-	"sharpnessLevels": [
-		{
-			"color": "Blue",
-			"value": 40
-		},
-		{
-			"color": "White",
-			"value": 10
-		},
-		{
-			"color": "White",
-			"value": 20
-		},
-		{
-			"color": "White",
-			"value": 30
-		},
-		{
-			"color": "White",
-			"value": 40
-		},
-		{
-			"color": "White",
-			"value": 50
-		}
-	],
+    "sharpnessLevels": [
+      {
+        "color": "Blue",
+        "value": 40
+      },
+      {
+        "color": "White",
+        "value": 10
+      },
+      {
+        "color": "White",
+        "value": 20
+      },
+      {
+        "color": "White",
+        "value": 30
+      },
+      {
+        "color": "White",
+        "value": 40
+      },
+      {
+        "color": "White",
+        "value": 50
+      }
+    ],
     "baseAffinityPercent": -25,
     "element": "Dragon",
     "elementBaseAttack": 210,
     "elderseal": "High",
     "id": 275,
     "slots": []
+  },
+  {
+    "name": "Gold Paralysis Katana",
+    "tags": [
+      "kulve",
+      "taroth"
+    ],
+    "rarity": 7,
+    "itemType": "Weapon",
+    "weaponType": "LongSword",
+    "baseAttack": 495,
+    "baseDefense": 20,
+    "sharpnessLevels": [
+      {
+        "color": "White",
+        "value": 20
+      }
+    ],
+    "baseAffinityPercent": 0,
+    "ailment": "Paralysis",
+    "ailmentBaseAttack": 150,
+    "ailmentHidden": true,
+    "slots": [],
+    "id": 291
   }
 ]
