@@ -885,31 +885,6 @@
     "id": 296
   },
   {
-    "name": "Taroth Strongarm \"Mire\"",
-    "tags": [
-      "kulve",
-      "taroth",
-      "water"
-    ],
-    "rarity": 7,
-    "itemType": "Weapon",
-    "weaponType": "ChargeBlade",
-    "baseAttack": 684,
-    "baseDefense": 20,
-    "sharpnessDataNeeded": true,
-    "sharpnessLevels": [
-      {
-        "color": "Blue",
-        "value": 20
-      }
-    ],
-    "baseAffinityPercent": 10,
-    "element": "Water",
-    "elementBaseAttack": 120,
-    "slots": [],
-    "id": 297
-  },
-  {
     "name": "Glutton Gold Cutter",
     "tags": [
       "kulve",
@@ -988,6 +963,56 @@
     "id": 345
   },
   {
+    "name": "Taroth Strongarm \"King\"",
+    "tags": [
+      "kulve",
+      "taroth",
+      "fire"
+    ],
+    "rarity": 7,
+    "itemType": "Weapon",
+    "weaponType": "ChargeBlade",
+    "baseAttack": 684,
+    "baseDefense": 20,
+    "sharpnessDataNeeded": true,
+    "sharpnessLevels": [
+      {
+        "color": "Blue",
+        "value": 40
+      }
+    ],
+    "baseAffinityPercent": 20,
+    "element": "Fire",
+    "elementBaseAttack": 120,
+    "slots": [],
+    "id": 347
+  },
+  {
+    "name": "Taroth Strongarm \"Mire\"",
+    "tags": [
+      "kulve",
+      "taroth",
+      "water"
+    ],
+    "rarity": 7,
+    "itemType": "Weapon",
+    "weaponType": "ChargeBlade",
+    "baseAttack": 684,
+    "baseDefense": 20,
+    "sharpnessDataNeeded": true,
+    "sharpnessLevels": [
+      {
+        "color": "Blue",
+        "value": 20
+      }
+    ],
+    "baseAffinityPercent": 10,
+    "element": "Water",
+    "elementBaseAttack": 120,
+    "slots": [],
+    "id": 297
+  },
+  {
     "name": "Taroth Strongarm \"Ice\"",
     "tags": [
       "kulve",
@@ -1019,13 +1044,14 @@
     "id": 346
   },
   {
-    "name": "Taroth Strongarm \"King\"",
+    "name": "Taroth Strongarm \"Sleep\"",
     "tags": [
       "kulve",
       "taroth",
-      "fire"
+      "sleep",
+      "hidden"
     ],
-    "rarity": 7,
+    "rarity": 8,
     "itemType": "Weapon",
     "weaponType": "ChargeBlade",
     "baseAttack": 684,
@@ -1037,10 +1063,46 @@
         "value": 40
       }
     ],
-    "baseAffinityPercent": 20,
-    "element": "Fire",
-    "elementBaseAttack": 120,
-    "slots": [],
-    "id": 347
+    "baseAffinityPercent": 0,
+    "ailment": "Sleep",
+    "ailmentBaseAttack": 270,
+    "ailmentHidden": true,
+    "slots": [
+      {
+        "level": 3
+      }
+    ],
+    "id": 405
+  },
+  {
+    "name": "Taroth Strongarm \"Thunder\"",
+    "tags": [
+      "kulve",
+      "taroth",
+      "thunder",
+      "hidden"
+    ],
+    "rarity": 8,
+    "itemType": "Weapon",
+    "weaponType": "ChargeBlade",
+    "baseAttack": 684,
+    "baseDefense": 20,
+    "sharpnessDataNeeded": true,
+    "sharpnessLevels": [
+      {
+        "color": "Blue",
+        "value": 40
+      }
+    ],
+    "baseAffinityPercent": 0,
+    "element": "Thunder",
+    "elementBaseAttack": 420,
+    "elementHidden": true,
+    "slots": [
+      {
+        "level": 3
+      }
+    ],
+    "id": 406
   }
 ]

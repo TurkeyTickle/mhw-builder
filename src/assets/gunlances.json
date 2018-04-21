@@ -1017,5 +1017,98 @@
     "elementBaseAttack": 450,
     "slots": [],
     "id": 343
+  },
+  {
+    "name": "Taroth Buster \"Sleep\"",
+    "tags": [
+      "kulve",
+      "taroth",
+      "sleep",
+      "hidden"
+    ],
+    "rarity": 8,
+    "itemType": "Weapon",
+    "weaponType": "Gunlance",
+    "baseAttack": 437,
+    "baseDefense": 20,
+    "sharpnessDataNeeded": true,
+    "sharpnessLevels": [
+      {
+        "color": "Blue",
+        "value": 20
+      }
+    ],
+    "baseAffinityPercent": 0,
+    "ailment": "Sleep",
+    "ailmentBaseAttack": 450,
+    "ailmentHidden": true,
+    "slots": [
+      {
+        "level": 3
+      }
+    ],
+    "id": 399
+  },
+  {
+    "name": "Taroth Buster \"Poison\"",
+    "tags": [
+      "kulve",
+      "taroth",
+      "poison",
+      "hidden"
+    ],
+    "rarity": 8,
+    "itemType": "Weapon",
+    "weaponType": "Gunlance",
+    "baseAttack": 460,
+    "baseDefense": 20,
+    "sharpnessDataNeeded": true,
+    "sharpnessLevels": [
+      {
+        "color": "Blue",
+        "value": 20
+      }
+    ],
+    "baseAffinityPercent": 15,
+    "ailment": "Poison",
+    "ailmentBaseAttack": 450,
+    "ailmentHidden": true,
+    "slots": [
+      {
+        "level": 3
+      }
+    ],
+    "id": 400
+  },
+  {
+    "name": "Taroth Buster \"Water\"",
+    "tags": [
+      "kulve",
+      "taroth",
+      "water",
+      "hidden"
+    ],
+    "rarity": 8,
+    "itemType": "Weapon",
+    "weaponType": "Gunlance",
+    "baseAttack": 437,
+    "baseDefense": 20,
+    "sharpnessDataNeeded": true,
+    "sharpnessLevels": [
+      {
+        "color": "Blue",
+        "value": 20
+      }
+    ],
+    "baseAffinityPercent": 0,
+    "element": "Water",
+    "elementBaseAttack": 450,
+    "elementHidden": true,
+    "slots": [
+      {
+        "level": 3
+      }
+    ],
+    "id": 401
   }
 ]

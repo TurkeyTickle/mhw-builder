@@ -1169,7 +1169,73 @@
     "elementBaseAttack": 540,
     "elementHidden": true,
     "elderseal": "Average",
-    "slots": [],
+    "slots": [
+      {
+        "level": 3
+      }
+    ],
     "id": 374
+  },
+  {
+    "name": "Taroth Pipe \"Water\"",
+    "tags": [
+      "kulve",
+      "taroth",
+      "water",
+      "hidden"
+    ],
+    "rarity": 8,
+    "itemType": "Weapon",
+    "weaponType": "HuntingHorn",
+    "baseAttack": 714,
+    "baseDefense": 20,
+    "sharpnessDataNeeded": true,
+    "sharpnessLevels": [
+      {
+        "color": "White",
+        "value": 20
+      }
+    ],
+    "baseAffinityPercent": 10,
+    "element": "Water",
+    "elementBaseAttack": 630,
+    "elementHidden": true,
+    "slots": [
+      {
+        "level": 3
+      }
+    ],
+    "id": 395
+  },
+  {
+    "name": "Taroth Pipe \"Paralysis\"",
+    "tags": [
+      "kulve",
+      "taroth",
+      "paralysis",
+      "hidden"
+    ],
+    "rarity": 8,
+    "itemType": "Weapon",
+    "weaponType": "HuntingHorn",
+    "baseAttack": 840,
+    "baseDefense": 20,
+    "sharpnessDataNeeded": true,
+    "sharpnessLevels": [
+      {
+        "color": "Blue",
+        "value": 20
+      }
+    ],
+    "baseAffinityPercent": 0,
+    "ailment": "Paralysis",
+    "ailmentBaseAttack": 420,
+    "ailmentHidden": true,
+    "slots": [
+      {
+        "level": 3
+      }
+    ],
+    "id": 396
   }
 ]

@@ -1153,33 +1153,6 @@
     "id": 311
   },
   {
-    "name": "Taroth Hammer \"Water\"",
-    "tags": [
-      "kulve",
-      "taroth",
-      "water",
-      "hidden"
-    ],
-    "rarity": 8,
-    "itemType": "Weapon",
-    "weaponType": "Hammer",
-    "baseAttack": 988,
-    "baseDefense": 20,
-    "baseAffinityPercent": 0,
-    "sharpnessDataNeeded": true,
-    "sharpnessLevels": [
-      {
-        "color": "Blue",
-        "value": 20
-      }
-    ],
-    "element": "Water",
-    "elementBaseAttack": 360,
-    "elementHidden": true,
-    "slots": [],
-    "id": 339
-  },
-  {
     "name": "Taroth Hammer \"Horn\"",
     "tags": [
       "kulve",
@@ -1228,5 +1201,94 @@
     "elementBaseAttack": 450,
     "slots": [],
     "id": 341
+  },
+  {
+    "name": "Taroth Hammer \"Water\"",
+    "tags": [
+      "kulve",
+      "taroth",
+      "water",
+      "hidden"
+    ],
+    "rarity": 8,
+    "itemType": "Weapon",
+    "weaponType": "Hammer",
+    "baseAttack": 988,
+    "baseDefense": 20,
+    "baseAffinityPercent": 0,
+    "sharpnessDataNeeded": true,
+    "sharpnessLevels": [
+      {
+        "color": "Blue",
+        "value": 20
+      }
+    ],
+    "element": "Water",
+    "elementBaseAttack": 360,
+    "elementHidden": true,
+    "slots": [],
+    "id": 339
+  },
+  {
+    "name": "Taroth Hammer \"Ice\"",
+    "tags": [
+      "kulve",
+      "taroth",
+      "ice",
+      "hidden"
+    ],
+    "rarity": 8,
+    "itemType": "Weapon",
+    "weaponType": "Hammer",
+    "baseAttack": 988,
+    "baseDefense": 20,
+    "baseAffinityPercent": 0,
+    "sharpnessDataNeeded": true,
+    "sharpnessLevels": [
+      {
+        "color": "Blue",
+        "value": 20
+      }
+    ],
+    "element": "Thunder",
+    "elementBaseAttack": 510,
+    "elementHidden": true,
+    "slots": [
+      {
+        "level": 3
+      }
+    ],
+    "id": 393
+  },
+  {
+    "name": "Taroth Hammer \"Thunder\"",
+    "tags": [
+      "kulve",
+      "taroth",
+      "thunder",
+      "hidden"
+    ],
+    "rarity": 8,
+    "itemType": "Weapon",
+    "weaponType": "Hammer",
+    "baseAttack": 988,
+    "baseDefense": 30,
+    "baseAffinityPercent": 0,
+    "sharpnessDataNeeded": true,
+    "sharpnessLevels": [
+      {
+        "color": "Blue",
+        "value": 20
+      }
+    ],
+    "element": "Thunder",
+    "elementBaseAttack": 480,
+    "elementHidden": true,
+    "slots": [
+      {
+        "level": 3
+      }
+    ],
+    "id": 394
   }
 ]

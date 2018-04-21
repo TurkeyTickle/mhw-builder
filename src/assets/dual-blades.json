@@ -1072,37 +1072,6 @@
     "id": 332
   },
   {
-    "name": "Taroth Daggers \"Ice\"",
-    "tags": [
-      "kulve",
-      "taroth",
-      "ice",
-      "hidden"
-    ],
-    "rarity": 8,
-    "itemType": "Weapon",
-    "weaponType": "DualBlades",
-    "baseAttack": 266,
-    "baseDefense": 20,
-    "sharpnessDataNeeded": true,
-    "sharpnessLevels": [
-      {
-        "color": "Blue",
-        "value": 20
-      }
-    ],
-    "baseAffinityPercent": 0,
-    "element": "Ice",
-    "elementBaseAttack": 270,
-    "elementHidden": true,
-    "slots": [
-      {
-        "level": 3
-      }
-    ],
-    "id": 333
-  },
-  {
     "name": "Taroth Daggers \"Lurk\"",
     "tags": [
       "kulve",
@@ -1154,5 +1123,98 @@
     "ailmentBaseAttack": 90,
     "slots": [],
     "id": 335
+  },
+  {
+    "name": "Taroth Daggers \"Ice\"",
+    "tags": [
+      "kulve",
+      "taroth",
+      "ice",
+      "hidden"
+    ],
+    "rarity": 8,
+    "itemType": "Weapon",
+    "weaponType": "DualBlades",
+    "baseAttack": 266,
+    "baseDefense": 20,
+    "sharpnessDataNeeded": true,
+    "sharpnessLevels": [
+      {
+        "color": "Blue",
+        "value": 20
+      }
+    ],
+    "baseAffinityPercent": 0,
+    "element": "Ice",
+    "elementBaseAttack": 270,
+    "elementHidden": true,
+    "slots": [
+      {
+        "level": 3
+      }
+    ],
+    "id": 333
+  },
+  {
+    "name": "Taroth Daggers \"Poison\"",
+    "tags": [
+      "kulve",
+      "taroth",
+      "poison",
+      "hidden"
+    ],
+    "rarity": 8,
+    "itemType": "Weapon",
+    "weaponType": "DualBlades",
+    "baseAttack": 266,
+    "baseDefense": 20,
+    "sharpnessDataNeeded": true,
+    "sharpnessLevels": [
+      {
+        "color": "Blue",
+        "value": 20
+      }
+    ],
+    "baseAffinityPercent": 0,
+    "ailment": "Poison",
+    "ailmentBaseAttack": 330,
+    "ailmentHidden": true,
+    "slots": [
+      {
+        "level": 3
+      }
+    ],
+    "id": 391
+  },
+  {
+    "name": "Taroth Daggers \"Water\"",
+    "tags": [
+      "kulve",
+      "taroth",
+      "water",
+      "hidden"
+    ],
+    "rarity": 8,
+    "itemType": "Weapon",
+    "weaponType": "DualBlades",
+    "baseAttack": 266,
+    "baseDefense": 20,
+    "sharpnessDataNeeded": true,
+    "sharpnessLevels": [
+      {
+        "color": "Blue",
+        "value": 20
+      }
+    ],
+    "baseAffinityPercent": 0,
+    "element": "Water",
+    "elementBaseAttack": 270,
+    "elementHidden": true,
+    "slots": [
+      {
+        "level": 3
+      }
+    ],
+    "id": 392
   }
 ]

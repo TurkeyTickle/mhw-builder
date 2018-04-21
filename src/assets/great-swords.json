@@ -1,1411 +1,1411 @@
 [
-  {
-    "name": "Chrome Razor II",
-    "tags": [
-      "ore",
-      "poison",
-      "hidden"
-    ],
-    "rarity": 6,
-    "itemType": "Weapon",
-    "weaponType": "GreatSword",
-    "baseAttack": 864,
-    "sharpnessLevels": [
-      {
-        "color": "Blue",
-        "value": 60
-      },
-      {
-        "color": "Blue",
-        "value": 70
-      },
-      {
-        "color": "Blue",
-        "value": 80
-      },
-      {
-        "color": "Blue",
-        "value": 90
-      },
-      {
-        "color": "White",
-        "value": 10
-      },
-      {
-        "color": "White",
-        "value": 20
-      }
-    ],
-    "baseAffinityPercent": 0,
-    "ailment": "Poison",
-    "ailmentBaseAttack": 420,
-    "ailmentHidden": true,
-    "slots": [
-      {
-        "level": 1
-      },
-      {
-        "level": 1
-      }
-    ],
-    "id": 1
-  },
-  {
-    "name": "Purgation's Atrocity",
-    "tags": [
-      "nergigante",
-      "dragon"
-    ],
-    "rarity": 8,
-    "itemType": "Weapon",
-    "weaponType": "GreatSword",
-    "baseAttack": 1008,
-    "sharpnessLevels": [
-      {
-        "color": "Blue",
-        "value": 80
-      }
-    ],
-    "baseAffinityPercent": 0,
-    "element": "Dragon",
-    "elementBaseAttack": 150,
-    "elementAttackIncreaseCapOverride": 0.33,
-    "elderseal": "High",
-    "slots": [
-      {
-        "level": 1
-      }
-    ],
-    "id": 2
-  },
-  {
-    "name": "Lightning Punisher III",
-    "tags": [
-      "tzitzi-ya-ku",
-      "thunder"
-    ],
-    "rarity": 6,
-    "itemType": "Weapon",
-    "weaponType": "GreatSword",
-    "baseAttack": 912,
-    "sharpnessLevels": [
-      {
-        "color": "Blue",
-        "value": 40
-      },
-      {
-        "color": "Blue",
-        "value": 50
-      },
-      {
-        "color": "Blue",
-        "value": 60
-      },
-      {
-        "color": "Blue",
-        "value": 70
-      },
-      {
-        "color": "Blue",
-        "value": 80
-      },
-      {
-        "color": "Blue",
-        "value": 90
-      }
-    ],
-    "baseAffinityPercent": 0,
-    "element": "Thunder",
-    "elementBaseAttack": 240,
-    "slots": [
-      {
-        "level": 2
-      }
-    ],
-    "id": 3
-  },
-  {
-    "name": "Frost Blaze II",
-    "tags": [
-      "legiana",
-      "ice"
-    ],
-    "rarity": 6,
-    "itemType": "Weapon",
-    "weaponType": "GreatSword",
-    "baseAttack": 768,
-    "sharpnessLevels": [
-      {
-        "color": "Blue",
-        "value": 50
-      },
-      {
-        "color": "Blue",
-        "value": 60
-      },
-      {
-        "color": "Blue",
-        "value": 70
-      },
-      {
-        "color": "Blue",
-        "value": 80
-      },
-      {
-        "color": "White",
-        "value": 10
-      },
-      {
-        "color": "White",
-        "value": 20
-      }
-    ],
-    "baseAffinityPercent": 0,
-    "element": "Ice",
-    "elementBaseAttack": 390,
-    "slots": [
-      {
-        "level": 3
-      }
-    ],
-    "id": 4
-  },
-  {
-    "name": "Jagras Hacker III",
-    "tags": [
-      "great",
-      "jagras",
-      "water",
-      "hidden"
-    ],
-    "rarity": 6,
-    "itemType": "Weapon",
-    "weaponType": "GreatSword",
-    "baseAttack": 912,
-    "sharpnessLevels": [
-      {
-        "color": "Blue",
-        "value": 30
-      },
-      {
-        "color": "Blue",
-        "value": 40
-      },
-      {
-        "color": "Blue",
-        "value": 50
-      },
-      {
-        "color": "Blue",
-        "value": 60
-      },
-      {
-        "color": "Blue",
-        "value": 70
-      },
-      {
-        "color": "Blue",
-        "value": 80
-      }
-    ],
-    "baseAffinityPercent": 0,
-    "element": "Water",
-    "elementBaseAttack": 300,
-    "elementHidden": true,
-    "slots": [
-      {
-        "level": 3
-      },
-      {
-        "level": 3
-      }
-    ],
-    "id": 5
-  },
-  {
-    "name": "Malady's Kiss III",
-    "tags": [
-      "great",
-      "girros",
-      "paralysis"
-    ],
-    "rarity": 6,
-    "itemType": "Weapon",
-    "weaponType": "GreatSword",
-    "baseAttack": 768,
-    "sharpnessLevels": [
-      {
-        "color": "Blue",
-        "value": 50
-      },
-      {
-        "color": "Blue",
-        "value": 60
-      },
-      {
-        "color": "Blue",
-        "value": 70
-      },
-      {
-        "color": "White",
-        "value": 10
-      },
-      {
-        "color": "White",
-        "value": 20
-      },
-      {
-        "color": "White",
-        "value": 30
-      }
-    ],
-    "baseAffinityPercent": 20,
-    "ailment": "Paralysis",
-    "ailmentBaseAttack": 450,
-    "id": 6,
-    "slots": []
-  },
-  {
-    "name": "Lava Blaze II",
-    "tags": [
-      "lavasioth",
-      "fire"
-    ],
-    "rarity": 7,
-    "itemType": "Weapon",
-    "weaponType": "GreatSword",
-    "baseAttack": 864,
-    "sharpnessLevels": [
-      {
-        "color": "Blue",
-        "value": 40
-      },
-      {
-        "color": "Blue",
-        "value": 50
-      },
-      {
-        "color": "Blue",
-        "value": 60
-      },
-      {
-        "color": "White",
-        "value": 10
-      },
-      {
-        "color": "White",
-        "value": 20
-      },
-      {
-        "color": "White",
-        "value": 30
-      }
-    ],
-    "baseAffinityPercent": 0,
-    "element": "Fire",
-    "elementBaseAttack": 330,
-    "slots": [
-      {
-        "level": 2
-      },
-      {
-        "level": 2
-      }
-    ],
-    "id": 7
-  },
-  {
-    "name": "Datura Blaze II",
-    "tags": [
-      "pukei-pukei",
-      "poison"
-    ],
-    "rarity": 7,
-    "itemType": "Weapon",
-    "weaponType": "GreatSword",
-    "baseAttack": 816,
-    "sharpnessLevels": [
-      {
-        "color": "Blue",
-        "value": 30
-      },
-      {
-        "color": "Blue",
-        "value": 40
-      },
-      {
-        "color": "Blue",
-        "value": 50
-      },
-      {
-        "color": "Blue",
-        "value": 60
-      },
-      {
-        "color": "Blue",
-        "value": 70
-      },
-      {
-        "color": "Blue",
-        "value": 80
-      }
-    ],
-    "baseAffinityPercent": 0,
-    "ailment": "Poison",
-    "ailmentBaseAttack": 540,
-    "slots": [
-      {
-        "level": 2
-      },
-      {
-        "level": 1
-      }
-    ],
-    "id": 8
-  },
-  {
-    "name": "Rathalos Glinsword",
-    "tags": [
-      "fire"
-    ],
-    "rarity": 8,
-    "itemType": "Weapon",
-    "weaponType": "GreatSword",
-    "baseAttack": 912,
-    "sharpnessLevels": [
-      {
-        "color": "Blue",
-        "value": 40
-      },
-      {
-        "color": "Blue",
-        "value": 50
-      },
-      {
-        "color": "Blue",
-        "value": 60
-      },
-      {
-        "color": "White",
-        "value": 10
-      },
-      {
-        "color": "White",
-        "value": 20
-      },
-      {
-        "color": "White",
-        "value": 30
-      }
-    ],
-    "baseAffinityPercent": 15,
-    "element": "Fire",
-    "elementBaseAttack": 240,
-    "slots": [
-      {
-        "level": 1
-      }
-    ],
-    "id": 9
-  },
-  {
-    "name": "Giant Jawblade II",
-    "tags": [
-      "bone",
-      "ice",
-      "hidden"
-    ],
-    "rarity": 6,
-    "itemType": "Weapon",
-    "weaponType": "GreatSword",
-    "baseAttack": 912,
-    "sharpnessLevels": [
-      {
-        "color": "Blue",
-        "value": 30
-      },
-      {
-        "color": "Blue",
-        "value": 40
-      },
-      {
-        "color": "Blue",
-        "value": 50
-      },
-      {
-        "color": "Blue",
-        "value": 60
-      },
-      {
-        "color": "Blue",
-        "value": 70
-      },
-      {
-        "color": "Blue",
-        "value": 80
-      }
-    ],
-    "baseAffinityPercent": 15,
-    "element": "Ice",
-    "elementBaseAttack": 300,
-    "elementHidden": true,
-    "baseDefense": 10,
-    "slots": [
-      {
-        "level": 3
-      }
-    ],
-    "id": 10
-  },
-  {
-    "name": "Leviathan's Fury",
-    "tags": [
-      "vaal",
-      "hazak",
-      "dragon"
-    ],
-    "rarity": 8,
-    "itemType": "Weapon",
-    "weaponType": "GreatSword",
-    "baseAttack": 960,
-    "sharpnessLevels": [
-      {
-        "color": "Blue",
-        "value": 40
-      },
-      {
-        "color": "Blue",
-        "value": 50
-      },
-      {
-        "color": "White",
-        "value": 10
-      },
-      {
-        "color": "White",
-        "value": 20
-      },
-      {
-        "color": "White",
-        "value": 30
-      },
-      {
-        "color": "White",
-        "value": 40
-      }
-    ],
-    "baseAffinityPercent": 0,
-    "element": "Dragon",
-    "elementBaseAttack": 300,
-    "elderseal": "Average",
-    "baseDefense": 0,
-    "slots": [
-      {
-        "level": 2
-      }
-    ],
-    "id": 11
-  },
-  {
-    "name": "Gnashing Flammenzahn",
-    "tags": [
-      "anjanath",
-      "fire"
-    ],
-    "rarity": 7,
-    "itemType": "Weapon",
-    "weaponType": "GreatSword",
-    "baseAttack": 1008,
-    "sharpnessLevels": [
-      {
-        "color": "Blue",
-        "value": 20
-      },
-      {
-        "color": "Blue",
-        "value": 30
-      },
-      {
-        "color": "Blue",
-        "value": 40
-      },
-      {
-        "color": "Blue",
-        "value": 50
-      },
-      {
-        "color": "Blue",
-        "value": 60
-      },
-      {
-        "color": "Blue",
-        "value": 70
-      }
-    ],
-    "baseAffinityPercent": -30,
-    "element": "Fire",
-    "elementBaseAttack": 480,
-    "id": 12,
-    "slots": []
-  },
-  {
-    "name": "Water Golum III",
-    "tags": [
-      "water"
-    ],
-    "rarity": 6,
-    "itemType": "Weapon",
-    "weaponType": "GreatSword",
-    "baseAttack": 912,
-    "sharpnessLevels": [
-      {
-        "color": "Blue",
-        "value": 20
-      },
-      {
-        "color": "Blue",
-        "value": 30
-      },
-      {
-        "color": "White",
-        "value": 10
-      },
-      {
-        "color": "White",
-        "value": 20
-      },
-      {
-        "color": "White",
-        "value": 30
-      },
-      {
-        "color": "White",
-        "value": 40
-      }
-    ],
-    "baseAffinityPercent": 0,
-    "element": "Water",
-    "elementBaseAttack": 300,
-    "slots": [
-      {
-        "level": 2
-      }
-    ],
-    "id": 13
-  },
-  {
-    "name": "Barroth Shredder III",
-    "tags": [
-      "barroth",
-      "paralysis",
-      "hidden"
-    ],
-    "rarity": 6,
-    "itemType": "Weapon",
-    "weaponType": "GreatSword",
-    "baseAttack": 960,
-    "sharpnessLevels": [
-      {
-        "color": "Blue",
-        "value": 30
-      },
-      {
-        "color": "Blue",
-        "value": 40
-      },
-      {
-        "color": "Blue",
-        "value": 50
-      },
-      {
-        "color": "Blue",
-        "value": 60
-      },
-      {
-        "color": "Blue",
-        "value": 70
-      },
-      {
-        "color": "Blue",
-        "value": 80
-      }
-    ],
-    "baseAffinityPercent": -20,
-    "ailment": "Paralysis",
-    "ailmentBaseAttack": 390,
-    "ailmentHidden": true,
-    "baseDefense": 15,
-    "slots": [
-      {
-        "level": 2
-      },
-      {
-        "level": 1
-      }
-    ],
-    "id": 14
-  },
-  {
-    "name": "Radobaan Slab III",
-    "tags": [
-      "radobaan",
-      "sleep"
-    ],
-    "rarity": 6,
-    "itemType": "Weapon",
-    "weaponType": "GreatSword",
-    "baseAttack": 912,
-    "sharpnessLevels": [
-      {
-        "color": "Blue",
-        "value": 30
-      },
-      {
-        "color": "Blue",
-        "value": 40
-      },
-      {
-        "color": "Blue",
-        "value": 50
-      },
-      {
-        "color": "Blue",
-        "value": 60
-      },
-      {
-        "color": "Blue",
-        "value": 70
-      },
-      {
-        "color": "Blue",
-        "value": 80
-      }
-    ],
-    "baseAffinityPercent": 0,
-    "ailment": "Sleep",
-    "ailmentBaseAttack": 270,
-    "baseDefense": 20,
-    "id": 15,
-    "slots": []
-  },
-  {
-    "name": "Dragonbone Cleaver III",
-    "tags": [
-      "dragon"
-    ],
-    "rarity": 6,
-    "itemType": "Weapon",
-    "weaponType": "GreatSword",
-    "baseAttack": 768,
-    "sharpnessLevels": [
-      {
-        "color": "Blue",
-        "value": 40
-      },
-      {
-        "color": "Blue",
-        "value": 50
-      },
-      {
-        "color": "Blue",
-        "value": 60
-      },
-      {
-        "color": "Blue",
-        "value": 70
-      },
-      {
-        "color": "White",
-        "value": 10
-      },
-      {
-        "color": "White",
-        "value": 20
-      }
-    ],
-    "baseAffinityPercent": 0,
-    "element": "Dragon",
-    "elementBaseAttack": 420,
-    "elderseal": "Low",
-    "slots": [
-      {
-        "level": 1
-      },
-      {
-        "level": 1
-      }
-    ],
-    "id": 16
-  },
-  {
-    "name": "King Thundersword",
-    "tags": [
-      "kirin",
-      "thunder"
-    ],
-    "rarity": 8,
-    "itemType": "Weapon",
-    "weaponType": "GreatSword",
-    "baseAttack": 768,
-    "sharpnessLevels": [
-      {
-        "color": "Blue",
-        "value": 50
-      },
-      {
-        "color": "Blue",
-        "value": 60
-      },
-      {
-        "color": "Blue",
-        "value": 70
-      },
-      {
-        "color": "Blue",
-        "value": 80
-      },
-      {
-        "color": "Blue",
-        "value": 90
-      },
-      {
-        "color": "Blue",
-        "value": 100
-      }
-    ],
-    "baseAffinityPercent": 0,
-    "element": "Thunder",
-    "elementBaseAttack": 540,
-    "id": 17,
-    "slots": []
-  },
-  {
-    "name": "Magda Potestas II",
-    "tags": [
-      "zorah",
-      "magdaros",
-      "blast"
-    ],
-    "rarity": 7,
-    "itemType": "Weapon",
-    "weaponType": "GreatSword",
-    "baseAttack": 1056,
-    "sharpnessLevels": [
-      {
-        "color": "Green",
-        "value": 70
-      },
-      {
-        "color": "Green",
-        "value": 80
-      },
-      {
-        "color": "Green",
-        "value": 90
-      },
-      {
-        "color": "Blue",
-        "value": 10
-      },
-      {
-        "color": "Blue",
-        "value": 20
-      },
-      {
-        "color": "Blue",
-        "value": 30
-      }
-    ],
-    "baseAffinityPercent": -20,
-    "ailment": "Blast",
-    "ailmentBaseAttack": 420,
-    "baseDefense": 20,
-    "slots": [
-      {
-        "level": 2
-      }
-    ],
-    "id": 18
-  },
-  {
-    "name": "Daora's Decimator",
-    "tags": [
-      "blacksteel",
-      "kushala",
-      "daora",
-      "ice"
-    ],
-    "rarity": 8,
-    "itemType": "Weapon",
-    "weaponType": "GreatSword",
-    "baseAttack": 864,
-    "sharpnessLevels": [
-      {
-        "color": "Blue",
-        "value": 40
-      },
-      {
-        "color": "Blue",
-        "value": 50
-      },
-      {
-        "color": "Blue",
-        "value": 60
-      },
-      {
-        "color": "Blue",
-        "value": 70
-      },
-      {
-        "color": "White",
-        "value": 10
-      },
-      {
-        "color": "White",
-        "value": 20
-      }
-    ],
-    "baseAffinityPercent": 10,
-    "element": "Ice",
-    "elementBaseAttack": 270,
-    "baseDefense": 0,
-    "slots": [
-      {
-        "level": 2
-      }
-    ],
-    "id": 19
-  },
-  {
-    "name": "Xeno Maliq",
-    "tags": [
-      "xeno'jiva",
-      "dragon"
-    ],
-    "rarity": 8,
-    "itemType": "Weapon",
-    "weaponType": "GreatSword",
-    "baseAttack": 816,
-    "sharpnessLevels": [
-      {
-        "color": "White",
-        "value": 10
-      },
-      {
-        "color": "White",
-        "value": 20
-      },
-      {
-        "color": "White",
-        "value": 30
-      },
-      {
-        "color": "White",
-        "value": 40
-      },
-      {
-        "color": "White",
-        "value": 50
-      },
-      {
-        "color": "White",
-        "value": 60
-      }
-    ],
-    "baseAffinityPercent": 15,
-    "element": "Dragon",
-    "elementBaseAttack": 210,
-    "elderseal": "Low",
-    "baseDefense": 0,
-    "slots": [
-      {
-        "level": 3
-      },
-      {
-        "level": 3
-      }
-    ],
-    "id": 20
-  },
-  {
-    "name": "Great Wyvern Jawblade",
-    "tags": [
-      "workshop",
-      "blast",
-      "hidden"
-    ],
-    "rarity": 8,
-    "itemType": "Weapon",
-    "weaponType": "GreatSword",
-    "baseAttack": 960,
-    "sharpnessLevels": [
-      {
-        "color": "Blue",
-        "value": 30
-      },
-      {
-        "color": "Blue",
-        "value": 40
-      },
-      {
-        "color": "Blue",
-        "value": 50
-      },
-      {
-        "color": "Blue",
-        "value": 60
-      },
-      {
-        "color": "Blue",
-        "value": 70
-      },
-      {
-        "color": "Blue",
-        "value": 80
-      }
-    ],
-    "baseAffinityPercent": 0,
-    "ailment": "Blast",
-    "ailmentBaseAttack": 330,
-    "ailmentHidden": true,
-    "baseDefense": 20,
-    "slots": [
-      {
-        "level": 3
-      }
-    ],
-    "id": 21
-  },
-  {
-    "name": "Anguish",
-    "tags": [
-      "deviljho",
-      "dragon"
-    ],
-    "rarity": 7,
-    "itemType": "Weapon",
-    "weaponType": "GreatSword",
-    "baseAttack": 1104,
-    "sharpnessLevels": [
-      {
-        "color": "Blue",
-        "value": 30
-      },
-      {
-        "color": "White",
-        "value": 10
-      },
-      {
-        "color": "White",
-        "value": 20
-      },
-      {
-        "color": "White",
-        "value": 30
-      },
-      {
-        "color": "White",
-        "value": 40
-      },
-      {
-        "color": "White",
-        "value": 50
-      }
-    ],
-    "baseAffinityPercent": -30,
-    "element": "Dragon",
-    "elementBaseAttack": 240,
-    "elderseal": "High",
-    "id": 274,
-    "slots": []
-  },
-  {
-    "name": "Wyvern Ignition \"Impact\"",
-    "tags": [
-      "fire",
-      "hidden"
-    ],
-    "rarity": 7,
-    "itemType": "Weapon",
-    "weaponType": "GreatSword",
-    "baseAttack": 1008,
-    "sharpnessDataNeeded": true,
-    "sharpnessLevels": [
-      {
-        "color": "White",
-        "value": 20
-      }
-    ],
-    "baseAffinityPercent": -15,
-    "element": "Fire",
-    "elementBaseAttack": 510,
-    "elementHidden": true,
-    "slots": [
-      {
-        "level": 1
-      },
-      {
-        "level": 1
-      }
-    ],
-    "id": 289
-  },
-  {
-    "name": "Glutton Gold Fellsword",
-    "tags": [
-      "kulve",
-      "taroth",
-      "water",
-      "hidden"
-    ],
-    "rarity": 6,
-    "itemType": "Weapon",
-    "weaponType": "GreatSword",
-    "baseAttack": 768,
-    "baseDefense": 20,
-    "sharpnessDataNeeded": true,
-    "sharpnessLevels": [
-      {
-        "color": "Blue",
-        "value": 20
-      }
-    ],
-    "baseAffinityPercent": 0,
-    "element": "Water",
-    "elementBaseAttack": 150,
-    "elementHidden": true,
-    "slots": [
-      {
-        "level": 3
-      }
-    ],
-    "id": 290
-  },
-  {
-    "name": "Spew Gold Fellsword",
-    "tags": [
-      "kulve",
-      "taroth",
-      "poison"
-    ],
-    "rarity": 6,
-    "itemType": "Weapon",
-    "weaponType": "GreatSword",
-    "baseAttack": 768,
-    "baseDefense": 20,
-    "sharpnessDataNeeded": true,
-    "sharpnessLevels": [
-      {
-        "color": "Blue",
-        "value": 20
-      }
-    ],
-    "baseAffinityPercent": 0,
-    "ailment": "Poison",
-    "ailmentBaseAttack": 270,
-    "slots": [],
-    "id": 319
-  },
-  {
-    "name": "Tar Gold Fellsword",
-    "tags": [
-      "kulve",
-      "taroth",
-      "sleep"
-    ],
-    "rarity": 6,
-    "itemType": "Weapon",
-    "weaponType": "GreatSword",
-    "baseAttack": 816,
-    "baseDefense": 20,
-    "sharpnessDataNeeded": true,
-    "sharpnessLevels": [
-      {
-        "color": "Blue",
-        "value": 20
-      }
-    ],
-    "baseAffinityPercent": 10,
-    "ailment": "Sleep",
-    "ailmentBaseAttack": 120,
-    "slots": [],
-    "id": 320
-  },
-  {
-    "name": "Magma Gold Fellsword",
-    "tags": [
-      "kulve",
-      "taroth",
-      "blast"
-    ],
-    "rarity": 6,
-    "itemType": "Weapon",
-    "weaponType": "GreatSword",
-    "baseAttack": 768,
-    "baseDefense": 20,
-    "sharpnessDataNeeded": true,
-    "sharpnessLevels": [
-      {
-        "color": "Blue",
-        "value": 20
-      }
-    ],
-    "baseAffinityPercent": -20,
-    "ailment": "Blast",
-    "ailmentBaseAttack": 210,
-    "slots": [],
-    "id": 321
-  },
-  {
-    "name": "Decay Gold Fellsword",
-    "tags": [
-      "kulve",
-      "taroth",
-      "dragon"
-    ],
-    "rarity": 6,
-    "itemType": "Weapon",
-    "weaponType": "GreatSword",
-    "baseAttack": 816,
-    "baseDefense": 20,
-    "sharpnessDataNeeded": true,
-    "sharpnessLevels": [
-      {
-        "color": "Blue",
-        "value": 20
-      }
-    ],
-    "baseAffinityPercent": 10,
-    "element": "Dragon",
-    "elementBaseAttack": 150,
-    "elderseal": "Average",
-    "slots": [],
-    "id": 322
-  },
-  {
-    "name": "Gold Ice Fellsword",
-    "tags": [
-      "kulve",
-      "taroth",
-      "ice",
-      "hidden"
-    ],
-    "rarity": 6,
-    "itemType": "Weapon",
-    "weaponType": "GreatSword",
-    "baseAttack": 768,
-    "baseDefense": 20,
-    "sharpnessDataNeeded": true,
-    "sharpnessLevels": [
-      {
-        "color": "Blue",
-        "value": 20
-      }
-    ],
-    "baseAffinityPercent": 10,
-    "element": "Ice",
-    "elementBaseAttack": 240,
-    "elementHidden": true,
-    "slots": [],
-    "id": 323
-  },
-  {
-    "name": "Taroth Blaze \"Ice\"",
-    "tags": [
-      "kulve",
-      "taroth",
-      "ice",
-      "hidden"
-    ],
-    "rarity": 8,
-    "itemType": "Weapon",
-    "weaponType": "GreatSword",
-    "baseAttack": 912,
-    "baseDefense": 20,
-    "sharpnessDataNeeded": true,
-    "sharpnessLevels": [
-      {
-        "color": "Blue",
-        "value": 20
-      }
-    ],
-    "baseAffinityPercent": 0,
-    "element": "Ice",
-    "elementBaseAttack": 510,
-    "elementHidden": true,
-    "slots": [
-      {
-        "level": 3
-      }
-    ],
-    "id": 299
-  },
-  {
-    "name": "Taroth Blaze \"Glutton\"",
-    "tags": [
-      "kulve",
-      "taroth",
-      "water",
-      "hidden"
-    ],
-    "rarity": 7,
-    "itemType": "Weapon",
-    "weaponType": "GreatSword",
-    "baseAttack": 960,
-    "baseDefense": 20,
-    "sharpnessDataNeeded": true,
-    "sharpnessLevels": [
-      {
-        "color": "Blue",
-        "value": 20
-      }
-    ],
-    "baseAffinityPercent": 0,
-    "element": "Water",
-    "elementBaseAttack": 300,
-    "elementHidden": true,
-    "slots": [
-      {
-        "level": 3
-      }
-    ],
-    "id": 324
-  },
-  {
-    "name": "Taroth Blaze \"Numb\"",
-    "tags": [
-      "kulve",
-      "taroth",
-      "paralysis"
-    ],
-    "rarity": 7,
-    "itemType": "Weapon",
-    "weaponType": "GreatSword",
-    "baseAttack": 768,
-    "baseDefense": 20,
-    "sharpnessDataNeeded": true,
-    "sharpnessLevels": [
-      {
-        "color": "Blue",
-        "value": 20
-      }
-    ],
-    "baseAffinityPercent": 30,
-    "element": "Paralysis",
-    "elementBaseAttack": 450,
-    "slots": [],
-    "id": 325
-  },
-  {
-    "name": "Taroth Blaze \"Erupter\"",
-    "tags": [
-      "kulve",
-      "taroth",
-      "fire"
-    ],
-    "rarity": 7,
-    "itemType": "Weapon",
-    "weaponType": "GreatSword",
-    "baseAttack": 912,
-    "baseDefense": 20,
-    "sharpnessDataNeeded": true,
-    "sharpnessLevels": [
-      {
-        "color": "Blue",
-        "value": 20
-      }
-    ],
-    "baseAffinityPercent": 0,
-    "element": "Fire",
-    "elementBaseAttack": 330,
-    "slots": [],
-    "id": 326
-  },
-  {
-    "name": "Taroth Blaze \"Magma\"",
-    "tags": [
-      "kulve",
-      "taroth",
-      "blast"
-    ],
-    "rarity": 7,
-    "itemType": "Weapon",
-    "weaponType": "GreatSword",
-    "baseAttack": 1008,
-    "baseDefense": 30,
-    "sharpnessDataNeeded": true,
-    "sharpnessLevels": [
-      {
-        "color": "Blue",
-        "value": 20
-      }
-    ],
-    "baseAffinityPercent": -20,
-    "ailment": "Blast",
-    "ailmentBaseAttack": 420,
-    "slots": [],
-    "id": 327
-  },
-  {
-    "name": "Taroth Blaze \"Water\"",
-    "tags": [
-      "kulve",
-      "taroth",
-      "water",
-      "hidden"
-    ],
-    "rarity": 8,
-    "itemType": "Weapon",
-    "weaponType": "GreatSword",
-    "baseAttack": 912,
-    "baseDefense": 20,
-    "sharpnessDataNeeded": true,
-    "sharpnessLevels": [
-      {
-        "color": "White",
-        "value": 20
-      }
-    ],
-    "baseAffinityPercent": 0,
-    "element": "Water",
-    "elementBaseAttack": 540,
-    "elementHidden": true,
-    "slots": [
-      {
-        "level": 3
-      }
-    ],
-    "id": 328
-  },
-  {
-    "name": "Taroth Blaze \"Sleep\"",
-    "tags": [
-      "kulve",
-      "taroth",
-      "sleep",
-      "hidden"
-    ],
-    "rarity": 8,
-    "itemType": "Weapon",
-    "weaponType": "GreatSword",
-    "baseAttack": 912,
-    "baseDefense": 20,
-    "sharpnessDataNeeded": true,
-    "sharpnessLevels": [
-      {
-        "color": "Blue",
-        "value": 20
-      }
-    ],
-    "baseAffinityPercent": 0,
-    "ailment": "Sleep",
-    "ailmentBaseAttack": 450,
-    "ailmentHidden": true,
-    "slots": [
-      {
-        "level": 3
-      }
-    ],
-    "id": 329
-  }
+	{
+		"name": "Chrome Razor II",
+		"tags": [
+			"ore",
+			"poison",
+			"hidden"
+		],
+		"rarity": 6,
+		"itemType": "Weapon",
+		"weaponType": "GreatSword",
+		"baseAttack": 864,
+		"sharpnessLevels": [
+			{
+				"color": "Blue",
+				"value": 60
+			},
+			{
+				"color": "Blue",
+				"value": 70
+			},
+			{
+				"color": "Blue",
+				"value": 80
+			},
+			{
+				"color": "Blue",
+				"value": 90
+			},
+			{
+				"color": "White",
+				"value": 10
+			},
+			{
+				"color": "White",
+				"value": 20
+			}
+		],
+		"baseAffinityPercent": 0,
+		"ailment": "Poison",
+		"ailmentBaseAttack": 420,
+		"ailmentHidden": true,
+		"slots": [
+			{
+				"level": 1
+			},
+			{
+				"level": 1
+			}
+		],
+		"id": 1
+	},
+	{
+		"name": "Purgation's Atrocity",
+		"tags": [
+			"nergigante",
+			"dragon"
+		],
+		"rarity": 8,
+		"itemType": "Weapon",
+		"weaponType": "GreatSword",
+		"baseAttack": 1008,
+		"sharpnessLevels": [
+			{
+				"color": "Blue",
+				"value": 80
+			}
+		],
+		"baseAffinityPercent": 0,
+		"element": "Dragon",
+		"elementBaseAttack": 150,
+		"elementAttackIncreaseCapOverride": 0.33,
+		"elderseal": "High",
+		"slots": [
+			{
+				"level": 1
+			}
+		],
+		"id": 2
+	},
+	{
+		"name": "Lightning Punisher III",
+		"tags": [
+			"tzitzi-ya-ku",
+			"thunder"
+		],
+		"rarity": 6,
+		"itemType": "Weapon",
+		"weaponType": "GreatSword",
+		"baseAttack": 912,
+		"sharpnessLevels": [
+			{
+				"color": "Blue",
+				"value": 40
+			},
+			{
+				"color": "Blue",
+				"value": 50
+			},
+			{
+				"color": "Blue",
+				"value": 60
+			},
+			{
+				"color": "Blue",
+				"value": 70
+			},
+			{
+				"color": "Blue",
+				"value": 80
+			},
+			{
+				"color": "Blue",
+				"value": 90
+			}
+		],
+		"baseAffinityPercent": 0,
+		"element": "Thunder",
+		"elementBaseAttack": 240,
+		"slots": [
+			{
+				"level": 2
+			}
+		],
+		"id": 3
+	},
+	{
+		"name": "Frost Blaze II",
+		"tags": [
+			"legiana",
+			"ice"
+		],
+		"rarity": 6,
+		"itemType": "Weapon",
+		"weaponType": "GreatSword",
+		"baseAttack": 768,
+		"sharpnessLevels": [
+			{
+				"color": "Blue",
+				"value": 50
+			},
+			{
+				"color": "Blue",
+				"value": 60
+			},
+			{
+				"color": "Blue",
+				"value": 70
+			},
+			{
+				"color": "Blue",
+				"value": 80
+			},
+			{
+				"color": "White",
+				"value": 10
+			},
+			{
+				"color": "White",
+				"value": 20
+			}
+		],
+		"baseAffinityPercent": 0,
+		"element": "Ice",
+		"elementBaseAttack": 390,
+		"slots": [
+			{
+				"level": 3
+			}
+		],
+		"id": 4
+	},
+	{
+		"name": "Jagras Hacker III",
+		"tags": [
+			"great",
+			"jagras",
+			"water",
+			"hidden"
+		],
+		"rarity": 6,
+		"itemType": "Weapon",
+		"weaponType": "GreatSword",
+		"baseAttack": 912,
+		"sharpnessLevels": [
+			{
+				"color": "Blue",
+				"value": 30
+			},
+			{
+				"color": "Blue",
+				"value": 40
+			},
+			{
+				"color": "Blue",
+				"value": 50
+			},
+			{
+				"color": "Blue",
+				"value": 60
+			},
+			{
+				"color": "Blue",
+				"value": 70
+			},
+			{
+				"color": "Blue",
+				"value": 80
+			}
+		],
+		"baseAffinityPercent": 0,
+		"element": "Water",
+		"elementBaseAttack": 300,
+		"elementHidden": true,
+		"slots": [
+			{
+				"level": 3
+			},
+			{
+				"level": 3
+			}
+		],
+		"id": 5
+	},
+	{
+		"name": "Malady's Kiss III",
+		"tags": [
+			"great",
+			"girros",
+			"paralysis"
+		],
+		"rarity": 6,
+		"itemType": "Weapon",
+		"weaponType": "GreatSword",
+		"baseAttack": 768,
+		"sharpnessLevels": [
+			{
+				"color": "Blue",
+				"value": 50
+			},
+			{
+				"color": "Blue",
+				"value": 60
+			},
+			{
+				"color": "Blue",
+				"value": 70
+			},
+			{
+				"color": "White",
+				"value": 10
+			},
+			{
+				"color": "White",
+				"value": 20
+			},
+			{
+				"color": "White",
+				"value": 30
+			}
+		],
+		"baseAffinityPercent": 20,
+		"ailment": "Paralysis",
+		"ailmentBaseAttack": 450,
+		"id": 6,
+		"slots": []
+	},
+	{
+		"name": "Lava Blaze II",
+		"tags": [
+			"lavasioth",
+			"fire"
+		],
+		"rarity": 7,
+		"itemType": "Weapon",
+		"weaponType": "GreatSword",
+		"baseAttack": 864,
+		"sharpnessLevels": [
+			{
+				"color": "Blue",
+				"value": 40
+			},
+			{
+				"color": "Blue",
+				"value": 50
+			},
+			{
+				"color": "Blue",
+				"value": 60
+			},
+			{
+				"color": "White",
+				"value": 10
+			},
+			{
+				"color": "White",
+				"value": 20
+			},
+			{
+				"color": "White",
+				"value": 30
+			}
+		],
+		"baseAffinityPercent": 0,
+		"element": "Fire",
+		"elementBaseAttack": 330,
+		"slots": [
+			{
+				"level": 2
+			},
+			{
+				"level": 2
+			}
+		],
+		"id": 7
+	},
+	{
+		"name": "Datura Blaze II",
+		"tags": [
+			"pukei-pukei",
+			"poison"
+		],
+		"rarity": 7,
+		"itemType": "Weapon",
+		"weaponType": "GreatSword",
+		"baseAttack": 816,
+		"sharpnessLevels": [
+			{
+				"color": "Blue",
+				"value": 30
+			},
+			{
+				"color": "Blue",
+				"value": 40
+			},
+			{
+				"color": "Blue",
+				"value": 50
+			},
+			{
+				"color": "Blue",
+				"value": 60
+			},
+			{
+				"color": "Blue",
+				"value": 70
+			},
+			{
+				"color": "Blue",
+				"value": 80
+			}
+		],
+		"baseAffinityPercent": 0,
+		"ailment": "Poison",
+		"ailmentBaseAttack": 540,
+		"slots": [
+			{
+				"level": 2
+			},
+			{
+				"level": 1
+			}
+		],
+		"id": 8
+	},
+	{
+		"name": "Rathalos Glinsword",
+		"tags": [
+			"fire"
+		],
+		"rarity": 8,
+		"itemType": "Weapon",
+		"weaponType": "GreatSword",
+		"baseAttack": 912,
+		"sharpnessLevels": [
+			{
+				"color": "Blue",
+				"value": 40
+			},
+			{
+				"color": "Blue",
+				"value": 50
+			},
+			{
+				"color": "Blue",
+				"value": 60
+			},
+			{
+				"color": "White",
+				"value": 10
+			},
+			{
+				"color": "White",
+				"value": 20
+			},
+			{
+				"color": "White",
+				"value": 30
+			}
+		],
+		"baseAffinityPercent": 15,
+		"element": "Fire",
+		"elementBaseAttack": 240,
+		"slots": [
+			{
+				"level": 1
+			}
+		],
+		"id": 9
+	},
+	{
+		"name": "Giant Jawblade II",
+		"tags": [
+			"bone",
+			"ice",
+			"hidden"
+		],
+		"rarity": 6,
+		"itemType": "Weapon",
+		"weaponType": "GreatSword",
+		"baseAttack": 912,
+		"sharpnessLevels": [
+			{
+				"color": "Blue",
+				"value": 30
+			},
+			{
+				"color": "Blue",
+				"value": 40
+			},
+			{
+				"color": "Blue",
+				"value": 50
+			},
+			{
+				"color": "Blue",
+				"value": 60
+			},
+			{
+				"color": "Blue",
+				"value": 70
+			},
+			{
+				"color": "Blue",
+				"value": 80
+			}
+		],
+		"baseAffinityPercent": 15,
+		"element": "Ice",
+		"elementBaseAttack": 300,
+		"elementHidden": true,
+		"baseDefense": 10,
+		"slots": [
+			{
+				"level": 3
+			}
+		],
+		"id": 10
+	},
+	{
+		"name": "Leviathan's Fury",
+		"tags": [
+			"vaal",
+			"hazak",
+			"dragon"
+		],
+		"rarity": 8,
+		"itemType": "Weapon",
+		"weaponType": "GreatSword",
+		"baseAttack": 960,
+		"sharpnessLevels": [
+			{
+				"color": "Blue",
+				"value": 40
+			},
+			{
+				"color": "Blue",
+				"value": 50
+			},
+			{
+				"color": "White",
+				"value": 10
+			},
+			{
+				"color": "White",
+				"value": 20
+			},
+			{
+				"color": "White",
+				"value": 30
+			},
+			{
+				"color": "White",
+				"value": 40
+			}
+		],
+		"baseAffinityPercent": 0,
+		"element": "Dragon",
+		"elementBaseAttack": 300,
+		"elderseal": "Average",
+		"baseDefense": 0,
+		"slots": [
+			{
+				"level": 2
+			}
+		],
+		"id": 11
+	},
+	{
+		"name": "Gnashing Flammenzahn",
+		"tags": [
+			"anjanath",
+			"fire"
+		],
+		"rarity": 7,
+		"itemType": "Weapon",
+		"weaponType": "GreatSword",
+		"baseAttack": 1008,
+		"sharpnessLevels": [
+			{
+				"color": "Blue",
+				"value": 20
+			},
+			{
+				"color": "Blue",
+				"value": 30
+			},
+			{
+				"color": "Blue",
+				"value": 40
+			},
+			{
+				"color": "Blue",
+				"value": 50
+			},
+			{
+				"color": "Blue",
+				"value": 60
+			},
+			{
+				"color": "Blue",
+				"value": 70
+			}
+		],
+		"baseAffinityPercent": -30,
+		"element": "Fire",
+		"elementBaseAttack": 480,
+		"id": 12,
+		"slots": []
+	},
+	{
+		"name": "Water Golum III",
+		"tags": [
+			"water"
+		],
+		"rarity": 6,
+		"itemType": "Weapon",
+		"weaponType": "GreatSword",
+		"baseAttack": 912,
+		"sharpnessLevels": [
+			{
+				"color": "Blue",
+				"value": 20
+			},
+			{
+				"color": "Blue",
+				"value": 30
+			},
+			{
+				"color": "White",
+				"value": 10
+			},
+			{
+				"color": "White",
+				"value": 20
+			},
+			{
+				"color": "White",
+				"value": 30
+			},
+			{
+				"color": "White",
+				"value": 40
+			}
+		],
+		"baseAffinityPercent": 0,
+		"element": "Water",
+		"elementBaseAttack": 300,
+		"slots": [
+			{
+				"level": 2
+			}
+		],
+		"id": 13
+	},
+	{
+		"name": "Barroth Shredder III",
+		"tags": [
+			"barroth",
+			"paralysis",
+			"hidden"
+		],
+		"rarity": 6,
+		"itemType": "Weapon",
+		"weaponType": "GreatSword",
+		"baseAttack": 960,
+		"sharpnessLevels": [
+			{
+				"color": "Blue",
+				"value": 30
+			},
+			{
+				"color": "Blue",
+				"value": 40
+			},
+			{
+				"color": "Blue",
+				"value": 50
+			},
+			{
+				"color": "Blue",
+				"value": 60
+			},
+			{
+				"color": "Blue",
+				"value": 70
+			},
+			{
+				"color": "Blue",
+				"value": 80
+			}
+		],
+		"baseAffinityPercent": -20,
+		"ailment": "Paralysis",
+		"ailmentBaseAttack": 390,
+		"ailmentHidden": true,
+		"baseDefense": 15,
+		"slots": [
+			{
+				"level": 2
+			},
+			{
+				"level": 1
+			}
+		],
+		"id": 14
+	},
+	{
+		"name": "Radobaan Slab III",
+		"tags": [
+			"radobaan",
+			"sleep"
+		],
+		"rarity": 6,
+		"itemType": "Weapon",
+		"weaponType": "GreatSword",
+		"baseAttack": 912,
+		"sharpnessLevels": [
+			{
+				"color": "Blue",
+				"value": 30
+			},
+			{
+				"color": "Blue",
+				"value": 40
+			},
+			{
+				"color": "Blue",
+				"value": 50
+			},
+			{
+				"color": "Blue",
+				"value": 60
+			},
+			{
+				"color": "Blue",
+				"value": 70
+			},
+			{
+				"color": "Blue",
+				"value": 80
+			}
+		],
+		"baseAffinityPercent": 0,
+		"ailment": "Sleep",
+		"ailmentBaseAttack": 270,
+		"baseDefense": 20,
+		"id": 15,
+		"slots": []
+	},
+	{
+		"name": "Dragonbone Cleaver III",
+		"tags": [
+			"dragon"
+		],
+		"rarity": 6,
+		"itemType": "Weapon",
+		"weaponType": "GreatSword",
+		"baseAttack": 768,
+		"sharpnessLevels": [
+			{
+				"color": "Blue",
+				"value": 40
+			},
+			{
+				"color": "Blue",
+				"value": 50
+			},
+			{
+				"color": "Blue",
+				"value": 60
+			},
+			{
+				"color": "Blue",
+				"value": 70
+			},
+			{
+				"color": "White",
+				"value": 10
+			},
+			{
+				"color": "White",
+				"value": 20
+			}
+		],
+		"baseAffinityPercent": 0,
+		"element": "Dragon",
+		"elementBaseAttack": 420,
+		"elderseal": "Low",
+		"slots": [
+			{
+				"level": 1
+			},
+			{
+				"level": 1
+			}
+		],
+		"id": 16
+	},
+	{
+		"name": "King Thundersword",
+		"tags": [
+			"kirin",
+			"thunder"
+		],
+		"rarity": 8,
+		"itemType": "Weapon",
+		"weaponType": "GreatSword",
+		"baseAttack": 768,
+		"sharpnessLevels": [
+			{
+				"color": "Blue",
+				"value": 50
+			},
+			{
+				"color": "Blue",
+				"value": 60
+			},
+			{
+				"color": "Blue",
+				"value": 70
+			},
+			{
+				"color": "Blue",
+				"value": 80
+			},
+			{
+				"color": "Blue",
+				"value": 90
+			},
+			{
+				"color": "Blue",
+				"value": 100
+			}
+		],
+		"baseAffinityPercent": 0,
+		"element": "Thunder",
+		"elementBaseAttack": 540,
+		"id": 17,
+		"slots": []
+	},
+	{
+		"name": "Magda Potestas II",
+		"tags": [
+			"zorah",
+			"magdaros",
+			"blast"
+		],
+		"rarity": 7,
+		"itemType": "Weapon",
+		"weaponType": "GreatSword",
+		"baseAttack": 1056,
+		"sharpnessLevels": [
+			{
+				"color": "Green",
+				"value": 70
+			},
+			{
+				"color": "Green",
+				"value": 80
+			},
+			{
+				"color": "Green",
+				"value": 90
+			},
+			{
+				"color": "Blue",
+				"value": 10
+			},
+			{
+				"color": "Blue",
+				"value": 20
+			},
+			{
+				"color": "Blue",
+				"value": 30
+			}
+		],
+		"baseAffinityPercent": -20,
+		"ailment": "Blast",
+		"ailmentBaseAttack": 420,
+		"baseDefense": 20,
+		"slots": [
+			{
+				"level": 2
+			}
+		],
+		"id": 18
+	},
+	{
+		"name": "Daora's Decimator",
+		"tags": [
+			"blacksteel",
+			"kushala",
+			"daora",
+			"ice"
+		],
+		"rarity": 8,
+		"itemType": "Weapon",
+		"weaponType": "GreatSword",
+		"baseAttack": 864,
+		"sharpnessLevels": [
+			{
+				"color": "Blue",
+				"value": 40
+			},
+			{
+				"color": "Blue",
+				"value": 50
+			},
+			{
+				"color": "Blue",
+				"value": 60
+			},
+			{
+				"color": "Blue",
+				"value": 70
+			},
+			{
+				"color": "White",
+				"value": 10
+			},
+			{
+				"color": "White",
+				"value": 20
+			}
+		],
+		"baseAffinityPercent": 10,
+		"element": "Ice",
+		"elementBaseAttack": 270,
+		"baseDefense": 0,
+		"slots": [
+			{
+				"level": 2
+			}
+		],
+		"id": 19
+	},
+	{
+		"name": "Xeno Maliq",
+		"tags": [
+			"xeno'jiva",
+			"dragon"
+		],
+		"rarity": 8,
+		"itemType": "Weapon",
+		"weaponType": "GreatSword",
+		"baseAttack": 816,
+		"sharpnessLevels": [
+			{
+				"color": "White",
+				"value": 10
+			},
+			{
+				"color": "White",
+				"value": 20
+			},
+			{
+				"color": "White",
+				"value": 30
+			},
+			{
+				"color": "White",
+				"value": 40
+			},
+			{
+				"color": "White",
+				"value": 50
+			},
+			{
+				"color": "White",
+				"value": 60
+			}
+		],
+		"baseAffinityPercent": 15,
+		"element": "Dragon",
+		"elementBaseAttack": 210,
+		"elderseal": "Low",
+		"baseDefense": 0,
+		"slots": [
+			{
+				"level": 3
+			},
+			{
+				"level": 3
+			}
+		],
+		"id": 20
+	},
+	{
+		"name": "Great Wyvern Jawblade",
+		"tags": [
+			"workshop",
+			"blast",
+			"hidden"
+		],
+		"rarity": 8,
+		"itemType": "Weapon",
+		"weaponType": "GreatSword",
+		"baseAttack": 960,
+		"sharpnessLevels": [
+			{
+				"color": "Blue",
+				"value": 30
+			},
+			{
+				"color": "Blue",
+				"value": 40
+			},
+			{
+				"color": "Blue",
+				"value": 50
+			},
+			{
+				"color": "Blue",
+				"value": 60
+			},
+			{
+				"color": "Blue",
+				"value": 70
+			},
+			{
+				"color": "Blue",
+				"value": 80
+			}
+		],
+		"baseAffinityPercent": 0,
+		"ailment": "Blast",
+		"ailmentBaseAttack": 330,
+		"ailmentHidden": true,
+		"baseDefense": 20,
+		"slots": [
+			{
+				"level": 3
+			}
+		],
+		"id": 21
+	},
+	{
+		"name": "Anguish",
+		"tags": [
+			"deviljho",
+			"dragon"
+		],
+		"rarity": 7,
+		"itemType": "Weapon",
+		"weaponType": "GreatSword",
+		"baseAttack": 1104,
+		"sharpnessLevels": [
+			{
+				"color": "Blue",
+				"value": 30
+			},
+			{
+				"color": "White",
+				"value": 10
+			},
+			{
+				"color": "White",
+				"value": 20
+			},
+			{
+				"color": "White",
+				"value": 30
+			},
+			{
+				"color": "White",
+				"value": 40
+			},
+			{
+				"color": "White",
+				"value": 50
+			}
+		],
+		"baseAffinityPercent": -30,
+		"element": "Dragon",
+		"elementBaseAttack": 240,
+		"elderseal": "High",
+		"id": 274,
+		"slots": []
+	},
+	{
+		"name": "Wyvern Ignition \"Impact\"",
+		"tags": [
+			"fire",
+			"hidden"
+		],
+		"rarity": 7,
+		"itemType": "Weapon",
+		"weaponType": "GreatSword",
+		"baseAttack": 1008,
+		"sharpnessDataNeeded": true,
+		"sharpnessLevels": [
+			{
+				"color": "White",
+				"value": 20
+			}
+		],
+		"baseAffinityPercent": -15,
+		"element": "Fire",
+		"elementBaseAttack": 510,
+		"elementHidden": true,
+		"slots": [
+			{
+				"level": 1
+			},
+			{
+				"level": 1
+			}
+		],
+		"id": 289
+	},
+	{
+		"name": "Glutton Gold Fellsword",
+		"tags": [
+			"kulve",
+			"taroth",
+			"water",
+			"hidden"
+		],
+		"rarity": 6,
+		"itemType": "Weapon",
+		"weaponType": "GreatSword",
+		"baseAttack": 768,
+		"baseDefense": 20,
+		"sharpnessDataNeeded": true,
+		"sharpnessLevels": [
+			{
+				"color": "Blue",
+				"value": 20
+			}
+		],
+		"baseAffinityPercent": 0,
+		"element": "Water",
+		"elementBaseAttack": 150,
+		"elementHidden": true,
+		"slots": [
+			{
+				"level": 3
+			}
+		],
+		"id": 290
+	},
+	{
+		"name": "Spew Gold Fellsword",
+		"tags": [
+			"kulve",
+			"taroth",
+			"poison"
+		],
+		"rarity": 6,
+		"itemType": "Weapon",
+		"weaponType": "GreatSword",
+		"baseAttack": 768,
+		"baseDefense": 20,
+		"sharpnessDataNeeded": true,
+		"sharpnessLevels": [
+			{
+				"color": "Blue",
+				"value": 20
+			}
+		],
+		"baseAffinityPercent": 0,
+		"ailment": "Poison",
+		"ailmentBaseAttack": 270,
+		"slots": [],
+		"id": 319
+	},
+	{
+		"name": "Tar Gold Fellsword",
+		"tags": [
+			"kulve",
+			"taroth",
+			"sleep"
+		],
+		"rarity": 6,
+		"itemType": "Weapon",
+		"weaponType": "GreatSword",
+		"baseAttack": 816,
+		"baseDefense": 20,
+		"sharpnessDataNeeded": true,
+		"sharpnessLevels": [
+			{
+				"color": "Blue",
+				"value": 20
+			}
+		],
+		"baseAffinityPercent": 10,
+		"ailment": "Sleep",
+		"ailmentBaseAttack": 120,
+		"slots": [],
+		"id": 320
+	},
+	{
+		"name": "Magma Gold Fellsword",
+		"tags": [
+			"kulve",
+			"taroth",
+			"blast"
+		],
+		"rarity": 6,
+		"itemType": "Weapon",
+		"weaponType": "GreatSword",
+		"baseAttack": 768,
+		"baseDefense": 20,
+		"sharpnessDataNeeded": true,
+		"sharpnessLevels": [
+			{
+				"color": "Blue",
+				"value": 20
+			}
+		],
+		"baseAffinityPercent": -20,
+		"ailment": "Blast",
+		"ailmentBaseAttack": 210,
+		"slots": [],
+		"id": 321
+	},
+	{
+		"name": "Decay Gold Fellsword",
+		"tags": [
+			"kulve",
+			"taroth",
+			"dragon"
+		],
+		"rarity": 6,
+		"itemType": "Weapon",
+		"weaponType": "GreatSword",
+		"baseAttack": 816,
+		"baseDefense": 20,
+		"sharpnessDataNeeded": true,
+		"sharpnessLevels": [
+			{
+				"color": "Blue",
+				"value": 20
+			}
+		],
+		"baseAffinityPercent": 10,
+		"element": "Dragon",
+		"elementBaseAttack": 150,
+		"elderseal": "Average",
+		"slots": [],
+		"id": 322
+	},
+	{
+		"name": "Gold Ice Fellsword",
+		"tags": [
+			"kulve",
+			"taroth",
+			"ice",
+			"hidden"
+		],
+		"rarity": 6,
+		"itemType": "Weapon",
+		"weaponType": "GreatSword",
+		"baseAttack": 768,
+		"baseDefense": 20,
+		"sharpnessDataNeeded": true,
+		"sharpnessLevels": [
+			{
+				"color": "Blue",
+				"value": 20
+			}
+		],
+		"baseAffinityPercent": 10,
+		"element": "Ice",
+		"elementBaseAttack": 240,
+		"elementHidden": true,
+		"slots": [],
+		"id": 323
+	},
+	{
+		"name": "Taroth Blaze \"Glutton\"",
+		"tags": [
+			"kulve",
+			"taroth",
+			"water",
+			"hidden"
+		],
+		"rarity": 7,
+		"itemType": "Weapon",
+		"weaponType": "GreatSword",
+		"baseAttack": 960,
+		"baseDefense": 20,
+		"sharpnessDataNeeded": true,
+		"sharpnessLevels": [
+			{
+				"color": "Blue",
+				"value": 20
+			}
+		],
+		"baseAffinityPercent": 0,
+		"element": "Water",
+		"elementBaseAttack": 300,
+		"elementHidden": true,
+		"slots": [
+			{
+				"level": 3
+			}
+		],
+		"id": 324
+	},
+	{
+		"name": "Taroth Blaze \"Numb\"",
+		"tags": [
+			"kulve",
+			"taroth",
+			"paralysis"
+		],
+		"rarity": 7,
+		"itemType": "Weapon",
+		"weaponType": "GreatSword",
+		"baseAttack": 768,
+		"baseDefense": 20,
+		"sharpnessDataNeeded": true,
+		"sharpnessLevels": [
+			{
+				"color": "Blue",
+				"value": 20
+			}
+		],
+		"baseAffinityPercent": 30,
+		"element": "Paralysis",
+		"elementBaseAttack": 450,
+		"slots": [],
+		"id": 325
+	},
+	{
+		"name": "Taroth Blaze \"Erupter\"",
+		"tags": [
+			"kulve",
+			"taroth",
+			"fire"
+		],
+		"rarity": 7,
+		"itemType": "Weapon",
+		"weaponType": "GreatSword",
+		"baseAttack": 912,
+		"baseDefense": 20,
+		"sharpnessDataNeeded": true,
+		"sharpnessLevels": [
+			{
+				"color": "Blue",
+				"value": 20
+			}
+		],
+		"baseAffinityPercent": 0,
+		"element": "Fire",
+		"elementBaseAttack": 330,
+		"slots": [],
+		"id": 326
+	},
+	{
+		"name": "Taroth Blaze \"Magma\"",
+		"tags": [
+			"kulve",
+			"taroth",
+			"blast"
+		],
+		"rarity": 7,
+		"itemType": "Weapon",
+		"weaponType": "GreatSword",
+		"baseAttack": 1008,
+		"baseDefense": 30,
+		"sharpnessDataNeeded": true,
+		"sharpnessLevels": [
+			{
+				"color": "Blue",
+				"value": 20
+			}
+		],
+		"baseAffinityPercent": -20,
+		"ailment": "Blast",
+		"ailmentBaseAttack": 420,
+		"slots": [],
+		"id": 327
+	},
+	{
+		"name": "Taroth Blaze \"Water\"",
+		"tags": [
+			"kulve",
+			"taroth",
+			"water",
+			"hidden"
+		],
+		"rarity": 8,
+		"itemType": "Weapon",
+		"weaponType": "GreatSword",
+		"baseAttack": 912,
+		"baseDefense": 20,
+		"sharpnessDataNeeded": true,
+		"sharpnessLevels": [
+			{
+				"color": "White",
+				"value": 20
+			}
+		],
+		"baseAffinityPercent": 0,
+		"element": "Water",
+		"elementBaseAttack": 540,
+		"elementHidden": true,
+		"slots": [
+			{
+				"level": 3
+			}
+		],
+		"id": 328
+	},
+	{
+		"name": "Taroth Blaze \"Sleep\"",
+		"tags": [
+			"kulve",
+			"taroth",
+			"sleep",
+			"hidden"
+		],
+		"rarity": 8,
+		"itemType": "Weapon",
+		"weaponType": "GreatSword",
+		"baseAttack": 912,
+		"baseDefense": 20,
+		"sharpnessDataNeeded": true,
+		"sharpnessLevels": [
+			{
+				"color": "Blue",
+				"value": 20
+			}
+		],
+		"baseAffinityPercent": 0,
+		"ailment": "Sleep",
+		"ailmentBaseAttack": 450,
+		"ailmentHidden": true,
+		"slots": [
+			{
+				"level": 3
+			}
+		],
+		"id": 329
+	},
+	{
+		"name": "Taroth Blaze \"Ice\"",
+		"tags": [
+			"kulve",
+			"taroth",
+			"ice",
+			"hidden"
+		],
+		"rarity": 8,
+		"itemType": "Weapon",
+		"weaponType": "GreatSword",
+		"baseAttack": 912,
+		"baseDefense": 20,
+		"sharpnessDataNeeded": true,
+		"sharpnessLevels": [
+			{
+				"color": "Blue",
+				"value": 20
+			}
+		],
+		"baseAffinityPercent": 0,
+		"element": "Ice",
+		"elementBaseAttack": 510,
+		"elementHidden": true,
+		"slots": [
+			{
+				"level": 3
+			}
+		],
+		"id": 299
+	}
 ]

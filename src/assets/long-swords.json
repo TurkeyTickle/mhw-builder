@@ -1069,6 +1069,31 @@
     "id": 363
   },
   {
+    "name": "Taroth Sword \"Decay\"",
+    "tags": [
+      "kulve",
+      "taroth",
+      "dragon"
+    ],
+    "rarity": 7,
+    "itemType": "Weapon",
+    "weaponType": "LongSword",
+    "baseAttack": 660,
+    "baseDefense": 40,
+    "sharpnessDataNeeded": true,
+    "sharpnessLevels": [
+      {
+        "color": "Blue",
+        "value": 20
+      }
+    ],
+    "baseAffinityPercent": 10,
+    "element": "Dragon",
+    "elementBaseAttack": 270,
+    "slots": [],
+    "id": 366
+  },
+  {
     "name": "Taroth Sword \"Poison\"",
     "tags": [
       "kulve",
@@ -1131,28 +1156,34 @@
     "id": 365
   },
   {
-    "name": "Taroth Sword \"Decay\"",
+    "name": "Taroth Sword \"Paralysis\"",
     "tags": [
       "kulve",
       "taroth",
-      "dragon"
+      "paralysis",
+      "hidden"
     ],
     "rarity": 8,
     "itemType": "Weapon",
     "weaponType": "LongSword",
-    "baseAttack": 660,
-    "baseDefense": 40,
+    "baseAttack": 561,
+    "baseDefense": 20,
     "sharpnessDataNeeded": true,
     "sharpnessLevels": [
       {
-        "color": "Blue",
+        "color": "White",
         "value": 20
       }
     ],
-    "baseAffinityPercent": 10,
-    "element": "Dragon",
-    "elementBaseAttack": 270,
-    "slots": [],
-    "id": 366
+    "baseAffinityPercent": 0,
+    "ailment": "Paralysis",
+    "ailmentBaseAttack": 330,
+    "ailmentHidden": true,
+    "slots": [
+      {
+        "level": 3
+      }
+    ],
+    "id": 389
   }
 ]

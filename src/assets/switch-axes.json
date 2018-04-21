@@ -1009,5 +1009,95 @@
     "baseDefense": 20,
     "slots": [],
     "id": 384
+  },
+  {
+    "name": "Taroth Axe \"Paralysis\"",
+    "tags": [
+      "kulve",
+      "taroth",
+      "paralysis",
+      "hidden"
+    ],
+    "rarity": 8,
+    "itemType": "Weapon",
+    "weaponType": "SwitchAxe",
+    "baseAttack": 735,
+    "sharpnessLevels": [
+      {
+        "color": "Blue",
+        "value": 20
+      }
+    ],
+    "baseAffinityPercent": 0,
+    "baseDefense": 30,
+    "ailment": "Paralysis",
+    "ailmentBaseAttack": 450,
+    "ailmentHidden": true,
+    "slots": [
+      {
+        "level": 3
+      }
+    ],
+    "id": 402
+  },
+  {
+    "name": "Taroth Axe \"Sleep\"",
+    "tags": [
+      "kulve",
+      "taroth",
+      "sleep",
+      "hidden"
+    ],
+    "rarity": 8,
+    "itemType": "Weapon",
+    "weaponType": "SwitchAxe",
+    "baseAttack": 665,
+    "sharpnessLevels": [
+      {
+        "color": "Blue",
+        "value": 20
+      }
+    ],
+    "baseAffinityPercent": 0,
+    "baseDefense": 20,
+    "ailment": "Sleep",
+    "ailmentBaseAttack": 360,
+    "ailmentHidden": true,
+    "slots": [
+      {
+        "level": 3
+      }
+    ],
+    "id": 403
+  },
+  {
+    "name": "Taroth Axe \"Thunder\"",
+    "tags": [
+      "kulve",
+      "taroth",
+      "thunder",
+      "hidden"
+    ],
+    "rarity": 8,
+    "itemType": "Weapon",
+    "weaponType": "SwitchAxe",
+    "baseAttack": 560,
+    "sharpnessLevels": [
+      {
+        "color": "White",
+        "value": 20
+      }
+    ],
+    "baseAffinityPercent": 10,
+    "baseDefense": 20,
+    "element": "Thunder",
+    "elementBaseAttack": 480,
+    "elementHidden": true,
+    "slots": [
+      {
+        "level": 3
+      }
+    ],
+    "id": 404
   }
 ]

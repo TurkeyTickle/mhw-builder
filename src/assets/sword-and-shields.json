@@ -1077,5 +1077,37 @@
       }
     ],
     "id": 367
+  },
+  {
+    "name": "Taroth Slicer \"Dragon\"",
+    "tags": [
+      "kulve",
+      "taroth",
+      "dragon",
+      "hidden"
+    ],
+    "rarity": 8,
+    "itemType": "Weapon",
+    "weaponType": "SwordAndShield",
+    "baseAttack": 224,
+    "baseDefense": 20,
+    "sharpnessDataNeeded": true,
+    "sharpnessLevels": [
+      {
+        "color": "Blue",
+        "value": 20
+      }
+    ],
+    "baseAffinityPercent": 0,
+    "element": "Dragon",
+    "elementBaseAttack": 450,
+    "elementHidden": true,
+    "elderseal": "Low",
+    "slots": [
+      {
+        "level": 3
+      }
+    ],
+    "id": 390
   }
 ]

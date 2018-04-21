@@ -468,5 +468,24 @@
       }
     ],
     "id": 356
+  },
+  {
+    "name": "Taroth Assault \"Support\"",
+    "tags": [
+      "kulve",
+      "taroth"
+    ],
+    "rarity": 8,
+    "itemType": "Weapon",
+    "weaponType": "HeavyBowgun",
+    "baseAttack": 270,
+    "baseDefense": 20,
+    "baseAffinityPercent": 20,
+    "slots": [
+      {
+        "level": 3
+      }
+    ],
+    "id": 410
   }
 ]

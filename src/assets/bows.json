@@ -448,60 +448,6 @@
     "id": 307
   },
   {
-    "name": "Taroth Arrow \"Blast\"",
-    "tags": [
-      "kulve",
-      "taroth",
-      "hidden",
-      "blast"
-    ],
-    "rarity": 8,
-    "itemType": "Weapon",
-    "weaponType": "Bow",
-    "baseAttack": 240,
-    "baseDefense": 30,
-    "baseAffinityPercent": 0,
-    "element": "Blast",
-    "elementBaseAttack": 360,
-    "elementHidden": true,
-    "slots": [
-      {
-        "level": 3
-      }
-    ],
-    "id": 308
-  },
-  {
-    "name": "Taroth Arrow \"Water\"",
-    "tags": [
-      "kulve",
-      "taroth",
-      "hidden",
-      "water"
-    ],
-    "rarity": 8,
-    "itemType": "Weapon",
-    "weaponType": "Bow",
-    "baseAttack": 228,
-    "baseDefense": 30,
-    "baseAffinityPercent": 0,
-    "element": "water",
-    "elementBaseAttack": 360,
-    "elementHidden": true,
-    "slots": [
-      {
-        "level": 1
-      },
-      {
-        "level": 1
-      },
-      {
-        "level": 1
-      }
-    ],
-    "id": 357
-  },
-  {
     "name": "Taroth Arrow \"Decay\"",
     "tags": [
       "kulve",
@@ -556,5 +502,77 @@
     "ailmentHidden": true,
     "slots": [],
     "id": 360
+  },
+  {
+    "name": "Taroth Arrow \"Blast\"",
+    "tags": [
+      "kulve",
+      "taroth",
+      "hidden",
+      "blast"
+    ],
+    "rarity": 8,
+    "itemType": "Weapon",
+    "weaponType": "Bow",
+    "baseAttack": 240,
+    "baseDefense": 30,
+    "baseAffinityPercent": 0,
+    "element": "Blast",
+    "elementBaseAttack": 360,
+    "elementHidden": true,
+    "slots": [
+      {
+        "level": 3
+      }
+    ],
+    "id": 308
+  },
+  {
+    "name": "Taroth Arrow \"Water\"",
+    "tags": [
+      "kulve",
+      "taroth",
+      "hidden",
+      "water"
+    ],
+    "rarity": 8,
+    "itemType": "Weapon",
+    "weaponType": "Bow",
+    "baseAttack": 228,
+    "baseDefense": 30,
+    "baseAffinityPercent": 0,
+    "element": "Water",
+    "elementBaseAttack": 360,
+    "elementHidden": true,
+    "slots": [
+      {
+        "level": 3
+      }
+    ],
+    "id": 357
+  },
+  {
+    "name": "Taroth Arrow \"Thunder\"",
+    "tags": [
+      "kulve",
+      "taroth",
+      "hidden",
+      "thunder"
+    ],
+    "rarity": 8,
+    "itemType": "Weapon",
+    "weaponType": "Bow",
+    "baseAttack": 228,
+    "baseDefense": 20,
+    "baseAffinityPercent": 10,
+    "element": "Thunder",
+    "elementBaseAttack": 360,
+    "elementHidden": true,
+    "slots": [
+      {
+        "level": 3
+      }
+    ],
+    "id": 411
   }
 ]

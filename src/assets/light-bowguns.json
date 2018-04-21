@@ -391,7 +391,7 @@
     "id": 318
   },
   {
-    "name": "Gold Spread Razer",
+    "name": "Rage Gold Razer",
     "tags": [
       "kulve",
       "taroth"
@@ -400,7 +400,8 @@
     "itemType": "Weapon",
     "weaponType": "LightBowgun",
     "baseAttack": 221,
-    "baseAffinityPercent": 0,
+    "baseDefense": 20,
+    "baseAffinityPercent": -10,
     "slots": [],
     "id": 387
   },
@@ -414,8 +415,66 @@
     "itemType": "Weapon",
     "weaponType": "LightBowgun",
     "baseAttack": 221,
+    "baseDefense": 20,
     "baseAffinityPercent": 20,
     "slots": [],
     "id": 388
+  },
+  {
+    "name": "Taroth Blitz \"Spread\"",
+    "tags": [
+      "kulve",
+      "taroth"
+    ],
+    "rarity": 8,
+    "itemType": "Weapon",
+    "weaponType": "LightBowgun",
+    "baseAttack": 247,
+    "baseDefense": 20,
+    "baseAffinityPercent": 10,
+    "slots": [
+      {
+        "level": 3
+      }
+    ],
+    "id": 407
+  },
+  {
+    "name": "Taroth Blitz \"Pierce\"",
+    "tags": [
+      "kulve",
+      "taroth"
+    ],
+    "rarity": 8,
+    "itemType": "Weapon",
+    "weaponType": "LightBowgun",
+    "baseAttack": 260,
+    "baseDefense": 20,
+    "baseAffinityPercent": 0,
+    "slots": [
+      {
+        "level": 3
+      }
+    ],
+    "id": 408
+  },
+  {
+    "name": "Taroth Blitz \"Shot\"",
+    "tags": [
+      "kulve",
+      "taroth"
+    ],
+    "rarity": 8,
+    "itemType": "Weapon",
+    "weaponType": "LightBowgun",
+    "baseAttack": 273,
+    "baseDefense": 20,
+    "baseAffinityPercent": -10,
+    "slots": [
+      {
+        "level": 3
+      }
+    ],
+    "id": 409
   }
 ]
