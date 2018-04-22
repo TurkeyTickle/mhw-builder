@@ -10,11 +10,11 @@
 	"noImplicitAny": true,
 	"noImplicitReturns": true,
 	"noUnusedParameters": true,
-	"noUnusedLocals": true,
 	"alwaysStrict": true,
 	"forceConsistentCasingInFileNames": true,
 	"pretty": true,
-    "target": "es5",
+	"target": "es5",
+	"allowJs": true,
     "typeRoots": [
       "node_modules/@types"
     ],
