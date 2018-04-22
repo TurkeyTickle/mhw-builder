@@ -13,7 +13,13 @@ id	weaponType	rarity	name	baseAttack	baseAffinityPercent	baseDefense	element	ele
 265	Bow	7	Hazak Velos II	228	0	0	Dragon	270					Average	false		2	vaal;hazak;dragon	
 261	Bow	7	Rathslinger III	216	20	0	Fire	240						false		1	rathalos;fire	
 358	Bow	7	Taroth Arrow "Decay"	228	0	20	Dragon	270						false			kulve;taroth;dragon	
+506	Bow	7	Taroth Arrow "Horn"	264	-20	25	Ice	300	false					false			kulve;taroth;ice;hidden	
 359	Bow	7	Taroth Arrow "King"	216	30	20	Fire	240						false			kulve;taroth;fire	
+504	Bow	7	Taroth Arrow "Queen"	216	10	20	Dragon	330	false				Low	false			kulve;taroth;dragon;hidden	
+505	Bow	7	Taroth Arrow "Rage"	252	0	20	Fire	210						false			kulve;taroth;fire	
+502	Bow	7	Taroth Arrow "Spark"	204	20	20	Thunder	270						false			kulve;taroth;thunder	
+503	Bow	7	Taroth Arrow "Spew"	216	0	20				Blast	240	false		false			kulve;taroth;blast;hidden	
+501	Bow	7	Taroth Arrow "Stream"	180	0	20	Ice	390						false			kulve;taroth;ice	
 360	Bow	7	Taroth Arrow "Thief"	204	30	20				Blast	150	true		false			kulve;taroth;blast;hidden	
 287	Bow	7	Villainous Brace	276	-25	0	Dragon	210					High	false			deviljho;dragon	
 266	Bow	8	Cera Coilbender	264	-30	15	Ice	150	true					false		1;1	diablos;ice;hidden	
@@ -43,9 +49,15 @@ id	weaponType	rarity	name	baseAttack	baseAffinityPercent	baseDefense	element	ele
 182	ChargeBlade	7	Halberion Blade	684	20	0	Fire	240						false	Blue-50;Blue-60;White-10;White-20;White-30;White-40	1	rathalos;fire	
 191	ChargeBlade	7	Hazak Aspida II	684	0	0	Dragon	270					Average	false	Blue-40;Blue-50;White-10;White-20;White-30;White-40	2	vaal;dragon	
 283	ChargeBlade	7	Oppressor's Charge Blade	792	-25	0	Dragon	210					High	false	Blue-40;White-10;White-20;White-30;White-40;White-50		deviljho;dragon	
+498	ChargeBlade	7	Taroth Strongarm "Claw"	684	25	20	Fire	90	false					false	Blue-20		kulve;taroth;fire;hidden	
+496	ChargeBlade	7	Taroth Strongarm "Crusher"	684	0	20				Blast	90			false	Blue-20		kulve;taroth;blast	
+497	ChargeBlade	7	Taroth Strongarm "Decay"	684	10	20	Dragon	120						false	Blue-20		kulve;taroth;dragon	
+499	ChargeBlade	7	Taroth Strongarm "Glutton"	684	0	20				Sleep	90			false	Blue-20		kulve;taroth;sleep	
 345	ChargeBlade	7	Taroth Strongarm "Horn"	828	-30	25	Ice	210	true					true	Blue-40		kulve;taroth;ice;hidden	
 347	ChargeBlade	7	Taroth Strongarm "King"	684	20	20	Fire	120						true	Blue-40		kulve;taroth;fire	
 297	ChargeBlade	7	Taroth Strongarm "Mire"	684	10	20	Water	120						true	Blue-20		kulve;taroth;water	
+495	ChargeBlade	7	Taroth Strongarm "Numb"	576	30	20				Paralysis	150			false	Blue-20		kulve;taroth;paralysis	
+500	ChargeBlade	7	Taroth Strongarm "Spark"	684	15	20	Thunder	90						false	Blue-20		kulve;taroth;thunder	
 195	ChargeBlade	8	Avenging Magda Manus	756	-10	20				Blast	210			false	Green-70;Green-80;Green-90;Blue-10;Blue-20;Blue-30		zorah;magdaros;blast	
 196	ChargeBlade	8	Daora's Thwartoise	648	15	0	Ice	180						false	Blue-40;Blue-50;Blue-60;Blue-70;White-10;White-20	2;1	blacksteel;kushala;ice	
 181	ChargeBlade	8	Devastation's Thorns	756	0	0	Dragon	150					High	false	Blue-90	1	nergigante;dragon	
@@ -73,7 +85,13 @@ id	weaponType	rarity	name	baseAttack	baseAffinityPercent	baseDefense	element	ele
 73	DualBlades	7	Lava Cyclone II	252	0	0	Fire	150						false	Blue-40;Blue-50;White-10;White-20;White-30;White-40	2;2	lavasioth;fire	
 79	DualBlades	7	Magda Ungulae II	308	-20	20				Blast	210			false	Green-80;Green-90;Blue-10;Blue-20;Blue-30;Blue-40	2	zorah;magdaros;blast	
 332	DualBlades	7	Taroth Daggers "Claw"	252	20	20	Fire	90	true					true	Blue-20		kulve;taroth;fire;hidden	
+489	DualBlades	7	Taroth Daggers "Erupter"	266	0	20	Fire	150						false	Blue-20		kulve;taroth;fire	
+490	DualBlades	7	Taroth Daggers "Flash"	266	0	20	Thunder	210	false					false	Blue-20		kulve;taroth;thunder;hidden	
+494	DualBlades	7	Taroth Daggers "Horn"	322	-10	25	Ice	150	false					false	Blue-20		kulve;taroth;ice;hidden	
 334	DualBlades	7	Taroth Daggers "Lurk"	238	0	20				Paralysis	90	true		true	White-20		kulve;taroth;paralysis;hidden	
+492	DualBlades	7	Taroth Daggers "Magma"	280	-20	30				Blast	210			false	Blue-20		kulve;taroth;blast	
+491	DualBlades	7	Taroth Daggers "Mire"	266	10	20	Water	210						false	Blue-20		kulve;taroth;water	
+493	DualBlades	7	Taroth Daggers "Rage"	294	-20	20	Fire	240						false	Blue-20		kulve;taroth;fire	
 335	DualBlades	7	Taroth Daggers "Thief"	238	0	20				Sleep	90			true	Blue-20		kulve;taroth;sleep;hidden	
 277	DualBlades	7	Wrathful Predation	308	-20	0	Dragon	180					High	false	Blue-50;White-10;White-20;White-30;White-40;White-50		deviljho;dragon	
 65	DualBlades	8	Bazelhawk Rookslayer	280	-10	0				Blast	150			false	Blue-30;White-10;White-20;White-30;White-40;White-50	1	bazelgeuse;blast	
@@ -121,6 +139,11 @@ id	weaponType	rarity	name	baseAttack	baseAffinityPercent	baseDefense	element	ele
 329	GreatSword	8	Taroth Blaze "Sleep"	912	0	20				Sleep	450	true		true	Blue-20	3	kulve;taroth;sleep;hidden	
 328	GreatSword	8	Taroth Blaze "Water"	912	0	20	Water	540	true					true	White-20	3	kulve;taroth;water;hidden	
 20	GreatSword	8	Xeno Maliq	816	15	0	Dragon	210					Low	false	White-10;White-20;White-30;White-40;White-50;White-60	3;3	xeno'jiva;dragon	
+487	Greatsword	7	Taroth Blaze "Decay"	960	10	20	Dragon	300						false	Blue-20		kulve;taroth;dragon	
+485	Greatsword	7	Taroth Blaze "King"	912	10	20	Fire	240						false	Blue-20		kulve;taroth;fire	
+488	Greatsword	7	Taroth Blaze "Mud"	1008	-20	25				Paralysis	390	false		false	Blue-20		kulve;taroth;paralysis;hidden	
+484	Greatsword	7	Taroth Blaze "Spew"	864	0	20				Poison	540			false	Blue-20		kulve;taroth;poison	
+486	Greatsword	7	Taroth Blaze "Tar"	912	10	30				Sleep	270			false	Blue-20		kulve;taroth;sleep	
 156	Gunlance	6	Anja Cannon III	483	-20	0	Fire	450						false	Blue-20;Blue-30;Blue-40;Blue-50;Blue-60;Blue-70		anjanath;fire	
 155	Gunlance	6	Barroth Blaster III	460	-10	15				Paralysis	390	true		false	Blue-30;Blue-40;Blue-50;Blue-60;Blue-70;Blue-80		barroth;paralysis;hidden	
 143	Gunlance	6	Chrome Gunlance II	414	0	0				Blast	270	true		false	Blue-60;Blue-70;Blue-80;Blue-90;White-10;White-20	1;1	ore;blast;hidden	
@@ -139,8 +162,17 @@ id	weaponType	rarity	name	baseAttack	baseAffinityPercent	baseDefense	element	ele
 281	Gunlance	7	Insatiable Gunlance	529	-30	0	Dragon	240					High	false	Blue-50;White-10;White-20;White-30;White-40;White-50		deviljho;dragon	
 149	Gunlance	7	Legiana Cannon II	368	0	0	Ice	360						false	White-10;White-20;White-30;White-40;White-50;White-60		legiana;ice	
 145	Gunlance	7	Mythic Kadachi Striker	414	20	0	Thunder	270						false	Blue-30;Blue-40;Blue-50;White-10;White-20;White-30	1	tobi-kadachi;thunder	
+478	Gunlance	7	Taroth Buster "Bomber"	414	0	20				Blast	210			false	Blue-20		kulve;taroth;blast	
+481	Gunlance	7	Taroth Buster "Decay"	460	10	20	Dragon	270						false	Blue-20		kulve;taroth;dragon	
+483	Gunlance	7	Taroth Buster "Glutton"	437	0	20				Sleep	180			false	Blue-20		kulve;taroth;sleep	
+479	Gunlance	7	Taroth Buster "King"	414	20	20	Fire	240						false	Blue-20		kulve;taroth;fire	
+480	Gunlance	7	Taroth Buster "Mire"	437	0	20	Water	360						false	Blue-20		kulve;taroth;water	
 342	Gunlance	7	Taroth Buster "Mud"	391	-10	20				Paralysis	390	true		true	White-20		kulve;taroth;paralysis;hidden	
+476	Gunlance	7	Taroth Buster "Numb"	368	10	20				Paralysis	450			false	Blue-20		kulve;taroth;paralysis	
 343	Gunlance	7	Taroth Buster "Rage"	460	-20	20	Fire	450						true	Blue-20		kulve;taroth;fire	
+482	Gunlance	7	Taroth Buster "Rage"	460	-20	20	Fire	450						false	Blue-20		kulve;taroth;fire	
+477	Gunlance	7	Taroth Buster "Spark"	391	20	20	Thunder	270						false	Blue-20		kulve;taroth;thunder	
+475	Gunlance	7	Taroth Buster "Stream"	368	10	20	Ice	360						false	Blue-20		kulve;taroth;ice	
 146	Gunlance	8	Blue Chariot	437	20	0	Fire	240						false	Blue-40;Blue-50;White-10;White-20;White-30;White-40	1	rathalos;fire	
 159	Gunlance	8	Daora's Brigia	414	10	0	Ice	240						false	Blue-40;Blue-50;Blue-60;Blue-70;White-10;White-20	3	kushala;daora;ice	
 158	Gunlance	8	Earthshaker Magda Lahat	460	-10	20				Blast	420			false	Green-70;Green-80;Green-90;Blue-10;Blue-20;Blue-30		zorah;magdaros;blast	
@@ -169,9 +201,14 @@ id	weaponType	rarity	name	baseAttack	baseAffinityPercent	baseDefense	element	ele
 85	Hammer	7	Cocytus	936	0	0	Ice	450						false	Blue-30;Blue-40;Blue-50;Blue-60;Blue-70;Blue-80	3	workshop;ice	
 278	Hammer	7	Devil's Crush	1196	-30	0	Dragon	210					High	false	Blue-40;White-10;White-20;White-30;White-40;White-50		deviljho;dragon	
 95	Hammer	7	Diablos Shatterer II	1196	-25	15	Ice	150	true					false	Blue-20;Blue-30;Blue-40;Blue-50;White-10;White-20	2	diablos;ice;hidden	
+472	Hammer	7	Taroth Hammer "Decay"	1040	0	20	Dragon	270						false	Blue-20		kulve;taroth;dragon	
+473	Hammer	7	Taroth Hammer "Gyre"	1092	0	30	Fire	120						false	Blue-20		kulve;taroth;fire	
 340	Hammer	7	Taroth Hammer "Horn"	1144	-25	20	Ice	90						true	Blue-20		kulve;taroth;ice	
+474	Hammer	7	Taroth Hammer "Mud"	1092	-10	25				Paralysis	390	false		false	Blue-20		kulve;taroth;paralysis;hidden	
+470	Hammer	7	Taroth Hammer "Numb"	832	30	20				Paralysis	390			false	Blue-20		kulve;taroth;paralysis	
 341	Hammer	7	Taroth Hammer "Rage"	1040	-20	20	Fire	450						true	Blue-20		kulve;taroth;fire	
 311	Hammer	7	Taroth Hammer "Spew"	988	0	20				Poison	540			true	Blue-20		kulve;taroth;poison	
+471	Hammer	7	Taroth Hammer "Tar"	988	10	30				Sleep	270			false	Blue-20		kulve;taroth;sleep	
 300	Hammer	7	Taroth Hammer "Thief"	884	35	20				Sleep	360	true		true	Blue-20		kulve;taroth;sleep;hidden	
 102	Hammer	8	Binder Mace	936	0	20				Paralysis	210			false	Blue-30;Blue-40;Blue-50;White-10;White-20;White-30	3	workshop;paralysis	
 100	Hammer	8	Daora's Colossus	1040	10	0	Ice	150						false	Blue-40;Blue-50;Blue-60;Blue-70;White-10;White-20	2	blacksteel;kushala;daora;ice	
@@ -200,8 +237,15 @@ id	weaponType	rarity	name	baseAttack	baseAffinityPercent	baseDefense	element	ele
 243	HeavyBowgun	7	Gluttonous Fangcannon	270	0	0								false		1	great;jagras	
 244	HeavyBowgun	7	Gnashing Flammenkanone	300	-20	0								false		1	anjanath	
 253	HeavyBowgun	7	Magda Gemitus II	315	-20	20								false		2	zorah;magdaros	
+467	HeavyBowgun	7	Taroth Assault "Crusher"	285	0	20								false			kulve;taroth	
+463	HeavyBowgun	7	Taroth Assault "Flash"	255	10	20								false			kulve;taroth	
+465	HeavyBowgun	7	Taroth Assault "Glutton"	270	10	20								false			kulve;taroth	
 353	HeavyBowgun	7	Taroth Assault "Horn"	330	-10	20								false		3	kulve;taroth	
+469	HeavyBowgun	7	Taroth Assault "Magma"	315	-10	30								false			kulve;taroth	
+468	HeavyBowgun	7	Taroth Assault "Rage"	300	-10	20								false			kulve;taroth	
+464	HeavyBowgun	7	Taroth Assault "Spark"	255	25	20								false			kulve;taroth	
 354	HeavyBowgun	7	Taroth Assault "Spew"	270	0	20								false			kulve;taroth	
+466	HeavyBowgun	7	Taroth Assault "Tar"	270	0	25								false			kulve;taroth	
 239	HeavyBowgun	8	Destruction's Fusillade	285	0	0								false		1	nergigante	
 246	HeavyBowgun	8	Griffon Blazooka	330	-20	15								false		1	diablos	
 242	HeavyBowgun	8	Legia Shattercryst	255	0	0								false		1	legiana	
@@ -233,8 +277,15 @@ id	weaponType	rarity	name	baseAttack	baseAffinityPercent	baseDefense	element	ele
 110	HuntingHorn	7	Legia Sectored	672	0	0	Ice	360						false	White-10;White-20;White-30;White-40;White-50;White-60		legiana;ice	
 117	HuntingHorn	7	Queen Vespoid Horn	672	0	0				Paralysis	300			false	White-30;White-40;White-50;White-60;White-70;White-80	1;1	vespoid;paralysis	
 108	HuntingHorn	7	Royal Chordmaker	798	25	0	Fire	240						false	Blue-50;Blue-60;White-10;White-20;White-30;White-40	2	rathian;fire	
+458	HuntingHorn	7	Taroth Pipe "Buzzer"	672	30	20				Paralysis	300			false	Blue-20		kulve;taroth;paralysis	
+461	HuntingHorn	7	Taroth Pipe "Crusher"	798	10	20				Blast	150			false	Blue-20		kulve;taroth;blast	
+460	HuntingHorn	7	Taroth Pipe "Drifter"	714	10	20	Water	420						false	Blue-20		kulve;taroth;water	
+456	HuntingHorn	7	Taroth Pipe "Myth"	630	0	20	Thunder	540						false	White-20		kulve;taroth;thunder	
 303	HuntingHorn	7	Taroth Pipe "Rage"	840	-20	20	Fire	450						true	Blue-30		kulve;taroth;fire	
 373	HuntingHorn	7	Taroth Pipe "Spew"	756	0	20				Poison	540			true	Blue-20	1	kulve;taroth;poison	
+457	HuntingHorn	7	Taroth Pipe "Stream"	672	0	20	Ice	360						false	Blue-20		kulve;taroth;ice	
+462	HuntingHorn	7	Taroth Pipe "Tar"	798	10	30				Sleep	270			false	Blue-20		kulve;taroth;sleep	
+459	HuntingHorn	7	Taroth Pipe "Thief"	714	35	20				Sleep	360	false		false	Blue-20		kulve;taroth;sleep;hidden	
 120	HuntingHorn	7	Thunderbolt Horn II	672	0	0	Thunder	540						false	Blue-60;Blue-70;Blue-80;Blue-90;Blue-100;Blue-110		kirin;thunder	
 105	HuntingHorn	8	Desolation's Overture	882	0	0	Dragon	150					High	false	Blue-80	1	nergigante;dragon	
 116	HuntingHorn	8	Razelreid Rookslayer	840	-10	0				Blast	210			false	Blue-20;White-10;White-20;White-30;White-40;White-50	2;2	bazelgeuse;blast	
@@ -257,7 +308,15 @@ id	weaponType	rarity	name	baseAttack	baseAffinityPercent	baseDefense	element	ele
 208	InsectGlaive	7	Gnashing Flammenkaefer	651	-20	0	Fire	270						false	Blue-40;Blue-50;Blue-60;Blue-70;Blue-80;Blue-90		anjanath;fire	
 284	InsectGlaive	7	Grunge Storm	682	-25	0	Dragon	210					High	false	Blue-40;White-10;White-20;White-30;White-40;White-50		deviljho;dragon	
 207	InsectGlaive	7	Hazak Entoma II	620	0	0	Dragon	180					Average	false	Blue-40;Blue-50;White-10;White-20;White-30;White-40	2	vaal;hazak;dragon	
+451	InsectGlaive	7	Taroth Glaive "Claw"	558	20	20	Fire	90	false					false	Blue-20		kulve;taroth;fire;hidden	
+450	InsectGlaive	7	Taroth Glaive "Crusher"	558	0	20				Blast	150			false	Blue-20	2	kulve;taroth;blast	
+448	InsectGlaive	7	Taroth Glaive "Decay"	527	0	20	Dragon	180					Average	false	White-20		kulve;taroth;dragon	
+454	InsectGlaive	7	Taroth Glaive "Flash"	589	0	20	Thunder	300	false					false	Blue-20		kulve;taroth;thunder;hidden	
+455	InsectGlaive	7	Taroth Glaive "Horn"	713	-30	25	Ice	240	false					false	Blue-20		kulve;taroth;ice;hidden	
+453	InsectGlaive	7	Taroth Glaive "King"	589	20	20	Fire	210						false	Blue-20		kulve;taroth;fire	
+452	InsectGlaive	7	Taroth Glaive "Spark"	558	20	20	Thunder	240						false	Blue-20		kulve;taroth;thunder	
 386	InsectGlaive	7	Taroth Glaive "Spew"	558	0	20				Poison	300	true		true	Blue-20	1	kulve;taroth;poison;hidden	
+449	InsectGlaive	7	Taroth Glaive "Thief"	527	30	20				Sleep	210	false		false	Blue-20		kulve;taroth;sleep;hidden	
 210	InsectGlaive	7	Tyrannis Glaive II	713	-30	15	Ice	180	true					false	Blue-30;Blue-40;Blue-50;Blue-60;White-10;White-20	2	diablos;ice;hidden	
 199	InsectGlaive	8	Catastrophe's Light	651	0	0	Dragon	150					High	false	Blue-90	1	nergigante;dragon	
 215	InsectGlaive	8	Daora's Tethidine	558	10	0	Ice	180						false	Blue-40;Blue-50;Blue-60;Blue-70;White-10;White-20	2	blacksteel;kushala;daora;ice	
@@ -284,9 +343,14 @@ id	weaponType	rarity	name	baseAttack	baseAffinityPercent	baseDefense	element	ele
 125	Lance	7	Legiana Halberd II	368	0	0	Ice	360						false	White-10;White-20;White-30;White-40;White-50;White-60		legiana;ice	
 375	Lance	7	Taroth Crest "Claw"	437	30	20								true	Blue-20		kulve;taroth	
 376	Lance	7	Taroth Crest "Crusher"	391	10	20				Blast	210			true	Blue-20		kulve;taroth;blast	
+444	Lance	7	Taroth Crest "Decay"	391	0	20	Dragon	270					Average	false	White-20		kulve;taroth;dragon	
 378	Lance	7	Taroth Crest "King"	368	0	20	Fire	300						true	White-20		kulve;taroth;fire	
+443	Lance	7	Taroth Crest "Lurk"	368	10	20				Blast	270	false		false	White-20		kulve;taroth;blast;hidden	
+447	Lance	7	Taroth Crest "Mud"	437	-20	25				Paralysis	240			false	Blue-20		kulve;taroth;paralysis	
 379	Lance	7	Taroth Crest "Sleep"	414	10	20				Sleep	450	true		true	Blue-20		kulve;taroth;sleep;hidden	
+445	Lance	7	Taroth Crest "Spew"	391	0	20				Poison	540			false	Blue-20	1	kulve;taroth;poison	
 377	Lance	7	Taroth Crest "Stream"	368	0	20	Ice	300	true					true	White-20		kulve;taroth;ice;hidden	
+446	Lance	7	Taroth Crest "Thief"	391	10	20				Sleep	210			false	Blue-20		kulve;taroth;sleep	
 138	Lance	8	Bazel Myniad Rookslayer	460	-10	0				Blast	210			false	Blue-20;White-10;White-20;White-30;White-40;White-50		bazelgeuse;blast	
 130	Lance	8	Blue Prominence	437	20	0	Fire	300						false	Blue-40;Blue-50;Blue-60;White-10;White-20;White-30	1	rathalos;fire	
 140	Lance	8	Daora's Fang	414	10	0	Ice	240						false	Blue-40;Blue-50;Blue-60;Blue-70;White-10;White-20	2	blacksteel;kushala;daora;ice	
@@ -314,7 +378,16 @@ id	weaponType	rarity	name	baseAttack	baseAffinityPercent	baseDefense	element	ele
 285	LightBowgun	7	Devil's Madness	299	-25	0								false			deviljho	
 229	LightBowgun	7	Lava Bullet II	234	0	0								false		2;2	lavasioth	
 222	LightBowgun	7	Rathbuster II	247	20	0								false		1	rathalos	
+438	LightBowgun	7	Taroth Blitz "Bomber"	260	-20	20								false			kulve;taroth	
+434	LightBowgun	7	Taroth Blitz "Claw"	234	30	20								false			kulve;taroth	
+439	LightBowgun	7	Taroth Blitz "Decay"	260	0	20								false			kulve;taroth	
 388	LightBowgun	7	Taroth Blitz "Drifter"	221	20	20								false			kulve;taroth	
+435	LightBowgun	7	Taroth Blitz "Erupter"	247	0	20								false			kulve;taroth	
+440	LightBowgun	7	Taroth Blitz "Glutton"	260	0	20								false			kulve;taroth	
+436	LightBowgun	7	Taroth Blitz "King"	247	25	20								false			kulve;taroth	
+437	LightBowgun	7	Taroth Blitz "Mire"	247	10	20								false			kulve;taroth	
+441	LightBowgun	7	Taroth Blitz "Mud"	260	-10	25								false			kulve;taroth	
+442	LightBowgun	7	Taroth Blitz "Rage"	273	-10	20								false			kulve;taroth	
 218	LightBowgun	8	Cataclysm's Trigger	260	0	0								false		1	nergigante	
 233	LightBowgun	8	Dai-Onigashima	221	0	0								false		1	workshop;bazelgeuse	
 235	LightBowgun	8	Daora's Hornet	234	10	0								false		2	kushala;daora	
@@ -340,10 +413,16 @@ id	weaponType	rarity	name	baseAttack	baseAffinityPercent	baseDefense	element	ele
 33	LongSword	7	Hazak Grosser II	660	0	0	Dragon	270					Average	false	Blue-40;Blue-50;White-10;White-20;White-30;White-40	2	vaal;hazak;dragon	
 38	LongSword	7	Magda Facultas II	726	-20	20				Blast	360			false	Green-70;Green-80;Green-90;Blue-10;Blue-20;Blue-30	2	zorah;magdaros;blast	
 275	LongSword	7	Reaver "Calamity"	759	-25	0	Dragon	210					High	false	Blue-40;White-10;White-20;White-30;White-40;White-50		deviljho;dragon	
-366	LongSword	7	Taroth Sword "Decay"	660	10	40	Dragon	270						true	Blue-20		kulve;taroth;dragon	
+366	LongSword	7	Taroth Sword "Decay"	660	10	40	Dragon	270					Average	true	Blue-20		kulve;taroth;dragon	
+430	LongSword	7	Taroth Sword "Flash"	627	0	20	Thunder	360	false					false	Blue-20		kulve;taroth;ice	
 362	LongSword	7	Taroth Sword "Gyre"	660	0	20	Fire	120						true	Blue-20		kulve;taroth;fire	
 363	LongSword	7	Taroth Sword "Lurk"	528	0	20				Paralysis	210	true		true	Blue-20		kulve;taroth;paralysis;hidden	
+428	LongSword	7	Taroth Sword "Magma"	726	-20	30				Blast	360			false	Blue-20		kulve;taroth;ice	
 361	LongSword	7	Taroth Sword "Mire"	660	0	20	Water	360						true	Blue-20		kulve;taroth;water	
+429	LongSword	7	Taroth Sword "Rage"	693	-10	20	Fire	390						false	Blue-20		kulve;taroth;ice	
+431	LongSword	7	Taroth Sword "Spark"	594	30	20	Thunder	270						false	Blue-20		kulve;taroth;ice	
+433	LongSword	7	Taroth Sword "Stream"	528	0	20	Ice	360						false	Blue-20		kulve;taroth;ice	
+432	LongSword	7	Taroth Sword "Thief"	561	20	20				Sleep	210			false	Blue-20		kulve;taroth;ice	
 27	LongSword	7	Wyvern Blade "Holly"	627	10	0				Poison	330			false	Blue-50;Blue-60;Blue-70;White-10;White-20;White-30	1	rathian;poison	
 30	LongSword	8	Bazel Varga Rookslayer	660	-10	0				Blast	210			false	Blue-30;White-10;White-20;White-30;White-40;White-50	1;1	bazelgeuse;blast	
 41	LongSword	8	Divine Slasher	693	0	20	Dragon	150	true				High	false	Blue-30;Blue-40;Blue-50;White-10;White-20;White-30	3	workshop;dragon;hidden	
@@ -370,9 +449,15 @@ id	weaponType	rarity	name	baseAttack	baseAffinityPercent	baseDefense	element	ele
 165	SwitchAxe	7	Motor Chopper II	735	0	30	Fire	120						false	Blue-40;Blue-50;Blue-60;Blue-70;Blue-80;Blue-90	1	uragaan;fire	
 168	SwitchAxe	7	Rathbringer Axe II	665	15	0	Fire	150						false	Blue-40;Blue-50;Blue-60;Blue-70;White-10;White-20	1	rathalos;fire	
 381	SwitchAxe	7	Taroth Axe "Bomber"	630	0	20				Blast	180			false	Blue-20		kulve;taroth;blast	
+426	SwitchAxe	7	Taroth Axe "Decay"	595	0	20	Dragon	210						false	White-20		kulve;taroth;dragon	
 384	SwitchAxe	7	Taroth Axe "Drifter"	595	25	20								false	Blue-20		kulve;taroth	
+424	SwitchAxe	7	Taroth Axe "Glutton"	665	0	20				Sleep	150			false	Blue-20		kulve;taroth;sleep	
+422	SwitchAxe	7	Taroth Axe "Gyre"	735	10	40	Fire	120						false	Blue-20		kulve;taroth;fire	
 383	SwitchAxe	7	Taroth Axe "Horn"	805	-30	25	Ice	240	true					false	Blue-20		kulve;taroth;ice;hidden	
+425	SwitchAxe	7	Taroth Axe "King"	665	15	20	Fire	210						false	Blue-20		kulve;taroth;fire	
+423	SwitchAxe	7	Taroth Axe "Mire"	665	0	20	Water	300						false	Blue-20		kulve;taroth;water	
 382	SwitchAxe	7	Taroth Axe "Mud"	735	-20	25				Paralysis	180			false	Blue-20		kulve;taroth;paralysis	
+427	SwitchAxe	7	Taroth Axe "Stream"	560	10	20	Ice	300						false	Blue-20		kulve;taroth;ice	
 282	SwitchAxe	7	Terror Tyrannos	770	-25	0	Dragon	180					High	false	Blue-40;White-10;White-20;White-30;White-40;White-50		deviljho;dragon	
 174	SwitchAxe	8	Axe of Demons	805	-30	15	Ice	180	true					false	Blue-30;Blue-40;Blue-50;Blue-60;White-10;White-20	1	diablos;ice;hidden	
 162	SwitchAxe	8	Dying Light	700	0	0	Dragon	150					High	false	Blue-80	1	nergigante;dragon	
@@ -400,6 +485,16 @@ id	weaponType	rarity	name	baseAttack	baseAffinityPercent	baseDefense	element	ele
 57	SwordAndShield	7	Gnashing Flammensucher	294	-20	0	Fire	240						false	Blue-40;Blue-50;Blue-60;Blue-70;Blue-80;Blue-90		anjanath;fire	
 45	SwordAndShield	7	Master Bang	280	0	20	Thunder	330	true					false	Blue-50;Blue-60;Blue-70;Blue-80;Blue-90;Blue-100	3	workshop;thunder;hidden	
 48	SwordAndShield	7	Royal Rose	266	10	0				Poison	240			false	Blue-40;Blue-50;Blue-60;White-10;White-20;White-30	1	rathian;poison	
+415	SwordAndShield	7	Taroth Slicer "Drifter"	252	0	20				Blast	270			false	Blue-20		kulve;taroth;blast	
+419	SwordAndShield	7	Taroth Slicer "Glutton"	266	0	20	Water	270						false	Blue-20		kulve;taroth;water	
+417	SwordAndShield	7	Taroth Slicer "King"	266	30	30	Fire	180						false	Blue-20		kulve;taroth;fire	
+421	SwordAndShield	7	Taroth Slicer "Mud"	308	-10	25				Paralysis	180	false		false	Blue-20	1	kulve;taroth;paralysis;hidden	
+414	SwordAndShield	7	Taroth Slicer "Myth"	224	0	20	Thunder	360						false	Blue-20		kulve;taroth;thunder	
+413	SwordAndShield	7	Taroth Slicer "Numb"	224	30	20				Paralysis	240			false	Blue-20		kulve;taroth;paralysis	
+420	SwordAndShield	7	Taroth Slicer "Rage"	294	-20	20	Fire	240						false	Blue-20		kulve;taroth;fire	
+416	SwordAndShield	7	Taroth Slicer "Spew"	252	0	20				Poison	390			false	Blue-20	1	kulve;taroth;poison	
+412	SwordAndShield	7	Taroth Slicer "Stream"	224	0	20	Ice	330						false	Blue-20		kulve;taroth;ice	
+418	SwordAndShield	7	Taroth Slicer "Tar"	266	10	20				Sleep	210			false	Blue-20		kulve;taroth;sleep	
 59	SwordAndShield	7	Thunderbolt Sword	224	0	0	Thunder	360						false	Blue-70;Blue-80;Blue-90;Blue-100;Blue-110;Blue-120		kirin;thunder	
 43	SwordAndShield	8	Eradication Vanguard	294	0	0	Dragon	150					High	false	Blue-100	1	nergigante;dragon	
 47	SwordAndShield	8	Legia Rimespire	224	0	0	Ice	330						false	White-20;White-30;White-40;White-50;White-60;White-70	1	legiana;ice	
