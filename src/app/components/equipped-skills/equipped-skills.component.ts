@@ -32,7 +32,7 @@ export class EquippedSkillsComponent implements OnInit {
 
 	getSkillCountColor(skill: EquippedSkillModel): string {
 		if (skill.equippedCount > skill.totalLevelCount) {
-			return '#ffff52';
+			return '#e4ff1a';
 		} else if (skill.equippedCount == skill.totalLevelCount) {
 			return '#86ff86';
 		}
@@ -42,7 +42,7 @@ export class EquippedSkillsComponent implements OnInit {
 
 	getSetBonusColor(setBonus: EquippedSetBonusModel): string {
 		if (setBonus.equippedCount > setBonus.requiredCount) {
-			return '#ffff52';
+			return '#e4ff1a';
 		} else if (setBonus.equippedCount == setBonus.requiredCount) {
 			return '#86ff86';
 		}
