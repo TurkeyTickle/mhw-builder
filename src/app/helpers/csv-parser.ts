@@ -27,9 +27,9 @@ export class CSVParser {
 				const rowValue = rowValues[j];
 
 				const parser = _.find(columnParsers, p => p.columnName == columnHeader);
-				if (parser && rowValue) {
+				if (parser) {
 					item[columnHeader] = parser.predicate(rowValue);
-				} else {
+				} else if (rowValue) {
 					if (!Number.isNaN(Number(rowValue)) && rowValue != '') {
 						item[columnHeader] = Number(rowValue);
 					} else if (rowValue.toLowerCase() === 'true' || rowValue.toLowerCase() === 'false') {
@@ -53,7 +53,7 @@ export class CSVParser {
 				predicate: (value: string) => {
 					const values = value.split(';');
 					const slots: SlotModel[] = [];
-					for (const item of values) {
+					for (const item of _.filter(values, v => v)) {
 						slots.push({
 							level: parseInt(item, 10),
 						});
@@ -72,7 +72,7 @@ export class CSVParser {
 				predicate: (value: string) => {
 					const values = value.split(';');
 					const sharpnessLevels: SharpnessLevelModel[] = [];
-					for (const item of values) {
+					for (const item of _.filter(values, v => v)) {
 						const parts = item.split('-');
 						sharpnessLevels.push({
 							color: parts[0] as SharpnessType,

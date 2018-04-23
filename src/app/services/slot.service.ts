@@ -188,6 +188,9 @@ export class SlotService {
 					this.clearDecorationSlot(decoSlot);
 				}
 			} else {
+				if (!this.weaponSlot.item.slots) {
+					this.weaponSlot.item.slots = [];
+				}
 				this.weaponSlot.item.slots.push({ level: slotAugs[0].levels[slotAugs.length - 1].slotLevel, augmentation: true });
 			}
 		} else {
