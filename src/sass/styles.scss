@@ -28,3 +28,11 @@ button {
 button:hover {
 	color: rgb(255, 255, 255);
 }
+
+a {
+	color: $blue;
+}
+
+a:visited {
+	color: $blue;
+}
