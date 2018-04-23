@@ -52,13 +52,11 @@ export class EquippedSkillsComponent implements OnInit {
 
 	showSkillDetails(event: PointerEvent, equippedSkill: EquippedSkillModel) {
 		if (event.pointerType == PointerType.Mouse) {
-			this.tooltipService.anchorPoint = AnchorType.TopRight;
 			this.tooltipService.setEquippedSkill(equippedSkill);
 		}
 	}
 
 	clearSkillDetails() {
-		this.tooltipService.anchorPoint = AnchorType.TopLeft;
 		this.tooltipService.setEquippedSkill(null);
 	}
 }

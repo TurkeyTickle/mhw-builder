@@ -1,49 +1,27 @@
 <div class="container" (pointermove)="moveTooltip($event)">
-	<div class="equipment-container">
-		<div class="equipment-slots-container">
-			<mhw-builder-item-slot
-				#weaponSlot
-				slotName="Weapon">
-			</mhw-builder-item-slot>
-			
-			<mhw-builder-item-slot 
-				#headSlot
-				slotName="Head">
-			</mhw-builder-item-slot>
-			
-			<mhw-builder-item-slot 
-				#chestSlot
-				slotName="Chest">
-			</mhw-builder-item-slot>
-			
-			<mhw-builder-item-slot 
-				#handsSlot
-				slotName="Hands">
-			</mhw-builder-item-slot>
-			
-			<mhw-builder-item-slot 
-				#legsSlot
-				slotName="Legs">
-			</mhw-builder-item-slot>
+	<div class="tab-container">
+		<div class="tab" (click)="equipmentSelected()" [class.selected]="equipmentVisible">Equipment</div>
+		<div class="tab" (click)="statsSelected()" [class.selected]="statsVisible">Stats</div>
+	</div>
 
-			<mhw-builder-item-slot 
-				#feetSlot
-				slotName="Feet">
-			</mhw-builder-item-slot>
-			
-			<mhw-builder-item-slot 
-				#charmSlot
-				slotName="Charm">
-			</mhw-builder-item-slot>
+	<!-- <div class="equipment-container" [style.visibility]="equipmentVisible ? 'visible' : 'hidden'"> -->
+	<div class="equipment-container" [hidden]="!equipmentVisible">
+		<div class="equipment-slots-container">
+			<mhw-builder-item-slot #weaponSlot slotName="Weapon"></mhw-builder-item-slot>
+			<mhw-builder-item-slot #headSlot slotName="Head"></mhw-builder-item-slot>
+			<mhw-builder-item-slot #chestSlot slotName="Chest"></mhw-builder-item-slot>
+			<mhw-builder-item-slot #handsSlot slotName="Hands"></mhw-builder-item-slot>
+			<mhw-builder-item-slot #legsSlot slotName="Legs"></mhw-builder-item-slot>
+			<mhw-builder-item-slot #feetSlot slotName="Feet"></mhw-builder-item-slot>
+			<mhw-builder-item-slot #charmSlot slotName="Charm"></mhw-builder-item-slot>
 		</div>
 	</div>
 
-	<div class="stats-container">
-		<div class="equip-info-container">
-			<mhw-builder-equipped-stats></mhw-builder-equipped-stats>
-			<br />
-			<mhw-builder-equipped-skills></mhw-builder-equipped-skills>
-		</div>
+	<!-- <div class="stats-container" [style.visibility]="statsVisible ? 'visible' : 'hidden'"> -->
+	<div class="stats-container" [hidden]="!statsVisible">
+		<mhw-builder-equipped-stats></mhw-builder-equipped-stats>
+		<br />
+		<mhw-builder-equipped-skills></mhw-builder-equipped-skills>
 	</div>
 
 	<mhw-builder-tooltip></mhw-builder-tooltip>

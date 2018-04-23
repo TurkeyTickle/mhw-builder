@@ -1,5 +1,7 @@
 @import "~sass/variables";
 
+$tabsHeight: 36px;
+
 .container {
 	position: absolute;
 	top: 0;
@@ -14,6 +16,30 @@
 	margin: $appMargin;
 
 	overflow: hidden;
+}
+
+.tab-container {
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 0;
+	border-bottom: 4px #525252 solid;
+
+	display: none;
+	grid-template-columns: repeat(2, 1fr);
+	grid-gap: 8px;
+
+	.tab {
+		background-color: #323232;
+		border-radius: 3px 3px 0 0;
+		text-align: center;
+		line-height: $tabsHeight;
+		cursor: pointer;
+	}
+
+	.tab.selected {
+		background-color: #525252;
+	}
 }
 
 .equipment-container {
@@ -48,7 +74,7 @@
 	font-size: 12px;
 	position: fixed;
 	bottom: 2px;
-	left: 8px;
+	left: 10px;
 	color:#969696;
 
 	a, a:visited {
@@ -65,5 +91,22 @@
 
 	a, a:visited {
 		color:#969696;
+	}
+}
+
+@media only screen and (max-width: 768px) {
+	.tab-container {
+		height: $tabsHeight;
+		display: grid;
+	}
+
+	.equipment-container {
+		top: $tabsHeight + 8;
+		grid-column: 1 / 4;
+	}
+
+	.stats-container {
+		top: $tabsHeight + 8;
+		grid-column: 1 / 4;
 	}
 }

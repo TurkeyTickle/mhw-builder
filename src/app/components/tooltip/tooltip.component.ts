@@ -7,6 +7,7 @@ import { StatDetailModel } from '../../models/stat-detail.model';
 import { TooltipService } from '../../services/tooltip.service';
 import { AnchorType } from '../../types/anchor.type';
 import { AugmentationModel } from '../../models/augmentation.model';
+import { runInThisContext } from 'vm';
 
 @Component({
 	selector: 'mhw-builder-tooltip',
@@ -14,7 +15,6 @@ import { AugmentationModel } from '../../models/augmentation.model';
 	styleUrls: ['./tooltip.component.scss']
 })
 export class TooltipComponent implements OnInit {
-
 	@ViewChild('container') container: ElementRef;
 
 	item: ItemModel;
@@ -24,6 +24,10 @@ export class TooltipComponent implements OnInit {
 	skill: SkillModel;
 	calc: StatDetailModel;
 	visible: boolean;
+
+	private width = 300;
+	private mouseXOffset = 40;
+	private mouseYOffset = 40;
 
 	constructor(
 		private renderer: Renderer2,
@@ -112,18 +116,18 @@ export class TooltipComponent implements OnInit {
 
 	move(x: number, y: number) {
 		if (this.visible) {
-			let newTop = y + 40;
+			let newTop = y + this.mouseYOffset;
 			let newRight = 0;
 			let newLeft = 0;
 
-			if (this.tooltipService.anchorPoint === AnchorType.TopLeft) {
-				newLeft = x + 40;
+			if (x < window.innerWidth - (this.container.nativeElement.offsetWidth + this.mouseXOffset)) {
+				newLeft = x + this.mouseXOffset;
 
 				if (window.innerWidth < newLeft + this.container.nativeElement.scrollWidth) {
 					newLeft = window.innerWidth - this.container.nativeElement.scrollWidth;
 				}
-			} else if (this.tooltipService.anchorPoint === AnchorType.TopRight) {
-				newRight = window.innerWidth - x + 40;
+			} else {
+				newRight = window.innerWidth - x + this.mouseXOffset;
 
 				if (window.innerWidth < newRight + this.container.nativeElement.scrollWidth) {
 					newRight = window.innerWidth - this.container.nativeElement.scrollWidth;
