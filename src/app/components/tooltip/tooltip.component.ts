@@ -7,7 +7,6 @@ import { StatDetailModel } from '../../models/stat-detail.model';
 import { TooltipService } from '../../services/tooltip.service';
 import { AnchorType } from '../../types/anchor.type';
 import { AugmentationModel } from '../../models/augmentation.model';
-import { runInThisContext } from 'vm';
 
 @Component({
 	selector: 'mhw-builder-tooltip',
