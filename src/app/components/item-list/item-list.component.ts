@@ -1,4 +1,4 @@
-import { Component, ElementRef, EventEmitter, Input, OnInit, Output, ViewChild } from '@angular/core';
+import { Component, ElementRef, EventEmitter, Input, OnInit, Output, ViewChild, AfterViewChecked } from '@angular/core';
 import * as _ from 'lodash';
 import { DecorationModel } from '../../models/decoration.model';
 import { ItemModel } from '../../models/item.model';
@@ -12,13 +12,14 @@ import { SlotService } from '../../services/slot.service';
 import { PointerType } from '../../types/pointer.type';
 import { Observable } from 'rxjs/Observable';
 import { IfObservable } from 'rxjs/observable/IfObservable';
+import { VirtualScrollComponent } from 'angular2-virtual-scroll';
 
 @Component({
 	selector: 'mhw-builder-item-list',
 	templateUrl: './item-list.component.html',
 	styleUrls: ['./item-list.component.scss']
 })
-export class ItemListComponent implements OnInit {
+export class ItemListComponent implements OnInit, AfterViewChecked {
 	private _itemType: ItemType;
 	private _decorationLevel: number;
 
@@ -40,11 +41,16 @@ export class ItemListComponent implements OnInit {
 	@Output() decorationSelected = new EventEmitter<DecorationModel>();
 
 	@ViewChild('searchBox') searchBox: ElementRef;
+	@ViewChild('itemList') itemList: VirtualScrollComponent;
+	@ViewChild('decorationList') decorationList: VirtualScrollComponent;
 
 	items: SearchItemModel[];
 	filteredItems: SearchItemModel[];
 	virtualItems: SearchItemModel[];
+
 	decorations: SearchDecorationModel[];
+	filteredDecorations: SearchDecorationModel[];
+	virtualDecorations: SearchDecorationModel[];
 
 	weaponTypeFilter?: WeaponType;
 
@@ -57,8 +63,23 @@ export class ItemListComponent implements OnInit {
 	ngOnInit() {
 	}
 
-	onListUpdate(event: any) {
-		this.virtualItems = event;
+	ngAfterViewChecked() {
+		// HACK: is this as ineffecient as it seems? there's got to be a better way to make these lists update correctly on modal load
+		if (this.itemList) {
+			this.itemList.refresh();
+		}
+
+		if (this.decorationList) {
+			this.decorationList.refresh();
+		}
+	}
+
+	onItemListUpdate(items: SearchItemModel[]) {
+		this.virtualItems = items;
+	}
+
+	onDecorationListUpdate(decorations: SearchDecorationModel[]) {
+		this.virtualDecorations = decorations;
 	}
 
 	loadItems() {
@@ -117,6 +138,7 @@ export class ItemListComponent implements OnInit {
 	resetSearchResults() {
 		this.searchBox.nativeElement.value = null;
 		this.filteredItems = this.items;
+		this.filteredDecorations = this.decorations;
 		this.applyWeaponFilter();
 	}
 
@@ -125,81 +147,6 @@ export class ItemListComponent implements OnInit {
 			this.filteredItems = _.reject(this.filteredItems, item => item.weaponType != this.weaponTypeFilter);
 		}
 	}
-
-	// applyWeaponFilter(items: SearchItemModel[]) {
-	// 	if (items) {
-	// 		for (const item of items) {
-	// 			if (item.itemType == ItemType.Weapon) {
-	// 				item.visible = !this.weaponTypeFilter || item.weaponType == this.weaponTypeFilter;
-	// 			}
-	// 		}
-	// 	}
-	// }
-
-	// search(query: string) {
-	// 	if (query) {
-	// 		query = query.toLowerCase().trim();
-	// 		if (this.items) {
-	// 			for (const item of this.items) {
-	// 				item.visible = item.name.toLowerCase().includes(query);
-	// 				if (item.visible) { continue; }
-
-	// 				const skills = this.dataService.getSkills(item.skills);
-	// 				for (const skill of skills) {
-	// 					item.visible = skill.name.toLowerCase().includes(query);
-	// 					if (item.visible) { break; }
-	// 				}
-
-	// 				if (item.visible) { continue; }
-
-	// 				if (item.tags) {
-	// 					item.visible = item.tags.some(tag => tag.includes(query));
-	// 				}
-
-	// 				if (item.visible) { continue; }
-	// 			}
-	// 		}
-
-	// 		const itemSubset = _.filter(this.items, item => item.visible);
-	// 		this.applyWeaponFilter(itemSubset);
-
-	// 		if (this.decorations) {
-	// 			for (const decoration of this.decorations) {
-	// 				decoration.visible = decoration.name.toLowerCase().includes(query);
-	// 				if (decoration.visible) { continue; }
-
-	// 				const skills = this.dataService.getSkills(decoration.skills);
-	// 				for (const skill of skills) {
-	// 					decoration.visible = skill.name.toLowerCase().includes(query);
-	// 					if (decoration.visible) { break; }
-	// 				}
-
-	// 				if (decoration.visible) { continue; }
-	// 			}
-	// 		}
-	// 	} else {
-	// 		this.resetSearchResults();
-	// 	}
-	// }
-
-	// resetSearchResults() {
-	// 	this.searchBox.nativeElement.value = null;
-
-	// 	// IMPROVEMENT: find a way to initialize visible without looping
-	// 	if (this.items) {
-	// 		for (const item of this.items) {
-	// 			item.visible = true;
-	// 		}
-	// 	}
-
-	// 	if (this.decorations) {
-	// 		for (const decoration of this.decorations) {
-	// 			decoration.visible = true;
-	// 		}
-	// 	}
-
-	// 	this.applyWeaponFilter(this.items);
-	// }
 
 	selectItem(item: ItemModel) {
 		const newItem = Object.assign({}, item);
@@ -232,11 +179,19 @@ export class ItemListComponent implements OnInit {
 	}
 
 	getElementIcon(item: ItemModel): string {
-		return `assets/images/${item.element.toLowerCase()}${item.elementHidden ? '-gray' : ''}-icon.png`;
+		if (item.element) {
+			return `assets/images/${item.element.toLowerCase()}${item.elementHidden ? '-gray' : ''}-icon.png`;
+		} else {
+			return null;
+		}
 	}
 
 	getAilmentIcon(item: ItemModel): string {
-		return `assets/images/${item.ailment.toLowerCase()}${item.ailmentHidden ? '-gray' : ''}-icon.png`;
+		if (item.ailment) {
+			return `assets/images/${item.ailment.toLowerCase()}${item.ailmentHidden ? '-gray' : ''}-icon.png`;
+		} else {
+			return null;
+		}
 	}
 
 	weaponFilterClicked(weaponType: WeaponType) {

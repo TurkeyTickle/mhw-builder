@@ -63,15 +63,24 @@ $listItemHeight: 36px;
 	}
 }
 
-.items-container {
+.scroll-container {
 	grid-row: 3;
 	overflow-y: auto;
 	border-radius: 3px;
 
-	.item-container {
-		height: $listItemHeight;
+	.scroll-item-container {
+		line-height: $listItemHeight;
 		display: grid;
 		grid-template-columns: auto min-content;
+		border-radius: 3px;
+		background-color: #323232;
+		margin-bottom: 2px;
+		padding: 4px 8px;
+		cursor: pointer;
+
+		.name-container {
+			line-height: $listItemHeight + 8;
+		}
 
 		.stat-container {
 			display: grid;
@@ -80,13 +89,22 @@ $listItemHeight: 36px;
 			.attack-container {
 				display: grid;
 				grid-template-columns: min-content min-content;
+				padding: 0 8px;
+
+				div {
+					line-height: $listItemHeight + 8;
+				}
 			}
 
 			img {
-				height: $listItemHeight;
-				line-height: $listItemHeight;
+				height: $listItemHeight - 8;
+				margin: 8px 0;
 			}
 		}
+	}
+
+	.item-container:hover {
+		background-color: #525252;
 	}
 }
 
