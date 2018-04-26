@@ -10,6 +10,8 @@ import { ItemType } from '../../types/item.type';
 import { WeaponType } from '../../types/weapon.type';
 import { SlotService } from '../../services/slot.service';
 import { PointerType } from '../../types/pointer.type';
+import { Observable } from 'rxjs/Observable';
+import { IfObservable } from 'rxjs/observable/IfObservable';
 
 @Component({
 	selector: 'mhw-builder-item-list',
@@ -40,6 +42,8 @@ export class ItemListComponent implements OnInit {
 	@ViewChild('searchBox') searchBox: ElementRef;
 
 	items: SearchItemModel[];
+	filteredItems: SearchItemModel[];
+	virtualItems: SearchItemModel[];
 	decorations: SearchDecorationModel[];
 
 	weaponTypeFilter?: WeaponType;
@@ -51,6 +55,10 @@ export class ItemListComponent implements OnInit {
 	) { }
 
 	ngOnInit() {
+	}
+
+	onListUpdate(event: any) {
+		this.virtualItems = event;
 	}
 
 	loadItems() {
@@ -66,46 +74,41 @@ export class ItemListComponent implements OnInit {
 	}
 
 	search(query: string) {
+		this.filteredItems = this.items;
+
 		if (query) {
 			query = query.toLowerCase().trim();
+			const queryParts = query.split(' ');
+
 			if (this.items) {
 				for (const item of this.items) {
-					item.visible = item.name.toLowerCase().includes(query);
-					if (item.visible) { continue; }
-
+					const itemName = item.name.toLowerCase();
 					const skills = this.dataService.getSkills(item.skills);
-					for (const skill of skills) {
-						item.visible = skill.name.toLowerCase().includes(query);
-						if (item.visible) { break; }
+
+					let match = _.some(queryParts, queryPart => {
+						const nameMatch = itemName.includes(queryPart);
+						const skillMatch = _.some(skills, skill => skill.name.toLowerCase().includes(queryPart));
+						const tagMatch = _.some(item.tags, tag => tag.toLowerCase().includes(queryPart));
+
+						return nameMatch || skillMatch || tagMatch;
+					});
+
+					let hiddenMatch = true;
+					if (_.some(queryParts, queryPart => queryPart === 'hidden')) {
+						hiddenMatch = (item.elementHidden || item.ailmentHidden);
+
+						if (queryParts.length < 2) {
+							match = true;
+						}
 					}
 
-					if (item.visible) { continue; }
-
-					if (item.tags) {
-						item.visible = item.tags.some(tag => tag.includes(query));
+					if (!match || !hiddenMatch) {
+						this.filteredItems = _.reject(this.filteredItems, i => i.name === item.name);
 					}
-
-					if (item.visible) { continue; }
 				}
 			}
 
-			const itemSubset = _.filter(this.items, item => item.visible);
-			this.applyWeaponFilter(itemSubset);
-
-			if (this.decorations) {
-				for (const decoration of this.decorations) {
-					decoration.visible = decoration.name.toLowerCase().includes(query);
-					if (decoration.visible) { continue; }
-
-					const skills = this.dataService.getSkills(decoration.skills);
-					for (const skill of skills) {
-						decoration.visible = skill.name.toLowerCase().includes(query);
-						if (decoration.visible) { break; }
-					}
-
-					if (decoration.visible) { continue; }
-				}
-			}
+			this.applyWeaponFilter();
 		} else {
 			this.resetSearchResults();
 		}
@@ -113,22 +116,90 @@ export class ItemListComponent implements OnInit {
 
 	resetSearchResults() {
 		this.searchBox.nativeElement.value = null;
-
-		// IMPROVEMENT: find a way to initialize visible without looping
-		if (this.items) {
-			for (const item of this.items) {
-				item.visible = true;
-			}
-		}
-
-		if (this.decorations) {
-			for (const decoration of this.decorations) {
-				decoration.visible = true;
-			}
-		}
-
-		this.applyWeaponFilter(this.items);
+		this.filteredItems = this.items;
+		this.applyWeaponFilter();
 	}
+
+	applyWeaponFilter() {
+		if (this.filteredItems && this.weaponTypeFilter && this.itemType == ItemType.Weapon) {
+			this.filteredItems = _.reject(this.filteredItems, item => item.weaponType != this.weaponTypeFilter);
+		}
+	}
+
+	// applyWeaponFilter(items: SearchItemModel[]) {
+	// 	if (items) {
+	// 		for (const item of items) {
+	// 			if (item.itemType == ItemType.Weapon) {
+	// 				item.visible = !this.weaponTypeFilter || item.weaponType == this.weaponTypeFilter;
+	// 			}
+	// 		}
+	// 	}
+	// }
+
+	// search(query: string) {
+	// 	if (query) {
+	// 		query = query.toLowerCase().trim();
+	// 		if (this.items) {
+	// 			for (const item of this.items) {
+	// 				item.visible = item.name.toLowerCase().includes(query);
+	// 				if (item.visible) { continue; }
+
+	// 				const skills = this.dataService.getSkills(item.skills);
+	// 				for (const skill of skills) {
+	// 					item.visible = skill.name.toLowerCase().includes(query);
+	// 					if (item.visible) { break; }
+	// 				}
+
+	// 				if (item.visible) { continue; }
+
+	// 				if (item.tags) {
+	// 					item.visible = item.tags.some(tag => tag.includes(query));
+	// 				}
+
+	// 				if (item.visible) { continue; }
+	// 			}
+	// 		}
+
+	// 		const itemSubset = _.filter(this.items, item => item.visible);
+	// 		this.applyWeaponFilter(itemSubset);
+
+	// 		if (this.decorations) {
+	// 			for (const decoration of this.decorations) {
+	// 				decoration.visible = decoration.name.toLowerCase().includes(query);
+	// 				if (decoration.visible) { continue; }
+
+	// 				const skills = this.dataService.getSkills(decoration.skills);
+	// 				for (const skill of skills) {
+	// 					decoration.visible = skill.name.toLowerCase().includes(query);
+	// 					if (decoration.visible) { break; }
+	// 				}
+
+	// 				if (decoration.visible) { continue; }
+	// 			}
+	// 		}
+	// 	} else {
+	// 		this.resetSearchResults();
+	// 	}
+	// }
+
+	// resetSearchResults() {
+	// 	this.searchBox.nativeElement.value = null;
+
+	// 	// IMPROVEMENT: find a way to initialize visible without looping
+	// 	if (this.items) {
+	// 		for (const item of this.items) {
+	// 			item.visible = true;
+	// 		}
+	// 	}
+
+	// 	if (this.decorations) {
+	// 		for (const decoration of this.decorations) {
+	// 			decoration.visible = true;
+	// 		}
+	// 	}
+
+	// 	this.applyWeaponFilter(this.items);
+	// }
 
 	selectItem(item: ItemModel) {
 		const newItem = Object.assign({}, item);
@@ -179,13 +250,5 @@ export class ItemListComponent implements OnInit {
 		// this.applyWeaponFilter(this.items);
 	}
 
-	applyWeaponFilter(items: SearchItemModel[]) {
-		if (items) {
-			for (const item of items) {
-				if (item.itemType == ItemType.Weapon) {
-					item.visible = !this.weaponTypeFilter || item.weaponType == this.weaponTypeFilter;
-				}
-			}
-		}
-	}
+
 }

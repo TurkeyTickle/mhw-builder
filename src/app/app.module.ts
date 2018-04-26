@@ -26,6 +26,7 @@ import { CalculationService } from './services/calculation.service';
 import { BuildService } from './services/build.service';
 import { AugmentationDetailsComponent } from './components/augmentation-details/augmentation-details.component';
 import { ModalComponent } from './components/modal/modal.component';
+import { VirtualScrollModule } from 'angular2-virtual-scroll';
 
 @NgModule({
 	declarations: [
@@ -44,11 +45,12 @@ import { ModalComponent } from './components/modal/modal.component';
 		AugmentationSlotComponent,
 		AugmentationsListComponent,
 		AugmentationDetailsComponent,
-		ModalComponent
+		ModalComponent,
 	],
 	imports: [
 		BrowserModule,
-		HttpClientModule
+		HttpClientModule,
+		VirtualScrollModule,
 	],
 	providers: [
 		Location,

@@ -52,8 +52,30 @@
 			</button>
 	</div>
 
-	<div class="items-container">
-		<ul>
+		<virtual-scroll class="items-container" [items]="filteredItems" (update)="onListUpdate($event)">
+			<div *ngFor="let item of virtualItems" class="item-container" [hidden]="!item.visible" (click)="selectItem(item)" (pointerenter)="setTooltipItem($event, item)" (pointerleave)="clearTooltipItem()">
+				<div class="name-container">
+					{{item.name}}
+				</div>
+			
+				<div class="stat-container">
+					<div class="attack-container" *ngIf="item.baseAttack">
+						<img src="assets/images/attack-icon.png">
+						<div>{{item.baseAttack}}</div>
+					</div>
+					<div class="attack-container" *ngIf="item.ailment">
+						<img [src]="getAilmentIcon(item)">
+						<div [style.color]="item.ailmentHidden ? 'gray' : 'white'">{{item.ailmentBaseAttack}}</div>
+					</div>
+					<div class="attack-container" *ngIf="item.element">
+						<img [src]="getElementIcon(item)">
+						<div [style.color]="item.elementHidden ? 'gray' : 'white'">{{item.elementBaseAttack}}</div>
+					</div>
+				</div>
+			</div>
+		</virtual-scroll>
+
+		<!-- <ul>
 			<div *ngFor="let item of items">
 				<li [hidden]="!item.visible" (click)="selectItem(item)" (pointerenter)="setTooltipItem($event, item)" (pointerleave)="clearTooltipItem()">
 					<div class="info-container">
@@ -84,6 +106,5 @@
 					(pointerenter)="setTooltipDecoration($event, decoration)"
 					(pointerleave)="clearTooltipDecoration()">{{decoration.name}}</li>
 			</div>
-		</ul>
-	</div>
+		</ul> -->
 </div>

@@ -2,7 +2,7 @@
 
 $searchHeight: 38px;
 $filterHeight: 42px;
-$listItemHeight: 32px;
+$listItemHeight: 36px;
 
 .container {
 	display: grid;
@@ -67,57 +67,84 @@ $listItemHeight: 32px;
 	grid-row: 3;
 	overflow-y: auto;
 	border-radius: 3px;
-	flex-grow: 1;
 
-	ul {
-		margin: 0;
-		padding: 0;
-		background-color: rgb(50,50,50);
-		border-radius: 3px;
-	
-		li {
-			cursor: pointer;
-			height: $listItemHeight;
-			line-height: $listItemHeight - 2;
-			list-style: none;
-			padding: 8px;
-			border-bottom: 1px black solid;
-		
-			.info-container {
-				display: -webkit-box;
-		
-				.name-container {
-					flex-grow: 1;
-					white-space: nowrap;
-					overflow: hidden;
-					text-overflow: ellipsis;
-					min-width: 0;
-				}
-		
-				.stat-container {
-					flex-grow: 0;
-		
-					.attack-container {
-						display: inline-flex;
-		
-						div, img {
-							white-space: nowrap;
-							overflow: hidden;
-							text-overflow: ellipsis;
-							line-height: $listItemHeight;
-							max-height: $listItemHeight;
-						}
-					}
-				}
+	.item-container {
+		height: $listItemHeight;
+		display: grid;
+		grid-template-columns: auto min-content;
+
+		.stat-container {
+			display: grid;
+			grid-template-columns: repeat(3, 1fr);
+
+			.attack-container {
+				display: grid;
+				grid-template-columns: min-content min-content;
 			}
-		}
-		
-		li:hover {
-			background-color: #525252;
-			border-radius: 3px;
+
+			img {
+				height: $listItemHeight;
+				line-height: $listItemHeight;
+			}
 		}
 	}
 }
+
+// .items-container {
+// 	grid-row: 3;
+// 	overflow-y: auto;
+// 	border-radius: 3px;
+// 	flex-grow: 1;
+
+// 	ul {
+// 		margin: 0;
+// 		padding: 0;
+// 		background-color: rgb(50,50,50);
+// 		border-radius: 3px;
+	
+// 		li {
+// 			cursor: pointer;
+// 			height: $listItemHeight;
+// 			line-height: $listItemHeight - 2;
+// 			list-style: none;
+// 			padding: 8px;
+// 			border-bottom: 1px black solid;
+		
+// 			.info-container {
+// 				display: -webkit-box;
+		
+// 				.name-container {
+// 					flex-grow: 1;
+// 					white-space: nowrap;
+// 					overflow: hidden;
+// 					text-overflow: ellipsis;
+// 					min-width: 0;
+// 				}
+		
+// 				.stat-container {
+// 					flex-grow: 0;
+		
+// 					.attack-container {
+// 						display: inline-flex;
+		
+// 						div, img {
+// 							white-space: nowrap;
+// 							overflow: hidden;
+// 							text-overflow: ellipsis;
+// 							line-height: $listItemHeight;
+// 							max-height: $listItemHeight;
+// 						}
+// 					}
+// 				}
+// 			}
+// 		}
+		
+// 		li:hover {
+// 			background-color: #525252;
+// 			border-radius: 3px;
+// 		}
+// 	}
+// }
 
 @media only screen and (max-width: 716px) {
 	.filter-container {
