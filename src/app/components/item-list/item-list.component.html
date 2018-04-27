@@ -74,45 +74,4 @@
 			</div>
 		</div>
 	</virtual-scroll>
-
-	<virtual-scroll id="decorations-list" #decorationList class="scroll-container" *ngIf="decorations" [items]="filteredDecorations" (update)="onDecorationListUpdate($event)">
-		<div *ngFor="let decoration of virtualDecorations" class="scroll-item-container" (click)="selectDecoration(decoration)" (pointerenter)="setTooltipDecoration($event, decoration)" (pointerleave)="clearTooltipDecoration()">
-			<div class="name-container">
-				{{decoration.name}}
-			</div>
-		</div>
-	</virtual-scroll>
-
-		<!-- <ul>
-			<div *ngFor="let item of items">
-				<li [hidden]="!item.visible" (click)="selectItem(item)" (pointerenter)="setTooltipItem($event, item)" (pointerleave)="clearTooltipItem()">
-					<div class="info-container">
-						<div class="name-container">
-							{{item.name}}
-						</div>
-
-						<div class="stat-container">
-							<div class="attack-container" *ngIf="item.baseAttack">
-								<img src="assets/images/attack-icon.png">
-								<div>{{item.baseAttack}}</div>
-							</div>
-							<div class="attack-container" *ngIf="item.ailment">
-								<img [src]="getAilmentIcon(item)">
-								<div [style.color]="item.ailmentHidden ? 'gray' : 'white'">{{item.ailmentBaseAttack}}</div>
-							</div>
-							<div class="attack-container" *ngIf="item.element">
-								<img [src]="getElementIcon(item)">
-								<div [style.color]="item.elementHidden ? 'gray' : 'white'">{{item.elementBaseAttack}}</div>
-							</div>
-						</div>
-					</div>
-				</li>
-			</div>
-			<div *ngFor="let decoration of decorations">
-				<li [hidden]="!decoration.visible"
-					(click)="selectDecoration(decoration)"
-					(pointerenter)="setTooltipDecoration($event, decoration)"
-					(pointerleave)="clearTooltipDecoration()">{{decoration.name}}</li>
-			</div>
-		</ul> -->
 </div>

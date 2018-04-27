@@ -4,7 +4,6 @@
 		<div class="tab" (click)="statsSelected()" [class.selected]="statsVisible">Stats</div>
 	</div>
 
-	<!-- <div class="equipment-container" [style.visibility]="equipmentVisible ? 'visible' : 'hidden'"> -->
 	<div class="equipment-container" [hidden]="!equipmentVisible">
 		<div class="equipment-slots-container">
 			<mhw-builder-item-slot #weaponSlot slotName="Weapon"></mhw-builder-item-slot>
@@ -17,7 +16,6 @@
 		</div>
 	</div>
 
-	<!-- <div class="stats-container" [style.visibility]="statsVisible ? 'visible' : 'hidden'"> -->
 	<div class="stats-container" [hidden]="!statsVisible">
 		<mhw-builder-equipped-stats></mhw-builder-equipped-stats>
 		<br />
@@ -37,9 +35,9 @@
 	</div>
 
 	<mhw-builder-modal #itemListModal>
-		<mhw-builder-item-list [hidden]="!slotService.selectedItemSlot" [itemType]="slotService.selectedItemSlot?.slotName"></mhw-builder-item-list>
-		<mhw-builder-item-list [hidden]="!slotService.selectedDecorationSlot" itemType="Decoration" [decorationLevel]="slotService.selectedDecorationSlot?.level"></mhw-builder-item-list>
-		<mhw-builder-augmentations-list [hidden]="!slotService.selectedAugmentationSlot"></mhw-builder-augmentations-list>
+		<mhw-builder-item-list *ngIf="slotService.selectedItemSlot" [itemType]="slotService.selectedItemSlot?.slotName"></mhw-builder-item-list>
+		<mhw-builder-decoration-list *ngIf="slotService.selectedDecorationSlot" [decorationLevel]="slotService.selectedDecorationSlot?.level"></mhw-builder-decoration-list>
+		<mhw-builder-augmentations-list *ngIf="slotService.selectedAugmentationSlot"></mhw-builder-augmentations-list>
 	</mhw-builder-modal>
 
 	<mhw-builder-modal #changeLogModal title="Change Log">

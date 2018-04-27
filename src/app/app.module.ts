@@ -27,6 +27,7 @@ import { BuildService } from './services/build.service';
 import { AugmentationDetailsComponent } from './components/augmentation-details/augmentation-details.component';
 import { ModalComponent } from './components/modal/modal.component';
 import { VirtualScrollModule } from 'angular2-virtual-scroll';
+import { DecorationListComponent } from './components/decoaration-list/decoration-list.component';
 
 @NgModule({
 	declarations: [
@@ -34,6 +35,7 @@ import { VirtualScrollModule } from 'angular2-virtual-scroll';
 		TooltipComponent,
 		ItemSlotComponent,
 		ItemListComponent,
+		DecorationListComponent,
 		EquippedStatsComponent,
 		EquippedSkillsComponent,
 		DecorationSlotComponent,

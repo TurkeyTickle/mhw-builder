@@ -1,4 +1,4 @@
-import { Component, ElementRef, EventEmitter, Input, OnInit, Output, ViewChild, AfterViewChecked } from '@angular/core';
+import { Component, ElementRef, EventEmitter, Input, OnInit, Output, ViewChild, HostListener } from '@angular/core';
 import * as _ from 'lodash';
 import { DecorationModel } from '../../models/decoration.model';
 import { ItemModel } from '../../models/item.model';
@@ -19,9 +19,8 @@ import { VirtualScrollComponent } from 'angular2-virtual-scroll';
 	templateUrl: './item-list.component.html',
 	styleUrls: ['./item-list.component.scss']
 })
-export class ItemListComponent implements OnInit, AfterViewChecked {
+export class ItemListComponent implements OnInit {
 	private _itemType: ItemType;
-	private _decorationLevel: number;
 
 	@Input()
 	set itemType(itemType: ItemType) {
@@ -30,29 +29,20 @@ export class ItemListComponent implements OnInit, AfterViewChecked {
 	}
 	get itemType(): ItemType { return this._itemType; }
 
-	@Input()
-	set decorationLevel(decorationLevel: number) {
-		this._decorationLevel = decorationLevel;
-		this.loadItems();
-	}
-	get decorationLevel(): number { return this._decorationLevel; }
-
 	@Output() itemSelected = new EventEmitter<ItemModel>();
-	@Output() decorationSelected = new EventEmitter<DecorationModel>();
 
 	@ViewChild('searchBox') searchBox: ElementRef;
 	@ViewChild('itemList') itemList: VirtualScrollComponent;
-	@ViewChild('decorationList') decorationList: VirtualScrollComponent;
 
 	items: SearchItemModel[];
 	filteredItems: SearchItemModel[];
 	virtualItems: SearchItemModel[];
-
-	decorations: SearchDecorationModel[];
-	filteredDecorations: SearchDecorationModel[];
-	virtualDecorations: SearchDecorationModel[];
-
 	weaponTypeFilter?: WeaponType;
+
+	@HostListener('window:resize')
+	onResize() {
+		this.refreshList();
+	}
 
 	constructor(
 		private slotService: SlotService,
@@ -63,14 +53,9 @@ export class ItemListComponent implements OnInit, AfterViewChecked {
 	ngOnInit() {
 	}
 
-	ngAfterViewChecked() {
-		// HACK: is this as ineffecient as it seems? there's got to be a better way to make these lists update correctly on modal load
+	refreshList() {
 		if (this.itemList) {
 			this.itemList.refresh();
-		}
-
-		if (this.decorationList) {
-			this.decorationList.refresh();
 		}
 	}
 
@@ -78,14 +63,8 @@ export class ItemListComponent implements OnInit, AfterViewChecked {
 		this.virtualItems = items;
 	}
 
-	onDecorationListUpdate(decorations: SearchDecorationModel[]) {
-		this.virtualDecorations = decorations;
-	}
-
 	loadItems() {
-		if (this.itemType == ItemType.Decoration) {
-			this.decorations = this.dataService.getDecorations(this.decorationLevel) as SearchDecorationModel[];
-		} else if (this.itemType == ItemType.Weapon) {
+		if (this.itemType == ItemType.Weapon) {
 			this.items = this.dataService.getWeapons() as SearchItemModel[];
 		} else {
 			this.items = this.dataService.getArmorByType(this.itemType) as SearchItemModel[];
@@ -138,7 +117,6 @@ export class ItemListComponent implements OnInit, AfterViewChecked {
 	resetSearchResults() {
 		this.searchBox.nativeElement.value = null;
 		this.filteredItems = this.items;
-		this.filteredDecorations = this.decorations;
 		this.applyWeaponFilter();
 	}
 
@@ -153,11 +131,6 @@ export class ItemListComponent implements OnInit, AfterViewChecked {
 		this.slotService.selectItem(newItem);
 	}
 
-	selectDecoration(decoration: DecorationModel) {
-		const newDecoration = Object.assign({}, decoration);
-		this.slotService.selectDecoration(newDecoration);
-	}
-
 	setTooltipItem(event: PointerEvent, item: ItemModel) {
 		if (event.pointerType == PointerType.Mouse) {
 			this.tooltipService.setItem(item);
@@ -166,16 +139,6 @@ export class ItemListComponent implements OnInit, AfterViewChecked {
 
 	clearTooltipItem() {
 		this.tooltipService.setItem(null);
-	}
-
-	setTooltipDecoration(event: PointerEvent, decoration: DecorationModel) {
-		if (event.pointerType == PointerType.Mouse) {
-			this.tooltipService.setDecoration(decoration);
-		}
-	}
-
-	clearTooltipDecoration() {
-		this.tooltipService.setDecoration(null);
 	}
 
 	getElementIcon(item: ItemModel): string {
@@ -202,8 +165,5 @@ export class ItemListComponent implements OnInit, AfterViewChecked {
 		}
 
 		this.search(this.searchBox.nativeElement.value);
-		// this.applyWeaponFilter(this.items);
 	}
-
-
 }
