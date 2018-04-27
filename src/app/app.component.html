@@ -1,49 +1,25 @@
 <div class="container" (pointermove)="moveTooltip($event)">
-	<div class="equipment-container">
-		<div class="equipment-slots-container">
-			<mhw-builder-item-slot
-				#weaponSlot
-				slotName="Weapon">
-			</mhw-builder-item-slot>
-			
-			<mhw-builder-item-slot 
-				#headSlot
-				slotName="Head">
-			</mhw-builder-item-slot>
-			
-			<mhw-builder-item-slot 
-				#chestSlot
-				slotName="Chest">
-			</mhw-builder-item-slot>
-			
-			<mhw-builder-item-slot 
-				#handsSlot
-				slotName="Hands">
-			</mhw-builder-item-slot>
-			
-			<mhw-builder-item-slot 
-				#legsSlot
-				slotName="Legs">
-			</mhw-builder-item-slot>
+	<div class="tab-container">
+		<div class="tab" (click)="equipmentSelected()" [class.selected]="equipmentVisible">Equipment</div>
+		<div class="tab" (click)="statsSelected()" [class.selected]="statsVisible">Stats</div>
+	</div>
 
-			<mhw-builder-item-slot 
-				#feetSlot
-				slotName="Feet">
-			</mhw-builder-item-slot>
-			
-			<mhw-builder-item-slot 
-				#charmSlot
-				slotName="Charm">
-			</mhw-builder-item-slot>
+	<div class="equipment-container" [hidden]="!equipmentVisible">
+		<div class="equipment-slots-container">
+			<mhw-builder-item-slot #weaponSlot slotName="Weapon"></mhw-builder-item-slot>
+			<mhw-builder-item-slot #headSlot slotName="Head"></mhw-builder-item-slot>
+			<mhw-builder-item-slot #chestSlot slotName="Chest"></mhw-builder-item-slot>
+			<mhw-builder-item-slot #handsSlot slotName="Hands"></mhw-builder-item-slot>
+			<mhw-builder-item-slot #legsSlot slotName="Legs"></mhw-builder-item-slot>
+			<mhw-builder-item-slot #feetSlot slotName="Feet"></mhw-builder-item-slot>
+			<mhw-builder-item-slot #charmSlot slotName="Charm"></mhw-builder-item-slot>
 		</div>
 	</div>
 
-	<div class="stats-container">
-		<div class="equip-info-container">
-			<mhw-builder-equipped-stats></mhw-builder-equipped-stats>
-			<br />
-			<mhw-builder-equipped-skills></mhw-builder-equipped-skills>
-		</div>
+	<div class="stats-container" [hidden]="!statsVisible">
+		<mhw-builder-equipped-stats></mhw-builder-equipped-stats>
+		<br />
+		<mhw-builder-equipped-skills></mhw-builder-equipped-skills>
 	</div>
 
 	<mhw-builder-tooltip></mhw-builder-tooltip>
@@ -59,21 +35,42 @@
 	</div>
 
 	<mhw-builder-modal #itemListModal>
-		<mhw-builder-item-list [hidden]="!slotService.selectedItemSlot" [itemType]="slotService.selectedItemSlot?.slotName"></mhw-builder-item-list>
-		<mhw-builder-item-list [hidden]="!slotService.selectedDecorationSlot" itemType="Decoration" [decorationLevel]="slotService.selectedDecorationSlot?.level"></mhw-builder-item-list>
-		<mhw-builder-augmentations-list [hidden]="!slotService.selectedAugmentationSlot"></mhw-builder-augmentations-list>
+		<mhw-builder-item-list *ngIf="slotService.selectedItemSlot" [itemType]="slotService.selectedItemSlot?.slotName"></mhw-builder-item-list>
+		<mhw-builder-decoration-list *ngIf="slotService.selectedDecorationSlot" [decorationLevel]="slotService.selectedDecorationSlot?.level"></mhw-builder-decoration-list>
+		<mhw-builder-augmentations-list *ngIf="slotService.selectedAugmentationSlot"></mhw-builder-augmentations-list>
 	</mhw-builder-modal>
 
 	<mhw-builder-modal #changeLogModal title="Change Log">
+		<h3>2018-04-26 (Version 1.2.5)</h3>
+		<ul>
+			<li>Added missing weapon - Taroth Daggers "Spark"</li>
+			<li>Improved item search</li>
+			<li>Improved item list load performance in preparation for showing more item detail</li>
+		</ul>
+		<h3>2018-04-24 (Version 1.2.4)</h3>
+		<ul>
+			<li>Fixed an issue that sometimes caused decorations to not load correctly when attached to items with different level slots.</li>
+		</ul>
+		<h3>2018-04-23 (Version 1.2.3)</h3>
+		<ul>
+			<li>Fixed a bug causing stat calculation errors for weapons with no sharpness.</li>
+			<li>Separated equipment slots and the stat sheet into separate tabs on small screens.</li>
+			<li>Fixed Steadfast Jewel - it was showing sleep resist when it should be stun resist (Thanks <a href="https://twitter.com/SanrikuGaming">@SanrikuGaming</a>!)</li>
+		</ul>
+		<h3>2018-04-22 (Version 1.2.2)</h3>
+		<ul>
+			<li>Added all rarity 6 Kulve Taroth weapons. Initial sharpness colors should be mostly correct, but the sharpness durability is incorrect and handicraft doesn't work on those weapons yet.</li>
+			<li>Fixed a bug that caused slot augmentations to not work on weapons with no base slots.</li>
+		</ul>
 		<h3>2018-04-22 (Version 1.2.1)</h3>
 		<ul>
 			<li>Added all rarity 7 and 8 Kulve Taroth weapons. Initial sharpness colors should be mostly correct, but the sharpness durability is incorrect and handicraft doesn't work on those weapons yet.</li>
 		</ul>
 		<h3>2018-04-19 (Version 1.2)</h3>
 		<ul>
-			<li>Lots of visual changes to make the site more mobile friendly and free up space to show more information (more to come)</li>
-			<li>Added Kulve Taroth armor</li>
-			<li>Added a bunch of Kulve Taroth weapons (there are still a ton more to add). Sharpness data is missing/inaccurate at the moment</li>
+			<li>Lots of visual changes to make the site more mobile friendly and free up space to show more information (more to come).</li>
+			<li>Added Kulve Taroth armor.</li>
+			<li>Added a bunch of Kulve Taroth weapons (there are still a ton more to add). Sharpness data is missing/inaccurate at the moment.</li>
 		</ul>
 	</mhw-builder-modal>
 </div>

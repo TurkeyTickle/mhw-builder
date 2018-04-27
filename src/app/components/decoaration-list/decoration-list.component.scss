@@ -42,27 +42,6 @@ $listItemHeight: 36px;
 	}
 }
 
-.filter-container {
-	grid-row: 2;
-
-	display: grid;
-	grid-template-columns: repeat(14, 1fr);
-
-	.selected > img {
-		background: $blue;
-		border-radius: 3px;
-	}
-
-	.weapon-filter {
-		padding: 4px;
-		height: 48px;
-	
-		img {
-			height: $filterHeight;
-		}
-	}
-}
-
 .scroll-container {
 	grid-row: 3;
 	overflow-y: auto;
@@ -80,26 +59,6 @@ $listItemHeight: 36px;
 
 		.name-container {
 			line-height: $listItemHeight + 8;
-		}
-
-		.stat-container {
-			display: grid;
-			grid-template-columns: repeat(3, 1fr);
-
-			.attack-container {
-				display: grid;
-				grid-template-columns: min-content min-content;
-				padding: 0 8px;
-
-				div {
-					line-height: $listItemHeight + 8;
-				}
-			}
-
-			img {
-				height: $listItemHeight - 8;
-				margin: 8px 0;
-			}
 		}
 	}
 

@@ -34,14 +34,12 @@ export class EquippedStatsComponent implements OnInit {
 	showCalcDetails(event: PointerEvent, calc: StatDetailModel) {
 		if (event.pointerType == PointerType.Mouse) {
 			if (calc.calculationTemplate || (calc.info && calc.info.length)) {
-				this.tooltipService.anchorPoint = AnchorType.TopRight;
 				this.tooltipService.setCalc(calc);
 			}
 		}
 	}
 
 	clearCalcDetails() {
-		this.tooltipService.anchorPoint = AnchorType.TopLeft;
 		this.tooltipService.setCalc(null);
 	}
 }

@@ -1,5 +1,5 @@
 import { Location } from '@angular/common';
-import { AfterViewInit, ChangeDetectorRef, Component, ViewChild, OnInit } from '@angular/core';
+import { AfterViewInit, ChangeDetectorRef, Component, ViewChild, OnInit, HostListener } from '@angular/core';
 import { DecorationSlotComponent } from './components/decoration-slot/decoration-slot.component';
 import { EquippedSkillsComponent } from './components/equipped-skills/equipped-skills.component';
 import { EquippedStatsComponent } from './components/equipped-stats/equipped-stats.component';
@@ -35,11 +35,19 @@ export class AppComponent implements OnInit, AfterViewInit {
 	@ViewChild('itemListModal') itemListModal: ModalComponent;
 	@ViewChild('changeLogModal') changeLogModal: ModalComponent;
 
+	equipmentVisible = true;
+	statsVisible = true;
+
 	modalTitle: string;
 
 	selectedEquipmentSlot: ItemSlotComponent;
 	selectedDecorationSlot: DecorationSlotComponent;
 	selectedAugmentationSlot: AugmentationSlotComponent;
+
+	@HostListener('window:resize')
+	onResize() {
+		this.respondToResize();
+	}
 
 	constructor(
 		public slotService: SlotService,
@@ -59,6 +67,8 @@ export class AppComponent implements OnInit, AfterViewInit {
 			this.charmSlot,
 			this.changeDetector
 		);
+
+		this.respondToResize();
 
 		this.buildService.initialize(this.changeDetector);
 
@@ -94,6 +104,31 @@ export class AppComponent implements OnInit, AfterViewInit {
 
 	ngAfterViewInit() {
 		setTimeout(() => this.buildService.loadBuild(location.hash), 100);
+	}
+
+	respondToResize() {
+		if (window.innerWidth <= 768) {
+			if (!this.equipmentVisible && this.statsVisible) {
+				this.equipmentVisible = false;
+				this.statsVisible = true;
+			} else {
+				this.equipmentVisible = true;
+				this.statsVisible = false;
+			}
+		} else {
+			this.equipmentVisible = true;
+			this.statsVisible = true;
+		}
+	}
+
+	equipmentSelected() {
+		this.equipmentVisible = true;
+		this.statsVisible = false;
+	}
+
+	statsSelected() {
+		this.equipmentVisible = false;
+		this.statsVisible = true;
 	}
 
 	moveTooltip(event: PointerEvent) {

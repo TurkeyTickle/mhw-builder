@@ -55,7 +55,7 @@ export class ItemDetailsComponent implements OnInit {
 				value: this.getWeaponTypeName(this.item.weaponType)
 			});
 
-			if (this.item.sharpnessLevels) {
+			if (this.item.sharpnessLevels && this.item.sharpnessLevels.length > 0) {
 				this.stats.push({
 					name: 'Sharpness',
 					value: this.item.sharpnessLevels[0].color

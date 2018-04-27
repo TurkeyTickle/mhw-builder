@@ -195,9 +195,11 @@ export class StatService {
 		}
 		if (weapon && weapon.sharpnessLevels) {
 			this.stats.effectiveSharpnessLevel = weapon.sharpnessLevels[Math.min(this.stats.passiveSharpness / 10, weapon.sharpnessLevels.length - 1)];
-			const sharpnessModifier = this.dataService.getSharpnessModifier(DamageType.Physical, this.stats.effectiveSharpnessLevel.color);
-			if (sharpnessModifier) {
-				this.stats.effectivePhysicalSharpnessModifier = sharpnessModifier.value;
+			if (this.stats.effectiveSharpnessLevel) {
+				const sharpnessModifier = this.dataService.getSharpnessModifier(DamageType.Physical, this.stats.effectiveSharpnessLevel.color);
+				if (sharpnessModifier) {
+					this.stats.effectivePhysicalSharpnessModifier = sharpnessModifier.value;
+				}
 			}
 		}
 

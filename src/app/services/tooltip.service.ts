@@ -24,12 +24,6 @@ export class TooltipService {
 	public skill: SkillModel;
 	public calc: StatDetailModel;
 
-	public anchorPoint: AnchorType;
-
-	constructor() {
-		this.anchorPoint = AnchorType.TopLeft;
-	}
-
 	setItem(item: ItemModel) {
 		if (item != this.item) {
 			this.reset();

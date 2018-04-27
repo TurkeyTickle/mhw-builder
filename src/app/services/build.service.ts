@@ -171,6 +171,7 @@ export class BuildService {
 
 			if (item.slots) {
 				let decorations = _.filter(this.equipmentService.decorations, d => d.itemId === item.id);
+				decorations = _.orderBy(decorations, [d => d.level], ['desc']);
 				for (let i = 0; i < item.slots.length; i++) {
 					const slot = item.slots[i];
 					const decoration = _.find(decorations, d => d.itemId == item.id && d.level <= slot.level);

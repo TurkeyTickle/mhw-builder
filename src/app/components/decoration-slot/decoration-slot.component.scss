@@ -13,7 +13,6 @@ $slotHeight: 30px;
 	.slot-icon {
 		line-height: $slotHeight;
 		width: 40px;
-		// margin-top: 3px;
 	}
 
 	.selected-decoration {
@@ -31,46 +30,3 @@ $slotHeight: 30px;
 .selected {
 	background-color: #525252;
 }
-
-
-// .container {
-// 	background-color: rgb(50,50,50);
-// 	height: $slotHeight;
-// 	padding: 4px;
-// 	cursor: pointer;
-// 	display: flex;
-// 	font-size: 14px;
-// 	border-radius: 3px;
-
-// 	.slot-icon {
-// 		line-height: $slotHeight;
-// 		width: 40px;
-// 		flex-grow: 0;
-// 		flex-shrink: 0;
-// 		margin-left: 6px;
-// 	}
-
-// 	.selected-decoration {
-// 		flex-grow: 1;
-// 		line-height: $slotHeight;
-// 		text-overflow: ellipsis;
-// 		overflow: hidden;
-// 	}
-	
-// 	.clear-button {
-// 		flex-grow: 0;
-// 		flex-shrink: 0;
-// 		height: $slotHeight;
-// 		width: 34px;
-// 	}
-// }
-
-// :host {
-// 	flex-grow: 1;
-// 	flex-basis: 0;
-// 	padding: 0 2px 0 2px;
-// }
-
-// .selected {
-// 	background-color: #525252;
-// }
