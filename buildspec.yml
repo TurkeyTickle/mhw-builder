@@ -1,8 +1,4 @@
 version: 0.1
-environment_variables:
-    plaintext:
-        S3_BUCKET: "mhw-builder.com"
-        BUILD_ENV: "prod"
 phases:
     install:
         commands:
