@@ -1,6 +1,6 @@
 version: 0.2
 env:
-    plaintext:
+    variables:
         S3_BUCKET: "S3_BUCKET"
         BUILD_ENV: "BUILD_ENV"
 phases:
