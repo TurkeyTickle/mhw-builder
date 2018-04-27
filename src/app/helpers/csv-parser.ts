@@ -55,7 +55,7 @@ export class CSVParser {
 					const slots: SlotModel[] = [];
 					for (const item of _.filter(values, v => v)) {
 						slots.push({
-							level: parseInt(item, 10),
+							level: Number(item),
 						});
 					}
 					return slots;
