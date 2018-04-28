@@ -1332,5 +1332,31 @@
       }
     ],
     "id": 359
-  }
+  },
+	{
+		"name": "Dante's Belt Alpha",
+		"itemType": "Legs",
+		"baseDefense": 64,
+		"fireResist": 3,
+		"waterResist": -3,
+		"thunderResist": 3,
+		"iceResist": -3,
+		"dragonResist": 3,
+		"skills": [
+			{
+				"id": "evadeWindow",
+				"level": 1
+			},
+			{
+				"id": "latentPower",
+				"level": 1
+			}
+		],
+		"slots": [
+			{
+				"level": 3
+			}
+		],
+		"id": 365
+	}
 ]
