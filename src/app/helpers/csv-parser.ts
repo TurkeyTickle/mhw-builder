@@ -72,7 +72,7 @@ export class CSVParser {
 				predicate: (value: string) => {
 					const values = value.split(';');
 					const sharpnessLevels: SharpnessLevelModel[] = [];
-					const items = _.filter(values, v => v != null);
+					const items = _.filter(values, v => v != null && v != '');
 					for (const item of items) {
 						const parts = item.split('-');
 						sharpnessLevels.push({

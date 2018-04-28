@@ -16,9 +16,8 @@ $listItemHeight: 36px;
 	background-color: rgb(50,50,50);
 	padding: 0 0 0 12px;	
 	border-radius: 3px;
-	flex-grow: 0;
-	flex-shrink: 0;
-	display: flex;
+	display: grid;
+	grid-template-columns: auto min-content;
 	height: $searchHeight;
 
 	input {
@@ -27,7 +26,6 @@ $listItemHeight: 36px;
 		color: white;
 		font-size: 16px;
 		height: $searchHeight - 2;
-		flex-grow: 1;
 	}
 
 	input:focus {
@@ -80,6 +78,9 @@ $listItemHeight: 36px;
 
 		.name-container {
 			line-height: $listItemHeight + 8;
+			white-space: nowrap;
+			text-overflow: ellipsis;
+			overflow: hidden;
 		}
 
 		.stat-container {
