@@ -80,7 +80,7 @@ $listItemHeight: 66px;
 		.name-container {
 			height: 32px;
 			display: grid;
-			grid-template-columns: min-content auto max-content max-content;
+			grid-template-columns: auto max-content max-content min-content;
 			grid-gap: 8px;
 
 			.rarity {
@@ -99,6 +99,7 @@ $listItemHeight: 66px;
 				white-space: nowrap;
 				text-overflow: ellipsis;
 				overflow: hidden;
+				padding-left: 4px;
 			}
 			
 			.slots {
@@ -107,7 +108,8 @@ $listItemHeight: 66px;
 				grid-gap: 4px;
 
 				img {
-					height: 22px;;
+					height: 18px;
+					margin: 4px 0;
 				}
 			}
 			

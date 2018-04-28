@@ -56,9 +56,6 @@
 		<div *ngFor="let item of virtualItems" class="scroll-item-container" (click)="selectItem(item)">
 
 			<div class="name-container">
-				<div class="rarity">
-					{{item.rarity}}
-				</div>
 				<div class="name">
 					{{item.name}}
 				</div>
@@ -76,6 +73,9 @@
 				<div class="type">
 					<span *ngIf="item.equipmentCategory == equipmentCategoryType.Armor">{{item.itemType}}</span>
 					<span *ngIf="item.equipmentCategory == equipmentCategoryType.Weapon">{{dataService.getWeaponTypeName(item.weaponType)}}</span>
+				</div>
+				<div class="rarity" *ngIf="item.rarity">
+					{{item.rarity}}
 				</div>
 			</div>
 
