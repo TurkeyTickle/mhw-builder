@@ -16,8 +16,9 @@ $listItemHeight: 36px;
 	background-color: rgb(50,50,50);
 	padding: 0 0 0 12px;	
 	border-radius: 3px;
-	display: grid;
-	grid-template-columns: auto min-content;
+	flex-grow: 0;
+	flex-shrink: 0;
+	display: flex;
 	height: $searchHeight;
 
 	input {
@@ -26,6 +27,7 @@ $listItemHeight: 36px;
 		color: white;
 		font-size: 16px;
 		height: $searchHeight - 2;
+		flex-grow: 1;
 	}
 
 	input:focus {
@@ -37,27 +39,6 @@ $listItemHeight: 36px;
 		height: $searchHeight;
 		width: 36px;
 		flex-grow: 0;
-	}
-}
-
-.filter-container {
-	grid-row: 2;
-
-	display: grid;
-	grid-template-columns: repeat(14, 1fr);
-
-	.selected > img {
-		background: $blue;
-		border-radius: 3px;
-	}
-
-	.weapon-filter {
-		padding: 4px;
-		height: 48px;
-	
-		img {
-			height: $filterHeight;
-		}
 	}
 }
 
@@ -78,29 +59,6 @@ $listItemHeight: 36px;
 
 		.name-container {
 			line-height: $listItemHeight + 8;
-			white-space: nowrap;
-			text-overflow: ellipsis;
-			overflow: hidden;
-		}
-
-		.stat-container {
-			display: grid;
-			grid-template-columns: repeat(3, 1fr);
-
-			.attack-container {
-				display: grid;
-				grid-template-columns: min-content min-content;
-				padding: 0 8px;
-
-				div {
-					line-height: $listItemHeight + 8;
-				}
-			}
-
-			img {
-				height: $listItemHeight - 8;
-				margin: 8px 0;
-			}
 		}
 	}
 

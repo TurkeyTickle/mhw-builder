@@ -103,10 +103,12 @@ $tabsHeight: 36px;
 	.equipment-container {
 		top: $tabsHeight + 8;
 		grid-column: 1 / 4;
+		margin-top: 16px;
 	}
 
 	.stats-container {
 		top: $tabsHeight + 8;
 		grid-column: 1 / 4;
+		margin-top: 16px;
 	}
 }

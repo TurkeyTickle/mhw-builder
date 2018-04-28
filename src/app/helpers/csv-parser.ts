@@ -55,7 +55,7 @@ export class CSVParser {
 					const slots: SlotModel[] = [];
 					for (const item of _.filter(values, v => v)) {
 						slots.push({
-							level: parseInt(item, 10),
+							level: Number(item),
 						});
 					}
 					return slots;
@@ -72,7 +72,8 @@ export class CSVParser {
 				predicate: (value: string) => {
 					const values = value.split(';');
 					const sharpnessLevels: SharpnessLevelModel[] = [];
-					for (const item of _.filter(values, v => v)) {
+					const items = _.filter(values, v => v != null && v != '');
+					for (const item of items) {
 						const parts = item.split('-');
 						sharpnessLevels.push({
 							color: parts[0] as SharpnessType,

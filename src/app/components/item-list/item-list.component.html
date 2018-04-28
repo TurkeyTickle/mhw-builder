@@ -8,82 +8,70 @@
 	</div>
 
 	<div class="filter-container" *ngIf="itemType == 'Weapon'">
-			<button class="weapon-filter" [class.selected]="weaponTypeFilter == 'GreatSword'" (click)="weaponFilterClicked('GreatSword')">
-				<img src="assets/images/weapons/greatsword-icon.png">
-			</button>
-			<button class="weapon-filter" [class.selected]="weaponTypeFilter == 'SwordAndShield'" (click)="weaponFilterClicked('SwordAndShield')">
-				<img src="assets/images/weapons/sword-shield-icon.png">
-			</button>
-			<button class="weapon-filter" [class.selected]="weaponTypeFilter == 'DualBlades'" (click)="weaponFilterClicked('DualBlades')">
-				<img src="assets/images/weapons/dual-blades-icon.png">
-			</button>
-			<button class="weapon-filter" [class.selected]="weaponTypeFilter == 'LongSword'" (click)="weaponFilterClicked('LongSword')">
-				<img src="assets/images/weapons/longsword-icon.png">
-			</button>
-			<button class="weapon-filter" [class.selected]="weaponTypeFilter == 'Hammer'" (click)="weaponFilterClicked('Hammer')">
-				<img src="assets/images/weapons/hammer-icon.png">
-			</button>
-			<button class="weapon-filter" [class.selected]="weaponTypeFilter == 'HuntingHorn'" (click)="weaponFilterClicked('HuntingHorn')">
-				<img src="assets/images/weapons/hunting-horn-icon.png">
-			</button>
-			<button class="weapon-filter" [class.selected]="weaponTypeFilter == 'Lance'" (click)="weaponFilterClicked('Lance')">
-				<img src="assets/images/weapons/lance-icon.png">
-			</button>
-			<button class="weapon-filter" [class.selected]="weaponTypeFilter == 'Gunlance'" (click)="weaponFilterClicked('Gunlance')">
-				<img src="assets/images/weapons/gunlance-icon.png">
-			</button>
-			<button class="weapon-filter" [class.selected]="weaponTypeFilter == 'SwitchAxe'" (click)="weaponFilterClicked('SwitchAxe')">
-				<img src="assets/images/weapons/switch-axe-icon.png">
-			</button>
-			<button class="weapon-filter" [class.selected]="weaponTypeFilter == 'ChargeBlade'" (click)="weaponFilterClicked('ChargeBlade')">
-				<img src="assets/images/weapons/charge-blade-icon.png">
-			</button>
-			<button class="weapon-filter" [class.selected]="weaponTypeFilter == 'InsectGlaive'" (click)="weaponFilterClicked('InsectGlaive')">
-				<img src="assets/images/weapons/insect-glaive-icon.png">
-			</button>
-			<button class="weapon-filter" [class.selected]="weaponTypeFilter == 'Bow'" (click)="weaponFilterClicked('Bow')">
-				<img src="assets/images/weapons/bow-icon.png">
-			</button>
-			<button class="weapon-filter" [class.selected]="weaponTypeFilter == 'LightBowgun'" (click)="weaponFilterClicked('LightBowgun')">
-				<img src="assets/images/weapons/light-bowgun-icon.png">
-			</button>
-			<button class="weapon-filter" [class.selected]="weaponTypeFilter == 'HeavyBowgun'" (click)="weaponFilterClicked('HeavyBowgun')">
-				<img src="assets/images/weapons/heavy-bowgun-icon.png">
-			</button>
+		<button class="weapon-filter" [class.selected]="weaponTypeFilter == 'GreatSword'" (click)="weaponFilterClicked('GreatSword')">
+			<img src="assets/images/weapons/greatsword-icon.png">
+		</button>
+		<button class="weapon-filter" [class.selected]="weaponTypeFilter == 'SwordAndShield'" (click)="weaponFilterClicked('SwordAndShield')">
+			<img src="assets/images/weapons/sword-shield-icon.png">
+		</button>
+		<button class="weapon-filter" [class.selected]="weaponTypeFilter == 'DualBlades'" (click)="weaponFilterClicked('DualBlades')">
+			<img src="assets/images/weapons/dual-blades-icon.png">
+		</button>
+		<button class="weapon-filter" [class.selected]="weaponTypeFilter == 'LongSword'" (click)="weaponFilterClicked('LongSword')">
+			<img src="assets/images/weapons/longsword-icon.png">
+		</button>
+		<button class="weapon-filter" [class.selected]="weaponTypeFilter == 'Hammer'" (click)="weaponFilterClicked('Hammer')">
+			<img src="assets/images/weapons/hammer-icon.png">
+		</button>
+		<button class="weapon-filter" [class.selected]="weaponTypeFilter == 'HuntingHorn'" (click)="weaponFilterClicked('HuntingHorn')">
+			<img src="assets/images/weapons/hunting-horn-icon.png">
+		</button>
+		<button class="weapon-filter" [class.selected]="weaponTypeFilter == 'Lance'" (click)="weaponFilterClicked('Lance')">
+			<img src="assets/images/weapons/lance-icon.png">
+		</button>
+		<button class="weapon-filter" [class.selected]="weaponTypeFilter == 'Gunlance'" (click)="weaponFilterClicked('Gunlance')">
+			<img src="assets/images/weapons/gunlance-icon.png">
+		</button>
+		<button class="weapon-filter" [class.selected]="weaponTypeFilter == 'SwitchAxe'" (click)="weaponFilterClicked('SwitchAxe')">
+			<img src="assets/images/weapons/switch-axe-icon.png">
+		</button>
+		<button class="weapon-filter" [class.selected]="weaponTypeFilter == 'ChargeBlade'" (click)="weaponFilterClicked('ChargeBlade')">
+			<img src="assets/images/weapons/charge-blade-icon.png">
+		</button>
+		<button class="weapon-filter" [class.selected]="weaponTypeFilter == 'InsectGlaive'" (click)="weaponFilterClicked('InsectGlaive')">
+			<img src="assets/images/weapons/insect-glaive-icon.png">
+		</button>
+		<button class="weapon-filter" [class.selected]="weaponTypeFilter == 'Bow'" (click)="weaponFilterClicked('Bow')">
+			<img src="assets/images/weapons/bow-icon.png">
+		</button>
+		<button class="weapon-filter" [class.selected]="weaponTypeFilter == 'LightBowgun'" (click)="weaponFilterClicked('LightBowgun')">
+			<img src="assets/images/weapons/light-bowgun-icon.png">
+		</button>
+		<button class="weapon-filter" [class.selected]="weaponTypeFilter == 'HeavyBowgun'" (click)="weaponFilterClicked('HeavyBowgun')">
+			<img src="assets/images/weapons/heavy-bowgun-icon.png">
+		</button>
 	</div>
 
-	<div class="items-container">
-		<ul>
-			<div *ngFor="let item of items">
-				<li [hidden]="!item.visible" (click)="selectItem(item)" (pointerenter)="setTooltipItem($event, item)" (pointerleave)="clearTooltipItem()">
-					<div class="info-container">
-						<div class="name-container">
-							{{item.name}}
-						</div>
-
-						<div class="stat-container">
-							<div class="attack-container" *ngIf="item.baseAttack">
-								<img src="assets/images/attack-icon.png">
-								<div>{{item.baseAttack}}</div>
-							</div>
-							<div class="attack-container" *ngIf="item.ailment">
-								<img [src]="getAilmentIcon(item)">
-								<div [style.color]="item.ailmentHidden ? 'gray' : 'white'">{{item.ailmentBaseAttack}}</div>
-							</div>
-							<div class="attack-container" *ngIf="item.element">
-								<img [src]="getElementIcon(item)">
-								<div [style.color]="item.elementHidden ? 'gray' : 'white'">{{item.elementBaseAttack}}</div>
-							</div>
-						</div>
-					</div>
-				</li>
+	<virtual-scroll id="items-list" #itemList class="scroll-container" *ngIf="items" [items]="filteredItems" (update)="onItemListUpdate($event)">
+		<div *ngFor="let item of virtualItems" class="scroll-item-container" (click)="selectItem(item)" (pointerenter)="setTooltipItem($event, item)" (pointerleave)="clearTooltipItem()">
+			<div class="name-container">
+				{{item.name}}
 			</div>
-			<div *ngFor="let decoration of decorations">
-				<li [hidden]="!decoration.visible"
-					(click)="selectDecoration(decoration)"
-					(pointerenter)="setTooltipDecoration($event, decoration)"
-					(pointerleave)="clearTooltipDecoration()">{{decoration.name}}</li>
+		
+			<div class="stat-container">
+				<div class="attack-container" *ngIf="item.baseAttack">
+					<img src="assets/images/attack-icon.png">
+					<div>{{item.baseAttack}}</div>
+				</div>
+				<div class="attack-container" *ngIf="item.ailment">
+					<img [src]="getAilmentIcon(item)">
+					<div [style.color]="item.ailmentHidden ? 'gray' : 'white'">{{item.ailmentBaseAttack}}</div>
+				</div>
+				<div class="attack-container" *ngIf="item.element">
+					<img [src]="getElementIcon(item)">
+					<div [style.color]="item.elementHidden ? 'gray' : 'white'">{{item.elementBaseAttack}}</div>
+				</div>
 			</div>
-		</ul>
-	</div>
+		</div>
+	</virtual-scroll>
 </div>

@@ -32,7 +32,7 @@ export class StatService {
 		this.updateSkillStats(skills);
 		this.updateAugmentations(augmentations);
 
-		const weapon = _.find(items, item => item.weaponType);
+		const weapon = _.find(items, item => item.weaponType != null);
 		this.calculateAttack(weapon);
 
 		this.statsUpdated$.next(this.stats);
