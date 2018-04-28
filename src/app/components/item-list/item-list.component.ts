@@ -11,8 +11,8 @@ import { WeaponType } from '../../types/weapon.type';
 import { SlotService } from '../../services/slot.service';
 import { PointerType } from '../../types/pointer.type';
 import { Observable } from 'rxjs/Observable';
-import { IfObservable } from 'rxjs/observable/IfObservable';
 import { VirtualScrollComponent } from 'angular2-virtual-scroll';
+import { EquipmentCategoryType } from '../../types/equipment-category.type';
 
 @Component({
 	selector: 'mhw-builder-item-list',
@@ -20,6 +20,8 @@ import { VirtualScrollComponent } from 'angular2-virtual-scroll';
 	styleUrls: ['./item-list.component.scss']
 })
 export class ItemListComponent implements OnInit {
+	public itemTypes = ItemType;
+	public equipmentCategoryType = EquipmentCategoryType;
 	private _itemType: ItemType;
 
 	@Input()
@@ -39,6 +41,8 @@ export class ItemListComponent implements OnInit {
 	virtualItems: SearchItemModel[];
 	weaponTypeFilter?: WeaponType;
 
+	childHeight: number;
+
 	@HostListener('window:resize')
 	onResize() {
 		this.refreshList();
@@ -46,7 +50,7 @@ export class ItemListComponent implements OnInit {
 
 	constructor(
 		private slotService: SlotService,
-		private dataService: DataService,
+		public dataService: DataService,
 		private tooltipService: TooltipService
 	) { }
 
@@ -131,15 +135,15 @@ export class ItemListComponent implements OnInit {
 		this.slotService.selectItem(newItem);
 	}
 
-	setTooltipItem(event: PointerEvent, item: ItemModel) {
-		if (event.pointerType == PointerType.Mouse) {
-			this.tooltipService.setItem(item);
-		}
-	}
+	// setTooltipItem(event: PointerEvent, item: ItemModel) {
+	// 	if (event.pointerType == PointerType.Mouse) {
+	// 		this.tooltipService.setItem(item);
+	// 	}
+	// }
 
-	clearTooltipItem() {
-		this.tooltipService.setItem(null);
-	}
+	// clearTooltipItem() {
+	// 	this.tooltipService.setItem(null);
+	// }
 
 	getElementIcon(item: ItemModel): string {
 		if (item.element) {

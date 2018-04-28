@@ -116,4 +116,23 @@ export class DataService {
 				return weaponType;
 		}
 	}
+
+	getSharpnessName(sharpnessType: SharpnessType): string {
+		switch (sharpnessType) {
+			case SharpnessType.Blue:
+				return 'Blue';
+			case SharpnessType.Green:
+				return 'Green';
+			case SharpnessType.Orange:
+				return 'Orange';
+			case SharpnessType.Red:
+				return 'Red';
+			case SharpnessType.White:
+				return 'White';
+			case SharpnessType.Yellow:
+				return 'Yellow';
+			default:
+				return sharpnessType;
+		}
+	}
 }

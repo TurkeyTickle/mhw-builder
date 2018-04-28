@@ -1,8 +1,9 @@
 @import "~sass/variables";
+@import "~sass/common";
 
 $searchHeight: 38px;
 $filterHeight: 42px;
-$listItemHeight: 36px;
+$listItemHeight: 66px;
 
 .container {
 	display: grid;
@@ -67,39 +68,94 @@ $listItemHeight: 36px;
 	border-radius: 3px;
 
 	.scroll-item-container {
-		line-height: $listItemHeight;
+		min-height: 90px;
 		display: grid;
-		grid-template-columns: auto min-content;
+		grid-template-rows: min-content max-content;
 		border-radius: 3px;
 		background-color: #323232;
-		margin-bottom: 2px;
+		margin-bottom: 4px;
 		padding: 4px 8px;
 		cursor: pointer;
 
 		.name-container {
-			line-height: $listItemHeight + 8;
-			white-space: nowrap;
-			text-overflow: ellipsis;
-			overflow: hidden;
-		}
-
-		.stat-container {
+			height: 32px;
 			display: grid;
-			grid-template-columns: repeat(3, 1fr);
+			grid-template-columns: min-content auto max-content max-content;
+			grid-gap: 8px;
 
-			.attack-container {
-				display: grid;
-				grid-template-columns: min-content min-content;
-				padding: 0 8px;
-
-				div {
-					line-height: $listItemHeight + 8;
-				}
+			.rarity {
+				width: 22px;
+				height: 22px;
+				line-height: 22px;
+				background-color: #272727;
+				border-radius: 26px;
+				text-align: center;
+				font-size: 10px;
+				margin: 4px 0;
 			}
 
-			img {
-				height: $listItemHeight - 8;
-				margin: 8px 0;
+			.name {
+				line-height: 30px;
+				white-space: nowrap;
+				text-overflow: ellipsis;
+				overflow: hidden;
+			}
+			
+			.slots {
+				display: grid;
+				grid-template-columns: repeat(3, auto);
+				grid-gap: 4px;
+
+				img {
+					height: 22px;;
+				}
+			}
+			
+			.type {
+				height: 22px;
+				line-height: 22px;
+				background-color: #272727;
+				border-radius: 26px;
+				font-size: 10px;
+				margin: 4px 0;
+				padding: 0 8px;
+			}
+		}
+
+		.stats-container {
+
+			.weapon-stats-container, .armor-stats-container {
+				display: grid;
+				grid-template-columns: repeat(3, 1fr);
+				grid-gap: 4px;
+				
+				.stat-container {
+					background-color: #272727;
+					border-radius: 3px;
+					display: grid;
+					grid-template-columns: min-content auto;
+
+					.stat-value {
+						border-left: 1px solid #323232;
+						line-height: 26px;
+						text-align: center;
+						font-size: 12px;
+										white-space: nowrap;
+					text-overflow: ellipsis;
+					overflow: hidden;
+					}
+
+					.icon-container {
+						height: 26px;
+						width: 26px;
+						text-align: center;
+
+						img {
+							height: 18px;
+							margin: 4px 2px;
+						}
+					}
+				}
 			}
 		}
 	}
@@ -113,4 +169,12 @@ $listItemHeight: 36px;
 	.filter-container {
 		grid-template-columns: repeat(7, 1fr);
 	}
+
+	// .scroll-container {
+	// 	.scroll-item-container {
+	// 		.stats-container {
+	// 			grid-template-columns: repeat(3, 1fr);
+	// 		} 
+	// 	}
+	// } 
 }
