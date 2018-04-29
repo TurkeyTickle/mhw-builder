@@ -27,6 +27,7 @@
 	<div class="signature">
 		Made with 💋 by TurkeyTickle
 		<a href="https://twitter.com/turkeytickle" target="_blank"><i class="fab fa-twitter"></i></a>
+		<a href="https://www.twitch.tv/turkeytickle" target="_blank"><i class="fab fa-twitch"></i></a>
 		<a href="https://github.com/TurkeyTickle/mhw-builder" target="_blank"><i class="fab fa-github"></i></a>
 	</div>
 
@@ -35,12 +36,29 @@
 	</div>
 
 	<mhw-builder-modal #itemListModal>
-		<mhw-builder-item-list *ngIf="slotService.selectedItemSlot" [itemType]="slotService.selectedItemSlot?.slotName"></mhw-builder-item-list>
+		<mhw-builder-weapon-list 
+			*ngIf="slotService.selectedItemSlot && dataService.getEquipmentCategory(slotService.selectedItemSlot.slotName) == equipmentCategoryTypes.Weapon" 
+			[itemType]="slotService.selectedItemSlot?.slotName"></mhw-builder-weapon-list>
+
+		<mhw-builder-armor-list 
+			*ngIf="slotService.selectedItemSlot && dataService.getEquipmentCategory(slotService.selectedItemSlot.slotName) == equipmentCategoryTypes.Armor"
+			[itemType]="slotService.selectedItemSlot?.slotName"></mhw-builder-armor-list>
+			
+		<mhw-builder-charm-list 
+			*ngIf="slotService.selectedItemSlot && dataService.getEquipmentCategory(slotService.selectedItemSlot.slotName) == equipmentCategoryTypes.Charm"
+			[itemType]="slotService.selectedItemSlot?.slotName"></mhw-builder-charm-list>
+
 		<mhw-builder-decoration-list *ngIf="slotService.selectedDecorationSlot" [decorationLevel]="slotService.selectedDecorationSlot?.level"></mhw-builder-decoration-list>
 		<mhw-builder-augmentations-list *ngIf="slotService.selectedAugmentationSlot"></mhw-builder-augmentations-list>
 	</mhw-builder-modal>
 
 	<mhw-builder-modal #changeLogModal title="Change Log">
+		<h3>2018-04-29 (Version 1.3)</h3>
+		<ul>
+			<li>Redesigned item lists to show much more info</li>
+			<li>Fixed armor search bug that was causing undesired results when searching for skills with multple words</li>
+			<li>Added Azure Starlord armor and Azure Star long sword</li>
+		</ul>
 		<h3>2018-04-28 (Version 1.2.6)</h3>
 		<ul>
 			<li>Added Dante's armor set</li>

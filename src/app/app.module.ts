@@ -10,7 +10,6 @@ import { DecorationSlotComponent } from './components/decoration-slot/decoration
 import { EquippedSkillsComponent } from './components/equipped-skills/equipped-skills.component';
 import { EquippedStatsComponent } from './components/equipped-stats/equipped-stats.component';
 import { ItemDetailsComponent } from './components/item-details/item-details.component';
-import { ItemListComponent } from './components/item-list/item-list.component';
 import { ItemSlotComponent } from './components/item-slot/item-slot.component';
 import { SkillDetailsComponent } from './components/skill-details/skill-details.component';
 import { TooltipComponent } from './components/tooltip/tooltip.component';
@@ -27,14 +26,19 @@ import { BuildService } from './services/build.service';
 import { AugmentationDetailsComponent } from './components/augmentation-details/augmentation-details.component';
 import { ModalComponent } from './components/modal/modal.component';
 import { VirtualScrollModule } from 'angular2-virtual-scroll';
-import { DecorationListComponent } from './components/decoaration-list/decoration-list.component';
+import { DecorationListComponent } from './components/decoration-list/decoration-list.component';
+import { ArmorListComponent } from './components/armor-list/armor-list.component';
+import { WeaponListComponent } from './components/weapon-list/weapon-list.component';
+import { CharmListComponent } from './components/charm-list/charm-list.component';
 
 @NgModule({
 	declarations: [
 		AppComponent,
 		TooltipComponent,
 		ItemSlotComponent,
-		ItemListComponent,
+		WeaponListComponent,
+		ArmorListComponent,
+		CharmListComponent,
 		DecorationListComponent,
 		EquippedStatsComponent,
 		EquippedSkillsComponent,

@@ -52,24 +52,69 @@
 		</button>
 	</div>
 
-	<virtual-scroll id="items-list" #itemList class="scroll-container" *ngIf="items" [items]="filteredItems" (update)="onItemListUpdate($event)">
-		<div *ngFor="let item of virtualItems" class="scroll-item-container" (click)="selectItem(item)" (pointerenter)="setTooltipItem($event, item)" (pointerleave)="clearTooltipItem()">
+	<virtual-scroll id="items-list" #itemList class="scroll-container" *ngIf="items" [items]="filteredItems" (update)="onItemListUpdate($event)" [childHeight]="108">  
+		<div *ngFor="let item of virtualItems" class="scroll-item-container" (click)="selectItem(item)">
+
 			<div class="name-container">
-				{{item.name}}
+				<div class="name">
+					{{item.name}}
+				</div>
+				<div class="slots">
+					<div *ngIf="item.slots[0]?.level">
+						<img [src]="'assets/images/slot-' + item?.slots[0]?.level + '-icon.png'">
+					</div>
+					<div *ngIf="item.slots[1]?.level">
+						<img [src]="'assets/images/slot-' + item?.slots[1]?.level + '-icon.png'">
+					</div>
+					<div *ngIf="item.slots[2]?.level">
+						<img [src]="'assets/images/slot-' + item?.slots[2]?.level + '-icon.png'">
+					</div>
+				</div>
+				<div class="type">
+					<span *ngIf="item.equipmentCategory == equipmentCategoryType.Armor">{{item.itemType}}</span>
+					<span *ngIf="item.equipmentCategory == equipmentCategoryType.Weapon">{{dataService.getWeaponTypeName(item.weaponType)}}</span>
+				</div>
+				<div class="rarity" *ngIf="item.rarity">
+					{{item.rarity}}
+				</div>
 			</div>
-		
-			<div class="stat-container">
-				<div class="attack-container" *ngIf="item.baseAttack">
-					<img src="assets/images/attack-icon.png">
-					<div>{{item.baseAttack}}</div>
+
+			<div class="stats-container">
+				<div class="stat-container">
+					<div class="icon-container">
+						<img src="assets/images/attack-icon.png">
+					</div>
+					<div class="stat-value">{{item.baseAttack}}</div>
 				</div>
-				<div class="attack-container" *ngIf="item.ailment">
-					<img [src]="getAilmentIcon(item)">
-					<div [style.color]="item.ailmentHidden ? 'gray' : 'white'">{{item.ailmentBaseAttack}}</div>
+				<div class="stat-container">
+					<div class="icon-container">
+						<img src="assets/images/affinity-icon.png">
+					</div>
+					<div class="stat-value" [class.red]="item.baseAffinityPercent < 0">{{item.baseAffinityPercent}}%</div>
 				</div>
-				<div class="attack-container" *ngIf="item.element">
-					<img [src]="getElementIcon(item)">
-					<div [style.color]="item.elementHidden ? 'gray' : 'white'">{{item.elementBaseAttack}}</div>
+				<div class="stat-container">
+					<div class="icon-container">
+						<img src="assets/images/sharpness-icon.png">
+					</div>
+					<div class="stat-value">{{item.sharpnessLevels[0] ? item.sharpnessLevels[0].color : 'N/A'}}</div>
+				</div>
+				<div class="stat-container">
+					<div class="icon-container">
+						<img src="assets/images/defense-icon.png">
+					</div>
+					<div class="stat-value">{{item.baseDefense}}</div>
+				</div>
+				<div class="stat-container" *ngIf="item.ailment">
+					<div class="icon-container">
+						<img [src]="getAilmentIcon(item)">
+					</div>
+					<div class="stat-value" [style.color]="item.ailmentHidden ? 'gray' : 'white'">{{item.ailmentBaseAttack}}</div>
+				</div>
+				<div class="stat-container" *ngIf="item.element">
+					<div class="icon-container">
+						<img [src]="getElementIcon(item)">
+					</div>
+					<div class="stat-value" [style.color]="item.elementHidden ? 'gray' : 'white'">{{item.elementBaseAttack}}</div>
 				</div>
 			</div>
 		</div>
