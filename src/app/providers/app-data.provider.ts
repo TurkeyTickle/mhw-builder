@@ -61,25 +61,7 @@ export class AppDataProvider {
 			this.loadWeaponModifiers(),
 			this.loadSharpnessModifiers(),
 			this.loadWeapons(),
-			// this.loadGreatSwords(),
-			// this.loadLongSwords(),
-			// this.loadSwordAndShields(),
-			// this.loadDualBlades(),
-			// this.loadHammers(),
-			// this.loadHuntingHorns(),
-			// this.loadLances(),
-			// this.loadGunlances(),
-			// this.loadSwitchAxes(),
-			// this.loadChargeBlades(),
-			// this.loadInsectGlaives(),
-			// this.loadLightBowguns(),
-			// this.loadHeavyBowguns(),
-			// this.loadBows(),
-			this.loadHeads(),
-			this.loadChests(),
-			this.loadHands(),
-			this.loadLegs(),
-			this.loadFeet(),
+			this.loadArmor(),
 			this.loadCharms(),
 			this.loadDecorations(),
 			this.loadSetBonuses(),
@@ -89,7 +71,7 @@ export class AppDataProvider {
 
 		return Promise.all(items).then<boolean>(() => {
 			// this.seedData.weapons = _.orderBy(this.seedData.weapons, ['weaponType', 'asc']);
-			this.seedData.armor = _.orderBy(this.seedData.armor, ['itemType', 'asc']);
+			// this.seedData.armor = _.orderBy(this.seedData.armor, ['itemType', 'asc']);
 			return true;
 		});
 	}
@@ -123,13 +105,21 @@ export class AppDataProvider {
 				});
 
 				this.seedData.weapons = weapons;
+				resolve(true);
+			});
+		});
+	}
 
-				// _.each(items, item => {
-				// 	item.equipmentCategory = EquipmentCategoryType.Weapon;
-				// 	// item.id = this.seedData.weapons.length;
-				// 	this.seedData.weapons.push(item);
-				// });
+	loadArmor(): Promise<boolean> {
+		return new Promise(resolve => {
+			this.http.get('../assets/armor.tsv', { responseType: 'text' }).subscribe((data: string) => {
+				const armor = CSVParser.parseArmor(data);
 
+				_.each(armor, item => {
+					item.equipmentCategory = EquipmentCategoryType.Armor;
+				});
+
+				this.seedData.armor = armor;
 				resolve(true);
 			});
 		});
