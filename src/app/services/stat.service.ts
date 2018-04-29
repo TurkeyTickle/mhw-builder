@@ -11,6 +11,7 @@ import { DataService } from './data.service';
 import { StatsModel } from '../models/stats.model';
 import { Subject } from 'rxjs/Subject';
 import { CalculationService } from './calculation.service';
+import { EldersealType } from '../types/elderseal.type';
 
 @Injectable()
 export class StatService {
@@ -111,6 +112,7 @@ export class StatService {
 				if (level.passiveDragonResist) { this.stats.passiveDragonResist += level.passiveDragonResist; }
 
 				if (level.hiddenElementUp) { this.stats.elementAttackMultiplier = level.hiddenElementUp; }
+				if (level.eldersealLevelBoost) { this.stats.eldersealLevelBoost = level.eldersealLevelBoost; }
 			}
 		}
 	}
@@ -230,6 +232,13 @@ export class StatService {
 
 		this.stats.elementCapped = this.stats.totalElementAttack > 0 && this.stats.totalElementAttack >= this.stats.elementCap;
 		this.stats.ailmentCapped = this.stats.totalAilmentAttack > 0 && this.stats.totalAilmentAttack >= this.stats.ailmentCap;
+
+		if (this.stats.elderseal && this.stats.eldersealLevelBoost) {
+			const eldersealTypes = Object.keys(EldersealType);
+			const currentIndex = eldersealTypes.indexOf(this.stats.elderseal);
+			const newIndex = Math.min(currentIndex + this.stats.eldersealLevelBoost, eldersealTypes.length - 1);
+			this.stats.elderseal = eldersealTypes[newIndex];
+		}
 	}
 
 	private nearestTen(value: number): number {

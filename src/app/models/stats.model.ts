@@ -66,6 +66,7 @@ export class StatsModel {
 	effectivePassiveAilmentBuildupPercent: number;
 
 	elderseal: string;
+	eldersealLevelBoost: number;
 
 	defense: number;
 	passiveDefense: number;
@@ -146,6 +147,7 @@ export class StatsModel {
 		this.effectivePassiveAilmentBuildupPercent = 0;
 
 		this.elderseal = null;
+		this.eldersealLevelBoost = 0;
 
 		this.defense = 0;
 		this.passiveDefense = 0;
