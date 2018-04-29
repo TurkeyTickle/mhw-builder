@@ -517,6 +517,7 @@ id	weaponType	rarity	name	baseAttack	baseAffinityPercent	baseDefense	element	ele
 612	LongSword	6	Spark Gold Katana	528	30	20	Thunder	120						true	Blue-20		kulve;taroth;thunder	
 613	LongSword	6	Stream Gold Katana	462	0	20	Ice	180						true	White-20		kulve;taroth;ice	
 614	LongSword	6	Thief Gold Katana	495	20	20				Sleep	120			true	Blue-20		kulve;taroth;sleep	
+641	LongSword	7	Azure Star "Dragon Dance"	495	30	0	Water	180						true	White-20	3	water	
 26	LongSword	7	Brazenridge II	660	-10	30	Fire	120						false	Blue-80;Blue-90;Blue-100;Blue-110;Blue-120;Blue-130	3;1	uragaan;fire	
 33	LongSword	7	Hazak Grosser II	660	0	0	Dragon	270					Average	false	Blue-40;Blue-50;White-10;White-20;White-30;White-40	2	vaal;hazak;dragon	
 38	LongSword	7	Magda Facultas II	726	-20	20				Blast	360			false	Green-70;Green-80;Green-90;Blue-10;Blue-20;Blue-30	2	zorah;magdaros;blast	

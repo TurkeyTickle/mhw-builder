@@ -1429,5 +1429,30 @@
 			}
 		],
 		"id": 362
+	},
+	{
+		"name": "Azure Starlord Crown Alpha",
+		"itemType": "Head",
+		"baseDefense": 56,
+		"fireResist": 2,
+		"waterResist": 2,
+		"thunderResist": 0,
+		"iceResist": 0,
+		"dragonResist": 3,
+		"skills": [
+			{
+				"id": "criticalBoost",
+				"level": 1
+			},
+			{
+				"id": "rathalosMastery"
+			}
+		],
+		"slots": [
+			{
+				"level": 3
+			}
+		],
+		"id": 367
 	}
 ]
