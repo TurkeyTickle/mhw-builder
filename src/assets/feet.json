@@ -1314,5 +1314,30 @@
       }
     ],
     "id": 361
-  }
+  },
+	{
+		"name": "Dante's Leather Boots Alpha",
+		"itemType": "Feet",
+		"baseDefense": 64,
+		"fireResist": 3,
+		"waterResist": -3,
+		"thunderResist": 3,
+		"iceResist": -3,
+		"dragonResist": 3,
+		"skills": [
+			{
+				"id": "weaknessExploit",
+				"level": 2
+			}
+		],
+		"slots": [
+			{
+				"level": 1
+			},
+			{
+				"level": 1
+			}
+		],
+		"id": 366
+	}
 ]
