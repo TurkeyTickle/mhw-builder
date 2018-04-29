@@ -2,7 +2,6 @@ import { Component, ElementRef, EventEmitter, Input, OnInit, Output, ViewChild, 
 import * as _ from 'lodash';
 import { DecorationModel } from '../../models/decoration.model';
 import { ItemModel } from '../../models/item.model';
-import { SearchDecorationModel } from '../../models/search-decoration.model';
 import { DataService } from '../../services/data.service';
 import { TooltipService } from '../../services/tooltip.service';
 import { ItemType } from '../../types/item.type';

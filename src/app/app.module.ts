@@ -28,7 +28,7 @@ import { ModalComponent } from './components/modal/modal.component';
 import { VirtualScrollModule } from 'angular2-virtual-scroll';
 import { DecorationListComponent } from './components/decoration-list/decoration-list.component';
 import { ArmorListComponent } from './components/armor-list/armor-list.component';
-import { WeaponListComponent } from './components/item-list/weapon-list.component';
+import { WeaponListComponent } from './components/weapon-list/weapon-list.component';
 import { CharmListComponent } from './components/charm-list/charm-list.component';
 
 @NgModule({

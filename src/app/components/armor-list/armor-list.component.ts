@@ -56,24 +56,14 @@ export class ArmorListComponent implements OnInit {
 					const itemName = item.name.toLowerCase();
 					const skills = this.dataService.getSkills(item.skills);
 
-					let match = _.some(queryParts, queryPart => {
-						const nameMatch = itemName.includes(queryPart);
-						const skillMatch = _.some(skills, skill => skill.name.toLowerCase().includes(queryPart));
-						const tagMatch = _.some(item.tags, tag => tag.toLowerCase().includes(queryPart));
+					const nameMatch = itemName.includes(query);
+					const skillMatch = _.some(skills, skill => skill.name.toLowerCase().includes(query));
 
-						return nameMatch || skillMatch || tagMatch;
+					const tagMatch = _.some(queryParts, queryPart => {
+						return _.some(item.tags, tag => tag.toLowerCase().includes(queryPart));
 					});
 
-					let hiddenMatch = true;
-					if (_.some(queryParts, queryPart => queryPart === 'hidden')) {
-						hiddenMatch = (item.elementHidden || item.ailmentHidden);
-
-						if (queryParts.length < 2) {
-							match = true;
-						}
-					}
-
-					if (!match || !hiddenMatch) {
+					if (!nameMatch && !skillMatch && !tagMatch) {
 						this.filteredItems = _.reject(this.filteredItems, i => i.name === item.name);
 					}
 				}
