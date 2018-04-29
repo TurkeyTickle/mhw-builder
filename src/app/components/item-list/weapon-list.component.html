@@ -52,7 +52,7 @@
 		</button>
 	</div>
 
-	<virtual-scroll id="items-list" #itemList class="scroll-container" *ngIf="items" [items]="filteredItems" (update)="onItemListUpdate($event)" [childHeight]="102">
+	<virtual-scroll id="items-list" #itemList class="scroll-container" *ngIf="items" [items]="filteredItems" (update)="onItemListUpdate($event)" [childHeight]="108">  
 		<div *ngFor="let item of virtualItems" class="scroll-item-container" (click)="selectItem(item)">
 
 			<div class="name-container">
@@ -80,88 +80,43 @@
 			</div>
 
 			<div class="stats-container">
-				<div class="weapon-stats-container" *ngIf="item.equipmentCategory == equipmentCategoryType.Weapon">
-					<div class="stat-container">
-						<div class="icon-container">
-							<img src="assets/images/attack-icon.png">
-						</div>
-						<div class="stat-value">{{item.baseAttack}}</div>
+				<div class="stat-container">
+					<div class="icon-container">
+						<img src="assets/images/attack-icon.png">
 					</div>
-					<div class="stat-container">
-						<div class="icon-container">
-							<img src="assets/images/affinity-icon.png">
-						</div>
-						<div class="stat-value" [class.red]="item.baseAffinityPercent < 0">{{item.baseAffinityPercent}}%</div>
-					</div>
-					<div class="stat-container">
-						<div class="icon-container">
-							<img src="assets/images/sharpness-icon.png">
-						</div>
-						<div class="stat-value">{{item.sharpnessLevels[0] ? item.sharpnessLevels[0].color : 'N/A'}}</div>
-					</div>
-					<div class="stat-container">
-						<div class="icon-container">
-							<img src="assets/images/defense-icon.png">
-						</div>
-						<div class="stat-value">{{item.baseDefense}}</div>
-					</div>
-					<div class="stat-container" *ngIf="item.ailment">
-						<div class="icon-container">
-							<img [src]="getAilmentIcon(item)">
-						</div>
-						<div class="stat-value" [style.color]="item.ailmentHidden ? 'gray' : 'white'">{{item.ailmentBaseAttack}}</div>
-					</div>
-					<div class="stat-container" *ngIf="item.element">
-						<div class="icon-container">
-							<img [src]="getElementIcon(item)">
-						</div>
-						<div class="stat-value" [style.color]="item.elementHidden ? 'gray' : 'white'">{{item.elementBaseAttack}}</div>
-					</div>
+					<div class="stat-value">{{item.baseAttack}}</div>
 				</div>
-
-				<div class="armor-stats-container" *ngIf="item.equipmentCategory == equipmentCategoryType.Armor">
-					<div class="stat-container">
-						<div class="icon-container">
-							<img src="assets/images/defense-icon.png">
-						</div>
-						<div class="stat-value">{{item.baseDefense}}</div>
+				<div class="stat-container">
+					<div class="icon-container">
+						<img src="assets/images/affinity-icon.png">
 					</div>
-					<div class="stat-container">
-						<div class="icon-container">
-							<img src="assets/images/fire-icon.png">
-						</div>
-						<div class="stat-value">{{item.fireResist}}</div>
+					<div class="stat-value" [class.red]="item.baseAffinityPercent < 0">{{item.baseAffinityPercent}}%</div>
+				</div>
+				<div class="stat-container">
+					<div class="icon-container">
+						<img src="assets/images/sharpness-icon.png">
 					</div>
-					<div class="stat-container">
-						<div class="icon-container">
-							<img src="assets/images/water-icon.png">
-						</div>
-						<div class="stat-value">{{item.waterResist}}</div>
+					<div class="stat-value">{{item.sharpnessLevels[0] ? item.sharpnessLevels[0].color : 'N/A'}}</div>
+				</div>
+				<div class="stat-container">
+					<div class="icon-container">
+						<img src="assets/images/defense-icon.png">
 					</div>
-					<div class="stat-container">
-						<div class="icon-container">
-							<img src="assets/images/ice-icon.png">
-						</div>
-						<div class="stat-value">{{item.iceResist}}</div>
+					<div class="stat-value">{{item.baseDefense}}</div>
+				</div>
+				<div class="stat-container" *ngIf="item.ailment">
+					<div class="icon-container">
+						<img [src]="getAilmentIcon(item)">
 					</div>
-					<div class="stat-container">
-						<div class="icon-container">
-							<img src="assets/images/thunder-icon.png">
-						</div>
-						<div class="stat-value">{{item.thunderResist}}</div>
+					<div class="stat-value" [style.color]="item.ailmentHidden ? 'gray' : 'white'">{{item.ailmentBaseAttack}}</div>
+				</div>
+				<div class="stat-container" *ngIf="item.element">
+					<div class="icon-container">
+						<img [src]="getElementIcon(item)">
 					</div>
-					<div class="stat-container">
-						<div class="icon-container">
-							<img src="assets/images/dragon-icon.png">
-						</div>
-						<div class="stat-value">{{item.dragonResist}}</div>
-					</div>
+					<div class="stat-value" [style.color]="item.elementHidden ? 'gray' : 'white'">{{item.elementBaseAttack}}</div>
 				</div>
 			</div>
-
-			<!-- <div class="">
-
-			</div> -->
 		</div>
 	</virtual-scroll>
 </div>

@@ -3,7 +3,6 @@ import * as _ from 'lodash';
 import { DecorationModel } from '../../models/decoration.model';
 import { ItemModel } from '../../models/item.model';
 import { SearchDecorationModel } from '../../models/search-decoration.model';
-import { SearchItemModel } from '../../models/search-item.model';
 import { DataService } from '../../services/data.service';
 import { TooltipService } from '../../services/tooltip.service';
 import { ItemType } from '../../types/item.type';
@@ -13,13 +12,14 @@ import { PointerType } from '../../types/pointer.type';
 import { Observable } from 'rxjs/Observable';
 import { VirtualScrollComponent } from 'angular2-virtual-scroll';
 import { EquipmentCategoryType } from '../../types/equipment-category.type';
+import { SkillModel } from '../../models/skill.model';
 
 @Component({
-	selector: 'mhw-builder-item-list',
-	templateUrl: './item-list.component.html',
-	styleUrls: ['./item-list.component.scss']
+	selector: 'mhw-builder-weapon-list',
+	templateUrl: './weapon-list.component.html',
+	styleUrls: ['./weapon-list.component.scss']
 })
-export class ItemListComponent implements OnInit {
+export class WeaponListComponent implements OnInit {
 	public itemTypes = ItemType;
 	public equipmentCategoryType = EquipmentCategoryType;
 	private _itemType: ItemType;
@@ -36,9 +36,9 @@ export class ItemListComponent implements OnInit {
 	@ViewChild('searchBox') searchBox: ElementRef;
 	@ViewChild('itemList') itemList: VirtualScrollComponent;
 
-	items: SearchItemModel[];
-	filteredItems: SearchItemModel[];
-	virtualItems: SearchItemModel[];
+	items: ItemModel[];
+	filteredItems: ItemModel[];
+	virtualItems: ItemModel[];
 	weaponTypeFilter?: WeaponType;
 
 	childHeight: number;
@@ -63,15 +63,15 @@ export class ItemListComponent implements OnInit {
 		}
 	}
 
-	onItemListUpdate(items: SearchItemModel[]) {
+	onItemListUpdate(items: ItemModel[]) {
 		this.virtualItems = items;
 	}
 
 	loadItems() {
 		if (this.itemType == ItemType.Weapon) {
-			this.items = this.dataService.getWeapons() as SearchItemModel[];
+			this.items = this.dataService.getWeapons() as ItemModel[];
 		} else {
-			this.items = this.dataService.getArmorByType(this.itemType) as SearchItemModel[];
+			this.items = this.dataService.getArmorByType(this.itemType) as ItemModel[];
 		}
 
 		this.resetSearchResults();
@@ -133,6 +133,12 @@ export class ItemListComponent implements OnInit {
 	selectItem(item: ItemModel) {
 		const newItem = Object.assign({}, item);
 		this.slotService.selectItem(newItem);
+	}
+
+	getSkillCount(item: ItemModel, skill: SkillModel): string {
+		const itemSkill = _.find(item.skills, s => s.id == skill.id);
+		const result = `${itemSkill.level}/${skill.levels.length}`;
+		return result;
 	}
 
 	// setTooltipItem(event: PointerEvent, item: ItemModel) {

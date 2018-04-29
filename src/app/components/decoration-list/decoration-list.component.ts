@@ -1,5 +1,4 @@
 import { Component, OnInit, Output, EventEmitter, Input, ViewChild, ElementRef, HostListener } from '@angular/core';
-import { SearchDecorationModel } from '../../models/search-decoration.model';
 import { SlotService } from '../../services/slot.service';
 import { DataService } from '../../services/data.service';
 import { TooltipService } from '../../services/tooltip.service';
@@ -8,6 +7,7 @@ import { DecorationModel } from '../../models/decoration.model';
 import { PointerType } from '../../types/pointer.type';
 import * as _ from 'lodash';
 import { VirtualScrollComponent } from 'angular2-virtual-scroll';
+import { SkillModel } from '../../models/skill.model';
 
 @Component({
 	selector: 'mhw-builder-decoration-list',
@@ -29,9 +29,9 @@ export class DecorationListComponent implements OnInit {
 	@ViewChild('searchBox') searchBox: ElementRef;
 	@ViewChild('decorationList') decorationList: VirtualScrollComponent;
 
-	decorations: SearchDecorationModel[];
-	filteredDecorations: SearchDecorationModel[];
-	virtualDecorations: SearchDecorationModel[];
+	decorations: DecorationModel[];
+	filteredDecorations: DecorationModel[];
+	virtualDecorations: DecorationModel[];
 
 	@HostListener('window:resize')
 	onResize() {
@@ -39,8 +39,8 @@ export class DecorationListComponent implements OnInit {
 	}
 
 	constructor(
+		public dataService: DataService,
 		private slotService: SlotService,
-		private dataService: DataService,
 		private tooltipService: TooltipService
 	) { }
 
@@ -52,12 +52,12 @@ export class DecorationListComponent implements OnInit {
 		}
 	}
 
-	onDecorationListUpdate(decorations: SearchDecorationModel[]) {
+	onDecorationListUpdate(decorations: DecorationModel[]) {
 		this.virtualDecorations = decorations;
 	}
 
 	loadItems() {
-		this.decorations = this.dataService.getDecorations(this.decorationLevel) as SearchDecorationModel[];
+		this.decorations = this.dataService.getDecorations(this.decorationLevel) as DecorationModel[];
 		this.resetSearchResults();
 	}
 
@@ -96,13 +96,9 @@ export class DecorationListComponent implements OnInit {
 		this.slotService.selectDecoration(newDecoration);
 	}
 
-	setTooltipDecoration(event: PointerEvent, decoration: DecorationModel) {
-		if (event.pointerType == PointerType.Mouse) {
-			this.tooltipService.setDecoration(decoration);
-		}
-	}
-
-	clearTooltipDecoration() {
-		this.tooltipService.setDecoration(null);
+	getSkillCount(decoration: DecorationModel, skill: SkillModel): string {
+		const itemSkill = _.find(decoration.skills, s => s.id == skill.id);
+		const result = `${itemSkill.level}/${skill.levels.length}`;
+		return result;
 	}
 }

@@ -11,6 +11,8 @@ import { SlotService } from './services/slot.service';
 import { BuildService } from './services/build.service';
 import { ModalComponent } from './components/modal/modal.component';
 import { PointerType } from './types/pointer.type';
+import { DataService } from './services/data.service';
+import { EquipmentCategoryType } from './types/equipment-category.type';
 
 @Component({
 	selector: 'mhw-builder-root',
@@ -19,6 +21,7 @@ import { PointerType } from './types/pointer.type';
 })
 
 export class AppComponent implements OnInit, AfterViewInit {
+	public equipmentCategoryTypes = EquipmentCategoryType;
 	public itemTypes = ItemType;
 
 	@ViewChild(EquippedStatsComponent) equippedStatsComponent: EquippedStatsComponent;
@@ -51,6 +54,7 @@ export class AppComponent implements OnInit, AfterViewInit {
 
 	constructor(
 		public slotService: SlotService,
+		public dataService: DataService,
 		private buildService: BuildService,
 		private changeDetector: ChangeDetectorRef,
 		private location: Location

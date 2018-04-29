@@ -35,7 +35,18 @@
 	</div>
 
 	<mhw-builder-modal #itemListModal>
-		<mhw-builder-item-list *ngIf="slotService.selectedItemSlot" [itemType]="slotService.selectedItemSlot?.slotName"></mhw-builder-item-list>
+		<mhw-builder-weapon-list 
+			*ngIf="slotService.selectedItemSlot && dataService.getEquipmentCategory(slotService.selectedItemSlot.slotName) == equipmentCategoryTypes.Weapon" 
+			[itemType]="slotService.selectedItemSlot?.slotName"></mhw-builder-weapon-list>
+
+		<mhw-builder-armor-list 
+			*ngIf="slotService.selectedItemSlot && dataService.getEquipmentCategory(slotService.selectedItemSlot.slotName) == equipmentCategoryTypes.Armor"
+			[itemType]="slotService.selectedItemSlot?.slotName"></mhw-builder-armor-list>
+			
+		<mhw-builder-charm-list 
+			*ngIf="slotService.selectedItemSlot && dataService.getEquipmentCategory(slotService.selectedItemSlot.slotName) == equipmentCategoryTypes.Charm"
+			[itemType]="slotService.selectedItemSlot?.slotName"></mhw-builder-charm-list>
+
 		<mhw-builder-decoration-list *ngIf="slotService.selectedDecorationSlot" [decorationLevel]="slotService.selectedDecorationSlot?.level"></mhw-builder-decoration-list>
 		<mhw-builder-augmentations-list *ngIf="slotService.selectedAugmentationSlot"></mhw-builder-augmentations-list>
 	</mhw-builder-modal>

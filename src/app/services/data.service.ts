@@ -13,6 +13,7 @@ import { ItemType } from '../types/item.type';
 import { SharpnessType } from '../types/sharpness.type';
 import { WeaponType } from '../types/weapon.type';
 import { AugmentationModel } from '../models/augmentation.model';
+import { EquipmentCategoryType } from '../types/equipment-category.type';
 
 @Injectable()
 export class DataService {
@@ -60,7 +61,7 @@ export class DataService {
 		return _.find(this.appData.getSkills(), skill => skill.id === id);
 	}
 
-	getSkills(itemSkills: SkillReferenceModel[]) {
+	getSkills(itemSkills: SkillReferenceModel[]): SkillModel[] {
 		return _.filter(this.appData.getSkills(), skill => {
 			return _.some(itemSkills, itemSkill => skill.id == itemSkill.id);
 		});
@@ -117,22 +118,20 @@ export class DataService {
 		}
 	}
 
-	getSharpnessName(sharpnessType: SharpnessType): string {
-		switch (sharpnessType) {
-			case SharpnessType.Blue:
-				return 'Blue';
-			case SharpnessType.Green:
-				return 'Green';
-			case SharpnessType.Orange:
-				return 'Orange';
-			case SharpnessType.Red:
-				return 'Red';
-			case SharpnessType.White:
-				return 'White';
-			case SharpnessType.Yellow:
-				return 'Yellow';
+	getEquipmentCategory(itemType: ItemType): EquipmentCategoryType {
+		switch (itemType) {
+			case ItemType.Weapon:
+				return EquipmentCategoryType.Weapon;
+			case ItemType.Charm:
+				return EquipmentCategoryType.Charm;
+			case ItemType.Head:
+			case ItemType.Chest:
+			case ItemType.Hands:
+			case ItemType.Legs:
+			case ItemType.Feet:
+				return EquipmentCategoryType.Armor;
 			default:
-				return sharpnessType;
+				return null;
 		}
 	}
 }
