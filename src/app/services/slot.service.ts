@@ -10,6 +10,7 @@ import { Subject } from 'rxjs/Subject';
 import { SlotEventModel } from '../models/slot-event.model';
 import { ItemType } from '../types/item.type';
 import * as _ from 'lodash';
+import { EquipmentCategoryType } from '../types/equipment-category.type';
 
 @Injectable()
 export class SlotService {
@@ -120,23 +121,25 @@ export class SlotService {
 			this.equipmentService.addItem(item);
 			this.selectedItemSlot.item = item;
 
-			if (item.rarity == 6) {
-				this.selectedItemSlot.augmentations = [
-					new AugmentationModel(),
-					new AugmentationModel(),
-					new AugmentationModel()
-				];
-			} else if (item.rarity == 7) {
-				this.selectedItemSlot.augmentations = [
-					new AugmentationModel(),
-					new AugmentationModel()
-				];
-			} else if (item.rarity == 8) {
-				this.selectedItemSlot.augmentations = [
-					new AugmentationModel()
-				];
-			} else {
-				this.selectedItemSlot.augmentations = [];
+			if (item.equipmentCategory == EquipmentCategoryType.Weapon) {
+				if (item.rarity == 6) {
+					this.selectedItemSlot.augmentations = [
+						new AugmentationModel(),
+						new AugmentationModel(),
+						new AugmentationModel()
+					];
+				} else if (item.rarity == 7) {
+					this.selectedItemSlot.augmentations = [
+						new AugmentationModel(),
+						new AugmentationModel()
+					];
+				} else if (item.rarity == 8) {
+					this.selectedItemSlot.augmentations = [
+						new AugmentationModel()
+					];
+				} else {
+					this.selectedItemSlot.augmentations = [];
+				}
 			}
 
 			this.itemSelected$.next({ slot: this.selectedItemSlot, equipment: item });
