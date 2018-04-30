@@ -11,6 +11,7 @@ export class SeedModel {
 	sharpnessModifiers: SharpnessModifierModel[];
 	weapons: ItemModel[];
 	armor: ItemModel[];
+	charms: ItemModel[];
 	setBonuses: SetBonusModel[];
 	skills: SkillModel[];
 	decorations: DecorationModel[];
@@ -21,6 +22,7 @@ export class SeedModel {
 		this.sharpnessModifiers = new Array<SharpnessModifierModel>();
 		this.weapons = new Array<ItemModel>();
 		this.armor = new Array<ItemModel>();
+		this.charms = new Array<ItemModel>();
 		this.setBonuses = new Array<SetBonusModel>();
 		this.skills = new Array<SkillModel>();
 		this.decorations = new Array<DecorationModel>();

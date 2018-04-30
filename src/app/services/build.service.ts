@@ -78,11 +78,23 @@ export class BuildService {
 
 			if (itemId) {
 				let item: ItemModel;
-				if (slot.slotName == ItemType.Weapon) {
-					item = this.dataService.getWeapon(itemId);
-				} else {
-					item = this.dataService.getArmor(itemId);
+				switch (this.dataService.getEquipmentCategory(slot.slotName)) {
+					case EquipmentCategoryType.Weapon:
+						item = this.dataService.getWeapon(itemId);
+						break;
+					case EquipmentCategoryType.Armor:
+						item = this.dataService.getArmor(itemId);
+						break;
+					case EquipmentCategoryType.Charm:
+						item = this.dataService.getCharm(itemId);
+						break;
 				}
+
+				// if (slot.slotName == ItemType.Weapon) {
+				// 	item = this.dataService.getWeapon(itemId);
+				// } else if (this.dataService.getEquipmentCategory(slot.slotName) == EquipmentCategoryType.Armor) {
+				// 	item = this.dataService.getArmor(itemId);
+				// }
 
 				if (item) {
 					if (itemParts.length > 1) {
