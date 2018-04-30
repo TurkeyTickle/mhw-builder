@@ -103,6 +103,12 @@ export class CSVParser {
 				}
 			},
 			{
+				columnName: 'tags',
+				predicate: (value: string) => {
+					return value.split(';');
+				}
+			},
+			{
 				columnName: 'skills',
 				predicate: (value: string) => {
 					const values = value.split(';');
