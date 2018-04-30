@@ -57,7 +57,7 @@ export class DecorationListComponent implements OnInit {
 	}
 
 	loadItems() {
-		this.decorations = this.dataService.getDecorations(this.decorationLevel) as DecorationModel[];
+		this.decorations = this.dataService.getDecorations(this.decorationLevel);
 		this.resetSearchResults();
 	}
 

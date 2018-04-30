@@ -47,6 +47,10 @@ export class DataService {
 		return _.filter(this.appData.getArmor(), armor => armor.itemType === type);
 	}
 
+	getCharms(): ItemModel[] {
+		return this.appData.getCharms();
+	}
+
 	getDecorations(level?: number): DecorationModel[] {
 		let result = new Array<DecorationModel>();
 		if (level) {

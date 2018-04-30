@@ -67,12 +67,7 @@ export class WeaponListComponent implements OnInit {
 	}
 
 	loadItems() {
-		if (this.itemType == ItemType.Weapon) {
-			this.items = this.dataService.getWeapons() as ItemModel[];
-		} else {
-			this.items = this.dataService.getArmorByType(this.itemType) as ItemModel[];
-		}
-
+		this.items = this.dataService.getWeapons();
 		this.resetSearchResults();
 	}
 

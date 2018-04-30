@@ -116,6 +116,9 @@ export class AppDataProvider {
 		return new Promise(resolve => {
 			this.http.get('../assets/armor.tsv', { responseType: 'text' }).subscribe((data: string) => {
 				const armor = CSVParser.parseArmor(data);
+				_.each(armor, item => {
+					item.equipmentCategory = EquipmentCategoryType.Armor;
+				});
 				this.seedData.armor = armor;
 				resolve(true);
 			});
@@ -125,6 +128,9 @@ export class AppDataProvider {
 	loadCharms(): Promise<boolean> {
 		return new Promise(resolve => {
 			this.http.get<ItemModel[]>('../assets/charms.json').subscribe(charms => {
+				_.each(charms, charm => {
+					charm.equipmentCategory = EquipmentCategoryType.Charm;
+				});
 				this.seedData.charms = charms;
 				resolve(true);
 			});
