@@ -60,19 +60,8 @@ $listItemHeight: 66px;
 		.name-container {
 			height: 32px;
 			display: grid;
-			grid-template-columns: auto max-content max-content min-content;
+			grid-template-columns: auto max-content max-content max-content;
 			grid-gap: 8px;
-
-			.rarity {
-				width: 22px;
-				height: 22px;
-				line-height: 22px;
-				background-color: #272727;
-				border-radius: 26px;
-				text-align: center;
-				font-size: 12px;
-				margin: 4px 0;
-			}
 
 			.name {
 				line-height: 30px;
@@ -98,6 +87,17 @@ $listItemHeight: 66px;
 				line-height: 22px;
 				background-color: #272727;
 				border-radius: 26px;
+				font-size: 12px;
+				margin: 4px 0;
+				padding: 0 8px;
+			}
+
+			.rarity {
+				height: 22px;
+				line-height: 22px;
+				background-color: #272727;
+				border-radius: 26px;
+				text-align: center;
 				font-size: 12px;
 				margin: 4px 0;
 				padding: 0 8px;

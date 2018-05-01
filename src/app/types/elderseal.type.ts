@@ -1,5 +1,5 @@
 export enum EldersealType {
-	High = 'High',
+	Low = 'Low',
 	Average = 'Average',
-	Low = 'Low'
+	High = 'High'
 }

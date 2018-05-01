@@ -3,6 +3,7 @@ import { ItemModel } from '../models/item.model';
 import { SlotModel } from '../models/slot.model';
 import { SharpnessLevelModel } from '../models/sharpness-level.model';
 import { SharpnessType } from '../types/sharpness.type';
+import { SkillReferenceModel } from '../models/skill-reference.model';
 
 export class ColumnParser {
 	columnName: string;
@@ -81,6 +82,45 @@ export class CSVParser {
 						});
 					}
 					return sharpnessLevels;
+				}
+			},
+		]);
+	}
+
+	static parseArmor(data: string) {
+		return this.parse<ItemModel>(data, [
+			{
+				columnName: 'slots',
+				predicate: (value: string) => {
+					const values = value.split(';');
+					const slots: SlotModel[] = [];
+					for (const item of _.filter(values, v => v)) {
+						slots.push({
+							level: Number(item),
+						});
+					}
+					return slots;
+				}
+			},
+			{
+				columnName: 'tags',
+				predicate: (value: string) => {
+					return value.split(';');
+				}
+			},
+			{
+				columnName: 'skills',
+				predicate: (value: string) => {
+					const values = value.split(';');
+					const skillRefs: SkillReferenceModel[] = [];
+					for (const skill of values) {
+						const parts = skill.split('-');
+						skillRefs.push({
+							id: parts[0],
+							level: parts.length > 1 ? Number(parts[1]) : null
+						});
+					}
+					return skillRefs;
 				}
 			},
 		]);

@@ -39,8 +39,16 @@ export class DataService {
 		return _.find(this.appData.getArmor(), armor => armor.id === id);
 	}
 
+	getCharm(id: number): ItemModel {
+		return _.find(this.appData.getCharms(), charm => charm.id === id);
+	}
+
 	getArmorByType(type: ItemType): ItemModel[] {
 		return _.filter(this.appData.getArmor(), armor => armor.itemType === type);
+	}
+
+	getCharms(): ItemModel[] {
+		return this.appData.getCharms();
 	}
 
 	getDecorations(level?: number): DecorationModel[] {

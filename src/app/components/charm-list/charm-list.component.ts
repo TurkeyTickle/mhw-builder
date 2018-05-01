@@ -1,4 +1,4 @@
-import { Component, OnInit, Input, ViewChild, ElementRef } from '@angular/core';
+import { Component, OnInit, Input, ViewChild, ElementRef, HostListener } from '@angular/core';
 import * as _ from 'lodash';
 import { EquipmentCategoryType } from '../../types/equipment-category.type';
 import { ItemType } from '../../types/item.type';
@@ -32,6 +32,11 @@ export class CharmListComponent implements OnInit {
 	filteredItems: ItemModel[];
 	virtualItems: ItemModel[];
 
+	@HostListener('window:resize')
+	onResize() {
+		this.refreshList();
+	}
+
 	constructor(
 		private slotService: SlotService,
 		public dataService: DataService
@@ -39,8 +44,14 @@ export class CharmListComponent implements OnInit {
 
 	ngOnInit(): void { }
 
+	refreshList() {
+		if (this.itemList) {
+			this.itemList.refresh();
+		}
+	}
+
 	loadItems() {
-		this.items = this.dataService.getArmorByType(this.itemType) as ItemModel[];
+		this.items = this.dataService.getCharms();
 		this.resetSearchResults();
 	}
 

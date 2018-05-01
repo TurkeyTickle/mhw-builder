@@ -1,4 +1,4 @@
-import { Component, OnInit, Input, Output, EventEmitter, ViewChild, ElementRef } from '@angular/core';
+import { Component, OnInit, Input, Output, EventEmitter, ViewChild, ElementRef, HostListener } from '@angular/core';
 import { EquipmentCategoryType } from '../../types/equipment-category.type';
 import { ItemModel } from '../../models/item.model';
 import { DataService } from '../../services/data.service';
@@ -32,6 +32,11 @@ export class ArmorListComponent implements OnInit {
 	filteredItems: ItemModel[];
 	virtualItems: ItemModel[];
 
+	@HostListener('window:resize')
+	onResize() {
+		this.refreshList();
+	}
+
 	constructor(
 		private slotService: SlotService,
 		public dataService: DataService
@@ -39,8 +44,14 @@ export class ArmorListComponent implements OnInit {
 
 	ngOnInit(): void { }
 
+	refreshList() {
+		if (this.itemList) {
+			this.itemList.refresh();
+		}
+	}
+
 	loadItems() {
-		this.items = this.dataService.getArmorByType(this.itemType) as ItemModel[];
+		this.items = this.dataService.getArmorByType(this.itemType);
 		this.resetSearchResults();
 	}
 

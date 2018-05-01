@@ -12,6 +12,7 @@ export class SkillLevelModel {
 	passiveSharpness: number;
 
 	hiddenElementUp: number;
+	eldersealLevelBoost: number;
 
 	passiveFireAttack: number;
 	passiveFireAttackPercent: number;

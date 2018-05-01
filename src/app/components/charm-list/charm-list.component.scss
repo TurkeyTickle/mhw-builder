@@ -55,12 +55,28 @@ $searchHeight: 38px;
 		padding: 4px 8px;
 		cursor: pointer;
 
-		.name {
-			line-height: 30px;
-			white-space: nowrap;
-			text-overflow: ellipsis;
-			overflow: hidden;
+		.name-container {
 			padding-left: 4px;
+			line-height: 30px;
+			display: grid;
+			grid-template-columns: auto max-content;
+
+			.name {
+				white-space: nowrap;
+				text-overflow: ellipsis;
+				overflow: hidden;
+			}
+
+			.levels {
+				height: 22px;
+				line-height: 22px;
+				background-color: #272727;
+				border-radius: 26px;
+				text-align: center;
+				font-size: 12px;
+				margin: 4px 0;
+				padding: 0 8px;
+			}
 		}
 
 		.skills-container {

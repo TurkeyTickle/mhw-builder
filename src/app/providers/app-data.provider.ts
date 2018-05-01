@@ -40,6 +40,10 @@ export class AppDataProvider {
 		return this.seedData.armor;
 	}
 
+	getCharms(): ItemModel[] {
+		return this.seedData.charms;
+	}
+
 	getSetBonuses(): SetBonusModel[] {
 		return this.seedData.setBonuses;
 	}
@@ -61,25 +65,7 @@ export class AppDataProvider {
 			this.loadWeaponModifiers(),
 			this.loadSharpnessModifiers(),
 			this.loadWeapons(),
-			// this.loadGreatSwords(),
-			// this.loadLongSwords(),
-			// this.loadSwordAndShields(),
-			// this.loadDualBlades(),
-			// this.loadHammers(),
-			// this.loadHuntingHorns(),
-			// this.loadLances(),
-			// this.loadGunlances(),
-			// this.loadSwitchAxes(),
-			// this.loadChargeBlades(),
-			// this.loadInsectGlaives(),
-			// this.loadLightBowguns(),
-			// this.loadHeavyBowguns(),
-			// this.loadBows(),
-			this.loadHeads(),
-			this.loadChests(),
-			this.loadHands(),
-			this.loadLegs(),
-			this.loadFeet(),
+			this.loadArmor(),
 			this.loadCharms(),
 			this.loadDecorations(),
 			this.loadSetBonuses(),
@@ -88,8 +74,6 @@ export class AppDataProvider {
 		];
 
 		return Promise.all(items).then<boolean>(() => {
-			// this.seedData.weapons = _.orderBy(this.seedData.weapons, ['weaponType', 'asc']);
-			this.seedData.armor = _.orderBy(this.seedData.armor, ['itemType', 'asc']);
 			return true;
 		});
 	}
@@ -123,274 +107,19 @@ export class AppDataProvider {
 				});
 
 				this.seedData.weapons = weapons;
-
-				// _.each(items, item => {
-				// 	item.equipmentCategory = EquipmentCategoryType.Weapon;
-				// 	// item.id = this.seedData.weapons.length;
-				// 	this.seedData.weapons.push(item);
-				// });
-
 				resolve(true);
 			});
 		});
 	}
 
-	// loadGreatSwords(): Promise<boolean> {
-	// 	return new Promise(resolve => {
-	// 		this.http.get<ItemModel[]>('../assets/great-swords.json').subscribe(items => {
-	// 			_.each(items, item => {
-	// 				item.equipmentCategory = EquipmentCategoryType.Weapon;
-	// 				// item.id = this.seedData.weapons.length;
-	// 				this.seedData.weapons.push(item);
-	// 			});
-
-	// 			resolve(true);
-	// 		});
-	// 	});
-	// }
-
-	// loadLongSwords(): Promise<boolean> {
-	// 	return new Promise(resolve => {
-	// 		this.http.get<ItemModel[]>('../assets/long-swords.json').subscribe(items => {
-	// 			_.each(items, item => {
-	// 				item.equipmentCategory = EquipmentCategoryType.Weapon;
-	// 				// item.id = this.seedData.weapons.length;
-	// 				this.seedData.weapons.push(item);
-	// 			});
-
-	// 			resolve(true);
-	// 		});
-	// 	});
-	// }
-
-	// loadSwordAndShields(): Promise<boolean> {
-	// 	return new Promise(resolve => {
-	// 		this.http.get<ItemModel[]>('../assets/sword-and-shields.json').subscribe(items => {
-	// 			_.each(items, item => {
-	// 				item.equipmentCategory = EquipmentCategoryType.Weapon;
-	// 				// item.id = this.seedData.weapons.length;
-	// 				this.seedData.weapons.push(item);
-	// 			});
-
-	// 			resolve(true);
-	// 		});
-	// 	});
-	// }
-
-	// loadDualBlades(): Promise<boolean> {
-	// 	return new Promise(resolve => {
-	// 		this.http.get<ItemModel[]>('../assets/dual-blades.json').subscribe(items => {
-	// 			_.each(items, item => {
-	// 				item.equipmentCategory = EquipmentCategoryType.Weapon;
-	// 				// item.id = this.seedData.weapons.length;
-	// 				this.seedData.weapons.push(item);
-	// 			});
-
-	// 			resolve(true);
-	// 		});
-	// 	});
-	// }
-
-	// loadHammers(): Promise<boolean> {
-	// 	return new Promise(resolve => {
-	// 		this.http.get<ItemModel[]>('../assets/hammers.json').subscribe(items => {
-	// 			_.each(items, item => {
-	// 				item.equipmentCategory = EquipmentCategoryType.Weapon;
-	// 				// item.id = this.seedData.weapons.length;
-	// 				this.seedData.weapons.push(item);
-	// 			});
-
-	// 			resolve(true);
-	// 		});
-	// 	});
-	// }
-
-	// loadHuntingHorns(): Promise<boolean> {
-	// 	return new Promise(resolve => {
-	// 		this.http.get<ItemModel[]>('../assets/hunting-horns.json').subscribe(items => {
-	// 			_.each(items, item => {
-	// 				item.equipmentCategory = EquipmentCategoryType.Weapon;
-	// 				// item.id = this.seedData.weapons.length;
-	// 				this.seedData.weapons.push(item);
-	// 			});
-
-	// 			resolve(true);
-	// 		});
-	// 	});
-	// }
-
-	// loadLances(): Promise<boolean> {
-	// 	return new Promise(resolve => {
-	// 		this.http.get<ItemModel[]>('../assets/lances.json').subscribe(items => {
-	// 			_.each(items, item => {
-	// 				item.equipmentCategory = EquipmentCategoryType.Weapon;
-	// 				// item.id = this.seedData.weapons.length;
-	// 				this.seedData.weapons.push(item);
-	// 			});
-
-	// 			resolve(true);
-	// 		});
-	// 	});
-	// }
-
-	// loadGunlances(): Promise<boolean> {
-	// 	return new Promise(resolve => {
-	// 		this.http.get<ItemModel[]>('../assets/gunlances.json').subscribe(items => {
-	// 			_.each(items, item => {
-	// 				item.equipmentCategory = EquipmentCategoryType.Weapon;
-	// 				// item.id = this.seedData.weapons.length;
-	// 				this.seedData.weapons.push(item);
-	// 			});
-
-	// 			resolve(true);
-	// 		});
-	// 	});
-	// }
-
-	// loadSwitchAxes(): Promise<boolean> {
-	// 	return new Promise(resolve => {
-	// 		this.http.get<ItemModel[]>('../assets/switch-axes.json').subscribe(items => {
-	// 			_.each(items, item => {
-	// 				item.equipmentCategory = EquipmentCategoryType.Weapon;
-	// 				// item.id = this.seedData.weapons.length;
-	// 				this.seedData.weapons.push(item);
-	// 			});
-
-	// 			resolve(true);
-	// 		});
-	// 	});
-	// }
-
-	// loadChargeBlades(): Promise<boolean> {
-	// 	return new Promise(resolve => {
-	// 		this.http.get<ItemModel[]>('../assets/charge-blades.json').subscribe(items => {
-	// 			_.each(items, item => {
-	// 				item.equipmentCategory = EquipmentCategoryType.Weapon;
-	// 				// item.id = this.seedData.weapons.length;
-	// 				this.seedData.weapons.push(item);
-	// 			});
-
-	// 			resolve(true);
-	// 		});
-	// 	});
-	// }
-
-	// loadInsectGlaives(): Promise<boolean> {
-	// 	return new Promise(resolve => {
-	// 		this.http.get<ItemModel[]>('../assets/insect-glaives.json').subscribe(items => {
-	// 			_.each(items, item => {
-	// 				item.equipmentCategory = EquipmentCategoryType.Weapon;
-	// 				// item.id = this.seedData.weapons.length;
-	// 				this.seedData.weapons.push(item);
-	// 			});
-
-	// 			resolve(true);
-	// 		});
-	// 	});
-	// }
-
-	// loadLightBowguns(): Promise<boolean> {
-	// 	return new Promise(resolve => {
-	// 		this.http.get<ItemModel[]>('../assets/light-bowguns.json').subscribe(items => {
-	// 			_.each(items, item => {
-	// 				item.equipmentCategory = EquipmentCategoryType.Weapon;
-	// 				// item.id = this.seedData.weapons.length;
-	// 				this.seedData.weapons.push(item);
-	// 			});
-
-	// 			resolve(true);
-	// 		});
-	// 	});
-	// }
-
-	// loadHeavyBowguns(): Promise<boolean> {
-	// 	return new Promise(resolve => {
-	// 		this.http.get<ItemModel[]>('../assets/heavy-bowguns.json').subscribe(items => {
-	// 			_.each(items, item => {
-	// 				item.equipmentCategory = EquipmentCategoryType.Weapon;
-	// 				// item.id = this.seedData.weapons.length;
-	// 				this.seedData.weapons.push(item);
-	// 			});
-
-	// 			resolve(true);
-	// 		});
-	// 	});
-	// }
-
-	// loadBows(): Promise<boolean> {
-	// 	return new Promise(resolve => {
-	// 		this.http.get<ItemModel[]>('../assets/bows.json').subscribe(items => {
-	// 			_.each(items, item => {
-	// 				item.equipmentCategory = EquipmentCategoryType.Weapon;
-	// 				// item.id = this.seedData.weapons.length;
-	// 				this.seedData.weapons.push(item);
-	// 			});
-
-	// 			resolve(true);
-	// 		});
-	// 	});
-	// }
-
-	loadHeads(): Promise<boolean> {
+	loadArmor(): Promise<boolean> {
 		return new Promise(resolve => {
-			this.http.get<ItemModel[]>('../assets/heads.json').subscribe(items => {
-				_.each(items, item => {
+			this.http.get('../assets/armor.tsv', { responseType: 'text' }).subscribe((data: string) => {
+				const armor = CSVParser.parseArmor(data);
+				_.each(armor, item => {
 					item.equipmentCategory = EquipmentCategoryType.Armor;
-					// item.id = this.seedData.armor.length;
-					this.seedData.armor.push(item);
 				});
-				resolve(true);
-			});
-		});
-	}
-
-	loadChests(): Promise<boolean> {
-		return new Promise(resolve => {
-			this.http.get<ItemModel[]>('../assets/chests.json').subscribe(items => {
-				_.each(items, item => {
-					item.equipmentCategory = EquipmentCategoryType.Armor;
-					// item.id = this.seedData.armor.length;
-					this.seedData.armor.push(item);
-				});
-				resolve(true);
-			});
-		});
-	}
-
-	loadHands(): Promise<boolean> {
-		return new Promise(resolve => {
-			this.http.get<ItemModel[]>('../assets/hands.json').subscribe(items => {
-				_.each(items, item => {
-					item.equipmentCategory = EquipmentCategoryType.Armor;
-					// item.id = this.seedData.armor.length;
-					this.seedData.armor.push(item);
-				});
-				resolve(true);
-			});
-		});
-	}
-
-	loadLegs(): Promise<boolean> {
-		return new Promise(resolve => {
-			this.http.get<ItemModel[]>('../assets/legs.json').subscribe(items => {
-				_.each(items, item => {
-					item.equipmentCategory = EquipmentCategoryType.Armor;
-					// item.id = this.seedData.armor.length;
-					this.seedData.armor.push(item);
-				});
-				resolve(true);
-			});
-		});
-	}
-
-	loadFeet(): Promise<boolean> {
-		return new Promise(resolve => {
-			this.http.get<ItemModel[]>('../assets/feet.json').subscribe(items => {
-				_.each(items, item => {
-					item.equipmentCategory = EquipmentCategoryType.Armor;
-					// item.id = this.seedData.armor.length;
-					this.seedData.armor.push(item);
-				});
+				this.seedData.armor = armor;
 				resolve(true);
 			});
 		});
@@ -398,11 +127,11 @@ export class AppDataProvider {
 
 	loadCharms(): Promise<boolean> {
 		return new Promise(resolve => {
-			this.http.get<ItemModel[]>('../assets/charms.json').subscribe(items => {
-				_.each(items, item => {
-					// item.id = this.seedData.armor.length;
-					this.seedData.armor.push(item);
+			this.http.get<ItemModel[]>('../assets/charms.json').subscribe(charms => {
+				_.each(charms, charm => {
+					charm.equipmentCategory = EquipmentCategoryType.Charm;
 				});
+				this.seedData.charms = charms;
 				resolve(true);
 			});
 		});
@@ -410,11 +139,8 @@ export class AppDataProvider {
 
 	loadDecorations(): Promise<boolean> {
 		return new Promise(resolve => {
-			this.http.get<DecorationModel[]>('../assets/decorations.json').subscribe(items => {
-				_.each(items, item => {
-					// item.id = this.seedData.decorations.length;
-					this.seedData.decorations.push(item);
-				});
+			this.http.get<DecorationModel[]>('../assets/decorations.json').subscribe(decorations => {
+				this.seedData.decorations = decorations;
 				resolve(true);
 			});
 		});
@@ -422,8 +148,8 @@ export class AppDataProvider {
 
 	loadSetBonuses(): Promise<boolean> {
 		return new Promise(resolve => {
-			this.http.get<SetBonusModel[]>('../assets/set-bonuses.json').subscribe(items => {
-				this.seedData.setBonuses = this.seedData.setBonuses.concat(items);
+			this.http.get<SetBonusModel[]>('../assets/set-bonuses.json').subscribe(setBonuses => {
+				this.seedData.setBonuses = setBonuses;
 				resolve(true);
 			});
 		});
@@ -431,8 +157,8 @@ export class AppDataProvider {
 
 	loadSkills(): Promise<boolean> {
 		return new Promise(resolve => {
-			this.http.get<SkillModel[]>('../assets/skills.json').subscribe(items => {
-				this.seedData.skills = this.seedData.skills.concat(items);
+			this.http.get<SkillModel[]>('../assets/skills.json').subscribe(skills => {
+				this.seedData.skills = skills;
 				resolve(true);
 			});
 		});
@@ -440,8 +166,8 @@ export class AppDataProvider {
 
 	loadAugmentations(): Promise<boolean> {
 		return new Promise(resolve => {
-			this.http.get<AugmentationModel[]>('../assets/augmentations.json').subscribe(items => {
-				this.seedData.augmentations = this.seedData.augmentations.concat(items);
+			this.http.get<AugmentationModel[]>('../assets/augmentations.json').subscribe(augmentations => {
+				this.seedData.augmentations = augmentations;
 				resolve(true);
 			});
 		});
