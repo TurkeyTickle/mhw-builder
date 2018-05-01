@@ -69,6 +69,7 @@ export class WeaponListComponent implements OnInit {
 	loadItems() {
 		this.items = this.dataService.getWeapons();
 		this.resetSearchResults();
+		setTimeout(() => this.searchBox.nativeElement.focus(), 250);
 	}
 
 	search(query: string) {
@@ -134,16 +135,6 @@ export class WeaponListComponent implements OnInit {
 		const result = `${itemSkill.level}/${skill.levels.length}`;
 		return result;
 	}
-
-	// setTooltipItem(event: PointerEvent, item: ItemModel) {
-	// 	if (event.pointerType == PointerType.Mouse) {
-	// 		this.tooltipService.setItem(item);
-	// 	}
-	// }
-
-	// clearTooltipItem() {
-	// 	this.tooltipService.setItem(null);
-	// }
 
 	getElementIcon(item: ItemModel): string {
 		if (item.element) {
