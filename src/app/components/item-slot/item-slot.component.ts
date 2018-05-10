@@ -7,6 +7,8 @@ import { AugmentationSlotComponent } from '../augmentation-slot/augmentation-slo
 import { AugmentationModel } from '../../models/augmentation.model';
 import { SlotService } from '../../services/slot.service';
 import { PointerType } from '../../types/pointer.type';
+import { EquipmentCategoryType } from '../../types/equipment-category.type';
+import { DataService } from '../../services/data.service';
 
 @Component({
 	selector: 'mhw-builder-item-slot',
@@ -25,6 +27,7 @@ export class ItemSlotComponent implements OnInit {
 	public selected: boolean;
 
 	constructor(
+		private dataService: DataService,
 		private slotService: SlotService,
 		private tooltipService: TooltipService
 	) { }
@@ -49,6 +52,28 @@ export class ItemSlotComponent implements OnInit {
 			this.item.equippedLevel++;
 			this.slotService.updateItemLevel();
 		}
+	}
+
+	getItemIconName(): string {
+		let assetPath;
+
+		switch (this.dataService.getEquipmentCategory(this.slotName)) {
+			case EquipmentCategoryType.Armor:
+				assetPath = `armor/${this.slotName.toLowerCase()}-icon`;
+				break;
+			case EquipmentCategoryType.Weapon:
+				if (this.item) {
+					assetPath = `weapons/${this.item.weaponType.toLowerCase()}-icon`;
+				} else {
+					assetPath = 'weapons/greatsword-icon';
+				}
+				break;
+			case EquipmentCategoryType.Charm:
+				assetPath = 'armor/charm-icon';
+				break;
+		}
+
+		return `assets/images/${assetPath}.png`;
 	}
 
 	equipmentClearClicked(event: Event) {
