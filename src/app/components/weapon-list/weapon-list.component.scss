@@ -2,7 +2,7 @@
 @import "~sass/common";
 
 $searchHeight: 38px;
-$filterHeight: 42px;
+$filterHeight: 38px;
 $listItemHeight: 66px;
 
 .container {
@@ -15,7 +15,7 @@ $listItemHeight: 66px;
 .search-container {
 	grid-row: 1;
 	background-color: rgb(50,50,50);
-	padding: 0 0 0 12px;	
+	padding: 0 0 0 12px;
 	border-radius: 3px;
 	display: grid;
 	grid-template-columns: auto min-content;
@@ -55,9 +55,10 @@ $listItemHeight: 66px;
 	.weapon-filter {
 		padding: 4px;
 		height: 48px;
-	
+
 		img {
-			height: $filterHeight;
+			padding: 4px;
+			height: $filterHeight - 8;
 		}
 	}
 }
@@ -91,7 +92,7 @@ $listItemHeight: 66px;
 				overflow: hidden;
 				padding-left: 4px;
 			}
-			
+
 			.slots {
 				display: grid;
 				grid-template-columns: repeat(3, auto);
@@ -102,7 +103,7 @@ $listItemHeight: 66px;
 					margin: 4px 0;
 				}
 			}
-			
+
 			.type {
 				height: 22px;
 				line-height: 22px;
@@ -130,7 +131,7 @@ $listItemHeight: 66px;
 			display: grid;
 			grid-template-columns: repeat(3, 1fr);
 			grid-gap: 4px;
-			
+
 			.stat-container {
 				background-color: #272727;
 				border-radius: 3px;

@@ -15,12 +15,23 @@ $equipmentHeight: 40px;
 	padding: 8px;
 	border-radius: 3px;
 	display: grid;
-	grid-template-columns: 80px auto min-content 28px;
+	grid-template-columns: $equipmentHeight auto min-content 28px;
 
-	.slot-name {
+	// .slot-name {
+	// 	grid-column: 1;
+	// 	color: #b7b7b7;
+	// 	line-height: $equipmentHeight;
+	// }
+
+	.slot-icon {
 		grid-column: 1;
-		color: #b7b7b7;
+		height: $equipmentHeight;
 		line-height: $equipmentHeight;
+
+		img {
+			height: $equipmentHeight * 0.65;
+			vertical-align: middle;
+		}
 	}
 
 	.selected-item {
@@ -41,7 +52,7 @@ $equipmentHeight: 40px;
 			grid-column: 1;
 			height: $equipmentHeight;
 		}
-	
+
 		.level {
 			grid-column: 2;
 			line-height: $equipmentHeight;
