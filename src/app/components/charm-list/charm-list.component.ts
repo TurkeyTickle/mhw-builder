@@ -53,6 +53,7 @@ export class CharmListComponent implements OnInit {
 	loadItems() {
 		this.items = this.dataService.getCharms();
 		this.resetSearchResults();
+		setTimeout(() => this.searchBox.nativeElement.focus(), 250);
 	}
 
 	search(query: string) {

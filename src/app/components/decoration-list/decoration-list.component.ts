@@ -59,6 +59,7 @@ export class DecorationListComponent implements OnInit {
 	loadItems() {
 		this.decorations = this.dataService.getDecorations(this.decorationLevel);
 		this.resetSearchResults();
+		setTimeout(() => this.searchBox.nativeElement.focus(), 250);
 	}
 
 	search(query: string) {

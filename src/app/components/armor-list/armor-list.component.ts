@@ -53,6 +53,7 @@ export class ArmorListComponent implements OnInit {
 	loadItems() {
 		this.items = this.dataService.getArmorByType(this.itemType);
 		this.resetSearchResults();
+		setTimeout(() => this.searchBox.nativeElement.focus(), 250);
 	}
 
 	search(query: string) {
