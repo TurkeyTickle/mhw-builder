@@ -163,8 +163,8 @@ id	itemType	rarity	name	baseDefense	fireResist	waterResist	thunderResist	iceResi
 93	Hands	8	Xeno'jiva Claws Beta	72	-3	2	2	2	-4	flinchFree-1;xenojivaDivinity	3	xenojiva
 331	Head	5	Aloy's Head Alpha	46	1	1	1	1	1	affinitySliding-1;anjanathWill	3	
 336	Head	5	Blossom Headgear Alpha	40	1	1	4	1	1	honeyHunter-1	1;1	
-375	Head	6	Bridage Lobos Alpha	52	1	0	2	0	2	recoverySpeed-2;hornMaestro-1		
-347	Head	6	Brigade Lobos Beta	52	1	0	2	0	2	recoverySpeed-2		
+375	Head	6	Brigade Lobos Alpha	52	1	0	2	0	2	recoverySpeed-2;hornMaestro-1		
+347	Head	6	Brigade Lobos Beta	52	1	0	2	0	2	recoverySpeed-2	1	
 30	Head	6	Diablos Helm Alpha	54	3	-2	0	-3	2	criticalDraw-2;heroics-1;diablosMastery		
 29	Head	6	Diablos Helm Beta	54	3	-2	0	-3	2	criticalDraw-2;diablosMastery	2	
 40	Head	6	Faux Felyne Alpha	56	2	2	2	2	2	palicoRally-3		
