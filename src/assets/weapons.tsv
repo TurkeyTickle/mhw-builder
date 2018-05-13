@@ -406,7 +406,7 @@ id	weaponType	rarity	name	baseAttack	baseAffinityPercent	baseDefense	element	ele
 313	Lance	6	Claw Gold Defender	299	30	20	Fire	60	true					true	Blue-40		kulve;taroth;fire	
 582	Lance	6	Crusher Gold Defender	345	10	20				Blast	90			true	Blue-20		kulve;taroth;blast	
 133	Lance	6	Dark Stinger III	368	0	0				Blast	240	true		false	White-30;White-40;White-50;White-60;White-70;White-80	3	hornetaur;paralysis	
-129	Lance	6	Datura Pike III	391	0	0				Poison	540			false	Blue-40;Blue-50;Blue-60;Blue-70;Blue-80;Blue-90	2;2	pukei-pukei;poison	
+129	Lance	6	Datura Pike III	391	0	0				Poison	540			false	Blue-40;Blue-50;Blue-60;Blue-70;Blue-80;Blue-90	2;1	pukei-pukei;poison	
 304	Lance	6	Decay Gold Defender	322	0	20	Dragon	210						true	Blue-40		kulve;taroth;dragon	
 137	Lance	6	Dragonbone Lance III	368	0	0	Dragon	420					Low	false	Blue-40;Blue-50;Blue-60;Blue-70;White-10;White-20	1;1	dragonbone;dragon	
 586	Lance	6	Gold Sleep Defender	322	10	20				Sleep	210	true		true	Blue-20		kulve;taroth;sleep	
