@@ -27,12 +27,12 @@ ul.striped-light {
 
 		.skill-header {
 			display: flex;
-		
+
 			.skill-name {
 				flex-grow: 1;
 			}
 		}
-		
+
 		hr {
 			border: 1px solid rgb(97, 97, 97);
 		}
@@ -44,6 +44,7 @@ ul.striped-light {
 
 	div {
 		display: inline;
+		padding: 2px;
 	}
 }
 

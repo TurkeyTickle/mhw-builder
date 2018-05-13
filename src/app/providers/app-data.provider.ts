@@ -10,7 +10,7 @@ import { SkillModel } from '../models/skill.model';
 import { WeaponModifierModel } from '../models/weapon-modifier.model';
 import { EquipmentCategoryType } from '../types/equipment-category.type';
 import { AugmentationModel } from '../models/augmentation.model';
-import { CSVParser } from '../helpers/csv-parser';
+import { TSVParser } from '../helpers/tsv-parser';
 import { SlotModel } from '../models/slot.model';
 import { SharpnessLevelModel } from '../models/sharpness-level.model';
 import { SharpnessType } from '../types/sharpness.type';
@@ -73,9 +73,7 @@ export class AppDataProvider {
 			this.loadAugmentations()
 		];
 
-		return Promise.all(items).then<boolean>(() => {
-			return true;
-		});
+		return Promise.all(items).then<boolean>(() => true);
 	}
 
 	loadWeaponModifiers(): Promise<boolean> {
@@ -99,7 +97,7 @@ export class AppDataProvider {
 	loadWeapons(): Promise<boolean> {
 		return new Promise(resolve => {
 			this.http.get('../assets/weapons.tsv', { responseType: 'text' }).subscribe((data: string) => {
-				const weapons = CSVParser.parseWeapons(data);
+				const weapons = TSVParser.parseWeapons(data);
 
 				_.each(weapons, item => {
 					item.equipmentCategory = EquipmentCategoryType.Weapon;
@@ -115,10 +113,12 @@ export class AppDataProvider {
 	loadArmor(): Promise<boolean> {
 		return new Promise(resolve => {
 			this.http.get('../assets/armor.tsv', { responseType: 'text' }).subscribe((data: string) => {
-				const armor = CSVParser.parseArmor(data);
+				const armor = TSVParser.parseArmor(data);
+
 				_.each(armor, item => {
 					item.equipmentCategory = EquipmentCategoryType.Armor;
 				});
+
 				this.seedData.armor = armor;
 				resolve(true);
 			});
@@ -127,10 +127,14 @@ export class AppDataProvider {
 
 	loadCharms(): Promise<boolean> {
 		return new Promise(resolve => {
-			this.http.get<ItemModel[]>('../assets/charms.json').subscribe(charms => {
+			this.http.get('../assets/charms.tsv', { responseType: 'text' }).subscribe((data: string) => {
+				const charms = TSVParser.parseCharms(data);
+
 				_.each(charms, charm => {
+					charm.itemType = ItemType.Charm;
 					charm.equipmentCategory = EquipmentCategoryType.Charm;
 				});
+
 				this.seedData.charms = charms;
 				resolve(true);
 			});
@@ -139,7 +143,13 @@ export class AppDataProvider {
 
 	loadDecorations(): Promise<boolean> {
 		return new Promise(resolve => {
-			this.http.get<DecorationModel[]>('../assets/decorations.json').subscribe(decorations => {
+			this.http.get('../assets/decorations.tsv', { responseType: 'text' }).subscribe((data: string) => {
+				const decorations = TSVParser.parseDecorations(data);
+
+				_.each(decorations, decoration => {
+					decoration.level = 1;
+				});
+
 				this.seedData.decorations = decorations;
 				resolve(true);
 			});
