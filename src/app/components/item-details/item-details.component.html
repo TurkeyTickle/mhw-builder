@@ -9,15 +9,17 @@
 	</ul>
 
 	<div class="slots-container">
-		<div *ngIf="item?.slots[0]?.level">
-			<img [src]="'assets/images/slot-' + item?.slots[0]?.level + '-icon.png'">
-		</div>
-		<div *ngIf="item?.slots[1]?.level">
-			<img [src]="'assets/images/slot-' + item?.slots[1]?.level + '-icon.png'">
-		</div>
-		<div *ngIf="item?.slots[2]?.level">
-			<img [src]="'assets/images/slot-' + item?.slots[2]?.level + '-icon.png'">
-		</div>
+		<ng-template [ngIf]="item?.slots">
+			<div *ngIf="item?.slots[0]?.level">
+				<img [src]="'assets/images/slot-' + item?.slots[0]?.level + '-icon.png'">
+			</div>
+			<div *ngIf="item?.slots[1]?.level">
+				<img [src]="'assets/images/slot-' + item?.slots[1]?.level + '-icon.png'">
+			</div>
+			<div *ngIf="item?.slots[2]?.level">
+				<img [src]="'assets/images/slot-' + item?.slots[2]?.level + '-icon.png'">
+			</div>
+		</ng-template>
 	</div>
 
 	<div *ngIf="skills?.length" class="skills-container">
@@ -33,7 +35,7 @@
 						<span>{{skill.description}}</span>
 					</li>
 				</div>
-				
+
 				<!-- <div *ngIf="skill.setLevels">
 					<li *ngFor="let setLevel of skill.setLevels">
 						<div class="skill-header">

@@ -148,5 +148,25 @@
 				"pieces": 4
 			}
 		]
+	},
+	{
+		"id": "zorahMagdarosMastery",
+		"name": "Zorah Magdaros Mastery",
+		"setLevels": [
+			{
+				"id": "critialStatus",
+				"pieces": 3
+			}
+		]
+	},
+	{
+		"id": "pinkRathianMastery",
+		"name": "Pink Rathian Mastery",
+		"setLevels": [
+			{
+				"id": "poisonDurationUp",
+				"pieces": 3
+			}
+		]
 	}
 ]
