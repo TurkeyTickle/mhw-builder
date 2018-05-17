@@ -635,7 +635,7 @@
 				"description": "Poison buildup +10%. Bonus +10.",
 				"passivePoisonAttack": 10,
 				"passivePoisonBuildupPercent": 10
-			},			
+			},
 			{
 				"description": "Poison buildup +20%. Bonus +10.",
 				"passivePoisonAttack": 10,
@@ -657,7 +657,7 @@
 				"description": "Blast buildup +10%. Bonus +10.",
 				"passiveBlastAttack": 10,
 				"passiveBlastBuildupPercent": 10
-			},			
+			},
 			{
 				"description": "Blast buildup +20%. Bonus +10.",
 				"passiveBlastAttack": 10,
@@ -679,7 +679,7 @@
 				"description": "Paralysis buildup +10%. Bonus +10.",
 				"passiveParalysisAttack": 10,
 				"passiveParalysisBuildupPercent": 10
-			},			
+			},
 			{
 				"description": "Paralysis buildup +20%. Bonus +10.",
 				"passiveParalysisAttack": 10,
@@ -701,7 +701,7 @@
 				"description": "Sleep buildup +10%. Bonus +10.",
 				"passiveSleepAttack": 10,
 				"passiveSleepBuildupPercent": 10
-			},			
+			},
 			{
 				"description": "Sleep buildup +20%. Bonus +10.",
 				"passiveSleepAttack": 10,
@@ -794,7 +794,7 @@
 				"description": "While active, increases affinity by 10% and reduces stamina depletion by 10%",
 				"activeAffinity": 10,
 				"activeStaminaDepletionReductionPercent": 10
-			},			
+			},
 			{
 				"description": "While active, increases affinity by 20% and reduces stamina depletion by 10%",
 				"activeAffinity": 20,
@@ -804,7 +804,7 @@
 				"description": "While active, increases affinity by 30% and reduces stamina depletion by 30%",
 				"activeAffinity": 30,
 				"activeStaminaDepletionReductionPercent": 30
-			},	
+			},
 			{
 				"description": "While active, increases affinity by 40% and reduces stamina depletion by 30%",
 				"activeAffinity": 40,
@@ -2093,6 +2093,26 @@
 		"levels": [
 			{
 				"description": "Increases stamina cap."
+			}
+		]
+	},
+	{
+		"id": "criticalStatus",
+		"name": "Critical Status",
+		"description": "Increases abnormal status effect damage (paralysis, poison, sleep, blast) when landing critical hits.",
+		"levels": [
+			{
+				"description": "Increases abnormal status effect damage (paralysis, poison, sleep, blast) when landing critical hits."
+			}
+		]
+	},
+	{
+		"id": "poisonDurationUp",
+		"name": "Poison Duration Up",
+		"description": "Extends the duration of your poison's effect on monsters.",
+		"levels": [
+			{
+				"description": "Extends the duration of your poison's effect on monsters."
 			}
 		]
 	}
