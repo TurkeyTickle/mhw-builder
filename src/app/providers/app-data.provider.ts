@@ -145,11 +145,6 @@ export class AppDataProvider {
 		return new Promise(resolve => {
 			this.http.get('../assets/decorations.tsv', { responseType: 'text' }).subscribe((data: string) => {
 				const decorations = TSVParser.parseDecorations(data);
-
-				_.each(decorations, decoration => {
-					decoration.level = 1;
-				});
-
 				this.seedData.decorations = decorations;
 				resolve(true);
 			});
