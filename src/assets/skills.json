@@ -407,10 +407,10 @@
 				"description": "While active, reduces damage taken by 15%."
 			},
 			{
-				"description": "While active, reduces damage taken by 15%."
+				"description": "While active, reduces damage taken by 30%."
 			},
 			{
-				"description": "While active, reduces damage taken by 15%."
+				"description": "While active, reduces damage taken by 50%."
 			}
 		]
 	},
