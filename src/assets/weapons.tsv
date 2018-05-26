@@ -523,7 +523,7 @@ id	weaponType	rarity	name	baseAttack	baseAffinityPercent	baseDefense	element	ele
 38	LongSword	7	Magda Facultas II	726	-20	20				Blast	360			false	Green-70;Green-80;Green-90;Blue-10;Blue-20;Blue-30	2	zorah;magdaros;blast	
 275	LongSword	7	Reaver "Calamity"	759	-25	0	Dragon	210					High	false	Blue-40;White-10;White-20;White-30;White-40;White-50		deviljho;dragon	
 366	LongSword	7	Taroth Sword "Decay"	660	10	40	Dragon	270					Average	true	Blue-20		kulve;taroth;dragon	
-430	LongSword	7	Taroth Sword "Flash"	627	0	20	Thunder	360	false					true	Blue-20		kulve;taroth;thunder	
+430	LongSword	7	Taroth Sword "Flash"	627	0	20	Thunder	360	true					true	Blue-20		kulve;taroth;thunder	
 362	LongSword	7	Taroth Sword "Gyre"	660	0	20	Fire	120						true	Blue-20		kulve;taroth;fire	
 363	LongSword	7	Taroth Sword "Lurk"	528	0	20				Paralysis	210	true		true	Blue-20		kulve;taroth;paralysis	
 428	LongSword	7	Taroth Sword "Magma"	726	-20	30				Blast	360			true	Blue-20		kulve;taroth;blast	
