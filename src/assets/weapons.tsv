@@ -387,7 +387,7 @@ id	weaponType	rarity	name	baseAttack	baseAffinityPercent	baseDefense	element	ele
 450	InsectGlaive	7	Taroth Glaive "Crusher"	558	0	20				Blast	150			true	Blue-20	2	kulve;taroth;blast	
 448	InsectGlaive	7	Taroth Glaive "Decay"	527	0	20	Dragon	180					Average	true	White-20		kulve;taroth;dragon	
 454	InsectGlaive	7	Taroth Glaive "Flash"	589	0	20	Thunder	300	false					true	Blue-20		kulve;taroth;thunder	
-455	InsectGlaive	7	Taroth Glaive "Horn"	713	-30	25	Ice	240	false					true	Blue-20		kulve;taroth;ice	
+455	InsectGlaive	7	Taroth Glaive "Horn"	713	-30	25	Ice	240	true					true	Blue-20		kulve;taroth;ice	
 453	InsectGlaive	7	Taroth Glaive "King"	589	20	20	Fire	210						true	Blue-20		kulve;taroth;fire	
 452	InsectGlaive	7	Taroth Glaive "Spark"	558	20	20	Thunder	240						true	Blue-20		kulve;taroth;thunder	
 386	InsectGlaive	7	Taroth Glaive "Spew"	558	0	20				Poison	300	true		true	Blue-20	1	kulve;taroth;poison	
