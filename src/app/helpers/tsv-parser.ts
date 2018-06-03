@@ -40,6 +40,10 @@ export class TSVParser {
 					return sharpnessLevels;
 				}
 			},
+			{
+				columnName: 'skills',
+				predicate: this.parseSkillsReferences
+			}
 		]);
 	}
 
