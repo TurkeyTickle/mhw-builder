@@ -142,12 +142,14 @@ export class TSVParser {
 	private static parseSkillsReferences(data: string): SkillReferenceModel[] {
 		const values = data.split(';');
 		const skillRefs: SkillReferenceModel[] = [];
-		for (const skill of values) {
-			const parts = skill.split('-');
-			skillRefs.push({
-				id: parts[0],
-				level: parts.length > 1 ? Number(parts[1]) : null
-			});
+		if (data) {
+			for (const skill of values) {
+				const parts = skill.split('-');
+				skillRefs.push({
+					id: parts[0],
+					level: parts.length > 1 ? Number(parts[1]) : null
+				});
+			}
 		}
 		return skillRefs;
 	}
