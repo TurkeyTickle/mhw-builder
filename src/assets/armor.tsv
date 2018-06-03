@@ -67,6 +67,8 @@ id	itemType	rarity	name	baseDefense	fireResist	waterResist	thunderResist	iceResi
 324	Chest	8	Vangis Mail Beta	58	1	1	-3	2	-3	speedEating-1	3	deviljho
 50	Chest	8	Xeno'jiva Hide Alpha	72	-3	2	2	2	-4	powerProlonger-2;blightResistance-1;xenojivaDivinity	1	xenojiva
 49	Chest	8	Xeno'jiva Hide Beta	72	-3	2	2	2	-4	powerProlonger-2;xenojivaDivinity	1;1	xenojiva
+447	Chest	8	Empress Mail Alpha	70	3	1	1	-3	-2	peakPerformance-2;healthBoost-1;lunastraFavor	1;1	lunastra
+448	Chest	8	Empress Mail Beta	70	3	1	1	-3	-2	peakPerformance-2;lunastraFavor	1;1;1	lunastra
 335	Feet	5	Aloy's Leggings Alpha	46	1	1	1	1	1	slingerCapacity-2;anjanathWill	2	
 340	Feet	5	Blossom Boots Alpha	40	1	1	4	1	1	recoverySpeed-1	1;1	
 439	Feet	5	Jyura Greaves Alpha	44	-1	2	-3	0	0	focus-2		jyuratodus
@@ -135,6 +137,8 @@ id	itemType	rarity	name	baseDefense	fireResist	waterResist	thunderResist	iceResi
 330	Feet	8	Vangis Greaves Beta	58	1	1	-3	2	-3	speedEating-2	1;1	deviljho
 182	Feet	8	Xeno'jiva Spurs Alpha	72	-3	2	2	2	-4	flinchFree-1;powerProlonger-1;xenojivaDivinity	1	xenojiva
 181	Feet	8	Xeno'jiva Spurs Beta	72	-3	2	2	2	-4	flinchFree-1;xenojivaDivinity	1;1	xenojiva
+449	Feet	8	Empress Greaves Alpha	70	3	1	1	-3	-2	healthBoost-2;wideRange-2;lunastraFavor	2;1	lunastra
+450	Feet	8	Empress Greaves Beta	70	3	1	1	-3	-2	healthBoost-2;lunastraFavor	2;2	lunastra
 333	Hands	5	Aloy's Arms Alpha	46	1	1	1	1	1	weaknessExploit-1;scenthound-1;anjanathWill	1	
 338	Hands	5	Blossom Cuffs Alpha	40	1	1	4	1	1	paralysisResistance-1	1;1	
 441	Hands	5	Jyura Vambraces Alpha	44	-1	2	-3	0	0	waterAttack-2;aquaticExpert-1		jyuratodus
@@ -203,6 +207,8 @@ id	itemType	rarity	name	baseDefense	fireResist	waterResist	thunderResist	iceResi
 326	Hands	8	Vangis Vambraces Beta	58	1	1	-3	2	-3	latentPower-2	2	deviljho
 94	Hands	8	Xeno'jiva Claws Alpha	72	-3	2	2	2	-4	flinchFree-1;criticalBoost-1;xenojivaDivinity	1	xenojiva
 93	Hands	8	Xeno'jiva Claws Beta	72	-3	2	2	2	-4	flinchFree-1;xenojivaDivinity	3	xenojiva
+451	Hands	8	Empress Vambraces Alpha	70	3	1	1	-3	-2	wideRange-2;blastAttack-2;lunastraFavor	3	lunastra
+452	Hands	8	Empress Vambraces Beta	70	3	1	1	-3	-2	wideRange-2;lunastraFavor	2;3	lunastra
 331	Head	5	Aloy's Head Alpha	46	1	1	1	1	1	affinitySliding-1;anjanathWill	3	
 336	Head	5	Blossom Headgear Alpha	40	1	1	4	1	1	honeyHunter-1	1;1	
 443	Head	5	Jyura Helm Alpha	44	-1	2	-3	0	0	aquaticExpert-2		jyuratodus
@@ -275,6 +281,8 @@ id	itemType	rarity	name	baseDefense	fireResist	waterResist	thunderResist	iceResi
 6	Head	8	Vaal Hazak Helm Beta	64	-4	4	1	-1	-3	peakPerformance-1;vaalHazakVitality	1	
 3	Head	8	Xeno'jiva Headgear Alpha	72	-3	2	2	2	-4	flinchFree-1;specialAmmoBoost-1;xenojivaDivinity	1	xenojiva
 2	Head	8	Xeno'jiva Headgear Beta	72	-3	2	2	2	-4	flinchFree-1;xenojivaDivinity	2	xenojiva
+453	Head	8	Empress Crown Alpha	70	3	1	1	-3	-2	evadeExtender-2;toolSpecialist-1;lunastraFavor	2;1	lunastra
+454	Head	8	Empress Crown Beta	70	3	1	1	-3	-2	evadeExtender-2;lunastraFavor	3;2	lunastra
 334	Legs	5	Aloy's Torso Alpha	46	1	1	1	1	1	stealth-2;anjanathWill	3	
 339	Legs	5	Blossom Coat Alpha	40	1	1	4	1	1	scoutflyRangeUp-1	1;1	
 445	Legs	5	Jyura Coil Alpha	44	-1	2	-3	0	0	iceResistance-2		jyuratodus
@@ -343,3 +351,5 @@ id	itemType	rarity	name	baseDefense	fireResist	waterResist	thunderResist	iceResi
 328	Legs	8	Vangis Coil Beta	58	1	1	-3	2	-3	latentPower-1	3;1	deviljho
 138	Legs	8	Xeno'jiva Spine Alpha	72	-3	2	2	2	-4	blightResistance-2;specialAmmoBoost-1;xenojivaDivinity	2	xenojiva
 137	Legs	8	Xeno'jiva Spine Beta	72	-3	2	2	2	-4	blightResistance-2;xenojivaDivinity	2;1	xenojiva
+455	Legs	8	Empress Coil Alpha	70	3	1	1	-3	-2	toolSpecialist-1;blastAttack-1;lunastraFavor	2;1	lunastra
+456	Legs	8	Empress Coil Beta	70	3	1	1	-3	-2	toolSpecialist-2;lunastraFavor	2;2	lunastra
