@@ -168,5 +168,19 @@
 				"pieces": 3
 			}
 		]
-	}
+	},
+		{
+			"id": "lunastraFavor",
+			"name": "Lunastra Favor",
+			"setLevels": [
+				{
+					"id": "staminaCapUp",
+					"pieces": 2
+				},
+				{
+					"id": "mindsEyeBallistics",
+					"pieces": 4
+				}
+			]
+		}
 ]
