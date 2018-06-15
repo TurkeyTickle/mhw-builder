@@ -9,14 +9,16 @@
             "request": "launch",
             "name": "Debug in Chrome",
             "url": "http://localhost:4200",
-            "webRoot": "${workspaceFolder}"
+			"webRoot": "${workspaceFolder}",
+			"preLaunchTask": "Start Client"
 		},
 		{
             "type": "firefox",
             "request": "launch",
 			"name": "Debug in Firefox",
             "url": "http://localhost:4200",
-            "webRoot": "${workspaceFolder}"
+            "webRoot": "${workspaceFolder}",
+			"preLaunchTask": "Start Client"
 		},
 		{
             "type": "firefox",
