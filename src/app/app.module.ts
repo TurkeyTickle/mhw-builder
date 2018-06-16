@@ -30,6 +30,7 @@ import { DecorationListComponent } from './components/decoration-list/decoration
 import { ArmorListComponent } from './components/armor-list/armor-list.component';
 import { WeaponListComponent } from './components/weapon-list/weapon-list.component';
 import { CharmListComponent } from './components/charm-list/charm-list.component';
+import { DataModule } from './data/data.module';
 
 @NgModule({
 	declarations: [
@@ -57,6 +58,7 @@ import { CharmListComponent } from './components/charm-list/charm-list.component
 		BrowserModule,
 		HttpClientModule,
 		VirtualScrollModule,
+		DataModule
 	],
 	providers: [
 		Location,
@@ -77,5 +79,5 @@ import { CharmListComponent } from './components/charm-list/charm-list.component
 export class AppModule { }
 
 export function appDataProviderFactory(provider: AppDataProvider) {
-	return () => provider.load();
+	return () => provider.load().subscribe();
 }

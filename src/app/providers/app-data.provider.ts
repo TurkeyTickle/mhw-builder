@@ -1,179 +1,59 @@
-import { HttpClient } from '@angular/common/http';
 import { Injectable } from '@angular/core';
-import * as _ from 'lodash';
-import { DecorationModel } from '../models/decoration.model';
-import { ItemModel } from '../models/item.model';
-import { SeedModel } from '../models/seed.model';
-import { SetBonusModel } from '../models/set-bonus.model';
-import { SharpnessModifierModel } from '../models/sharpness-modifier.model';
-import { SkillModel } from '../models/skill.model';
-import { WeaponModifierModel } from '../models/weapon-modifier.model';
-import { EquipmentCategoryType } from '../types/equipment-category.type';
-import { AugmentationModel } from '../models/augmentation.model';
-import { TSVParser } from '../helpers/tsv-parser';
-import { SlotModel } from '../models/slot.model';
-import { SharpnessLevelModel } from '../models/sharpness-level.model';
-import { SharpnessType } from '../types/sharpness.type';
-import { ItemType } from '../types/item.type';
+import { forkJoin, Observable, Observer } from 'rxjs';
+import { AppDataModel } from '../models/app-data.model';
+import { WeaponsLoader } from '../data/loaders/weapons.loader';
+import { ArmorLoader } from '../data/loaders/armor.loader';
+import { SharpnessModifiersLoader } from '../data/loaders/sharpness-modifiers.loader';
+import { WeaponModifiersLoader } from '../data/loaders/weapon-modifiers.loader';
+import { CharmsLoader } from '../data/loaders/charms.loader';
+import { DecorationsLoader } from '../data/loaders/decorations.loader';
+import { SetBonusesLoader } from '../data/loaders/set-bonuses.loader';
+import { SkillsLoader } from '../data/loaders/skills.loader';
+import { AugmentationsLoader } from '../data/loaders/augmentations.loader';
 
 @Injectable()
 export class AppDataProvider {
-	private seedData: SeedModel;
+	public appData: AppDataModel;
 
-	constructor(private http: HttpClient) {
-		this.seedData = new SeedModel();
+	constructor(
+		private weaponLoader: WeaponsLoader,
+		private armorLoader: ArmorLoader,
+		private charmsLoader: CharmsLoader,
+		private decorationsLoader: DecorationsLoader,
+		private augmentationsLoader: AugmentationsLoader,
+		private skillsLoader: SkillsLoader,
+		private setBonusesLoader: SetBonusesLoader,
+		private sharpnessModifiersLoader: SharpnessModifiersLoader,
+		private weaponModifiersLoader: WeaponModifiersLoader
+	) {
+		this.appData = new AppDataModel();
 	}
 
-	getWeaponModifiers(): WeaponModifierModel[] {
-		return this.seedData.weaponModifiers;
-	}
+	load(): Observable<boolean> {
+		return Observable.create((observer: Observer<boolean>) => {
+			forkJoin(
+				this.weaponLoader.load('weapons.tsv'),
+				this.armorLoader.load('armor.tsv'),
+				this.charmsLoader.load('charms.tsv'),
+				this.decorationsLoader.load('decorations.tsv'),
+				this.augmentationsLoader.load('augmentations.json'),
+				this.skillsLoader.load('skills.json'),
+				this.setBonusesLoader.load('set-bonuses.json'),
+				this.sharpnessModifiersLoader.load('sharpness-modifiers.json', false),
+				this.weaponModifiersLoader.load('weapon-modifiers.json', false)
+			).subscribe(results => {
+				this.appData.weapons = results[0];
+				this.appData.armor = results[1];
+				this.appData.charms = results[2];
+				this.appData.decorations = results[3];
+				this.appData.augmentations = results[4];
+				this.appData.skills = results[5];
+				this.appData.setBonuses = results[6];
+				this.appData.sharpnessModifiers = results[7];
+				this.appData.weaponModifiers = results[8];
 
-	getSharpnessModifiers(): SharpnessModifierModel[] {
-		return this.seedData.sharpnessModifiers;
-	}
-
-	getWeapons(): ItemModel[] {
-		return this.seedData.weapons;
-	}
-
-	getArmor(): ItemModel[] {
-		return this.seedData.armor;
-	}
-
-	getCharms(): ItemModel[] {
-		return this.seedData.charms;
-	}
-
-	getSetBonuses(): SetBonusModel[] {
-		return this.seedData.setBonuses;
-	}
-
-	getSkills(): SkillModel[] {
-		return this.seedData.skills;
-	}
-
-	getDecorations(): DecorationModel[] {
-		return this.seedData.decorations;
-	}
-
-	getAugmentations(): AugmentationModel[] {
-		return this.seedData.augmentations;
-	}
-
-	load(): Promise<boolean> {
-		const items = [
-			this.loadWeaponModifiers(),
-			this.loadSharpnessModifiers(),
-			this.loadWeapons(),
-			this.loadArmor(),
-			this.loadCharms(),
-			this.loadDecorations(),
-			this.loadSetBonuses(),
-			this.loadSkills(),
-			this.loadAugmentations()
-		];
-
-		return Promise.all(items).then<boolean>(() => true);
-	}
-
-	loadWeaponModifiers(): Promise<boolean> {
-		return new Promise(resolve => {
-			this.http.get<WeaponModifierModel[]>('../assets/weapon-modifiers.json').subscribe(items => {
-				this.seedData.weaponModifiers = this.seedData.weaponModifiers.concat(items);
-				resolve(true);
-			});
-		});
-	}
-
-	loadSharpnessModifiers(): Promise<boolean> {
-		return new Promise(resolve => {
-			this.http.get<SharpnessModifierModel[]>('../assets/sharpness-modifiers.json').subscribe(items => {
-				this.seedData.sharpnessModifiers = this.seedData.sharpnessModifiers.concat(items);
-				resolve(true);
-			});
-		});
-	}
-
-	loadWeapons(): Promise<boolean> {
-		return new Promise(resolve => {
-			this.http.get('../assets/weapons.tsv', { responseType: 'text' }).subscribe((data: string) => {
-				const weapons = TSVParser.parseWeapons(data);
-
-				_.each(weapons, item => {
-					item.equipmentCategory = EquipmentCategoryType.Weapon;
-					item.itemType = ItemType.Weapon;
-				});
-
-				this.seedData.weapons = weapons;
-				resolve(true);
-			});
-		});
-	}
-
-	loadArmor(): Promise<boolean> {
-		return new Promise(resolve => {
-			this.http.get('../assets/armor.tsv', { responseType: 'text' }).subscribe((data: string) => {
-				const armor = TSVParser.parseArmor(data);
-
-				_.each(armor, item => {
-					item.equipmentCategory = EquipmentCategoryType.Armor;
-				});
-
-				this.seedData.armor = armor;
-				resolve(true);
-			});
-		});
-	}
-
-	loadCharms(): Promise<boolean> {
-		return new Promise(resolve => {
-			this.http.get('../assets/charms.tsv', { responseType: 'text' }).subscribe((data: string) => {
-				const charms = TSVParser.parseCharms(data);
-
-				_.each(charms, charm => {
-					charm.itemType = ItemType.Charm;
-					charm.equipmentCategory = EquipmentCategoryType.Charm;
-				});
-
-				this.seedData.charms = charms;
-				resolve(true);
-			});
-		});
-	}
-
-	loadDecorations(): Promise<boolean> {
-		return new Promise(resolve => {
-			this.http.get('../assets/decorations.tsv', { responseType: 'text' }).subscribe((data: string) => {
-				const decorations = TSVParser.parseDecorations(data);
-				this.seedData.decorations = decorations;
-				resolve(true);
-			});
-		});
-	}
-
-	loadSetBonuses(): Promise<boolean> {
-		return new Promise(resolve => {
-			this.http.get<SetBonusModel[]>('../assets/set-bonuses.json').subscribe(setBonuses => {
-				this.seedData.setBonuses = setBonuses;
-				resolve(true);
-			});
-		});
-	}
-
-	loadSkills(): Promise<boolean> {
-		return new Promise(resolve => {
-			this.http.get<SkillModel[]>('../assets/skills.json').subscribe(skills => {
-				this.seedData.skills = skills;
-				resolve(true);
-			});
-		});
-	}
-
-	loadAugmentations(): Promise<boolean> {
-		return new Promise(resolve => {
-			this.http.get<AugmentationModel[]>('../assets/augmentations.json').subscribe(augmentations => {
-				this.seedData.augmentations = augmentations;
-				resolve(true);
+				observer.next(true);
+				observer.complete();
 			});
 		});
 	}

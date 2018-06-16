@@ -50,7 +50,6 @@ export class WeaponListComponent implements OnInit {
 	constructor(
 		private slotService: SlotService,
 		public dataService: DataService,
-		private tooltipService: TooltipService
 	) { }
 
 	ngOnInit() {
