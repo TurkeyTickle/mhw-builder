@@ -59,4 +59,8 @@ export class EquippedSkillsComponent implements OnInit {
 	clearSkillDetails() {
 		this.tooltipService.setEquippedSkill(null);
 	}
+
+	showOnClickSkillDetails(equippedSkill: EquippedSkillModel) {
+		this.tooltipService.setEquippedSkill(equippedSkill);
+	}
 }

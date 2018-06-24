@@ -72,6 +72,7 @@ export class StatService {
 			if (level) {
 				if (level.passiveAttack) { this.stats.passiveAttack += level.passiveAttack; }
 				if (level.activeAttack) { this.stats.activeAttack += level.activeAttack; }
+				if (level.elementlessBoostPercent) { this.stats.elementlessBoostPercent += level.elementlessBoostPercent; }
 				if (level.passiveAffinity) { this.stats.passiveAffinity += level.passiveAffinity; }
 				if (level.activeAffinity) { this.stats.activeAffinity += level.activeAffinity; }
 				if (level.weakPointAffinity) { this.stats.weakPointAffinity += level.weakPointAffinity; }
@@ -126,6 +127,7 @@ export class StatService {
 			const level = value[0].levels[value.length - 1];
 			if (level) {
 				if (level.passiveAttack) { this.stats.passiveAttack += level.passiveAttack; }
+				//if (level.augmentationAttack) { this.stats.augmentationAttack += level.augmentationAttack; }
 				if (level.passiveAffinity) { this.stats.passiveAffinity += level.passiveAffinity; }
 				if (level.passiveDefense) { this.stats.passiveDefense += level.passiveDefense; }
 				if (level.healOnHitPercent) { this.stats.healOnHitPercent += level.healOnHitPercent; }
@@ -205,9 +207,29 @@ export class StatService {
 			}
 		}
 
-		this.stats.totalAttack = this.stats.attack + Math.round(this.stats.passiveAttack * this.stats.weaponAttackModifier);
-		this.stats.totalAttackPotential = Math.round(this.stats.attack * this.stats.effectivePhysicalSharpnessModifier +
-			(this.stats.passiveAttack + this.stats.activeAttack) * this.stats.weaponAttackModifier);
+		
+		if (this.stats.elementlessBoostPercent > 0 && this.stats.elementAttackMultiplier == 0) {
+			this.stats.totalAttack =
+				Math.round(
+					this.stats.attack * (1 + this.stats.elementlessBoostPercent / 100)
+					+ this.stats.passiveAttack * this.stats.weaponAttackModifier
+				);
+
+			this.stats.totalAttackPotential =
+				Math.round(
+					this.stats.attack * this.stats.effectivePhysicalSharpnessModifier * (1 + this.stats.elementlessBoostPercent / 100)
+					+ (this.stats.passiveAttack + this.stats.activeAttack) * this.stats.weaponAttackModifier
+				);
+		}
+		else {
+			this.stats.totalAttack =
+				this.stats.attack + Math.round(this.stats.passiveAttack * this.stats.weaponAttackModifier);
+			this.stats.totalAttackPotential =
+				Math.round(
+					this.stats.attack * this.stats.effectivePhysicalSharpnessModifier
+					+ (this.stats.passiveAttack + this.stats.activeAttack) * this.stats.weaponAttackModifier
+				);
+		}
 
 		const elementAttackIncreaseCap = weapon ? weapon.elementAttackIncreaseCapOverride || this.defaultElementAttackIncreaseCap : this.defaultElementAttackIncreaseCap;
 		const ailmentAttackIncreaseCap = weapon ? weapon.elementAttackIncreaseCapOverride || this.defaultElementAttackIncreaseCap : this.defaultElementAttackIncreaseCap;

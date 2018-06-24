@@ -2,7 +2,7 @@
 	<h4>Attack</h4>
 	<hr>
 	<ul class="attack-stats striped">
-		<li *ngFor="let calc of attackCalcs" (pointerenter)="showCalcDetails($event, calc)" (pointerleave)="clearCalcDetails()">
+		<li *ngFor="let calc of attackCalcs" (pointerenter)="showCalcDetails($event, calc)" (pointerleave)="clearCalcDetails()" (click)="showOnClickCalcDetails(calc)">
 			<span *ngIf="calc.calculationTemplate || calc.info?.length" class="detail-icon" [ngClass]="calc.color"><i class="far fa-question-circle"></i></span>
 			<span class="name">{{calc.name}}</span>
 			<span class="value">{{calc.value}}</span>

@@ -13,3 +13,10 @@ li {
 h3, h4, h5 {
 	margin: 0;
 }
+
+@media (max-width:576px) {
+	.close-btn-sm {
+		visibility: visible !important;
+		float: right;
+	}
+}
