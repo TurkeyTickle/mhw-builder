@@ -127,7 +127,6 @@ export class StatService {
 			const level = value[0].levels[value.length - 1];
 			if (level) {
 				if (level.passiveAttack) { this.stats.passiveAttack += level.passiveAttack; }
-				//if (level.augmentationAttack) { this.stats.augmentationAttack += level.augmentationAttack; }
 				if (level.passiveAffinity) { this.stats.passiveAffinity += level.passiveAffinity; }
 				if (level.passiveDefense) { this.stats.passiveDefense += level.passiveDefense; }
 				if (level.healOnHitPercent) { this.stats.healOnHitPercent += level.healOnHitPercent; }
@@ -207,7 +206,7 @@ export class StatService {
 			}
 		}
 
-		
+
 		if (this.stats.elementlessBoostPercent > 0 && this.stats.elementAttackMultiplier == 0) {
 			this.stats.totalAttack =
 				Math.round(
@@ -220,8 +219,7 @@ export class StatService {
 					this.stats.attack * this.stats.effectivePhysicalSharpnessModifier * (1 + this.stats.elementlessBoostPercent / 100)
 					+ (this.stats.passiveAttack + this.stats.activeAttack) * this.stats.weaponAttackModifier
 				);
-		}
-		else {
+		} else {
 			this.stats.totalAttack =
 				this.stats.attack + Math.round(this.stats.passiveAttack * this.stats.weaponAttackModifier);
 			this.stats.totalAttackPotential =

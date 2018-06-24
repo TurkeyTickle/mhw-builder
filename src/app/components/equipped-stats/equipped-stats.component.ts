@@ -45,10 +45,9 @@ export class EquippedStatsComponent implements OnInit {
 	}
 
 	showOnClickCalcDetails(calc: StatDetailModel) {
-		if ((calc.calculationTemplate || (calc.info && calc.info.length))) {
+		if (calc.calculationTemplate || (calc.info && calc.info.length)) {
 			this.tooltipService.setCalc(calc);
-		}
-		else {
+		} else {
 			this.clearCalcDetails();
 		}
 	}

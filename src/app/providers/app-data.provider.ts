@@ -1,6 +1,9 @@
+import { PlatformLocation } from '@angular/common';
 import { HttpClient } from '@angular/common/http';
 import { Injectable } from '@angular/core';
 import * as _ from 'lodash';
+import { TSVParser } from '../helpers/tsv-parser';
+import { AugmentationModel } from '../models/augmentation.model';
 import { DecorationModel } from '../models/decoration.model';
 import { ItemModel } from '../models/item.model';
 import { SeedModel } from '../models/seed.model';
@@ -9,19 +12,16 @@ import { SharpnessModifierModel } from '../models/sharpness-modifier.model';
 import { SkillModel } from '../models/skill.model';
 import { WeaponModifierModel } from '../models/weapon-modifier.model';
 import { EquipmentCategoryType } from '../types/equipment-category.type';
-import { AugmentationModel } from '../models/augmentation.model';
-import { TSVParser } from '../helpers/tsv-parser';
-import { SlotModel } from '../models/slot.model';
-import { SharpnessLevelModel } from '../models/sharpness-level.model';
-import { SharpnessType } from '../types/sharpness.type';
 import { ItemType } from '../types/item.type';
 
 @Injectable()
 export class AppDataProvider {
 	private seedData: SeedModel;
+	private baseRef: string;
 
-	constructor(private http: HttpClient) {
+	constructor(private http: HttpClient, private platformLocation: PlatformLocation) {
 		this.seedData = new SeedModel();
+		this.baseRef = (platformLocation as any).location.origin + (platformLocation as any).location.pathname;
 	}
 
 	getWeaponModifiers(): WeaponModifierModel[] {
@@ -78,7 +78,7 @@ export class AppDataProvider {
 
 	loadWeaponModifiers(): Promise<boolean> {
 		return new Promise(resolve => {
-			this.http.get<WeaponModifierModel[]>('../assets/weapon-modifiers.json').subscribe(items => {
+			this.http.get<WeaponModifierModel[]>(this.baseRef + 'assets/weapon-modifiers.json').subscribe(items => {
 				this.seedData.weaponModifiers = this.seedData.weaponModifiers.concat(items);
 				resolve(true);
 			});
@@ -87,7 +87,7 @@ export class AppDataProvider {
 
 	loadSharpnessModifiers(): Promise<boolean> {
 		return new Promise(resolve => {
-			this.http.get<SharpnessModifierModel[]>('../assets/sharpness-modifiers.json').subscribe(items => {
+			this.http.get<SharpnessModifierModel[]>(this.baseRef + 'assets/sharpness-modifiers.json').subscribe(items => {
 				this.seedData.sharpnessModifiers = this.seedData.sharpnessModifiers.concat(items);
 				resolve(true);
 			});
@@ -96,7 +96,7 @@ export class AppDataProvider {
 
 	loadWeapons(): Promise<boolean> {
 		return new Promise(resolve => {
-			this.http.get('../assets/weapons.tsv', { responseType: 'text' }).subscribe((data: string) => {
+			this.http.get(this.baseRef + 'assets/weapons.tsv', { responseType: 'text' }).subscribe((data: string) => {
 				const weapons = TSVParser.parseWeapons(data);
 
 				_.each(weapons, item => {
@@ -112,7 +112,7 @@ export class AppDataProvider {
 
 	loadArmor(): Promise<boolean> {
 		return new Promise(resolve => {
-			this.http.get('../assets/armor.tsv', { responseType: 'text' }).subscribe((data: string) => {
+			this.http.get(this.baseRef + '/assets/armor.tsv', { responseType: 'text' }).subscribe((data: string) => {
 				const armor = TSVParser.parseArmor(data);
 
 				_.each(armor, item => {
@@ -127,7 +127,7 @@ export class AppDataProvider {
 
 	loadCharms(): Promise<boolean> {
 		return new Promise(resolve => {
-			this.http.get('../assets/charms.tsv', { responseType: 'text' }).subscribe((data: string) => {
+			this.http.get(this.baseRef + '/assets/charms.tsv', { responseType: 'text' }).subscribe((data: string) => {
 				const charms = TSVParser.parseCharms(data);
 
 				_.each(charms, charm => {
@@ -143,7 +143,7 @@ export class AppDataProvider {
 
 	loadDecorations(): Promise<boolean> {
 		return new Promise(resolve => {
-			this.http.get('../assets/decorations.tsv', { responseType: 'text' }).subscribe((data: string) => {
+			this.http.get(this.baseRef + '/assets/decorations.tsv', { responseType: 'text' }).subscribe((data: string) => {
 				const decorations = TSVParser.parseDecorations(data);
 				this.seedData.decorations = decorations;
 				resolve(true);
@@ -153,7 +153,7 @@ export class AppDataProvider {
 
 	loadSetBonuses(): Promise<boolean> {
 		return new Promise(resolve => {
-			this.http.get<SetBonusModel[]>('../assets/set-bonuses.json').subscribe(setBonuses => {
+			this.http.get<SetBonusModel[]>(this.baseRef + '/assets/set-bonuses.json').subscribe(setBonuses => {
 				this.seedData.setBonuses = setBonuses;
 				resolve(true);
 			});
@@ -162,7 +162,7 @@ export class AppDataProvider {
 
 	loadSkills(): Promise<boolean> {
 		return new Promise(resolve => {
-			this.http.get<SkillModel[]>('../assets/skills.json').subscribe(skills => {
+			this.http.get<SkillModel[]>(this.baseRef + '/assets/skills.json').subscribe(skills => {
 				this.seedData.skills = skills;
 				resolve(true);
 			});
@@ -171,7 +171,7 @@ export class AppDataProvider {
 
 	loadAugmentations(): Promise<boolean> {
 		return new Promise(resolve => {
-			this.http.get<AugmentationModel[]>('../assets/augmentations.json').subscribe(augmentations => {
+			this.http.get<AugmentationModel[]>(this.baseRef + '/assets/augmentations.json').subscribe(augmentations => {
 				this.seedData.augmentations = augmentations;
 				resolve(true);
 			});

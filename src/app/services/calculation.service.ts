@@ -22,11 +22,11 @@ export class CalculationService {
 	private buildAttackCalcs(stats: StatsModel) {
 		this.attackCalcs = [];
 
-		//ElementlessBoost
+		// ElementlessBoost
 		let attackTemplate = ``;
 		let attackPotentialTemplate = ``;
 
-		let attackCalcDetail = {
+		const attackCalcDetail = {
 			name: 'Attack',
 			value: stats.totalAttack,
 			calculationTemplate: attackTemplate,
@@ -52,7 +52,7 @@ export class CalculationService {
 			]
 		};
 
-		let attackPotentialCalcDetail = {
+		const attackPotentialCalcDetail = {
 			name: 'Attack Potential',
 			value: stats.totalAttackPotential,
 			calculationTemplate: attackPotentialTemplate,
@@ -88,12 +88,12 @@ export class CalculationService {
 					colorClass: 'purple'
 				}
 			]
-		}
+		};
 
 		if (stats.elementlessBoostPercent > 0 && stats.elementAttackMultiplier == 0) {
 			attackTemplate = `{attack} × {elementlessBoostPercent} + {passiveAttack} × {weaponModifier} ≈ ${stats.totalAttack}`;
 			attackPotentialTemplate = `{attack} × {elementlessBoostPercent} × {sharpnessModifier} + ({passiveAttack} + {activeAttack}) × {weaponModifier} ≈ ${stats.totalAttackPotential}`;
-			let elementlessVariable = {
+			const elementlessVariable = {
 				displayName: 'Elementless Boost Modifier',
 				name: 'elementlessBoostPercent',
 				value: (1 + stats.elementlessBoostPercent / 100),
@@ -101,8 +101,7 @@ export class CalculationService {
 			};
 			attackCalcDetail.calculationVariables.push(elementlessVariable);
 			attackPotentialCalcDetail.calculationVariables.push(elementlessVariable);
-		}
-		else {
+		} else {
 			attackTemplate = `{attack} + {passiveAttack} × {weaponModifier} ≈ ${stats.totalAttack}`;
 			attackPotentialTemplate = `{attack} × {sharpnessModifier} + ({passiveAttack} + {activeAttack}) × {weaponModifier} ≈ ${stats.totalAttackPotential}`;
 		}
@@ -437,7 +436,6 @@ export class CalculationService {
 			});
 		}
 
-		//------------------ Raw Attack AVG
 		const totalAffinity = Math.min(stats.affinity + stats.passiveAffinity, 100);
 		const totalAffinityPotential = Math.min(stats.affinity + stats.passiveAffinity + stats.weakPointAffinity + stats.activeAffinity, 100);
 		const rawAttackAvg =
@@ -450,10 +448,9 @@ export class CalculationService {
 				(stats.totalAttackPotential * (totalAffinityPotential / 100) * ((stats.passiveCriticalBoostPercent + 125) / 100))
 				+ (stats.totalAttackPotential * (1 - (totalAffinityPotential / 100)))
 			) / stats.weaponAttackModifier);
-		//------------------
 		this.attackCalcs.push({
 			name: 'Raw Attack Average',
-			value: rawAttackAvg,
+			value: rawAttackAvg ? rawAttackAvg : 0,
 			calculationTemplate: `({totalAttack} × {totalAffinity} * {criticalBoost} + {totalAttack} * (100% - {totalAffinity})) ÷ {weaponModifier} = ${rawAttackAvg}`,
 			calculationVariables: [
 				{
@@ -465,7 +462,7 @@ export class CalculationService {
 				{
 					displayName: 'Total Affinity',
 					name: 'totalAffinity',
-					value: totalAffinity +'%',
+					value: totalAffinity + '%',
 					colorClass: 'blue'
 				},
 				{
@@ -484,8 +481,9 @@ export class CalculationService {
 		});
 		this.attackCalcs.push({
 			name: 'Raw Attack Potential Average',
-			value: rawAttackPotentialAvg,
-			calculationTemplate: `({totalAttackPotential} × {totalAffinityPotential} * {criticalBoost} + {totalAttackPotential} * (100% - {totalAffinityPotential})) ÷ {weaponModifier} = ${rawAttackPotentialAvg}`,
+			value: rawAttackPotentialAvg ? rawAttackPotentialAvg : 0,
+			calculationTemplate:
+				`({totalAttackPotential} × {totalAffinityPotential} * {criticalBoost} + {totalAttackPotential} * (100% - {totalAffinityPotential})) ÷ {weaponModifier} = ${rawAttackPotentialAvg}`,
 			calculationVariables: [
 				{
 					displayName: 'Total Attack Potential',
@@ -513,7 +511,6 @@ export class CalculationService {
 				}
 			]
 		});
-		//------------------
 	}
 
 	private buildDefenseCalcs(stats: StatsModel) {
