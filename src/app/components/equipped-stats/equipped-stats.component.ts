@@ -21,6 +21,7 @@ export class EquippedStatsComponent implements OnInit {
 		private tooltipService: TooltipService
 	) { }
 
+
 	ngOnInit() {
 		this.calculationService.attackCalcsUpdated$.subscribe(calcs => {
 			this.attackCalcs = calcs;
@@ -41,5 +42,13 @@ export class EquippedStatsComponent implements OnInit {
 
 	clearCalcDetails() {
 		this.tooltipService.setCalc(null);
+	}
+
+	showOnClickCalcDetails(calc: StatDetailModel) {
+		if (calc.calculationTemplate || (calc.info && calc.info.length)) {
+			this.tooltipService.setCalc(calc);
+		} else {
+			this.clearCalcDetails();
+		}
 	}
 }

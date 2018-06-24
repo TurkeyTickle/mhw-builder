@@ -13,3 +13,15 @@ li {
 h3, h4, h5 {
 	margin: 0;
 }
+
+.armor-icon {
+	height: 35px;
+	width: auto;
+}
+
+@media (max-width:576px) {
+	.close-btn-sm {
+		visibility: visible !important;
+		float: right;
+	}
+}

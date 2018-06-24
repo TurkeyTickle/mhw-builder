@@ -1,5 +1,6 @@
 import { Component, Input, OnInit } from '@angular/core';
 import { StatDetailModel } from '../../models/stat-detail.model';
+import { TooltipService } from '../../services/tooltip.service';
 
 @Component({
 	selector: 'mhw-builder-calc-details',
@@ -19,9 +20,14 @@ export class CalcDetailsComponent implements OnInit {
 	detailTemplate: string;
 
 	constructor(
+		private tooltipService: TooltipService
 	) { }
 
 	ngOnInit(): void {
+	}
+
+	clearCalc() {
+		this.tooltipService.setCalc(null);
 	}
 
 	generateTemplate() {
@@ -29,8 +35,8 @@ export class CalcDetailsComponent implements OnInit {
 
 		if (this.calc.calculationTemplate) {
 			let template = this.calc.calculationTemplate;
-
 			for (const item of this.calc.calculationVariables) {
+				template = template.replace(`{${item.name}}`, `<span class="${item.colorClass}">${item.value}</span>`);
 				template = template.replace(`{${item.name}}`, `<span class="${item.colorClass}">${item.value}</span>`);
 			}
 

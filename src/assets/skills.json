@@ -449,9 +449,10 @@
 		"name": "Non-elemental Boost",
 		"description": "Powers up non-elemental weapons you have equipped.",
 		"levels": [
-			{
-				"description": "Powers up non-elemental weapons you have equipped."
-			}
+				{
+					"description": "Powers up non-elemental weapons you have equipped.",
+					"elementlessBoostPercent": 10
+				}
 		]
 	},
 	{
