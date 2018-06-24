@@ -4,7 +4,6 @@ import { DecorationModel } from '../models/decoration.model';
 import { EquippedSetBonusModel } from '../models/equipped-set-bonus.model';
 import { EquippedSkillModel } from '../models/equipped-skill.model';
 import { ItemModel } from '../models/item.model';
-import { ItemType } from '../types/item.type';
 import { DataService } from './data.service';
 import { Subject } from 'rxjs/Subject';
 import { AugmentationModel } from '../models/augmentation.model';
@@ -51,7 +50,7 @@ export class SkillService {
 				}
 
 				let equippedSkill = _.find(equippedSkills, es => es.id == itemSkill.id);
-				const equippedCount = itemSkill.level * (item.equippedLevel ? item.equippedLevel : 1);
+
 				if (!equippedSkill) {
 					const skill = this.dataService.getSkill(itemSkill.id);
 					equippedSkill = new EquippedSkillModel();
@@ -59,13 +58,11 @@ export class SkillService {
 					equippedSkill.id = skill.id;
 					equippedSkill.name = skill.name;
 					equippedSkill.description = skill.description;
-					equippedSkill.equippedCount = equippedCount;
+					equippedSkill.equippedCount = itemSkill.level * (item.equippedLevel ? item.equippedLevel : 1);
 					equippedSkill.totalLevelCount = skill.levels.length;
-					this.countSkillItemPart(equippedSkill, equippedCount, item.itemType);
 					equippedSkills.push(equippedSkill);
 				} else {
-					equippedSkill.equippedCount += equippedCount;
-					this.countSkillItemPart(equippedSkill, equippedCount, item.itemType);
+					equippedSkill.equippedCount += itemSkill.level * (item.equippedLevel ? item.equippedLevel : 1);
 				}
 			}
 		}
@@ -180,24 +177,6 @@ export class SkillService {
 					}
 				}
 			}
-		}
-	}
-
-	private countSkillItemPart(equippedSkill: EquippedSkillModel, actualCount: number, itemType: ItemType) {
-		if (itemType == ItemType.Weapon) {
-			equippedSkill.weaponCount = actualCount;
-		} else if (itemType == ItemType.Head) {
-			equippedSkill.headCount = actualCount;
-		} else if (itemType == ItemType.Chest) {
-			equippedSkill.chestCount = actualCount;
-		} else if (itemType == ItemType.Hands) {
-			equippedSkill.handsCount = actualCount;
-		} else if (itemType == ItemType.Legs) {
-			equippedSkill.legsCount = actualCount;
-		} else if (itemType == ItemType.Feet) {
-			equippedSkill.feetCount = actualCount;
-		} else if (itemType == ItemType.Charm) {
-			equippedSkill.charmCount = actualCount;
 		}
 	}
 }
