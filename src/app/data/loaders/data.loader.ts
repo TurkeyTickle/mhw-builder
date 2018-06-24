@@ -30,7 +30,7 @@ export abstract class DataLoader<T> {
 				).subscribe(results => {
 					const items = ld.map(results[0], r => {
 						const txVal = ld.find(results[1], { id: (r as any).id });
-						const newVal = ld.assign(r, txVal);
+						const newVal = ld.assignIn(r, txVal);
 						return newVal;
 					});
 					observer.next(items);
@@ -45,7 +45,7 @@ export abstract class DataLoader<T> {
 				).subscribe(results => {
 					const data = this.parse(results[0]);
 					const localeData = results[1] ? this.parse(results[1]) : null;
-					const items = ld.map(data, r => ld.assign(r, ld.find(localeData, { id: (r as any).id })));
+					const items = ld.map(data, r => ld.assignIn(r, ld.find(localeData, { id: (r as any).id })));
 					observer.next(items);
 					observer.complete();
 				});
