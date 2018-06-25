@@ -15,7 +15,7 @@
 				"background": {
 					"activeOnStart": true,
 					"beginsPattern": "\\*\\* Angular Live Development Server is listening .*",
-					"endsPattern": "i ｢wdm｣: Compiled successfully."
+					"endsPattern": "i ｢wdm｣: Compiled .*"
 				}
 			},
 			"isBackground": true
