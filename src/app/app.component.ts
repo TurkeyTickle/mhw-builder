@@ -108,7 +108,7 @@ export class AppComponent implements OnInit, AfterViewInit {
 	}
 
 	ngAfterViewInit() {
-		setTimeout(() => this.buildService.loadBuild(location.hash), 100);
+		setTimeout(() => this.buildService.loadBuild(location.hash), 300);
 	}
 
 	respondToResize() {
