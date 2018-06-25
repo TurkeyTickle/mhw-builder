@@ -79,5 +79,5 @@ import { DataModule } from './data/data.module';
 export class AppModule { }
 
 export function appDataProviderFactory(provider: AppDataProvider) {
-	return () => provider.load().subscribe();
+	return () => provider.load().toPromise();
 }

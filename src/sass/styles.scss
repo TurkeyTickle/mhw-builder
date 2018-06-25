@@ -39,3 +39,15 @@ a {
 a:visited {
 	color: $blue;
 }
+
+.loading-indicator {
+	position: absolute;
+	margin: auto;
+	top:0;
+	right:0;
+	left:0;
+	bottom:0;
+	width: 200px;
+	height: 100px;
+	text-align: center;
+}
