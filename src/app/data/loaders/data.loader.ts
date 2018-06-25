@@ -7,7 +7,8 @@ import * as ld from 'lodash';
 
 @Injectable()
 export abstract class DataLoader<T> {
-	delimeter = '\t';
+	readonly defaultLocale = 'en-US';
+	readonly delimeter = '\t';
 
 	constructor(
 		protected http: HttpClient
@@ -24,11 +25,10 @@ export abstract class DataLoader<T> {
 		if (ext.toLowerCase() === 'json') {
 			result = Observable.create((observer: Observer<T[]>) => {
 				forkJoin(
-					this.loadJsonResource(resourceName, false),
-					withLocale ? this.loadJsonResource(resourceName, true) : of(null)
+					this.getResources(resourceName, true, withLocale)
 				).subscribe(results => {
 					const items = ld.map(results[0], r => {
-						const txVal = ld.find(results[1], { id: (r as any).id });
+						const txVal = ld.find(results[1], { id: r.id });
 						const newVal = ld.assignIn(r, txVal);
 						return newVal;
 					});
@@ -39,8 +39,7 @@ export abstract class DataLoader<T> {
 		} else {
 			result = Observable.create((observer: Observer<T[]>) => {
 				forkJoin(
-					this.loadTextResource(resourceName, false),
-					withLocale ? this.loadTextResource(resourceName, true) : of(null)
+					this.getResources(resourceName, false, withLocale)
 				).subscribe(results => {
 					const data = this.parse(results[0]);
 					const localeData = results[1] ? this.parse(results[1]) : null;
@@ -52,6 +51,25 @@ export abstract class DataLoader<T> {
 		}
 
 		return result;
+	}
+
+	private getResources(resourceName: string, json: boolean, withLocale: boolean): Observable<any>[] {
+		const resources: Observable<any>[] = [];
+		const locale = this.getLocale();
+
+		if (json) {
+			resources.push(this.loadJsonResource(resourceName, false));
+			if (withLocale && locale !== this.defaultLocale) {
+				resources.push(this.loadJsonResource(resourceName, true));
+			}
+		} else {
+			resources.push(this.loadTextResource(resourceName, false));
+			if (withLocale && locale !== this.defaultLocale) {
+				resources.push(this.loadTextResource(resourceName, true));
+			}
+		}
+
+		return resources;
 	}
 
 	private loadJsonResource(resourceName: string, fromLocale: boolean): Observable<T[]> {
@@ -73,7 +91,7 @@ export abstract class DataLoader<T> {
 	private getPath(resourceName: string, fromLocale: boolean): string {
 		let path: string;
 		const locale = this.getLocale();
-		if (fromLocale && locale !== 'en-US') {
+		if (fromLocale) {
 			path = `./assets/${locale}/${resourceName}`;
 		} else {
 			path = `./assets/${resourceName}`;
