@@ -448,69 +448,75 @@ export class CalculationService {
 				(stats.totalAttackPotential * (totalAffinityPotential / 100) * ((stats.passiveCriticalBoostPercent + 125) / 100))
 				+ (stats.totalAttackPotential * (1 - (totalAffinityPotential / 100)))
 			) / stats.weaponAttackModifier);
-		this.attackCalcs.push({
-			name: 'Raw Attack Average',
-			value: rawAttackAvg ? rawAttackAvg : 0,
-			calculationTemplate: `({totalAttack} × {totalAffinity} * {criticalBoost} + {totalAttack} * (100% - {totalAffinity})) ÷ {weaponModifier} = ${rawAttackAvg}`,
-			calculationVariables: [
-				{
-					displayName: 'Total Attack',
-					name: 'totalAttack',
-					value: stats.totalAttack,
-					colorClass: 'green'
-				},
-				{
-					displayName: 'Total Affinity',
-					name: 'totalAffinity',
-					value: totalAffinity + '%',
-					colorClass: 'blue'
-				},
-				{
-					displayName: 'Total Critical Boost',
-					name: 'criticalBoost',
-					value: (stats.passiveCriticalBoostPercent + 125) + '%',
-					colorClass: 'kakhi'
-				},
-				{
-					displayName: 'Weapon Modifier',
-					name: 'weaponModifier',
-					value: stats.weaponAttackModifier,
-					colorClass: 'purple'
-				}
-			]
-		});
-		this.attackCalcs.push({
-			name: 'Raw Attack Potential Average',
-			value: rawAttackPotentialAvg ? rawAttackPotentialAvg : 0,
-			calculationTemplate:
-				`({totalAttackPotential} × {totalAffinityPotential} * {criticalBoost} + {totalAttackPotential} * (100% - {totalAffinityPotential})) ÷ {weaponModifier} = ${rawAttackPotentialAvg}`,
-			calculationVariables: [
-				{
-					displayName: 'Total Attack Potential',
-					name: 'totalAttackPotential',
-					value: stats.totalAttackPotential,
-					colorClass: 'green'
-				},
-				{
-					displayName: 'Total Affinity Potential',
-					name: 'totalAffinityPotential',
-					value: totalAffinityPotential + '%',
-					colorClass: 'blue'
-				},
-				{
-					displayName: 'Total Critical Boost',
-					name: 'criticalBoost',
-					value: stats.passiveCriticalBoostPercent + 125 + '%',
-					colorClass: 'kakhi'
-				},
-				{
-					displayName: 'Weapon Modifier',
-					name: 'weaponModifier',
-					value: stats.weaponAttackModifier,
-					colorClass: 'purple'
-				}
-			]
-		});
+
+		if (rawAttackAvg) {
+			this.attackCalcs.push({
+				name: 'Raw Attack Average',
+				value: rawAttackAvg,
+				calculationTemplate: `({totalAttack} × {totalAffinity} × {criticalBoost} + {totalAttack} × (100% - {totalAffinity})) ÷ {weaponModifier} = ${rawAttackAvg}`,
+				calculationVariables: [
+					{
+						displayName: 'Total Attack',
+						name: 'totalAttack',
+						value: stats.totalAttack,
+						colorClass: 'green'
+					},
+					{
+						displayName: 'Total Affinity',
+						name: 'totalAffinity',
+						value: totalAffinity + '%',
+						colorClass: 'blue'
+					},
+					{
+						displayName: 'Total Critical Boost',
+						name: 'criticalBoost',
+						value: (stats.passiveCriticalBoostPercent + 125) + '%',
+						colorClass: 'kakhi'
+					},
+					{
+						displayName: 'Weapon Modifier',
+						name: 'weaponModifier',
+						value: stats.weaponAttackModifier,
+						colorClass: 'purple'
+					}
+				]
+			});
+		}
+
+		if (rawAttackPotentialAvg) {
+			this.attackCalcs.push({
+				name: 'Raw Attack Potential Average',
+				value: rawAttackPotentialAvg,
+				calculationTemplate:
+					`({totalAttackPotential} × {totalAffinityPotential} × {criticalBoost} + {totalAttackPotential} × (100% - {totalAffinityPotential})) ÷ {weaponModifier} = ${rawAttackPotentialAvg}`,
+				calculationVariables: [
+					{
+						displayName: 'Total Attack Potential',
+						name: 'totalAttackPotential',
+						value: stats.totalAttackPotential,
+						colorClass: 'green'
+					},
+					{
+						displayName: 'Total Affinity Potential',
+						name: 'totalAffinityPotential',
+						value: totalAffinityPotential + '%',
+						colorClass: 'blue'
+					},
+					{
+						displayName: 'Total Critical Boost',
+						name: 'criticalBoost',
+						value: stats.passiveCriticalBoostPercent + 125 + '%',
+						colorClass: 'kakhi'
+					},
+					{
+						displayName: 'Weapon Modifier',
+						name: 'weaponModifier',
+						value: stats.weaponAttackModifier,
+						colorClass: 'purple'
+					}
+				]
+			});
+		}
 	}
 
 	private buildDefenseCalcs(stats: StatsModel) {
