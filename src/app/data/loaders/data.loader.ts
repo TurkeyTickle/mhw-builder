@@ -72,8 +72,8 @@ export abstract class DataLoader<T> {
 
 	private getPath(resourceName: string, fromLocale: boolean): string {
 		let path: string;
-		if (fromLocale) {
-			const locale = this.getLocale();
+		const locale = this.getLocale();
+		if (fromLocale && locale !== 'en-US') {
 			path = `./assets/${locale}/${resourceName}`;
 		} else {
 			path = `./assets/${resourceName}`;
