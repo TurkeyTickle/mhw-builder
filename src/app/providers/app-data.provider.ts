@@ -10,7 +10,6 @@ import { DecorationsLoader } from '../data/loaders/decorations.loader';
 import { SetBonusesLoader } from '../data/loaders/set-bonuses.loader';
 import { SkillsLoader } from '../data/loaders/skills.loader';
 import { AugmentationsLoader } from '../data/loaders/augmentations.loader';
-import { map } from 'rxjs/operators';
 
 @Injectable()
 export class AppDataProvider {
@@ -42,22 +41,20 @@ export class AppDataProvider {
 				this.setBonusesLoader.load('set-bonuses.json'),
 				this.sharpnessModifiersLoader.load('sharpness-modifiers.json', false),
 				this.weaponModifiersLoader.load('weapon-modifiers.json', false)
-			).pipe(
-				map(results => {
-					this.appData.weapons = results[0];
-					this.appData.armor = results[1];
-					this.appData.charms = results[2];
-					this.appData.decorations = results[3];
-					this.appData.augmentations = results[4];
-					this.appData.skills = results[5];
-					this.appData.setBonuses = results[6];
-					this.appData.sharpnessModifiers = results[7];
-					this.appData.weaponModifiers = results[8];
+			).subscribe(results => {
+				this.appData.weapons = results[0];
+				this.appData.armor = results[1];
+				this.appData.charms = results[2];
+				this.appData.decorations = results[3];
+				this.appData.augmentations = results[4];
+				this.appData.skills = results[5];
+				this.appData.setBonuses = results[6];
+				this.appData.sharpnessModifiers = results[7];
+				this.appData.weaponModifiers = results[8];
 
-					observer.next(true);
-					observer.complete();
-				})
-			).subscribe();
+				observer.next(true);
+				observer.complete();
+			});
 		});
 	}
 }
