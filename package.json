@@ -1,6 +1,6 @@
 {
   "name": "mhw-builder",
-  "version": "0.0.0",
+  "version": "1.0.0",
   "license": "MIT",
   "scripts": {
     "ng": "ng",
@@ -26,7 +26,6 @@
     "core-js": "^2.5.7",
     "lodash": "^4.17.10",
     "rxjs": "^6.2.1",
-    "rxjs-compat": "^6.2.1",
     "zone.js": "^0.8.26"
   },
   "devDependencies": {

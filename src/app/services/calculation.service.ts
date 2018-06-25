@@ -1,7 +1,7 @@
 import { Injectable } from '@angular/core';
 import { StatsModel } from '../models/stats.model';
 import { StatDetailModel } from '../models/stat-detail.model';
-import { Subject } from 'rxjs/Subject';
+import { Subject } from 'rxjs';
 
 @Injectable()
 export class CalculationService {

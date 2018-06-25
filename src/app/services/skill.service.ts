@@ -6,7 +6,7 @@ import { EquippedSkillModel } from '../models/equipped-skill.model';
 import { ItemModel } from '../models/item.model';
 import { ItemType } from '../types/item.type';
 import { DataService } from './data.service';
-import { Subject } from 'rxjs/Subject';
+import { Subject } from 'rxjs';
 import { AugmentationModel } from '../models/augmentation.model';
 
 @Injectable()

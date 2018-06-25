@@ -9,7 +9,7 @@ import { DamageType } from '../types/damage.type';
 import * as _ from 'lodash';
 import { DataService } from './data.service';
 import { StatsModel } from '../models/stats.model';
-import { Subject } from 'rxjs/Subject';
+import { Subject } from 'rxjs';
 import { CalculationService } from './calculation.service';
 import { EldersealType } from '../types/elderseal.type';
 

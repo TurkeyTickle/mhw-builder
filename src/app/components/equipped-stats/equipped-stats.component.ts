@@ -2,7 +2,6 @@ import { Component, OnInit } from '@angular/core';
 import { StatDetailModel } from '../../models/stat-detail.model';
 import { CalculationService } from '../../services/calculation.service';
 import { TooltipService } from '../../services/tooltip.service';
-import { AnchorType } from '../../types/anchor.type';
 import { PointerType } from '../../types/pointer.type';
 
 @Component({

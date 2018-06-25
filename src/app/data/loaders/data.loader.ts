@@ -1,8 +1,7 @@
 import { HttpClient } from '@angular/common/http';
 import { Injectable } from '@angular/core';
-import { Observable, forkJoin, Observer } from 'rxjs';
-import { catchError } from 'rxjs/operators';
-import { of } from 'rxjs/observable/of';
+import { Observable, forkJoin, Observer, of } from 'rxjs';
+import { catchError, map } from 'rxjs/operators';
 import { ColumnParser } from '../models/column-parser.model';
 import * as ld from 'lodash';
 
