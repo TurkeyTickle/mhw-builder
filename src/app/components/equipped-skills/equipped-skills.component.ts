@@ -3,7 +3,6 @@ import { EquippedSetBonusModel } from '../../models/equipped-set-bonus.model';
 import { EquippedSkillModel } from '../../models/equipped-skill.model';
 import { SkillService } from '../../services/skill.service';
 import { TooltipService } from '../../services/tooltip.service';
-import { AnchorType } from '../../types/anchor.type';
 import { PointerType } from '../../types/pointer.type';
 
 @Component({
@@ -58,5 +57,9 @@ export class EquippedSkillsComponent implements OnInit {
 
 	clearSkillDetails() {
 		this.tooltipService.setEquippedSkill(null);
+	}
+
+	showOnClickSkillDetails(equippedSkill: EquippedSkillModel) {
+		this.tooltipService.setEquippedSkill(equippedSkill);
 	}
 }

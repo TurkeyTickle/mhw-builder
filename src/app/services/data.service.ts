@@ -18,85 +18,85 @@ import { EquipmentCategoryType } from '../types/equipment-category.type';
 @Injectable()
 export class DataService {
 	constructor(
-		private appData: AppDataProvider
+		private appDataProvider: AppDataProvider
 	) { }
 
 	getWeapons(weaponType?: WeaponType): ItemModel[] {
 		let result = new Array<ItemModel>();
 		if (weaponType) {
-			result = this.appData.getWeapons().filter(w => w.weaponType == weaponType);
+			result = this.appDataProvider.appData.weapons.filter(w => w.weaponType == weaponType);
 		} else {
-			result = this.appData.getWeapons();
+			result = this.appDataProvider.appData.weapons;
 		}
 		return result;
 	}
 
 	getWeapon(id: number): ItemModel {
-		return _.find(this.appData.getWeapons(), weapon => weapon.id === id);
+		return _.find(this.appDataProvider.appData.weapons, weapon => weapon.id === id);
 	}
 
 	getArmor(id: number): ItemModel {
-		return _.find(this.appData.getArmor(), armor => armor.id === id);
+		return _.find(this.appDataProvider.appData.armor, armor => armor.id === id);
 	}
 
 	getCharm(id: number): ItemModel {
-		return _.find(this.appData.getCharms(), charm => charm.id === id);
+		return _.find(this.appDataProvider.appData.charms, charm => charm.id === id);
 	}
 
 	getArmorByType(type: ItemType): ItemModel[] {
-		return _.filter(this.appData.getArmor(), armor => armor.itemType === type);
+		return _.filter(this.appDataProvider.appData.armor, armor => armor.itemType === type);
 	}
 
 	getCharms(): ItemModel[] {
-		return this.appData.getCharms();
+		return this.appDataProvider.appData.charms;
 	}
 
 	getDecorations(level?: number): DecorationModel[] {
 		let result = new Array<DecorationModel>();
 		if (level) {
-			result = this.appData.getDecorations().filter(d => d.level <= level);
+			result = this.appDataProvider.appData.decorations.filter(d => d.level <= level);
 		} else {
-			result = this.appData.getDecorations();
+			result = this.appDataProvider.appData.decorations;
 		}
 		return result;
 	}
 
 	getSetBonus(id: string): SetBonusModel {
-		return _.find(this.appData.getSetBonuses(), setBonus => setBonus.id === id);
+		return _.find(this.appDataProvider.appData.setBonuses, setBonus => setBonus.id === id);
 	}
 
 	getSkill(id: string): SkillModel {
-		return _.find(this.appData.getSkills(), skill => skill.id === id);
+		return _.find(this.appDataProvider.appData.skills, skill => skill.id === id);
 	}
 
 	getSkills(itemSkills: SkillReferenceModel[]): SkillModel[] {
-		return _.filter(this.appData.getSkills(), skill => {
+		return _.filter(this.appDataProvider.appData.skills, skill => {
 			return _.some(itemSkills, itemSkill => skill.id == itemSkill.id);
 		});
 	}
 
 	getWeaponModifier(weaponType: WeaponType): WeaponModifierModel {
-		return _.find(this.appData.getWeaponModifiers(), (mod: WeaponModifierModel) => {
+		return _.find(this.appDataProvider.appData.weaponModifiers, (mod: WeaponModifierModel) => {
 			return mod.type == weaponType;
 		});
 	}
 
 	getSharpnessModifier(damageType: DamageType, sharpnessType: SharpnessType): SharpnessModifierModel {
-		return _.find(this.appData.getSharpnessModifiers(), mod => {
+		return _.find(this.appDataProvider.appData.sharpnessModifiers, mod => {
 			return mod.damageType == damageType && mod.sharpnessType == sharpnessType;
 		});
 	}
 
 	getDecoration(id: number): DecorationModel {
-		return _.find(this.appData.getDecorations(), decoration => decoration.id == id);
+		return _.find(this.appDataProvider.appData.decorations, decoration => decoration.id == id);
 	}
 
 	getAugmentations(): AugmentationModel[] {
-		return this.appData.getAugmentations();
+		return this.appDataProvider.appData.augmentations;
 	}
 
 	getAugmentation(id: number): AugmentationModel {
-		return _.find(this.appData.getAugmentations(), augmentation => augmentation.id == id);
+		return _.find(this.appDataProvider.appData.augmentations, augmentation => augmentation.id == id);
 	}
 
 	getWeaponTypeName(weaponType: WeaponType): string {

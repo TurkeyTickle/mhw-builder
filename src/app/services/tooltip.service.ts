@@ -1,11 +1,10 @@
 import { Injectable } from '@angular/core';
-import { Subject } from 'rxjs/Subject';
+import { Subject } from 'rxjs';
 import { DecorationModel } from '../models/decoration.model';
 import { EquippedSkillModel } from '../models/equipped-skill.model';
 import { ItemModel } from '../models/item.model';
 import { SkillModel } from '../models/skill.model';
 import { StatDetailModel } from '../models/stat-detail.model';
-import { AnchorType } from '../types/anchor.type';
 import { AugmentationModel } from '../models/augmentation.model';
 
 @Injectable()

@@ -2,7 +2,6 @@ import { Component, OnInit } from '@angular/core';
 import { StatDetailModel } from '../../models/stat-detail.model';
 import { CalculationService } from '../../services/calculation.service';
 import { TooltipService } from '../../services/tooltip.service';
-import { AnchorType } from '../../types/anchor.type';
 import { PointerType } from '../../types/pointer.type';
 
 @Component({
@@ -20,6 +19,7 @@ export class EquippedStatsComponent implements OnInit {
 		public calculationService: CalculationService,
 		private tooltipService: TooltipService
 	) { }
+
 
 	ngOnInit() {
 		this.calculationService.attackCalcsUpdated$.subscribe(calcs => {
@@ -41,5 +41,13 @@ export class EquippedStatsComponent implements OnInit {
 
 	clearCalcDetails() {
 		this.tooltipService.setCalc(null);
+	}
+
+	showOnClickCalcDetails(calc: StatDetailModel) {
+		if (calc.calculationTemplate || (calc.info && calc.info.length)) {
+			this.tooltipService.setCalc(calc);
+		} else {
+			this.clearCalcDetails();
+		}
 	}
 }

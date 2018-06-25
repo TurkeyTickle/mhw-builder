@@ -29,6 +29,13 @@ ul.info {
 	color: $yellow;
 }
 
+@media (max-width:576px) {
+	.close-btn-sm {
+		visibility: visible !important;
+		float: right;
+	}
+}
+
 ::ng-deep .green {
 	color: $green;
 }
@@ -47,4 +54,12 @@ ul.info {
 
 ::ng-deep .red {
 	color: $red;
+}
+
+::ng-deep .purple {
+	color: $purple;
+}
+
+::ng-deep .kakhi {
+	color: $kakhi;
 }

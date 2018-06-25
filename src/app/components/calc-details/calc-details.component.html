@@ -1,5 +1,5 @@
-<div class="container">
-	<h3>{{calc.name}}</h3>
+<div class="container" (click)="clearCalc()">
+	<h3>{{calc.name}}<span class="close-btn-sm" style="visibility:hidden"><i class="fa fa-times"></i></span></h3>
 	<hr>
 	<div class="template" [innerHTML]="detailTemplate"></div>
 	<ul class="info" *ngIf="calc.info">

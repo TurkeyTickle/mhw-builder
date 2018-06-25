@@ -22,6 +22,8 @@ export class StatsModel {
 	weakPointAffinity: number;
 	passiveCriticalBoostPercent: number;
 
+	elementlessBoostPercent: number;
+
 	element: ElementType;
 	baseElementAttack: number;
 	effectivePassiveElementAttack: number;
@@ -90,6 +92,8 @@ export class StatsModel {
 		this.attack = 0;
 		this.passiveAttack = 0;
 		this.activeAttack = 0;
+
+		this.elementlessBoostPercent = 0;
 
 		this.sharpnessDataNeeded = false;
 		this.maxSharpness = null;

@@ -37,6 +37,7 @@ export class AppComponent implements OnInit, AfterViewInit {
 
 	@ViewChild('itemListModal') itemListModal: ModalComponent;
 	@ViewChild('changeLogModal') changeLogModal: ModalComponent;
+	@ViewChild('contributorsModal') contributorsModal: ModalComponent;
 
 	equipmentVisible = true;
 	statsVisible = true;
@@ -107,7 +108,7 @@ export class AppComponent implements OnInit, AfterViewInit {
 	}
 
 	ngAfterViewInit() {
-		setTimeout(() => this.buildService.loadBuild(location.hash), 100);
+		this.buildService.loadBuild(location.hash);
 	}
 
 	respondToResize() {
@@ -151,5 +152,9 @@ export class AppComponent implements OnInit, AfterViewInit {
 
 	openChangeLog() {
 		this.changeLogModal.open();
+	}
+
+	openContributors() {
+		this.contributorsModal.open();
 	}
 }

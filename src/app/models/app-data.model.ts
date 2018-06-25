@@ -6,7 +6,7 @@ import { SkillModel } from './skill.model';
 import { WeaponModifierModel } from './weapon-modifier.model';
 import { AugmentationModel } from './augmentation.model';
 
-export class SeedModel {
+export class AppDataModel {
 	weaponModifiers: WeaponModifierModel[];
 	sharpnessModifiers: SharpnessModifierModel[];
 	weapons: ItemModel[];

@@ -5,7 +5,7 @@ import { ItemModel } from '../models/item.model';
 import { ItemType } from '../types/item.type';
 import { SlotService } from './slot.service';
 import { EquipmentService } from './equipment.service';
-import { Subject } from 'rxjs/Subject';
+import { Subject } from 'rxjs';
 import { EquipmentCategoryType } from '../types/equipment-category.type';
 
 import * as _ from 'lodash';

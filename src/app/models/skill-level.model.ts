@@ -3,6 +3,7 @@ export class SkillLevelModel {
 
 	passiveAttack: number;
 	activeAttack: number;
+	elementlessBoostPercent: number;
 	passiveCriticalBoostPercent: number;
 
 	passiveAffinity: number;

@@ -1,5 +1,5 @@
-<div class="container">
-	<h3>{{skill?.name}}</h3>
+<div class="container" (click)="clearSkill()">
+	<h3>{{skill?.name}}<span class="close-btn-sm" style="visibility:hidden;"><i class="fa fa-times"></i></span></h3>
 	<hr>
 	<div>{{skill?.description}}</div>
 	<br />

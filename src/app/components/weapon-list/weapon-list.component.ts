@@ -1,14 +1,10 @@
 import { Component, ElementRef, EventEmitter, Input, OnInit, Output, ViewChild, HostListener } from '@angular/core';
 import * as _ from 'lodash';
-import { DecorationModel } from '../../models/decoration.model';
 import { ItemModel } from '../../models/item.model';
 import { DataService } from '../../services/data.service';
-import { TooltipService } from '../../services/tooltip.service';
 import { ItemType } from '../../types/item.type';
 import { WeaponType } from '../../types/weapon.type';
 import { SlotService } from '../../services/slot.service';
-import { PointerType } from '../../types/pointer.type';
-import { Observable } from 'rxjs/Observable';
 import { VirtualScrollComponent } from 'angular2-virtual-scroll';
 import { EquipmentCategoryType } from '../../types/equipment-category.type';
 import { SkillModel } from '../../models/skill.model';
@@ -50,7 +46,6 @@ export class WeaponListComponent implements OnInit {
 	constructor(
 		private slotService: SlotService,
 		public dataService: DataService,
-		private tooltipService: TooltipService
 	) { }
 
 	ngOnInit() {
