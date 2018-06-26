@@ -83,7 +83,7 @@ export class SkillService {
 				}
 
 				let equippedSkill = _.find(equippedSkills, es => es.id == itemSkill.id);
-
+				const equippedCount = itemSkill.level;
 				if (!equippedSkill) {
 					const skill = this.dataService.getSkill(itemSkill.id);
 					equippedSkill = new EquippedSkillModel();
@@ -91,11 +91,13 @@ export class SkillService {
 					equippedSkill.id = skill.id;
 					equippedSkill.name = skill.name;
 					equippedSkill.description = skill.description;
-					equippedSkill.equippedCount = itemSkill.level;
+					equippedSkill.equippedCount = equippedCount;
 					equippedSkill.totalLevelCount = skill.levels.length;
+					this.countSkillItemPart(equippedSkill, equippedCount, decoration.itemType);
 					equippedSkills.push(equippedSkill);
 				} else {
-					equippedSkill.equippedCount += itemSkill.level;
+					equippedSkill.equippedCount += equippedCount;
+					this.countSkillItemPart(equippedSkill, equippedCount, decoration.itemType);
 				}
 			}
 		}
@@ -103,6 +105,7 @@ export class SkillService {
 
 	private addSetSkills(items: ItemModel[], equippedSkills: EquippedSkillModel[], equippedSetBonuses: EquippedSetBonusModel[]) {
 		let setBonusNames = new Array<string>();
+		const setBonusParts = [];
 
 		for (const item of items) {
 			if (!item.skills) {
@@ -112,6 +115,7 @@ export class SkillService {
 			for (const skill of item.skills) {
 				if (!skill.level) {
 					setBonusNames.push(skill.id);
+					setBonusParts.push([skill.id, item.itemType]);
 				}
 			}
 		}
@@ -122,6 +126,7 @@ export class SkillService {
 		for (const setBonusName of setBonusNames) {
 			const setBonus = this.dataService.getSetBonus(setBonusName);
 			const setLevels = _.filter(setBonus.setLevels, sl => sl.pieces <= setCounts[setBonusName]);
+			const setParts = _.filter(setBonusParts, x => x[0].localeCompare(setBonusName) == 0);
 
 			if (setLevels) {
 				for (const setLevel of setLevels) {
@@ -134,6 +139,12 @@ export class SkillService {
 						equippedSkill.id = skill.id;
 						equippedSkill.name = skill.name;
 						equippedSkill.description = skill.description;
+						equippedSkill.headCount = _.filter(setParts, x => x[1] == 'Head').length > 0 ? 1 : 0;
+						equippedSkill.chestCount = _.filter(setParts, x => x[1] == 'Chest').length > 0 ? 1 : 0;
+						equippedSkill.handsCount = _.filter(setParts, x => x[1] == 'Hands').length > 0 ? 1 : 0;
+						equippedSkill.legsCount = _.filter(setParts, x => x[1] == 'Legs').length > 0 ? 1 : 0;
+						equippedSkill.feetCount = _.filter(setParts, x => x[1] == 'Feet').length > 0 ? 1 : 0;
+						equippedSkill.isSetBonus = true;
 						equippedSkill.equippedCount = 1;
 						equippedSkill.totalLevelCount = skill.levels.length;
 						equippedSkills.push(equippedSkill);
@@ -185,19 +196,19 @@ export class SkillService {
 
 	private countSkillItemPart(equippedSkill: EquippedSkillModel, actualCount: number, itemType: ItemType) {
 		if (itemType == ItemType.Weapon) {
-			equippedSkill.weaponCount = actualCount;
+			equippedSkill.weaponCount += actualCount;
 		} else if (itemType == ItemType.Head) {
-			equippedSkill.headCount = actualCount;
+			equippedSkill.headCount += actualCount;
 		} else if (itemType == ItemType.Chest) {
-			equippedSkill.chestCount = actualCount;
+			equippedSkill.chestCount += actualCount;
 		} else if (itemType == ItemType.Hands) {
-			equippedSkill.handsCount = actualCount;
+			equippedSkill.handsCount += actualCount;
 		} else if (itemType == ItemType.Legs) {
-			equippedSkill.legsCount = actualCount;
+			equippedSkill.legsCount += actualCount;
 		} else if (itemType == ItemType.Feet) {
-			equippedSkill.feetCount = actualCount;
+			equippedSkill.feetCount += actualCount;
 		} else if (itemType == ItemType.Charm) {
-			equippedSkill.charmCount = actualCount;
+			equippedSkill.charmCount += actualCount;
 		}
 	}
 }

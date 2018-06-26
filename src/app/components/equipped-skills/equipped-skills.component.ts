@@ -22,6 +22,15 @@ export class EquippedSkillsComponent implements OnInit {
 	ngOnInit() {
 		this.skillService.skillsUpdated$.subscribe(skills => {
 			this.skills = skills;
+			this.skills.sort(function (skill1, skill2) {
+				if (skill1.equippedCount > skill2.equippedCount) {
+					return -1;
+				} else if (skill1.equippedCount < skill2.equippedCount) {
+					return 1;
+				} else {
+					return 0;
+				}
+			});
 		});
 
 		this.skillService.setBonusesUpdated$.subscribe(setBonuses => {

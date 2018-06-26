@@ -65,7 +65,7 @@ export class BuildService {
 		this.loadBuildSlot(itemHashes[7], this.slotService.charmSlot);
 
 		this.slotService.selectItemSlot(null);
-
+		this.changeDetector.detectChanges();
 		this.loadingBuild = false;
 	}
 

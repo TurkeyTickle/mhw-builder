@@ -1,4 +1,5 @@
 import { SkillReferenceModel } from './skill-reference.model';
+import { ItemType } from '../types/item.type';
 
 export class DecorationModel {
 	id: number;
@@ -7,4 +8,5 @@ export class DecorationModel {
 	skills: SkillReferenceModel[];
 
 	itemId: number;
+	itemType: ItemType;
 }
