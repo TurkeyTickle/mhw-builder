@@ -1,6 +1,8 @@
 id	itemType	rarity	name	baseDefense	fireResist	waterResist	thunderResist	iceResist	dragonResist	skills	slots	tags
 332	Chest	5	Aloy's Body Alpha	46	1	1	1	1	1	marathonRunner-2;anjanathWill	1;1	
 337	Chest	5	Blossom Vest Alpha	40	1	1	4	1	1	quickSheath-1	1;1	
+457	Chest	5	Dodogama Mail Alpha	48	2	0	-3	0	2	blastAttack-2		
+458	Chest	5	Dodogama Mail Beta	48	2	0	-3	0	2	blastAttack-1	1	
 437	Chest	5	Jyura Mail Alpha	44	-1	2	-3	0	0	muckResistance-1;waterAttack-1		jyuratodus
 438	Chest	5	Jyura Mail Beta	44	-1	2	-3	0	0	muckResistance-1	1	jyuratodus
 427	Chest	5	Kadachi Mail Alpha	44	0	-3	3	0	0	jumpMaster-1;evadeExtender-1		tobi;kadachi
@@ -71,6 +73,8 @@ id	itemType	rarity	name	baseDefense	fireResist	waterResist	thunderResist	iceResi
 448	Chest	8	Empress Mail Beta	70	3	1	1	-3	-2	peakPerformance-2;lunastraFavor	1;1;1	lunastra
 335	Feet	5	Aloy's Leggings Alpha	46	1	1	1	1	1	slingerCapacity-2;anjanathWill	2	
 340	Feet	5	Blossom Boots Alpha	40	1	1	4	1	1	recoverySpeed-1	1;1	
+459	Feet	5	Dodogama Greaves Alpha	48	2	0	-3	0	2	capacityBoost-1;blastAttack-1		
+460	Feet	5	Dodogama Greaves Beta	48	2	0	-3	0	2	capacityBoost-1	1	
 439	Feet	5	Jyura Greaves Alpha	44	-1	2	-3	0	0	focus-2		jyuratodus
 440	Feet	5	Jyura Greaves Beta	44	-1	2	-3	0	0	focus-1	2	jyuratodus
 429	Feet	5	Kadachi Greaves Alpha	44	0	-3	3	0	0	thunderResistance-2;constitution-1		tobi;kadachi
@@ -141,6 +145,8 @@ id	itemType	rarity	name	baseDefense	fireResist	waterResist	thunderResist	iceResi
 450	Feet	8	Empress Greaves Beta	70	3	1	1	-3	-2	healthBoost-2;lunastraFavor	2;2	lunastra
 333	Hands	5	Aloy's Arms Alpha	46	1	1	1	1	1	weaknessExploit-1;scenthound-1;anjanathWill	1	
 338	Hands	5	Blossom Cuffs Alpha	40	1	1	4	1	1	paralysisResistance-1	1;1	
+461	Hands	5	Dodogama Vambraces Alpha	48	2	0	-3	0	2	bombardier-2		
+462	Hands	5	Dodogama Vambraces Beta	48	2	0	-3	0	2	bombardier-1	1	
 441	Hands	5	Jyura Vambraces Alpha	44	-1	2	-3	0	0	waterAttack-2;aquaticExpert-1		jyuratodus
 442	Hands	5	Jyura Vambraces Beta	44	-1	2	-3	0	0	waterAttack-2	1	jyuratodus
 431	Hands	5	Kadachi Vambraces Alpha	44	0	-3	3	0	0	evadeExtender-2		tobi;kadachi
@@ -211,6 +217,8 @@ id	itemType	rarity	name	baseDefense	fireResist	waterResist	thunderResist	iceResi
 452	Hands	8	Empress Vambraces Beta	70	3	1	1	-3	-2	wideRange-2;lunastraFavor	2;3	lunastra
 331	Head	5	Aloy's Head Alpha	46	1	1	1	1	1	affinitySliding-1;anjanathWill	3	
 336	Head	5	Blossom Headgear Alpha	40	1	1	4	1	1	honeyHunter-1	1;1	
+463	Head	5	Dodogama Helm Alpha	48	2	0	-3	0	2	blastResistance-2		
+464	Head	5	Dodogama Helm Beta	48	2	0	-3	0	2	blastResistance-1	1	
 443	Head	5	Jyura Helm Alpha	44	-1	2	-3	0	0	aquaticExpert-2		jyuratodus
 444	Head	5	Jyura Helm Beta	44	-1	2	-3	0	0	aquaticExpert-1	1	jyuratodus
 433	Head	5	Kadachi Helm Alpha	44	0	-3	3	0	0	constitution-2		tobi;kadachi
@@ -285,6 +293,8 @@ id	itemType	rarity	name	baseDefense	fireResist	waterResist	thunderResist	iceResi
 454	Head	8	Empress Crown Beta	70	3	1	1	-3	-2	evadeExtender-2;lunastraFavor	3;2	lunastra
 334	Legs	5	Aloy's Torso Alpha	46	1	1	1	1	1	stealth-2;anjanathWill	3	
 339	Legs	5	Blossom Coat Alpha	40	1	1	4	1	1	scoutflyRangeUp-1	1;1	
+465	Legs	5	Dodogama Coil Alpha	48	2	0	-3	0	2	artillery-2;blastResistance-1		
+466	Legs	5	Dodogama Coil Beta	48	2	0	-3	0	2	artillery-2	1	
 445	Legs	5	Jyura Coil Alpha	44	-1	2	-3	0	0	iceResistance-2		jyuratodus
 446	Legs	5	Jyura Coil Beta	44	-1	2	-3	0	0	iceResistance-1	1	jyuratodus
 435	Legs	5	Kadachi Coil Alpha	44	0	-3	3	0	0	thunderAttack-2;thunderResistance-1		tobi;kadachi
