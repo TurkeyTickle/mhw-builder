@@ -14,9 +14,19 @@ h3, h4, h5 {
 	margin: 0;
 }
 
+.skill-part-table {
+	width: 100%;
+	text-align: center;
+	font-size: 16px;
+}
+
 .armor-icon {
-	height: 35px;
+	height: 32px;
 	width: auto;
+}
+
+.info-opaque {
+	opacity: 0.35;
 }
 
 @media (max-width:576px) {

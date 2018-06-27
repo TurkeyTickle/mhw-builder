@@ -15,6 +15,7 @@ export class DecorationSlotComponent implements OnInit {
 
 	@Input() level: number;
 	@Input() itemId: number;
+	@Input() itemType: ItemType;
 
 	decoration: DecorationModel;
 

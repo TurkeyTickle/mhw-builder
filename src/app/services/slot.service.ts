@@ -153,6 +153,7 @@ export class SlotService {
 			}
 
 			decoration.itemId = this.selectedDecorationSlot.itemId;
+			decoration.itemType = this.selectedDecorationSlot.itemType;
 			this.equipmentService.addDecoration(decoration);
 			this.selectedDecorationSlot.decoration = decoration;
 			this.decorationSelected$.next({ slot: this.selectedDecorationSlot, equipment: decoration });

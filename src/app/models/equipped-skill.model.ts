@@ -16,6 +16,8 @@ export class EquippedSkillModel {
 	feetCount: number; // Legs
 	charmCount: number; // Charm
 
+	isSetBonus: boolean;
+
 	constructor() {
 		this.weaponCount = 0;
 		this.headCount = 0;
@@ -24,5 +26,6 @@ export class EquippedSkillModel {
 		this.legsCount = 0;
 		this.feetCount = 0;
 		this.charmCount = 0;
+		this.isSetBonus = false;
 	}
 }
