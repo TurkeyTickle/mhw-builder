@@ -12,6 +12,7 @@ import { EquippedStatsComponent } from './components/equipped-stats/equipped-sta
 import { ItemDetailsComponent } from './components/item-details/item-details.component';
 import { ItemSlotComponent } from './components/item-slot/item-slot.component';
 import { SkillDetailsComponent } from './components/skill-details/skill-details.component';
+import { SetBonusDetailsComponent } from './components/set-bonus-details/set-bonus-details.component';
 import { TooltipComponent } from './components/tooltip/tooltip.component';
 import { AppDataProvider } from './providers/app-data.provider';
 import { DataService } from './services/data.service';
@@ -45,9 +46,9 @@ import { DataModule } from './data/data.module';
 		EquippedSkillsComponent,
 		DecorationSlotComponent,
 		ItemDetailsComponent,
-		ItemDetailsComponent,
 		DecorationDetailsComponent,
 		SkillDetailsComponent,
+		SetBonusDetailsComponent,
 		CalcDetailsComponent,
 		AugmentationSlotComponent,
 		AugmentationsListComponent,
