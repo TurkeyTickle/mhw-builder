@@ -46,8 +46,6 @@ export class StatService {
 			if (item.baseAttack) { this.stats.attack += item.baseAttack; }
 			if (item.baseAffinityPercent) { this.stats.affinity += item.baseAffinityPercent; }
 			if (item.baseDefense) { this.stats.defense += item.baseDefense; }
-			if (item.maxDefense) { this.stats.maxDefense += item.maxDefense; }
-			if (item.augmentedDefense) { this.stats.augmentedDefense += item.augmentedDefense; }
 			if (item.fireResist) { this.stats.fireResist += item.fireResist; }
 			if (item.waterResist) { this.stats.waterResist += item.waterResist; }
 			if (item.thunderResist) { this.stats.thunderResist += item.thunderResist; }

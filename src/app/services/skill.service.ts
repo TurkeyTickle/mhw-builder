@@ -8,7 +8,6 @@ import { ItemType } from '../types/item.type';
 import { DataService } from './data.service';
 import { Subject } from 'rxjs';
 import { AugmentationModel } from '../models/augmentation.model';
-import { EquippedSetBonusDetailModel } from '../models/equipped-set-bonus-detail.model';
 
 @Injectable()
 export class SkillService {
@@ -123,16 +122,12 @@ export class SkillService {
 
 		const setCounts = _.countBy(setBonusNames);
 		setBonusNames = _.uniq(setBonusNames);
+
 		for (const setBonusName of setBonusNames) {
 			const setBonus = this.dataService.getSetBonus(setBonusName);
 			const setLevels = _.filter(setBonus.setLevels, sl => sl.pieces <= setCounts[setBonusName]);
 			const setParts = _.filter(setBonusParts, x => x[0].localeCompare(setBonusName) == 0);
 
-			const headCount = _.filter(setParts, x => x[1] == 'Head').length > 0 ? 1 : 0;
-			const chestCount = _.filter(setParts, x => x[1] == 'Chest').length > 0 ? 1 : 0;
-			const handsCount = _.filter(setParts, x => x[1] == 'Hands').length > 0 ? 1 : 0;
-			const legsCount = _.filter(setParts, x => x[1] == 'Legs').length > 0 ? 1 : 0;
-			const feetCount = _.filter(setParts, x => x[1] == 'Feet').length > 0 ? 1 : 0;
 			if (setLevels) {
 				for (const setLevel of setLevels) {
 					let equippedSkill = _.find(equippedSkills, es => es.id == setLevel.id);
@@ -144,11 +139,11 @@ export class SkillService {
 						equippedSkill.id = skill.id;
 						equippedSkill.name = skill.name;
 						equippedSkill.description = skill.description;
-						equippedSkill.headCount = headCount;
-						equippedSkill.chestCount = chestCount;
-						equippedSkill.handsCount = handsCount;
-						equippedSkill.legsCount = legsCount;
-						equippedSkill.feetCount = feetCount;
+						equippedSkill.headCount = _.filter(setParts, x => x[1] == 'Head').length > 0 ? 1 : 0;
+						equippedSkill.chestCount = _.filter(setParts, x => x[1] == 'Chest').length > 0 ? 1 : 0;
+						equippedSkill.handsCount = _.filter(setParts, x => x[1] == 'Hands').length > 0 ? 1 : 0;
+						equippedSkill.legsCount = _.filter(setParts, x => x[1] == 'Legs').length > 0 ? 1 : 0;
+						equippedSkill.feetCount = _.filter(setParts, x => x[1] == 'Feet').length > 0 ? 1 : 0;
 						equippedSkill.isSetBonus = true;
 						equippedSkill.equippedCount = 1;
 						equippedSkill.totalLevelCount = skill.levels.length;
@@ -157,24 +152,14 @@ export class SkillService {
 				}
 			}
 
-			const equippedSetBonus = new EquippedSetBonusModel();
-			equippedSetBonus.id = setBonus.id;
-			equippedSetBonus.name = setBonus.name;
-			equippedSetBonus.equippedCount = setCounts[setBonusName];
-			equippedSetBonus.headCount = headCount;
-			equippedSetBonus.chestCount = chestCount;
-			equippedSetBonus.handsCount = handsCount;
-			equippedSetBonus.legsCount = legsCount;
-			equippedSetBonus.feetCount = feetCount;
-			equippedSetBonus.details = [];
-
 			for (const bonusLevel of setBonus.setLevels) {
-				const detail = new EquippedSetBonusDetailModel();
-				detail.requiredCount = bonusLevel.pieces;
-				detail.skill = this.dataService.getSkill(bonusLevel.id);
-				equippedSetBonus.details.push(detail);
+				const equippedSetBonus = new EquippedSetBonusModel();
+				equippedSetBonus.id = setBonus.id;
+				equippedSetBonus.name = setBonus.name;
+				equippedSetBonus.equippedCount = setCounts[setBonusName];
+				equippedSetBonus.requiredCount = bonusLevel.pieces;
+				equippedSetBonuses.push(equippedSetBonus);
 			}
-			equippedSetBonuses.push(equippedSetBonus);
 		}
 	}
 

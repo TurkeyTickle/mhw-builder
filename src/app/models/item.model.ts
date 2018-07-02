@@ -17,8 +17,6 @@ export class ItemModel {
 	equipmentCategory: EquipmentCategoryType;
 	slots?: SlotModel[];
 	baseDefense?: number;
-	maxDefense?: number;
-	augmentedDefense?: number;
 	levels?: number;
 
 	// weapon properties

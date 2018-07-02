@@ -23,20 +23,12 @@ export class EquippedSkillsComponent implements OnInit {
 		this.skillService.skillsUpdated$.subscribe(skills => {
 			this.skills = skills;
 			this.skills.sort(function (skill1, skill2) {
-				if (skill1.isSetBonus && !skill2.isSetBonus) {
-					return 1;
-				} if (!skill1.isSetBonus && skill2.isSetBonus) {
-					return -1;
-				} else if (skill1.equippedCount > skill2.equippedCount) {
+				if (skill1.equippedCount > skill2.equippedCount) {
 					return -1;
 				} else if (skill1.equippedCount < skill2.equippedCount) {
 					return 1;
-				} else if (skill1.totalLevelCount > skill2.totalLevelCount) {
-					return -1;
-				} else if (skill1.totalLevelCount < skill2.totalLevelCount) {
-					return 1;
 				} else {
-					return skill1.name.localeCompare(skill2.name);
+					return 0;
 				}
 			});
 		});
@@ -47,9 +39,7 @@ export class EquippedSkillsComponent implements OnInit {
 	}
 
 	getSkillCountColor(skill: EquippedSkillModel): string {
-		if (skill.isSetBonus) {
-			return '#F0E68C';
-		} else if (skill.equippedCount > skill.totalLevelCount) {
+		if (skill.equippedCount > skill.totalLevelCount) {
 			return '#e4ff1a';
 		} else if (skill.equippedCount == skill.totalLevelCount) {
 			return '#86ff86';
@@ -58,12 +48,13 @@ export class EquippedSkillsComponent implements OnInit {
 		return 'white';
 	}
 
-	getSetBonusColor(equippedCount: number, requiredCount: number): string {
-		if (equippedCount > requiredCount) {
+	getSetBonusColor(setBonus: EquippedSetBonusModel): string {
+		if (setBonus.equippedCount > setBonus.requiredCount) {
 			return '#e4ff1a';
-		} else if (equippedCount == requiredCount) {
-			return '#F0E68C';
+		} else if (setBonus.equippedCount == setBonus.requiredCount) {
+			return '#86ff86';
 		}
+
 		return 'white';
 	}
 
@@ -79,19 +70,5 @@ export class EquippedSkillsComponent implements OnInit {
 
 	showOnClickSkillDetails(equippedSkill: EquippedSkillModel) {
 		this.tooltipService.setEquippedSkill(equippedSkill);
-	}
-
-	showSetBonusDetails(event: PointerEvent, equippedSetBonus: EquippedSetBonusModel) {
-		if (event.pointerType == PointerType.Mouse) {
-			this.tooltipService.setEquippedSetBonus(equippedSetBonus);
-		}
-	}
-
-	clearSetBonusDetails() {
-		this.tooltipService.setEquippedSetBonus(null);
-	}
-
-	showOnClickSetBonusDetails(equippedSetBonus: EquippedSetBonusModel) {
-		this.tooltipService.setEquippedSetBonus(equippedSetBonus);
 	}
 }

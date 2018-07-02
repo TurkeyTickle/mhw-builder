@@ -14,13 +14,9 @@
 		<h4>Set Bonuses</h4>
 		<hr>
 		<ul class="striped">
-			<li *ngFor="let setBonus of setBonuses" (pointerenter)="showSetBonusDetails($event, setBonus)" (pointerleave)="clearSetBonusDetails()" (click)="showOnClickSetBonusDetails(setBonus)">
+			<li *ngFor="let setBonus of setBonuses" [style.color]="getSetBonusColor(setBonus)">
 				<span class="name">{{setBonus.name}}</span>
-				<div class="value">
-					<span class="" *ngFor="let level of setBonus.details" [style.color]="getSetBonusColor(setBonus.equippedCount, level.requiredCount)">
-						{{setBonus.equippedCount}}/{{level.requiredCount}}
-					</span>
-				</div>
+				<span class="value">{{setBonus.equippedCount}}/{{setBonus.requiredCount}}</span>
 			</li>
 		</ul>
 	</div>

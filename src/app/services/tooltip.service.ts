@@ -1,12 +1,11 @@
 import { Injectable } from '@angular/core';
 import { Subject } from 'rxjs';
-import { AugmentationModel } from '../models/augmentation.model';
 import { DecorationModel } from '../models/decoration.model';
-import { EquippedSetBonusModel } from '../models/equipped-set-bonus.model';
 import { EquippedSkillModel } from '../models/equipped-skill.model';
 import { ItemModel } from '../models/item.model';
 import { SkillModel } from '../models/skill.model';
 import { StatDetailModel } from '../models/stat-detail.model';
+import { AugmentationModel } from '../models/augmentation.model';
 
 @Injectable()
 export class TooltipService {
@@ -14,7 +13,6 @@ export class TooltipService {
 	public decorationChanged$ = new Subject<DecorationModel>();
 	public augmentationChanged$ = new Subject<AugmentationModel>();
 	public equippedSkillChanged$ = new Subject<EquippedSkillModel>();
-	public equippedSetBonusChanged$ = new Subject<EquippedSetBonusModel>();
 	public skillChanged$ = new Subject<SkillModel>();
 	public calcChanged$ = new Subject<StatDetailModel>();
 
@@ -22,7 +20,6 @@ export class TooltipService {
 	public decoration: DecorationModel;
 	public augmentation: AugmentationModel;
 	public equippedSkill: EquippedSkillModel;
-	public equippedSetBonus: EquippedSetBonusModel;
 	public skill: SkillModel;
 	public calc: StatDetailModel;
 
@@ -58,14 +55,6 @@ export class TooltipService {
 		}
 	}
 
-	setEquippedSetBonus(equippedSetBonus: EquippedSetBonusModel) {
-		if (equippedSetBonus != this.equippedSetBonus) {
-			this.reset();
-			this.equippedSetBonus = equippedSetBonus;
-			this.equippedSetBonusChanged$.next(equippedSetBonus);
-		}
-	}
-
 	setSkill(skill: SkillModel) {
 		if (skill != this.skill) {
 			this.reset();
@@ -87,7 +76,6 @@ export class TooltipService {
 		this.decoration = null;
 		this.augmentation = null;
 		this.equippedSkill = null;
-		this.equippedSetBonus = null;
 		this.skill = null;
 		this.calc = null;
 	}

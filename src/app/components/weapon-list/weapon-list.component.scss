@@ -160,40 +160,6 @@ $listItemHeight: 66px;
 				}
 			}
 		}
-
-		.skills-container {
-			display: grid;
-			grid-template-columns: repeat(2, 1fr);
-			grid-gap: 4px;
-			font-size: 12px;
-
-			.skill-container {
-				background-color: #272727;
-				border-radius: 3px;
-				display: grid;
-				grid-template-columns: min-content auto;
-
-				.count {
-					height: 26px;
-					// width: 26px;
-					line-height: 26px;
-					text-align: center;
-					padding: 0 8px;
-					font-weight: 900;
-				}
-
-				.name {
-					border-left: 1px solid #323232;
-					line-height: 26px;
-					text-align: center;
-					font-size: 12px;
-					white-space: nowrap;
-					text-overflow: ellipsis;
-					overflow: hidden;
-					padding: 0 8px;
-				}
-			}
-		}
 	}
 
 	.scroll-item-container:hover {

@@ -71,8 +71,6 @@ export class StatsModel {
 	eldersealLevelBoost: number;
 
 	defense: number;
-	maxDefense: number;
-	augmentedDefense: number;
 	passiveDefense: number;
 
 	fireResist: number;
@@ -156,8 +154,6 @@ export class StatsModel {
 		this.eldersealLevelBoost = 0;
 
 		this.defense = 0;
-		this.maxDefense = 0;
-		this.augmentedDefense = 0;
 		this.passiveDefense = 0;
 
 		this.fireResist = 0;
