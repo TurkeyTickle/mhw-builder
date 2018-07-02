@@ -1,12 +1,12 @@
 import { Component, ElementRef, OnInit, Renderer2, ViewChild } from '@angular/core';
+import { AugmentationModel } from '../../models/augmentation.model';
 import { DecorationModel } from '../../models/decoration.model';
+import { EquippedSetBonusModel } from '../../models/equipped-set-bonus.model';
 import { EquippedSkillModel } from '../../models/equipped-skill.model';
 import { ItemModel } from '../../models/item.model';
 import { SkillModel } from '../../models/skill.model';
 import { StatDetailModel } from '../../models/stat-detail.model';
 import { TooltipService } from '../../services/tooltip.service';
-import { AnchorType } from '../../types/anchor.type';
-import { AugmentationModel } from '../../models/augmentation.model';
 
 @Component({
 	selector: 'mhw-builder-tooltip',
@@ -20,6 +20,7 @@ export class TooltipComponent implements OnInit {
 	decoration: DecorationModel;
 	augmentation: AugmentationModel;
 	equippedSkill: EquippedSkillModel;
+	equippedSetBonus: EquippedSetBonusModel;
 	skill: SkillModel;
 	calc: StatDetailModel;
 	visible: boolean;
@@ -75,6 +76,16 @@ export class TooltipComponent implements OnInit {
 			}
 		});
 
+		this.tooltipService.equippedSetBonusChanged$.subscribe(equippedSetBonus => {
+			if (!equippedSetBonus) {
+				this.hide();
+			} else {
+				this.reset();
+				this.equippedSetBonus = equippedSetBonus;
+				this.show();
+			}
+		});
+
 		this.tooltipService.skillChanged$.subscribe(skill => {
 			if (!skill) {
 				this.hide();
@@ -101,6 +112,7 @@ export class TooltipComponent implements OnInit {
 		this.decoration = null;
 		this.augmentation = null;
 		this.equippedSkill = null;
+		this.equippedSetBonus = null;
 		this.skill = null;
 		this.calc = null;
 	}
