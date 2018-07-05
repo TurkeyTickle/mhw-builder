@@ -11,6 +11,7 @@ trim_trailing_whitespace = true
 [*.tsv]
 insert_final_newline = false
 trim_trailing_whitespace = false
+end_of_line = lf
 
 [*.md]
 max_line_length = off
