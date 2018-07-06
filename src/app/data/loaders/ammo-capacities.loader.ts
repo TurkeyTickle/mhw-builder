@@ -42,18 +42,15 @@ export class AmmoCapacitiesLoader extends DataLoader<AmmoCapacitiesModel> {
 			{
 				columnName: 'poison',
 				parser: new CapacitiesParser()
-			}
-			,
+			},
 			{
 				columnName: 'paralysis',
 				parser: new CapacitiesParser()
-			}
-			,
+			},
 			{
 				columnName: 'sleep',
 				parser: new CapacitiesParser()
-			}
-			,
+			},
 			{
 				columnName: 'exhaust',
 				parser: new CapacitiesParser()

@@ -32,6 +32,7 @@ import { ArmorListComponent } from './components/armor-list/armor-list.component
 import { WeaponListComponent } from './components/weapon-list/weapon-list.component';
 import { CharmListComponent } from './components/charm-list/charm-list.component';
 import { DataModule } from './data/data.module';
+import { AmmoCapacitiesComponent } from './components/ammo-capacities/ammo-capacities.component';
 
 @NgModule({
 	declarations: [
@@ -54,6 +55,7 @@ import { DataModule } from './data/data.module';
 		AugmentationsListComponent,
 		AugmentationDetailsComponent,
 		ModalComponent,
+		AmmoCapacitiesComponent,
 	],
 	imports: [
 		BrowserModule,
