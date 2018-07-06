@@ -8,6 +8,7 @@ import { DecorationsLoader } from './loaders/decorations.loader';
 import { SetBonusesLoader } from './loaders/set-bonuses.loader';
 import { SkillsLoader } from './loaders/skills.loader';
 import { AugmentationsLoader } from './loaders/augmentations.loader';
+import { AmmoCapacitiesLoader } from './loaders/ammo-capacities.loader';
 
 @NgModule({
 	providers: [
@@ -20,6 +21,7 @@ import { AugmentationsLoader } from './loaders/augmentations.loader';
 		SetBonusesLoader,
 		SharpnessModifiersLoader,
 		WeaponModifiersLoader,
+		AmmoCapacitiesLoader
 	],
 })
 export class DataModule { }
