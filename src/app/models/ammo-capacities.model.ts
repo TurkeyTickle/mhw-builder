@@ -1,3 +1,6 @@
+import { DeviationType } from '../types/deviation.type';
+import { SpecialAmmoType } from '../types/special-ammo.type';
+
 export class AmmoCapacitiesModel {
 	id: number;
 	normal?: number[];
@@ -20,6 +23,6 @@ export class AmmoCapacitiesModel {
 	demon?: number;
 	armor?: number;
 	tranq?: number;
-	deviation: string;
-	specialAmmo: string;
+	deviation: DeviationType;
+	specialAmmo: SpecialAmmoType;
 }

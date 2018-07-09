@@ -1,6 +1,7 @@
 import { Component, OnInit, Input } from '@angular/core';
 import { AmmoCapacitiesModel } from '../../models/ammo-capacities.model';
 import * as _ from 'lodash';
+import { DeviationType } from '../../types/deviation.type';
 
 @Component({
 	selector: 'mhw-builder-ammo-capacities',
@@ -10,6 +11,8 @@ import * as _ from 'lodash';
 export class AmmoCapacitiesComponent implements OnInit {
 
 	@Input() ammoCapacities: AmmoCapacitiesModel;
+
+	deviationTypes = DeviationType;
 
 	constructor() { }
 

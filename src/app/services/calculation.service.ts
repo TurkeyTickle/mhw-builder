@@ -3,11 +3,13 @@ import { StatsModel } from '../models/stats.model';
 import { StatDetailModel } from '../models/stat-detail.model';
 import { Subject } from 'rxjs';
 import { CalculationVariableModel } from '../models/calculation-variable.model';
+import { AmmoCapacitiesModel } from '../models/ammo-capacities.model';
 
 @Injectable()
 export class CalculationService {
 	public attackCalcsUpdated$ = new Subject<StatDetailModel[]>();
 	public defenseCalcsUpdated$ = new Subject<StatDetailModel[]>();
+	public ammoUpdated$ = new Subject<AmmoCapacitiesModel>();
 
 	attackCalcs = new Array<StatDetailModel>();
 	defenseCalcs = new Array<StatDetailModel>();
@@ -18,6 +20,17 @@ export class CalculationService {
 
 		this.attackCalcsUpdated$.next(this.attackCalcs);
 		this.defenseCalcsUpdated$.next(this.defenseCalcs);
+
+		/*
+			(TurkeyTickle - 2018-07-09) - Ammo capacities are just a passthrough for now,
+			but when bowgun mods are added, some calculations will need to be run
+			to calculate new capacities. It may not make sense in the end for ammo
+			capacities to flow through the calculation service, but instead to come
+			from the stat service directly. I think it depends on whether we want
+			to set up some kind of model to display more detailed ammo information
+			on mouseover or something.
+		*/
+		this.ammoUpdated$.next(stats.ammoCapacities);
 	}
 
 	private buildAttackCalcs(stats: StatsModel) {

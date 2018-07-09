@@ -96,7 +96,7 @@
 					<div class="icon-container">
 						<img src="assets/images/sharpness-icon.png">
 					</div>
-					<div class="stat-value">{{item.sharpnessLevels[0] ? item.sharpnessLevels[0].color : 'N/A'}}</div>
+					<div class="stat-value">{{item.sharpnessLevels[0] ? item.sharpnessLevels[0].color : 'NA'}}</div>
 				</div>
 				<div class="stat-container">
 					<div class="icon-container">
@@ -115,6 +115,18 @@
 						<img [src]="getElementIcon(item)">
 					</div>
 					<div class="stat-value" [style.color]="item.elementHidden ? 'gray' : 'white'">{{item.elementBaseAttack}}</div>
+				</div>
+				<div class="stat-container" *ngIf="item.ammoCapacities?.deviation">
+					<div class="icon-container">
+						<img src="assets/images/deviation-icon.png">
+					</div>
+					<div class="stat-value">{{item.ammoCapacities.deviation}}</div>
+				</div>
+				<div class="stat-container" *ngIf="item.ammoCapacities?.specialAmmo">
+					<div class="icon-container">
+						<img src="assets/images/special-ammo-icon.png">
+					</div>
+					<div class="stat-value">{{item.ammoCapacities.specialAmmo}}</div>
 				</div>
 			</div>
 

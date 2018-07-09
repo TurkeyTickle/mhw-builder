@@ -1,3 +1,5 @@
+@import "~sass/common";
+
 $borderStyle: 1px dashed rgb(88, 88, 88);
 
 table {
@@ -14,4 +16,9 @@ table {
 		text-align: center;
 		border-left: $borderStyle;
 	}
+}
+
+.no-data-warning {
+	color: $yellow;
+	text-align: center;
 }
