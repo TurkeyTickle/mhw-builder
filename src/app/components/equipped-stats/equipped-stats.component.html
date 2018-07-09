@@ -11,6 +11,13 @@
 
 	<br />
 
+	<div class="ammo-stats" *ngIf="ammoCapacities">
+		<h4>Ammo</h4>
+		<hr>
+		<mhw-builder-ammo-capacities [ammoCapacities]="ammoCapacities"></mhw-builder-ammo-capacities>
+		<br />
+	</div>
+
 	<h4>Defense</h4>
 	<hr>
 	<ul class="defense-stats striped">

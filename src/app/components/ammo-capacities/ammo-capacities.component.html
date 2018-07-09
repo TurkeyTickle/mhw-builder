@@ -1,0 +1,138 @@
+<div class="container">
+	<table *ngIf="ammoCapacities?.deviation != deviationTypes.NA">
+		<thead>
+			<tr>
+				<th></th>
+				<th>Lv 1</th>
+				<th>Lv 2</th>
+				<th>Lv 3</th>
+			</tr>
+		</thead>
+		<tbody>
+			<tr *ngIf="!allZero(ammoCapacities?.normal)">
+				<td>Normal</td>
+				<td>{{ammoCapacities.normal[0]}}</td>
+				<td>{{ammoCapacities.normal[1]}}</td>
+				<td>{{ammoCapacities.normal[2]}}</td>
+			</tr>
+			<tr *ngIf="!allZero(ammoCapacities?.piercing)">
+				<td>Piercing</td>
+				<td>{{ammoCapacities.piercing[0]}}</td>
+				<td>{{ammoCapacities.piercing[1]}}</td>
+				<td>{{ammoCapacities.piercing[2]}}</td>
+			</tr>
+			<tr *ngIf="!allZero(ammoCapacities?.spread)">
+				<td>Spread</td>
+				<td>{{ammoCapacities.spread[0]}}</td>
+				<td>{{ammoCapacities.spread[1]}}</td>
+				<td>{{ammoCapacities.spread[2]}}</td>
+			</tr>
+			<tr *ngIf="!allZero(ammoCapacities?.sticky)">
+				<td>Sticky</td>
+				<td>{{ammoCapacities.sticky[0]}}</td>
+				<td>{{ammoCapacities.sticky[1]}}</td>
+				<td>{{ammoCapacities.sticky[2]}}</td>
+			</tr>
+			<tr *ngIf="!allZero(ammoCapacities?.cluster)">
+				<td>Cluster</td>
+				<td>{{ammoCapacities.cluster[0]}}</td>
+				<td>{{ammoCapacities.cluster[1]}}</td>
+				<td>{{ammoCapacities.cluster[2]}}</td>
+			</tr>
+			<tr *ngIf="!allZero(ammoCapacities?.recover)">
+				<td>Recover</td>
+				<td>{{ammoCapacities.recover[0]}}</td>
+				<td>{{ammoCapacities.recover[1]}}</td>
+				<td>-</td>
+			</tr>
+			<tr *ngIf="!allZero(ammoCapacities?.poison)">
+				<td>Poison</td>
+				<td>{{ammoCapacities.poison[0]}}</td>
+				<td>{{ammoCapacities.poison[1]}}</td>
+				<td>-</td>
+			</tr>
+			<tr *ngIf="!allZero(ammoCapacities?.paralysis)">
+				<td>Paralysis</td>
+				<td>{{ammoCapacities.paralysis[0]}}</td>
+				<td>{{ammoCapacities.paralysis[1]}}</td>
+				<td>-</td>
+			</tr>
+			<tr *ngIf="!allZero(ammoCapacities?.sleep)">
+				<td>Sleep</td>
+				<td>{{ammoCapacities.sleep[0]}}</td>
+				<td>{{ammoCapacities.sleep[1]}}</td>
+				<td>-</td>
+			</tr>
+			<tr *ngIf="!allZero(ammoCapacities?.exhaust)">
+				<td>Exhaust</td>
+				<td>{{ammoCapacities.exhaust[0]}}</td>
+				<td>{{ammoCapacities.exhaust[1]}}</td>
+				<td>-</td>
+			</tr>
+			<tr *ngIf="ammoCapacities?.flaming">
+				<td>Flaming</td>
+				<td>{{ammoCapacities.flaming}}</td>
+				<td>-</td>
+				<td>-</td>
+			</tr>
+			<tr *ngIf="ammoCapacities?.water">
+				<td>Water</td>
+				<td>{{ammoCapacities.water}}</td>
+				<td>-</td>
+				<td>-</td>
+			</tr>
+			<tr *ngIf="ammoCapacities?.freeze">
+				<td>Freeze</td>
+				<td>{{ammoCapacities.freeze}}</td>
+				<td>-</td>
+				<td>-</td>
+			</tr>
+			<tr *ngIf="ammoCapacities?.thunder">
+				<td>Thunder</td>
+				<td>{{ammoCapacities.thunder}}</td>
+				<td>-</td>
+				<td>-</td>
+			</tr>
+			<tr *ngIf="ammoCapacities?.dragon">
+				<td>Dragon</td>
+				<td>{{ammoCapacities.dragon}}</td>
+				<td>-</td>
+				<td>-</td>
+			</tr>
+			<tr *ngIf="ammoCapacities?.slicing">
+				<td>Slicing</td>
+				<td>{{ammoCapacities.slicing}}</td>
+				<td>-</td>
+				<td>-</td>
+			</tr>
+			<tr *ngIf="ammoCapacities?.wyvern">
+				<td>Wyvern</td>
+				<td>{{ammoCapacities.wyvern}}</td>
+				<td>-</td>
+				<td>-</td>
+			</tr>
+			<tr *ngIf="ammoCapacities?.demon">
+				<td>Demon</td>
+				<td>{{ammoCapacities.demon}}</td>
+				<td>-</td>
+				<td>-</td>
+			</tr>
+			<tr *ngIf="ammoCapacities?.armor">
+				<td>Armor</td>
+				<td>{{ammoCapacities.armor}}</td>
+				<td>-</td>
+				<td>-</td>
+			</tr>
+			<tr *ngIf="ammoCapacities?.tranq">
+				<td>Tranq</td>
+				<td>{{ammoCapacities.tranq}}</td>
+				<td>-</td>
+				<td>-</td>
+			</tr>
+		</tbody>
+	</table>
+
+	<div class="no-data-warning" *ngIf="ammoCapacities?.deviation == deviationTypes.NA">
+		Ammo capacity data is missing!
+	</div>
+</div>

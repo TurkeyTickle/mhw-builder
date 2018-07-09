@@ -7,6 +7,7 @@ import { ItemModel } from '../../models/item.model';
 import { SkillModel } from '../../models/skill.model';
 import { StatDetailModel } from '../../models/stat-detail.model';
 import { TooltipService } from '../../services/tooltip.service';
+import { WeaponType } from '../../types/weapon.type';
 
 @Component({
 	selector: 'mhw-builder-tooltip',
@@ -24,8 +25,8 @@ export class TooltipComponent implements OnInit {
 	skill: SkillModel;
 	calc: StatDetailModel;
 	visible: boolean;
+	weaponTypes = WeaponType;
 
-	private width = 300;
 	private mouseXOffset = 40;
 	private mouseYOffset = 40;
 

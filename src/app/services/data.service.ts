@@ -14,6 +14,7 @@ import { SharpnessType } from '../types/sharpness.type';
 import { WeaponType } from '../types/weapon.type';
 import { AugmentationModel } from '../models/augmentation.model';
 import { EquipmentCategoryType } from '../types/equipment-category.type';
+import { AmmoCapacitiesModel } from '../models/ammo-capacities.model';
 
 @Injectable()
 export class DataService {
@@ -23,16 +24,27 @@ export class DataService {
 
 	getWeapons(weaponType?: WeaponType): ItemModel[] {
 		let result = new Array<ItemModel>();
+
 		if (weaponType) {
 			result = this.appDataProvider.appData.weapons.filter(w => w.weaponType == weaponType);
+			for (const weapon of result) {
+				weapon.ammoCapacities = this.getAmmoCapacities(weapon.id, weapon.weaponType);
+			}
 		} else {
 			result = this.appDataProvider.appData.weapons;
 		}
+
+		for (const weapon of result) {
+			weapon.ammoCapacities = this.getAmmoCapacities(weapon.id, weapon.weaponType);
+		}
+
 		return result;
 	}
 
 	getWeapon(id: number): ItemModel {
-		return _.find(this.appDataProvider.appData.weapons, weapon => weapon.id === id);
+		const weapon = _.find(this.appDataProvider.appData.weapons, w => w.id === id);
+		weapon.ammoCapacities = this.getAmmoCapacities(weapon.id, weapon.weaponType);
+		return weapon;
 	}
 
 	getArmor(id: number): ItemModel {
@@ -141,5 +153,13 @@ export class DataService {
 			default:
 				return null;
 		}
+	}
+
+	private getAmmoCapacities(weaponId: number, weaponType: WeaponType): AmmoCapacitiesModel {
+		let result: AmmoCapacitiesModel;
+		if (weaponType == WeaponType.LightBowgun || weaponType == WeaponType.HeavyBowgun) {
+			result = this.appDataProvider.appData.ammoCapacities.find(c => c.id === weaponId);
+		}
+		return result;
 	}
 }

@@ -2,11 +2,14 @@ import { Injectable } from '@angular/core';
 import { StatsModel } from '../models/stats.model';
 import { StatDetailModel } from '../models/stat-detail.model';
 import { Subject } from 'rxjs';
+import { CalculationVariableModel } from '../models/calculation-variable.model';
+import { AmmoCapacitiesModel } from '../models/ammo-capacities.model';
 
 @Injectable()
 export class CalculationService {
 	public attackCalcsUpdated$ = new Subject<StatDetailModel[]>();
 	public defenseCalcsUpdated$ = new Subject<StatDetailModel[]>();
+	public ammoUpdated$ = new Subject<AmmoCapacitiesModel>();
 
 	attackCalcs = new Array<StatDetailModel>();
 	defenseCalcs = new Array<StatDetailModel>();
@@ -17,19 +20,66 @@ export class CalculationService {
 
 		this.attackCalcsUpdated$.next(this.attackCalcs);
 		this.defenseCalcsUpdated$.next(this.defenseCalcs);
+
+		/*
+			(TurkeyTickle - 2018-07-09) - Ammo capacities are just a passthrough for now,
+			but when bowgun mods are added, some calculations will need to be run
+			to calculate new capacities. It may not make sense in the end for ammo
+			capacities to flow through the calculation service, but instead to come
+			from the stat service directly. I think it depends on whether we want
+			to set up some kind of model to display more detailed ammo information
+			on mouseover or something.
+		*/
+		this.ammoUpdated$.next(stats.ammoCapacities);
 	}
 
 	private buildAttackCalcs(stats: StatsModel) {
 		this.attackCalcs = [];
 
-		// ElementlessBoost
-		let attackTemplate = ``;
-		let attackPotentialTemplate = ``;
+		this.attackCalcs.push(this.getAttack(stats));
+		if (stats.activeAttack || stats.effectivePhysicalSharpnessModifier) {
+			this.attackCalcs.push(this.getAttackPotential(stats));
+		}
 
-		const attackCalcDetail = {
+		this.attackCalcs.push(this.getRawAttackAverage(stats));
+		this.attackCalcs.push(this.getRawAttackAveragePotential(stats));
+
+		this.attackCalcs.push(this.getAffinity(stats));
+		if (stats.activeAffinity || stats.weakPointAffinity) {
+			this.attackCalcs.push(this.getAffinityPotential(stats));
+		}
+
+		if (stats.effectiveSharpnessLevel) {
+			this.attackCalcs.push(this.getEffectiveSharpness(stats));
+		}
+
+		this.attackCalcs.push(this.getCriticalBoost(stats));
+
+		if (stats.ailment) {
+			const ailmentCalc = this.getAilment(stats);
+			this.attackCalcs.push(ailmentCalc);
+			this.attackCalcs.push(this.getAilmentAttack(stats, ailmentCalc));
+		}
+
+		if (stats.element) {
+			const elementCalc = this.getElement(stats);
+			this.attackCalcs.push(elementCalc);
+			this.attackCalcs.push(this.getElementAttack(stats, elementCalc));
+		}
+
+		if (stats.elderseal) {
+			this.attackCalcs.push(this.getElderseal(stats));
+		}
+
+		if (stats.healOnHitPercent) {
+			this.attackCalcs.push(this.getHealOnHitPercent(stats));
+		}
+	}
+
+	private getAttack(stats: StatsModel): StatDetailModel {
+		const attackCalc: StatDetailModel = {
 			name: 'Attack',
 			value: stats.totalAttack,
-			calculationTemplate: attackTemplate,
 			calculationVariables: [
 				{
 					displayName: 'Base Weapon Attack',
@@ -52,10 +102,29 @@ export class CalculationService {
 			]
 		};
 
-		const attackPotentialCalcDetail = {
+		if (stats.elementlessBoostPercent > 0 && stats.elementAttackMultiplier == 0) {
+			attackCalc.calculationVariables.push(this.getElementlessVariable(stats));
+			attackCalc.calculationTemplate = `{attack} × {elementlessBoostPercent} + {passiveAttack} × {weaponModifier} ≈ ${stats.totalAttack}`;
+		} else {
+			attackCalc.calculationTemplate = `{attack} + {passiveAttack} × {weaponModifier} ≈ ${stats.totalAttack}`;
+		}
+
+		return attackCalc;
+	}
+
+	private getElementlessVariable(stats: StatsModel): CalculationVariableModel {
+		return {
+			displayName: 'Elementless Boost Modifier',
+			name: 'elementlessBoostPercent',
+			value: (1 + stats.elementlessBoostPercent / 100),
+			colorClass: 'kakhi'
+		};
+	}
+
+	private getAttackPotential(stats: StatsModel): StatDetailModel {
+		const attackPotentialCalc: StatDetailModel = {
 			name: 'Attack Potential',
 			value: stats.totalAttackPotential,
-			calculationTemplate: attackPotentialTemplate,
 			calculationVariables: [
 				{
 					displayName: 'Base Weapon Attack',
@@ -91,32 +160,18 @@ export class CalculationService {
 		};
 
 		if (stats.elementlessBoostPercent > 0 && stats.elementAttackMultiplier == 0) {
-			attackTemplate = `{attack} × {elementlessBoostPercent} + {passiveAttack} × {weaponModifier} ≈ ${stats.totalAttack}`;
-			attackPotentialTemplate = `{attack} × {elementlessBoostPercent} × {sharpnessModifier} + ({passiveAttack} + {activeAttack}) × {weaponModifier} ≈ ${stats.totalAttackPotential}`;
-			const elementlessVariable = {
-				displayName: 'Elementless Boost Modifier',
-				name: 'elementlessBoostPercent',
-				value: (1 + stats.elementlessBoostPercent / 100),
-				colorClass: 'kakhi'
-			};
-			attackCalcDetail.calculationVariables.push(elementlessVariable);
-			attackPotentialCalcDetail.calculationVariables.push(elementlessVariable);
+			attackPotentialCalc.calculationTemplate = `{attack} × {elementlessBoostPercent} × {sharpnessModifier} + ({passiveAttack} + {activeAttack}) × {weaponModifier} ≈ ${stats.totalAttackPotential}`;
+			attackPotentialCalc.calculationVariables.push(this.getElementlessVariable(stats));
 		} else {
-			attackTemplate = `{attack} + {passiveAttack} × {weaponModifier} ≈ ${stats.totalAttack}`;
-			attackPotentialTemplate = `{attack} × {sharpnessModifier} + ({passiveAttack} + {activeAttack}) × {weaponModifier} ≈ ${stats.totalAttackPotential}`;
+			attackPotentialCalc.calculationTemplate = `{attack} × {sharpnessModifier} + ({passiveAttack} + {activeAttack}) × {weaponModifier} ≈ ${stats.totalAttackPotential}`;
 		}
 
-		attackCalcDetail.calculationTemplate = attackTemplate;
-		attackPotentialCalcDetail.calculationTemplate = attackPotentialTemplate;
+		return attackPotentialCalc;
+	}
 
-		this.attackCalcs.push(attackCalcDetail);
-
-		if (stats.activeAttack || stats.effectivePhysicalSharpnessModifier) {
-			this.attackCalcs.push(attackPotentialCalcDetail);
-		}
-
+	private getAffinity(stats: StatsModel): StatDetailModel {
 		const affinityValue = `${stats.affinity + stats.passiveAffinity}%`;
-		this.attackCalcs.push({
+		const affinityCalc: StatDetailModel = {
 			name: 'Affinity',
 			value: affinityValue,
 			calculationTemplate: `{affinity} + {passiveAffinity} = ${affinityValue}`,
@@ -134,60 +189,66 @@ export class CalculationService {
 					colorClass: 'blue'
 				}
 			]
-		});
+		};
 
-		if (stats.activeAffinity || stats.weakPointAffinity) {
-			const value = `${stats.affinity + stats.passiveAffinity + stats.weakPointAffinity + stats.activeAffinity}%`;
-			this.attackCalcs.push({
-				name: 'Affinity Potential',
-				value: value,
-				calculationTemplate: `{base} + {passive} + {weakPoint} + {active} = ${value}`,
-				calculationVariables: [
-					{
-						displayName: 'Weapon Base Affinity',
-						name: 'base',
-						value: stats.affinity,
-						colorClass: 'green'
-					},
-					{
-						displayName: 'Passive Affinity',
-						name: 'passive',
-						value: stats.passiveAffinity,
-						colorClass: 'blue'
-					},
-					{
-						displayName: 'Weak Point Affinity',
-						name: 'weakPoint',
-						value: stats.weakPointAffinity,
-						colorClass: 'yellow'
-					},
-					{
-						displayName: 'Active Affinity',
-						name: 'active',
-						value: stats.activeAffinity,
-						colorClass: 'orange'
-					}
-				]
-			});
+		return affinityCalc;
+	}
+
+	private getAffinityPotential(stats: StatsModel): StatDetailModel {
+		const value = `${stats.affinity + stats.passiveAffinity + stats.weakPointAffinity + stats.activeAffinity}%`;
+		const affinityPotentialCalc: StatDetailModel = {
+			name: 'Affinity Potential',
+			value: value,
+			calculationTemplate: `{base} + {passive} + {weakPoint} + {active} = ${value}`,
+			calculationVariables: [
+				{
+					displayName: 'Weapon Base Affinity',
+					name: 'base',
+					value: stats.affinity,
+					colorClass: 'green'
+				},
+				{
+					displayName: 'Passive Affinity',
+					name: 'passive',
+					value: stats.passiveAffinity,
+					colorClass: 'blue'
+				},
+				{
+					displayName: 'Weak Point Affinity',
+					name: 'weakPoint',
+					value: stats.weakPointAffinity,
+					colorClass: 'yellow'
+				},
+				{
+					displayName: 'Active Affinity',
+					name: 'active',
+					value: stats.activeAffinity,
+					colorClass: 'orange'
+				}
+			]
+		};
+
+		return affinityPotentialCalc;
+	}
+
+	private getEffectiveSharpness(stats: StatsModel): StatDetailModel {
+		const sharpnessCalc: StatDetailModel = {
+			name: 'Sharpness',
+			value: `${stats.effectiveSharpnessLevel.value} ${stats.effectiveSharpnessLevel.color}`,
+			info: []
+		};
+
+		if (stats.sharpnessDataNeeded) {
+			sharpnessCalc.color = 'red';
+			sharpnessCalc.info.push('Missing data for this weapon! Sharpness values are probably incorrect!');
 		}
 
-		if (stats.effectiveSharpnessLevel) {
-			const sharpness: StatDetailModel = {
-				name: 'Sharpness',
-				value: `${stats.effectiveSharpnessLevel.value} ${stats.effectiveSharpnessLevel.color}`,
-				info: []
-			};
+		return sharpnessCalc;
+	}
 
-			if (stats.sharpnessDataNeeded) {
-				sharpness.color = 'red';
-				sharpness.info.push('Missing data for this weapon! Sharpness values are probably incorrect!');
-			}
-
-			this.attackCalcs.push(sharpness);
-		}
-
+	private getCriticalBoost(stats: StatsModel): StatDetailModel {
 		const critBoostValue = `${125 + stats.passiveCriticalBoostPercent}%`;
-		this.attackCalcs.push({
+		const critBoostCalc: StatDetailModel = {
 			name: 'Critical Boost',
 			value: critBoostValue,
 			calculationTemplate: `{base} + {passive} = ${critBoostValue}`,
@@ -205,318 +266,246 @@ export class CalculationService {
 					colorClass: 'blue'
 				}
 			]
-		});
+		};
 
-		if (stats.ailment) {
-			const ailment: StatDetailModel = {
-				name: 'Ailment',
-				value: stats.ailment,
-				info: []
-			};
+		return critBoostCalc;
+	}
 
-			this.attackCalcs.push(ailment);
+	private getAilment(stats: StatsModel): StatDetailModel {
+		const ailmentCalc: StatDetailModel = {
+			name: 'Ailment',
+			value: stats.ailment,
+			info: []
+		};
 
-			if (stats.ailmentHidden) {
-				if (stats.elementAttackMultiplier < 1) {
-					ailment.info.push('Effectiveness reduced due to hidden ailment.');
-					ailment.color = !stats.elementAttackMultiplier ? 'red' : 'yellow';
+		if (stats.ailmentCapped) {
+			ailmentCalc.info.push('Ailment attack is capped.');
+			ailmentCalc.color = 'yellow';
+		}
+
+		if (stats.ailmentHidden && stats.elementAttackMultiplier < 1) {
+			ailmentCalc.info.push('Effectiveness reduced due to hidden ailment.');
+			ailmentCalc.color = !stats.elementAttackMultiplier ? 'red' : 'yellow';
+		}
+
+		return ailmentCalc;
+	}
+
+	private getAilmentAttack(stats: StatsModel, ailmentCalc: StatDetailModel): StatDetailModel {
+		const ailmentAttackCalc: StatDetailModel = {
+			name: 'Ailment Attack',
+			value: stats.totalAilmentAttack,
+			color: ailmentCalc.color,
+			info: ailmentCalc.info,
+			calculationVariables: [
+				{
+					displayName: 'Weapon Base Ailment Attack',
+					name: 'base',
+					value: stats.baseAilmentAttack,
+					colorClass: 'green'
+				},
+				{
+					displayName: 'Passive Ailment Attack',
+					name: 'passive',
+					value: stats.effectivePassiveAilmentAttack,
+					colorClass: 'yellow'
+				},
+				{
+					displayName: 'Ailment Attack Cap',
+					name: 'cap',
+					value: stats.ailmentCap,
+					colorClass: 'orange'
 				}
+			]
+		};
 
-				let ailmentAttackTemplate: string;
+		if (stats.ailmentHidden) {
+			ailmentAttackCalc.calculationVariables.push({
+				displayName: 'Hidden Ailment Multiplier',
+				name: 'multiplier',
+				value: stats.elementAttackMultiplier,
+				colorClass: 'blue'
+			});
 
-				if (stats.elementAttackMultiplier) {
-					ailmentAttackTemplate = `{base} × {multiplier} + {passive} ≈ ${stats.totalAilmentAttack}`;
-				} else {
-					ailmentAttackTemplate = `({base} + {passive}) × {multiplier} ≈ ${stats.totalAilmentAttack}`;
-				}
-
-				if (stats.ailmentCapped) {
-					ailment.info.push('Ailment attack is capped.');
-					ailment.color = 'yellow';
-				}
-
-				this.attackCalcs.push({
-					name: 'Ailment Attack',
-					value: stats.totalAilmentAttack,
-					color: ailment.color,
-					info: ailment.info,
-					calculationTemplate: ailmentAttackTemplate,
-					calculationVariables: [
-						{
-							displayName: 'Weapon Base Ailment Attack',
-							name: 'base',
-							value: stats.baseAilmentAttack,
-							colorClass: 'green'
-						},
-						{
-							displayName: 'Hidden Ailment Multiplier',
-							name: 'multiplier',
-							value: stats.elementAttackMultiplier,
-							colorClass: 'blue'
-						},
-						{
-							displayName: 'Passive Ailment Attack',
-							name: 'passive',
-							value: stats.effectivePassiveAilmentAttack,
-							colorClass: 'yellow'
-						},
-						{
-							displayName: 'Ailment Attack Cap',
-							name: 'cap',
-							value: stats.ailmentCap,
-							colorClass: 'orange'
-						}
-					]
-				});
+			if (stats.elementAttackMultiplier) {
+				ailmentAttackCalc.calculationTemplate = `{base} × {multiplier} + {passive} ≈ ${stats.totalAilmentAttack}`;
 			} else {
-				if (stats.ailmentCapped) {
-					ailment.info.push('Ailment attack is capped.');
-					ailment.color = 'yellow';
-				}
-
-				this.attackCalcs.push({
-					name: 'Ailment Attack',
-					value: stats.totalAilmentAttack,
-					color: ailment.color,
-					info: ailment.info,
-					calculationTemplate: `{base} + {passive} = ${stats.totalAilmentAttack}`,
-					calculationVariables: [
-						{
-							displayName: 'Weapon Base Ailment Attack',
-							name: 'base',
-							value: stats.baseAilmentAttack,
-							colorClass: 'green'
-						},
-						{
-							displayName: 'Passive Ailment Attack',
-							name: 'passive',
-							value: stats.effectivePassiveAilmentAttack,
-							colorClass: 'blue'
-						},
-						{
-							displayName: 'Ailment Attack Cap',
-							name: 'cap',
-							value: stats.ailmentCap,
-							colorClass: 'yellow'
-						}
-					]
-				});
+				ailmentAttackCalc.calculationTemplate = `({base} + {passive}) × {multiplier} ≈ ${stats.totalAilmentAttack}`;
 			}
-
-			const ailmentBuildupRateValue = `${100 + stats.effectivePassiveAilmentBuildupPercent}%`;
-			this.attackCalcs.push({
-				name: 'Ailment Buildup Rate',
-				value: ailmentBuildupRateValue,
-				calculationTemplate: `{base} + {passive} = ${ailmentBuildupRateValue}`,
-				calculationVariables: [
-					{
-						displayName: 'Base Buildup Rate',
-						name: 'base',
-						value: '100',
-						colorClass: 'green'
-					},
-					{
-						displayName: 'Passive Buildup Rate',
-						name: 'passive',
-						value: stats.effectivePassiveAilmentBuildupPercent,
-						colorClass: 'blue'
-					}
-				]
-			});
+		} else {
+			ailmentAttackCalc.calculationTemplate = `{base} + {passive} = ${stats.totalAilmentAttack}`;
 		}
 
-		if (stats.element) {
-			const element: StatDetailModel = {
-				name: 'Element',
-				value: stats.element,
-				info: []
-			};
+		return ailmentAttackCalc;
+	}
 
-			this.attackCalcs.push(element);
+	private getElement(stats: StatsModel): StatDetailModel {
+		const elementCalc: StatDetailModel = {
+			name: 'Element',
+			value: stats.element,
+			info: []
+		};
 
-			if (stats.elementHidden) {
-				if (stats.elementAttackMultiplier < 1) {
-					element.info.push('Effectiveness reduced due to hidden element.');
-					element.color = !stats.elementAttackMultiplier ? 'red' : 'yellow';
+		if (stats.elementCapped) {
+			elementCalc.info.push('Element attack is capped.');
+			elementCalc.color = 'yellow';
+		}
+
+		if (stats.ailmentHidden && stats.elementAttackMultiplier < 1) {
+			elementCalc.info.push('Effectiveness reduced due to hidden element.');
+			elementCalc.color = !stats.elementAttackMultiplier ? 'red' : 'yellow';
+		}
+
+		return elementCalc;
+	}
+
+	private getElementAttack(stats: StatsModel, elementCalc: StatDetailModel): StatDetailModel {
+		const elementAttackCalc: StatDetailModel = {
+			name: 'Element Attack',
+			value: stats.totalElementAttack,
+			color: elementCalc.color,
+			info: elementCalc.info,
+			calculationVariables: [
+				{
+					displayName: 'Weapon Base Element Attack',
+					name: 'base',
+					value: stats.baseElementAttack,
+					colorClass: 'green'
+				},
+				{
+					displayName: 'Passive Element Attack',
+					name: 'passive',
+					value: stats.effectivePassiveElementAttack,
+					colorClass: 'yellow'
+				},
+				{
+					displayName: 'Element Attack Cap',
+					name: 'cap',
+					value: stats.elementCap,
+					colorClass: 'orange'
 				}
+			]
+		};
 
-				let elementAttackTemplate: string;
+		if (stats.elementHidden) {
+			elementAttackCalc.calculationVariables.push({
+				displayName: 'Hidden Element Multiplier',
+				name: 'multiplier',
+				value: stats.elementAttackMultiplier,
+				colorClass: 'blue'
+			});
 
-				if (stats.elementAttackMultiplier) {
-					elementAttackTemplate = `{base} × {multiplier} + {passive} ≈ ${stats.totalElementAttack}`;
-				} else {
-					elementAttackTemplate = `({base} + {passive}) × {multiplier} ≈ ${stats.totalElementAttack}`;
-				}
-
-				if (stats.elementCapped) {
-					element.info.push('Element attack is capped.');
-					element.color = 'yellow';
-				}
-
-				this.attackCalcs.push({
-					name: 'Element Attack',
-					value: stats.totalElementAttack,
-					color: element.color,
-					info: element.info,
-					calculationTemplate: elementAttackTemplate,
-					calculationVariables: [
-						{
-							displayName: 'Weapon Base Element Attack',
-							name: 'base',
-							value: stats.baseElementAttack,
-							colorClass: 'green'
-						},
-						{
-							displayName: 'Hidden Element Multiplier',
-							name: 'multiplier',
-							value: stats.elementAttackMultiplier,
-							colorClass: 'blue'
-						},
-						{
-							displayName: 'Passive Element Attack',
-							name: 'passive',
-							value: stats.effectivePassiveElementAttack,
-							colorClass: 'yellow'
-						},
-						{
-							displayName: 'Element Attack Cap',
-							name: 'cap',
-							value: stats.elementCap,
-							colorClass: 'orange'
-						}
-					]
-				});
+			if (stats.elementAttackMultiplier) {
+				elementAttackCalc.calculationTemplate = `{base} × {multiplier} + {passive} ≈ ${stats.totalElementAttack}`;
 			} else {
-				if (stats.elementCapped) {
-					element.info.push('Element Attack is capped.');
-					element.color = 'yellow';
-				}
-
-				this.attackCalcs.push({
-					name: 'Element Attack',
-					value: stats.totalElementAttack,
-					color: element.color,
-					info: element.info,
-					calculationTemplate: `{base} + {passive} = ${stats.totalElementAttack}`,
-					calculationVariables: [
-						{
-							displayName: 'Weapon Base Element Attack',
-							name: 'base',
-							value: stats.baseElementAttack,
-							colorClass: 'green'
-						},
-						{
-							displayName: 'Passive Element Attack',
-							name: 'passive',
-							value: stats.effectivePassiveElementAttack,
-							colorClass: 'blue'
-						},
-						{
-							displayName: 'Element Attack Cap',
-							name: 'cap',
-							value: stats.elementCap,
-							colorClass: 'yellow'
-						}
-					]
-				});
+				elementAttackCalc.calculationTemplate = `({base} + {passive}) × {multiplier} ≈ ${stats.totalElementAttack}`;
 			}
+		} else {
+			elementAttackCalc.calculationTemplate = `{base} + {passive} = ${stats.totalElementAttack}`;
 		}
 
-		if (stats.elderseal) {
-			this.attackCalcs.push({
-				name: 'Elderseal',
-				value: stats.elderseal
-			});
-		}
+		return elementAttackCalc;
+	}
 
-		if (stats.healOnHitPercent) {
-			this.attackCalcs.push({
-				name: 'Heal on Hit',
-				value: stats.healOnHitPercent
-			});
-		}
+	private getElderseal(stats: StatsModel): StatDetailModel {
+		return {
+			name: 'Elderseal',
+			value: stats.elderseal
+		};
+	}
 
+	private getHealOnHitPercent(stats: StatsModel): StatDetailModel {
+		return {
+			name: 'Heal on Hit',
+			value: stats.healOnHitPercent
+		};
+	}
+
+	private getRawAttackAverage(stats: StatsModel): StatDetailModel {
 		const totalAffinity = Math.min(stats.affinity + stats.passiveAffinity, 100);
-		const totalAffinityPotential = Math.min(stats.affinity + stats.passiveAffinity + stats.weakPointAffinity + stats.activeAffinity, 100);
 		const rawAttackAvg =
 			Math.round((
 				(stats.totalAttack * (totalAffinity / 100) * ((stats.passiveCriticalBoostPercent + 125) / 100))
 				+ (stats.totalAttack * (1 - (totalAffinity / 100)))
 			) / stats.weaponAttackModifier);
-		const rawAttackPotentialAvg =
+
+		const rawAttackAvgCalc: StatDetailModel = {
+			name: 'Raw Attack Average',
+			value: Number.isInteger(rawAttackAvg) ? rawAttackAvg : 0,
+			calculationTemplate: `({totalAttack} × {totalAffinity} × {criticalBoost} + {totalAttack} × (100% - {totalAffinity})) ÷ {weaponModifier} = ${rawAttackAvg}`,
+			calculationVariables: [
+				{
+					displayName: 'Total Attack',
+					name: 'totalAttack',
+					value: stats.totalAttack,
+					colorClass: 'green'
+				},
+				{
+					displayName: 'Total Affinity',
+					name: 'totalAffinity',
+					value: totalAffinity + '%',
+					colorClass: 'blue'
+				},
+				{
+					displayName: 'Total Critical Boost',
+					name: 'criticalBoost',
+					value: (stats.passiveCriticalBoostPercent + 125) + '%',
+					colorClass: 'kakhi'
+				},
+				{
+					displayName: 'Weapon Modifier',
+					name: 'weaponModifier',
+					value: stats.weaponAttackModifier,
+					colorClass: 'purple'
+				}
+			]
+		};
+
+		return rawAttackAvgCalc;
+	}
+
+	private getRawAttackAveragePotential(stats: StatsModel): StatDetailModel {
+		const totalAffinityPotential = Math.min(stats.affinity + stats.passiveAffinity + stats.weakPointAffinity + stats.activeAffinity, 100);
+		const rawAttackAveragePotential =
 			Math.round((
 				(stats.totalAttackPotential * (totalAffinityPotential / 100) * ((stats.passiveCriticalBoostPercent + 125) / 100))
 				+ (stats.totalAttackPotential * (1 - (totalAffinityPotential / 100)))
 			) / stats.weaponAttackModifier);
 
-		if (rawAttackAvg) {
-			this.attackCalcs.push({
-				name: 'Raw Attack Average',
-				value: rawAttackAvg,
-				calculationTemplate: `({totalAttack} × {totalAffinity} × {criticalBoost} + {totalAttack} × (100% - {totalAffinity})) ÷ {weaponModifier} = ${rawAttackAvg}`,
-				calculationVariables: [
-					{
-						displayName: 'Total Attack',
-						name: 'totalAttack',
-						value: stats.totalAttack,
-						colorClass: 'green'
-					},
-					{
-						displayName: 'Total Affinity',
-						name: 'totalAffinity',
-						value: totalAffinity + '%',
-						colorClass: 'blue'
-					},
-					{
-						displayName: 'Total Critical Boost',
-						name: 'criticalBoost',
-						value: (stats.passiveCriticalBoostPercent + 125) + '%',
-						colorClass: 'kakhi'
-					},
-					{
-						displayName: 'Weapon Modifier',
-						name: 'weaponModifier',
-						value: stats.weaponAttackModifier,
-						colorClass: 'purple'
-					}
-				]
-			});
-		}
+		const rawAttackAveragePotentialCalc: StatDetailModel = {
+			name: 'Raw Attack Average Potential',
+			value: Number.isInteger(rawAttackAveragePotential) ? rawAttackAveragePotential : 0,
+			calculationTemplate:
+				`({totalAttackPotential} × {totalAffinityPotential} × {criticalBoost} + {totalAttackPotential} × (100% - {totalAffinityPotential})) ÷ {weaponModifier} = ${rawAttackAveragePotential}`,
+			calculationVariables: [
+				{
+					displayName: 'Total Attack Potential',
+					name: 'totalAttackPotential',
+					value: stats.totalAttackPotential,
+					colorClass: 'green'
+				},
+				{
+					displayName: 'Total Affinity Potential',
+					name: 'totalAffinityPotential',
+					value: totalAffinityPotential + '%',
+					colorClass: 'blue'
+				},
+				{
+					displayName: 'Total Critical Boost',
+					name: 'criticalBoost',
+					value: stats.passiveCriticalBoostPercent + 125 + '%',
+					colorClass: 'kakhi'
+				},
+				{
+					displayName: 'Weapon Modifier',
+					name: 'weaponModifier',
+					value: stats.weaponAttackModifier,
+					colorClass: 'purple'
+				}
+			]
+		};
 
-		if (rawAttackPotentialAvg) {
-			this.attackCalcs.push({
-				name: 'Raw Attack Potential Average',
-				value: rawAttackPotentialAvg,
-				calculationTemplate:
-					`({totalAttackPotential} × {totalAffinityPotential} × {criticalBoost} + {totalAttackPotential} × (100% - {totalAffinityPotential})) ÷ {weaponModifier} = ${rawAttackPotentialAvg}`,
-				calculationVariables: [
-					{
-						displayName: 'Total Attack Potential',
-						name: 'totalAttackPotential',
-						value: stats.totalAttackPotential,
-						colorClass: 'green'
-					},
-					{
-						displayName: 'Total Affinity Potential',
-						name: 'totalAffinityPotential',
-						value: totalAffinityPotential + '%',
-						colorClass: 'blue'
-					},
-					{
-						displayName: 'Total Critical Boost',
-						name: 'criticalBoost',
-						value: stats.passiveCriticalBoostPercent + 125 + '%',
-						colorClass: 'kakhi'
-					},
-					{
-						displayName: 'Weapon Modifier',
-						name: 'weaponModifier',
-						value: stats.weaponAttackModifier,
-						colorClass: 'purple'
-					}
-				]
-			});
-		}
+		return rawAttackAveragePotentialCalc;
 	}
 
 	private buildDefenseCalcs(stats: StatsModel) {

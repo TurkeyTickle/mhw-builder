@@ -8,6 +8,7 @@ import { WeaponType } from '../types/weapon.type';
 import { SkillReferenceModel } from './skill-reference.model';
 import { SharpnessLevelModel } from './sharpness-level.model';
 import { SlotModel } from './slot.model';
+import { AmmoCapacitiesModel } from './ammo-capacities.model';
 
 export class ItemModel {
 	id: number;
@@ -37,6 +38,7 @@ export class ItemModel {
 	elementHidden: boolean;
 	elementAttackIncreaseCapOverride: number;
 	elderseal?: EldersealType;
+	ammoCapacities?: AmmoCapacitiesModel;
 
 	// armor properties
 	fireResist: number;

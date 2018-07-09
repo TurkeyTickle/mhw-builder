@@ -5,6 +5,7 @@ import { SharpnessModifierModel } from './sharpness-modifier.model';
 import { SkillModel } from './skill.model';
 import { WeaponModifierModel } from './weapon-modifier.model';
 import { AugmentationModel } from './augmentation.model';
+import { AmmoCapacitiesModel } from './ammo-capacities.model';
 
 export class AppDataModel {
 	weaponModifiers: WeaponModifierModel[];
@@ -16,6 +17,7 @@ export class AppDataModel {
 	skills: SkillModel[];
 	decorations: DecorationModel[];
 	augmentations: AugmentationModel[];
+	ammoCapacities: AmmoCapacitiesModel[];
 
 	constructor() {
 		this.weaponModifiers = new Array<WeaponModifierModel>();
@@ -27,5 +29,6 @@ export class AppDataModel {
 		this.skills = new Array<SkillModel>();
 		this.decorations = new Array<DecorationModel>();
 		this.augmentations = new Array<AugmentationModel>();
+		this.ammoCapacities = new Array<AmmoCapacitiesModel>();
 	}
 }
