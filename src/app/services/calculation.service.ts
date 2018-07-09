@@ -24,16 +24,14 @@ export class CalculationService {
 		this.attackCalcs = [];
 
 		this.attackCalcs.push(this.getAttack(stats));
-
 		if (stats.activeAttack || stats.effectivePhysicalSharpnessModifier) {
 			this.attackCalcs.push(this.getAttackPotential(stats));
 		}
 
 		this.attackCalcs.push(this.getRawAttackAverage(stats));
-		this.attackCalcs.push(this.getRawAttackPotentialAverage(stats));
+		this.attackCalcs.push(this.getRawAttackAveragePotential(stats));
 
 		this.attackCalcs.push(this.getAffinity(stats));
-
 		if (stats.activeAffinity || stats.weakPointAffinity) {
 			this.attackCalcs.push(this.getAffinityPotential(stats));
 		}
@@ -453,19 +451,19 @@ export class CalculationService {
 		return rawAttackAvgCalc;
 	}
 
-	private getRawAttackPotentialAverage(stats: StatsModel): StatDetailModel {
+	private getRawAttackAveragePotential(stats: StatsModel): StatDetailModel {
 		const totalAffinityPotential = Math.min(stats.affinity + stats.passiveAffinity + stats.weakPointAffinity + stats.activeAffinity, 100);
-		const rawAttackPotentialAvg =
+		const rawAttackAveragePotential =
 			Math.round((
 				(stats.totalAttackPotential * (totalAffinityPotential / 100) * ((stats.passiveCriticalBoostPercent + 125) / 100))
 				+ (stats.totalAttackPotential * (1 - (totalAffinityPotential / 100)))
 			) / stats.weaponAttackModifier);
 
-		const rawAttackPotentialAvgCalc: StatDetailModel = {
-			name: 'Raw Attack Potential Average',
-			value: Number.isInteger(rawAttackPotentialAvg) ? rawAttackPotentialAvg : 0,
+		const rawAttackAveragePotentialCalc: StatDetailModel = {
+			name: 'Raw Attack Average Potential',
+			value: Number.isInteger(rawAttackAveragePotential) ? rawAttackAveragePotential : 0,
 			calculationTemplate:
-				`({totalAttackPotential} × {totalAffinityPotential} × {criticalBoost} + {totalAttackPotential} × (100% - {totalAffinityPotential})) ÷ {weaponModifier} = ${rawAttackPotentialAvg}`,
+				`({totalAttackPotential} × {totalAffinityPotential} × {criticalBoost} + {totalAttackPotential} × (100% - {totalAffinityPotential})) ÷ {weaponModifier} = ${rawAttackAveragePotential}`,
 			calculationVariables: [
 				{
 					displayName: 'Total Attack Potential',
@@ -494,7 +492,7 @@ export class CalculationService {
 			]
 		};
 
-		return rawAttackPotentialAvgCalc;
+		return rawAttackAveragePotentialCalc;
 	}
 
 	private buildDefenseCalcs(stats: StatsModel) {
