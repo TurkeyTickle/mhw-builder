@@ -141,6 +141,18 @@ export class ItemDetailsComponent implements OnInit {
 				value: this.item.dragonResist || 0
 			});
 		}
+
+		if (this.item.ammoCapacities) {
+			this.stats.push({
+				name: 'Deviation',
+				value: this.item.ammoCapacities.deviation
+			});
+
+			this.stats.push({
+				name: 'Special Ammo',
+				value: this.item.ammoCapacities.specialAmmo
+			});
+		}
 	}
 
 	loadSkills() {

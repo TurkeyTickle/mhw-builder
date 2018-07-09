@@ -2,6 +2,7 @@ import { ElementType } from '../types/element.type';
 import { AilmentType } from '../types/ailment.type';
 import { SharpnessLevelModel } from './sharpness-level.model';
 import { SharpnessType } from '../types/sharpness.type';
+import { AmmoCapacitiesModel } from './ammo-capacities.model';
 
 export class StatsModel {
 	totalAttack: number;
@@ -89,6 +90,8 @@ export class StatsModel {
 
 	healOnHitPercent: number;
 
+	ammoCapacities: AmmoCapacitiesModel;
+
 	constructor() {
 		this.totalAttack = 0;
 		this.attack = 0;
@@ -173,5 +176,7 @@ export class StatsModel {
 		this.passiveDragonResist = 0;
 
 		this.healOnHitPercent = 0;
+
+		this.ammoCapacities = null;
 	}
 }

@@ -12,6 +12,7 @@ import { StatsModel } from '../models/stats.model';
 import { Subject } from 'rxjs';
 import { CalculationService } from './calculation.service';
 import { EldersealType } from '../types/elderseal.type';
+import { WeaponType } from '../types/weapon.type';
 
 @Injectable()
 export class StatService {
@@ -35,6 +36,12 @@ export class StatService {
 
 		const weapon = _.find(items, item => item.weaponType != null);
 		this.calculateAttack(weapon);
+
+		if (weapon) {
+			if (weapon.weaponType === WeaponType.HeavyBowgun || weapon.weaponType === WeaponType.LightBowgun) {
+				this.stats.ammoCapacities = weapon.ammoCapacities;
+			}
+		}
 
 		this.statsUpdated$.next(this.stats);
 
