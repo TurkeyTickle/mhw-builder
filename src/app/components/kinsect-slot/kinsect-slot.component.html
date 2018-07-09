@@ -1,0 +1,8 @@
+<div class="container" (click)="clicked()" [class.selected]="selected" (pointerenter)="setTooltipKinsect($event, kinsect)" (pointerleave)="clearTooltipKinsect()">
+	<div class="slot-icon"><img [src]="'assets/images/culldrone-kinsect-icon.png'"></div>
+	<div class="selected-kinsect">{{kinsect?.name}}</div>
+
+	<button class="clear-button" (click)="clearClicked($event)">
+		<i class="fas fa-times"></i>
+	</button>
+</div>

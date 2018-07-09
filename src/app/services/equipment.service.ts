@@ -5,12 +5,14 @@ import { ItemModel } from '../models/item.model';
 import { DecorationModel } from '../models/decoration.model';
 import * as _ from 'lodash';
 import { StatService } from './stat.service';
+import { KinsectModel } from '../models/kinsect.model';
 
 @Injectable()
 export class EquipmentService {
 	public items: ItemModel[];
 	public decorations: DecorationModel[];
 	public augmentations: AugmentationModel[];
+	public kinsect: KinsectModel;
 
 	constructor(
 		private skillService: SkillService,
@@ -40,6 +42,10 @@ export class EquipmentService {
 		this.updateSkills();
 	}
 
+	addKinsect(kinsect: KinsectModel) {
+		this.kinsect = kinsect;
+	}
+
 	removeItem(item: ItemModel) {
 		this.items = _.reject(this.items, i => i === item);
 		this.updateSkills();
@@ -53,6 +59,10 @@ export class EquipmentService {
 	removeAugmentation(augmentation: AugmentationModel) {
 		this.augmentations = _.reject(this.augmentations, a => a === augmentation);
 		this.updateSkills();
+	}
+
+	removeKinsect() {
+		this.kinsect = null;
 	}
 
 	updateItemLevel() {

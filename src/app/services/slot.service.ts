@@ -11,14 +11,18 @@ import { SlotEventModel } from '../models/slot-event.model';
 import { ItemType } from '../types/item.type';
 import * as _ from 'lodash';
 import { EquipmentCategoryType } from '../types/equipment-category.type';
+import { KinsectSlotComponent } from '../components/kinsect-slot/kinsect-slot.component';
+import { KinsectModel } from '../models/kinsect.model';
+import { WeaponType } from '../types/weapon.type';
 
 @Injectable()
 export class SlotService {
-	public anySlotSelected$ = new Subject<ItemSlotComponent | DecorationSlotComponent | AugmentationSlotComponent>();
+	public anySlotSelected$ = new Subject<ItemSlotComponent | DecorationSlotComponent | AugmentationSlotComponent | KinsectSlotComponent>();
 
 	public itemSelected$ = new Subject<SlotEventModel<ItemSlotComponent, ItemModel>>();
 	public decorationSelected$ = new Subject<SlotEventModel<DecorationSlotComponent, DecorationModel>>();
 	public augmentationSelected$ = new Subject<SlotEventModel<AugmentationSlotComponent, AugmentationModel>>();
+	public kinsectSelected$ = new Subject<SlotEventModel<KinsectSlotComponent, KinsectModel>>();
 	public itemLevelChanged$ = new Subject();
 
 	weaponSlot: ItemSlotComponent;
@@ -34,6 +38,7 @@ export class SlotService {
 	selectedItemSlot: ItemSlotComponent;
 	selectedDecorationSlot: DecorationSlotComponent;
 	selectedAugmentationSlot: AugmentationSlotComponent;
+	selectedKinsectSlot: KinsectSlotComponent;
 
 	constructor(
 		private equipmentService: EquipmentService
@@ -60,7 +65,7 @@ export class SlotService {
 	}
 
 	selectItemSlot(slot: ItemSlotComponent) {
-		this.clearSlots();
+		this.clearSlotSelect();
 		this.selectedItemSlot = slot;
 
 		if (this.selectedItemSlot) {
@@ -70,7 +75,7 @@ export class SlotService {
 	}
 
 	selectDecorationSlot(slot: DecorationSlotComponent) {
-		this.clearSlots();
+		this.clearSlotSelect();
 		this.selectedDecorationSlot = slot;
 
 		if (this.selectedDecorationSlot) {
@@ -80,12 +85,22 @@ export class SlotService {
 	}
 
 	selectAugmentationSlot(slot: AugmentationSlotComponent) {
-		this.clearSlots();
+		this.clearSlotSelect();
 		this.selectedAugmentationSlot = slot;
 
 		if (this.selectedAugmentationSlot) {
 			this.selectedAugmentationSlot.selected = true;
 			this.anySlotSelected$.next(this.selectedAugmentationSlot);
+		}
+	}
+
+	selectKinsectSlot(slot: KinsectSlotComponent) {
+		this.clearSlotSelect();
+		this.selectedKinsectSlot = slot;
+
+		if (this.selectedKinsectSlot) {
+			this.selectedKinsectSlot.selected = true;
+			this.anySlotSelected$.next(this.selectedKinsectSlot);
 		}
 	}
 
@@ -108,6 +123,12 @@ export class SlotService {
 		this.applySlotAugmentation();
 		slot.augmentation = null;
 		this.augmentationSelected$.next({ slot: slot, equipment: null });
+	}
+
+	clearKinsectSlot(slot: KinsectSlotComponent) {
+		this.equipmentService.removeKinsect();
+		slot.kinsect = null;
+		this.kinsectSelected$.next({ slot: slot, equipment: null });
 	}
 
 	selectItem(item: ItemModel) {
@@ -139,6 +160,10 @@ export class SlotService {
 					];
 				} else {
 					this.selectedItemSlot.augmentations = [];
+				}
+
+				if (item.weaponType === WeaponType.InsectGlaive) {
+					this.selectedItemSlot.kinsect = new KinsectModel();
 				}
 			}
 
@@ -215,9 +240,11 @@ export class SlotService {
 		slot.augmentationSlots.forEach(as => {
 			this.equipmentService.removeAugmentation(as.augmentation);
 		});
+
+		this.equipmentService.removeKinsect();
 	}
 
-	private clearSlots() {
+	private clearSlotSelect() {
 		if (this.selectedItemSlot) {
 			this.selectedItemSlot.selected = false;
 		}

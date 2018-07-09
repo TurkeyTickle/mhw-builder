@@ -7,5 +7,6 @@ export enum ItemType {
 	Feet = 'Feet',
 	Charm = 'Charm',
 	Decoration = 'Decoration',
-	Augmentation = 'Augmentation'
+	Augmentation = 'Augmentation',
+	Kinsect = 'Kinsect'
 }

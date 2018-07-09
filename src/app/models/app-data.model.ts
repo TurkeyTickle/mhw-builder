@@ -6,6 +6,7 @@ import { SkillModel } from './skill.model';
 import { WeaponModifierModel } from './weapon-modifier.model';
 import { AugmentationModel } from './augmentation.model';
 import { AmmoCapacitiesModel } from './ammo-capacities.model';
+import { KinsectModel } from './kinsect.model';
 
 export class AppDataModel {
 	weaponModifiers: WeaponModifierModel[];
@@ -18,6 +19,7 @@ export class AppDataModel {
 	decorations: DecorationModel[];
 	augmentations: AugmentationModel[];
 	ammoCapacities: AmmoCapacitiesModel[];
+	kinsects: KinsectModel[];
 
 	constructor() {
 		this.weaponModifiers = new Array<WeaponModifierModel>();
@@ -30,5 +32,6 @@ export class AppDataModel {
 		this.decorations = new Array<DecorationModel>();
 		this.augmentations = new Array<AugmentationModel>();
 		this.ammoCapacities = new Array<AmmoCapacitiesModel>();
+		this.kinsects = new Array<KinsectModel>();
 	}
 }

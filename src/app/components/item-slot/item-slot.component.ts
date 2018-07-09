@@ -1,4 +1,4 @@
-import { Component, Input, OnInit, QueryList, ViewChildren } from '@angular/core';
+import { Component, Input, OnInit, QueryList, ViewChildren, ViewChild } from '@angular/core';
 import { ItemModel } from '../../models/item.model';
 import { TooltipService } from '../../services/tooltip.service';
 import { ItemType } from '../../types/item.type';
@@ -9,6 +9,8 @@ import { SlotService } from '../../services/slot.service';
 import { PointerType } from '../../types/pointer.type';
 import { EquipmentCategoryType } from '../../types/equipment-category.type';
 import { DataService } from '../../services/data.service';
+import { KinsectModel } from '../../models/kinsect.model';
+import { KinsectSlotComponent } from '../kinsect-slot/kinsect-slot.component';
 
 @Component({
 	selector: 'mhw-builder-item-slot',
@@ -20,10 +22,13 @@ export class ItemSlotComponent implements OnInit {
 
 	@ViewChildren(DecorationSlotComponent) decorationSlots: QueryList<DecorationSlotComponent>;
 	@ViewChildren(AugmentationSlotComponent) augmentationSlots: QueryList<AugmentationSlotComponent>;
+	@ViewChild(KinsectSlotComponent) kinsectSlot: KinsectSlotComponent;
 
 	item: ItemModel;
 
 	public augmentations = new Array<AugmentationModel>();
+	public kinsect: KinsectModel;
+
 	public selected: boolean;
 
 	constructor(
