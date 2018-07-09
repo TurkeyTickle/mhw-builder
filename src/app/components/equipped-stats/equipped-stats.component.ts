@@ -20,7 +20,6 @@ export class EquippedStatsComponent implements OnInit {
 		private tooltipService: TooltipService
 	) { }
 
-
 	ngOnInit() {
 		this.calculationService.attackCalcsUpdated$.subscribe(calcs => {
 			this.attackCalcs = calcs;
