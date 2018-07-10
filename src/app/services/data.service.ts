@@ -15,6 +15,7 @@ import { WeaponType } from '../types/weapon.type';
 import { AugmentationModel } from '../models/augmentation.model';
 import { EquipmentCategoryType } from '../types/equipment-category.type';
 import { AmmoCapacitiesModel } from '../models/ammo-capacities.model';
+import { KinsectModel } from '../models/kinsect.model';
 
 @Injectable()
 export class DataService {
@@ -109,6 +110,14 @@ export class DataService {
 
 	getAugmentation(id: number): AugmentationModel {
 		return _.find(this.appDataProvider.appData.augmentations, augmentation => augmentation.id == id);
+	}
+
+	getKinsects(): KinsectModel[] {
+		return this.appDataProvider.appData.kinsects;
+	}
+
+	getKinsect(id: number): KinsectModel {
+		return _.find(this.appDataProvider.appData.kinsects, kinsect => kinsect.id == id);
 	}
 
 	getWeaponTypeName(weaponType: WeaponType): string {

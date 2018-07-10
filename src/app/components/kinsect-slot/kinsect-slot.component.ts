@@ -3,6 +3,7 @@ import { KinsectModel } from '../../models/kinsect.model';
 import { SlotService } from '../../services/slot.service';
 import { TooltipService } from '../../services/tooltip.service';
 import { ItemType } from '../../types/item.type';
+import { PointerType } from '../../types/pointer.type';
 
 @Component({
 	selector: 'mhw-builder-kinsect-slot',
@@ -10,7 +11,7 @@ import { ItemType } from '../../types/item.type';
 	styleUrls: ['./kinsect-slot.component.scss']
 })
 export class KinsectSlotComponent implements OnInit {
-	slotName: ItemType.Kinsect;
+	slotName = ItemType.Kinsect;
 
 	kinsect: KinsectModel;
 
@@ -34,9 +35,9 @@ export class KinsectSlotComponent implements OnInit {
 	}
 
 	setTooltipKinsect(event: PointerEvent, kinsect: KinsectModel) {
-		// if (event.pointerType == PointerType.Mouse) {
-		// 	this.tooltipService.setAugmentation(augmentation);
-		// }
+		if (event.pointerType == PointerType.Mouse) {
+			// this.tooltipService.setAugmentation(augmentation);
+		}
 	}
 
 	clearTooltipKinsect() {

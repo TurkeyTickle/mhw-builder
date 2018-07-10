@@ -34,6 +34,7 @@ import { CharmListComponent } from './components/charm-list/charm-list.component
 import { DataModule } from './data/data.module';
 import { AmmoCapacitiesComponent } from './components/ammo-capacities/ammo-capacities.component';
 import { KinsectSlotComponent } from './components/kinsect-slot/kinsect-slot.component';
+import { KinsectListComponent } from './components/kinsect-list/kinsect-list.component';
 
 @NgModule({
 	declarations: [
@@ -58,6 +59,7 @@ import { KinsectSlotComponent } from './components/kinsect-slot/kinsect-slot.com
 		ModalComponent,
 		AmmoCapacitiesComponent,
 		KinsectSlotComponent,
+		KinsectListComponent,
 	],
 	imports: [
 		BrowserModule,

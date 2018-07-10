@@ -44,6 +44,10 @@ export class BuildService {
 			if (!this.loadingBuild) { this.updateBuildId(); }
 		});
 
+		this.slotService.kinsectSelected$.subscribe(() => {
+			if (!this.loadingBuild) { this.updateBuildId(); }
+		});
+
 		this.slotService.itemLevelChanged$.subscribe(() => {
 			if (!this.loadingBuild) { this.updateBuildId(); }
 		});
@@ -74,6 +78,7 @@ export class BuildService {
 			const decorationParts = itemHash.split('d');
 			const itemParts = itemHash.split('l');
 			const augmentParts = itemHash.split('a');
+			const kinsectParts = itemHash.split('k');
 			const itemId = parseInt(itemParts[0], 10);
 
 			if (itemId) {
@@ -89,12 +94,6 @@ export class BuildService {
 						item = this.dataService.getCharm(itemId);
 						break;
 				}
-
-				// if (slot.slotName == ItemType.Weapon) {
-				// 	item = this.dataService.getWeapon(itemId);
-				// } else if (this.dataService.getEquipmentCategory(slot.slotName) == EquipmentCategoryType.Armor) {
-				// 	item = this.dataService.getArmor(itemId);
-				// }
 
 				if (item) {
 					if (itemParts.length > 1) {
@@ -116,6 +115,18 @@ export class BuildService {
 									this.slotService.selectAugmentationSlot(slot.augmentationSlots.toArray()[i]);
 									const newAug = Object.assign({}, aug);
 									this.slotService.selectAugmentation(newAug);
+								}
+							}
+						}
+
+						for (let i = 0; i < kinsectParts.length; i++) {
+							const kinsectId = parseInt(kinsectParts[i + 1], 10);
+							if (kinsectId) {
+								const kinsect = this.dataService.getKinsect(kinsectId);
+								if (kinsect) {
+									this.slotService.selectKinsectSlot(slot.kinsectSlot);
+									const newKinsect = Object.assign({}, kinsect);
+									this.slotService.selectKinsect(newKinsect);
 								}
 							}
 						}
@@ -173,10 +184,16 @@ export class BuildService {
 				result += `l${item.equippedLevel}`;
 			}
 
-			if (item.equipmentCategory == EquipmentCategoryType.Weapon && item.rarity >= 6) {
-				for (const aug of this.equipmentService.augmentations) {
-					if (aug.id) {
-						result += `a${aug.id}`;
+			if (item.equipmentCategory == EquipmentCategoryType.Weapon) {
+				if (this.equipmentService.kinsect) {
+					result += `k${this.equipmentService.kinsect.id}`;
+				}
+
+				if (item.rarity >= 6) {
+					for (const aug of this.equipmentService.augmentations) {
+						if (aug.id) {
+							result += `a${aug.id}`;
+						}
 					}
 				}
 			}

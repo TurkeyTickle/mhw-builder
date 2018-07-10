@@ -56,6 +56,7 @@
 
 		<mhw-builder-decoration-list *ngIf="slotService.selectedDecorationSlot" [decorationLevel]="slotService.selectedDecorationSlot?.level"></mhw-builder-decoration-list>
 		<mhw-builder-augmentations-list *ngIf="slotService.selectedAugmentationSlot"></mhw-builder-augmentations-list>
+		<mhw-builder-kinsect-list *ngIf="slotService.selectedKinsectSlot"></mhw-builder-kinsect-list>
 	</mhw-builder-modal>
 
 	<mhw-builder-modal #changeLogModal title="Change Log">

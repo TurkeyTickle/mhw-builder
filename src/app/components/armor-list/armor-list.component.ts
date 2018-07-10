@@ -1,4 +1,4 @@
-import { Component, OnInit, Input, Output, EventEmitter, ViewChild, ElementRef, HostListener } from '@angular/core';
+import { Component, OnInit, Input, ViewChild, ElementRef, HostListener } from '@angular/core';
 import { EquipmentCategoryType } from '../../types/equipment-category.type';
 import { ItemModel } from '../../models/item.model';
 import { DataService } from '../../services/data.service';

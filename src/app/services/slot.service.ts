@@ -164,6 +164,8 @@ export class SlotService {
 
 				if (item.weaponType === WeaponType.InsectGlaive) {
 					this.selectedItemSlot.kinsect = new KinsectModel();
+				} else {
+					this.selectedItemSlot.kinsect = null;
 				}
 			}
 
@@ -195,6 +197,18 @@ export class SlotService {
 			this.applySlotAugmentation();
 			this.selectedAugmentationSlot.augmentation = augmentation;
 			this.augmentationSelected$.next({ slot: this.selectedAugmentationSlot, equipment: augmentation });
+		}
+	}
+
+	selectKinsect(kinsect: KinsectModel) {
+		if (this.selectedKinsectSlot) {
+			if (this.selectedKinsectSlot.kinsect) {
+				this.equipmentService.removeKinsect();
+			}
+
+			this.equipmentService.addKinsect(kinsect);
+			this.selectedKinsectSlot.kinsect = kinsect;
+			this.kinsectSelected$.next({ slot: this.selectedKinsectSlot, equipment: kinsect });
 		}
 	}
 
@@ -257,8 +271,13 @@ export class SlotService {
 			this.selectedAugmentationSlot.selected = false;
 		}
 
+		if (this.selectedKinsectSlot) {
+			this.selectedKinsectSlot.selected = false;
+		}
+
 		this.selectedItemSlot = null;
 		this.selectedDecorationSlot = null;
 		this.selectedAugmentationSlot = null;
+		this.selectedKinsectSlot = null;
 	}
 }

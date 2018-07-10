@@ -105,6 +105,12 @@ export class AppComponent implements OnInit, AfterViewInit {
 				this.itemListModal.isOpen = !augmentation;
 			}
 		});
+
+		this.slotService.kinsectSelected$.subscribe(kinsect => {
+			if (this.itemListModal) {
+				this.itemListModal.isOpen = !kinsect;
+			}
+		});
 	}
 
 	ngAfterViewInit() {
