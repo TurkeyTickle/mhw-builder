@@ -89,9 +89,9 @@ id	weaponType	rarity	name	baseAttack	baseAffinityPercent	baseDefense	element	ele
 405	ChargeBlade	8	Taroth Strongarm "Sleep"	684	0	20				Sleep	270	true		true	Blue-20	3	kulve;taroth;sleep	
 406	ChargeBlade	8	Taroth Strongarm "Thunder"	684	0	20	Thunder	420	true					true	Blue-20	3	kulve;taroth;thunder	
 197	ChargeBlade	8	Xeno Ra'atz	648	15	0	Dragon	180					Low	false	White-10;White-20;White-30;White-40;White-50;White-60	3;3	xeno'jiva;dragon	
-669	ChargeBlade	8	Empress Alma "Blaze"	648	20	0				Blast	150			true	White-20	2;1	lunastra;blast	guts-1
-670	ChargeBlade	8	Empress Alma "Ruin"	684	0	0				Blast	120			true	White-20	2;2	lunastra;blast	hastenRecovery-1
-671	ChargeBlade	8	Empress Alma "Styx"	648	10	0				Blast	210			true	White-20	3;3	lunastra;blast	razorSharpSpareShot-1
+669	ChargeBlade	8	Empress Alma "Blaze"	648	20	0				Blast	150			false	White-40;White-50;White-60;White-70;White-80;White-90	2;1	lunastra;blast	guts-1
+670	ChargeBlade	8	Empress Alma "Ruin"	684	0	0				Blast	120			false	White-40;White-50;White-60;White-70;White-80;White-90	2;2	lunastra;blast	hastenRecovery-1
+671	ChargeBlade	8	Empress Alma "Styx"	648	10	0				Blast	210			false	White-40;White-50;White-60;White-70;White-80;White-90	3;3	lunastra;blast	razorSharpSpareShot-1
 67	DualBlades	6	Arcanaria III	238	20	0				Sleep	120			false	Blue-50;Blue-60;Blue-70;White-10;White-20;White-30		kulu-ya-ku;sleep	
 62	DualBlades	6	Chrome Slicers II	252	0	0				Poison	270	true		false	Blue-60;Blue-70;Blue-80;Blue-90;White-10;White-20	1;1	ore;poison	
 527	DualBlades	6	Claw Gold Twinblades	196	20	20	Fire	60	true					true	Blue-20		kulve;taroth;fire	
@@ -139,9 +139,9 @@ id	weaponType	rarity	name	baseAttack	baseAffinityPercent	baseDefense	element	ele
 391	DualBlades	8	Taroth Daggers "Poison"	266	0	20				Poison	330	true		true	Blue-20	3	kulve;taroth;poison	
 392	DualBlades	8	Taroth Daggers "Water"	266	0	20	Water	270	true					true	Blue-20	3	kulve;taroth;water	
 81	DualBlades	8	Xeno Raqs	238	15	0	Dragon	150					Low	false	White-20;White-30;White-40;White-50;White-60;White-70	3;3	xeno'jiva;dragon	
-651	DualBlades	8	Empress Daggers "Blaze"	252	20	0				Blast	90			true	White-20	2;1	lunastra;blast	guts-1
-652	DualBlades	8	Empress Daggers "Ruin"	266	0	0				Blast	60			true	White-20	2;2	lunastra;blast	hastenRecovery-1
-653	DualBlades	8	Empress Daggers "Styx"	252	10	0				Blast	120			true	White-20	3;3	lunastra;blast	razorSharpSpareShot-1
+651	DualBlades	8	Empress Daggers "Blaze"	252	20	0				Blast	90			false	White-50;White-60;White-70;White-80;White-90;White-100	2;1	lunastra;blast	guts-1
+652	DualBlades	8	Empress Daggers "Ruin"	266	0	0				Blast	60			false	White-50;White-60;White-70;White-80;White-90;White-100	2;2	lunastra;blast	hastenRecovery-1
+653	DualBlades	8	Empress Daggers "Styx"	252	10	0				Blast	120			false	White-50;White-60;White-70;White-80;White-90;White-100	3;3	lunastra;blast	razorSharpSpareShot-1
 14	GreatSword	6	Barroth Shredder III	960	-20	15				Paralysis	390	true		false	Blue-30;Blue-40;Blue-50;Blue-60;Blue-70;Blue-80	2;1	barroth;paralysis	
 1	GreatSword	6	Chrome Razor II	864	0	0				Poison	420	true		false	Blue-60;Blue-70;Blue-80;Blue-90;White-10;White-20	1;1	ore;poison	
 322	GreatSword	6	Decay Gold Fellsword	816	10	20	Dragon	150					Average	true	Blue-20		kulve;taroth;dragon	
@@ -178,7 +178,7 @@ id	weaponType	rarity	name	baseAttack	baseAffinityPercent	baseDefense	element	ele
 325	GreatSword	7	Taroth Blaze "Numb"	768	30	20	Paralysis	450						true	Blue-20		kulve;taroth;paralysis	
 484	GreatSword	7	Taroth Blaze "Spew"	864	0	20				Poison	540			true	Blue-20		kulve;taroth;poison	
 486	GreatSword	7	Taroth Blaze "Tar"	912	10	30				Sleep	270			true	Blue-20		kulve;taroth;sleep	
-289	GreatSword	7	Wyvern Ignition "Impact"	1008	-15	0	Fire	510	true					true	White-20	1;1	fire	
+289	GreatSword	7	Wyvern Ignition "Impact"	1008	-15	0	Fire	510	true					false	White-10;White-20;White-30;White-40;White-50;White-60	1;1	fire	
 19	GreatSword	8	Daora's Decimator	864	10	0	Ice	270						false	Blue-40;Blue-50;Blue-60;Blue-70;White-10;White-20	2	blacksteel;kushala;daora;ice	
 21	GreatSword	8	Great Wyvern Jawblade	960	0	20				Blast	330	true		false	Blue-30;Blue-40;Blue-50;Blue-60;Blue-70;Blue-80	3	workshop;blast	
 17	GreatSword	8	King Thundersword	768	0	0	Thunder	540						false	Blue-50;Blue-60;Blue-70;Blue-80;Blue-90;Blue-100		kirin;thunder	
@@ -189,9 +189,9 @@ id	weaponType	rarity	name	baseAttack	baseAffinityPercent	baseDefense	element	ele
 329	GreatSword	8	Taroth Blaze "Sleep"	912	0	20				Sleep	450	true		true	Blue-20	3	kulve;taroth;sleep	
 328	GreatSword	8	Taroth Blaze "Water"	912	0	20	Water	540	true					true	White-20	3	kulve;taroth;water	
 20	GreatSword	8	Xeno Maliq	816	15	0	Dragon	210					Low	false	White-10;White-20;White-30;White-40;White-50;White-60	3;3	xeno'jiva;dragon	
-642	GreatSword	8	Empress Galea "Blaze"	864	20	0				Blast	270			true	White-20	2;1	lunastra;blast	guts-1
-643	GreatSword	8	Empress Galea "Ruin"	912	0	0				Blast	210			true	White-20	2;2	lunastra;blast	hastenRecovery-1
-644	GreatSword	8	Empress Galea "Styx"	864	10	0				Blast	330			true	White-20	3;3	lunastra;blast	razorSharpSpareShot-1
+642	GreatSword	8	Empress Galea "Blaze"	864	20	0				Blast	270			false	White-30;White-40;White-50;White-60;White-70;White-80	2;1	lunastra;blast	guts-1
+643	GreatSword	8	Empress Galea "Ruin"	912	0	0				Blast	210			false	White-30;White-40;White-50;White-60;White-70;White-80	2;2	lunastra;blast	hastenRecovery-1
+644	GreatSword	8	Empress Galea "Styx"	864	10	0				Blast	330			false	White-30;White-40;White-50;White-60;White-70;White-80	3;3	lunastra;blast	razorSharpSpareShot-1
 156	Gunlance	6	Anja Cannon III	483	-20	0	Fire	450						false	Blue-20;Blue-30;Blue-40;Blue-50;Blue-60;Blue-70		anjanath;fire	
 155	Gunlance	6	Barroth Blaster III	460	-10	15				Paralysis	390	true		false	Blue-30;Blue-40;Blue-50;Blue-60;Blue-70;Blue-80		barroth;paralysis	
 542	Gunlance	6	Bomber Gold Exploder	368	0	20				Blast	90			true	Blue-20		kulve;taroth;blast	
@@ -237,9 +237,9 @@ id	weaponType	rarity	name	baseAttack	baseAffinityPercent	baseDefense	element	ele
 399	Gunlance	8	Taroth Buster "Sleep"	437	0	20				Sleep	450	true		true	Blue-20	3	kulve;taroth;sleep	
 401	Gunlance	8	Taroth Buster "Water"	437	0	20	Water	450	true					true	Blue-20	3	kulve;taroth;water	
 160	Gunlance	8	Xeno Hemta	391	15	0	Dragon	180					Low	false	White-10;White-20;White-30;White-40;White-50;White-60	3;3	xeno'jiva;dragon	
-663	Gunlance	8	Empress Howl "Blaze"	437	20	0				Blast	180			true	White-20	1	lunastra;blast	guts-1
-664	Gunlance	8	Empress Howl "Ruin"	460	0	0				Blast	150			true	White-20	2	lunastra;blast	hastenRecovery-1
-665	Gunlance	8	Empress Howl "Styx"	437	10	0				Blast	240			true	White-20	3;1	lunastra;blast	razorSharpSpareShot-1
+663	Gunlance	8	Empress Howl "Blaze"	437	20	0				Blast	180			false	White-40;White-50;White-60;White-70;White-80;White-90	1	lunastra;blast	guts-1
+664	Gunlance	8	Empress Howl "Ruin"	460	0	0				Blast	150			false	White-40;White-50;White-60;White-70;White-80;White-90	2	lunastra;blast	hastenRecovery-1
+665	Gunlance	8	Empress Howl "Styx"	437	10	0				Blast	240			false	White-40;White-50;White-60;White-70;White-80;White-90	3;1	lunastra;blast	razorSharpSpareShot-1
 97	Hammer	6	Anja Striker III	1092	-20	0	Fire	450						false	Blue-20;Blue-30;Blue-40;Blue-50;Blue-60;Blue-70		anjanath;fire	
 92	Hammer	6	Baan Strike III	988	0	20				Sleep	270			false	Blue-30;Blue-40;Blue-50;Blue-60;Blue-70;Blue-80		radobaan;sleep	
 96	Hammer	6	Barroth Breaker III	1040	-10	15				Paralysis	390	true		false	Blue-30;Blue-40;Blue-50;Blue-60;Blue-70;Blue-80	2;1	barroth;paralysis	
@@ -285,9 +285,9 @@ id	weaponType	rarity	name	baseAttack	baseAffinityPercent	baseDefense	element	ele
 394	Hammer	8	Taroth Hammer "Thunder"	988	0	30	Thunder	480	true					true	Blue-20	3	kulve;taroth;thunder	
 339	Hammer	8	Taroth Hammer "Water"	988	0	20	Water	360	true					true	Blue-20		kulve;taroth;water	
 101	Hammer	8	Xeno Maph'agarna	884	15	0	Dragon	180					Low	false	White-10;White-20;White-30;White-40;White-50;White-60	3;3	xeno'jiva;dragon	
-654	Hammer	8	Empress Mace "Blaze"	936	20	0				Blast	180			true	White-20	2;1	lunastra;blast	guts-1
-655	Hammer	8	Empress Mace "Ruin"	988	0	0				Blast	150			true	White-20	2;2	lunastra;blast	hastenRecovery-1
-656	Hammer	8	Empress Mace "Styx"	936	10	0				Blast	240			true	White-20	3;3	lunastra;blast	razorSharpSpareShot-1
+654	Hammer	8	Empress Mace "Blaze"	936	20	0				Blast	180			false	White-30;White-40;White-50;White-60;White-70;White-80	2;1	lunastra;blast	guts-1
+655	Hammer	8	Empress Mace "Ruin"	988	0	0				Blast	150			false	White-30;White-40;White-50;White-60;White-70;White-80	2;2	lunastra;blast	hastenRecovery-1
+656	Hammer	8	Empress Mace "Styx"	936	10	0				Blast	240			false	White-30;White-40;White-50;White-60;White-70;White-80	3;3	lunastra;blast	razorSharpSpareShot-1
 241	HeavyBowgun	6	Arma Destroyer III	255	0	0								false			tzitzi-ya-ku	
 248	HeavyBowgun	6	Baan Roar III	270	0	20								false			radobaan	
 238	HeavyBowgun	6	Chrome Assault II	255	0	0								false		1;1	ore	
@@ -378,9 +378,9 @@ id	weaponType	rarity	name	baseAttack	baseAffinityPercent	baseDefense	element	ele
 395	HuntingHorn	8	Taroth Pipe "Water"	714	10	20	Water	630	true					true	White-20	3	kulve;taroth;water	
 121	HuntingHorn	8	Teostra's Orphée	798	0	0				Blast	390			false	Blue-40;Blue-50;Blue-60;White-10;White-20;White-30		blacksteel;teostra	
 122	HuntingHorn	8	Xeno Manasheena	714	15	0	Dragon	180					Low	false	White-10;White-20;White-30;White-40;White-50;White-60	3;3	xeno'jiva;dragon	
-657	HuntingHorn	8	Empress Roar "Blaze"	798	20	0				Blast	180			true	White-20	1	lunastra;blast	guts-1
-658	HuntingHorn	8	Empress Roar "Ruin"	840	0	0				Blast	150			true	White-20	2	lunastra;blast	hastenRecovery-1
-659	HuntingHorn	8	Empress Roar "Styx"	798	10	0				Blast	240			true	White-20	3;1	lunastra;blast	razorSharpSpareShot-1
+657	HuntingHorn	8	Empress Roar "Blaze"	798	20	0				Blast	180			false	White-30;White-40;White-50;White-60;White-70;White-80	1	lunastra;blast	guts-1
+658	HuntingHorn	8	Empress Roar "Ruin"	840	0	0				Blast	150			false	White-30;White-40;White-50;White-60;White-70;White-80	2	lunastra;blast	hastenRecovery-1
+659	HuntingHorn	8	Empress Roar "Styx"	798	10	0				Blast	240			false	White-30;White-40;White-50;White-60;White-70;White-80	3;1	lunastra;blast	razorSharpSpareShot-1
 206	InsectGlaive	6	Aerial Rod II	589	0	10				Paralysis	210	true		false	Blue-50;Blue-60;Blue-70;Blue-80;Blue-90;Blue-100	3	bone;paralysis	
 198	InsectGlaive	6	Chrome Blade II	558	0	0				Blast	270	true		false	Blue-60;Blue-70;Blue-80;Blue-90;White-10;White-20	1;1	ore;blast	
 570	InsectGlaive	6	Claw Gold Naginata	434	20	20	Fire	60	true					true	Blue-20		kulve;taroth;fire	
@@ -425,9 +425,9 @@ id	weaponType	rarity	name	baseAttack	baseAffinityPercent	baseDefense	element	ele
 214	InsectGlaive	8	Verdant Levin	496	0	0	Thunder	360						false	Blue-80;Blue-90;Blue-100;Blue-110;Blue-120;Blue-130		kirin;thunder	
 212	InsectGlaive	8	Vice	496	20	0	Fire	150	true					false	White-40	2	odogaron;fire	
 216	InsectGlaive	8	Xeno Shmaena	558	15	0	Dragon	120					Low	false	White-10;White-20;White-30;White-40;White-50;White-60	3;3	xeno'jiva;dragon	
-672	InsectGlaive	8	Empress Cane "Blaze"	589	20	0				Blast	150			true	White-20	1	lunastra;blast	guts-1
-673	InsectGlaive	8	Empress Cane "Ruin"	620	0	0				Blast	120			true	White-20	2	lunastra;blast	hastenRecovery-1
-674	InsectGlaive	8	Empress Cane "Styx"	589	10	0				Blast	210			true	White-20	3;1	lunastra;blast	razorSharpSpareShot-1
+672	InsectGlaive	8	Empress Cane "Blaze"	589	20	0				Blast	150			false	White-40;White-50;White-60;White-70;White-80;White-90	1	lunastra;blast	guts-1
+673	InsectGlaive	8	Empress Cane "Ruin"	620	0	0				Blast	120			false	White-40;White-50;White-60;White-70;White-80;White-90	2	lunastra;blast	hastenRecovery-1
+674	InsectGlaive	8	Empress Cane "Styx"	589	10	0				Blast	210			false	White-40;White-50;White-60;White-70;White-80;White-90	3;1	lunastra;blast	razorSharpSpareShot-1
 134	Lance	6	Barroth Stinger III	460	-20	15				Paralysis	390	true		false	Blue-40;Blue-50;Blue-60;Blue-70;Blue-80;Blue-90	2;1	barroth;paralysis	
 123	Lance	6	Chrome Lance	414	0	0				Paralysis	270	true		false	Blue-60;Blue-70;Blue-80;Blue-90;White-10;White-20	1;1	ore;paralysis	
 313	Lance	6	Claw Gold Defender	299	30	20	Fire	60	true					true	Blue-40		kulve;taroth;fire	
@@ -473,9 +473,9 @@ id	weaponType	rarity	name	baseAttack	baseAffinityPercent	baseDefense	element	ele
 397	Lance	8	Taroth Crest "Water"	437	0	20	Water	420	true					true	Blue-20	3	kulve;taroth;water	
 139	Lance	8	Thunderpiercer	368	10	0	Thunder	540						false	Blue-60;Blue-70;Blue-80;Blue-90;Blue-100;Blue-110		kirin;thunder	
 141	Lance	8	Xeno Zauta	391	15	0	Dragon	180					High	false	White-10;White-20;White-30;White-40;White-50;White-60	3;3	xeno'jiva;dragon	
-660	Lance	8	Empress Lance "Blaze"	414	20	0				Blast	180			true	White-20	2;1	lunastra;blast	guts-1
-661	Lance	8	Empress Lance "Ruin"	437	0	0				Blast	150			true	White-20	2;2	lunastra;blast	hastenRecovery-1
-662	Lance	8	Empress Lance "Styx"	414	10	0				Blast	240			true	White-20	3;3	lunastra;blast	razorSharpSpareShot-1
+660	Lance	8	Empress Lance "Blaze"	414	20	0				Blast	180			false	White-30;White-40;White-50;White-60;White-70;White-80	2;1	lunastra;blast	guts-1
+661	Lance	8	Empress Lance "Ruin"	437	0	0				Blast	150			false	White-30;White-40;White-50;White-60;White-70;White-80	2;2	lunastra;blast	hastenRecovery-1
+662	Lance	8	Empress Lance "Styx"	414	10	0				Blast	240			false	White-30;White-40;White-50;White-60;White-70;White-80	3;3	lunastra;blast	razorSharpSpareShot-1
 227	LightBowgun	6	Anja Buster III	273	-30	0								false			anjanath	
 230	LightBowgun	6	Barroth Shot III	260	-20	15								false		1	barroth	
 592	LightBowgun	6	Bomber Gold Razer	221	-20	20								false			kulve;taroth	
@@ -550,7 +550,7 @@ id	weaponType	rarity	name	baseAttack	baseAffinityPercent	baseDefense	element	ele
 612	LongSword	6	Spark Gold Katana	528	30	20	Thunder	120						true	Blue-20		kulve;taroth;thunder	
 613	LongSword	6	Stream Gold Katana	462	0	20	Ice	180						true	White-20		kulve;taroth;ice	
 614	LongSword	6	Thief Gold Katana	495	20	20				Sleep	120			true	Blue-20		kulve;taroth;sleep	
-641	LongSword	7	Azure Star "Dragon Dance"	495	30	0	Water	180						true	White-20	3	water	
+641	LongSword	7	Azure Star "Dragon Dance"	495	30	0	Water	180						false	White-20;White-30;White-40;White-50;White-60;White-70	3	water	
 26	LongSword	7	Brazenridge II	660	-10	30	Fire	120						false	Blue-80;Blue-90;Blue-100;Blue-110;Blue-120;Blue-130	3;1	uragaan;fire	
 33	LongSword	7	Hazak Grosser II	660	0	0	Dragon	270					Average	false	Blue-40;Blue-50;White-10;White-20;White-30;White-40	2	vaal;hazak;dragon	
 38	LongSword	7	Magda Facultas II	726	-20	20				Blast	360			false	Green-70;Green-80;Green-90;Blue-10;Blue-20;Blue-30	2	zorah;magdaros;blast	
@@ -576,9 +576,9 @@ id	weaponType	rarity	name	baseAttack	baseAffinityPercent	baseDefense	element	ele
 365	LongSword	8	Taroth Sword "Water"	627	0	20	Water	420	true					true	Blue-20	3	kulve;taroth;water	
 28	LongSword	8	Wyvern Blade "Indigo"	627	15	0	Fire	240						false	Blue-50;Blue-60;White-10;White-20;White-30;White-40	1	rathalos;fire	
 40	LongSword	8	Xeno Cypher	594	15	0	Dragon	180					Low	false	White-10;White-20;White-30;White-40;White-50;White-60	3;3	xeno'jiva;dragon	
-645	LongSword	8	Empress Sword "Blaze"	594	20	0				Blast	180			true	White-20	2;1	lunastra;blast	guts-1
-646	LongSword	8	Empress Sword "Ruin"	627	0	0				Blast	150			true	White-20	2;2	lunastra;blast	hastenRecovery-1
-647	LongSword	8	Empress Sword "Styx"	594	10	0				Blast	240			true	White-20	3;3	lunastra;blast	razorSharpSpareShot-1
+645	LongSword	8	Empress Sword "Blaze"	594	20	0				Blast	180			false	White-30;White-40;White-50;White-60;White-70;White-80	2;1	lunastra;blast	guts-1
+646	LongSword	8	Empress Sword "Ruin"	627	0	0				Blast	150			false	White-30;White-40;White-50;White-60;White-70;White-80	2;2	lunastra;blast	hastenRecovery-1
+647	LongSword	8	Empress Sword "Styx"	594	10	0				Blast	240			false	White-30;White-40;White-50;White-60;White-70;White-80	3;3	lunastra;blast	razorSharpSpareShot-1
 173	SwitchAxe	6	Barroth Grinder III	735	-20	15				Paralysis	330	true		false	Blue-30;Blue-40;Blue-50;Blue-60;Blue-70;Blue-80	3;1	barroth;paralysis	
 616	SwitchAxe	6	Bomber Gold Chopper	595	0	20				Blast	90			true	Blue-20		kulve;taroth;blast	
 617	SwitchAxe	6	Decay Gold Chopper	525	30	20	Dragon	90					Average	true	White-20		kulve;taroth;dragon	
@@ -620,14 +620,14 @@ id	weaponType	rarity	name	baseAttack	baseAffinityPercent	baseDefense	element	ele
 174	SwitchAxe	8	Axe of Demons	805	-30	15	Ice	180	true					false	Blue-30;Blue-40;Blue-50;Blue-60;White-10;White-20	1	diablos;ice	
 162	SwitchAxe	8	Dying Light	700	0	0	Dragon	150					High	false	Blue-80	1	nergigante;dragon	
 177	SwitchAxe	8	Kirin Thunderpeal	560	0	0	Thunder	450						false	Blue-60;Blue-70;Blue-80;Blue-90;Blue-100;Blue-110		kirin;thunder	
-402	SwitchAxe	8	Taroth Axe "Paralysis"	735	0	30				Paralysis	450	true		true	Blue-20	3	kulve;taroth;paralysis	
+402	SwitchAxe	8	Taroth Axe "Paralysis"	735	0	30				Paralysis	450	true		true	Blue-40;Blue-50;Blue-60;Blue-70;Blue-80;Blue-90	3	kulve;taroth;paralysis	
 403	SwitchAxe	8	Taroth Axe "Sleep"	665	0	20				Sleep	360	true		true	Blue-20	3	kulve;taroth;sleep	
 404	SwitchAxe	8	Taroth Axe "Thunder"	560	10	20	Thunder	480	true					true	White-20	3	kulve;taroth;thunder	
 178	SwitchAxe	8	Teostra's Castle	665	0	0				Blast	300			false	Blue-40;Blue-50;Blue-60;White-10;White-20;White-30		blacksteel;teostra;blast	
 179	SwitchAxe	8	Xeno Martshu	595	15	0	Dragon	150					Low	false	White-10;White-20;White-30;White-40;White-50;White-60	3;3	xeno'jiva;dragon	
-666	SwitchAxe	8	Empress Axe "Blaze"	630	20	0				Blast	180			true	White-20	2;1	lunastra;blast	guts-1
-667	SwitchAxe	8	Empress Axe "Ruin"	665	0	0				Blast	150			true	White-20	2;2	lunastra;blast	hastenRecovery-1
-668	SwitchAxe	8	Empress Axe "Styx"	630	10	0				Blast	240			true	White-20	3;3	lunastra;blast	razorSharpSpareShot-1
+666	SwitchAxe	8	Empress Axe "Blaze"	630	20	0				Blast	180			false	White-30;White-40;White-50;White-60;White-70;White-80	2;1	lunastra;blast	guts-1
+667	SwitchAxe	8	Empress Axe "Ruin"	665	0	0				Blast	150			false	White-30;White-40;White-50;White-60;White-70;White-80	2;2	lunastra;blast	hastenRecovery-1
+668	SwitchAxe	8	Empress Axe "Styx"	630	10	0				Blast	240			false	White-30;White-40;White-50;White-60;White-70;White-80	3;3	lunastra;blast	razorSharpSpareShot-1
 53	SwordAndShield	6	Baan Claw III	266	0	20				Sleep	210			false	Blue-40;Blue-50;Blue-60;Blue-70;Blue-80;Blue-90		radobaan;sleep	
 56	SwordAndShield	6	Barroth Club II	294	-10	15				Paralysis	180	true		false	Blue-40;Blue-50;Blue-60;Blue-70;Blue-80;Blue-90	2;1	barroth;paralysis	
 42	SwordAndShield	6	Chrome Slicer II	252	0	0				Sleep	240	true		false	Blue-70;Blue-80;Blue-90;White-10;White-20;White-30	1;1	ore;sleep	
@@ -675,6 +675,6 @@ id	weaponType	rarity	name	baseAttack	baseAffinityPercent	baseDefense	element	ele
 367	SwordAndShield	8	Taroth Slicer "Water"	266	10	20	Water	420	true					true	Blue-20	3	kulve;taroth;water	
 60	SwordAndShield	8	Teostra's Emblem	266	0	0				Blast	240			false	Blue-50;Blue-60;White-10;White-20;White-30;White-40		blacksteel;teostra;blast	
 61	SwordAndShield	8	Xeno Mabura	238	15	0	Dragon	270					Low	false	White-10;White-20;White-30;White-40;White-50;White-60	3;3	xeno'jiva;dragon	
-648	SwordAndShield	8	Empress Edge "Blaze"	266	20	0				Blast	150			true	White-20	1	lunastra;blast	guts-1
-649	SwordAndShield	8	Empress Edge "Ruin"	280	0	0				Blast	120			true	White-20	2	lunastra;blast	hastenRecovery-1
-650	SwordAndShield	8	Empress Edge "Styx"	266	10	0				Blast	210			true	White-20	3;1	lunastra;blast	razorSharpSpareShot-1
+648	SwordAndShield	8	Empress Edge "Blaze"	266	20	0				Blast	150			false	White-50;White-60;White-70;White-80;White-90;White-100	1	lunastra;blast	guts-1
+649	SwordAndShield	8	Empress Edge "Ruin"	280	0	0				Blast	120			false	White-50;White-60;White-70;White-80;White-90;White-100	2	lunastra;blast	hastenRecovery-1
+650	SwordAndShield	8	Empress Edge "Styx"	266	10	0				Blast	210			false	White-50;White-60;White-70;White-80;White-90;White-100	3;1	lunastra;blast	razorSharpSpareShot-1
