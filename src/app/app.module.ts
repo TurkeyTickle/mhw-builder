@@ -25,7 +25,6 @@ import { StatService } from './services/stat.service';
 import { CalculationService } from './services/calculation.service';
 import { BuildService } from './services/build.service';
 import { AugmentationDetailsComponent } from './components/augmentation-details/augmentation-details.component';
-import { ModalComponent } from './components/modal/modal.component';
 import { VirtualScrollModule } from 'angular2-virtual-scroll';
 import { DecorationListComponent } from './components/decoration-list/decoration-list.component';
 import { ArmorListComponent } from './components/armor-list/armor-list.component';
@@ -36,6 +35,9 @@ import { AmmoCapacitiesComponent } from './components/ammo-capacities/ammo-capac
 import { KinsectSlotComponent } from './components/kinsect-slot/kinsect-slot.component';
 import { KinsectListComponent } from './components/kinsect-list/kinsect-list.component';
 import { KinsectDetailsComponent } from './components/kinsect-details/kinsect-details.component';
+import { CommonModule } from './components/common/common.module';
+import { ModalComponent } from './components/common/modal/modal.component';
+import { DropdownComponent } from './components/common/dropdown/dropdown.component';
 
 @NgModule({
 	declarations: [
@@ -57,17 +59,17 @@ import { KinsectDetailsComponent } from './components/kinsect-details/kinsect-de
 		AugmentationSlotComponent,
 		AugmentationsListComponent,
 		AugmentationDetailsComponent,
-		ModalComponent,
 		AmmoCapacitiesComponent,
 		KinsectSlotComponent,
 		KinsectListComponent,
-		KinsectDetailsComponent
+		KinsectDetailsComponent,
 	],
 	imports: [
 		BrowserModule,
 		HttpClientModule,
 		VirtualScrollModule,
-		DataModule
+		DataModule,
+		CommonModule
 	],
 	providers: [
 		Location,

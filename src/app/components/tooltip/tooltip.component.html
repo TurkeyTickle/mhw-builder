@@ -3,13 +3,18 @@
 	<mhw-builder-item-details *ngIf="item" [item]="item"></mhw-builder-item-details>
 	<mhw-builder-decoration-details *ngIf="decoration" [decoration]="decoration"></mhw-builder-decoration-details>
 	<mhw-builder-augmentation-details *ngIf="augmentation" [augmentation]="augmentation"></mhw-builder-augmentation-details>
-	<mhw-builder-kinsect-details *ngIf="kinsect"></mhw-builder-kinsect-details>
 	<mhw-builder-skill-details *ngIf="equippedSkill || skill" [equippedSkill]="equippedSkill" [skill]="skill"></mhw-builder-skill-details>
 	<mhw-builder-set-bonus-details *ngIf="equippedSetBonus" [equippedSetBonus]="equippedSetBonus"></mhw-builder-set-bonus-details>
 	<mhw-builder-calc-details *ngIf="calc" [calc]="calc"></mhw-builder-calc-details>
 
+	<ng-container *ngIf="kinsect">
+		<h3>{{kinsect?.name}}</h3>
+		<hr>
+		<mhw-builder-kinsect-details [kinsect]="kinsect"></mhw-builder-kinsect-details>
+	</ng-container>
+
 	<ng-container *ngIf="item?.ammoCapacities">
-		<br/>
+		<br />
 		<h4>Ammo</h4>
 		<hr>
 		<mhw-builder-ammo-capacities [ammoCapacities]="item.ammoCapacities"></mhw-builder-ammo-capacities>

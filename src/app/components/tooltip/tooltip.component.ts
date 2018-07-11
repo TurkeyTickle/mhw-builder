@@ -124,6 +124,7 @@ export class TooltipComponent implements OnInit {
 		this.item = null;
 		this.decoration = null;
 		this.augmentation = null;
+		this.kinsect = null;
 		this.equippedSkill = null;
 		this.equippedSetBonus = null;
 		this.skill = null;

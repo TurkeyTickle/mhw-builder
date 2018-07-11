@@ -9,7 +9,7 @@ import { ItemType } from './types/item.type';
 import { AugmentationSlotComponent } from './components/augmentation-slot/augmentation-slot.component';
 import { SlotService } from './services/slot.service';
 import { BuildService } from './services/build.service';
-import { ModalComponent } from './components/modal/modal.component';
+import { ModalComponent } from './components/common/modal/modal.component';
 import { PointerType } from './types/pointer.type';
 import { DataService } from './services/data.service';
 import { EquipmentCategoryType } from './types/equipment-category.type';

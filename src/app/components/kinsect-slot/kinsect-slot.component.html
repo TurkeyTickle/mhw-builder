@@ -2,6 +2,14 @@
 	<div class="slot-icon"><img [src]="'assets/images/culldrone-kinsect-icon.png'"></div>
 	<div class="selected-kinsect">{{kinsect?.name}}</div>
 
+	<div class="element" (click)="elementDropdown.toggle($event)">
+		<mhw-builder-dropdown #elementDropdown>
+			<div *ngFor="let e of elements">
+				<span>{{e.value}}</span>
+			</div>
+		</mhw-builder-dropdown>
+	</div>
+
 	<button class="clear-button" (click)="clearClicked($event)">
 		<i class="fas fa-times"></i>
 	</button>

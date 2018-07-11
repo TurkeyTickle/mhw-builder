@@ -4,6 +4,7 @@ import { CalculationService } from '../../services/calculation.service';
 import { TooltipService } from '../../services/tooltip.service';
 import { PointerType } from '../../types/pointer.type';
 import { AmmoCapacitiesModel } from '../../models/ammo-capacities.model';
+import { KinsectModel } from '../../models/kinsect.model';
 
 @Component({
 	selector: 'mhw-builder-equipped-stats',
@@ -16,6 +17,7 @@ export class EquippedStatsComponent implements OnInit {
 	attackCalcs = new Array<StatDetailModel>();
 	defenseCalcs = new Array<StatDetailModel>();
 	ammoCapacities: AmmoCapacitiesModel;
+	kinsect: KinsectModel;
 
 	constructor(
 		private calculationService: CalculationService,
@@ -29,6 +31,10 @@ export class EquippedStatsComponent implements OnInit {
 
 		this.calculationService.ammoUpdated$.subscribe(ammo => {
 			this.ammoCapacities = ammo;
+		});
+
+		this.calculationService.kinsectUpdated$.subscribe(kinsect => {
+			this.kinsect = kinsect;
 		});
 
 		this.calculationService.defenseCalcsUpdated$.subscribe(calcs => {

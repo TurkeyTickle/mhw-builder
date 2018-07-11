@@ -1,0 +1,17 @@
+.container {
+	position: relative;
+	top: 20px;
+	width: 100px;
+	height: 100px;
+	background-color: blue;
+
+	::ng-deep > * {
+		background-color: gray;
+		margin: 2px;
+	}
+
+	::ng-deep > *:hover {
+		background-color: white;
+	}
+}
+

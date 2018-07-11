@@ -4,6 +4,10 @@ import { SlotService } from '../../services/slot.service';
 import { TooltipService } from '../../services/tooltip.service';
 import { ItemType } from '../../types/item.type';
 import { PointerType } from '../../types/pointer.type';
+import { DropdownComponent } from '../common/dropdown/dropdown.component';
+import { ViewChild } from '@angular/core';
+import { ElementType } from '../../types/element.type';
+import { KeyValuePair } from '../../models/common/key-value-pair.model';
 
 @Component({
 	selector: 'mhw-builder-kinsect-slot',
@@ -12,17 +16,24 @@ import { PointerType } from '../../types/pointer.type';
 })
 export class KinsectSlotComponent implements OnInit {
 	slotName = ItemType.Kinsect;
-
 	kinsect: KinsectModel;
+	elements: KeyValuePair<string, string>[];
 
 	public selected: boolean;
+
+	@ViewChild(DropdownComponent) elementDropdown: DropdownComponent;
 
 	constructor(
 		private slotService: SlotService,
 		private tooltipService: TooltipService
 	) { }
 
-	ngOnInit(): void { }
+	ngOnInit(): void {
+		this.elements = [];
+		for (const item in ElementType) {
+			this.elements.push({ key: item, value: item });
+		}
+	}
 
 	clicked() {
 		this.slotService.selectKinsectSlot(this);
@@ -43,4 +54,9 @@ export class KinsectSlotComponent implements OnInit {
 	clearTooltipKinsect() {
 		this.tooltipService.setKinsect(null);
 	}
+
+	// toggleDropdown(event: Event) {
+	// 	event.stopPropagation();
+	// 	this.elementDropdown.toggle();
+	// }
 }

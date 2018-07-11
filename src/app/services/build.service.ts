@@ -106,19 +106,7 @@ export class BuildService {
 
 					this.changeDetector.detectChanges();
 
-					if (augmentParts.length > 1 && item.equipmentCategory == EquipmentCategoryType.Weapon) {
-						for (let i = 0; i < 9 - item.rarity; i++) {
-							const augId = parseInt(augmentParts[i + 1], 10);
-							if (augId) {
-								const aug = this.dataService.getAugmentation(augId);
-								if (aug) {
-									this.slotService.selectAugmentationSlot(slot.augmentationSlots.toArray()[i]);
-									const newAug = Object.assign({}, aug);
-									this.slotService.selectAugmentation(newAug);
-								}
-							}
-						}
-
+					if (item.equipmentCategory == EquipmentCategoryType.Weapon) {
 						for (let i = 0; i < kinsectParts.length; i++) {
 							const kinsectId = parseInt(kinsectParts[i + 1], 10);
 							if (kinsectId) {
@@ -127,6 +115,20 @@ export class BuildService {
 									this.slotService.selectKinsectSlot(slot.kinsectSlot);
 									const newKinsect = Object.assign({}, kinsect);
 									this.slotService.selectKinsect(newKinsect);
+								}
+							}
+						}
+
+						if (augmentParts.length > 1) {
+							for (let i = 0; i < 9 - item.rarity; i++) {
+								const augId = parseInt(augmentParts[i + 1], 10);
+								if (augId) {
+									const aug = this.dataService.getAugmentation(augId);
+									if (aug) {
+										this.slotService.selectAugmentationSlot(slot.augmentationSlots.toArray()[i]);
+										const newAug = Object.assign({}, aug);
+										this.slotService.selectAugmentation(newAug);
+									}
 								}
 							}
 						}

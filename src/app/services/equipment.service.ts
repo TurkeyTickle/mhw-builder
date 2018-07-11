@@ -6,9 +6,11 @@ import { DecorationModel } from '../models/decoration.model';
 import * as _ from 'lodash';
 import { StatService } from './stat.service';
 import { KinsectModel } from '../models/kinsect.model';
+import { EquippedSkillModel } from '../models/equipped-skill.model';
 
 @Injectable()
 export class EquipmentService {
+	public skills: EquippedSkillModel[];
 	public items: ItemModel[];
 	public decorations: DecorationModel[];
 	public augmentations: AugmentationModel[];
@@ -18,12 +20,14 @@ export class EquipmentService {
 		private skillService: SkillService,
 		private statService: StatService
 	) {
+		this.skills = [];
 		this.items = [];
 		this.decorations = [];
 		this.augmentations = [];
 
 		this.skillService.skillsUpdated$.subscribe(skills => {
-			this.statService.update(skills, this.items, this.augmentations);
+			this.skills = skills;
+			this.statService.update(this.skills, this.items, this.augmentations, this.kinsect);
 		});
 	}
 
@@ -44,6 +48,7 @@ export class EquipmentService {
 
 	addKinsect(kinsect: KinsectModel) {
 		this.kinsect = kinsect;
+		this.statService.update(this.skills, this.items, this.augmentations, this.kinsect);
 	}
 
 	removeItem(item: ItemModel) {

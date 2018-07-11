@@ -3,6 +3,7 @@ import { AilmentType } from '../types/ailment.type';
 import { SharpnessLevelModel } from './sharpness-level.model';
 import { SharpnessType } from '../types/sharpness.type';
 import { AmmoCapacitiesModel } from './ammo-capacities.model';
+import { KinsectModel } from './kinsect.model';
 
 export class StatsModel {
 	totalAttack: number;
@@ -91,6 +92,7 @@ export class StatsModel {
 	healOnHitPercent: number;
 
 	ammoCapacities: AmmoCapacitiesModel;
+	kinsect: KinsectModel;
 
 	constructor() {
 		this.totalAttack = 0;
@@ -178,5 +180,6 @@ export class StatsModel {
 		this.healOnHitPercent = 0;
 
 		this.ammoCapacities = null;
+		this.kinsect = null;
 	}
 }

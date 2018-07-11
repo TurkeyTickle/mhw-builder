@@ -13,6 +13,7 @@ import { Subject } from 'rxjs';
 import { CalculationService } from './calculation.service';
 import { EldersealType } from '../types/elderseal.type';
 import { WeaponType } from '../types/weapon.type';
+import { KinsectModel } from '../models/kinsect.model';
 
 @Injectable()
 export class StatService {
@@ -27,7 +28,7 @@ export class StatService {
 		private calcService: CalculationService
 	) { }
 
-	update(skills: EquippedSkillModel[], items: ItemModel[], augmentations: AugmentationModel[]) {
+	update(skills: EquippedSkillModel[], items: ItemModel[], augmentations: AugmentationModel[], kinsect?: KinsectModel) {
 		this.stats = new StatsModel();
 
 		this.updateItemStats(items);
@@ -38,6 +39,17 @@ export class StatService {
 		this.calculateAttack(weapon);
 
 		if (weapon) {
+			switch (weapon.weaponType) {
+				case WeaponType.HeavyBowgun:
+				case WeaponType.LightBowgun:
+					this.stats.ammoCapacities = weapon.ammoCapacities;
+					break;
+				case WeaponType.InsectGlaive:
+					this.stats.kinsect = kinsect;
+					break;
+				default:
+					break;
+			}
 			if (weapon.weaponType === WeaponType.HeavyBowgun || weapon.weaponType === WeaponType.LightBowgun) {
 				this.stats.ammoCapacities = weapon.ammoCapacities;
 			}

@@ -11,6 +11,13 @@
 
 	<br />
 
+	<div class="kinsect-stats" *ngIf="kinsect">
+		<h4>Kinsect</h4>
+		<hr>
+		<mhw-builder-kinsect-details [kinsect]="kinsect"></mhw-builder-kinsect-details>
+		<br />
+	</div>
+
 	<div class="ammo-stats" *ngIf="ammoCapacities">
 		<h4>Ammo</h4>
 		<hr>

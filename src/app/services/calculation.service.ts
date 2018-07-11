@@ -4,12 +4,14 @@ import { StatDetailModel } from '../models/stat-detail.model';
 import { Subject } from 'rxjs';
 import { CalculationVariableModel } from '../models/calculation-variable.model';
 import { AmmoCapacitiesModel } from '../models/ammo-capacities.model';
+import { KinsectModel } from '../models/kinsect.model';
 
 @Injectable()
 export class CalculationService {
 	public attackCalcsUpdated$ = new Subject<StatDetailModel[]>();
 	public defenseCalcsUpdated$ = new Subject<StatDetailModel[]>();
 	public ammoUpdated$ = new Subject<AmmoCapacitiesModel>();
+	public kinsectUpdated$ = new Subject<KinsectModel>();
 
 	attackCalcs = new Array<StatDetailModel>();
 	defenseCalcs = new Array<StatDetailModel>();
@@ -31,6 +33,7 @@ export class CalculationService {
 			on mouseover or something.
 		*/
 		this.ammoUpdated$.next(stats.ammoCapacities);
+		this.kinsectUpdated$.next(stats.kinsect);
 	}
 
 	private buildAttackCalcs(stats: StatsModel) {
