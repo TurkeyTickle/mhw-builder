@@ -7,12 +7,14 @@ import { EquippedSkillModel } from '../models/equipped-skill.model';
 import { ItemModel } from '../models/item.model';
 import { SkillModel } from '../models/skill.model';
 import { StatDetailModel } from '../models/stat-detail.model';
+import { KinsectModel } from '../models/kinsect.model';
 
 @Injectable()
 export class TooltipService {
 	public itemChanged$ = new Subject<ItemModel>();
 	public decorationChanged$ = new Subject<DecorationModel>();
 	public augmentationChanged$ = new Subject<AugmentationModel>();
+	public kinsectChanged$ = new Subject<KinsectModel>();
 	public equippedSkillChanged$ = new Subject<EquippedSkillModel>();
 	public equippedSetBonusChanged$ = new Subject<EquippedSetBonusModel>();
 	public skillChanged$ = new Subject<SkillModel>();
@@ -21,6 +23,7 @@ export class TooltipService {
 	public item: ItemModel;
 	public decoration: DecorationModel;
 	public augmentation: AugmentationModel;
+	public kinsect: KinsectModel;
 	public equippedSkill: EquippedSkillModel;
 	public equippedSetBonus: EquippedSetBonusModel;
 	public skill: SkillModel;
@@ -47,6 +50,14 @@ export class TooltipService {
 			this.reset();
 			this.augmentation = augmentation;
 			this.augmentationChanged$.next(augmentation);
+		}
+	}
+
+	setKinsect(kinsect: KinsectModel) {
+		if (kinsect != this.kinsect) {
+			this.reset();
+			this.kinsect = kinsect;
+			this.kinsectChanged$.next(kinsect);
 		}
 	}
 
@@ -86,6 +97,7 @@ export class TooltipService {
 		this.item = null;
 		this.decoration = null;
 		this.augmentation = null;
+		this.kinsect = null;
 		this.equippedSkill = null;
 		this.equippedSetBonus = null;
 		this.skill = null;

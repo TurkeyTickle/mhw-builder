@@ -8,6 +8,7 @@ import { SkillModel } from '../../models/skill.model';
 import { StatDetailModel } from '../../models/stat-detail.model';
 import { TooltipService } from '../../services/tooltip.service';
 import { WeaponType } from '../../types/weapon.type';
+import { KinsectModel } from '../../models/kinsect.model';
 
 @Component({
 	selector: 'mhw-builder-tooltip',
@@ -20,6 +21,7 @@ export class TooltipComponent implements OnInit {
 	item: ItemModel;
 	decoration: DecorationModel;
 	augmentation: AugmentationModel;
+	kinsect: KinsectModel;
 	equippedSkill: EquippedSkillModel;
 	equippedSetBonus: EquippedSetBonusModel;
 	skill: SkillModel;
@@ -62,6 +64,16 @@ export class TooltipComponent implements OnInit {
 			} else {
 				this.reset();
 				this.augmentation = augmentation;
+				this.show();
+			}
+		});
+
+		this.tooltipService.kinsectChanged$.subscribe(kinsect => {
+			if (!kinsect) {
+				this.hide();
+			} else {
+				this.reset();
+				this.kinsect = kinsect;
 				this.show();
 			}
 		});

@@ -36,11 +36,11 @@ export class KinsectSlotComponent implements OnInit {
 
 	setTooltipKinsect(event: PointerEvent, kinsect: KinsectModel) {
 		if (event.pointerType == PointerType.Mouse) {
-			// this.tooltipService.setAugmentation(augmentation);
+			this.tooltipService.setKinsect(kinsect);
 		}
 	}
 
 	clearTooltipKinsect() {
-		// this.tooltipService.setAugmentation(null);
+		this.tooltipService.setKinsect(null);
 	}
 }

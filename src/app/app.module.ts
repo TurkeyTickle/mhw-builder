@@ -35,6 +35,7 @@ import { DataModule } from './data/data.module';
 import { AmmoCapacitiesComponent } from './components/ammo-capacities/ammo-capacities.component';
 import { KinsectSlotComponent } from './components/kinsect-slot/kinsect-slot.component';
 import { KinsectListComponent } from './components/kinsect-list/kinsect-list.component';
+import { KinsectDetailsComponent } from './components/kinsect-details/kinsect-details.component';
 
 @NgModule({
 	declarations: [
@@ -60,6 +61,7 @@ import { KinsectListComponent } from './components/kinsect-list/kinsect-list.com
 		AmmoCapacitiesComponent,
 		KinsectSlotComponent,
 		KinsectListComponent,
+		KinsectDetailsComponent
 	],
 	imports: [
 		BrowserModule,
