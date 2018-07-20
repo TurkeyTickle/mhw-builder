@@ -29,9 +29,28 @@ $slotHeight: 30px;
 	}
 
 	.element {
+		height: $slotHeight;
 		width: 100px;
-		height: 40px;
-		background-color: red;
+		background-color: rgb(41, 41, 41);
+		border-radius: 3px;
+
+		.selection {
+			padding: 0 8px;
+			line-height: $slotHeight;
+
+			img {
+				height: 22px;;
+			}
+		}
+
+		.element-option {
+			$elementOptionPadding: 4px;
+			padding: $elementOptionPadding;
+
+			img {
+				height: $slotHeight - $elementOptionPadding * 2;
+			}
+		}
 	}
 
 	.clear-button {

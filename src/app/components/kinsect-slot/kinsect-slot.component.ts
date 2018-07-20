@@ -18,6 +18,7 @@ export class KinsectSlotComponent implements OnInit {
 	slotName = ItemType.Kinsect;
 	kinsect: KinsectModel;
 	elements: KeyValuePair<string, string>[];
+	selectedElement: ElementType = ElementType.Dragon;
 
 	public selected: boolean;
 
@@ -55,8 +56,18 @@ export class KinsectSlotComponent implements OnInit {
 		this.tooltipService.setKinsect(null);
 	}
 
-	// toggleDropdown(event: Event) {
-	// 	event.stopPropagation();
-	// 	this.elementDropdown.toggle();
-	// }
+	selectElement(selectedElement: ElementType) {
+		this.selectedElement = selectedElement;
+	}
+
+	getElementIcon(element: ElementType): string {
+		let assetPath;
+		if (element == ElementType.None) {
+			assetPath = ``;
+		} else {
+			assetPath = `${element.toLowerCase()}-icon`;
+		}
+
+		return `assets/images/${assetPath}.png`;
+	}
 }

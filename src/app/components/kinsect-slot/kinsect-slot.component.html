@@ -3,8 +3,13 @@
 	<div class="selected-kinsect">{{kinsect?.name}}</div>
 
 	<div class="element" (click)="elementDropdown.toggle($event)">
+		<div class="selection">
+			<img [src]="getElementIcon(selectedElement)">
+			<span>{{selectedElement}}</span>
+		</div>
 		<mhw-builder-dropdown #elementDropdown>
-			<div *ngFor="let e of elements">
+			<div class="element-option" *ngFor="let e of elements" (click)="selectElement(e.value)">
+				<img [src]="getElementIcon(e.value)">
 				<span>{{e.value}}</span>
 			</div>
 		</mhw-builder-dropdown>
