@@ -2,14 +2,18 @@
 	<div class="slot-icon"><img [src]="'assets/images/culldrone-kinsect-icon.png'"></div>
 	<div class="selected-kinsect">{{kinsect?.name}}</div>
 
-	<div class="element" (click)="elementDropdown.toggle($event)">
-		<div class="selection">
-			<img [src]="getElementIcon(selectedElement)">
-			<span>{{selectedElement}}</span>
+	<div class="element-slot" [hidden]="!kinsect" (click)="elementDropdown.toggle($event)">
+		<div class="element selected-element">
+			<div *ngIf="kinsect?.element != elementTypes.None" class="image-container">
+				<img [src]="getElementIcon(kinsect?.element)">
+			</div>
+			<span>{{kinsect?.element}}</span>
 		</div>
 		<mhw-builder-dropdown #elementDropdown>
-			<div class="element-option" *ngFor="let e of elements" (click)="selectElement(e.value)">
-				<img [src]="getElementIcon(e.value)">
+			<div class="element" *ngFor="let e of elements" (click)="selectElement(e.value)">
+				<div class="image-container">
+					<img [hidden]="e.value == elementTypes.None" [src]="getElementIcon(e.value)">
+				</div>
 				<span>{{e.value}}</span>
 			</div>
 		</mhw-builder-dropdown>

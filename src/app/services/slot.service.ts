@@ -255,7 +255,9 @@ export class SlotService {
 			this.equipmentService.removeAugmentation(as.augmentation);
 		});
 
-		this.equipmentService.removeKinsect();
+		if (slot.slotName == ItemType.Weapon) {
+			this.equipmentService.removeKinsect();
+		}
 	}
 
 	private clearSlotSelect() {

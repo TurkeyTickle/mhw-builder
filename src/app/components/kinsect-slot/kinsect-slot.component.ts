@@ -16,9 +16,9 @@ import { KeyValuePair } from '../../models/common/key-value-pair.model';
 })
 export class KinsectSlotComponent implements OnInit {
 	slotName = ItemType.Kinsect;
+	elementTypes = ElementType;
 	kinsect: KinsectModel;
 	elements: KeyValuePair<string, string>[];
-	selectedElement: ElementType = ElementType.Dragon;
 
 	public selected: boolean;
 
@@ -57,17 +57,16 @@ export class KinsectSlotComponent implements OnInit {
 	}
 
 	selectElement(selectedElement: ElementType) {
-		this.selectedElement = selectedElement;
+		this.kinsect.element = selectedElement;
+		this.slotService.selectKinsectSlot(this);
+		this.slotService.selectKinsect(this.kinsect);
 	}
 
 	getElementIcon(element: ElementType): string {
 		let assetPath;
-		if (element == ElementType.None) {
-			assetPath = ``;
-		} else {
+		if (element && element != ElementType.None) {
 			assetPath = `${element.toLowerCase()}-icon`;
 		}
-
 		return `assets/images/${assetPath}.png`;
 	}
 }

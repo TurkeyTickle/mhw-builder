@@ -1,14 +1,15 @@
 $slotHeight: 30px;
+$slotPadding: 4px;
 
 .container {
 	display: grid;
-	grid-template-columns: 40px auto auto 36px;
+	grid-template-columns: 40px min-content min-content auto 36px;
 	height: $slotHeight;
 	font-size: 14px;
 	cursor: pointer;
 	border-radius: 3px;
 	background-color: rgb(50,50,50);
-	padding: 4px;
+	padding: $slotPadding;
 
 	.slot-icon {
 		line-height: $slotHeight;
@@ -17,7 +18,7 @@ $slotHeight: 30px;
 		margin-top: 4px;
 
 		img {
-			height: 22px;
+			height: $slotHeight - $slotPadding * 2;
 		}
 	}
 
@@ -26,34 +27,46 @@ $slotHeight: 30px;
 		overflow: hidden;
 		white-space: nowrap;
 		text-overflow: ellipsis;
+		padding-right: 16px;
 	}
 
-	.element {
+	.element-slot {
 		height: $slotHeight;
 		width: 100px;
 		background-color: rgb(41, 41, 41);
 		border-radius: 3px;
+		align-self: start;
 
-		.selection {
-			padding: 0 8px;
-			line-height: $slotHeight;
+		.element {
+			$elementSize: 24px;
+			$elementSpacing: 4px;
 
-			img {
-				height: 22px;;
+			display: flex;
+			margin: $elementSpacing;
+			height: $elementSize;
+
+			span {
+				padding: $elementSpacing;
+				line-height: $elementSize - $elementSpacing * 2;
 			}
-		}
 
-		.element-option {
-			$elementOptionPadding: 4px;
-			padding: $elementOptionPadding;
+			.image-container {
+				$elementImagePadding: $elementSpacing / 2;
 
-			img {
-				height: $slotHeight - $elementOptionPadding * 2;
+				padding: $elementImagePadding;
+				height: $elementSize - $elementImagePadding * 2;
+				width: $elementSize - $elementImagePadding * 2;
+
+				img {
+					width: 100%;
+					height: 100%;
+				}
 			}
 		}
 	}
 
 	.clear-button {
+		grid-column: 5;
 		height: $slotHeight;
 	}
 }
